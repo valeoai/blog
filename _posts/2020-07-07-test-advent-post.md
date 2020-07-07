@@ -22,6 +22,7 @@ Here we are working on *Unsupervised DA* (UDA), which is a more challenging task
 
 ![]({{ site.baseurl }}/images/advent/advent_teaser.png "Figure 1: Proposed entropy-based unsupervised domain adaptation for semantic segmentation. The top two rows show results on source and target domain scenes of the model trained without adaptation. The bottom row shows the result on the same target domain scene of the model trained with entropy-based adaptation. The left and right columns visualize respectively the semantic segmentation outputs and the corresponding prediction entropy maps.")
 
+
 The main approaches for UDA include discrepancy minimization between source and target feature distributions usually achieved via adversarial training  {% cite ganin2015unsupervised %}, {% cite tzeng2017adversarial %}, self-training with pseudo-labels {% cite zou2018unsupervised %} and generative approaches {% cite hoffman2018cycada %}, {% cite wu2018dcan %}.
 
 *Entropy minimization* has been shown to be useful for semi-supervised learning {% cite grandvalet2005semi %}, clustering {% cite jain2018learning %} and more recently to domain adaptation for classification {% cite long2016unsupervised %}. We chose to explore entropy based UDA training to obtain competitive performance on semantic segmentation.
@@ -33,6 +34,9 @@ We present our two proposed approaches for entropy minimization using (i) an uns
 
 ![]({{ site.baseurl }}/images/advent/advent_approach.jpg "Figure 2: Approach overview. First, direct entropy minimization decreases the entropy of the target $P\_{x\_t}$, which is equivalent to minimizing the sum of weighted self-information maps $I\_{x\_t}$​​. In the second approach, we use adversarial training to enforce the consistency in $P\_{x}$ across domains. Red arrows are used for target domain, blue arrows for source.")
 
+## Direct entropy minimization
+
+On the source domain we train our model, denoted as $F$, as usual using a supervised loss. For the target domain, we do not have annotations and we can no longer use the segmentation loss to train $F$. We notice that models trained only on source domain tend to produce over-confident predictions on source-like images and under-confident predictions on target-like ones. Motivated by this observation, we propose a supervision signal that could leverage visual information from the target samples, in spite of the lack of annotations. The objective is to constrain $F$ to produce high-confident predictions on target samples similarly to source samples. To this effect, we introduce the entropy loss $\mathcal{L}\_{ent}$ₜ​ to maximize directly the prediction confidence in the target domain. Here we consider the Shannon Entropy ([Shannon](http://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf)). During training, we jointly optimize the supervised segmentation loss $\mathcal{L}\_{se}$ on source samples and the unsupervised entropy loss $\mathcal{L}\_{ent}$ₜ​​ on target samples.
 
 ## References
 
