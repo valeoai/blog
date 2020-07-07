@@ -42,7 +42,7 @@ On the source domain we train our model, denoted as $F$, as usual using a superv
 
 A limitation of the entropy loss is related to the absence of structural dependencies between local semantics. This is caused by the aggregation of the pixel-wise prediction entropies by summation. We address this through a unified adversarial training framework which minimizes indirectly the entropy of target data, by encouraging it to become similar to the source one. This allows the exploitation of the structural consistency between the domains. To this end, we formulate the UDA task as minimizing distribution distance between source and target on the *weighted self-information* space. Since the trained model produces naturally low-entropy predictions on source-like images, by aligning weighted self-information distributions of target and source domains, we reach the same behavior on target-like data.
 
-We perform the adversarial adaptation on weighted self-information maps using a fully-convolutional discriminator network $D$. The discriminator produces domain classification outputs, *i.e.,** class label $1$ (resp. $0$) for the source (resp. target) domain. We train $D$ to discriminate outputs coming from source and target images, and at the same time, train the segmentation network to fool the discriminator.
+We perform the adversarial adaptation on weighted self-information maps using a fully-convolutional discriminator network $D$. The discriminator produces domain classification outputs, *i.e.,* class label $1$ (resp. $0$) for the source (resp. target) domain. We train $D$ to discriminate outputs coming from source and target images, and at the same time, train the segmentation network to fool the discriminator.
 
 
 ## Experiments
