@@ -485,4 +485,10 @@ table td { text-overflow: ellipsis; overflow: hidden; max-width: 15em; }
 
 .highlight .gd { color: #ff5555; }
 
+.site-header { border-top: 5px solid #4a788c !important; }
+
+.site-footer { padding: 5px 0; }
+
+.footer-heading { margin-bottom: 5px; }
+
 /*# sourceMappingURL=style.css.map */
