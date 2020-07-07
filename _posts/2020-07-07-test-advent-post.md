@@ -34,9 +34,25 @@ We present our two proposed approaches for entropy minimization using (i) an uns
 
 ![]({{ site.baseurl }}/images/advent/advent_approach.jpg "Figure 2: Approach overview. First, direct entropy minimization decreases the entropy of the target Pxt, which is equivalent to minimizing the sum of weighted self-information maps Ixt​​. In the second approach, we use adversarial training to enforce the consistency in Px across domains. Red arrows are used for target domain, blue arrows for source.")
 
-## Direct entropy minimization
+### Direct entropy minimization
 
 On the source domain we train our model, denoted as $F$, as usual using a supervised loss. For the target domain, we do not have annotations and we can no longer use the segmentation loss to train $F$. We notice that models trained only on source domain tend to produce over-confident predictions on source-like images and under-confident predictions on target-like ones. Motivated by this observation, we propose a supervision signal that could leverage visual information from the target samples, in spite of the lack of annotations. The objective is to constrain $F$ to produce high-confident predictions on target samples similarly to source samples. To this effect, we introduce the entropy loss $\mathcal{L}\_{ent}$​ to maximize directly the prediction confidence in the target domain. Here we consider the Shannon Entropy ([Shannon](http://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf)). During training, we jointly optimize the supervised segmentation loss $\mathcal{L}\_{se}$ on source samples and the unsupervised entropy loss $\mathcal{L}\_{ent}$​​ on target samples.
+
+### Entropy minimization by adverarial learning
+
+A limitation of the entropy loss is related to the absence of structural dependencies between local semantics. This is caused by the aggregation of the pixel-wise prediction entropies by summation. We address this through a unified adversarial training framework which minimizes indirectly the entropy of target data, by encouraging it to become similar to the source one. This allows the exploitation of the structural consistency between the domains. To this end, we formulate the UDA task as minimizing distribution distance between source and target on the *weighted self-information* space. Since the trained model produces naturally low-entropy predictions on source-like images, by aligning weighted self-information distributions of target and source domains, we reach the same behavior on target-like data.
+
+We perform the adversarial adaptation on weighted self-information maps using a fully-convolutional discriminator network $D$. The discriminator produces domain classification outputs, *i.e.,** class label $1$ (resp. $0$) for the source (resp. target) domain. We train $D$ to discriminate outputs coming from source and target images, and at the same time, train the segmentation network to fool the discriminator.
+
+
+## Experiments
+
+We evaluate our approaches on the challenging *synthetic-2-real* unsupervised domain adaptation set-ups. Models are trained on fully-annotated synthetic data and are validated on real-world data. In such set-ups, the models have access to some unlabeled real images during training.
+
+### Semantic Segmentation
+
+### UDA for object detection
+
 
 ## References
 
