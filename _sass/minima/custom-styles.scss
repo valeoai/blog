@@ -42,6 +42,10 @@ a:focus, a:hover{
     outline: 0 !important;
 }
 
+a:visited {
+  color: blue;
+  /*color: #0288d1;*/
+}
 
 .katex {
     color: #125d7a !important;
