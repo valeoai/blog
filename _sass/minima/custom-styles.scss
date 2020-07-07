@@ -30,21 +30,21 @@ a:active{
     outline: 0;
     /*text-decoration: none;*/
     /*color: #0077C8;*/
-    color: #ca7136;
-    outline: 0;
-    text-decoration: none; 
+    color: #ca7136 !important;
+    outline: 0 !important;
+    text-decoration: none !important; 
 }
 
 
 a:focus, a:hover{
     color: #97d03b !important;
-    text-decoration: none; 
-    outline: 0;
+    text-decoration: none !important; 
+    outline: 0 !important;
 }
 
 
 .katex {
-    color: #125d7a;
+    color: #125d7a !important;
 }
 
 
