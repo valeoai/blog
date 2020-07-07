@@ -34,8 +34,9 @@ img.emoji{
 }
 
 .post-link{
-    font-weight: normal;
-    color: #4a788c
+    font-weight: normal!;
+    color: #4a788c;
+    opacity: 100% !important;
 }
 
 // change padding of headings
@@ -156,7 +157,6 @@ h6:hover .anchor-link {
   margin-bottom: .5rem !important;
 //   color: #585858;
   color: #4a788c;
-     
   font-size: 115%;
 }
 
