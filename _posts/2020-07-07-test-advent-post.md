@@ -8,8 +8,6 @@ hide: false
 image: images/advent/qualitative_results.png
 ---
 
-# ADVENT: Adversarial Entropy Minimization for Domain Adaptation in Semantic Segmentation
-
 
 Visual perception is a remarkable ability that human drivers leverage for understanding their surroundings and for supporting the multiple micro-decisions needed in traffic. Since many years, researchers have been working on mimicking this human capability by means of computer algorithms. This research field is known as computer vision and it has seen impressive progress and wide adoption. Most of the modern *computer vision* systems rely on Deep Neural Networks (DNNs) which are powerful and widely employed tools able to learn from large amounts of data and make accurate predictions. In autonomous driving, DNN-based visual perception is also at the heart of the complex architectures under intelligent cars, and supports downstream decisions of the vehicle, *e.g.,* steering, braking, signaling, etc.
 
