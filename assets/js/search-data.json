@@ -36,6 +36,15 @@
 
   
   
+      ,"page0": {
+          "title": "Projects",
+          "content": "List of projects to be added here .",
+          "url": "https://valeoai.github.io/blog/projects/",
+          "relUrl": "/projects/",
+          "date": ""
+      }
+      
+  
 
   
       ,"page1": {
@@ -51,17 +60,7 @@
   
 
   
-      ,"page3": {
-          "title": "Projects",
-          "content": "List of projects to be added here .",
-          "url": "https://valeoai.github.io/blog/projects/",
-          "relUrl": "/projects/",
-          "date": ""
-      }
-      
-  
 
-  
   
 
   
@@ -69,6 +68,7 @@
   
   
 
+  
   
 
   
