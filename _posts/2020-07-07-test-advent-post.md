@@ -51,7 +51,30 @@ We evaluate our approaches on the challenging *synthetic-2-real* unsupervised do
 
 ### Semantic Segmentation
 
+To train our models, we use either GTA5 {% cite richter2016playing %} or SYNTHIA {% cite ros2016synthia %} as source synthetic data, along with the training split of Cityscapes dataset {% cite cordts2016cityscapes %} as target domain data.
+
+In *Table 1* we report our results on semantic segmentation from models trained on GTA5 $\rightarrow$ Cityscapes and from SYNTHIA $\rightarrow$ Cityscapes. We compare here only with the top performing method Adapt-SegMap {% cite tsai2018learning %}, while additional baselines and related methods are covered in the paper.
+
+![]({{ site.baseurl }}/images/advent/advent_table1.png "Table 1: Segmentation performance in mIoU with ResNet-101 based model and Deeplab-V2 as the segmentation network. We show results of our approaches using the direct entropy loss (MinEnt) and using adversarial training (AdvEnt).")
+
+Our first approach of direct entropy minimization (*MinEnt*) achieves comparable performance to state-of-the-art baselines. The light overhead of the entropy loss makes training time shorter for the MinEnt model, while being easier train compared to adversarial networks. Our second approach using adversarial training on the weighted self-information space, noted as *AdvEnt*, shows consistent improvement to the baselines. In general, AdvEnt works better than MinEnt, confirming the importance of structural adaptation. The two approaches are complementary as their combination boosts performance further.
+
+In *Figure 3*, we illustrate a few qualitative results of our models. Without domain adaptation, the model trained only on source supervision produces noisy segmentation predictions as well as high entropy activations, with a few exceptions on some classes like *“building”* and *“car”*. However, there are many confident predictions (low entropy) which are completely wrong. Our models, on the other hand, manage to produce correct predictions at high level of confidence.
+
+
+
+![]({{ site.baseurl }}/images/advent/advent_qualitative.png "Figure 3: Segmentation and detection qualitative results. Segmentation on Cityscapes validation set with ResNet-101 + DeepLab-V2; Detection on Cityscapes-foggy with VGG-16 as the backbone and SSD.")
+
 ### UDA for object detection
+
+The proposed entropy-based approaches are not limited to semantic segmentation and can be applied to UDA for other recognition tasks, e.g. object detection. We conducted experiments in the UDA object detection set-up Cityscapes $\rightarrow$ Cityscapes-Foggy, similar to the one in {% cite chen2018domain %}. We report quantitative results in *Table 2* and qualitative ones in *Figure 3*. In spite of the unfavorable factors, our improvement over the baseline ($+11.5\%$ mAP using AdvEnt) is larger than the one reported in {% cite chen2018domain %} ($+8.8\%$). Additional experiments and implementation details can be found in the paper. These encouraging preliminary results suggest the feasibility of applying entropy-based approached on UDA for detection.
+
+![]({{ site.baseurl }}/images/advent/advent_table2.png "Table 2: Object detection performance on Cityscapes Foggy.")
+
+## Conclusion
+
+In this work, we propose two approaches for unsupervised domain adaptation reaching state-of-the-art performances on standard synthetic-2-real benchmarks. Interestingly the method can be easily extended to UDA for object detection with promising preliminary results.
+Check out our [paper](http://openaccess.thecvf.com/content_CVPR_2019/html/Vu_ADVENT_Adversarial_Entropy_Minimization_for_Domain_Adaptation_in_Semantic_Segmentation_CVPR_2019_paper.html) to find out more about intuitions, experiments and implementation details for AdvEnt and try out our [code](https://github.com/valeoai/ADVENT).
 
 
 ## References
