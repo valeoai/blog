@@ -1,13 +1,14 @@
 ---
 toc: true
 layout: post
-description: "A minimal example of using markdown with fastpages."
+description: "Unsupervised domain adaptation for semantic segmentation."
 categories: [domain adaptation, semantic segmentation, object detection ]
 title: "ADVENT - Adversarial Entropy Minimization for Domain Adaptation in Semantic Segmentation"
 hide: false
 image: images/advent/qualitative_results.png
 ---
 
+*This post describes our recent work[^1] on unsupervised domain adaptation for semantic segmentation presented at CVPR 2019. ADVENT is a flexible technique for bridging the gap between two different domains through entropy minimization. Our work builds upon a simple observation: models trained only on source domain tend to produce over-confident, i.e., low-entropy, predictions on source-like images and under-confident, i.e., high-entropy, predictions on target-like ones. Consequently by minimizing the entropy on the target domain, we make the feature distributions from the two domains more similar. We show that our approach achieves competitive performances on standard semantic segmentation benchmarks and that it can be successfully extended to other tasks such as object detection.*
 
 Visual perception is a remarkable ability that human drivers leverage for understanding their surroundings and for supporting the multiple micro-decisions needed in traffic. Since many years, researchers have been working on mimicking this human capability by means of computer algorithms. This research field is known as computer vision and it has seen impressive progress and wide adoption. Most of the modern *computer vision* systems rely on Deep Neural Networks (DNNs) which are powerful and widely employed tools able to learn from large amounts of data and make accurate predictions. In autonomous driving, DNN-based visual perception is also at the heart of the complex architectures under intelligent cars, and supports downstream decisions of the vehicle, *e.g.,* steering, braking, signaling, etc.
 
