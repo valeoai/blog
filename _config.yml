@@ -69,12 +69,6 @@ include:
   - _pages
 
 
-header_pages:
- - projects.md
- - about.md
- - tags.html
- - search.html
-
 # This specifies what badges are turned on by default for notebook posts.
 default_badges:
   github: true
