@@ -495,6 +495,8 @@ a, a:hover, a:focus, a:active { outline: 0; /*text-decoration: none;*/ /*color: 
 
 a:focus, a:hover { color: #97d03b !important; text-decoration: none !important; outline: 0 !important; }
 
+a:visited { color: blue; /*color: #0288d1;*/ }
+
 .katex { color: #125d7a !important; }
 
 .width-5 * { width: 5%; }
