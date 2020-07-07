@@ -343,7 +343,7 @@ img.emoji { display: inline !important; vertical-align: baseline !important; }
 
 .post-content p, .post-content li { font-size: 20px; color: #515151; }
 
-.post-link { font-weight: normal; color: #4a788c; opacity: 100% !important; }
+.post-link { font-weight: normal; /*color: #4a788c;*/ /*opacity: 100% !important;*/ }
 
 h1 { margin-top: 2.5rem !important; }
 
@@ -486,6 +486,8 @@ table td { text-overflow: ellipsis; overflow: hidden; max-width: 15em; }
 .highlight .gd { color: #ff5555; }
 
 .site-header { border-top: 6px solid #4a788c; }
+
+.site-nav { font-size: 16pt; }
 
 .site-footer { padding: 5px 0; }
 
