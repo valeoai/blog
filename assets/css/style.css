@@ -489,9 +489,9 @@ table td { text-overflow: ellipsis; overflow: hidden; max-width: 15em; }
 
 .site-footer { padding: 5px 0; }
 
-.footer-heading { margin-bottom: 5px; }
+.footer-heading { margin-bottom: 10px; }
 
-a, a:hover, a:focus, a:active { outline: 0; /*text-decoration: none;*/ /*color: #0077C8;*/ color: #ca7136; outline: 0; }
+a, a:hover, a:focus, a:active { outline: 0; /*text-decoration: none;*/ /*color: #0077C8;*/ color: #ca7136; outline: 0; text-decoration: none; }
 
 a:focus, a:hover { color: #97d03b !important; text-decoration: none; outline: 0; }
 
