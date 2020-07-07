@@ -118,3 +118,18 @@ kramdown:
   syntax_highlighter: rouge
 
 
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+
+
+# Defaults
+defaults:
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: page
+  
