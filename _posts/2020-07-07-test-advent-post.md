@@ -30,6 +30,10 @@ The main approaches for UDA include discrepancy minimization between source and 
 
 We present our two proposed approaches for entropy minimization using (i) an unsupervised entropy loss and (ii) adversarial training. To build our models, we start from existing semantic segmentation frameworks and add an additional network branch used for domain adaptation. *Figure 2* illustrates our architectures.
 
+
+![]({{ site.baseurl }}/images/advent/advent_approach.jpg "Figure 2: <em>Approach overview.</em> First, direct entropy minimization decreases the entropy of the target $P\_{x\_t}$, which is equivalent to minimizing the sum of weighted self-information maps $I\_{x\_t}$​​. In the second approach, we use adversarial training to enforce the consistency in $P\_{x}$ across domains. Red arrows are used for target domain, blue arrows for source.")
+
+
 ## References
 
 {% bibliography --cited %}
