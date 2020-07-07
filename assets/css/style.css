@@ -343,7 +343,7 @@ img.emoji { display: inline !important; vertical-align: baseline !important; }
 
 .post-content p, .post-content li { font-size: 20px; color: #515151; }
 
-.post-link { font-weight: normal; color: #4a788c; }
+.post-link { font-weight: normal; color: #4a788c; opacity: 100% !important; }
 
 h1 { margin-top: 2.5rem !important; }
 
@@ -485,10 +485,14 @@ table td { text-overflow: ellipsis; overflow: hidden; max-width: 15em; }
 
 .highlight .gd { color: #ff5555; }
 
-.site-header { border-top: 5px solid #4a788c !important; }
+.site-header { border-top: 7px solid #4a788c; }
 
 .site-footer { padding: 5px 0; }
 
 .footer-heading { margin-bottom: 5px; }
+
+a, a:hover, a:focus, a:active { outline: 0; /*text-decoration: none;*/ /*color: #0077C8;*/ color: #ca7136; }
+
+a:focus, a:hover { color: #97d03b !important; text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
