@@ -343,7 +343,7 @@ img.emoji { display: inline !important; vertical-align: baseline !important; }
 
 .post-content p, .post-content li { font-size: 20px; color: #515151; }
 
-.post-link { font-weight: normal; }
+.post-link { font-weight: normal; color: #4a788c; }
 
 h1 { margin-top: 2.5rem !important; }
 
@@ -485,7 +485,7 @@ table td { text-overflow: ellipsis; overflow: hidden; max-width: 15em; }
 
 .highlight .gd { color: #ff5555; }
 
-.site-header { border-top: 7px solid #4a788c !important; }
+.site-header { border-top: 5px solid #4a788c !important; }
 
 .site-footer { padding: 5px 0; }
 
