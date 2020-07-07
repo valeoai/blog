@@ -12,7 +12,7 @@
 
 
 .site-header {
-  border-top: 5px solid #4a788c !important;      
+  border-top: 5px solid #4a788c;      
 }
 
 .site-footer {
@@ -23,8 +23,18 @@
   margin-bottom: 5px;
 }
 
+a,
+a:hover,
+a:focus,
+a:active{
+    outline: 0;
+    /*text-decoration: none;*/
+    color: #0077C8;
+    color:; #ca7136
+}
+
+
 a:focus, a:hover{
     color: #97d03b !important;
-  /*color: #a1d700; */
     text-decoration: none; 
 }
