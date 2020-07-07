@@ -3,7 +3,8 @@ toc: true
 layout: post
 description: A minimal example of using markdown with fastpages.
 categories: [domain adaptation, semantic segmentation, object detection ]
-title: ADVENT: Adversarial Entropy Minimization for Domain Adaptation in Semantic Segmentation
+title: ADVENT - Adversarial Entropy Minimization for Domain Adaptation in Semantic Segmentation
+hide: false
 ---
 
 # ADVENT: Adversarial Entropy Minimization for Domain Adaptation in Semantic Segmentation
