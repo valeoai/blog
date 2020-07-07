@@ -22,6 +22,8 @@ Here we are working on *Unsupervised DA* (UDA), which is a more challenging task
 
 ![]({{ site.baseurl }}/images/advent/advent_teaser.png "Figure 1: Proposed entropy-based unsupervised domain adaptation for semantic segmentation. The top two rows show results on source and target domain scenes of the model trained without adaptation. The bottom row shows the result on the same target domain scene of the model trained with entropy-based adaptation. The left and right columns visualize respectively the semantic segmentation outputs and the corresponding prediction entropy maps.")
 
+.width-10[![]({{ site.baseurl }}/images/advent/advent_teaser.png "Figure 1: Proposed entropy-based unsupervised domain adaptation for semantic segmentation. The top two rows show results on source and target domain scenes of the model trained without adaptation. The bottom row shows the result on the same target domain scene of the model trained with entropy-based adaptation. The left and right columns visualize respectively the semantic segmentation outputs and the corresponding prediction entropy maps.")]
+
 
 The main approaches for UDA include discrepancy minimization between source and target feature distributions usually achieved via adversarial training  {% cite ganin2015unsupervised %}, {% cite tzeng2017adversarial %}, self-training with pseudo-labels {% cite zou2018unsupervised %} and generative approaches {% cite hoffman2018cycada %}, {% cite wu2018dcan %}.
 
