@@ -1,7 +1,7 @@
 ---
 toc: true
 layout: post
-description: "Unsupervised domain adaptation for semantic segmentation."
+description: "A flexible technique for unsupervised domain adaptation for structured output tasks."
 categories: [domain adaptation, semantic segmentation, object detection ]
 title: "ADVENT - Adversarial Entropy Minimization for Domain Adaptation in Semantic Segmentation"
 hide: false
