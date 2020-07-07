@@ -109,7 +109,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      7 min read
     
 </span></p>
 
@@ -133,8 +133,18 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <ul class="section-nav">
 <li class="toc-entry toc-h2"><a href="#bridging-domains">Bridging domains</a></li>
-<li class="toc-entry toc-h2"><a href="#approach">Approach</a></li>
-<li class="toc-entry toc-h2"><a href="#direct-entropy-minimization">Direct entropy minimization</a></li>
+<li class="toc-entry toc-h2"><a href="#approach">Approach</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#direct-entropy-minimization">Direct entropy minimization</a></li>
+<li class="toc-entry toc-h3"><a href="#entropy-minimization-by-adverarial-learning">Entropy minimization by adverarial learning</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#experiments">Experiments</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#semantic-segmentation">Semantic Segmentation</a></li>
+<li class="toc-entry toc-h3"><a href="#uda-for-object-detection">UDA for object detection</a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h2"><a href="#references">References</a></li>
 </ul><p><em>This post describes our <a href="https://openaccess.thecvf.com/content_CVPR_2019/html/Vu_ADVENT_Adversarial_Entropy_Minimization_for_Domain_Adaptation_in_Semantic_Segmentation_CVPR_2019_paper.html">recent work</a> on unsupervised domain adaptation for semantic segmentation presented at CVPR 2019. ADVENT is a flexible technique for bridging the gap between two different domains through entropy minimization. Our work builds upon a simple observation: models trained only on source domain tend to produce over-confident, i.e., low-entropy, predictions on source-like images and under-confident, i.e., high-entropy, predictions on target-like ones. Consequently by minimizing the entropy on the target domain, we make the feature distributions from the two domains more similar. We show that our approach achieves competitive performances on standard semantic segmentation benchmarks and that it can be successfully extended to other tasks such as object detection.</em></p>
 
@@ -162,10 +172,28 @@ window.onload = wrap_img;
 
 <p><img src="/blog/images/advent/advent_approach.jpg" alt="" title="Figure 2: Approach overview. First, direct entropy minimization decreases the entropy of the target Pxt, which is equivalent to minimizing the sum of weighted self-information maps Ixt​​. In the second approach, we use adversarial training to enforce the consistency in Px across domains. Red arrows are used for target domain, blue arrows for source."></p>
 
-<h2 id="direct-entropy-minimization">
-<a class="anchor" href="#direct-entropy-minimization" aria-hidden="true"><span class="octicon octicon-link"></span></a>Direct entropy minimization</h2>
+<h3 id="direct-entropy-minimization">
+<a class="anchor" href="#direct-entropy-minimization" aria-hidden="true"><span class="octicon octicon-link"></span></a>Direct entropy minimization</h3>
 
 <p>On the source domain we train our model, denoted as $F$, as usual using a supervised loss. For the target domain, we do not have annotations and we can no longer use the segmentation loss to train $F$. We notice that models trained only on source domain tend to produce over-confident predictions on source-like images and under-confident predictions on target-like ones. Motivated by this observation, we propose a supervision signal that could leverage visual information from the target samples, in spite of the lack of annotations. The objective is to constrain $F$ to produce high-confident predictions on target samples similarly to source samples. To this effect, we introduce the entropy loss $\mathcal{L}_{ent}$​ to maximize directly the prediction confidence in the target domain. Here we consider the Shannon Entropy (<a href="http://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf">Shannon</a>). During training, we jointly optimize the supervised segmentation loss $\mathcal{L}_{se}$ on source samples and the unsupervised entropy loss $\mathcal{L}_{ent}$​​ on target samples.</p>
+
+<h3 id="entropy-minimization-by-adverarial-learning">
+<a class="anchor" href="#entropy-minimization-by-adverarial-learning" aria-hidden="true"><span class="octicon octicon-link"></span></a>Entropy minimization by adverarial learning</h3>
+
+<p>A limitation of the entropy loss is related to the absence of structural dependencies between local semantics. This is caused by the aggregation of the pixel-wise prediction entropies by summation. We address this through a unified adversarial training framework which minimizes indirectly the entropy of target data, by encouraging it to become similar to the source one. This allows the exploitation of the structural consistency between the domains. To this end, we formulate the UDA task as minimizing distribution distance between source and target on the <em>weighted self-information</em> space. Since the trained model produces naturally low-entropy predictions on source-like images, by aligning weighted self-information distributions of target and source domains, we reach the same behavior on target-like data.</p>
+
+<p>We perform the adversarial adaptation on weighted self-information maps using a fully-convolutional discriminator network $D$. The discriminator produces domain classification outputs, *i.e.,** class label $1$ (resp. $0$) for the source (resp. target) domain. We train $D$ to discriminate outputs coming from source and target images, and at the same time, train the segmentation network to fool the discriminator.</p>
+
+<h2 id="experiments">
+<a class="anchor" href="#experiments" aria-hidden="true"><span class="octicon octicon-link"></span></a>Experiments</h2>
+
+<p>We evaluate our approaches on the challenging <em>synthetic-2-real</em> unsupervised domain adaptation set-ups. Models are trained on fully-annotated synthetic data and are validated on real-world data. In such set-ups, the models have access to some unlabeled real images during training.</p>
+
+<h3 id="semantic-segmentation">
+<a class="anchor" href="#semantic-segmentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Semantic Segmentation</h3>
+
+<h3 id="uda-for-object-detection">
+<a class="anchor" href="#uda-for-object-detection" aria-hidden="true"><span class="octicon octicon-link"></span></a>UDA for object detection</h3>
 
 <h2 id="references">
 <a class="anchor" href="#references" aria-hidden="true"><span class="octicon octicon-link"></span></a>References</h2>
