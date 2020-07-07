@@ -42,7 +42,7 @@ minima:
     # twitter: valeoai
     # github: valeoai
   # skin: dark
-  skin: solarized
+  # skin: solarized
 
 # Set this to true to get LaTeX math equation support
 use_math: yes
@@ -51,7 +51,7 @@ use_math: yes
 show_description: true
 
 # Set this to true to display image previews on home page, if they exist
-show_image: false
+show_image: true
 
 # Set this to true to display tags on each post
 show_tags: true
