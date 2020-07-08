@@ -35,7 +35,7 @@ We present our two proposed approaches for entropy minimization using (i) an uns
 
 <span class="figcaption">Figure 2: Approach overview. First, direct entropy minimization decreases the entropy of the target $P\_{x\_t}$ $$P_{x_t}$$, which is equivalent to minimizing the sum of weighted self-information maps $I\_{x\_t}$. In the second approach, we use adversarial training to enforce the consistency in $P\_x$ across domains. Red arrows are used for target domain, blue arrows for source.</span>
 
-<span class=figcaption>Figure 2: Approach overview. First, direct entropy minimization decreases the entropy of the target $P\_{x\_t}$ $$P_{x_t}$$, which is equivalent to minimizing the sum of weighted self-information maps $I\_{x\_t}$. In the second approach, we use adversarial training to enforce the consistency in $P\_x$ across domains. Red arrows are used for target domain, blue arrows for source.</span>
+<figcaption>Figure 2: Approach overview. First, direct entropy minimization decreases the entropy of the target $P\_{x\_t}$ $$P_{x_t}$$, which is equivalent to minimizing the sum of weighted self-information maps $I\_{x\_t}$. In the second approach, we use adversarial training to enforce the consistency in $P\_x$ across domains. Red arrows are used for target domain, blue arrows for source.</figcaption>
 
 
 ### Direct entropy minimization
