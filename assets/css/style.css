@@ -493,14 +493,14 @@ table td { text-overflow: ellipsis; overflow: hidden; max-width: 15em; }
 .highlight .gd { color: #ff5555; }
 
 /** Wrapper */
-.wrapper { max-width: calc(920px - 30px); margin-right: auto; margin-left: auto; padding-right: 30px / 2; padding-left: 30px / 2; }
+.wrapper { max-width: calc(920px - 30px); margin-right: auto; margin-left: auto; padding-right: 30px / 2; padding-left: 30px / 2; margin-top: 30px; /* Add a top margin to avoid content overlay */ }
 
 @media screen and (min-width: 920px) { .wrapper { max-width: calc(920px - (30px * 2)); padding-right: 30px; padding-left: 30px; } }
 
 /*fix for scrollbar repositioning*/
 html { overflow-y: scroll; }
 
-.site-header { border-top: 6px solid #4a788c; position: fixed; /* Set the navbar to fixed position */ top: 0; /* Position the navbar at the top of the page */ width: 100%; /* Full width */ overflow: hidden; background-color: #fdfdfd; }
+.site-header { border-top: 6px solid #4a788c; position: fixed; /* Set the navbar to fixed position */ top: 0; /* Position the navbar at the top of the page */ width: 100%; /* Full width */ overflow: hidden; background-color: #fdfdfd; z-index: 100; }
 
 .site-title { /*  @include relative-font-size(1.625); font-weight: 300; letter-spacing: -1px; margin-bottom: 0; float: left; */ font-size: 20pt; }
 
