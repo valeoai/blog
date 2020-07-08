@@ -544,7 +544,7 @@ a:focus, a:hover { /*color: #97d03b !important;*/ /*color: #ca7136 !important;*/
 
 .dashed { border-style: dashed; }
 
-.caption { text-align: center; /*font-size: .8rem;*/ font-style: italic; color: light-grey; display: block; }
+.caption { text-align: center; /*font-size: .8rem;*/ font-style: italic; color: light-grey; display: block; padding-bottom: 1.4; }
 
 /*----------------*/
 /*images*/
