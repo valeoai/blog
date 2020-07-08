@@ -30,7 +30,7 @@ img.emoji{
         text-rendering: optimizeLegibility !important;
         font-family: "Segoe UI", SegoeUI, Roboto, "Segoe WP", "Helvetica Neue", "Helvetica", "Tahoma", "Arial", sans-serif !important;
         /*margin: auto;*/
-        margin-top: 40px;
+        /*margin-top: 40px;*/
 
 }
 
@@ -46,12 +46,12 @@ img.emoji{
     /*color: #4a788c;*/
     /*opacity: 100% !important;*/
 }
-/*
-.content {
-  margin: auto;
-  text-align: justify;
 
-}*/
+.content {
+  /*margin: auto;*/
+  /*text-align: justify;*/
+  margin-top: 40px;
+}
 
 // change padding of headings
 h1 {
