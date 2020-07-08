@@ -16,5 +16,5 @@ The aim of this blog is to provide an accessible, general-audience medium for va
 If you wish to translate our blog posts, please contact the authors of the posts, as they own the copyright, and copy the editors, `andrei.bursuc@valeo.com` in your email.
 
 ## Acknowledgments
-The design of this blog is based upon the [Jekyll](https://jekyllrb.com/) theme [Minima](https://github.com/jekyll/minima). 
-The site is built with [fastpages](https://fastpages.fast.ai/) and hosted on [Github](https://github.com/).
+This site is built with [fastpages](https://fastpages.fast.ai/) and hosted on [Github](https://github.com/).
+The design is based upon the [Jekyll](https://jekyllrb.com/) theme [Minima](https://github.com/jekyll/minima). 
