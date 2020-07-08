@@ -345,6 +345,8 @@ img.emoji { display: inline !important; vertical-align: baseline !important; }
 
 .post-link { font-weight: normal; /*color: #4a788c;*/ /*opacity: 100% !important;*/ }
 
+.content { margin: auto; text-align: justify; }
+
 h1 { margin-top: 2.5rem !important; color: #4a788c; }
 
 h2 { margin-top: 2rem !important; color: #4a788c; }
