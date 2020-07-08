@@ -497,6 +497,9 @@ table td { text-overflow: ellipsis; overflow: hidden; max-width: 15em; }
 
 @media screen and (min-width: 920px) { .wrapper { max-width: calc(920px - (30px * 2)); padding-right: 30px; padding-left: 30px; } }
 
+/*fix for scrollbar repositioning*/
+html { overflow-y: scroll; }
+
 .site-header { border-top: 6px solid #4a788c; }
 
 .site-title { /*  @include relative-font-size(1.625); font-weight: 300; letter-spacing: -1px; margin-bottom: 0; float: left; */ font-size: 20pt; }
