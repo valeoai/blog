@@ -15,15 +15,15 @@
  * Wrapper
  */
 .wrapper {
-  max-width: calc(1000px - 30px));
+  max-width: calc(1000px - 30px);
   margin-right: auto;
   margin-left: auto;
   padding-right: 30px / 2;
   padding-left: 30px / 2;
   @extend %clearfix;
 
-  @media screen and (min-width: $on-large) {
-    max-width: calc(1000px - 30px * 2));
+  @media screen and (min-width: 1000px) {
+    max-width: calc(1000px - (30px * 2));
     padding-right: 30px;
     padding-left: 30px;
   }
