@@ -4,7 +4,6 @@ title: Projects
 permalink: /projects/
 ---
 
-<span style="background-color: #FFFF00">Andrei: here I was thinking of adding links to project pages we have made for publications. The idea is inspired from [V. Koltun's page](http://vladlen.info/projects/) and the text taken from Patrick's page :) We might not need the text and we can just group them by topics.</span>
 
 ### Domain adaptation
 Deep learning and reinforcement learning are key technologies for autonomous driving. One of the challenges they face is to adapt to conditions which differ from those met during training. To improve systems’ performance in such situations, we explore so-called *“domain adaptation”* techniques.
