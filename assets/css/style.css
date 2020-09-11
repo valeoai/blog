@@ -340,13 +340,13 @@ img.emoji { display: inline !important; vertical-align: baseline !important; }
 .post figcaption { text-align: center; font-size: .8rem; font-style: italic; color: light-grey; }
 
 /*.post .figcaption .katex { font-size: .8rem; } */
-.page-content { -webkit-font-smoothing: antialiased !important; text-rendering: optimizeLegibility !important; font-family: "Segoe UI", SegoeUI, Roboto, "Segoe WP", "Helvetica Neue", "Helvetica", "Tahoma", "Arial", sans-serif !important; /*margin: auto;*/ margin-top: 40px; font-size: 16pt; }
+.page-content { -webkit-font-smoothing: antialiased !important; text-rendering: optimizeLegibility !important; font-family: "Segoe UI", SegoeUI, Roboto, "Segoe WP", "Helvetica Neue", "Helvetica", "Tahoma", "Arial", sans-serif !important; /*margin: auto;*/ margin-top: 40px; /*font-size: 16pt;*/ }
 
 .post-content p, .post-content li { font-size: 20px; color: #515151; text-align: justify; }
 
 .post-link { font-weight: normal; /*color: #4a788c;*/ /*opacity: 100% !important;*/ }
 
-.content { /*margin: auto;*/ /*text-align: justify;*/ /*margin-top: 40px;*/ }
+.content { /*margin: auto;*/ /*text-align: justify;*/ /*margin-top: 40px;*/ font-size: 20px; }
 
 h1 { margin-top: 2.5rem !important; color: #4a788c; }
 
