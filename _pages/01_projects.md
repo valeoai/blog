@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 ---
 
-
+# Projects
 
 {% for projects in site.projects %}
 
