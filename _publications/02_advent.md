@@ -40,7 +40,7 @@ permalink: /publications/advent-dummy/
     <a href="{{ page.slides_url }}"><i class="far fa-file-pdf"></i> Slides</a>&nbsp;&nbsp;
     {% endif %}
     {% if page.bib_url %}
-    <a href="{{ page.bib_url}}"><i class="far fa-file-alt"></i> BibTex</a>&nbsp;&nbsp;
+    <a href="{{ page.bib_url}}"><i class="far fa-file-alt"></i> BibTeX</a>&nbsp;&nbsp;
     {% endif %}
   </p>
 </div>
@@ -67,7 +67,7 @@ permalink: /publications/advent-dummy/
 <br>
 <hr>
 
-<h2  align="center">Bibtex</h2>
+<h2  align="center">BibTeX</h2>
 <left>
   <pre class="bibtex-box">
 @inproceedings{vu2018advent,
