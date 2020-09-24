@@ -32,8 +32,12 @@ url: /projects/domain-adaptation/
     </a>
   </div>
    <h3><a href="{{site.url  | append: site.baseurl | append: pub.permalink}}">{{ pub.title }}</a></h3>
-  <p class="b">{{ pub.authors }}</p>
-  <p class="c">{{ pub.venue_long }}, {{ pub.year }}</p>
+ <!--  <p class="b">{{ pub.authors }}</p>
+  <p class="c">{{ pub.venue_long }}, {{ pub.year }}</p> -->
+  <p class="b">{{ pub.authors }}
+    <br>
+    <em>{{ pub.venue_long }}, {{ pub.year }}</em>
+   </p>
 </div>
 
 <br>
