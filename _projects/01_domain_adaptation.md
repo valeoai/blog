@@ -19,12 +19,11 @@ url: /projects/domain-adaptation/
 <h2>Publications</h2>
 
 {% assign publications = site.publications | sort: "year" | reverse %}
+{% assign publications = publications | where:"hide",false %}
+{% assign publications = publications | where:"category","domain adaptation" %}
+
 
 {% for pub in publications %}
-
-   
-{% if pub.category == "domain adaptation" %}
-
 
 <div class="pubitem">
   <div class="pubteaser">
@@ -42,10 +41,5 @@ url: /projects/domain-adaptation/
 {% if forloop.last == false %}
 <hr>
 {% endif %}
-
-
-
-{% endif %}
-
 
 {% endfor %} 
