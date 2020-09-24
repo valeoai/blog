@@ -20,12 +20,14 @@ permalink: /projects/
    <h3><a href="{{site.url  | append: site.baseurl | append: projects.permalink}}">{{ projects.title }}</a></h3>
   <p>{{ projects.description }}</p>
 </div>
-
 <br>
-<!-- <br> -->
+
+<!-- for some reason the first line is weirdly formated -->
+{% if forloop.first == true %}
+<br>
+{% endif %}
 
 {% if forloop.last == false %}
-
 <hr>
 {% endif %}
 
