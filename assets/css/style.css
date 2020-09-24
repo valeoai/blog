@@ -348,7 +348,7 @@ img.emoji { display: inline !important; vertical-align: baseline !important; }
 
 .content { /*margin: auto;*/ /*text-align: justify;*/ /*margin-top: 40px;*/ /*font-size: 20px;*/ }
 
-h1 { margin-top: 2.5rem !important; color: #4a788c; font-size: 120%; }
+h1 { margin-top: 2.5rem !important; color: #4a788c; font-size: 120%; /*font-size: 100%;*/ }
 
 h2 { margin-top: 2rem !important; color: #4a788c; }
 
@@ -362,7 +362,7 @@ h1 code, h2 code, h3 code, h4 code { font-size: 100%; }
 
 pre { margin-bottom: 1.5rem !important; }
 
-.post-title { margin-top: .5rem !important; }
+.post-title { margin-top: .25rem !important; }
 
 li h3, li h4 { margin-top: .05rem !important; margin-bottom: .05rem !important; }
 
@@ -509,6 +509,30 @@ html { overflow-y: scroll; }
 a, a:hover, a:focus, a:active { outline: 0; /*text-decoration: none;*/ /*color: #0077C8;*/ /*color: #ca7136 !important;*/ color: #97d03b !important; outline: 0 !important; text-decoration: none !important; }
 
 a:focus, a:hover { /*color: #97d03b !important;*/ /*color: #ca7136 !important;*/ /*color: #4a788c !important;*/ color: #bb9f06 !important; text-decoration: none !important; outline: 0 !important; }
+
+.pubitem { margin: 2em 0; /*line-height: 1em;*/ font-size: 14px; line-height: 1.5; /*valign: top;*/ margin-bottom: 1.5em; }
+
+.pubtitle { margin-bottom: .5em; line-height: 1.2em; /*font-weight: bold;*/ }
+
+.pubauthors, .pubinfo { font-size: 75%; margin-bottom: .75em; }
+
+.pubteaser { /*clear: both;*/ clear: left; /*margin-bottom: 1em;*/ }
+
+.pubteaser a { float: left; margin-right: 2em; }
+
+.pubteaser img { max-width: 196px; /*min-height: 64px;*/ min-height: 128px; /*width: 128px;*/ /*border: 1px solid black;*/ /*margin-bottom: 1.2em;*/ }
+
+.publinks { font-size: 75%; }
+
+.publication-authors { margin: 0.25rem 0; }
+
+.publication-info { margin: 0.5rem 0; }
+
+.publication-teaser { margin: 2em; /*margin: auto;*/ text-align: center; }
+
+.publication-teaser img { border: none; max-width: 700px; max-height: 500px; }
+
+.publication { width: 900px; min-height: 20px; margin: 0 auto; /* top and bottom, right and left */ /*border: 1px solid #000;*/ border: none; text-align: left; padding: 1em 1em 1em 1em; /* top, right, bottom, left */ color: #4d4b59; background: #FFFFFF; }
 
 /*a:visited { color: #0288d1; color: blue; }*/
 /*----------------*/
