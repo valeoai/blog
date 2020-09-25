@@ -11,10 +11,8 @@ url: /projects/domain-adaptation/
 
 
 <h1>{{page.title}}</h1> 
-<!-- <h3>Project overview</h3> -->
 <p>{{page.description}}</p>
 
-<!-- <hr> -->
 
 <h2>Publications</h2>
 
