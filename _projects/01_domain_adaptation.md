@@ -3,8 +3,7 @@ layout: project
 title: Domain adaptation
 permalink: /projects/domain-adaptation/
 description: Deep learning and reinforcement learning are key technologies for autonomous driving. One of the challenges they face is to adapt to conditions which differ from those met during training. To improve systems’ performance in such situations, we explore so-called <em>“domain adaptation”</em> techniques.
-# image: "images/projects/advent_teaser_small.png"
-image: "images/projects/domain_adaptation_small.png"
+image: "images/projects/domain_adaptation.jpg"
 category: project
 url: /projects/domain-adaptation/
 ---
