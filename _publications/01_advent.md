@@ -1,7 +1,7 @@
 ---
 layout: publication
-title: "AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation" 
-image: images/publications/advent/advent_qualitative_small.png
+title: "AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation"
+image: images/publications/advent/advent_qualitative.jpg
 hide: false
 category: [domain-adaptation]
 authors: Tuan Hung Vu, Himalaya Jain, Maxime Bucher, Matthieu Cord, and Patrick Pérez
