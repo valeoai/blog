@@ -3,36 +3,36 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Addressing Failure Prediction by Learning Model Confidence | valeo.ai blog</title>
+<title>TRADI: Tracking deep neural network weight distributions | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Addressing Failure Prediction by Learning Model Confidence" />
+<meta property="og:title" content="TRADI: Tracking deep neural network weight distributions" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Project page of ConfidNet" />
-<meta property="og:description" content="Project page of ConfidNet" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/confidnet/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/confidnet/" />
+<meta name="description" content="TRADI: Tracking deep neural network weight distributions Gianni Franchi&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Emanuel Aldea&nbsp;&nbsp; Severine Dubuisson&nbsp;&nbsp; Isabelle Bloch" />
+<meta property="og:description" content="TRADI: Tracking deep neural network weight distributions Gianni Franchi&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Emanuel Aldea&nbsp;&nbsp; Severine Dubuisson&nbsp;&nbsp; Isabelle Bloch" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/tradi/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/tradi/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/confidnet/teaser.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/tradi/tradi_teaser.jpg" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-10-05T16:15:15-05:00" />
 <script type="application/ld+json">
-{"description":"Project page of ConfidNet","@type":"BlogPosting","headline":"Addressing Failure Prediction by Learning Model Confidence","dateModified":"2020-10-05T16:15:15-05:00","datePublished":"2020-10-05T16:15:15-05:00","image":"https://valeoai.github.io/blog/images/publications/confidnet/teaser.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/confidnet/"},"url":"https://valeoai.github.io/blog/publications/confidnet/","@context":"https://schema.org"}</script>
+{"description":"TRADI: Tracking deep neural network weight distributions Gianni Franchi&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Emanuel Aldea&nbsp;&nbsp; Severine Dubuisson&nbsp;&nbsp; Isabelle Bloch","@type":"BlogPosting","headline":"TRADI: Tracking deep neural network weight distributions","dateModified":"2020-10-05T16:15:15-05:00","datePublished":"2020-10-05T16:15:15-05:00","image":"https://valeoai.github.io/blog/images/publications/tradi/tradi_teaser.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/tradi/"},"url":"https://valeoai.github.io/blog/publications/tradi/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai blog" /><link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Addressing Failure Prediction by Learning Model Confidence | valeo.ai blog</title>
+<title>TRADI: Tracking deep neural network weight distributions | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Addressing Failure Prediction by Learning Model Confidence" />
+<meta property="og:title" content="TRADI: Tracking deep neural network weight distributions" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Project page of ConfidNet" />
-<meta property="og:description" content="Project page of ConfidNet" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/confidnet/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/confidnet/" />
+<meta name="description" content="TRADI: Tracking deep neural network weight distributions Gianni Franchi&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Emanuel Aldea&nbsp;&nbsp; Severine Dubuisson&nbsp;&nbsp; Isabelle Bloch" />
+<meta property="og:description" content="TRADI: Tracking deep neural network weight distributions Gianni Franchi&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Emanuel Aldea&nbsp;&nbsp; Severine Dubuisson&nbsp;&nbsp; Isabelle Bloch" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/tradi/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/tradi/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/confidnet/teaser.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/tradi/tradi_teaser.jpg" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-10-05T16:15:15-05:00" />
 <script type="application/ld+json">
-{"description":"Project page of ConfidNet","@type":"BlogPosting","headline":"Addressing Failure Prediction by Learning Model Confidence","dateModified":"2020-10-05T16:15:15-05:00","datePublished":"2020-10-05T16:15:15-05:00","image":"https://valeoai.github.io/blog/images/publications/confidnet/teaser.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/confidnet/"},"url":"https://valeoai.github.io/blog/publications/confidnet/","@context":"https://schema.org"}</script>
+{"description":"TRADI: Tracking deep neural network weight distributions Gianni Franchi&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Emanuel Aldea&nbsp;&nbsp; Severine Dubuisson&nbsp;&nbsp; Isabelle Bloch","@type":"BlogPosting","headline":"TRADI: Tracking deep neural network weight distributions","dateModified":"2020-10-05T16:15:15-05:00","datePublished":"2020-10-05T16:15:15-05:00","image":"https://valeoai.github.io/blog/images/publications/tradi/tradi_teaser.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/tradi/"},"url":"https://valeoai.github.io/blog/publications/tradi/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -158,51 +158,69 @@ p {
     }
 </style>
 
-<h1 align="center"> Addressing Failure Prediction by Learning Model Confidence </h1>
+<h1 align="center"> TRADI: Tracking deep neural network weight distributions </h1>
 <!-- Simple call of authors -->
-<!-- <h3 align="center"> Charles Corbière, Nicolas Thome, Avner Bar-Hen, Matthieu Cord, and Patrick Pérez </h3> -->
+<!-- <h3 align="center"> Gianni Franchi, Andrei Bursuc, Emanuel Aldea, Severine Dubuisson, Isabelle Bloch </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center"> <a href="https://chcorbi.github.io/">Charles Corbière</a>&nbsp;&nbsp; <a href="https://http://cedric.cnam.fr/~thomen/">Nicolas Thome</a>&nbsp;&nbsp; <a href="https://ab-h.github.io/">Avner Bar-Hen</a>&nbsp;&nbsp; <a href="http://webia.lip6.fr/~cord/">Matthieu Cord</a>&nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a> </h3>
+<h3 align="center"> Gianni Franchi&nbsp;&nbsp; <a href="https://abursuc.github.io/">Andrei Bursuc</a>&nbsp;&nbsp; <a href="http://hebergement.u-psud.fr/emi/">Emanuel Aldea</a>&nbsp;&nbsp; Severine Dubuisson&nbsp;&nbsp; <a href="https://perso.telecom-paristech.fr/bloch/">Isabelle Bloch</a> </h3>
 
-<h3 align="center"> NeurIPS 2019 </h3>
+<h3 align="center"> ECCV 2020 </h3>
 
 <div align="center">
   <p>
     
-    <a href="https://papers.nips.cc/paper/8556-addressing-failure-prediction-by-learning-model-confidence"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
-    
-    
-    <a href="https://github.com/valeoai/ConfidNet"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
+    <a href="https://arxiv.org/abs/1912.11316"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
     
     
     
     
-    <a href="https://papers.nips.cc/paper/8556-addressing-failure-prediction-by-learning-model-confidence/bibtex"><i class="far fa-file-alt"></i> BibTeX</a>&nbsp;&nbsp;
     
   </p>
 </div>
 
 <div class="publication-teaser">
-    <img src="../../images/publications/confidnet/teaser.png" alt="project teaser" />
+    <img src="../../images/publications/tradi/tradi_teaser.jpg" alt="project teaser" />
 </div>
 
 <hr />
 
 <h2 align="center"> Abstract</h2>
 
-<p align="justify">Assessing reliably the confidence of a deep neural net and predicting its failures is of primary importance for the practical deployment of these models. In this paper, we propose a new target criterion for model confidence, corresponding to the True Class Probability (TCP). We show how using the TCP is more suited than relying on the classic Maximum Class Probability (MCP). We provide in addition theoretical guarantees for TCP in the context of failure prediction. Since the true class is by essence unknown at test time, we propose to learn TCP criterion on the training set, introducing a specific learning scheme adapted to this context. Extensive experiments are conducted for validating the relevance of the proposed approach. We study various network architectures, small and large scale datasets for image classification and semantic segmentation. We show that our approach consistently outperforms several strong methods, from MCP to Bayesian uncertainty, as well as recent approaches specifically designed for failure prediction.</p>
+<p align="justify">During training, the weights of a Deep Neural Network (DNN) are optimized from a random initialization towards a nearly optimum value minimizing a loss function. Only this final state of the weights is typically kept for testing, while the wealth of information on the geometry of the weight space, accumulated over the descent towards the minimum is discarded. In this work we propose to make use of this knowledge and leverage it for computing the distributions of the weights of the DNN. This can be further used for estimating the epistemic uncertainty of the DNN by sampling an ensemble of networks from these distributions. To this end we introduce a method for tracking the trajectory of the weights during optimization, that does not require any changes in the architecture nor on the training procedure. We evaluate our method on standard classification and regression benchmarks, and on out-of-distribution detection for classification and semantic segmentation. We achieve competitive results, while preserving computational efficiency in comparison to other popular approaches.</p>
+
+<p><br /></p>
+
+<hr />
+
+<h2 align="center"> Results</h2>
+
+<p><img src="../../images/publications/tradi/synthetic_regression.jpg" alt="" /></p>
+<div class="caption"><b>Results on a synthetic regression task comparing MC dropout, Deep Ensembles, and TRADI.</b> $x$-axis: spatial coordinate of the Gaussian process. Black lines: ground
+truth curve. Blue points: training points. Orange areas: estimated variance.
+</div>
+
+<p><img src="../../images/publications/tradi/table_results.jpg" alt="" /></p>
+<div class="caption"><b>Distinguishing in- and out-of-distribution data for semantic segmentation
+(CamVid, StreetHazards, BDD Anomaly) and image classification (MNIST/notMNIST).</b>
+</div>
+
+<p><img src="../../images/publications/tradi/camvid_qualitative.jpg" alt="" /></p>
+<div class="caption"><b>Qualitative results on CamVid-OOD.</b> <b>Columns:</b> $(a)$ input image and ground
+truth; $(b)-(d)$ predictions and confidence scores by MC Dropout, Deep Ensembles, and
+TRADI. <b>Rows:</b> $(1)$ input and confidence maps; $(2)$ class predictions; $(3)$ zoomed-in area
+on input and confidence maps
+</div>
 
 <hr />
 
 <h2 align="center">BibTeX</h2>
 <left>
   <pre class="bibtex-box">
-@incollection{NIPS2019_8556,
-  title = {Addressing Failure Prediction by Learning Model Confidence},
-  author = {Corbi\`{e}re, Charles and THOME, Nicolas and Bar-Hen, Avner and Cord, Matthieu and \'{e}rez, Patrick},
-  booktitle = {Advances in Neural Information Processing Systems 32},
-  pages = {2902--2913},
-  year = {2019},
+@article{franchi2019tradi,
+  title={TRADI: Tracking deep neural network weight distributions},
+  author={Franchi, Gianni and Bursuc, Andrei and Aldea, Emanuel and Dubuisson, S{\'e}verine and Bloch, Isabelle},
+  journal={arXiv preprint arXiv:1912.11316},
+  year={2019}
 }</pre>
 </left>
 
