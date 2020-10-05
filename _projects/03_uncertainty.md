@@ -3,44 +3,17 @@ layout: project
 title: Uncertainty estimation and performance prediction
 permalink: /projects/uncertainty
 description: When the unexpected happens, when the weather badly degrades, when a sensor gets blocked, the embarked perception system should diagnose the situation and react accordingly, <em>e.g.,</em> by calling an alternative system or the human driver. With this in mind, we investigate automatic ways to assess the uncertainty of a system and to predict its performance.
-image: "images/publications/confidnet/visu_camvid.png"
+image: "images/projects/uncertainty.png"
 category: project
-url: /projects/uncertainty/
+url: ""
 ---
 
 
-<h1>{{page.title}}</h1> 
-<p>{{page.description}}</p>
+# Please fill me
 
-
-<h2>Publications</h2>
-
-{% assign publications = site.publications | sort: "year" | reverse %}
-{% assign publications = publications | where:"hide",false %}
-{% assign publications = publications | where:"category","uncertainty" %}
-
-
-{% for pub in publications %}
-
-<div class="pubitem">
-  <div class="pubteaser">
-    <a href="{{site.url  | append: site.baseurl | append: pub.permalink}}">
-      <img src="../../{{ pub.image }}" alt="{{pub.image}} publication teaser"/>
-    </a>
-  </div>
-   <h3><a href="{{site.url  | append: site.baseurl | append: pub.permalink}}">{{ pub.title }}</a></h3>
- <!--  <p class="b">{{ pub.authors }}</p>
-  <p class="c">{{ pub.venue_long }}, {{ pub.year }}</p> -->
-  <p class="b">{{ pub.authors }}
-    <br>
-    <em>{{ pub.venue_long }}, {{ pub.year }}</em>
-   </p>
-</div>
-
-<br>
-
-{% if forloop.last == false %}
-<hr>
-{% endif %}
-
-{% endfor %} 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

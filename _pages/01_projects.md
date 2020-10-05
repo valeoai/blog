@@ -24,7 +24,7 @@ permalink: /projects/
 
 <!-- for some reason the first line is weirdly formated -->
 {% if forloop.first == true %}
-<br>
+<!-- <br> -->
 {% endif %}
 
 {% if forloop.last == false %}

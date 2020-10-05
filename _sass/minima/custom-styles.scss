@@ -10,7 +10,6 @@
 // If you want to turn off dark background for syntax highlighting, comment or delete the below line.
 @import "minima/fastpages-dracula-highlight"; 
 
-
 /**
  * Wrapper
  */
@@ -139,11 +138,15 @@ a:focus, a:hover{
 
 .pubteaser img {
   max-width: 196px;
+  /*max-height: 196px;*/
   /*min-height: 64px;*/
-  min-height: 128px;
+  /*min-height: 128px;*/
+  /*min-height: 140px;*/
   /*width: 128px;*/
   /*border: 1px solid black;*/
   /*margin-bottom: 1.2em;*/
+  width: auto;
+  height: auto;
 }
 
 
