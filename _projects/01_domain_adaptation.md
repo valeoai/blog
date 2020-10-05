@@ -23,22 +23,27 @@ url: /projects/domain-adaptation/
 
 {% for pub in publications %}
 
-<div class="pubitem">
-  <div class="pubteaser">
-    <a href="{{site.url  | append: site.baseurl | append: pub.permalink}}">
-      <img src="../../{{ pub.image }}" alt="{{pub.image}} publication teaser"/>
-    </a>
-  </div>
-   <h3><a href="{{site.url  | append: site.baseurl | append: pub.permalink}}">{{ pub.title }}</a></h3>
- <!--  <p class="b">{{ pub.authors }}</p>
-  <p class="c">{{ pub.venue_long }}, {{ pub.year }}</p> -->
+
+<div class="row">
+    <div class="col-md-4">
+         <div class="pubteaserbs">
+            <a href="{{site.url  | append: site.baseurl | append: projects.permalink}}">
+            <img class="media-object" style="max-width: 210px;" src="../../{{ pub.image }}" alt="{{pub.image}} publication teaser"/>
+             </a>
+        </div>
+    </div>
+    <!-- <div class="col-md-1"></div> -->
+    <div class="col-md-8">
+        <div class="pubitembs">
+  <h3><a href="{{site.url  | append: site.baseurl | append: pub.permalink}}">{{ pub.title }}</a></h3>
   <p class="b">{{ pub.authors }}
     <br>
     <em>{{ pub.venue_long }}, {{ pub.year }}</em>
    </p>
 </div>
+</div>
+</div>
 
-<br>
 
 {% if forloop.last == false %}
 <hr>

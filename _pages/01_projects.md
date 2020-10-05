@@ -4,6 +4,8 @@ title: Projects
 permalink: /projects/
 ---
 
+
+
 # Projects
 
 {% for projects in site.projects %}
@@ -11,21 +13,22 @@ permalink: /projects/
 
 {% if projects.category == "project" %}
 
-<div class="pubitem">
-  <div class="pubteaser">
-    <a href="{{site.url  | append: site.baseurl | append: projects.permalink}}">
-      <img src="../{{ projects.image }}" alt="{{projects.image}} project teaser"/>
-    </a>
-  </div>
-   <h3><a href="{{site.url  | append: site.baseurl | append: projects.permalink}}">{{ projects.title }}</a></h3>
-  <p>{{ projects.description }}</p>
+<div class="row">
+    <div class="col-md-4">
+        <div class="pubteaserbs">
+            <a href="{{site.url  | append: site.baseurl | append: projects.permalink}}">
+                <img class="media-object" src="../{{ projects.image }}" alt="{{projects.image}} project teaser"/>
+           </a>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div class="pubitembs">
+          <h3><a href="{{site.url  | append: site.baseurl | append: projects.permalink}}">{{ projects.title }}</a></h3>
+          <p>{{ projects.description }}</p>
+        </div>
 </div>
-<br>
+</div>
 
-<!-- for some reason the first line is weirdly formated -->
-{% if forloop.first == true %}
-<!-- <br> -->
-{% endif %}
 
 {% if forloop.last == false %}
 <hr>
