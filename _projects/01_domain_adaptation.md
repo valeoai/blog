@@ -18,7 +18,7 @@ url: /projects/domain-adaptation/
 
 {% assign publications = site.publications | sort: "year" | reverse %}
 {% assign publications = publications | where:"hide",false %}
-{% assign publications = publications | where:"category","domain adaptation" %}
+{% assign publications = publications | where:"category","domain-adaptation" %}
 
 
 {% for pub in publications %}
@@ -27,8 +27,8 @@ url: /projects/domain-adaptation/
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="{{site.url  | append: site.baseurl | append: projects.permalink}}">
-            <img class="media-object" style="max-width: 210px;" src="../../{{ pub.image }}" alt="{{pub.image}} publication teaser"/>
+            <a href="{{site.url  | append: site.baseurl | append: pub.permalink}}">
+            <img class="media-object" src="../{{ pub.image }}" alt="{{pub.image}} publication teaser"/>
              </a>
         </div>
     </div>
