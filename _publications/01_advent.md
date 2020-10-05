@@ -3,7 +3,7 @@ layout: publication
 title: "AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation" 
 image: images/publications/advent/advent_qualitative_small.png
 hide: false
-category: domain adaptation
+category: [domain-adaptation]
 authors: Tuan Hung Vu, Himalaya Jain, Maxime Bucher, Matthieu Cord, and Patrick Pérez
 venue: CVPR
 venue_long: Computer Vision and Pattern Recognition (CVPR)
@@ -12,7 +12,7 @@ code_url: https://github.com/valeoai/ADVENT
 paper_url: https://arxiv.org/abs/1811.12833
 blog_url: http://valeoai.github.io/blog/2020/07/07/test-advent-post.html
 slides_url: http://valeoai.github.io/blog/2020/07/07/test-advent-post.html
-bib_url: http://valeoai.github.io/blog/2020/07/07/test-advent-post.html
+bib_url: 
 permalink: /publications/advent/
 ---
 
