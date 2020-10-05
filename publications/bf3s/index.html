@@ -3,36 +3,36 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation | valeo.ai blog</title>
+<title>Boosting Few-Shot Visual Learning With Self-Supervision | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation" />
+<meta property="og:title" content="Boosting Few-Shot Visual Learning With Self-Supervision" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation Tuan-Hung Vu&nbsp;&nbsp; Himalaya Jain&nbsp;&nbsp; Maxime Bucher&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez" />
-<meta property="og:description" content="AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation Tuan-Hung Vu&nbsp;&nbsp; Himalaya Jain&nbsp;&nbsp; Maxime Bucher&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/advent/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/advent/" />
+<meta name="description" content="Boosting Few-Shot Visual Learning With Self-Supervision Spyros Gidaris&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Nikos Komodakis&nbsp;&nbsp; Patrick Pérez&nbsp;&nbsp; Matthieu Cord" />
+<meta property="og:description" content="Boosting Few-Shot Visual Learning With Self-Supervision Spyros Gidaris&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Nikos Komodakis&nbsp;&nbsp; Patrick Pérez&nbsp;&nbsp; Matthieu Cord" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/bf3s/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/bf3s/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/advent/advent_qualitative_small.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/bf3s/bf3s.jpg" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-10-05T15:50:08-05:00" />
 <script type="application/ld+json">
-{"description":"AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation Tuan-Hung Vu&nbsp;&nbsp; Himalaya Jain&nbsp;&nbsp; Maxime Bucher&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez","@type":"BlogPosting","headline":"AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation","dateModified":"2020-10-05T15:50:08-05:00","datePublished":"2020-10-05T15:50:08-05:00","image":"https://valeoai.github.io/blog/images/publications/advent/advent_qualitative_small.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/advent/"},"url":"https://valeoai.github.io/blog/publications/advent/","@context":"https://schema.org"}</script>
+{"description":"Boosting Few-Shot Visual Learning With Self-Supervision Spyros Gidaris&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Nikos Komodakis&nbsp;&nbsp; Patrick Pérez&nbsp;&nbsp; Matthieu Cord","@type":"BlogPosting","headline":"Boosting Few-Shot Visual Learning With Self-Supervision","dateModified":"2020-10-05T15:50:08-05:00","datePublished":"2020-10-05T15:50:08-05:00","image":"https://valeoai.github.io/blog/images/publications/bf3s/bf3s.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/bf3s/"},"url":"https://valeoai.github.io/blog/publications/bf3s/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai blog" /><link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation | valeo.ai blog</title>
+<title>Boosting Few-Shot Visual Learning With Self-Supervision | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation" />
+<meta property="og:title" content="Boosting Few-Shot Visual Learning With Self-Supervision" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation Tuan-Hung Vu&nbsp;&nbsp; Himalaya Jain&nbsp;&nbsp; Maxime Bucher&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez" />
-<meta property="og:description" content="AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation Tuan-Hung Vu&nbsp;&nbsp; Himalaya Jain&nbsp;&nbsp; Maxime Bucher&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/advent/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/advent/" />
+<meta name="description" content="Boosting Few-Shot Visual Learning With Self-Supervision Spyros Gidaris&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Nikos Komodakis&nbsp;&nbsp; Patrick Pérez&nbsp;&nbsp; Matthieu Cord" />
+<meta property="og:description" content="Boosting Few-Shot Visual Learning With Self-Supervision Spyros Gidaris&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Nikos Komodakis&nbsp;&nbsp; Patrick Pérez&nbsp;&nbsp; Matthieu Cord" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/bf3s/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/bf3s/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/advent/advent_qualitative_small.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/bf3s/bf3s.jpg" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-10-05T15:50:08-05:00" />
 <script type="application/ld+json">
-{"description":"AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation Tuan-Hung Vu&nbsp;&nbsp; Himalaya Jain&nbsp;&nbsp; Maxime Bucher&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez","@type":"BlogPosting","headline":"AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation","dateModified":"2020-10-05T15:50:08-05:00","datePublished":"2020-10-05T15:50:08-05:00","image":"https://valeoai.github.io/blog/images/publications/advent/advent_qualitative_small.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/advent/"},"url":"https://valeoai.github.io/blog/publications/advent/","@context":"https://schema.org"}</script>
+{"description":"Boosting Few-Shot Visual Learning With Self-Supervision Spyros Gidaris&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Nikos Komodakis&nbsp;&nbsp; Patrick Pérez&nbsp;&nbsp; Matthieu Cord","@type":"BlogPosting","headline":"Boosting Few-Shot Visual Learning With Self-Supervision","dateModified":"2020-10-05T15:50:08-05:00","datePublished":"2020-10-05T15:50:08-05:00","image":"https://valeoai.github.io/blog/images/publications/bf3s/bf3s.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/bf3s/"},"url":"https://valeoai.github.io/blog/publications/bf3s/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -158,63 +158,51 @@ p {
     }
 </style>
 
-<h1 align="center"> AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation </h1>
+<h1 align="center"> Boosting Few-Shot Visual Learning With Self-Supervision </h1>
 <!-- Simple call of authors -->
-<!-- <h3 align="center"> Tuan Hung Vu, Himalaya Jain, Maxime Bucher, Matthieu Cord, and Patrick Pérez </h3> -->
+<!-- <h3 align="center"> Spyros Gidaris, Andrei Bursuc, Nikos Komodakis, Patrick Pérez, and Matthieu Cord </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center"> <a href="https://tuanhungvu.github.io/">Tuan-Hung Vu</a>&nbsp;&nbsp; <a href="https://himalayajain.github.io/">Himalaya Jain</a>&nbsp;&nbsp; <a href="https://maximebucher.github.io/">Maxime Bucher</a>&nbsp;&nbsp; <a href="http://webia.lip6.fr/~cord/">Matthieu Cord</a>&nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a> </h3>
+<h3 align="center"> Spyros Gidaris&nbsp;&nbsp; <a href="https://abursuc.github.io/">Andrei Bursuc</a>&nbsp;&nbsp; <a href="http://imagine.enpc.fr/~komodakn/">Nikos Komodakis</a>&nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a>&nbsp;&nbsp; <a href="http://webia.lip6.fr/~cord/">Matthieu Cord</a> </h3>
 
-<h3 align="center"> CVPR 2019 </h3>
+<h3 align="center"> ICCV 2019 </h3>
 
 <div align="center">
   <p>
     
-    <a href="https://arxiv.org/abs/1811.12833"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
+    <a href="http://openaccess.thecvf.com/content_ICCV_2019/html/Gidaris_Boosting_Few-Shot_Visual_Learning_With_Self-Supervision_ICCV_2019_paper.html"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
     
     
-    <a href="https://github.com/valeoai/ADVENT"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
+    <a href="https://github.com/valeoai/bf3s"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
     
     
-    <a href="http://valeoai.github.io/blog/2020/07/07/test-advent-post.html"><i class="fab fa-blogger"></i> Blog</a> &nbsp;&nbsp;
     
-    
-    <a href="http://valeoai.github.io/blog/2020/07/07/test-advent-post.html"><i class="far fa-file-pdf"></i> Slides</a>&nbsp;&nbsp;
-    
-    
-    <a href="http://valeoai.github.io/blog/2020/07/07/test-advent-post.html"><i class="far fa-file-alt"></i> BibTeX</a>&nbsp;&nbsp;
     
   </p>
 </div>
 
 <div class="publication-teaser">
-    <img src="../../images/publications/advent/advent_qualitative_small.png" alt="project teaser" />
+    <img src="../../images/publications/bf3s/bf3s.jpg" alt="project teaser" />
 </div>
 
 <hr />
 
 <h2 align="center"> Abstract</h2>
 
-<p align="justify">Semantic segmentation is a key problem for many computer vision tasks. While approaches based on convolutional neural networks constantly break new records on different benchmarks, generalizing well to diverse testing environments remains a major challenge. In numerous real world applications, there is indeed a large gap between data distributions in train and test domains, which results in severe performance loss at run-time. In this work, we address the task of unsupervised domain adaptation in semantic segmentation with losses based on the entropy of the pixel-wise predictions. To this end, we propose two novel, complementary methods using (i) an entropy loss and (ii) an adversarial loss respectively. We demonstrate state-of-the-art performance in semantic segmentation on two challenging synthetic-2-real set-ups and show that the approach can also be used for detection.</p>
-
-<hr />
-
-<h2 align="center"> Video</h2>
-
-<p align="center">
-  <iframe width="660" height="395" src="https://www.youtube.com/embed/Ihmz0yEqrq0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" align="center"></iframe>
-</p>
+<p align="justify">Few-shot learning and self-supervised learning address different facets of the same problem: how to train a model with little or no labeled data. Few-shot learning aims for optimization methods and models that can learn efficiently to recognize patterns in the low data regime. Self-supervised learning focuses instead on unlabeled data and looks into it for the supervisory signal to feed high capacity deep neural networks. In this work we exploit the complementarity of these two domains and propose an approach for improving few-shot learning through self-supervision. We use self-supervision as an auxiliary task in a few-shot learning pipeline, enabling feature extractors to learn richer and more transferable visual representations while still using few annotated samples. Through self-supervision, our approach can be naturally extended towards using diverse unlabeled data from other datasets in the few-shot setting. We report consistent improvements across an array of architectures, datasets and self-supervision techniques. We provide the implementation code at: https://github.com/valeoai/BF3S</p>
 
 <p><br /></p>
+
 <hr />
 
 <h2 align="center">BibTeX</h2>
 <left>
   <pre class="bibtex-box">
-@inproceedings{vu2018advent,
-  title={ADVENT: Adversarial Entropy Minimization for Domain Adaptation in Semantic Segmentation},
-  author={Vu, Tuan-Hung and Jain, Himalaya and Bucher, Maxime and Cord, Mathieu and P{\'e}rez, Patrick},
-  booktitle={CVPR},
-  year={2019}
+@inproceedings{gidaris2019boosting,
+    title={Boosting few-shot visual learning with self-supervision},
+    author={Gidaris, Spyros and Bursuc, Andrei and Komodakis, Nikos and P{\'e}rez, Patrick and Cord, Matthieu},
+    booktitle={Proceedings of the IEEE International Conference on Computer Vision},
+    pages={8059--8068},
+    year={2019}
 }</pre>
 </left>
 
