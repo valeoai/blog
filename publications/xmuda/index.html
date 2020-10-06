@@ -3,36 +3,36 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>DADA: Depth-aware Domain Adaptation in Semantic Segmentation | valeo.ai blog</title>
+<title>xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="DADA: Depth-aware Domain Adaptation in Semantic Segmentation" />
+<meta property="og:title" content="xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="DADA: Depth-aware Domain Adaptation in Semantic Segmentation Tuan-Hung Vu&nbsp;&nbsp; Himalaya Jain&nbsp;&nbsp; Maxime Bucher&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez" />
-<meta property="og:description" content="DADA: Depth-aware Domain Adaptation in Semantic Segmentation Tuan-Hung Vu&nbsp;&nbsp; Himalaya Jain&nbsp;&nbsp; Maxime Bucher&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/dada/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/dada/" />
+<meta name="description" content="xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation Maximilian Jaritz&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Raoul de Charette&nbsp;&nbsp; Émilie Wirbel&nbsp;&nbsp; Patrick Pérez" />
+<meta property="og:description" content="xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation Maximilian Jaritz&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Raoul de Charette&nbsp;&nbsp; Émilie Wirbel&nbsp;&nbsp; Patrick Pérez" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/xmuda/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/xmuda/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/dada/dada.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/xmuda/xmuda.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-10-06T08:57:36-05:00" />
 <script type="application/ld+json">
-{"description":"DADA: Depth-aware Domain Adaptation in Semantic Segmentation Tuan-Hung Vu&nbsp;&nbsp; Himalaya Jain&nbsp;&nbsp; Maxime Bucher&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez","@type":"BlogPosting","headline":"DADA: Depth-aware Domain Adaptation in Semantic Segmentation","dateModified":"2020-10-06T08:57:36-05:00","datePublished":"2020-10-06T08:57:36-05:00","image":"https://valeoai.github.io/blog/images/publications/dada/dada.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/dada/"},"url":"https://valeoai.github.io/blog/publications/dada/","@context":"https://schema.org"}</script>
+{"description":"xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation Maximilian Jaritz&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Raoul de Charette&nbsp;&nbsp; Émilie Wirbel&nbsp;&nbsp; Patrick Pérez","@type":"BlogPosting","headline":"xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation","dateModified":"2020-10-06T08:57:36-05:00","datePublished":"2020-10-06T08:57:36-05:00","image":"https://valeoai.github.io/blog/images/publications/xmuda/xmuda.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/xmuda/"},"url":"https://valeoai.github.io/blog/publications/xmuda/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai blog" /><link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>DADA: Depth-aware Domain Adaptation in Semantic Segmentation | valeo.ai blog</title>
+<title>xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="DADA: Depth-aware Domain Adaptation in Semantic Segmentation" />
+<meta property="og:title" content="xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="DADA: Depth-aware Domain Adaptation in Semantic Segmentation Tuan-Hung Vu&nbsp;&nbsp; Himalaya Jain&nbsp;&nbsp; Maxime Bucher&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez" />
-<meta property="og:description" content="DADA: Depth-aware Domain Adaptation in Semantic Segmentation Tuan-Hung Vu&nbsp;&nbsp; Himalaya Jain&nbsp;&nbsp; Maxime Bucher&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/dada/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/dada/" />
+<meta name="description" content="xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation Maximilian Jaritz&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Raoul de Charette&nbsp;&nbsp; Émilie Wirbel&nbsp;&nbsp; Patrick Pérez" />
+<meta property="og:description" content="xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation Maximilian Jaritz&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Raoul de Charette&nbsp;&nbsp; Émilie Wirbel&nbsp;&nbsp; Patrick Pérez" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/xmuda/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/xmuda/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/dada/dada.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/xmuda/xmuda.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-10-06T08:57:36-05:00" />
 <script type="application/ld+json">
-{"description":"DADA: Depth-aware Domain Adaptation in Semantic Segmentation Tuan-Hung Vu&nbsp;&nbsp; Himalaya Jain&nbsp;&nbsp; Maxime Bucher&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez","@type":"BlogPosting","headline":"DADA: Depth-aware Domain Adaptation in Semantic Segmentation","dateModified":"2020-10-06T08:57:36-05:00","datePublished":"2020-10-06T08:57:36-05:00","image":"https://valeoai.github.io/blog/images/publications/dada/dada.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/dada/"},"url":"https://valeoai.github.io/blog/publications/dada/","@context":"https://schema.org"}</script>
+{"description":"xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation Maximilian Jaritz&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Raoul de Charette&nbsp;&nbsp; Émilie Wirbel&nbsp;&nbsp; Patrick Pérez","@type":"BlogPosting","headline":"xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation","dateModified":"2020-10-06T08:57:36-05:00","datePublished":"2020-10-06T08:57:36-05:00","image":"https://valeoai.github.io/blog/images/publications/xmuda/xmuda.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/xmuda/"},"url":"https://valeoai.github.io/blog/publications/xmuda/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -158,22 +158,24 @@ p {
     }
 </style>
 
-<h1 align="center"> DADA: Depth-aware Domain Adaptation in Semantic Segmentation </h1>
+<h1 align="center"> xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation </h1>
 <!-- Simple call of authors -->
-<!-- <h3 align="center"> Tuan Hung Vu, Himalaya Jain, Maxime Bucher, Matthieu Cord, and Patrick Pérez </h3> -->
+<!-- <h3 align="center"> Maximilian Jaritz, Tuan-Hung Vu, Raoul de Charette, Émilie Wirbel, and Patrick Pérez </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center"> <a href="https://tuanhungvu.github.io/">Tuan-Hung Vu</a>&nbsp;&nbsp; <a href="https://himalayajain.github.io/">Himalaya Jain</a>&nbsp;&nbsp; <a href="https://maximebucher.github.io/">Maxime Bucher</a>&nbsp;&nbsp; <a href="http://webia.lip6.fr/~cord/">Matthieu Cord</a>&nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a></h3>
+<h3 align="center"> <a href="https://scholar.google.com/citations?user=yt2IsdAAAAAJ">Maximilian Jaritz</a>&nbsp;&nbsp; <a href="https://tuanhungvu.github.io/">Tuan-Hung Vu</a>&nbsp;&nbsp; <a href="https://team.inria.fr/rits/membres/raoul-de-charette/">Raoul de Charette</a>&nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=Z7wRy_cAAAAJ">Émilie Wirbel</a>&nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a> </h3>
 
-<h3 align="center"> ICCV 2019 </h3>
+<h3 align="center"> CVPR 2020 </h3>
 
 <div align="center">
   <p>
     
-    <a href="https://openaccess.thecvf.com/content_ICCV_2019/html/Vu_DADA_Depth-Aware_Domain_Adaptation_in_Semantic_Segmentation_ICCV_2019_paper.html"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
+    <a href="https://arxiv.org/abs/1911.12676"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
     
     
-    <a href="https://github.com/valeoai/dada"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
+    <a href="https://github.com/valeoai/xmuda"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
     
+    
+    <a href="http://valeoai.github.io/blog/2020/07/07/test-advent-post.html"><i class="fab fa-blogger"></i> Blog</a> &nbsp;&nbsp;
     
     
     
@@ -181,28 +183,35 @@ p {
 </div>
 
 <div class="publication-teaser">
-    <img src="../../images/publications/dada/dada.png" alt="project teaser" />
+    <img src="../../images/publications/xmuda/xmuda.png" alt="project teaser" />
 </div>
 
 <hr />
 
 <h2 align="center"> Abstract</h2>
 
-<p align="justify">Unsupervised domain adaptation (UDA) is important for applications where large scale annotation of representative data is challenging. For semantic segmentation in particular, it helps deploy on real "target domain" data models that are trained on annotated images from a different "source domain", notably a virtual environment. To this end, most previous works consider semantic segmentation as the only mode of supervision for source domain data, while ignoring other, possibly available, information like depth. In this work, we aim at exploiting at best such a privileged information while training the UDA model. We propose a unified depth-aware UDA framework that leverages in several complementary ways the knowledge of dense depth in the source domain. As a result, the performance of the trained semantic segmentation model on the target domain is boosted. Our novel approach indeed achieves state-of-the-art performance on different challenging synthetic-2-real benchmarks.</p>
+<p align="justify">Unsupervised Domain Adaptation (UDA) is crucial to tackle the lack of annotations in a new domain. There are many multi-modal datasets, but most UDA approaches are uni-modal. In this work, we explore how to learn from multi-modality and propose cross-modal UDA (xMUDA) where we assume the presence of 2D images and 3D point clouds for 3D semantic segmentation. This is challenging as the two input spaces are heterogeneous and can be impacted differently by domain shift. In xMUDA, modalities learn from each other through mutual mimicking, disentangled from the segmentation objective, to prevent the stronger modality from adopting false predictions from the weaker one. We evaluate on new UDA scenarios including day-to-night, country-to-country and dataset-to-dataset, leveraging recent autonomous driving datasets. xMUDA brings large improvements over uni-modal UDA on all tested scenarios, and is complementary to state-of-the-art UDA techniques. Code is available at: https://github.com/valeoai/xmuda</p>
+
+<hr />
+
+<h2 align="center"> Video</h2>
+
+<p align="center">
+  <iframe width="660" height="395" src="https://www.youtube.com/embed/Ihmz0yEqrq0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" align="center"></iframe>
+</p>
 
 <p><br /></p>
-
 <hr />
 
 <h2 align="center">BibTeX</h2>
 <left>
   <pre class="bibtex-box">
-@inproceedings{vu2019dada,
-  title={Dada: Depth-aware domain adaptation in semantic segmentation},
-  author={Vu, Tuan-Hung and Jain, Himalaya and Bucher, Maxime and Cord, Matthieu and P{\'e}rez, Patrick},
-  booktitle={Proceedings of the IEEE International Conference on Computer Vision},
-  pages={7364--7373},
-  year={2019}
+@inproceedings{jaritz2020xmuda,
+  title={xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation},
+  author={Jaritz, Maximilian and Vu, Tuan-Hung and Charette, Raoul de and Wirbel, Emilie and P{\'e}rez, Patrick},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={12605--12614},
+  year={2020}
 }</pre>
 </left>
 
