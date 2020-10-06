@@ -3,36 +3,36 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation | valeo.ai blog</title>
+<title>FKAConv: Feature-Kernel Alignment for Point Cloud Convolutiont | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation" />
+<meta property="og:title" content="FKAConv: Feature-Kernel Alignment for Point Cloud Convolutiont" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation Maximilian Jaritz&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Raoul de Charette&nbsp;&nbsp; Émilie Wirbel&nbsp;&nbsp; Patrick Pérez" />
-<meta property="og:description" content="xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation Maximilian Jaritz&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Raoul de Charette&nbsp;&nbsp; Émilie Wirbel&nbsp;&nbsp; Patrick Pérez" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/xmuda/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/xmuda/" />
+<meta name="description" content="FKAConv: Feature-Kernel Alignment for Point Cloud Convolutiont Alexandre Boulch &nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Renaud Marlet&nbsp;&nbsp;" />
+<meta property="og:description" content="FKAConv: Feature-Kernel Alignment for Point Cloud Convolutiont Alexandre Boulch &nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Renaud Marlet&nbsp;&nbsp;" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/fkaconv/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/fkaconv/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/xmuda/xmuda.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/fkaconv/fkaconv.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-10-06T16:13:55-05:00" />
 <script type="application/ld+json">
-{"description":"xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation Maximilian Jaritz&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Raoul de Charette&nbsp;&nbsp; Émilie Wirbel&nbsp;&nbsp; Patrick Pérez","@type":"BlogPosting","headline":"xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation","dateModified":"2020-10-06T16:13:55-05:00","datePublished":"2020-10-06T16:13:55-05:00","image":"https://valeoai.github.io/blog/images/publications/xmuda/xmuda.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/xmuda/"},"url":"https://valeoai.github.io/blog/publications/xmuda/","@context":"https://schema.org"}</script>
+{"description":"FKAConv: Feature-Kernel Alignment for Point Cloud Convolutiont Alexandre Boulch &nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Renaud Marlet&nbsp;&nbsp;","@type":"BlogPosting","headline":"FKAConv: Feature-Kernel Alignment for Point Cloud Convolutiont","dateModified":"2020-10-06T16:13:55-05:00","datePublished":"2020-10-06T16:13:55-05:00","image":"https://valeoai.github.io/blog/images/publications/fkaconv/fkaconv.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/fkaconv/"},"url":"https://valeoai.github.io/blog/publications/fkaconv/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai blog" /><link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation | valeo.ai blog</title>
+<title>FKAConv: Feature-Kernel Alignment for Point Cloud Convolutiont | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation" />
+<meta property="og:title" content="FKAConv: Feature-Kernel Alignment for Point Cloud Convolutiont" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation Maximilian Jaritz&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Raoul de Charette&nbsp;&nbsp; Émilie Wirbel&nbsp;&nbsp; Patrick Pérez" />
-<meta property="og:description" content="xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation Maximilian Jaritz&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Raoul de Charette&nbsp;&nbsp; Émilie Wirbel&nbsp;&nbsp; Patrick Pérez" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/xmuda/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/xmuda/" />
+<meta name="description" content="FKAConv: Feature-Kernel Alignment for Point Cloud Convolutiont Alexandre Boulch &nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Renaud Marlet&nbsp;&nbsp;" />
+<meta property="og:description" content="FKAConv: Feature-Kernel Alignment for Point Cloud Convolutiont Alexandre Boulch &nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Renaud Marlet&nbsp;&nbsp;" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/fkaconv/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/fkaconv/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/xmuda/xmuda.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/fkaconv/fkaconv.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-10-06T16:13:55-05:00" />
 <script type="application/ld+json">
-{"description":"xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation Maximilian Jaritz&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Raoul de Charette&nbsp;&nbsp; Émilie Wirbel&nbsp;&nbsp; Patrick Pérez","@type":"BlogPosting","headline":"xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation","dateModified":"2020-10-06T16:13:55-05:00","datePublished":"2020-10-06T16:13:55-05:00","image":"https://valeoai.github.io/blog/images/publications/xmuda/xmuda.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/xmuda/"},"url":"https://valeoai.github.io/blog/publications/xmuda/","@context":"https://schema.org"}</script>
+{"description":"FKAConv: Feature-Kernel Alignment for Point Cloud Convolutiont Alexandre Boulch &nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Renaud Marlet&nbsp;&nbsp;","@type":"BlogPosting","headline":"FKAConv: Feature-Kernel Alignment for Point Cloud Convolutiont","dateModified":"2020-10-06T16:13:55-05:00","datePublished":"2020-10-06T16:13:55-05:00","image":"https://valeoai.github.io/blog/images/publications/fkaconv/fkaconv.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/fkaconv/"},"url":"https://valeoai.github.io/blog/publications/fkaconv/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -158,24 +158,22 @@ p {
     }
 </style>
 
-<h1 align="center"> xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation </h1>
+<h1 align="center"> FKAConv: Feature-Kernel Alignment for Point Cloud Convolutiont </h1>
 <!-- Simple call of authors -->
-<!-- <h3 align="center"> Maximilian Jaritz, Tuan-Hung Vu, Raoul de Charette, Émilie Wirbel, and Patrick Pérez </h3> -->
+<!-- <h3 align="center"> Alexandre Boulch, Gilles Puy, and Renaud Marlet </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center"> <a href="https://scholar.google.com/citations?user=yt2IsdAAAAAJ">Maximilian Jaritz</a>&nbsp;&nbsp; <a href="https://tuanhungvu.github.io/">Tuan-Hung Vu</a>&nbsp;&nbsp; <a href="https://team.inria.fr/rits/membres/raoul-de-charette/">Raoul de Charette</a>&nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=Z7wRy_cAAAAJ">Émilie Wirbel</a>&nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a> </h3>
+<h3 align="center"> <a href="https://www.boulch.eu/">Alexandre Boulch</a> &nbsp;&nbsp; <a href="https://sites.google.com/site/puygilles/home">Gilles Puy</a> &nbsp;&nbsp; <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a>&nbsp;&nbsp; </h3>
 
-<h3 align="center"> CVPR 2020 </h3>
+<h3 align="center"> ACCV 2020 </h3>
 
 <div align="center">
   <p>
     
-    <a href="https://arxiv.org/abs/1911.12676"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
+    <a href="https://arxiv.org/abs/2004.04462"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
     
     
-    <a href="https://github.com/valeoai/xmuda"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
+    <a href="https://github.com/valeoai/LightConvPoint"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
     
-    
-    <a href="http://valeoai.github.io/blog/2020/07/07/test-advent-post.html"><i class="fab fa-blogger"></i> Blog</a> &nbsp;&nbsp;
     
     
     
@@ -183,34 +181,24 @@ p {
 </div>
 
 <div class="publication-teaser">
-    <img src="../../images/publications/xmuda/xmuda.png" alt="project teaser" />
+    <img src="../../images/publications/fkaconv/fkaconv.png" alt="project teaser" />
 </div>
 
 <hr />
 
 <h2 align="center"> Abstract</h2>
 
-<p align="justify">Unsupervised Domain Adaptation (UDA) is crucial to tackle the lack of annotations in a new domain. There are many multi-modal datasets, but most UDA approaches are uni-modal. In this work, we explore how to learn from multi-modality and propose cross-modal UDA (xMUDA) where we assume the presence of 2D images and 3D point clouds for 3D semantic segmentation. This is challenging as the two input spaces are heterogeneous and can be impacted differently by domain shift. In xMUDA, modalities learn from each other through mutual mimicking, disentangled from the segmentation objective, to prevent the stronger modality from adopting false predictions from the weaker one. We evaluate on new UDA scenarios including day-to-night, country-to-country and dataset-to-dataset, leveraging recent autonomous driving datasets. xMUDA brings large improvements over uni-modal UDA on all tested scenarios, and is complementary to state-of-the-art UDA techniques. Code is available at: https://github.com/valeoai/xmuda</p>
+<p align="justify">Recent state-of-the-art methods for point cloud processing are based on the notion of point convolution, for which several approaches have been proposed. In this paper, inspired by discrete convolution in image processing, we provide a formulation to relate and analyze a number of point convolution methods. We also propose our own convolution variant, that separates the estimation of geometry-less kernel weights and their alignment to the spatial support of features. Additionally, we define a point sampling strategy for convolution that is both effective and fast. Finally, using our convolution and sampling strategy, we show competitive results on classification and semantic segmentation benchmarks while being time and memory efficient.</p>
 
-<hr />
-
-<h2 align="center"> Video</h2>
-
-<p align="center">
-  <iframe width="660" height="395" src="https://www.youtube.com/watch?v=gwcXWsQli8E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" align="center"></iframe>
-</p>
-
-<p><br /></p>
 <hr />
 
 <h2 align="center">BibTeX</h2>
 <left>
   <pre class="bibtex-box">
-@inproceedings{jaritz2020xmuda,
-  title={xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation},
-  author={Jaritz, Maximilian and Vu, Tuan-Hung and Charette, Raoul de and Wirbel, Emilie and P{\'e}rez, Patrick},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  pages={12605--12614},
+@inproceedings{boulch2020fka,
+  title={FKAConv: Feature-Kernel Alignment for Point Cloud Convolutions},
+  author={Boulch, Alexandre and Puy, Gilles and Marlet, Renaud},
+  booktitle={15th Asian Conference on Computer Vision (ACCV 2020)},
   year={2020}
 }</pre>
 </left>
