@@ -64,7 +64,7 @@ permalink: /publications/fkaconv/
 <left>
   <pre class="bibtex-box">
 @inproceedings{boulch2020fka,
-  title={{FKAConv: Feature-Kernel Alignment for Point Cloud Convolution}},
+  title={FKAConv: Feature-Kernel Alignment for Point Cloud Convolutions},
   author={Boulch, Alexandre and Puy, Gilles and Marlet, Renaud},
   booktitle={15th Asian Conference on Computer Vision (ACCV 2020)},
   year={2020}
