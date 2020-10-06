@@ -1,9 +1,9 @@
 ---
 layout: publication
-title: "" 
+title: "QuEST: Quantized Embedding Spacefor Transferring Knowledge" 
 image: images/publications/quest/quest.png
 hide: false
-category: [domain-adaptation]
+category: [model-compression]
 authors: Himalaya Jain, Spyros Gidaris, Nikos Komodakis, Patrick Pérez, and Matthieu Cord
 venue: ECCV
 venue_long: European Conference on Computer Vision (ECCV)
