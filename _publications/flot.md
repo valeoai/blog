@@ -64,7 +64,7 @@ permalink: /publications/flot/
 <left>
   <pre class="bibtex-box">
 @inproceedings{puy20flot,
-  title={{FLOT}: {S}cene {F}low on {P}oint {C}louds {G}uided by {O}ptimal {T}ransport},
+  title={FLOT: Scene Flow on Point Clouds Guided by Optimal Transport},
   author={Puy, Gilles and Boulch, Alexandre and Marlet, Renaud},
   booktitle={European Conference on Computer Vision}
   year={2020}
