@@ -69,4 +69,176 @@
   
   
 
+
+  
+  
+
+  
+      ,"page1": {
+          "title": "Domain adaptation",
+          "content": "Domain adaptation . Deep learning and reinforcement learning are key technologies for autonomous driving. One of the challenges they face is to adapt to conditions which differ from those met during training. To improve systems’ performance in such situations, we explore so-called “domain adaptation” techniques. . Publications . AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation . Tuan Hung Vu, Himalaya Jain, Maxime Bucher, Matthieu Cord, and Patrick Pérez Computer Vision and Pattern Recognition (CVPR), 2019 . . DADA: Depth-aware Domain Adaptation in Semantic Segmentation . Tuan Hung Vu, Himalaya Jain, Maxime Bucher, Matthieu Cord, and Patrick Pérez International Conference on Computer Vision (ICCV), 2019 .",
+          "url": "https://valeoai.github.io/blog/projects/domain-adaptation",
+          "relUrl": "/projects/domain-adaptation",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page2": {
+          "title": "3D dynamic perception",
+          "content": "Please fill me . Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. .",
+          "url": "https://valeoai.github.io/blog/projects/3d-perception",
+          "relUrl": "/projects/3d-perception",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page3": {
+          "title": "Uncertainty estimation and performance prediction",
+          "content": "Uncertainty estimation and performance prediction . When the unexpected happens, when the weather badly degrades, when a sensor gets blocked, the embarked perception system should diagnose the situation and react accordingly, e.g., by calling an alternative system or the human driver. With this in mind, we investigate automatic ways to assess the uncertainty of a system and to predict its performance. . Publications . TRADI: Tracking deep neural network weight distributions . Gianni Franchi, Andrei Bursuc, Emanuel Aldea, Severine Dubuisson, Isabelle Bloch European Conference on Computer Vision (ECCV), 2020 . . Addressing Failure Prediction by Learning Model Confidence . Charles Corbière, Nicolas Thome, Avner Bar-Hen, Matthieu Cord, and Patrick Pérez Neural Information Processing Systems (NeurIPS), 2019 .",
+          "url": "https://valeoai.github.io/blog/projects/uncertainty",
+          "relUrl": "/projects/uncertainty",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page4": {
+          "title": "Multi-sensor perception",
+          "content": "Multi-sensor perception . Automated driving relies first on a diverse range of sensors, like Valeo’s fish-eye cameras, LiDARs, radars and ultrasonics. Exploiting at best the outputs of each of these sensors at any instant is fundamental to understand the complex environment of the vehicle. To this end, we explore various deep learning approaches where sensors are considered both in isolation and collectively. . Publications . Dynamic Task Weighting Methods for Multi-task Networks in Autonomous Driving Systems . Isabelle Leang, Ganesh Sistu, Fabian Burger, Andrei Bursuc, and Senthil Yogamani IEEE International Conference on Intelligent Transportation Systems (ITSC), 2020 .",
+          "url": "https://valeoai.github.io/blog/projects/multi-sensor",
+          "relUrl": "/projects/multi-sensor",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page5": {
+          "title": "Learning under limited supervision ",
+          "content": "Learning under limited supervision . Collecting diverse enough data, and annotating it precisely, is complex, costly and time-comsuming. To reduce dramatically these needs, we explore various alternative and complements to fully-supervised learning, e.g., training that is unsupervised, self-supervised, semi-supervised, active, zero-shot or few-shot. We also investigate training with fully-synthetic data (in combination with unsupervised domain adaptation) and with GAN-augmenented data. . Publications . This dataset does not exist: training models from generated images . Victor Besnier, Himalaya Jain, Andrei Bursuc, Matthieu Cord, and Patrick Pérez International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2020 . . Learning Representations by Predicting Bags of Visual Words . Spyros Gidaris, Andrei Bursuc, Nikos Komodakis, Patrick Pérez, and Matthieu Cord Computer Vision and Pattern Recognition (CVPR), 2020 . . Zero-Shot Semantic Segmentation . Maxime Bucher, Tuan Hung Vu, Matthieu Cord, and Patrick Pérez Neural Information Processing Systems (NeurIPS), 2019 . . Boosting Few-Shot Visual Learning With Self-Supervision . Spyros Gidaris, Andrei Bursuc, Nikos Komodakis, Patrick Pérez, and Matthieu Cord International Conference on Computer Vision (ICCV), 2019 .",
+          "url": "https://valeoai.github.io/blog/projects/limited-supervision",
+          "relUrl": "/projects/limited-supervision",
+          "date": ""
+      }
+      
+  
+
+
+
+  
+      ,"page0": {
+          "title": "AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation",
+          "content": "AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation . Tuan-Hung Vu&nbsp;&nbsp; Himalaya Jain&nbsp;&nbsp; Maxime Bucher&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez . CVPR 2019 . Paper&nbsp;&nbsp; Code &nbsp;&nbsp; Blog &nbsp;&nbsp; . . Abstract . Semantic segmentation is a key problem for many computer vision tasks. While approaches based on convolutional neural networks constantly break new records on different benchmarks, generalizing well to diverse testing environments remains a major challenge. In numerous real world applications, there is indeed a large gap between data distributions in train and test domains, which results in severe performance loss at run-time. In this work, we address the task of unsupervised domain adaptation in semantic segmentation with losses based on the entropy of the pixel-wise predictions. To this end, we propose two novel, complementary methods using (i) an entropy loss and (ii) an adversarial loss respectively. We demonstrate state-of-the-art performance in semantic segmentation on two challenging synthetic-2-real set-ups and show that the approach can also be used for detection. . . Video . . . . BibTeX . @inproceedings{vu2018advent, title={ADVENT: Adversarial Entropy Minimization for Domain Adaptation in Semantic Segmentation}, author={Vu, Tuan-Hung and Jain, Himalaya and Bucher, Maxime and Cord, Mathieu and P{ &#39;e}rez, Patrick}, booktitle={CVPR}, year={2019} } . .",
+          "url": "https://valeoai.github.io/blog/publications/advent/",
+          "relUrl": "/publications/advent/",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page1": {
+          "title": "DUMMY ENTRY - AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation",
+          "content": "DUMMY ENTRY - AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation . Tuan-Hung Vu&nbsp;&nbsp; Himalaya Jain&nbsp;&nbsp; Maxime Bucher&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez . CVPR 1900 . Paper&nbsp;&nbsp; Code &nbsp;&nbsp; Blog &nbsp;&nbsp; Slides&nbsp;&nbsp; BibTeX&nbsp;&nbsp; . . Abstract . Semantic segmentation is a key problem for many computer vision tasks. While approaches based on convolutional neural networks constantly break new records on different benchmarks, generalizing well to diverse testing environments remains a major challenge. In numerous real world applications, there is indeed a large gap between data distributions in train and test domains, which results in severe performance loss at run-time. In this work, we address the task of unsupervised domain adaptation in semantic segmentation with losses based on the entropy of the pixel-wise predictions. To this end, we propose two novel, complementary methods using (i) an entropy loss and (ii) an adversarial loss respectively. We demonstrate state-of-the-art performance in semantic segmentation on two challenging synthetic-2-real set-ups and show that the approach can also be used for detection. . . Video . . . . BibTeX . @inproceedings{vu2018advent, title={ADVENT: Adversarial Entropy Minimization for Domain Adaptation in Semantic Segmentation}, author={Vu, Tuan-Hung and Jain, Himalaya and Bucher, Maxime and Cord, Mathieu and P{ &#39;e}rez, Patrick}, booktitle={CVPR}, year={2019} } . .",
+          "url": "https://valeoai.github.io/blog/publications/advent-dummy/",
+          "relUrl": "/publications/advent-dummy/",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page2": {
+          "title": "Boosting Few-Shot Visual Learning With Self-Supervision",
+          "content": "Boosting Few-Shot Visual Learning With Self-Supervision . Spyros Gidaris&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Nikos Komodakis&nbsp;&nbsp; Patrick Pérez&nbsp;&nbsp; Matthieu Cord . ICCV 2019 . Paper&nbsp;&nbsp; Code &nbsp;&nbsp; . . Abstract . Few-shot learning and self-supervised learning address different facets of the same problem: how to train a model with little or no labeled data. Few-shot learning aims for optimization methods and models that can learn efficiently to recognize patterns in the low data regime. Self-supervised learning focuses instead on unlabeled data and looks into it for the supervisory signal to feed high capacity deep neural networks. In this work we exploit the complementarity of these two domains and propose an approach for improving few-shot learning through self-supervision. We use self-supervision as an auxiliary task in a few-shot learning pipeline, enabling feature extractors to learn richer and more transferable visual representations while still using few annotated samples. Through self-supervision, our approach can be naturally extended towards using diverse unlabeled data from other datasets in the few-shot setting. We report consistent improvements across an array of architectures, datasets and self-supervision techniques. We provide the implementation code at: https://github.com/valeoai/BF3S . . . BibTeX . @inproceedings{gidaris2019boosting, title={Boosting few-shot visual learning with self-supervision}, author={Gidaris, Spyros and Bursuc, Andrei and Komodakis, Nikos and P{ &#39;e}rez, Patrick and Cord, Matthieu}, booktitle={Proceedings of the IEEE International Conference on Computer Vision}, pages={8059--8068}, year={2019} } . .",
+          "url": "https://valeoai.github.io/blog/publications/bf3s/",
+          "relUrl": "/publications/bf3s/",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page3": {
+          "title": "Learning Representations by Predicting Bags of Visual Words",
+          "content": "Learning Representations by Predicting Bags of Visual Words . Spyros Gidaris&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Nikos Komodakis&nbsp;&nbsp; Patrick Pérez&nbsp;&nbsp; Matthieu Cord . CVPR 2020 . Paper&nbsp;&nbsp; Code &nbsp;&nbsp; . . Abstract . Self-supervised representation learning targets to learn convnet-based image representations from unlabeled data. Inspired by the success of NLP methods in this area, in this work we propose a self-supervised approach based on spatially dense image descriptions that encode discrete visual concepts, here called visual words. To build such discrete representations, we quantize the feature maps of a first pre-trained self-supervised convnet, over a k-means based vocabulary. Then, as a self-supervised task, we train another convnet to predict the histogram of visual words of an image (i.e., its Bag-of-Words representation) given as input a perturbed version of that image. The proposed task forces the convnet to learn perturbation-invariant and context-aware image features, useful for downstream image understanding tasks. We extensively evaluate our method and demonstrate very strong empirical results, e.g., our pre-trained self-supervised representations transfer better on detection task and similarly on classification over classes &quot;unseen&quot; during pre-training, when compared to the supervised case. This also shows that the process of image discretization into visual words can provide the basis for very powerful self-supervised approaches in the image domain, thus allowing further connections to be made to related methods from the NLP domain that have been extremely successful so far. . . . BibTeX . @inproceedings{gidaris2020learning, title={Learning Representations by Predicting Bags of Visual Words}, author={Gidaris, Spyros and Bursuc, Andrei and Komodakis, Nikos and P{ &#39;e}rez, Patrick and Cord, Matthieu}, booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pages={6928--6938}, year={2020} } . .",
+          "url": "https://valeoai.github.io/blog/publications/bownet/",
+          "relUrl": "/publications/bownet/",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page4": {
+          "title": "Addressing Failure Prediction by Learning Model Confidence",
+          "content": "Addressing Failure Prediction by Learning Model Confidence . Charles Corbière&nbsp;&nbsp; Nicolas Thome&nbsp;&nbsp; Avner Bar-Hen&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez . NeurIPS 2019 . Paper&nbsp;&nbsp; Code &nbsp;&nbsp; BibTeX&nbsp;&nbsp; . . Abstract . Assessing reliably the confidence of a deep neural net and predicting its failures is of primary importance for the practical deployment of these models. In this paper, we propose a new target criterion for model confidence, corresponding to the True Class Probability (TCP). We show how using the TCP is more suited than relying on the classic Maximum Class Probability (MCP). We provide in addition theoretical guarantees for TCP in the context of failure prediction. Since the true class is by essence unknown at test time, we propose to learn TCP criterion on the training set, introducing a specific learning scheme adapted to this context. Extensive experiments are conducted for validating the relevance of the proposed approach. We study various network architectures, small and large scale datasets for image classification and semantic segmentation. We show that our approach consistently outperforms several strong methods, from MCP to Bayesian uncertainty, as well as recent approaches specifically designed for failure prediction. . . BibTeX . @incollection{NIPS2019_8556, title = {Addressing Failure Prediction by Learning Model Confidence}, author = {Corbi `{e}re, Charles and THOME, Nicolas and Bar-Hen, Avner and Cord, Matthieu and &#39;{e}rez, Patrick}, booktitle = {Advances in Neural Information Processing Systems 32}, pages = {2902--2913}, year = {2019}, } . .",
+          "url": "https://valeoai.github.io/blog/publications/confidnet/",
+          "relUrl": "/publications/confidnet/",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page5": {
+          "title": "DADA: Depth-aware Domain Adaptation in Semantic Segmentation",
+          "content": "DADA: Depth-aware Domain Adaptation in Semantic Segmentation . Tuan-Hung Vu&nbsp;&nbsp; Himalaya Jain&nbsp;&nbsp; Maxime Bucher&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez . ICCV 2019 . Paper&nbsp;&nbsp; Code &nbsp;&nbsp; . . Abstract . Unsupervised domain adaptation (UDA) is important for applications where large scale annotation of representative data is challenging. For semantic segmentation in particular, it helps deploy on real &quot;target domain&quot; data models that are trained on annotated images from a different &quot;source domain&quot;, notably a virtual environment. To this end, most previous works consider semantic segmentation as the only mode of supervision for source domain data, while ignoring other, possibly available, information like depth. In this work, we aim at exploiting at best such a privileged information while training the UDA model. We propose a unified depth-aware UDA framework that leverages in several complementary ways the knowledge of dense depth in the source domain. As a result, the performance of the trained semantic segmentation model on the target domain is boosted. Our novel approach indeed achieves state-of-the-art performance on different challenging synthetic-2-real benchmarks. . . . BibTeX . @inproceedings{vu2019dada, title={Dada: Depth-aware domain adaptation in semantic segmentation}, author={Vu, Tuan-Hung and Jain, Himalaya and Bucher, Maxime and Cord, Matthieu and P{ &#39;e}rez, Patrick}, booktitle={Proceedings of the IEEE International Conference on Computer Vision}, pages={7364--7373}, year={2019} } . .",
+          "url": "https://valeoai.github.io/blog/publications/dada/",
+          "relUrl": "/publications/dada/",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page6": {
+          "title": "Dynamic Task Weighting Methods for Multi-task Networks in Autonomous Driving Systems",
+          "content": "Dynamic Task Weighting Methods for Multi-task Networks in Autonomous Driving Systems . Isabelle Liang&nbsp;&nbsp; Ganesh Sistu&nbsp;&nbsp; Fabian Burger&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Senthil Yogamani&nbsp;&nbsp; . ITSC 2020 . Paper&nbsp;&nbsp; . . Abstract . Deep multi-task networks are of particular interest for autonomous driving systems. They can potentially strike an excellent trade-off between predictive performance, hardware constraints and efficient use of information from multiple types of annotations and modalities. However, training such models is non-trivial and requires balancing learning over all tasks as their respective losses display different scales, ranges and dynamics across training. Multiple task weighting methods that adjust the losses in an adaptive way have been proposed recently on different datasets and combinations of tasks, making it difficult to compare them. In this work, we review and systematically evaluate nine task weighting strategies on common grounds on three automotive datasets (KITTI, Cityscapes and WoodScape). We then propose a novel method combining evolutionary meta-learning and task-based selective backpropagation, for computing task weights leading to reliable network training. Our method outperforms state-of-the-art methods by a significant margin on a two-task application. . . . Results . . Comparison of various task-weighting methods for two-task network training. . Task weights and asynchronous backpropagation frequencies computed by several task-weighting methods. . BibTeX . @article{leang2020dynamic, title={Dynamic Task Weighting Methods for Multi-task Networks in Autonomous Driving Systems}, author={Leang, Isabelle and Sistu, Ganesh and Burger, Fabian and Bursuc, Andrei and Yogamani, Senthil}, journal={arXiv preprint arXiv:2001.02223}, year={2020} } . .",
+          "url": "https://valeoai.github.io/blog/publications/dynamic-mtl/",
+          "relUrl": "/publications/dynamic-mtl/",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page7": {
+          "title": "This dataset does not exist: training models from generated images",
+          "content": "This dataset does not exist: training models from generated images . Victor Besnier&nbsp;&nbsp; Himalaya Jain&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez . ICASSP 2020 . Paper&nbsp;&nbsp; . . Abstract . Current generative networks are increasingly proficient in generating high-resolution realistic images. These generative networks, especially the conditional ones, can potentially become a great tool for providing new image datasets. This naturally brings the question: Can we train a classifier only on the generated data? This potential availability of nearly unlimited amounts of training data challenges standard practices for training machine learning models, which have been crafted across the years for limited and fixed size datasets. In this work we investigate this question and its related challenges. We identify ways to improve significantly the performance over naive training on randomly generated images with regular heuristics. We propose three standalone techniques that can be applied at different stages of the pipeline, i.e., data generation, training on generated data, and deploying on real data. We evaluate our proposed approaches on a subset of the ImageNet dataset and show encouraging results compared to classifiers trained on real images. . . . Results . . Effect of applying HSM at different iterations during classifier training. The first image of each category is sampled randomly. The other two images are generated from HSM-computed codes at two different steps during training. The difference between the images shows that the effect of HSM is specific to the classifier. . Results for ImageNet-10 real test images. Performance of classifiers trained on generated images with all combinations of the proposed methods. Each classifier is trained for $150$ epochs (except Long training, where we let DS run for $150$ epochs) over a set of $N = 13K$ images; in case of continuous sampling we replace $50 %$ (i.e., $6,500$) of the images every epoch, while fixed dataset is the usual setup where no images are replaced during training. In all setups we use $N$ images per epoch. First column, without applying any of the proposed methods, is the baseline. Each of the proposed methods individually shows improvement over the baseline. The combination of the methods further improves the results. Effect of replacement fraction $r$ in DS. Classification accuracy using DS on real images with varying $r$, i.e., fraction of the dataset being replaced with new images every epoch. The figure shows plots for DS with and without BNA. . . BibTeX . @inproceedings{besnier2020dataset, title={This dataset does not exist: training models from generated images}, author={Besnier, Victor and Jain, Himalaya and Bursuc, Andrei and Cord, Matthieu and P{ &#39;e}rez, Patrick}, booktitle={ICASSP 2020-2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, pages={1--5}, year={2020}, organization={IEEE} } . .",
+          "url": "https://valeoai.github.io/blog/publications/gan-dataset/",
+          "relUrl": "/publications/gan-dataset/",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page8": {
+          "title": "TRADI: Tracking deep neural network weight distributions",
+          "content": "TRADI: Tracking deep neural network weight distributions . Gianni Franchi&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Emanuel Aldea&nbsp;&nbsp; Severine Dubuisson&nbsp;&nbsp; Isabelle Bloch . ECCV 2020 . Paper&nbsp;&nbsp; . . Abstract . During training, the weights of a Deep Neural Network (DNN) are optimized from a random initialization towards a nearly optimum value minimizing a loss function. Only this final state of the weights is typically kept for testing, while the wealth of information on the geometry of the weight space, accumulated over the descent towards the minimum is discarded. In this work we propose to make use of this knowledge and leverage it for computing the distributions of the weights of the DNN. This can be further used for estimating the epistemic uncertainty of the DNN by sampling an ensemble of networks from these distributions. To this end we introduce a method for tracking the trajectory of the weights during optimization, that does not require any changes in the architecture nor on the training procedure. We evaluate our method on standard classification and regression benchmarks, and on out-of-distribution detection for classification and semantic segmentation. We achieve competitive results, while preserving computational efficiency in comparison to other popular approaches. . . . Results . . Results on a synthetic regression task comparing MC dropout, Deep Ensembles, and TRADI. $x$-axis: spatial coordinate of the Gaussian process. Black lines: ground truth curve. Blue points: training points. Orange areas: estimated variance. . Distinguishing in- and out-of-distribution data for semantic segmentation (CamVid, StreetHazards, BDD Anomaly) and image classification (MNIST/notMNIST). . Qualitative results on CamVid-OOD. Columns: $(a)$ input image and ground truth; $(b)-(d)$ predictions and confidence scores by MC Dropout, Deep Ensembles, and TRADI. Rows: $(1)$ input and confidence maps; $(2)$ class predictions; $(3)$ zoomed-in area on input and confidence maps . BibTeX . @article{franchi2019tradi, title={TRADI: Tracking deep neural network weight distributions}, author={Franchi, Gianni and Bursuc, Andrei and Aldea, Emanuel and Dubuisson, S{ &#39;e}verine and Bloch, Isabelle}, journal={arXiv preprint arXiv:1912.11316}, year={2019} } . .",
+          "url": "https://valeoai.github.io/blog/publications/tradi/",
+          "relUrl": "/publications/tradi/",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page9": {
+          "title": "Zero-Shot Semantic Segmentation",
+          "content": "Zero-Shot Semantic Segmentation . Maxime Bucher&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez . NeurIPS 2019 . Paper&nbsp;&nbsp; Code &nbsp;&nbsp; . . Abstract . Semantic segmentation models are limited in their ability to scale to large numbers of object classes. In this paper, we introduce the new task of zero-shot semantic segmentation: learning pixel-wise classifiers for never-seen object categories with zero training examples. To this end, we present a novel architecture, ZS3Net, combining a deep visual segmentation model with an approach to generate visual representations from semantic word embeddings. By this way, ZS3Net addresses pixel classification tasks where both seen and unseen categories are faced at test time (so called &quot;generalized&quot; zero-shot classification). Performance is further improved by a self-training step that relies on automatic pseudo-labeling of pixels from unseen classes. On the two standard segmentation datasets, Pascal-VOC and Pascal-Context, we propose zero-shot benchmarks and set competitive baselines. For complex scenes as ones in the Pascal-Context dataset, we extend our approach by using a graph-context encoding to fully leverage spatial context priors coming from class-wise segmentation maps. . . . BibTeX . @inproceedings{bucher2019zero, title={Zero-shot semantic segmentation}, author={Bucher, Maxime and Tuan-Hung, VU and Cord, Matthieu and P{ &#39;e}rez, Patrick}, booktitle={Advances in Neural Information Processing Systems}, pages={468--479}, year={2019} } . .",
+          "url": "https://valeoai.github.io/blog/publications/zs3/",
+          "relUrl": "/publications/zs3/",
+          "date": ""
+      }
+      
+  
+
+
 }
