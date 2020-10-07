@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: "QuEST: Quantized Embedding Spacefor Transferring Knowledge" 
+title: "QuEST: Quantized Embedding Space for Transferring Knowledge" 
 image: images/publications/quest/quest.png
 hide: false
 category: [model-compression]
@@ -62,7 +62,15 @@ Despite its simplicity, we show that our approach is able to yield results that 
 To that end, we provide an extensive evaluation across several network architectures and most commonly used benchmark datasets.</p>
 
 <br>
+<hr>
 
+<h2 align="center"> Video</h2>
+
+<p align="center">
+  <iframe width="660" height="395" src="https://www.youtube.com/embed/bJyJkAhjp88" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="center"></iframe>
+</p>
+
+<br>
 <hr>
 
 <h2  align="center">BibTeX</h2>
