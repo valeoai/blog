@@ -3,20 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Zero-Shot Semantic Segmentation | valeo.ai blog</title>
+<title>Driving in action | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Zero-Shot Semantic Segmentation" />
+<meta property="og:title" content="Driving in action" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Zero-Shot Semantic Segmentation Maxime Bucher&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez" />
-<meta property="og:description" content="Zero-Shot Semantic Segmentation Maxime Bucher&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/zs3/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/zs3/" />
+<meta name="description" content="Getting from sensory inputs to car control goes either through a modular stack (perception &gt; localization &gt; forecast &gt; planning &gt; actuation) or, more radically, through a single end-to-end model. We work on both strategies, more specificaly on action forecasting, automatic interpretation of decisions taken by a driving system, and reinforcement / imitation learning for end-to-end systems (as in RL work at CVPR’20)." />
+<meta property="og:description" content="Getting from sensory inputs to car control goes either through a modular stack (perception &gt; localization &gt; forecast &gt; planning &gt; actuation) or, more radically, through a single end-to-end model. We work on both strategies, more specificaly on action forecasting, automatic interpretation of decisions taken by a driving system, and reinforcement / imitation learning for end-to-end systems (as in RL work at CVPR’20)." />
+<link rel="canonical" href="https://valeoai.github.io/blog/projects/driving" />
+<meta property="og:url" content="https://valeoai.github.io/blog/projects/driving" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/zs3/zs3.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/projects/driving.jpg" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-10-14T16:28:05-05:00" />
 <script type="application/ld+json">
-{"description":"Zero-Shot Semantic Segmentation Maxime Bucher&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez","@type":"BlogPosting","headline":"Zero-Shot Semantic Segmentation","dateModified":"2020-10-14T16:28:05-05:00","datePublished":"2020-10-14T16:28:05-05:00","image":"https://valeoai.github.io/blog/images/publications/zs3/zs3.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/zs3/"},"url":"https://valeoai.github.io/blog/publications/zs3/","@context":"https://schema.org"}</script>
+{"description":"Getting from sensory inputs to car control goes either through a modular stack (perception &gt; localization &gt; forecast &gt; planning &gt; actuation) or, more radically, through a single end-to-end model. We work on both strategies, more specificaly on action forecasting, automatic interpretation of decisions taken by a driving system, and reinforcement / imitation learning for end-to-end systems (as in RL work at CVPR’20).","@type":"BlogPosting","headline":"Driving in action","dateModified":"2020-10-14T16:28:05-05:00","datePublished":"2020-10-14T16:28:05-05:00","image":"https://valeoai.github.io/blog/images/projects/driving.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/projects/driving"},"url":"https://valeoai.github.io/blog/projects/driving","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai blog" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -25,20 +25,20 @@
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-179942144-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
 <link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Zero-Shot Semantic Segmentation | valeo.ai blog</title>
+<title>Driving in action | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Zero-Shot Semantic Segmentation" />
+<meta property="og:title" content="Driving in action" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Zero-Shot Semantic Segmentation Maxime Bucher&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez" />
-<meta property="og:description" content="Zero-Shot Semantic Segmentation Maxime Bucher&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/zs3/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/zs3/" />
+<meta name="description" content="Getting from sensory inputs to car control goes either through a modular stack (perception &gt; localization &gt; forecast &gt; planning &gt; actuation) or, more radically, through a single end-to-end model. We work on both strategies, more specificaly on action forecasting, automatic interpretation of decisions taken by a driving system, and reinforcement / imitation learning for end-to-end systems (as in RL work at CVPR’20)." />
+<meta property="og:description" content="Getting from sensory inputs to car control goes either through a modular stack (perception &gt; localization &gt; forecast &gt; planning &gt; actuation) or, more radically, through a single end-to-end model. We work on both strategies, more specificaly on action forecasting, automatic interpretation of decisions taken by a driving system, and reinforcement / imitation learning for end-to-end systems (as in RL work at CVPR’20)." />
+<link rel="canonical" href="https://valeoai.github.io/blog/projects/driving" />
+<meta property="og:url" content="https://valeoai.github.io/blog/projects/driving" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/zs3/zs3.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/projects/driving.jpg" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-10-14T16:28:05-05:00" />
 <script type="application/ld+json">
-{"description":"Zero-Shot Semantic Segmentation Maxime Bucher&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez","@type":"BlogPosting","headline":"Zero-Shot Semantic Segmentation","dateModified":"2020-10-14T16:28:05-05:00","datePublished":"2020-10-14T16:28:05-05:00","image":"https://valeoai.github.io/blog/images/publications/zs3/zs3.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/zs3/"},"url":"https://valeoai.github.io/blog/publications/zs3/","@context":"https://schema.org"}</script>
+{"description":"Getting from sensory inputs to car control goes either through a modular stack (perception &gt; localization &gt; forecast &gt; planning &gt; actuation) or, more radically, through a single end-to-end model. We work on both strategies, more specificaly on action forecasting, automatic interpretation of decisions taken by a driving system, and reinforcement / imitation learning for end-to-end systems (as in RL work at CVPR’20).","@type":"BlogPosting","headline":"Driving in action","dateModified":"2020-10-14T16:28:05-05:00","datePublished":"2020-10-14T16:28:05-05:00","image":"https://valeoai.github.io/blog/images/projects/driving.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/projects/driving"},"url":"https://valeoai.github.io/blog/projects/driving","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -113,112 +113,53 @@ window.onload = wrap_img;
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <style type="text/css">
-
-/*h1 {
-    margin-top:2.5em !important;
-    color: #4a788c;
-    font-size: 120%;
-}
-
-h2 {
-    margin-top:1.5em !important;      
-    color: #4a788c;
-
-}
-
-h3, h4 {
-    margin-top:0.5em !important;      
-    color: #4a788c;
-
-}*/
-
 h1 {
     margin-top:0.5em !important;
     margin-bottom:0.25em !important;
 }
 
 h3 {
-    margin-bottom:0.25em !important;
-    margin-top:0.25em !important;
+    /*line-height: normal;*/
+    line-height: 100%;
+    /*margin-top:0.2em !important;*/
+    margin-bottom:0.2em !important;
 }
 
-p {
-    margin-top:1rem !important; 
-    margin-bottom:1rem !important;  
-    font-size: 16px;
 
+p.b {
+  font-size: 95%;
+  /*font-style: italic;*/
+  color: #808080;
+  /*margin-top: 0.2em;
+  margin-bottom: 0.2em;*/
+  margin-top: 0;
+  margin-bottom: 0;
+  /*line-height: 40%;*/
+  /*line-height: 98%;*/
+  line-height: normal;
 }
 
-/*h1, h2, h3, h4 {
-    font-weight: normal !important;
-    margin-bottom:0.5em !important;  
-    code {
-      font-size: 100%;
-    }
-}   
-*/
+p.c {
+  font-size: 95%;
+  font-style: italic;
+  color: #808080;
+  /*margin-top: 0.2em;
+  margin-bottom: 0.2em;*/
+  margin-top: 0;
+  margin-bottom: 0;
+  /*line-height: 40%;*/
+  /*line-height: 100%;*/
+  line-height: normal;
+}
 
- .bibtex-box {
-        background-color: #eee;     
-        border: 1px solid #eeeeee;
-        /*border-radius: 10px ;*/
-        -moz-border-radius: 10px ;
-        -webkit-border-radius: 10px ;
-        padding: 20px;
-        margin-top:1rem; 
-        word-break: normal;
-    }
 </style>
 
-<h1 align="center"> Zero-Shot Semantic Segmentation </h1>
-<!-- Simple call of authors -->
-<!-- <h3 align="center"> Maxime Bucher, Tuan Hung Vu, Matthieu Cord, and Patrick Pérez </h3> -->
-<!-- Alternatively you can add links to author pages -->
-<h3 align="center"> <a href="https://maximebucher.github.io/">Maxime Bucher</a>&nbsp;&nbsp; <a href="https://tuanhungvu.github.io/">Tuan-Hung Vu</a>&nbsp;&nbsp;  <a href="http://webia.lip6.fr/~cord/">Matthieu Cord</a>&nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a></h3>
+<h1>Driving in action</h1>
+<p>Getting from sensory inputs to car control goes either through a modular stack (perception &gt; localization &gt; forecast &gt; planning &gt; actuation) or, more radically, through a single end-to-end model. We work on both strategies, more specificaly on action forecasting, automatic interpretation of decisions taken by a driving system, and reinforcement / imitation learning for end-to-end systems (as in <a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Toromanoff_End-to-End_Model-Free_Reinforcement_Learning_for_Urban_Driving_Using_Implicit_Affordances_CVPR_2020_paper.html">RL work</a> at CVPR’20).</p>
 
-<h3 align="center"> NeurIPS 2019 </h3>
+<h2>Publications</h2>
 
-<div align="center">
-  <p>
-    
-    <a href="https://papers.nips.cc/paper/8338-zero-shot-semantic-segmentation.pdf"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
-    
-    
-    <a href="https://github.com/valeoai/zs3"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
-    
-    
-    
-    
-  </p>
-</div>
 
-<div class="publication-teaser">
-    <img src="../../images/publications/zs3/zs3.png" alt="project teaser" />
-</div>
-
-<hr />
-
-<h2 align="center"> Abstract</h2>
-
-<p align="justify">Semantic segmentation models are limited in their ability to scale to large numbers of object classes. In this paper, we introduce the new task of zero-shot semantic segmentation: learning pixel-wise classifiers for never-seen object categories with zero training examples. To this end, we present a novel architecture, ZS3Net, combining a deep visual segmentation model with an approach to generate visual representations from semantic word embeddings. By this way, ZS3Net addresses pixel classification tasks where both seen and unseen categories are faced at test time (so called "generalized" zero-shot classification). Performance is further improved by a self-training step that relies on automatic pseudo-labeling of pixels from unseen classes. On the two standard segmentation datasets, Pascal-VOC and Pascal-Context, we propose zero-shot benchmarks and set competitive baselines. For complex scenes as ones in the Pascal-Context dataset, we extend our approach by using a graph-context encoding to fully leverage spatial context priors coming from class-wise segmentation maps.</p>
-
-<p><br /></p>
-
-<hr />
-
-<h2 align="center">BibTeX</h2>
-<left>
-  <pre class="bibtex-box">
-@inproceedings{bucher2019zero,
-  title={Zero-shot semantic segmentation},
-  author={Bucher, Maxime and Tuan-Hung, VU and Cord, Matthieu and P{\'e}rez, Patrick},
-  booktitle={Advances in Neural Information Processing Systems},
-  pages={468--479},
-  year={2019}
-}</pre>
-</left>
-
-<p><br /></p>
 
       </div>
     </main><footer class="site-footer h-card">
