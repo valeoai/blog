@@ -1,8 +1,8 @@
 ---
 layout: project
-title: Uncertainty estimation and performance prediction
-permalink: /projects/uncertainty
-description: When the unexpected happens, when the weather badly degrades, when a sensor gets blocked, the embarked perception system should diagnose the situation and react accordingly, <em>e.g.,</em> by calling an alternative system or the human driver. With this in mind, we investigate automatic ways to assess the uncertainty of a system and to predict its performance.
+title: Reliability
+permalink: /projects/reliability
+description: When the unexpected happens, when the weather badly degrades, when a sensor gets blocked, the embarked perception system should diagnose the situation and react accordingly, <em>e.g.,</em> by calling an alternative system or the human driver. With this in mind, we investigate ways to improve the robustness of neural nets to input variations, including to adversarial attacks, and to predict automatically the performance and the confidence of their predictions as in <a href="https://valeoai.github.io/blog/publications/confidnet">ConfidNet</a> at NeurIPS’19.
 image: "images/projects/uncertainty.jpg"
 category: project
 url: ""
@@ -18,7 +18,7 @@ url: ""
 
 {% assign publications = site.publications | sort: "year" | reverse %}
 {% assign publications = publications | where:"hide",false %}
-{% assign publications = publications | where:"category","uncertainty" %}
+{% assign publications = publications | where:"category","reliability" %}
 
 
 {% for pub in publications %}

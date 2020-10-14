@@ -2,7 +2,7 @@
 layout: project
 title: Domain adaptation
 permalink: /projects/domain-adaptation
-description: Deep learning and reinforcement learning are key technologies for autonomous driving. One of the challenges they face is to adapt to conditions which differ from those met during training. To improve systems’ performance in such situations, we explore so-called <em>“domain adaptation”</em> techniques.
+description: Deep learning and reinforcement learning are key technologies for autonomous driving. One of the challenges they face is to adapt to conditions which differ from those met during training. To improve systems’ performance in such situations, we explore so-called “domain adaptation” techniques, as in <a href="https://valeoai.github.io/blog/publications/advent/">AdvEnt</a> at CVPR’19 and <a href="https://valeoai.github.io/blog/publications/dada/">DADA</a> its extension at ICCV’19.
 image: "images/projects/domain_adaptation.jpg"
 category: project
 url: ""

@@ -2,7 +2,7 @@
 layout: project
 title: "Multi-sensor perception"
 permalink: /projects/multi-sensor
-description: Automated driving relies first on a diverse range of sensors, like Valeo’s <a href="https://www.valeo.com/en/360-vue/">fish-eye cameras</a>, <a href="https://www.valeo.com/en/valeo-scala/">LiDARs</a>, radars and ultrasonics. Exploiting at best the outputs of each of these sensors at any instant is fundamental to understand the complex environment of the vehicle. To this end, we explore various deep learning approaches where sensors are considered both in isolation and collectively.
+description: Automated driving relies first on a diverse range of sensors, like Valeo’s <a href="https://www.valeo.com/en/360-vue/">fish-eye cameras</a>, <a href="https://www.valeo.com/en/valeo-scala/">LiDARs</a>, radars and <a href="https://www.valeo.com/en/ultrasonic-parking-sensors/">ultrasonics</a>. Exploiting at best the outputs of each of these sensors at any instant is fundamental to understand the complex environment of the vehicle and gain robustness. To this end, we explore various machine learning approaches where sensors are considered either in isolation (as radar in <a href="https://arxiv.org/abs/2005.01456">Carrada</a> at ICPR’20) or collectively (as in <a href="https://valeoai.github.io/blog/publications/xmuda/">xMUDA</a> at CVPR’20).
 image: "images/projects/valeo_sensors.jpg"
 category: project
 url: ""

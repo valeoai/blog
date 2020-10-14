@@ -4,7 +4,7 @@ title: "Addressing Failure Prediction by Learning Model Confidence"
 image: images/publications/confidnet/teaser.png
 description: "Project page of ConfidNet"
 hide: false
-category: uncertainty
+category: [reliability]
 authors: Charles Corbière, Nicolas Thome, Avner Bar-Hen, Matthieu Cord, and Patrick Pérez
 venue: NeurIPS
 venue_long: Neural Information Processing Systems (NeurIPS)

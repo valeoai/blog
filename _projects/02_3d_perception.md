@@ -1,8 +1,8 @@
 ---
 layout: project
-title: 3D dynamic perception
+title: 3D perception
 permalink: /projects/3d-perception
-description: Each sensor delivers information about the 3D world around the vehicle and its temporal evolution. Detecting, segmenting and tracking important objects (road users, obstacles, street furnitures, etc.) in 3D, as well as forecasting their possible futures, is required for the driving system to plan and act in the safest and most confortable way. This encompasses a wide range of challenging tasks that our research tackles.
+description: Each sensor delivers information about the 3D world around the vehicle. Making sense of this information in terms of drivable space and important objects (road users, curb, obstacles, street furnitures) in 3D is required for the driving system to plan and act in the safest and most confortable way. This encompasses several challenging tasks, in particular detection and segmentation of objects in point coulds as in <a href="https://valeoai.github.io/blog/publications/fkaconv/">FKAConv</a> at ACCV’20.
 image: "images/projects/3d_perception.jpg"
 category: project
 url: /projects/3d-perception/
