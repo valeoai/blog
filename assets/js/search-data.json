@@ -16,7 +16,7 @@
   
       ,"page0": {
           "title": "Projects",
-          "content": "Projects . Domain adaptation . Deep learning and reinforcement learning are key technologies for autonomous driving. One of the challenges they face is to adapt to conditions which differ from those met during training. To improve systems’ performance in such situations, we explore so-called “domain adaptation” techniques. . . 3D dynamic perception . Each sensor delivers information about the 3D world around the vehicle and its temporal evolution. Detecting, segmenting and tracking important objects (road users, obstacles, street furnitures, etc.) in 3D, as well as forecasting their possible futures, is required for the driving system to plan and act in the safest and most confortable way. This encompasses a wide range of challenging tasks that our research tackles. . . Uncertainty estimation and performance prediction . When the unexpected happens, when the weather badly degrades, when a sensor gets blocked, the embarked perception system should diagnose the situation and react accordingly, e.g., by calling an alternative system or the human driver. With this in mind, we investigate automatic ways to assess the uncertainty of a system and to predict its performance. . . Multi-sensor perception . Automated driving relies first on a diverse range of sensors, like Valeo’s fish-eye cameras, LiDARs, radars and ultrasonics. Exploiting at best the outputs of each of these sensors at any instant is fundamental to understand the complex environment of the vehicle. To this end, we explore various deep learning approaches where sensors are considered both in isolation and collectively. . . Learning under limited supervision . Collecting diverse enough data, and annotating it precisely, is complex, costly and time-comsuming. To reduce dramatically these needs, we explore various alternative and complements to fully-supervised learning, e.g., training that is unsupervised, self-supervised, semi-supervised, active, zero-shot or few-shot. We also investigate training with fully-synthetic data (in combination with unsupervised domain adaptation) and with GAN-augmenented data. . . Driving in action . Getting from sensory inputs to car control goes either through a modular stack (perception &gt; localization &gt; forecast &gt; planning &gt; actuation) or, more radically, through a single end-to-end model. We work on both strategies, more specificaly on action forecasting, automatic interpretation of decisions taken by a driving system, and reinforcement / imitation learning for end-to-end systems (as in RL work at CVPR’20). . . Core Deep Learning . Deep learning being now a key component of AD systems, it is important to get a better understanding of its inner workings, in particular the link between the specifics of the learning optimization and the key properities (performance, regularity, robustness, generalization) of the trained models. Among other things, we investigate the impact of popular batch normalization on standard learning procedures and the ability to learn through unsupervised distillation. .",
+          "content": "Projects . Multi-sensor perception . Automated driving relies first on a diverse range of sensors, like Valeo’s fish-eye cameras, LiDARs, radars and ultrasonics. Exploiting at best the outputs of each of these sensors at any instant is fundamental to understand the complex environment of the vehicle and gain robustness. To this end, we explore various machine learning approaches where sensors are considered either in isolation (as radar in Carrada at ICPR’20) or collectively (as in xMUDA at CVPR’20). . . 3D perception . Each sensor delivers information about the 3D world around the vehicle. Making sense of this information in terms of drivable space and important objects (road users, curb, obstacles, street furnitures) in 3D is required for the driving system to plan and act in the safest and most confortable way. This encompasses several challenging tasks, in particular detection and segmentation of objects in point coulds as in FKAConv at ACCV’20. . . Frugal learning . Collecting diverse enough data, and annotating it precisely, is complex, costly and time-consuming. To reduce dramatically these needs, we explore various alternatives to fully-supervised learning, e.g, training that is unsupervised (as rOSD at ECCCV’20), self-supervised (as BoWNet at CVPR’20), semi-supervised, active, zero-shot (as ZS3 at NeurIPS’19) or few-shot. We also investigate training with fully-synthetic data (in combination with unsupervised domain adaptation) and with GAN-augmented data. . . Domain adaptation . Deep learning and reinforcement learning are key technologies for autonomous driving. One of the challenges they face is to adapt to conditions which differ from those met during training. To improve systems’ performance in such situations, we explore so-called “domain adaptation” techniques, as in AdvEnt at CVPR’19 and DADA its extension at ICCV’19. . . Reliability . When the unexpected happens, when the weather badly degrades, when a sensor gets blocked, the embarked perception system should diagnose the situation and react accordingly, e.g., by calling an alternative system or the human driver. With this in mind, we investigate ways to improve the robustness of neural nets to input variations, including to adversarial attacks, and to predict automatically the performance and the confidence of their predictions as in ConfidNet at NeurIPS’19. . . Driving in action . Getting from sensory inputs to car control goes either through a modular stack (perception &gt; localization &gt; forecast &gt; planning &gt; actuation) or, more radically, through a single end-to-end model. We work on both strategies, more specificaly on action forecasting, automatic interpretation of decisions taken by a driving system, and reinforcement / imitation learning for end-to-end systems (as in RL work at CVPR’20). . . Core Deep Learning . Deep learning being now a key component of AD systems, it is important to get a better understanding of its inner workings, in particular the link between the specifics of the learning optimization and the key properities (performance, regularity, robustness, generalization) of the trained models. Among other things, we investigate the impact of popular batch normalization on standard learning procedures and the ability to learn through unsupervised distillation. .",
           "url": "https://valeoai.github.io/blog/projects/",
           "relUrl": "/projects/",
           "date": ""
@@ -72,44 +72,9 @@
 
   
   
-
-  
-      ,"page1": {
-          "title": "Domain adaptation",
-          "content": "Domain adaptation . Deep learning and reinforcement learning are key technologies for autonomous driving. One of the challenges they face is to adapt to conditions which differ from those met during training. To improve systems’ performance in such situations, we explore so-called “domain adaptation” techniques. . Publications . xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation . Maximilian Jaritz, Tuan-Hung Vu, Raoul de Charette, Émilie Wirbel, and Patrick Pérez Computer Vision and Pattern Recognition (CVPR), 2020 . . DADA: Depth-aware Domain Adaptation in Semantic Segmentation . Tuan Hung Vu, Himalaya Jain, Maxime Bucher, Matthieu Cord, and Patrick Pérez International Conference on Computer Vision (ICCV), 2019 . . AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation . Tuan Hung Vu, Himalaya Jain, Maxime Bucher, Matthieu Cord, and Patrick Pérez Computer Vision and Pattern Recognition (CVPR), 2019 .",
-          "url": "https://valeoai.github.io/blog/projects/domain-adaptation",
-          "relUrl": "/projects/domain-adaptation",
-          "date": ""
-      }
-      
-  
-
-  
-      ,"page2": {
-          "title": "3D dynamic perception",
-          "content": "3D dynamic perception . Each sensor delivers information about the 3D world around the vehicle and its temporal evolution. Detecting, segmenting and tracking important objects (road users, obstacles, street furnitures, etc.) in 3D, as well as forecasting their possible futures, is required for the driving system to plan and act in the safest and most confortable way. This encompasses a wide range of challenging tasks that our research tackles. . Publications . FLOT: Scene Flow on Point Clouds guided by Optimal Transport . Gilles Puy, Alexandre Boulch, and Renaud Marlet European Conference on Computer Vision (ECCV), 2020 . . FKAConv: Feature-Kernel Alignment for Point Cloud Convolutiont . Alexandre Boulch, Gilles Puy, and Renaud Marlet Asian Conference on Computer Vision (ACCV), 2020 .",
-          "url": "https://valeoai.github.io/blog/projects/3d-perception",
-          "relUrl": "/projects/3d-perception",
-          "date": ""
-      }
-      
-  
-
-  
-      ,"page3": {
-          "title": "Uncertainty estimation and performance prediction",
-          "content": "Uncertainty estimation and performance prediction . When the unexpected happens, when the weather badly degrades, when a sensor gets blocked, the embarked perception system should diagnose the situation and react accordingly, e.g., by calling an alternative system or the human driver. With this in mind, we investigate automatic ways to assess the uncertainty of a system and to predict its performance. . Publications . TRADI: Tracking deep neural network weight distributions . Gianni Franchi, Andrei Bursuc, Emanuel Aldea, Severine Dubuisson, Isabelle Bloch European Conference on Computer Vision (ECCV), 2020 . . Addressing Failure Prediction by Learning Model Confidence . Charles Corbière, Nicolas Thome, Avner Bar-Hen, Matthieu Cord, and Patrick Pérez Neural Information Processing Systems (NeurIPS), 2019 .",
-          "url": "https://valeoai.github.io/blog/projects/uncertainty",
-          "relUrl": "/projects/uncertainty",
-          "date": ""
-      }
-      
-  
-
-  
-      ,"page4": {
+      ,"page0": {
           "title": "Multi-sensor perception",
-          "content": "Multi-sensor perception . Automated driving relies first on a diverse range of sensors, like Valeo’s fish-eye cameras, LiDARs, radars and ultrasonics. Exploiting at best the outputs of each of these sensors at any instant is fundamental to understand the complex environment of the vehicle. To this end, we explore various deep learning approaches where sensors are considered both in isolation and collectively. . Publications . xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation . Maximilian Jaritz, Tuan-Hung Vu, Raoul de Charette, Émilie Wirbel, and Patrick Pérez Computer Vision and Pattern Recognition (CVPR), 2020 . . Dynamic Task Weighting Methods for Multi-task Networks in Autonomous Driving Systems . Isabelle Leang, Ganesh Sistu, Fabian Burger, Andrei Bursuc, and Senthil Yogamani IEEE International Conference on Intelligent Transportation Systems (ITSC), 2020 .",
+          "content": "Multi-sensor perception . Automated driving relies first on a diverse range of sensors, like Valeo’s fish-eye cameras, LiDARs, radars and ultrasonics. Exploiting at best the outputs of each of these sensors at any instant is fundamental to understand the complex environment of the vehicle and gain robustness. To this end, we explore various machine learning approaches where sensors are considered either in isolation (as radar in Carrada at ICPR’20) or collectively (as in xMUDA at CVPR’20). . Publications . xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation . Maximilian Jaritz, Tuan-Hung Vu, Raoul de Charette, Émilie Wirbel, and Patrick Pérez Computer Vision and Pattern Recognition (CVPR), 2020 . . Dynamic Task Weighting Methods for Multi-task Networks in Autonomous Driving Systems . Isabelle Leang, Ganesh Sistu, Fabian Burger, Andrei Bursuc, and Senthil Yogamani IEEE International Conference on Intelligent Transportation Systems (ITSC), 2020 .",
           "url": "https://valeoai.github.io/blog/projects/multi-sensor",
           "relUrl": "/projects/multi-sensor",
           "date": ""
@@ -118,9 +83,20 @@
   
 
   
-      ,"page5": {
-          "title": "Learning under limited supervision ",
-          "content": "Learning under limited supervision . Collecting diverse enough data, and annotating it precisely, is complex, costly and time-comsuming. To reduce dramatically these needs, we explore various alternative and complements to fully-supervised learning, e.g., training that is unsupervised, self-supervised, semi-supervised, active, zero-shot or few-shot. We also investigate training with fully-synthetic data (in combination with unsupervised domain adaptation) and with GAN-augmenented data. . Publications . Toward Unsupervised, Multi-Object Discovery in Large-Scale Image Collections . Huy V. Vo, Patrick Pérez and Jean Ponce European Conference on Computer Vision (ECCV), 2020 . . Learning Representations by Predicting Bags of Visual Words . Spyros Gidaris, Andrei Bursuc, Nikos Komodakis, Patrick Pérez, and Matthieu Cord Computer Vision and Pattern Recognition (CVPR), 2020 . . This dataset does not exist: training models from generated images . Victor Besnier, Himalaya Jain, Andrei Bursuc, Matthieu Cord, and Patrick Pérez International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2020 . . Zero-Shot Semantic Segmentation . Maxime Bucher, Tuan Hung Vu, Matthieu Cord, and Patrick Pérez Neural Information Processing Systems (NeurIPS), 2019 . . Boosting Few-Shot Visual Learning With Self-Supervision . Spyros Gidaris, Andrei Bursuc, Nikos Komodakis, Patrick Pérez, and Matthieu Cord International Conference on Computer Vision (ICCV), 2019 . . Unsupervised Image Matching and Object Discovery as Optimization . Huy V. Vo, Francis Bach, Minsu Cho, Kai Han, Yann Lecun, Patrick Pérez and Jean Ponce Computer Vision and Pattern Recognition (CVPR), 2019 .",
+      ,"page1": {
+          "title": "3D perception",
+          "content": "3D perception . Each sensor delivers information about the 3D world around the vehicle. Making sense of this information in terms of drivable space and important objects (road users, curb, obstacles, street furnitures) in 3D is required for the driving system to plan and act in the safest and most confortable way. This encompasses several challenging tasks, in particular detection and segmentation of objects in point coulds as in FKAConv at ACCV’20. . Publications . FLOT: Scene Flow on Point Clouds guided by Optimal Transport . Gilles Puy, Alexandre Boulch, and Renaud Marlet European Conference on Computer Vision (ECCV), 2020 . . FKAConv: Feature-Kernel Alignment for Point Cloud Convolutiont . Alexandre Boulch, Gilles Puy, and Renaud Marlet Asian Conference on Computer Vision (ACCV), 2020 .",
+          "url": "https://valeoai.github.io/blog/projects/3d-perception",
+          "relUrl": "/projects/3d-perception",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page2": {
+          "title": "Frugal learning",
+          "content": "Frugal learning . Collecting diverse enough data, and annotating it precisely, is complex, costly and time-consuming. To reduce dramatically these needs, we explore various alternatives to fully-supervised learning, e.g, training that is unsupervised (as rOSD at ECCCV’20), self-supervised (as BoWNet at CVPR’20), semi-supervised, active, zero-shot (as ZS3 at NeurIPS’19) or few-shot. We also investigate training with fully-synthetic data (in combination with unsupervised domain adaptation) and with GAN-augmented data. . Publications . Toward Unsupervised, Multi-Object Discovery in Large-Scale Image Collections . Huy V. Vo, Patrick Pérez and Jean Ponce European Conference on Computer Vision (ECCV), 2020 . . Learning Representations by Predicting Bags of Visual Words . Spyros Gidaris, Andrei Bursuc, Nikos Komodakis, Patrick Pérez, and Matthieu Cord Computer Vision and Pattern Recognition (CVPR), 2020 . . This dataset does not exist: training models from generated images . Victor Besnier, Himalaya Jain, Andrei Bursuc, Matthieu Cord, and Patrick Pérez International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2020 . . Zero-Shot Semantic Segmentation . Maxime Bucher, Tuan Hung Vu, Matthieu Cord, and Patrick Pérez Neural Information Processing Systems (NeurIPS), 2019 . . Boosting Few-Shot Visual Learning With Self-Supervision . Spyros Gidaris, Andrei Bursuc, Nikos Komodakis, Patrick Pérez, and Matthieu Cord International Conference on Computer Vision (ICCV), 2019 . . Unsupervised Image Matching and Object Discovery as Optimization . Huy V. Vo, Francis Bach, Minsu Cho, Kai Han, Yann Lecun, Patrick Pérez and Jean Ponce Computer Vision and Pattern Recognition (CVPR), 2019 .",
           "url": "https://valeoai.github.io/blog/projects/limited-supervision",
           "relUrl": "/projects/limited-supervision",
           "date": ""
@@ -129,7 +105,29 @@
   
 
   
-      ,"page6": {
+      ,"page3": {
+          "title": "Domain adaptation",
+          "content": "Domain adaptation . Deep learning and reinforcement learning are key technologies for autonomous driving. One of the challenges they face is to adapt to conditions which differ from those met during training. To improve systems’ performance in such situations, we explore so-called “domain adaptation” techniques, as in AdvEnt at CVPR’19 and DADA its extension at ICCV’19. . Publications . xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation . Maximilian Jaritz, Tuan-Hung Vu, Raoul de Charette, Émilie Wirbel, and Patrick Pérez Computer Vision and Pattern Recognition (CVPR), 2020 . . DADA: Depth-aware Domain Adaptation in Semantic Segmentation . Tuan Hung Vu, Himalaya Jain, Maxime Bucher, Matthieu Cord, and Patrick Pérez International Conference on Computer Vision (ICCV), 2019 . . AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation . Tuan Hung Vu, Himalaya Jain, Maxime Bucher, Matthieu Cord, and Patrick Pérez Computer Vision and Pattern Recognition (CVPR), 2019 .",
+          "url": "https://valeoai.github.io/blog/projects/domain-adaptation",
+          "relUrl": "/projects/domain-adaptation",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page4": {
+          "title": "Reliability",
+          "content": "Reliability . When the unexpected happens, when the weather badly degrades, when a sensor gets blocked, the embarked perception system should diagnose the situation and react accordingly, e.g., by calling an alternative system or the human driver. With this in mind, we investigate ways to improve the robustness of neural nets to input variations, including to adversarial attacks, and to predict automatically the performance and the confidence of their predictions as in ConfidNet at NeurIPS’19. . Publications . TRADI: Tracking deep neural network weight distributions . Gianni Franchi, Andrei Bursuc, Emanuel Aldea, Severine Dubuisson, Isabelle Bloch European Conference on Computer Vision (ECCV), 2020 . . Addressing Failure Prediction by Learning Model Confidence . Charles Corbière, Nicolas Thome, Avner Bar-Hen, Matthieu Cord, and Patrick Pérez Neural Information Processing Systems (NeurIPS), 2019 .",
+          "url": "https://valeoai.github.io/blog/projects/reliability",
+          "relUrl": "/projects/reliability",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page5": {
           "title": "Driving in action",
           "content": "Driving in action . Getting from sensory inputs to car control goes either through a modular stack (perception &gt; localization &gt; forecast &gt; planning &gt; actuation) or, more radically, through a single end-to-end model. We work on both strategies, more specificaly on action forecasting, automatic interpretation of decisions taken by a driving system, and reinforcement / imitation learning for end-to-end systems (as in RL work at CVPR’20). . Publications .",
           "url": "https://valeoai.github.io/blog/projects/driving",
@@ -140,9 +138,9 @@
   
 
   
-      ,"page7": {
+      ,"page6": {
           "title": "Core Deep Learning",
-          "content": "Core Deep Learning . Deep learning being now a key component of AD systems, it is important to get a better understanding of its inner workings, in particular the link between the specifics of the learning optimization and the key properities (performance, regularity, robustness, generalization) of the trained models. Among other things, we investigate the impact of popular batch normalization on standard learning procedures and the ability to learn through unsupervised distillation. . Publications .",
+          "content": "Core Deep Learning . Deep learning being now a key component of AD systems, it is important to get a better understanding of its inner workings, in particular the link between the specifics of the learning optimization and the key properities (performance, regularity, robustness, generalization) of the trained models. Among other things, we investigate the impact of popular batch normalization on standard learning procedures and the ability to learn through unsupervised distillation. . Publications . QuEST: Quantized Embedding Space for Transferring Knowledge . Himalaya Jain, Spyros Gidaris, Nikos Komodakis, Patrick Pérez, and Matthieu Cord European Conference on Computer Vision (ECCV), 2020 .",
           "url": "https://valeoai.github.io/blog/projects/deep-learning",
           "relUrl": "/projects/deep-learning",
           "date": ""

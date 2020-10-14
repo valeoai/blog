@@ -3,20 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Uncertainty estimation and performance prediction | valeo.ai blog</title>
+<title>Reliability | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Uncertainty estimation and performance prediction" />
+<meta property="og:title" content="Reliability" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="When the unexpected happens, when the weather badly degrades, when a sensor gets blocked, the embarked perception system should diagnose the situation and react accordingly, e.g., by calling an alternative system or the human driver. With this in mind, we investigate automatic ways to assess the uncertainty of a system and to predict its performance." />
-<meta property="og:description" content="When the unexpected happens, when the weather badly degrades, when a sensor gets blocked, the embarked perception system should diagnose the situation and react accordingly, e.g., by calling an alternative system or the human driver. With this in mind, we investigate automatic ways to assess the uncertainty of a system and to predict its performance." />
-<link rel="canonical" href="https://valeoai.github.io/blog/projects/uncertainty" />
-<meta property="og:url" content="https://valeoai.github.io/blog/projects/uncertainty" />
+<meta name="description" content="When the unexpected happens, when the weather badly degrades, when a sensor gets blocked, the embarked perception system should diagnose the situation and react accordingly, e.g., by calling an alternative system or the human driver. With this in mind, we investigate ways to improve the robustness of neural nets to input variations, including to adversarial attacks, and to predict automatically the performance and the confidence of their predictions as in ConfidNet at NeurIPS’19." />
+<meta property="og:description" content="When the unexpected happens, when the weather badly degrades, when a sensor gets blocked, the embarked perception system should diagnose the situation and react accordingly, e.g., by calling an alternative system or the human driver. With this in mind, we investigate ways to improve the robustness of neural nets to input variations, including to adversarial attacks, and to predict automatically the performance and the confidence of their predictions as in ConfidNet at NeurIPS’19." />
+<link rel="canonical" href="https://valeoai.github.io/blog/projects/reliability" />
+<meta property="og:url" content="https://valeoai.github.io/blog/projects/reliability" />
 <meta property="og:site_name" content="valeo.ai blog" />
 <meta property="og:image" content="https://valeoai.github.io/blog/images/projects/uncertainty.jpg" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-10-14T16:28:05-05:00" />
+<meta property="article:published_time" content="2020-10-14T16:55:12-05:00" />
 <script type="application/ld+json">
-{"description":"When the unexpected happens, when the weather badly degrades, when a sensor gets blocked, the embarked perception system should diagnose the situation and react accordingly, e.g., by calling an alternative system or the human driver. With this in mind, we investigate automatic ways to assess the uncertainty of a system and to predict its performance.","@type":"BlogPosting","headline":"Uncertainty estimation and performance prediction","dateModified":"2020-10-14T16:28:05-05:00","datePublished":"2020-10-14T16:28:05-05:00","image":"https://valeoai.github.io/blog/images/projects/uncertainty.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/projects/uncertainty"},"url":"https://valeoai.github.io/blog/projects/uncertainty","@context":"https://schema.org"}</script>
+{"description":"When the unexpected happens, when the weather badly degrades, when a sensor gets blocked, the embarked perception system should diagnose the situation and react accordingly, e.g., by calling an alternative system or the human driver. With this in mind, we investigate ways to improve the robustness of neural nets to input variations, including to adversarial attacks, and to predict automatically the performance and the confidence of their predictions as in ConfidNet at NeurIPS’19.","@type":"BlogPosting","headline":"Reliability","dateModified":"2020-10-14T16:55:12-05:00","datePublished":"2020-10-14T16:55:12-05:00","image":"https://valeoai.github.io/blog/images/projects/uncertainty.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/projects/reliability"},"url":"https://valeoai.github.io/blog/projects/reliability","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai blog" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -25,20 +25,20 @@
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-179942144-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
 <link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Uncertainty estimation and performance prediction | valeo.ai blog</title>
+<title>Reliability | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Uncertainty estimation and performance prediction" />
+<meta property="og:title" content="Reliability" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="When the unexpected happens, when the weather badly degrades, when a sensor gets blocked, the embarked perception system should diagnose the situation and react accordingly, e.g., by calling an alternative system or the human driver. With this in mind, we investigate automatic ways to assess the uncertainty of a system and to predict its performance." />
-<meta property="og:description" content="When the unexpected happens, when the weather badly degrades, when a sensor gets blocked, the embarked perception system should diagnose the situation and react accordingly, e.g., by calling an alternative system or the human driver. With this in mind, we investigate automatic ways to assess the uncertainty of a system and to predict its performance." />
-<link rel="canonical" href="https://valeoai.github.io/blog/projects/uncertainty" />
-<meta property="og:url" content="https://valeoai.github.io/blog/projects/uncertainty" />
+<meta name="description" content="When the unexpected happens, when the weather badly degrades, when a sensor gets blocked, the embarked perception system should diagnose the situation and react accordingly, e.g., by calling an alternative system or the human driver. With this in mind, we investigate ways to improve the robustness of neural nets to input variations, including to adversarial attacks, and to predict automatically the performance and the confidence of their predictions as in ConfidNet at NeurIPS’19." />
+<meta property="og:description" content="When the unexpected happens, when the weather badly degrades, when a sensor gets blocked, the embarked perception system should diagnose the situation and react accordingly, e.g., by calling an alternative system or the human driver. With this in mind, we investigate ways to improve the robustness of neural nets to input variations, including to adversarial attacks, and to predict automatically the performance and the confidence of their predictions as in ConfidNet at NeurIPS’19." />
+<link rel="canonical" href="https://valeoai.github.io/blog/projects/reliability" />
+<meta property="og:url" content="https://valeoai.github.io/blog/projects/reliability" />
 <meta property="og:site_name" content="valeo.ai blog" />
 <meta property="og:image" content="https://valeoai.github.io/blog/images/projects/uncertainty.jpg" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-10-14T16:28:05-05:00" />
+<meta property="article:published_time" content="2020-10-14T16:55:12-05:00" />
 <script type="application/ld+json">
-{"description":"When the unexpected happens, when the weather badly degrades, when a sensor gets blocked, the embarked perception system should diagnose the situation and react accordingly, e.g., by calling an alternative system or the human driver. With this in mind, we investigate automatic ways to assess the uncertainty of a system and to predict its performance.","@type":"BlogPosting","headline":"Uncertainty estimation and performance prediction","dateModified":"2020-10-14T16:28:05-05:00","datePublished":"2020-10-14T16:28:05-05:00","image":"https://valeoai.github.io/blog/images/projects/uncertainty.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/projects/uncertainty"},"url":"https://valeoai.github.io/blog/projects/uncertainty","@context":"https://schema.org"}</script>
+{"description":"When the unexpected happens, when the weather badly degrades, when a sensor gets blocked, the embarked perception system should diagnose the situation and react accordingly, e.g., by calling an alternative system or the human driver. With this in mind, we investigate ways to improve the robustness of neural nets to input variations, including to adversarial attacks, and to predict automatically the performance and the confidence of their predictions as in ConfidNet at NeurIPS’19.","@type":"BlogPosting","headline":"Reliability","dateModified":"2020-10-14T16:55:12-05:00","datePublished":"2020-10-14T16:55:12-05:00","image":"https://valeoai.github.io/blog/images/projects/uncertainty.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/projects/reliability"},"url":"https://valeoai.github.io/blog/projects/reliability","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -154,8 +154,8 @@ p.c {
 
 </style>
 
-<h1>Uncertainty estimation and performance prediction</h1>
-<p>When the unexpected happens, when the weather badly degrades, when a sensor gets blocked, the embarked perception system should diagnose the situation and react accordingly, <em>e.g.,</em> by calling an alternative system or the human driver. With this in mind, we investigate automatic ways to assess the uncertainty of a system and to predict its performance.</p>
+<h1>Reliability</h1>
+<p>When the unexpected happens, when the weather badly degrades, when a sensor gets blocked, the embarked perception system should diagnose the situation and react accordingly, <em>e.g.,</em> by calling an alternative system or the human driver. With this in mind, we investigate ways to improve the robustness of neural nets to input variations, including to adversarial attacks, and to predict automatically the performance and the confidence of their predictions as in <a href="https://valeoai.github.io/blog/publications/confidnet">ConfidNet</a> at NeurIPS’19.</p>
 
 <h2>Publications</h2>
 

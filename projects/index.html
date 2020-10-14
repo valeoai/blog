@@ -153,15 +153,15 @@ p.c {
 <div class="row">
     <div class="col-md-4">
         <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/blog/projects/domain-adaptation">
-                <img class="media-object" src="../images/projects/domain_adaptation.jpg" alt="images/projects/domain_adaptation.jpg project teaser" />
+            <a href="https://valeoai.github.io/blog/projects/multi-sensor">
+                <img class="media-object" src="../images/projects/valeo_sensors.jpg" alt="images/projects/valeo_sensors.jpg project teaser" />
            </a>
         </div>
     </div>
     <div class="col-md-8">
         <div class="pubitembs">
-          <h3><a href="https://valeoai.github.io/blog/projects/domain-adaptation">Domain adaptation</a></h3>
-          <p>Deep learning and reinforcement learning are key technologies for autonomous driving. One of the challenges they face is to adapt to conditions which differ from those met during training. To improve systems’ performance in such situations, we explore so-called <em>“domain adaptation”</em> techniques.</p>
+          <h3><a href="https://valeoai.github.io/blog/projects/multi-sensor">Multi-sensor perception</a></h3>
+          <p>Automated driving relies first on a diverse range of sensors, like Valeo’s <a href="https://www.valeo.com/en/360-vue/">fish-eye cameras</a>, <a href="https://www.valeo.com/en/valeo-scala/">LiDARs</a>, radars and <a href="https://www.valeo.com/en/ultrasonic-parking-sensors/">ultrasonics</a>. Exploiting at best the outputs of each of these sensors at any instant is fundamental to understand the complex environment of the vehicle and gain robustness. To this end, we explore various machine learning approaches where sensors are considered either in isolation (as radar in <a href="https://arxiv.org/abs/2005.01456">Carrada</a> at ICPR’20) or collectively (as in <a href="https://valeoai.github.io/blog/publications/xmuda/">xMUDA</a> at CVPR’20).</p>
         </div>
 </div>
 </div>
@@ -178,44 +178,8 @@ p.c {
     </div>
     <div class="col-md-8">
         <div class="pubitembs">
-          <h3><a href="https://valeoai.github.io/blog/projects/3d-perception">3D dynamic perception</a></h3>
-          <p>Each sensor delivers information about the 3D world around the vehicle and its temporal evolution. Detecting, segmenting and tracking important objects (road users, obstacles, street furnitures, etc.) in 3D, as well as forecasting their possible futures, is required for the driving system to plan and act in the safest and most confortable way. This encompasses a wide range of challenging tasks that our research tackles.</p>
-        </div>
-</div>
-</div>
-
-<hr />
-
-<div class="row">
-    <div class="col-md-4">
-        <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/blog/projects/uncertainty">
-                <img class="media-object" src="../images/projects/uncertainty.jpg" alt="images/projects/uncertainty.jpg project teaser" />
-           </a>
-        </div>
-    </div>
-    <div class="col-md-8">
-        <div class="pubitembs">
-          <h3><a href="https://valeoai.github.io/blog/projects/uncertainty">Uncertainty estimation and performance prediction</a></h3>
-          <p>When the unexpected happens, when the weather badly degrades, when a sensor gets blocked, the embarked perception system should diagnose the situation and react accordingly, <em>e.g.,</em> by calling an alternative system or the human driver. With this in mind, we investigate automatic ways to assess the uncertainty of a system and to predict its performance.</p>
-        </div>
-</div>
-</div>
-
-<hr />
-
-<div class="row">
-    <div class="col-md-4">
-        <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/blog/projects/multi-sensor">
-                <img class="media-object" src="../images/projects/valeo_sensors.jpg" alt="images/projects/valeo_sensors.jpg project teaser" />
-           </a>
-        </div>
-    </div>
-    <div class="col-md-8">
-        <div class="pubitembs">
-          <h3><a href="https://valeoai.github.io/blog/projects/multi-sensor">Multi-sensor perception</a></h3>
-          <p>Automated driving relies first on a diverse range of sensors, like Valeo’s <a href="https://www.valeo.com/en/360-vue/">fish-eye cameras</a>, <a href="https://www.valeo.com/en/valeo-scala/">LiDARs</a>, radars and ultrasonics. Exploiting at best the outputs of each of these sensors at any instant is fundamental to understand the complex environment of the vehicle. To this end, we explore various deep learning approaches where sensors are considered both in isolation and collectively.</p>
+          <h3><a href="https://valeoai.github.io/blog/projects/3d-perception">3D perception</a></h3>
+          <p>Each sensor delivers information about the 3D world around the vehicle. Making sense of this information in terms of drivable space and important objects (road users, curb, obstacles, street furnitures) in 3D is required for the driving system to plan and act in the safest and most confortable way. This encompasses several challenging tasks, in particular detection and segmentation of objects in point coulds as in <a href="https://valeoai.github.io/blog/publications/fkaconv/">FKAConv</a> at ACCV’20.</p>
         </div>
 </div>
 </div>
@@ -232,8 +196,44 @@ p.c {
     </div>
     <div class="col-md-8">
         <div class="pubitembs">
-          <h3><a href="https://valeoai.github.io/blog/projects/limited-supervision">Learning under limited supervision </a></h3>
-          <p>Collecting diverse enough data, and annotating it precisely, is complex, costly and time-comsuming. To reduce dramatically these needs, we explore various alternative and complements to fully-supervised learning, <em>e.g.</em>, training that is unsupervised, self-supervised, semi-supervised, active, zero-shot or few-shot. We also investigate training with fully-synthetic data (in combination with unsupervised domain adaptation) and with GAN-augmenented data.</p>
+          <h3><a href="https://valeoai.github.io/blog/projects/limited-supervision">Frugal learning</a></h3>
+          <p>Collecting diverse enough data, and annotating it precisely, is complex, costly and time-consuming. To reduce dramatically these needs, we explore various alternatives to fully-supervised learning, e.g, training that is unsupervised (as <a href="https://valeoai.github.io/blog/publications/rosd/">rOSD</a> at ECCCV’20), self-supervised (as <a href="https://valeoai.github.io/blog/publications/bownet/">BoWNet</a> at CVPR’20), semi-supervised, active, zero-shot (as <a href="https://valeoai.github.io/blog/publications/zs3/">ZS3</a> at NeurIPS’19) or few-shot. We also investigate training with fully-synthetic data (in combination with unsupervised domain adaptation) and with GAN-augmented data.</p>
+        </div>
+</div>
+</div>
+
+<hr />
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="pubteaserbs">
+            <a href="https://valeoai.github.io/blog/projects/domain-adaptation">
+                <img class="media-object" src="../images/projects/domain_adaptation.jpg" alt="images/projects/domain_adaptation.jpg project teaser" />
+           </a>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div class="pubitembs">
+          <h3><a href="https://valeoai.github.io/blog/projects/domain-adaptation">Domain adaptation</a></h3>
+          <p>Deep learning and reinforcement learning are key technologies for autonomous driving. One of the challenges they face is to adapt to conditions which differ from those met during training. To improve systems’ performance in such situations, we explore so-called “domain adaptation” techniques, as in <a href="https://valeoai.github.io/blog/publications/advent/">AdvEnt</a> at CVPR’19 and <a href="https://valeoai.github.io/blog/publications/dada/">DADA</a> its extension at ICCV’19.</p>
+        </div>
+</div>
+</div>
+
+<hr />
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="pubteaserbs">
+            <a href="https://valeoai.github.io/blog/projects/reliability">
+                <img class="media-object" src="../images/projects/uncertainty.jpg" alt="images/projects/uncertainty.jpg project teaser" />
+           </a>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div class="pubitembs">
+          <h3><a href="https://valeoai.github.io/blog/projects/reliability">Reliability</a></h3>
+          <p>When the unexpected happens, when the weather badly degrades, when a sensor gets blocked, the embarked perception system should diagnose the situation and react accordingly, <em>e.g.,</em> by calling an alternative system or the human driver. With this in mind, we investigate ways to improve the robustness of neural nets to input variations, including to adversarial attacks, and to predict automatically the performance and the confidence of their predictions as in <a href="https://valeoai.github.io/blog/publications/confidnet">ConfidNet</a> at NeurIPS’19.</p>
         </div>
 </div>
 </div>

@@ -3,20 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Learning under limited supervision | valeo.ai blog</title>
+<title>Frugal learning | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Learning under limited supervision" />
+<meta property="og:title" content="Frugal learning" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Collecting diverse enough data, and annotating it precisely, is complex, costly and time-comsuming. To reduce dramatically these needs, we explore various alternative and complements to fully-supervised learning, e.g., training that is unsupervised, self-supervised, semi-supervised, active, zero-shot or few-shot. We also investigate training with fully-synthetic data (in combination with unsupervised domain adaptation) and with GAN-augmenented data." />
-<meta property="og:description" content="Collecting diverse enough data, and annotating it precisely, is complex, costly and time-comsuming. To reduce dramatically these needs, we explore various alternative and complements to fully-supervised learning, e.g., training that is unsupervised, self-supervised, semi-supervised, active, zero-shot or few-shot. We also investigate training with fully-synthetic data (in combination with unsupervised domain adaptation) and with GAN-augmenented data." />
+<meta name="description" content="Collecting diverse enough data, and annotating it precisely, is complex, costly and time-consuming. To reduce dramatically these needs, we explore various alternatives to fully-supervised learning, e.g, training that is unsupervised (as rOSD at ECCCV’20), self-supervised (as BoWNet at CVPR’20), semi-supervised, active, zero-shot (as ZS3 at NeurIPS’19) or few-shot. We also investigate training with fully-synthetic data (in combination with unsupervised domain adaptation) and with GAN-augmented data." />
+<meta property="og:description" content="Collecting diverse enough data, and annotating it precisely, is complex, costly and time-consuming. To reduce dramatically these needs, we explore various alternatives to fully-supervised learning, e.g, training that is unsupervised (as rOSD at ECCCV’20), self-supervised (as BoWNet at CVPR’20), semi-supervised, active, zero-shot (as ZS3 at NeurIPS’19) or few-shot. We also investigate training with fully-synthetic data (in combination with unsupervised domain adaptation) and with GAN-augmented data." />
 <link rel="canonical" href="https://valeoai.github.io/blog/projects/limited-supervision" />
 <meta property="og:url" content="https://valeoai.github.io/blog/projects/limited-supervision" />
 <meta property="og:site_name" content="valeo.ai blog" />
 <meta property="og:image" content="https://valeoai.github.io/blog/images/projects/limited_supervision.jpg" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-10-14T16:28:05-05:00" />
+<meta property="article:published_time" content="2020-10-14T16:55:12-05:00" />
 <script type="application/ld+json">
-{"description":"Collecting diverse enough data, and annotating it precisely, is complex, costly and time-comsuming. To reduce dramatically these needs, we explore various alternative and complements to fully-supervised learning, e.g., training that is unsupervised, self-supervised, semi-supervised, active, zero-shot or few-shot. We also investigate training with fully-synthetic data (in combination with unsupervised domain adaptation) and with GAN-augmenented data.","@type":"BlogPosting","headline":"Learning under limited supervision","dateModified":"2020-10-14T16:28:05-05:00","datePublished":"2020-10-14T16:28:05-05:00","image":"https://valeoai.github.io/blog/images/projects/limited_supervision.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/projects/limited-supervision"},"url":"https://valeoai.github.io/blog/projects/limited-supervision","@context":"https://schema.org"}</script>
+{"description":"Collecting diverse enough data, and annotating it precisely, is complex, costly and time-consuming. To reduce dramatically these needs, we explore various alternatives to fully-supervised learning, e.g, training that is unsupervised (as rOSD at ECCCV’20), self-supervised (as BoWNet at CVPR’20), semi-supervised, active, zero-shot (as ZS3 at NeurIPS’19) or few-shot. We also investigate training with fully-synthetic data (in combination with unsupervised domain adaptation) and with GAN-augmented data.","@type":"BlogPosting","headline":"Frugal learning","dateModified":"2020-10-14T16:55:12-05:00","datePublished":"2020-10-14T16:55:12-05:00","image":"https://valeoai.github.io/blog/images/projects/limited_supervision.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/projects/limited-supervision"},"url":"https://valeoai.github.io/blog/projects/limited-supervision","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai blog" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -25,20 +25,20 @@
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-179942144-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
 <link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Learning under limited supervision | valeo.ai blog</title>
+<title>Frugal learning | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Learning under limited supervision" />
+<meta property="og:title" content="Frugal learning" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Collecting diverse enough data, and annotating it precisely, is complex, costly and time-comsuming. To reduce dramatically these needs, we explore various alternative and complements to fully-supervised learning, e.g., training that is unsupervised, self-supervised, semi-supervised, active, zero-shot or few-shot. We also investigate training with fully-synthetic data (in combination with unsupervised domain adaptation) and with GAN-augmenented data." />
-<meta property="og:description" content="Collecting diverse enough data, and annotating it precisely, is complex, costly and time-comsuming. To reduce dramatically these needs, we explore various alternative and complements to fully-supervised learning, e.g., training that is unsupervised, self-supervised, semi-supervised, active, zero-shot or few-shot. We also investigate training with fully-synthetic data (in combination with unsupervised domain adaptation) and with GAN-augmenented data." />
+<meta name="description" content="Collecting diverse enough data, and annotating it precisely, is complex, costly and time-consuming. To reduce dramatically these needs, we explore various alternatives to fully-supervised learning, e.g, training that is unsupervised (as rOSD at ECCCV’20), self-supervised (as BoWNet at CVPR’20), semi-supervised, active, zero-shot (as ZS3 at NeurIPS’19) or few-shot. We also investigate training with fully-synthetic data (in combination with unsupervised domain adaptation) and with GAN-augmented data." />
+<meta property="og:description" content="Collecting diverse enough data, and annotating it precisely, is complex, costly and time-consuming. To reduce dramatically these needs, we explore various alternatives to fully-supervised learning, e.g, training that is unsupervised (as rOSD at ECCCV’20), self-supervised (as BoWNet at CVPR’20), semi-supervised, active, zero-shot (as ZS3 at NeurIPS’19) or few-shot. We also investigate training with fully-synthetic data (in combination with unsupervised domain adaptation) and with GAN-augmented data." />
 <link rel="canonical" href="https://valeoai.github.io/blog/projects/limited-supervision" />
 <meta property="og:url" content="https://valeoai.github.io/blog/projects/limited-supervision" />
 <meta property="og:site_name" content="valeo.ai blog" />
 <meta property="og:image" content="https://valeoai.github.io/blog/images/projects/limited_supervision.jpg" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-10-14T16:28:05-05:00" />
+<meta property="article:published_time" content="2020-10-14T16:55:12-05:00" />
 <script type="application/ld+json">
-{"description":"Collecting diverse enough data, and annotating it precisely, is complex, costly and time-comsuming. To reduce dramatically these needs, we explore various alternative and complements to fully-supervised learning, e.g., training that is unsupervised, self-supervised, semi-supervised, active, zero-shot or few-shot. We also investigate training with fully-synthetic data (in combination with unsupervised domain adaptation) and with GAN-augmenented data.","@type":"BlogPosting","headline":"Learning under limited supervision","dateModified":"2020-10-14T16:28:05-05:00","datePublished":"2020-10-14T16:28:05-05:00","image":"https://valeoai.github.io/blog/images/projects/limited_supervision.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/projects/limited-supervision"},"url":"https://valeoai.github.io/blog/projects/limited-supervision","@context":"https://schema.org"}</script>
+{"description":"Collecting diverse enough data, and annotating it precisely, is complex, costly and time-consuming. To reduce dramatically these needs, we explore various alternatives to fully-supervised learning, e.g, training that is unsupervised (as rOSD at ECCCV’20), self-supervised (as BoWNet at CVPR’20), semi-supervised, active, zero-shot (as ZS3 at NeurIPS’19) or few-shot. We also investigate training with fully-synthetic data (in combination with unsupervised domain adaptation) and with GAN-augmented data.","@type":"BlogPosting","headline":"Frugal learning","dateModified":"2020-10-14T16:55:12-05:00","datePublished":"2020-10-14T16:55:12-05:00","image":"https://valeoai.github.io/blog/images/projects/limited_supervision.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/projects/limited-supervision"},"url":"https://valeoai.github.io/blog/projects/limited-supervision","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -154,8 +154,8 @@ p.c {
 
 </style>
 
-<h1>Learning under limited supervision </h1>
-<p>Collecting diverse enough data, and annotating it precisely, is complex, costly and time-comsuming. To reduce dramatically these needs, we explore various alternative and complements to fully-supervised learning, <em>e.g.</em>, training that is unsupervised, self-supervised, semi-supervised, active, zero-shot or few-shot. We also investigate training with fully-synthetic data (in combination with unsupervised domain adaptation) and with GAN-augmenented data.</p>
+<h1>Frugal learning</h1>
+<p>Collecting diverse enough data, and annotating it precisely, is complex, costly and time-consuming. To reduce dramatically these needs, we explore various alternatives to fully-supervised learning, e.g, training that is unsupervised (as <a href="https://valeoai.github.io/blog/publications/rosd/">rOSD</a> at ECCCV’20), self-supervised (as <a href="https://valeoai.github.io/blog/publications/bownet/">BoWNet</a> at CVPR’20), semi-supervised, active, zero-shot (as <a href="https://valeoai.github.io/blog/publications/zs3/">ZS3</a> at NeurIPS’19) or few-shot. We also investigate training with fully-synthetic data (in combination with unsupervised domain adaptation) and with GAN-augmented data.</p>
 
 <h2>Publications</h2>
 
