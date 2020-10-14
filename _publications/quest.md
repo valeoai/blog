@@ -3,7 +3,7 @@ layout: publication
 title: "QuEST: Quantized Embedding Space for Transferring Knowledge" 
 image: images/publications/quest/quest.png
 hide: false
-category: [model-compression]
+category: [deep-learning]
 authors: Himalaya Jain, Spyros Gidaris, Nikos Komodakis, Patrick Pérez, and Matthieu Cord
 venue: ECCV
 venue_long: European Conference on Computer Vision (ECCV)
@@ -20,7 +20,7 @@ permalink: /publications/quest/
 <!-- Simple call of authors -->
 <!-- <h3 align="center"> {{page.authors}} </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center"> <a href="https://himalayajain.github.io/">Himalaya Jain</a>&nbsp;&nbsp; Spyros Gidaris&nbsp;&nbsp; <a href="http://imagine.enpc.fr/~komodakn/">Nikos Komodakis</a>&nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a>&nbsp;&nbsp; <a href="http://webia.lip6.fr/~cord/">Matthieu Cord</a></h3>
+<h3 align="center"> <a href="https://himalayajain.github.io/">Himalaya Jain</a>&nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=7atfg7EAAAAJ&hl=en">Spyros Gidaris</a>&nbsp;&nbsp; <a href="http://imagine.enpc.fr/~komodakn/">Nikos Komodakis</a>&nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a>&nbsp;&nbsp; <a href="http://webia.lip6.fr/~cord/">Matthieu Cord</a></h3>
 
 
 <h3 align="center"> {{page.venue}} {{page.year}} </h3>
