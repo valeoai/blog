@@ -2,7 +2,7 @@
 layout: project
 title: Driving in action
 permalink: /projects/driving
-description: Getting from sensory inputs to car control goes either through a modular stack (perception > localization > forecast > planning > actuation) or, more radically, through a single end-to-end model. We work on both strategies, more specificaly on action forecasting, automatic interpretation of decisions taken by a driving system, and reinforcement / imitation learning for end-to-end systems (as in <a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Toromanoff_End-to-End_Model-Free_Reinforcement_Learning_for_Urban_Driving_Using_Implicit_Affordances_CVPR_2020_paper.html">RL work</a> at CVPR’20).
+description: Getting from sensory inputs to car control goes either through a modular stack (perception > localization > forecast > planning > actuation) or, more radically, through a single end-to-end model. We work on both strategies, more specificaly on action forecasting, automatic interpretation of decisions taken by a driving system, and reinforcement / imitation learning for end-to-end systems (as in <a href="https://valeoai.github.io/blog/publications/e2e-rl-driving/">RL work</a> at CVPR’20).
 image: "images/projects/driving.jpg"
 category: project
 url: ""
