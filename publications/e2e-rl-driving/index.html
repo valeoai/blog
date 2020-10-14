@@ -3,20 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation | valeo.ai blog</title>
+<title>End-to-End Model-Free Reinforcement Learning for Urban Driving using Implicit Affordances | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation" />
+<meta property="og:title" content="End-to-End Model-Free Reinforcement Learning for Urban Driving using Implicit Affordances" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation Tuan-Hung Vu&nbsp;&nbsp; Himalaya Jain&nbsp;&nbsp; Maxime Bucher&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez" />
-<meta property="og:description" content="AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation Tuan-Hung Vu&nbsp;&nbsp; Himalaya Jain&nbsp;&nbsp; Maxime Bucher&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/advent/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/advent/" />
+<meta name="description" content="End-to-End Model-Free Reinforcement Learning for Urban Driving using Implicit Affordances Marin Toromanoff&nbsp;&nbsp; Emilie Wirbel&nbsp;&nbsp; Fabien Moutarde" />
+<meta property="og:description" content="End-to-End Model-Free Reinforcement Learning for Urban Driving using Implicit Affordances Marin Toromanoff&nbsp;&nbsp; Emilie Wirbel&nbsp;&nbsp; Fabien Moutarde" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/e2e-rl-driving/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/e2e-rl-driving/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/advent/advent_qualitative.jpg" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/e2e-rl-driving/data_augmentation.jpg" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-10-14T17:25:30-05:00" />
 <script type="application/ld+json">
-{"description":"AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation Tuan-Hung Vu&nbsp;&nbsp; Himalaya Jain&nbsp;&nbsp; Maxime Bucher&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez","@type":"BlogPosting","headline":"AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation","dateModified":"2020-10-14T17:25:30-05:00","datePublished":"2020-10-14T17:25:30-05:00","image":"https://valeoai.github.io/blog/images/publications/advent/advent_qualitative.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/advent/"},"url":"https://valeoai.github.io/blog/publications/advent/","@context":"https://schema.org"}</script>
+{"description":"End-to-End Model-Free Reinforcement Learning for Urban Driving using Implicit Affordances Marin Toromanoff&nbsp;&nbsp; Emilie Wirbel&nbsp;&nbsp; Fabien Moutarde","@type":"BlogPosting","headline":"End-to-End Model-Free Reinforcement Learning for Urban Driving using Implicit Affordances","dateModified":"2020-10-14T17:25:30-05:00","datePublished":"2020-10-14T17:25:30-05:00","image":"https://valeoai.github.io/blog/images/publications/e2e-rl-driving/data_augmentation.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/e2e-rl-driving/"},"url":"https://valeoai.github.io/blog/publications/e2e-rl-driving/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai blog" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -25,20 +25,20 @@
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-179942144-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
 <link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation | valeo.ai blog</title>
+<title>End-to-End Model-Free Reinforcement Learning for Urban Driving using Implicit Affordances | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation" />
+<meta property="og:title" content="End-to-End Model-Free Reinforcement Learning for Urban Driving using Implicit Affordances" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation Tuan-Hung Vu&nbsp;&nbsp; Himalaya Jain&nbsp;&nbsp; Maxime Bucher&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez" />
-<meta property="og:description" content="AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation Tuan-Hung Vu&nbsp;&nbsp; Himalaya Jain&nbsp;&nbsp; Maxime Bucher&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/advent/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/advent/" />
+<meta name="description" content="End-to-End Model-Free Reinforcement Learning for Urban Driving using Implicit Affordances Marin Toromanoff&nbsp;&nbsp; Emilie Wirbel&nbsp;&nbsp; Fabien Moutarde" />
+<meta property="og:description" content="End-to-End Model-Free Reinforcement Learning for Urban Driving using Implicit Affordances Marin Toromanoff&nbsp;&nbsp; Emilie Wirbel&nbsp;&nbsp; Fabien Moutarde" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/e2e-rl-driving/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/e2e-rl-driving/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/advent/advent_qualitative.jpg" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/e2e-rl-driving/data_augmentation.jpg" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-10-14T17:25:30-05:00" />
 <script type="application/ld+json">
-{"description":"AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation Tuan-Hung Vu&nbsp;&nbsp; Himalaya Jain&nbsp;&nbsp; Maxime Bucher&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez","@type":"BlogPosting","headline":"AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation","dateModified":"2020-10-14T17:25:30-05:00","datePublished":"2020-10-14T17:25:30-05:00","image":"https://valeoai.github.io/blog/images/publications/advent/advent_qualitative.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/advent/"},"url":"https://valeoai.github.io/blog/publications/advent/","@context":"https://schema.org"}</script>
+{"description":"End-to-End Model-Free Reinforcement Learning for Urban Driving using Implicit Affordances Marin Toromanoff&nbsp;&nbsp; Emilie Wirbel&nbsp;&nbsp; Fabien Moutarde","@type":"BlogPosting","headline":"End-to-End Model-Free Reinforcement Learning for Urban Driving using Implicit Affordances","dateModified":"2020-10-14T17:25:30-05:00","datePublished":"2020-10-14T17:25:30-05:00","image":"https://valeoai.github.io/blog/images/publications/e2e-rl-driving/data_augmentation.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/e2e-rl-driving/"},"url":"https://valeoai.github.io/blog/publications/e2e-rl-driving/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -170,24 +170,22 @@ p {
     }
 </style>
 
-<h1 align="center"> AdvEnt: Adversarial Entropy minimization for domain adaptation in semantic segmentation </h1>
+<h1 align="center"> End-to-End Model-Free Reinforcement Learning for Urban Driving using Implicit Affordances </h1>
 <!-- Simple call of authors -->
-<!-- <h3 align="center"> Tuan Hung Vu, Himalaya Jain, Maxime Bucher, Matthieu Cord, and Patrick Pérez </h3> -->
+<!-- <h3 align="center"> Marin Toromanoff, Emilie Wirbel, and Fabien Moutarde </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center"> <a href="https://tuanhungvu.github.io/">Tuan-Hung Vu</a>&nbsp;&nbsp; <a href="https://himalayajain.github.io/">Himalaya Jain</a>&nbsp;&nbsp; <a href="https://maximebucher.github.io/">Maxime Bucher</a>&nbsp;&nbsp; <a href="http://webia.lip6.fr/~cord/">Matthieu Cord</a>&nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a> </h3>
+<h3 align="center"> <a href="https://scholar.google.com/citations?user=Yu47MFYAAAAJ&amp;hl=fr">Marin Toromanoff</a>&nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=Z7wRy_cAAAAJ&amp;hl=en">Emilie Wirbel</a>&nbsp;&nbsp; <a href="https://people.minesparis.psl.eu/fabien.moutarde/">Fabien Moutarde</a></h3>
 
-<h3 align="center"> CVPR 2019 </h3>
+<h3 align="center"> CVPR 2020 </h3>
 
 <div align="center">
   <p>
     
-    <a href="https://arxiv.org/abs/1811.12833"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
+    <a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Toromanoff_End-to-End_Model-Free_Reinforcement_Learning_for_Urban_Driving_Using_Implicit_Affordances_CVPR_2020_paper.html"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
     
     
-    <a href="https://github.com/valeoai/ADVENT"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
+    <a href="https://github.com/valeoai/learningbycheating"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
     
-    
-    <a href="http://valeoai.github.io/blog/2020/07/07/test-advent-post.html"><i class="fab fa-blogger"></i> Blog</a> &nbsp;&nbsp;
     
     
     
@@ -195,21 +193,22 @@ p {
 </div>
 
 <div class="publication-teaser">
-    <img src="../../images/publications/advent/advent_qualitative.jpg" alt="project teaser" />
+    <img src="../../images/publications/e2e-rl-driving/architecture.jpg" alt="project teaser" />
 </div>
 
 <hr />
 
 <h2 align="center"> Abstract</h2>
 
-<p align="justify">Semantic segmentation is a key problem for many computer vision tasks. While approaches based on convolutional neural networks constantly break new records on different benchmarks, generalizing well to diverse testing environments remains a major challenge. In numerous real world applications, there is indeed a large gap between data distributions in train and test domains, which results in severe performance loss at run-time. In this work, we address the task of unsupervised domain adaptation in semantic segmentation with losses based on the entropy of the pixel-wise predictions. To this end, we propose two novel, complementary methods using (i) an entropy loss and (ii) an adversarial loss respectively. We demonstrate state-of-the-art performance in semantic segmentation on two challenging synthetic-2-real set-ups and show that the approach can also be used for detection.</p>
+<p align="justify">Reinforcement Learning (RL) aims at learning an optimal behavior policy from its own experiments and not rule-based control methods. However, there is no RL algorithm yet capable of handling a task as difficult as urban driving. We present a novel technique, coined implicit affordances, to effectively leverage RL for urban driving thus including lane keeping, pedestrians and vehicles avoidance, and traffic light detection. To our knowledge we are the first to present a successful RL agent handling such a complex task especially regarding the traffic light detection. Furthermore, we have demonstrated the effectiveness of our method by winning the Camera Only track of the CARLA challenge.</p>
 
+<p><br /></p>
 <hr />
 
 <h2 align="center"> Video</h2>
 
 <p align="center">
-  <iframe width="660" height="395" src="https://www.youtube.com/embed/Ihmz0yEqrq0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" align="center"></iframe>
+  <iframe width="660" height="395" src="https://www.youtube.com/embed/hfEos9HpgBA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" align="center"></iframe>
 </p>
 
 <p><br /></p>
@@ -218,11 +217,12 @@ p {
 <h2 align="center">BibTeX</h2>
 <left>
   <pre class="bibtex-box">
-@inproceedings{vu2018advent,
-  title={ADVENT: Adversarial Entropy Minimization for Domain Adaptation in Semantic Segmentation},
-  author={Vu, Tuan-Hung and Jain, Himalaya and Bucher, Maxime and Cord, Mathieu and P{\'e}rez, Patrick},
-  booktitle={CVPR},
-  year={2019}
+@inproceedings{toromanoff2020end,
+  title={End-to-End Model-Free Reinforcement Learning for Urban Driving using Implicit Affordances},
+  author={Toromanoff, Marin and Wirbel, Emilie and Moutarde, Fabien},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={7153--7162},
+  year={2020}
 }</pre>
 </left>
 
