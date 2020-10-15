@@ -44,15 +44,16 @@ permalink: /publications/
 <hr>
 
 
-<h2>2020</h2>
 
-{% assign publications = publications | where:"year","2020" %}
+<h2>__2020__</h2>
 
-<h2>{{publications.size}} publications in {{year}}</h2>
+{% assign curr_publications = publications | where:"year", 2020 %}
 
-{% assign publications = publications | sort: "month" | reverse %}
+<h2>{{curr_publications.size}} publications in {{curr_year}}</h2>
 
-{% for pub in publications %}
+{% assign curr_publications = curr_publications | sort: "month" | reverse %}
+
+{% for pub in curr_publications %}
 
 <div class="row">
     <div class="col-md-4">
@@ -79,8 +80,8 @@ permalink: /publications/
 <hr>
 {% endif %}
 
-{% endfor %} 
 
+{% endfor %} 
 
 <hr>
 <hr>
