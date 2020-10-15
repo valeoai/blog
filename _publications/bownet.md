@@ -7,8 +7,8 @@ category: [limited-supervision]
 authors: Spyros Gidaris, Andrei Bursuc, Nikos Komodakis, Patrick Pérez, and Matthieu Cord
 venue: CVPR
 venue_long: Computer Vision and Pattern Recognition (CVPR)
-year: 2020
-month: 6
+year: "2020"
+month: "6"
 code_url: https://github.com/valeoai/bownet
 paper_url: https://openaccess.thecvf.com/content_CVPR_2020/html/Gidaris_Learning_Representations_by_Predicting_Bags_of_Visual_Words_CVPR_2020_paper.html
 blog_url: 
