@@ -47,6 +47,12 @@ permalink: /publications/
 
 <h2>__2020__</h2>
 
+{% for pub in publications %}
+
+<p>{{pub.year}}-{{pub.month}}-{{pub.title}} </p>
+
+{% endfor %} 
+
 {% assign curr_publications = publications | where:"year", 2020 %}
 
 <h2>{{curr_publications.size}} publications in {{curr_year}}</h2>
