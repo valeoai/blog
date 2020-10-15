@@ -7,8 +7,8 @@ category: [limited-supervision]
 authors: Maxime Bucher, Tuan Hung Vu, Matthieu Cord, and Patrick Pérez
 venue: NeurIPS
 venue_long: Neural Information Processing Systems (NeurIPS)
-year: 2019
-month: 12
+year: "2019"
+month: "12"
 code_url: https://github.com/valeoai/zs3
 paper_url: https://papers.nips.cc/paper/8338-zero-shot-semantic-segmentation.pdf
 blog_url: 

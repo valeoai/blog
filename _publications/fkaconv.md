@@ -7,8 +7,8 @@ category: [3d-perception]
 authors: Alexandre Boulch, Gilles Puy, and Renaud Marlet
 venue: ACCV
 venue_long: Asian Conference on Computer Vision (ACCV)
-year: 2020
-month: 12
+year: "2020"
+month: "12"
 code_url: https://github.com/valeoai/FKAConv
 paper_url: https://arxiv.org/abs/2004.04462
 blog_url: 
