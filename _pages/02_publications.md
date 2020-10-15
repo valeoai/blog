@@ -6,15 +6,29 @@ permalink: /publications/
 
 
 
+<hr>
+<hr>
+<hr>
+<!-- {% assign grouped_publications = site.publications | group_by: 'year' | sort: 'month' | reverse %}
+{% for group in items_grouped %}
+  {% comment %} Create the items within the groups, now sorting by the criteria you want them sorted {% endcomment %}
+  {% assign items = item.items | sort: 'date' | reverse %}
+  {% comment %} Loop through the items {% endcomment %}
+  {% for item in items  %}
+    {{ item.title }}
+  {% endfor %}
+{% endfor %}
+
+ -->
+
 {% assign publication_years = "2020,2019" | split: ',' %}
 <!-- {% assign publications = site.publications | sort: "year" | reverse %} -->
-{% assign publications = site.publications | where: "hide", false %}
-
+{% assign publications = site.publications | where: 'hide', false %}
 
 
 <h2>__2020__</h2>
 
-{% assign curr_publications = site.publications | where: "year", "2020" %}
+{% assign curr_publications = site.publications | where: 'year', '2020' %}
 
 <h2>{{curr_publications.size}} publications in {{curr_year}}</h2>
 
