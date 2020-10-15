@@ -8,13 +8,13 @@ permalink: /publications/
 
 {% assign publication_years = "2020,2019" | split: ',' %}
 <!-- {% assign publications = site.publications | sort: "year" | reverse %} -->
-{% assign publications = site.publications | where:"hide",false %}
+{% assign publications = site.publications | where: "hide", false %}
 
 
 
 <h2>__2020__</h2>
 
-{% assign curr_publications = publications | where:"year", "2020" %}
+{% assign curr_publications = publications | where: "year", "2020" %}
 
 <h2>{{curr_publications.size}} publications in {{curr_year}}</h2>
 
