@@ -53,9 +53,17 @@ permalink: /publications/
 
 {% endfor %} 
 
+<hr>
+
 {% assign curr_publications = publications | where:"year", 2020 %}
 
 <h2>{{curr_publications.size}} publications in {{curr_year}}</h2>
+
+{% for pub in curr_publications %}
+
+<p>{{pub.year}}-{{pub.month}}-{{pub.title}} </p>
+
+{% endfor %} 
 
 {% assign curr_publications = curr_publications | sort: "month" | reverse %}
 
