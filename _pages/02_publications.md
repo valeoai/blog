@@ -20,10 +20,7 @@ permalink: /publications/
 {% assign curr_publications = publications | where:"year", curr_year %}
 {% assign curr_publications = curr_publications | sort: "month" | reverse %}
 
-
-
 {% for pub in curr_publications %}
-
 
 <div class="row">
     <div class="col-md-4">
