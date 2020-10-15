@@ -11,7 +11,7 @@ permalink: /publications/
 
 {% assign publication_years = "2020,2019" | split: ',' %}
 {% assign publications = site.publications | sort: "year" | reverse %}
-{% assign publications = publications | where:"hide",false %}
+{% assign publications = publications | where: "hide", false %}
 
 {% for pub in publications %}
 
@@ -55,7 +55,7 @@ permalink: /publications/
 
 <hr>
 
-{% assign curr_publications = publications | where:"year", 2020 %}
+{% assign curr_publications = publications | where: "year", 2020 %}
 
 <h2>{{curr_publications.size}} publications in {{curr_year}}</h2>
 
@@ -105,7 +105,7 @@ permalink: /publications/
 
 <h2>{{curr_year}}</h2>
 
-{% assign curr_publications = publications | where:"year",curr_year %}
+{% assign curr_publications = publications | where: "year", curr_year %}
 
 <h2>{{curr_publications.size}} publications in {{curr_year}}</h2>
 
