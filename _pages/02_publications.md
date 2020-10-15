@@ -13,6 +13,12 @@ permalink: /publications/
 {% assign publications = site.publications | sort: "year" | reverse %}
 {% assign publications = publications | where:"hide",false %}
 
+{% for pub in curr_publications %}
+
+<p> {{ pub.year}} :  {{pub.title}}</p>
+<br>
+{% endfor %} 
+
 {% for curr_year in publication_years %}
 
 <h2>{{curr_year}}</h2>
