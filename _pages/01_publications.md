@@ -1,33 +1,28 @@
 ---
 layout: project
-title: Core Deep Learning
-permalink: /projects/deep-learning
-description: Deep learning being now a key component of AD systems, it is important to get a better understanding of its inner workings, in particular the link between the specifics of the learning optimization and the key properities (performance, regularity, robustness, generalization) of the trained models. Among other things, we investigate the impact of popular batch normalization on standard learning procedures and the ability to learn through unsupervised distillation.
-image: "images/projects/deep_learning.jpg"
-category: project
-url: ""
+title: Publications
+permalink: /publications/
 ---
 
 
 
-<h1>{{page.title}}</h1> 
-<p>{{page.description}}</p>
+# Publications
 
-
-<h2>Publications</h2>
 
 {% assign years = "2020,2019" | split: ',' %}
 {% assign publications = site.publications | sort: "year" | reverse %}
 {% assign publications = publications | where:"hide",false %}
-{% assign publications = publications | where:"category","deep-learning" %}
 
 {% for year in years %}
+
+<h2>{{year}}</h2>
 
 {% assign curr_publications = publications | where:"year", year %}
 {% assign curr_publications = curr_publications | sort: "month" | reverse %}
 
-{% for pub in curr_publications %}
 
+
+{% for pub in curr_publications %}
 
 
 <div class="row">

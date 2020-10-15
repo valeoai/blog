@@ -8,6 +8,7 @@ authors: Isabelle Leang, Ganesh Sistu, Fabian Burger, Andrei Bursuc, and Senthil
 venue: ITSC
 venue_long: IEEE International Conference on Intelligent Transportation Systems (ITSC)
 year: 2020
+month: 9
 code_url: 
 paper_url: https://arxiv.org/abs/2001.02223
 blog_url: 

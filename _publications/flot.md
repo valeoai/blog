@@ -8,6 +8,7 @@ authors: Gilles Puy, Alexandre Boulch, and Renaud Marlet
 venue: ECCV
 venue_long: European Conference on Computer Vision (ECCV)
 year: 2020
+month: 8
 code_url: https://github.com/valeoai/FLOT
 paper_url: https://arxiv.org/abs/2007.11142
 blog_url: 

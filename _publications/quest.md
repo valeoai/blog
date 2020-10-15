@@ -8,6 +8,7 @@ authors: Himalaya Jain, Spyros Gidaris, Nikos Komodakis, Patrick Pérez, and Mat
 venue: ECCV
 venue_long: European Conference on Computer Vision (ECCV)
 year: 2020
+month: 8
 code_url:
 paper_url: https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123660171.pdf
 blog_url: 

@@ -8,6 +8,7 @@ authors: Marin Toromanoff, Emilie Wirbel, and Fabien Moutarde
 venue: CVPR
 venue_long: Computer Vision and Pattern Recognition (CVPR)
 year: 2020
+month: 6
 code_url: https://github.com/valeoai/learningbycheating
 paper_url: https://openaccess.thecvf.com/content_CVPR_2020/html/Toromanoff_End-to-End_Model-Free_Reinforcement_Learning_for_Urban_Driving_Using_Implicit_Affordances_CVPR_2020_paper.html
 blog_url: 

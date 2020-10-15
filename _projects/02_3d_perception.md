@@ -15,12 +15,17 @@ url: /projects/3d-perception/
 
 <h2>Publications</h2>
 
+{% assign years = "2020,2019" | split: ',' %}
 {% assign publications = site.publications | sort: "year" | reverse %}
 {% assign publications = publications | where:"hide",false %}
 {% assign publications = publications | where:"category","3d-perception" %}
 
+{% for year in years %}
 
-{% for pub in publications %}
+{% assign curr_publications = publications | where:"year", year %}
+{% assign curr_publications = curr_publications | sort: "month" | reverse %}
+
+{% for pub in curr_publications %}
 
 
 <div class="row">
@@ -47,5 +52,7 @@ url: /projects/3d-perception/
 {% if forloop.last == false %}
 <hr>
 {% endif %}
+
+{% endfor %} 
 
 {% endfor %} 

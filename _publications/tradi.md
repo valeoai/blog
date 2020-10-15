@@ -4,10 +4,11 @@ title: "TRADI: Tracking deep neural network weight distributions"
 image: images/publications/tradi/tradi_teaser.jpg
 hide: false
 category: [reliability]
-authors: Gianni Franchi, Andrei Bursuc, Emanuel Aldea, Severine Dubuisson, Isabelle Bloch
+authors: Gianni Franchi, Andrei Bursuc, Emanuel Aldea, Severine Dubuisson, and Isabelle Bloch
 venue: ECCV
 venue_long: European Conference on Computer Vision (ECCV)
 year: 2020
+month: 8
 code_url: 
 paper_url: https://arxiv.org/abs/1912.11316
 blog_url: 

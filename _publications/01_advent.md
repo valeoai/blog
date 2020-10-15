@@ -8,9 +8,10 @@ authors: Tuan Hung Vu, Himalaya Jain, Maxime Bucher, Matthieu Cord, and Patrick 
 venue: CVPR
 venue_long: Computer Vision and Pattern Recognition (CVPR)
 year: 2019
+month: 6
 code_url: https://github.com/valeoai/ADVENT
 paper_url: https://arxiv.org/abs/1811.12833
-blog_url: http://valeoai.github.io/blog/2020/07/07/test-advent-post.html
+blog_url: http://valeoai.github.io/blog/2020/07/07/advent-domain-adaptation.html
 slides_url: 
 bib_url: 
 permalink: /publications/advent/
