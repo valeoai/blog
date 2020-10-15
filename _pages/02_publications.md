@@ -9,15 +9,15 @@ permalink: /publications/
 # Publications
 
 
-{% assign years = "2020,2019" | split: ',' %}
+{% assign publication_years = "2020,2019" | split: ',' %}
 {% assign publications = site.publications | sort: "year" | reverse %}
 {% assign publications = publications | where:"hide",false %}
 
-{% for year in years %}
+{% for curr_year in publication_years %}
 
-<h2>{{year}}</h2>
+<h2>{{curr_year}}</h2>
 
-{% assign curr_publications = publications | where:"year", year %}
+{% assign curr_publications = publications | where:"year", curr_year %}
 {% assign curr_publications = curr_publications | sort: "month" | reverse %}
 
 
