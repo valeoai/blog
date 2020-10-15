@@ -46,7 +46,7 @@ permalink: /publications/
 
 <h2>2020</h2>
 
-{% assign curr_publications = publications | where:"year",2020 %}
+{% assign curr_publications = publications | where:"year","2020" %}
 
 <h2>{{curr_publications.size}} publications in {{curr_year}}</h2>
 
