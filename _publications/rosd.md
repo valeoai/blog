@@ -2,7 +2,7 @@
 layout: publication
 title: "Toward Unsupervised, Multi-Object Discovery in Large-Scale Image Collections" 
 image: images/publications/rosd/rosd_teaser.jpg
-hide: false
+hide: true
 category: [limited-supervision]
 authors: Huy V. Vo, Patrick Pérez and Jean Ponce
 venue: CVPR

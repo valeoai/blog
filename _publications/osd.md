@@ -2,7 +2,7 @@
 layout: publication
 title: "Unsupervised Image Matching and Object Discovery as Optimization" 
 image: images/publications/osd/osd_teaser.jpg
-hide: false
+hide: true
 category: [limited-supervision]
 authors: Huy V. Vo, Francis Bach, Minsu Cho, Kai Han, Yann Lecun, Patrick Pérez and Jean Ponce
 venue: CVPR
