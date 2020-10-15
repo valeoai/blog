@@ -30,7 +30,7 @@ permalink: /publications/
 
 {% assign curr_publications = publications | where: 'year', '2020' %}
 
-<h2>{{curr_publications.size}} publications in {{curr_year}}</h2>
+<h2>__{{curr_publications.size}} publications in 2020__</h2>
 
 {% assign curr_publications = curr_publications | sort: "month" | reverse %}
 
