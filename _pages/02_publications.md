@@ -130,6 +130,13 @@ permalink: /publications/
 {% for pub in publications %}
 
 <p> --{{pub.year}}-- vs --{{curr_year}}--</p>
+
+{% capture test_var1 %}{{ pub.year | json }}{% endcapture %}
+{% capture test_var2 %}{{ curr_year | json }}{% endcapture %}
+var1 = {% if test_var1 contains '"' %}string{% else %}number{% endif %}
+var2 = {% if test_var2 contains '"' %}string{% else %}number{% endif %}
+
+
 {% if pub.year == curr_year %}
 
 <div class="row">
