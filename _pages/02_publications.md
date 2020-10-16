@@ -10,11 +10,8 @@ permalink: /publications/
 # Publications
 
 
-
-
 {% assign publications = site.publications | where: 'hide', false %}
 {% assign publications_by_year = publications | group_by: 'year' | sort: 'year' |  reverse %}
-
 
 {% for year_publications in publications_by_year %}
 
@@ -23,9 +20,6 @@ permalink: /publications/
 {% assign curr_publications = year_publications.items | sort: 'month' | reverse %}
 
 {% for pub in curr_publications %}
-
-
-<p>month {{pub.month}}</p>
 
 <div class="row">
     <div class="col-md-4">
