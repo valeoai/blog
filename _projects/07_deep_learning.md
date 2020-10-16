@@ -21,12 +21,6 @@ url: ""
 {% assign publications = publications | where:"hide",false %}
 {% assign publications = publications | where:"category","deep-learning" %}
 
-<!-- {% for year in years %} -->
-
-<!-- {% assign curr_publications = publications | where:"year", year %} -->
-<!-- {% assign curr_publications = curr_publications | sort: "month" | reverse %} -->
-
-<!-- {% for pub in curr_publications %} -->
 {% for pub in publications %}
 
 <div class="row">
@@ -55,6 +49,3 @@ url: ""
 {% endif %}
 
 {% endfor %} 
-
-<!-- {% endfor %}  -->
-
