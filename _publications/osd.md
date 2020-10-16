@@ -7,8 +7,8 @@ category: [limited-supervision]
 authors: Huy V. Vo, Francis Bach, Minsu Cho, Kai Han, Yann Lecun, Patrick Pérez and Jean Ponce
 venue: CVPR
 venue_long: Computer Vision and Pattern Recognition (CVPR)
-year: "2019"
-month: "6"
+year: 2019
+month: 6
 code_url: https://https://github.com/huyvvo/OSD
 paper_url: https://openaccess.thecvf.com/content_CVPR_2019/html/Vo_Unsupervised_Image_Matching_and_Object_Discovery_as_Optimization_CVPR_2019_paper.html
 blog_url: 

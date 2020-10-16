@@ -7,8 +7,8 @@ category: [limited-supervision]
 authors: Victor Besnier, Himalaya Jain, Andrei Bursuc, Matthieu Cord, and Patrick Pérez
 venue: ICASSP
 venue_long: International Conference on Acoustics, Speech, and Signal Processing (ICASSP)
-year: "2020"
-month: "5"
+year: 2020
+month: 5
 code_url: 
 paper_url: https://arxiv.org/abs/1911.02888
 blog_url: 

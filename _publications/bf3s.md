@@ -7,8 +7,8 @@ category: [limited-supervision]
 authors: Spyros Gidaris, Andrei Bursuc, Nikos Komodakis, Patrick Pérez, and Matthieu Cord
 venue: ICCV
 venue_long: International Conference on Computer Vision (ICCV)
-year: "2019"
-month: "10"
+year: 2019
+month: 10
 code_url: https://github.com/valeoai/bf3s
 paper_url: http://openaccess.thecvf.com/content_ICCV_2019/html/Gidaris_Boosting_Few-Shot_Visual_Learning_With_Self-Supervision_ICCV_2019_paper.html
 blog_url: 

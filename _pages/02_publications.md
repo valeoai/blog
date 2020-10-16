@@ -53,9 +53,10 @@ permalink: /publications/
 
 
 
+<h2>{{publications.size}} publications across years </h2> 
+
 {% for curr_year in publication_years %}
 
-<h2>{{publications.size}} publications across years </h2> 
 
 <h2>{{curr_year}}</h2>
 

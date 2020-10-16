@@ -7,8 +7,8 @@ category: [domain-adaptation]
 authors: Tuan Hung Vu, Himalaya Jain, Maxime Bucher, Matthieu Cord, and Patrick Pérez
 venue: ICCV
 venue_long: International Conference on Computer Vision (ICCV)
-year: "2019"
-month: "10"
+year: 2019
+month: 10
 code_url: https://github.com/valeoai/dada
 paper_url: https://openaccess.thecvf.com/content_ICCV_2019/html/Vu_DADA_Depth-Aware_Domain_Adaptation_in_Semantic_Segmentation_ICCV_2019_paper.html
 blog_url: 
