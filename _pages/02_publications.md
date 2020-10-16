@@ -108,7 +108,7 @@ permalink: /publications/
 
 {% assign publication_years = "2020,2019" | split: ',' %}
 {% assign publications = site.publications | sort: "month" | reverse %}
-{% assign publications = site.publications | where:"hide",false %}
+{% assign publications = publications | where:"hide", false %}
 
 
 
