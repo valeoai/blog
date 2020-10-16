@@ -5,7 +5,7 @@ image: images/publications/rosd/rosd_teaser.jpg
 hide: true
 category: [limited-supervision]
 authors: Huy V. Vo, Patrick Pérez and Jean Ponce
-venue: CVPR
+venue: ECCV
 venue_long: European Conference on Computer Vision (ECCV)
 year: 2020
 month: 8
