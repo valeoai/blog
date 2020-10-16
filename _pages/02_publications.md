@@ -118,6 +118,7 @@ permalink: /publications/
 {% for curr_year in publication_years %}
 
 
+
 <h2>{{curr_year}}</h2>
 
 <!-- {% assign curr_publications = publications | where: "year", {{curr_year}} %} -->
@@ -128,6 +129,7 @@ permalink: /publications/
 
 {% for pub in publications %}
 
+<p> --{{pub.year}}-- vs --{{curr_year}}--</p>
 {% if pub.year == {{curr_year}} %}
 
 <div class="row">
