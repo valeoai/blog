@@ -4,11 +4,7 @@ title: Publications
 permalink: /publications/
 ---
 
-
-
-
-# Publications
-
+# Selected publications
 
 {% assign publications = site.publications | where: 'hide', false %}
 {% assign publications_by_year = publications | group_by: 'year' | sort: 'year' |  reverse %}
