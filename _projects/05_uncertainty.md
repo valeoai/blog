@@ -22,13 +22,13 @@ url: ""
 {% assign publications = publications | where:"category","reliability" %}
 
 
-{% for year in years %}
+<!-- {% for year in years %} -->
 
-{% assign curr_publications = publications | where:"year", year %}
-{% assign curr_publications = curr_publications | sort: "month" | reverse %}
+<!-- {% assign curr_publications = publications | where:"year", year %} -->
+<!-- {% assign curr_publications = curr_publications | sort: "month" | reverse %} -->
 
-{% for pub in curr_publications %}
-
+<!-- {% for pub in curr_publications %} -->
+{% for pub in publications %}
 
 <div class="row">
     <div class="col-md-4">
@@ -57,4 +57,5 @@ url: ""
 
 {% endfor %} 
 
-{% endfor %} 
+<!-- {% endfor %}  -->
+
