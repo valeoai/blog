@@ -104,7 +104,7 @@ permalink: /publications/
 <hr>
 <hr>
 
-<h2> __Attempt 2__ </h2>
+<h2> --Attempt 2-- </h2>
 
 
 {% assign publication_years = "2020,2019" | split: ',' %}
@@ -137,7 +137,7 @@ var1 = {% if test_var1 contains '"' %}string{% else %}number{% endif %}
 var2 = {% if test_var2 contains '"' %}string{% else %}number{% endif %}
 
 
-{% if pub.year == curr_year %}
+{% if pub.year contains curr_year %}
 
 <div class="row">
     <div class="col-md-4">
