@@ -8,7 +8,7 @@ category: [reliability]
 authors: Charles Corbière, Nicolas Thome, Avner Bar-Hen, Matthieu Cord, and Patrick Pérez
 venue: NeurIPS
 venue_long: Neural Information Processing Systems (NeurIPS)
-year: 2019
+year: "2019"
 month: 12
 code_url: https://github.com/valeoai/ConfidNet
 paper_url: https://papers.nips.cc/paper/8556-addressing-failure-prediction-by-learning-model-confidence

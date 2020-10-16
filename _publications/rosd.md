@@ -2,12 +2,12 @@
 layout: publication
 title: "Toward Unsupervised, Multi-Object Discovery in Large-Scale Image Collections" 
 image: images/publications/rosd/rosd_teaser.jpg
-hide: true
+hide: false
 category: [limited-supervision]
 authors: Huy V. Vo, Patrick Pérez and Jean Ponce
 venue: CVPR
 venue_long: European Conference on Computer Vision (ECCV)
-year: 2020
+year: "2020"
 month: 8
 code_url: https://https://github.com/huyvvo/rOSD
 paper_url: https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123680766.pdf

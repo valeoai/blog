@@ -7,7 +7,7 @@ category: [domain-adaptation,multi-sensor]
 authors: Maximilian Jaritz, Tuan-Hung Vu, Raoul de Charette, Émilie Wirbel, and Patrick Pérez
 venue: CVPR
 venue_long: Computer Vision and Pattern Recognition (CVPR)
-year: 2020
+year: "2020"
 month: 6
 code_url: https://github.com/valeoai/xmuda
 paper_url: https://arxiv.org/abs/1911.12676
