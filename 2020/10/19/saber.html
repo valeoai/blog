@@ -147,6 +147,9 @@ window.onload = wrap_img;
     <ul class="section-nav">
 <li class="toc-entry toc-h2"><a href="#dqns-human-baseline-vs-human-world-record-on-atari-games">DQN’s human baseline vs human world record on Atari Games</a></li>
 <li class="toc-entry toc-h2"><a href="#saber-a-standardized-atari-benchmark-for-general-reinforcement-learning-algorithms">SABER: a Standardized Atari BEnchmark for general Reinforcement learning algorithms</a></li>
+<li class="toc-entry toc-h2"><a href="#open-source-implementation-of-distributed-rainbow-iqn-r-iqn-ape-x">Open-source implementation of distributed Rainbow-IQN: R-IQN Ape-X</a></li>
+<li class="toc-entry toc-h2"><a href="#conclusion">Conclusion</a></li>
+<li class="toc-entry toc-h2"><a href="#references">References</a></li>
 </ul><p><em>This post describes our recent <a href="https://arxiv.org/pdf/1908.04683.pdf">work</a> on Deep Reinforcement Learning (DRL) on the Atari benchmark. DRL appears today as one of the closest paradigm to Artificial General Intelligence and large progress in this field has been enabled by the popular Atari benchmark. However, training and evaluation protocols on Atari vary across papers leading to biased comparisons, difficulty in reproducing results and in estimating the true contributions of the methods. Here we attempt to mitigate this problem with SABER: a Standardized Atari BEnchmark for general Reinforcement learning algorithms. SABER allows us to compare multiple methods under the same conditions against a human baseline and to note that previous claims of superhuman performance on DRL do not hold. Finally, we propose a new state-of-the-art algorithm R-IQN combining Rainbow with Implicit Quantile Networks (IQN). Our code is <a href="https://github.com/valeoai/rainbow-iqn-apex">available</a>.</em></p>
 
 <p>Deep Reinforcement Learning is a learning scheme based on trial-and-error in which an agent learns an optimal policy from its own experiments and a reward signal. The goal of the agent is to maximize the sum of future accumulated rewards and thus the agent needs to think about sequences of actions rather than instantaneous ones. The Atari benchmark is valuable for evaluating general AI algorithms as it includes more than 50 games displaying high variability in the task to solve, ranging from simple paddle control in the ball game Pong to complex labyrinth exploration in Montezuma’s Revenge which remains unsolved by general algorithms up to today.</p>
@@ -201,28 +204,31 @@ Results are confirming this, as Rainbow reaches only a median human-normalized s
 <b>Figure 2: Comparison of Rainbow and Rainbow-IQN on SABER.</b> We report median normalized scores w.r.t training steps.</div>
 
 <p><img src="/blog/images/posts/saber/median_human_normalised_5_seeds_both_rainbow_riqn.png" alt="median_rainbow_vs_us_seeds" height="60%" width="60%"></p>
-<div class="caption"><b>Figure 3: Comparison of Rainbow and Rainbow-IQN on a subset of 14 games using 5 seeds.<b> We report median normalized scores w.r.t training steps.&lt;/div&gt;
+<div class="caption">
+<b>Figure 3: Comparison of Rainbow and Rainbow-IQN on a subset of 14 games using 5 seeds.</b> We report median normalized scores w.r.t training steps.</div>
 
+<h2 id="open-source-implementation-of-distributed-rainbow-iqn-r-iqn-ape-x">
+<a class="anchor" href="#open-source-implementation-of-distributed-rainbow-iqn-r-iqn-ape-x" aria-hidden="true"><span class="octicon octicon-link"></span></a>Open-source implementation of distributed Rainbow-IQN: R-IQN Ape-X</h2>
 
-## Open-source implementation of distributed Rainbow-IQN: R-IQN Ape-X
+<p>We release our code of a distributed version of Rainbow-IQN following ideas from Ape-X <a class="citation" href="#horgan2018distributed">(Horgan et al., 2018)</a>. The distributed part is our main practical advantage over some existing DRL repositories (particularly <a href="https://github.com/google/dopamine">Dopamine</a> a popular open-source implementation of DQN, C51, IQN and a <em>small-Rainbow</em> but in which all algorithms are single worker).
+Indeed, when using DRL algorithms for other tasks (other than Atari and MuJoCO) a major bottleneck is the <em>speed</em> of the environment. DRL algorithms often need a huge amount of data before reaching reasonable performance. This amount may be practically impossible to reach if the environment is real-time and if collecting data from multiple environments at the same time is not possible.</p>
 
-We release our code of a distributed version of Rainbow-IQN following ideas from Ape-X <a class="citation" href="#horgan2018distributed">(Horgan et al., 2018)</a>. The distributed part is our main practical advantage over some existing DRL repositories (particularly [Dopamine](https://github.com/google/dopamine) a popular open-source implementation of DQN, C51, IQN and a *small-Rainbow* but in which all algorithms are single worker).
-Indeed, when using DRL algorithms for other tasks (other than Atari and MuJoCO) a major bottleneck is the *speed* of the environment. DRL algorithms often need a huge amount of data before reaching reasonable performance. This amount may be practically impossible to reach if the environment is real-time and if collecting data from multiple environments at the same time is not possible.
+<p>Building upon ideas from Ape-X, we use REDIS as a side server to store our replay memory. Multiple actors will act in their own instances of the environment to fill as fast as they can the replay memory. Finally, the learner will sample from this replay memory (the learner is actually completely independent of the environment) for backprop. The learner will also periodically update the weight of each actor as shown in the schema below (image taken from (Horgan et al.)).</p>
 
-Building upon ideas from Ape-X, we use REDIS as a side server to store our replay memory. Multiple actors will act in their own instances of the environment to fill as fast as they can the replay memory. Finally, the learner will sample from this replay memory (the learner is actually completely independent of the environment) for backprop. The learner will also periodically update the weight of each actor as shown in the schema below (image taken from (Horgan et al.)).
-
-![apex_arch](/blog/images/posts/saber/appex_arch.png){:height="60%" width="60%"}
+<p><img src="/blog/images/posts/saber/appex_arch.png" alt="apex_arch" height="60%" width="60%"></p>
 <div class="caption"><b>Figure 4: Ape-X architecture.</b></div>
 
-This scheme allowed us to use R-IQN Ape-X for the task of autonomous driving using [CARLA](http://carla.org/) as environment. This enabled us to win the [CARLA Challenge](https://carlachallenge.org/results-challenge-2019/) on Track 2 *Cameras Only* showing the strength of R-IQN Ape-X as a general algorithm.
+<p>This scheme allowed us to use R-IQN Ape-X for the task of autonomous driving using <a href="http://carla.org/">CARLA</a> as environment. This enabled us to win the <a href="https://carlachallenge.org/results-challenge-2019/">CARLA Challenge</a> on Track 2 <em>Cameras Only</em> showing the strength of R-IQN Ape-X as a general algorithm.</p>
 
-## Conclusion
+<h2 id="conclusion">
+<a class="anchor" href="#conclusion" aria-hidden="true"><span class="octicon octicon-link"></span></a>Conclusion</h2>
 
-In this work, we confirm the impact of standardized guidelines for DRL evaluation, and build a consolidated benchmark, SABER. In order to provide a more significant comparison, we build a new baseline based on human world records and show that the state-of-the-art Rainbow agent is in fact far from human world record performance. In the paper we share possible reasons for this failure. We hope that SABER will facilitate better comparisons and enable new exciting methods to prove their effectiveness without ambiguity.
+<p>In this work, we confirm the impact of standardized guidelines for DRL evaluation, and build a consolidated benchmark, SABER. In order to provide a more significant comparison, we build a new baseline based on human world records and show that the state-of-the-art Rainbow agent is in fact far from human world record performance. In the paper we share possible reasons for this failure. We hope that SABER will facilitate better comparisons and enable new exciting methods to prove their effectiveness without ambiguity.</p>
 
-Check out our paper to find out more about intuitions, experiments and interpretations.
+<p>Check out our paper to find out more about intuitions, experiments and interpretations.</p>
 
-## References
+<h2 id="references">
+<a class="anchor" href="#references" aria-hidden="true"><span class="octicon octicon-link"></span></a>References</h2>
 
 <ol class="bibliography">
 <li><span id="hessel2017rainbow">Hessel, M., Modayil, J., Van Hasselt, H., Schaul, T., Ostrovski, G., Dabney, W., Horgan, D., Piot, B., Azar, M., &amp; Silver, D. (2018). Rainbow: Combining improvements in deep reinforcement learning. <i>AAAI</i>.</span></li>
@@ -231,7 +237,6 @@ Check out our paper to find out more about intuitions, experiments and interpret
 <li><span id="schulman2017proximal">Schulman, J., Wolski, F., Dhariwal, P., Radford, A., &amp; Klimov, O. (2017). Proximal policy optimization algorithms. <i>ArXiv Preprint ArXiv:1707.06347</i>.</span></li>
 <li><span id="horgan2018distributed">Horgan, D., Quan, J., Budden, D., Barth-Maron, G., Hessel, M., Van Hasselt, H., &amp; Silver, D. (2018). Distributed prioritized experience replay. <i>ArXiv Preprint ArXiv:1803.00933</i>.</span></li>
 </ol>
-</b></b></div>
 
   </div><a class="u-url" href="/blog/2020/10/19/saber.html" hidden></a>
 </article>
