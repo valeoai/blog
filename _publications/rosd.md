@@ -21,7 +21,7 @@ permalink: /publications/rosd/
 <!-- Simple call of authors -->
 <!-- <h3 align="center"> {{page.authors}} </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center"> <a href="https://scholar.google.com/citations?user=gIf5VqUAAAAJ&hl=en">Huy V. Vo&nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a>&nbsp;&nbsp; <a href="https://www.di.ens.fr/~ponce/">Jean Ponce</a> </h3>
+<h3 align="center"> <a href="https://scholar.google.com/citations?user=gIf5VqUAAAAJ&hl=en">Huy V. Vo</a>&nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a>&nbsp;&nbsp; <a href="https://www.di.ens.fr/~ponce/">Jean Ponce</a> </h3>
 
 
 <h3 align="center"> {{page.venue}} {{page.year}} </h3>
