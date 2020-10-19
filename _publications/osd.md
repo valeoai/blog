@@ -9,7 +9,7 @@ venue: CVPR
 venue_long: Computer Vision and Pattern Recognition (CVPR)
 year: 2019
 month: 6
-code_url: https://https://github.com/huyvvo/OSD
+code_url: https://github.com/huyvvo/OSD
 paper_url: https://openaccess.thecvf.com/content_CVPR_2019/html/Vo_Unsupervised_Image_Matching_and_Object_Discovery_as_Optimization_CVPR_2019_paper.html
 blog_url: 
 slides_url: 
@@ -21,7 +21,7 @@ permalink: /publications/osd/
 <!-- Simple call of authors -->
 <!-- <h3 align="center"> {{page.authors}} </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center"> Huy V. Vo&nbsp;&nbsp; <a href="https://www.di.ens.fr/~fbach/">Francis Bach</a>&nbsp;&nbsp; <a href="http://cvlab.postech.ac.kr/~mcho/">Minsu Cho</a>&nbsp;&nbsp; <a href="http://www.hankai.org/">Kai Han</a>&nbsp;&nbsp; <a href="http://yann.lecun.com/">Yann LeCun</a>&nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a>&nbsp;&nbsp; <a href="https://www.di.ens.fr/~ponce/">Jean Ponce</a> </h3>
+<h3 align="center"> <a href="https://scholar.google.com/citations?user=gIf5VqUAAAAJ&hl=en">Huy V. Vo&nbsp;&nbsp; <a href="https://www.di.ens.fr/~fbach/">Francis Bach</a>&nbsp;&nbsp; <a href="http://cvlab.postech.ac.kr/~mcho/">Minsu Cho</a>&nbsp;&nbsp; <a href="http://www.hankai.org/">Kai Han</a>&nbsp;&nbsp; <a href="http://yann.lecun.com/">Yann LeCun</a>&nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a>&nbsp;&nbsp; <a href="https://www.di.ens.fr/~ponce/">Jean Ponce</a> </h3>
 
 
 <h3 align="center"> {{page.venue}} {{page.year}} </h3>
