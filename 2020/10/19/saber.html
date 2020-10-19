@@ -209,7 +209,7 @@ Indeed, when using DRL algorithms for other tasks (other than Atari and MuJoCO) 
 
 <p>Building upon ideas from Ape-X, we use REDIS as a side server to store our replay memory. Multiple actors will act in their own instances of the environment to fill as fast as they can the replay memory. Finally, the learner will sample from this replay memory (the learner is actually completely independent of the environment) for backprop. The learner will also periodically update the weight of each actor as shown in the schema below (image taken from (Horgan et al.)).</p>
 
-<p><img src="/blog/images/posts/saber/apppex_arch.png" alt="apex_arch" height="60%" width="60%">
+<p><img src="/blog/images/posts/saber/appex_arch.png" alt="apex_arch" height="60%" width="60%">
 <em>Figure 4. Ape-X architecture.</em></p>
 
 <p>This scheme allowed us to use R-IQN Ape-X for the task of autonomous driving using <a href="http://carla.org/">CARLA</a> as environment. This enabled us to win the <a href="https://carlachallenge.org/results-challenge-2019/">CARLA Challenge</a> on Track 2 <em>Cameras Only</em> showing the strength of R-IQN Ape-X as a general algorithm.</p>
