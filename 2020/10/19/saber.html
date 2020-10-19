@@ -175,7 +175,7 @@ Results are confirming this, as Rainbow reaches only a median human-normalized s
 <p>In the video below we analyze agents previously claimed as above human-level but far from the world record. By taking a closer look at the AI playing, we discovered that on most of Atari games DRL agents fail to understand the goal of the game. Sometimes they just don’t explore other levels than the initial one, sometimes they are stuck in a loop giving small amount of reward, etc. A compelling example of this is the game Riverraid. In this game, the agent must shoot everything and take fuel to survive: the agent dies if there is a collision with an enemy or if out of fuel. But as shooting fuel actually gives points, the agent doesn’t understand that he could play way longer and win even more points by actually taking this fuel bonus and not shooting them!</p>
 
 <p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/oH6P3ksYLek" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oH6P3ksYLek" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" align="center"></iframe>
 </p>
 
 <h2 id="saber-a-standardized-atari-benchmark-for-general-reinforcement-learning-algorithms">
@@ -183,11 +183,11 @@ Results are confirming this, as Rainbow reaches only a median human-normalized s
 
 <p>In our work we extend the recommendations proposed by <a class="citation" href="#machado2018revisiting">(Machado et al., 2018)</a> They also point out divergences in training and evaluating agents on Atari. Consequently they compile and propose a set of recommendations for more reproducible and comparable RL including sticky actions, ignoring life signal and using full action set.</p>
 
-<p>There is however one major parameter that is left out in (<a class="citation" href="#machado2018revisiting">(Machado et al., 2018)</a>: the maximum number of frames allowed per episode. This parameter ends the episode after a fixed number of time steps even if the game is not over. In most of the recent works, this is set to 30 min of game play (i.e., 108k frames) and only to 5 min in some others (i.e.,18k frames). This means that the reported scores can not be compared fairly. For example, in easy games (e.g., Atlantis), the agent never dies and the score is more or less linear with the allowed time: the reported score will be 6 times higher if capped at 30 minutes instead of 5 minutes.</p>
+<p>There is however one major parameter that is left out in <a class="citation" href="#machado2018revisiting">(Machado et al., 2018)</a>: the maximum number of frames allowed per episode. This parameter ends the episode after a fixed number of time steps even if the game is not over. In most of the recent works, this is set to 30 min of game play (i.e., 108k frames) and only to 5 min in some others (i.e.,18k frames). This means that the reported scores can not be compared fairly. For example, in easy games (e.g., Atlantis), the agent never dies and the score is more or less linear with the allowed time: the reported score will be 6 times higher if capped at 30 minutes instead of 5 minutes.</p>
 
 <p>Another issue with this time cap comes from the fact that some games are designed for much longer gameplay than 5 or 30 minutes. On those games (e.g., Atlantis, Video Pinball, Enduro) the scores reported of Ape-X, Rainbow and IQN are almost the same. This is due to all agents reaching the time limit and getting the maximum possible score in 30 minutes: the difference in scores is due to minor variations, not algorithmic difference and thus the comparison is not significant. As a consequence, the more successful agents are, the more games are incomparable because they reach the maximum possible score in the time cap while still being far behind human world record.</p>
 
-<p>This parameter can also be a source of ambiguity and error. The best score on Atlantis (2,311,815) is reported by Proximal Policy Optimization by <a class="citation" href="#schulman2017proximal">(Schulman et al., 2017)</a>, however this score is likely wrong: it seems impossible to reach in 30 minutes only! The first distributional paper by (<a href="http://proceedings.mlr.press/v70/bellemare17a.html">Bellemare et al.</a>) also did this mistake and reported wrong results before adding an erratum in a later version on <a href="https://arxiv.org/abs/1707.06887">ArXiv</a>.</p>
+<p>This parameter can also be a source of ambiguity and error. The best score on Atlantis (2,311,815) is reported by Proximal Policy Optimization by <a class="citation" href="#schulman2017proximal">(Schulman et al., 2017)</a>, however this score is likely wrong: it seems impossible to reach in 30 minutes only! The first distributional paper by (<a href="http://proceedings.mlr.press/v70/bellemare17a.html">Bellemare et al.</a>) also did this mistake and reported wrong results before adding an erratum in a later version on <em>ArXiv</em> <a class="citation" href="#bellemare2017distributional">(Bellemare et al., 2017)</a>.</p>
 
 <p><img src="/blog/images/posts/saber/saber_params.png" alt="saber_params" height="60%" width="60%"></p>
 <div class="caption">
@@ -199,11 +199,11 @@ Results are confirming this, as Rainbow reaches only a median human-normalized s
 
 <p>As shown in the graph below, R-IQN outperforms Rainbow and thus becomes the new state-of-the-art on Atari. However, we acknowledge that in order to make a more confident state-of-the-art claim we should run multiple times with different seeds. Testing an increased number of random seeds across the 60 Atari games is a computationally costly endeavor and is beyond the scope of this study. We test the stability of the performances of R-IQN across 5 random seeds on a subset of 14 games. We compare against Rainbow and report similar results in Figure 3.</p>
 
-<p><img src="/blog/images/posts/saber/median_human_normalised_Rainbow_vs_Rainbow_IQN.png" alt="median_rainbow_vs_us" height="60%" width="60%"></p>
+<p><img src="/blog/images/posts/saber/median_human_normalised_Rainbow_vs_Rainbow_IQN.png" alt="median_rainbow_vs_us" height="90%" width="90%"></p>
 <div class="caption">
 <b>Figure 2: Comparison of Rainbow and Rainbow-IQN on SABER.</b> We report median normalized scores w.r.t training steps.</div>
 
-<p><img src="/blog/images/posts/saber/median_human_normalised_5_seeds_both_rainbow_riqn.png" alt="median_rainbow_vs_us_seeds" height="60%" width="60%"></p>
+<p><img src="/blog/images/posts/saber/median_human_normalised_5_seeds_both_rainbow_riqn.png" alt="median_rainbow_vs_us_seeds" height="90%" width="90%"></p>
 <div class="caption">
 <b>Figure 3: Comparison of Rainbow and Rainbow-IQN on a subset of 14 games using 5 seeds.</b> We report median normalized scores w.r.t training steps.</div>
 
@@ -213,10 +213,12 @@ Results are confirming this, as Rainbow reaches only a median human-normalized s
 <p>We release our code of a distributed version of Rainbow-IQN following ideas from Ape-X <a class="citation" href="#horgan2018distributed">(Horgan et al., 2018)</a>. The distributed part is our main practical advantage over some existing DRL repositories (particularly <a href="https://github.com/google/dopamine">Dopamine</a> a popular open-source implementation of DQN, C51, IQN and a <em>small-Rainbow</em> but in which all algorithms are single worker).
 Indeed, when using DRL algorithms for other tasks (other than Atari and MuJoCO) a major bottleneck is the <em>speed</em> of the environment. DRL algorithms often need a huge amount of data before reaching reasonable performance. This amount may be practically impossible to reach if the environment is real-time and if collecting data from multiple environments at the same time is not possible.</p>
 
-<p>Building upon ideas from Ape-X, we use REDIS as a side server to store our replay memory. Multiple actors will act in their own instances of the environment to fill as fast as they can the replay memory. Finally, the learner will sample from this replay memory (the learner is actually completely independent of the environment) for backprop. The learner will also periodically update the weight of each actor as shown in the schema below (image taken from (Horgan et al.)).</p>
+<p>Building upon ideas from Ape-X, we use REDIS as a side server to store our replay memory. Multiple actors will act in their own instances of the environment to fill as fast as they can the replay memory. Finally, the learner will sample from this replay memory (the learner is actually completely independent of the environment) for backprop. The learner will also periodically update the weight of each actor as shown in the schema below.</p>
 
 <p><img src="/blog/images/posts/saber/appex_arch.png" alt="apex_arch" height="60%" width="60%"></p>
-<div class="caption"><b>Figure 4: Ape-X architecture.</b></div>
+<div class="caption">
+<b>Figure 4: Ape-X architecture.</b> image taken from <a class="citation" href="#horgan2018distributed">(Horgan et al., 2018)</a>
+</div>
 
 <p>This scheme allowed us to use R-IQN Ape-X for the task of autonomous driving using <a href="http://carla.org/">CARLA</a> as environment. This enabled us to win the <a href="https://carlachallenge.org/results-challenge-2019/">CARLA Challenge</a> on Track 2 <em>Cameras Only</em> showing the strength of R-IQN Ape-X as a general algorithm.</p>
 
@@ -235,6 +237,7 @@ Indeed, when using DRL algorithms for other tasks (other than Atari and MuJoCO) 
 <li><span id="dabney2018implicit">Dabney, W., Ostrovski, G., Silver, D., &amp; Munos, R. (2018). Implicit quantile networks for distributional reinforcement learning. <i>ICML</i>.</span></li>
 <li><span id="machado2018revisiting">Machado, M. C., Bellemare, M. G., Talvitie, E., Veness, J., Hausknecht, M., &amp; Bowling, M. (2018). Revisiting the arcade learning environment: Evaluation protocols and open problems for general agents. <i>Journal of Artificial Intelligence Research</i>, <i>61</i>, 523–562.</span></li>
 <li><span id="schulman2017proximal">Schulman, J., Wolski, F., Dhariwal, P., Radford, A., &amp; Klimov, O. (2017). Proximal policy optimization algorithms. <i>ArXiv Preprint ArXiv:1707.06347</i>.</span></li>
+<li><span id="bellemare2017distributional">Bellemare, M. G., Dabney, W., &amp; Munos, R. (2017). A distributional perspective on reinforcement learning. <i>ArXiv Preprint ArXiv:1707.06887</i>.</span></li>
 <li><span id="horgan2018distributed">Horgan, D., Quan, J., Budden, D., Barth-Maron, G., Hessel, M., Van Hasselt, H., &amp; Silver, D. (2018). Distributed prioritized experience replay. <i>ArXiv Preprint ArXiv:1803.00933</i>.</span></li>
 </ol>
 
