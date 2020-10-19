@@ -145,19 +145,16 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul class="section-nav">
-<li class="toc-entry toc-h1"><a href="#dqns-human-baseline-vs-human-world-record-on-atari-games">DQN’s human baseline vs human world record on Atari Games</a></li>
-<li class="toc-entry toc-h1"><a href="#saber-a-standardized-atari-benchmark-for-general-reinforcement-learning-algorithms">SABER: a Standardized Atari BEnchmark for general Reinforcement learning algorithms</a></li>
-<li class="toc-entry toc-h1"><a href="#open-source-implementation-of-distributed-rainbow-iqn-r-iqn-ape-x">Open-source implementation of distributed Rainbow-IQN: R-IQN Ape-X</a></li>
-<li class="toc-entry toc-h1"><a href="#conclusion">Conclusion</a></li>
-<li class="toc-entry toc-h1"><a href="#references">References</a></li>
+<li class="toc-entry toc-h2"><a href="#dqns-human-baseline-vs-human-world-record-on-atari-games">DQN’s human baseline vs human world record on Atari Games</a></li>
+<li class="toc-entry toc-h2"><a href="#saber-a-standardized-atari-benchmark-for-general-reinforcement-learning-algorithms">SABER: a Standardized Atari BEnchmark for general Reinforcement learning algorithms</a></li>
 </ul><p><em>This post describes our recent <a href="https://arxiv.org/pdf/1908.04683.pdf">work</a> on Deep Reinforcement Learning (DRL) on the Atari benchmark. DRL appears today as one of the closest paradigm to Artificial General Intelligence and large progress in this field has been enabled by the popular Atari benchmark. However, training and evaluation protocols on Atari vary across papers leading to biased comparisons, difficulty in reproducing results and in estimating the true contributions of the methods. Here we attempt to mitigate this problem with SABER: a Standardized Atari BEnchmark for general Reinforcement learning algorithms. SABER allows us to compare multiple methods under the same conditions against a human baseline and to note that previous claims of superhuman performance on DRL do not hold. Finally, we propose a new state-of-the-art algorithm R-IQN combining Rainbow with Implicit Quantile Networks (IQN). Our code is <a href="https://github.com/valeoai/rainbow-iqn-apex">available</a>.</em></p>
 
 <p>Deep Reinforcement Learning is a learning scheme based on trial-and-error in which an agent learns an optimal policy from its own experiments and a reward signal. The goal of the agent is to maximize the sum of future accumulated rewards and thus the agent needs to think about sequences of actions rather than instantaneous ones. The Atari benchmark is valuable for evaluating general AI algorithms as it includes more than 50 games displaying high variability in the task to solve, ranging from simple paddle control in the ball game Pong to complex labyrinth exploration in Montezuma’s Revenge which remains unsolved by general algorithms up to today.</p>
 
 <p>We notice however that training and evaluation procedures on Atari can be different from paper to paper and thus leading to bias in comparison. Moreover this leads to difficulties to reproduce results of published works as some training or evaluation parameters are barely explained or sometimes not mentioned. In order to facilitate reproducible and comparable DRL, we introduce SABER: a Standardized Atari BEnchmark for general Reinforcement learning algorithms. Furthermore, we introduce a human world record baseline and argue that previous claims of superhuman performance of DRL might not hold. Finally, we propose a new state-of-the-art algorithm R-IQN by combining the current state-of-the-art <strong>Rainbow</strong> <a class="citation" href="#hessel2017rainbow">(Hessel et al., 2018)</a> along with Implicit Quantile Networks (<strong>IQN</strong> <a class="citation" href="#dabney2018implicit">(Dabney et al., 2018)</a>). We release an open-source <a href="https://github.com/valeoai/rainbow-iqn-apex">implementation</a> of distributed R-IQN following the ideas from Ape-X!</p>
 
-<h1 id="dqns-human-baseline-vs-human-world-record-on-atari-games">
-<a class="anchor" href="#dqns-human-baseline-vs-human-world-record-on-atari-games" aria-hidden="true"><span class="octicon octicon-link"></span></a>DQN’s human baseline vs human world record on Atari Games</h1>
+<h2 id="dqns-human-baseline-vs-human-world-record-on-atari-games">
+<a class="anchor" href="#dqns-human-baseline-vs-human-world-record-on-atari-games" aria-hidden="true"><span class="octicon octicon-link"></span></a>DQN’s human baseline vs human world record on Atari Games</h2>
 
 <p>A common way to evaluate AI for games is to let agents compete against the best humans. Recent examples for DRL include the victory of <a href="https://deepmind.com/alphago-korea">AlphaGo versus Lee Sedol</a> for Go, <a href="https://openai.com/blog/openai-five/">OpenAI Five</a> on Dota 2 or <a href="https://deepmind.com/blog/article/alphastar-mastering-real-time-strategy-game-starcraft-ii">AlphaStar versus Mana</a> for StarCraft 2. For this reason one of the most used metrics for evaluating RL agents on Atari is to compare them to the human baseline introduced in DQN.</p>
 
@@ -165,18 +162,21 @@ window.onload = wrap_img;
 
 <p>The current world records are available online for 58 of the 61 evaluated Atari games. For example, on VideoPinball, the world record is 50,000 times higher than the human baseline of DQN. Evaluating these world records scores using the usual human normalized score has a median of 4,400% and a mean of 99,300% (see Figure below for details on each game), to be compared to 200% and 800% of the current state-of-the-art Rainbow!</p>
 
-<p><img src="/blog/images/posts/saber/pro_vs_beginner.png" alt="pro_vs_beginner" height="60%" width="60%">
-<em>Figure 1: World record scores vs. the usual beginner human baseline <a class="citation" href="#dabney2018implicit">(Dabney et al., 2018)</a> (log scale).</em></p>
+<p><img src="/blog/images/posts/saber/pro_vs_beginner.png" alt="pro_vs_beginner" height="60%" width="60%"></p>
+<div class="caption">
+<b>Figure 1: World record scores vs. the usual beginner human baseline</b> (log scale) <a class="citation" href="#dabney2018implicit">(Dabney et al., 2018)</a> baseline can be up to 50k times lower than registered world records. Beating that baseline does not necessarily make the agent superhuman.</div>
 
 <p>We estimate that evaluating the algorithms under the world record baseline instead of the DQN human baseline will give a better view of the gap remaining between best human players and DRL agents.
 Results are confirming this, as Rainbow reaches only a median human-normalized score of 3% (see Figure 2 below) meaning that for half of Atari games, the agent doesn’t even reach 3% of the way from random to best human run.</p>
 
 <p>In the video below we analyze agents previously claimed as above human-level but far from the world record. By taking a closer look at the AI playing, we discovered that on most of Atari games DRL agents fail to understand the goal of the game. Sometimes they just don’t explore other levels than the initial one, sometimes they are stuck in a loop giving small amount of reward, etc. A compelling example of this is the game Riverraid. In this game, the agent must shoot everything and take fuel to survive: the agent dies if there is a collision with an enemy or if out of fuel. But as shooting fuel actually gives points, the agent doesn’t understand that he could play way longer and win even more points by actually taking this fuel bonus and not shooting them!</p>
 
-<p><a href="https://youtu.be/oH6P3ksYLek"><img src="https://img.youtube.com/vi/oH6P3ksYLek/0.jpg" alt="agent_vs_human"></a></p>
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oH6P3ksYLek" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</p>
 
-<h1 id="saber-a-standardized-atari-benchmark-for-general-reinforcement-learning-algorithms">
-<a class="anchor" href="#saber-a-standardized-atari-benchmark-for-general-reinforcement-learning-algorithms" aria-hidden="true"><span class="octicon octicon-link"></span></a>SABER: a Standardized Atari BEnchmark for general Reinforcement learning algorithms</h1>
+<h2 id="saber-a-standardized-atari-benchmark-for-general-reinforcement-learning-algorithms">
+<a class="anchor" href="#saber-a-standardized-atari-benchmark-for-general-reinforcement-learning-algorithms" aria-hidden="true"><span class="octicon octicon-link"></span></a>SABER: a Standardized Atari BEnchmark for general Reinforcement learning algorithms</h2>
 
 <p>In our work we extend the recommendations proposed by <a class="citation" href="#machado2018revisiting">(Machado et al., 2018)</a> They also point out divergences in training and evaluating agents on Atari. Consequently they compile and propose a set of recommendations for more reproducible and comparable RL including sticky actions, ignoring life signal and using full action set.</p>
 
@@ -186,8 +186,9 @@ Results are confirming this, as Rainbow reaches only a median human-normalized s
 
 <p>This parameter can also be a source of ambiguity and error. The best score on Atlantis (2,311,815) is reported by Proximal Policy Optimization by <a class="citation" href="#schulman2017proximal">(Schulman et al., 2017)</a>, however this score is likely wrong: it seems impossible to reach in 30 minutes only! The first distributional paper by (<a href="http://proceedings.mlr.press/v70/bellemare17a.html">Bellemare et al.</a>) also did this mistake and reported wrong results before adding an erratum in a later version on <a href="https://arxiv.org/abs/1707.06887">ArXiv</a>.</p>
 
-<p><img src="/blog/images/posts/saber/saber_params.png" alt="saber_params" height="60%" width="60%">
-<em>Table 1. Game parameters of SABER.</em></p>
+<p><img src="/blog/images/posts/saber/saber_params.png" alt="saber_params" height="60%" width="60%"></p>
+<div class="caption">
+<b>Table 1:</b> Game parameters of SABER.</div>
 
 <p>We first re-implemented the current state-of-the-art Rainbow and evaluated it on SABER. We noticed that the same algorithm under different evaluation settings can lead to significantly different results. This showed again the necessity of a common and standardized benchmark, more details can be found in the paper.</p>
 
@@ -195,34 +196,33 @@ Results are confirming this, as Rainbow reaches only a median human-normalized s
 
 <p>As shown in the graph below, R-IQN outperforms Rainbow and thus becomes the new state-of-the-art on Atari. However, we acknowledge that in order to make a more confident state-of-the-art claim we should run multiple times with different seeds. Testing an increased number of random seeds across the 60 Atari games is a computationally costly endeavor and is beyond the scope of this study. We test the stability of the performances of R-IQN across 5 random seeds on a subset of 14 games. We compare against Rainbow and report similar results in Figure 3.</p>
 
-<p><img src="/blog/images/posts/saber/median_human_normalised_Rainbow_vs_Rainbow_IQN.png" alt="median_rainbow_vs_us" height="60%" width="60%">
-<em>Figure 2. Comparison of Rainbow and Rainbow-IQN on SABER. We report median normalized scores w.r.t training steps.</em></p>
+<p><img src="/blog/images/posts/saber/median_human_normalised_Rainbow_vs_Rainbow_IQN.png" alt="median_rainbow_vs_us" height="60%" width="60%"></p>
+<div class="caption">
+<b>Figure 2: Comparison of Rainbow and Rainbow-IQN on SABER.</b> We report median normalized scores w.r.t training steps.</div>
 
-<p><img src="/blog/images/posts/saber/median_human_normalised_5_seeds_both_rainbow_riqn.png" alt="median_rainbow_vs_us_seeds" height="60%" width="60%">
-<em>Figure 3. Comparison of Rainbow and Rainbow-IQN on a subset of 14 games using 5 seeds. We report median normalized scores w.r.t training steps.</em></p>
+<p><img src="/blog/images/posts/saber/median_human_normalised_5_seeds_both_rainbow_riqn.png" alt="median_rainbow_vs_us_seeds" height="60%" width="60%"></p>
+<div class="caption"><b>Figure 3: Comparison of Rainbow and Rainbow-IQN on a subset of 14 games using 5 seeds.<b> We report median normalized scores w.r.t training steps.&lt;/div&gt;
 
-<h1 id="open-source-implementation-of-distributed-rainbow-iqn-r-iqn-ape-x">
-<a class="anchor" href="#open-source-implementation-of-distributed-rainbow-iqn-r-iqn-ape-x" aria-hidden="true"><span class="octicon octicon-link"></span></a>Open-source implementation of distributed Rainbow-IQN: R-IQN Ape-X</h1>
 
-<p>We release our code of a distributed version of Rainbow-IQN following ideas from Ape-X <a class="citation" href="#horgan2018distributed">(Horgan et al., 2018)</a>. The distributed part is our main practical advantage over some existing DRL repositories (particularly <a href="https://github.com/google/dopamine">Dopamine</a> a popular open-source implementation of DQN, C51, IQN and a <em>small-Rainbow</em> but in which all algorithms are single worker).
-Indeed, when using DRL algorithms for other tasks (other than Atari and MuJoCO) a major bottleneck is the <em>speed</em> of the environment. DRL algorithms often need a huge amount of data before reaching reasonable performance. This amount may be practically impossible to reach if the environment is real-time and if collecting data from multiple environments at the same time is not possible.</p>
+## Open-source implementation of distributed Rainbow-IQN: R-IQN Ape-X
 
-<p>Building upon ideas from Ape-X, we use REDIS as a side server to store our replay memory. Multiple actors will act in their own instances of the environment to fill as fast as they can the replay memory. Finally, the learner will sample from this replay memory (the learner is actually completely independent of the environment) for backprop. The learner will also periodically update the weight of each actor as shown in the schema below (image taken from (Horgan et al.)).</p>
+We release our code of a distributed version of Rainbow-IQN following ideas from Ape-X <a class="citation" href="#horgan2018distributed">(Horgan et al., 2018)</a>. The distributed part is our main practical advantage over some existing DRL repositories (particularly [Dopamine](https://github.com/google/dopamine) a popular open-source implementation of DQN, C51, IQN and a *small-Rainbow* but in which all algorithms are single worker).
+Indeed, when using DRL algorithms for other tasks (other than Atari and MuJoCO) a major bottleneck is the *speed* of the environment. DRL algorithms often need a huge amount of data before reaching reasonable performance. This amount may be practically impossible to reach if the environment is real-time and if collecting data from multiple environments at the same time is not possible.
 
-<p><img src="/blog/images/posts/saber/appex_arch.png" alt="apex_arch" height="60%" width="60%">
-<em>Figure 4. Ape-X architecture.</em></p>
+Building upon ideas from Ape-X, we use REDIS as a side server to store our replay memory. Multiple actors will act in their own instances of the environment to fill as fast as they can the replay memory. Finally, the learner will sample from this replay memory (the learner is actually completely independent of the environment) for backprop. The learner will also periodically update the weight of each actor as shown in the schema below (image taken from (Horgan et al.)).
 
-<p>This scheme allowed us to use R-IQN Ape-X for the task of autonomous driving using <a href="http://carla.org/">CARLA</a> as environment. This enabled us to win the <a href="https://carlachallenge.org/results-challenge-2019/">CARLA Challenge</a> on Track 2 <em>Cameras Only</em> showing the strength of R-IQN Ape-X as a general algorithm.</p>
+![apex_arch](/blog/images/posts/saber/appex_arch.png){:height="60%" width="60%"}
+<div class="caption"><b>Figure 4: Ape-X architecture.</b></div>
 
-<h1 id="conclusion">
-<a class="anchor" href="#conclusion" aria-hidden="true"><span class="octicon octicon-link"></span></a>Conclusion</h1>
+This scheme allowed us to use R-IQN Ape-X for the task of autonomous driving using [CARLA](http://carla.org/) as environment. This enabled us to win the [CARLA Challenge](https://carlachallenge.org/results-challenge-2019/) on Track 2 *Cameras Only* showing the strength of R-IQN Ape-X as a general algorithm.
 
-<p>In this work, we confirm the impact of standardized guidelines for DRL evaluation, and build a consolidated benchmark, SABER. In order to provide a more significant comparison, we build a new baseline based on human world records and show that the state-of-the-art Rainbow agent is in fact far from human world record performance. In the paper we share possible reasons for this failure. We hope that SABER will facilitate better comparisons and enable new exciting methods to prove their effectiveness without ambiguity.</p>
+## Conclusion
 
-<p>Check out our paper to find out more about intuitions, experiments and interpretations.</p>
+In this work, we confirm the impact of standardized guidelines for DRL evaluation, and build a consolidated benchmark, SABER. In order to provide a more significant comparison, we build a new baseline based on human world records and show that the state-of-the-art Rainbow agent is in fact far from human world record performance. In the paper we share possible reasons for this failure. We hope that SABER will facilitate better comparisons and enable new exciting methods to prove their effectiveness without ambiguity.
 
-<h1 id="references">
-<a class="anchor" href="#references" aria-hidden="true"><span class="octicon octicon-link"></span></a>References</h1>
+Check out our paper to find out more about intuitions, experiments and interpretations.
+
+## References
 
 <ol class="bibliography">
 <li><span id="hessel2017rainbow">Hessel, M., Modayil, J., Van Hasselt, H., Schaul, T., Ostrovski, G., Dabney, W., Horgan, D., Piot, B., Azar, M., &amp; Silver, D. (2018). Rainbow: Combining improvements in deep reinforcement learning. <i>AAAI</i>.</span></li>
@@ -231,6 +231,7 @@ Indeed, when using DRL algorithms for other tasks (other than Atari and MuJoCO) 
 <li><span id="schulman2017proximal">Schulman, J., Wolski, F., Dhariwal, P., Radford, A., &amp; Klimov, O. (2017). Proximal policy optimization algorithms. <i>ArXiv Preprint ArXiv:1707.06347</i>.</span></li>
 <li><span id="horgan2018distributed">Horgan, D., Quan, J., Budden, D., Barth-Maron, G., Hessel, M., Van Hasselt, H., &amp; Silver, D. (2018). Distributed prioritized experience replay. <i>ArXiv Preprint ArXiv:1803.00933</i>.</span></li>
 </ol>
+</b></b></div>
 
   </div><a class="u-url" href="/blog/2020/10/19/saber.html" hidden></a>
 </article>
