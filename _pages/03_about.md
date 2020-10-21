@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 ## Overview
-valeo.ai is an international team based in Paris, conducting AI research for Valeo automotive applications, in collaboraton with world-class academics. Our main research is towards *better*, *clearer* & *safer automotive* AI. 
+valeo.ai is an international team based in Paris, conducting AI research for Valeo automotive applications, in collaboration with world-class academics. Our main research is towards *better*, *clearer* & *safer automotive* AI. 
 
 You can find out more about our research through our [papers](https://ptrckprz.github.io/vaipub), [released code](https://github.com/valeoai), [tweets](https://twitter.com/valeoai), and this blog.
 
