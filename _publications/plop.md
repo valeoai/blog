@@ -2,8 +2,8 @@
 layout: publication
 title: "PLOP: Probabilistic poLynomial Objects trajectory Prediction for autonomous driving"
 image: images/publications/plop/plop.png
-hide: true
-category: [driving]
+hide: false
+category: [driving,multi-sensor]
 authors: Thibault Buhet, Emilie Wirbel, Andrei Bursuc and Xavier Perrotton
 venue: CoRL
 venue_long: Conference on Robot Learning (CoRL)
@@ -21,7 +21,7 @@ permalink: /publications/plop/
 <!-- Simple call of authors -->
 <!-- <h3 align="center"> {{page.authors}} </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center"> Thibault Buhet &nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=Z7wRy_cAAAAJ&hl=en">Emilie Wirbel</a>&nbsp;&nbsp; <a href="https://abursuc.github.io/">Andrei Bursuc</a>&nbsp;&nbsp; <a href="https://scholar.google.com/citations?hl=en&user=PBfow1oAAAAJ">Xavier Perrotton</a></h3>
+<h3 align="center"> <a href="https://scholar.google.com/citations?user=TLRo9J0AAAAJ&hl=en&oi=ao">Thibault Buhet</a> &nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=Z7wRy_cAAAAJ&hl=en">Emilie Wirbel</a>&nbsp;&nbsp; <a href="https://abursuc.github.io/">Andrei Bursuc</a>&nbsp;&nbsp; <a href="https://scholar.google.com/citations?hl=en&user=PBfow1oAAAAJ">Xavier Perrotton</a></h3>
 
 
 <h3 align="center"> {{page.venue}} {{page.year}} </h3>
@@ -67,7 +67,7 @@ permalink: /publications/plop/
 </div>
 
 ![](../../images/publications/plop/comparison_online.png)
-<div class="caption"><b>Closed loop error locations for urban and track test data</b>, visualized for PLOP and constant velocity baseline. We note that braking behind a vehicle can induce multiple high speed errors and stack multiple red dots on the same location. Points of interest (traffic lights, roundabout, stop signs) are highlighted on the map.</div>
+<div class="caption"><b>Closed loop error locations for urban and track test data (internal data)</b>, visualized for PLOP and constant velocity baseline. We note that braking behind a vehicle can induce multiple high speed errors and stack multiple red dots on the same location. Points of interest (traffic lights, roundabout, stop signs) are highlighted on the map.</div>
 
 <hr>
 
