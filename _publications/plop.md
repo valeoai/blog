@@ -2,7 +2,7 @@
 layout: publication
 title: "PLOP: Probabilistic poLynomial Objects trajectory Prediction for autonomous driving"
 image: images/publications/plop/plop.png
-hide: false
+hide: true
 category: [driving]
 authors: Thibault Buhet, Emilie Wirbel, Andrei Bursuc and Xavier Perrotton
 venue: CoRL
@@ -63,10 +63,10 @@ permalink: /publications/plop/
 <h2  align="center"> Results</h2>
 
 ![](../../images/publications/plop/results_nuscenes.png)
-<div class="caption"><b>Comparison on nuScenes 4s prediction</b> with published results of DESIRE-plan, ESP and PRECOG from { % cite rhinehart2019precog % } (results from their Table~II, with a fixed 5 agents training), over minMSD metric.
+<div class="caption"><b>Comparison on nuScenes 4s prediction</b> with published results of DESIRE-plan, ESP and PRECOG from {% cite rhinehart2019precog %} (results from their Table II, with a fixed 5 agents training), over minMSD metric.
 </div>
 
-![](../../images/publications/plot/comparison_online.png)
+![](../../images/publications/plop/comparison_online.png)
 <div class="caption"><b>Closed loop error locations for urban and track test data</b>, visualized for PLOP and constant velocity baseline. We note that braking behind a vehicle can induce multiple high speed errors and stack multiple red dots on the same location. Points of interest (traffic lights, roundabout, stop signs) are highlighted on the map.</div>
 
 <hr>
