@@ -62,7 +62,11 @@ permalink: /publications/plop/
 
 <h2  align="center"> Results</h2>
 
-![](../../images/publications/plop/results_nuscenes.png)
+<div class="publication-teaser">
+  <img src="../../images/publications/plop/results_nuscenes.png" alt="project teaser"/>
+</div>
+
+
 <div class="caption"><b>Comparison on nuScenes 4s prediction</b> with published results of DESIRE-plan, ESP and PRECOG from {% cite rhinehart2019precog %} (results from their Table II, with a fixed 5 agents training), over minMSD metric.
 </div>
 
