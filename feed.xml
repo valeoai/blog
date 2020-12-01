@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://valeoai.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://valeoai.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-12-01T08:13:28-06:00</updated><id>https://valeoai.github.io/blog/feed.xml</id><title type="html">valeo.ai blog</title><subtitle>valeo.ai research blog</subtitle><entry><title type="html">PLOP: Probabilistic poLynomial Objects trajectory Prediction for autonomous driving</title><link href="https://valeoai.github.io/blog/2020/11/26/plop-trajectory-prediction.html" rel="alternate" type="text/html" title="PLOP: Probabilistic poLynomial Objects trajectory Prediction for autonomous driving" /><published>2020-11-26T00:00:00-06:00</published><updated>2020-11-26T00:00:00-06:00</updated><id>https://valeoai.github.io/blog/2020/11/26/plop-trajectory-prediction</id><content type="html" xml:base="https://valeoai.github.io/blog/2020/11/26/plop-trajectory-prediction.html">&lt;p&gt;&lt;em&gt;This post describes our &lt;a href=&quot;https://drive.google.com/file/d/1--QAL2sR7KMk9R4DwxyfJAT5iGCheFrn/view&quot;&gt;recent work&lt;/a&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://valeoai.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://valeoai.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-12-01T08:23:10-06:00</updated><id>https://valeoai.github.io/blog/feed.xml</id><title type="html">valeo.ai blog</title><subtitle>valeo.ai research blog</subtitle><entry><title type="html">PLOP: Probabilistic poLynomial Objects trajectory Prediction for autonomous driving</title><link href="https://valeoai.github.io/blog/2020/11/26/plop-trajectory-prediction.html" rel="alternate" type="text/html" title="PLOP: Probabilistic poLynomial Objects trajectory Prediction for autonomous driving" /><published>2020-11-26T00:00:00-06:00</published><updated>2020-11-26T00:00:00-06:00</updated><id>https://valeoai.github.io/blog/2020/11/26/plop-trajectory-prediction</id><content type="html" xml:base="https://valeoai.github.io/blog/2020/11/26/plop-trajectory-prediction.html">&lt;p&gt;&lt;em&gt;This post describes our &lt;a href=&quot;https://drive.google.com/file/d/1--QAL2sR7KMk9R4DwxyfJAT5iGCheFrn/view&quot;&gt;recent work&lt;/a&gt;
  on probabilistic trajectory prediction for autonomous driving presented
  at &lt;a href=&quot;https://www.robot-learning.org/home&quot;&gt;CORL 2020&lt;/a&gt;. PLOP is a trajectory prediction method that
 intent to control an autonomous vehicle (ego vehicle) in urban environment while considering 
@@ -101,7 +101,7 @@ in Figure 3 to predict the ego vehicle future trajectory and two auxiliary
 tasks that are the future trajectory prediction for the neighbors vehicles 
 and the semantic segmentation of the camera image.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/blog/images/posts/plop/archi_outputs.PNG&quot; alt=&quot;plop_archi_outputs&quot; height=&quot;100%&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blog/images/posts/plop/archi_outputs.png&quot; alt=&quot;plop_archi_outputs&quot; height=&quot;100%&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
 &lt;div class=&quot;caption&quot;&gt;&lt;b&gt;Figure 3. PLOP's Architecture.&lt;/b&gt; PLOP's architecture is reprented on the left while the polynomial multimodal gaussian trajectory representation is on the right&lt;/div&gt;
 
 &lt;p&gt;The front camera image features, the bird’s eye view features and the ego vehicle 
@@ -138,7 +138,7 @@ two state of the art methods that are PRECOG and ESP &lt;a class=&quot;citation&
  . We note that the comparison if fairer for neighbor trajectories and the
   performance is relevant since they are by definition open loop.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/blog/images/posts/plop/offline_result.PNG&quot; alt=&quot;plop_offline_results&quot; height=&quot;60%&quot; width=&quot;60%&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blog/images/posts/plop/offline_results.PNG&quot; alt=&quot;plop_offline_results&quot; height=&quot;60%&quot; width=&quot;60%&quot; /&gt;&lt;/p&gt;
 &lt;div class=&quot;caption&quot;&gt;&lt;b&gt;Figure 4. Comparison with state-of-the-art:&lt;/b&gt; Against the DESIRE, ESP and PRECOG
  for predicting a trajectory of 4 seconds into the future&lt;/div&gt;
 
