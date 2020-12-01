@@ -1,4 +1,223 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://valeoai.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://valeoai.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-10-27T07:44:08-05:00</updated><id>https://valeoai.github.io/blog/feed.xml</id><title type="html">valeo.ai blog</title><subtitle>valeo.ai research blog</subtitle><entry><title type="html">Is Deep Reinforcement Learning Really Superhuman on Atari?</title><link href="https://valeoai.github.io/blog/2020/10/19/saber.html" rel="alternate" type="text/html" title="Is Deep Reinforcement Learning Really Superhuman on Atari?" /><published>2020-10-19T00:00:00-05:00</published><updated>2020-10-19T00:00:00-05:00</updated><id>https://valeoai.github.io/blog/2020/10/19/saber</id><content type="html" xml:base="https://valeoai.github.io/blog/2020/10/19/saber.html">&lt;p&gt;&lt;em&gt;This post describes our recent &lt;a href=&quot;https://arxiv.org/pdf/1908.04683.pdf&quot;&gt;work&lt;/a&gt; on Deep Reinforcement Learning (DRL) on the Atari benchmark. DRL appears today as one of the closest paradigm to Artificial General Intelligence and large progress in this field has been enabled by the popular Atari benchmark. However, training and evaluation protocols on Atari vary across papers leading to biased comparisons, difficulty in reproducing results and in estimating the true contributions of the methods. Here we attempt to mitigate this problem with SABER: a Standardized Atari BEnchmark for general Reinforcement learning algorithms. SABER allows us to compare multiple methods under the same conditions against a human baseline and to note that previous claims of superhuman performance on DRL do not hold. Finally, we propose a new state-of-the-art algorithm R-IQN combining Rainbow with Implicit Quantile Networks (IQN). Our code is &lt;a href=&quot;https://github.com/valeoai/rainbow-iqn-apex&quot;&gt;available&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://valeoai.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://valeoai.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-12-01T08:13:28-06:00</updated><id>https://valeoai.github.io/blog/feed.xml</id><title type="html">valeo.ai blog</title><subtitle>valeo.ai research blog</subtitle><entry><title type="html">PLOP: Probabilistic poLynomial Objects trajectory Prediction for autonomous driving</title><link href="https://valeoai.github.io/blog/2020/11/26/plop-trajectory-prediction.html" rel="alternate" type="text/html" title="PLOP: Probabilistic poLynomial Objects trajectory Prediction for autonomous driving" /><published>2020-11-26T00:00:00-06:00</published><updated>2020-11-26T00:00:00-06:00</updated><id>https://valeoai.github.io/blog/2020/11/26/plop-trajectory-prediction</id><content type="html" xml:base="https://valeoai.github.io/blog/2020/11/26/plop-trajectory-prediction.html">&lt;p&gt;&lt;em&gt;This post describes our &lt;a href=&quot;https://drive.google.com/file/d/1--QAL2sR7KMk9R4DwxyfJAT5iGCheFrn/view&quot;&gt;recent work&lt;/a&gt;
+ on probabilistic trajectory prediction for autonomous driving presented
+ at &lt;a href=&quot;https://www.robot-learning.org/home&quot;&gt;CORL 2020&lt;/a&gt;. PLOP is a trajectory prediction method that
+intent to control an autonomous vehicle (ego vehicle) in urban environment while considering 
+and predicting the intents of other road users (neighbors). We focus here on predicting
+ multiple feasible future trajectories for both ego vehicle and neighbors through a 
+probabilistic framework and rely on a conditional imitation learning algorithm, conditioned by a
+ navigation command for the ego vehicle (e.g., ``turn right’’). Our model processes only onboard
+sensor data (camera and lidars) along with detections of past and presents objects relaxing the
+necessity of an HDMap and is computationally efficient as it can run in real time (25 fps) on 
+an embedded board in the real vehicle. We evaluate our method offline on the
+ publicly available dataset nuScenes &lt;a class=&quot;citation&quot; href=&quot;#holger2020nuscenes&quot;&gt;(Caesar et al., 2020)&lt;/a&gt;,
+ achieving state-of-the-art performance, investigate 
+the impact of our architecture choices on online simulated experiments and show preliminary
+ insights for real vehicle control.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/images/posts/plop/plop.png&quot; alt=&quot;plop_teaser&quot; height=&quot;60%&quot; width=&quot;60%&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;caption&quot;&gt;&lt;b&gt;Figure 1. Qualitative example of trajectory predictions on a test
+ sample from nuScenes dataset.&lt;/b&gt; The top image show a bird's eye view of PLOP's predictions
+ for the ego and neighbor vehicles (to be compared with the ground truth in green). The bottom
+ row present the input image (left) in which we added object correspondance with the bird's
+ eye view and the auxiliary semantic segmentation of this image (right)&lt;/div&gt;
+
+&lt;p&gt;Predicting the future positions of other agents of the road, or of the
+ autonomous vehicle itself, is critical for autonomous driving.
+  This trajectory prediction must not only respect the rules of
+   the road, but capture the interactions of the agents over time.
+    It is also important to allow multiple possible predictions, as
+     there is usually not a single valid trajectory.&lt;/p&gt;
+
+&lt;p&gt;Some approaches such as ChauffeurNet &lt;a class=&quot;citation&quot; href=&quot;#bansal2018chauffeutnet&quot;&gt;(Bansal et al., 2018)&lt;/a&gt; use a high-levelscene representation 
+(road map, traffic lights, speed limit, route, dynamic bounding boxes, etc.).
+ More recently, MultiPath &lt;a class=&quot;citation&quot; href=&quot;#chai2019multipath&quot;&gt;(Chai et al., 2019)&lt;/a&gt; uses trajectory anchors, used in one-step object detection,
+ extracted from the training data for ego vehicle prediction. &lt;a class=&quot;citation&quot; href=&quot;#hong2019rules&quot;&gt;(Hong et al., 2019)&lt;/a&gt; use a high level
+ representation which includes some dynamic context.
+In contrast, we choose to leverage also low level sensor data, here Lidar
+ point clouds and camera image. In that domain, recent approaches address
+ the variation in agent behaviors by predicting multiple trajectories, often
+ in a stochastic way. Many works, e.g., PRECOG &lt;a class=&quot;citation&quot; href=&quot;#rhinehart2019precog&quot;&gt;(Rhinehart et al., 2019)&lt;/a&gt;,
+ MFP &lt;a class=&quot;citation&quot; href=&quot;#tang2019mfp&quot;&gt;(Tang &amp;amp; Salakhutdinov, 2019)&lt;/a&gt;, SocialGAN &lt;a class=&quot;citation&quot; href=&quot;#gupta2018socialgan&quot;&gt;(Gupta et al., 2018)&lt;/a&gt; 
+and others &lt;a class=&quot;citation&quot; href=&quot;#rhinehart2018deepim&quot;&gt;(Rhinehart et al., 2018)&lt;/a&gt;,
+ focus on this aspect through a probabilistic framework on the network output
+ or latent representations, producing multiple trajectories for ego vehicle, nearby vehicles 
+or both. &lt;a class=&quot;citation&quot; href=&quot;#phan2020covernet&quot;&gt;(Phan-Minh et al., 2020)&lt;/a&gt; generate a trajectory set, then classify 
+correct trajectories.
+ &lt;a class=&quot;citation&quot; href=&quot;#marchetti2020mantra&quot;&gt;(Marchetti et al., 2020)&lt;/a&gt; generate multiple futures from encodings of similar 
+trajectories stored
+ in a memory. &lt;a class=&quot;citation&quot; href=&quot;#ohn2020learning&quot;&gt;(Ohn-Bar et al., 2020)&lt;/a&gt; learn a weighted mixture of expert policies trained to mimic
+ agents with specific behaviors. In PRECOG, &lt;a class=&quot;citation&quot; href=&quot;#rhinehart2019precog&quot;&gt;(Rhinehart et al., 2019)&lt;/a&gt; advance a 
+probabilistic 
+formulation that explicitly models interactions between agents, using latent variables
+ to model their plausible reactions, with the possibility to precondition the trajectory 
+of the ego vehicle by a goal.&lt;/p&gt;
+
+&lt;h2 id=&quot;plop-method&quot;&gt;PLOP method&lt;/h2&gt;
+
+&lt;h3 id=&quot;contributions&quot;&gt;Contributions&lt;/h3&gt;
+
+&lt;p&gt;Our main goal is to produce a trajectory prediction which can be used to drive the 
+ego vehicle relying on a conditional imitation learning algorithm, conditioned by 
+a navigation command for the ego vehicle (e.g., “turn right”).
+To do so, we propose  a single-shot, anchor-less trajectory prediction method,
+ based on Mixture Desity Networks (MDNs) and polynomial trajectory constraints, 
+relying only on on-board sensors which relaxes the HD map requirement and allow 
+more flexibility for driving in the real world.
+The polynomial formulation ensures that the predicted
+ trajectories are coherent and smooth, while providing more
+ learning flexibility through the extra parameters. We find
+ that this mitigates training instability and mode collapse
+ that are common to MDNs &lt;a class=&quot;citation&quot; href=&quot;#cui2019multimodal&quot;&gt;(Cui et al., 2019)&lt;/a&gt;.
+PLOP is trainable end-to-end from imitation learning,
+ where data is relatively easier to obtain and it is 
+computationally efficient during both training and inference as it predicts
+ trajectory coefficients in a single step, without requiring a RNN-based decoder. 
+The polynomial function trajectory coefficients eschew the need for anchors &lt;a class=&quot;citation&quot; href=&quot;#chai2019multipath&quot;&gt;(Chai et al., 2019)&lt;/a&gt;,
+ whose quality can vary across datasets.&lt;/p&gt;
+
+&lt;p&gt;We propose an extensive evaluation of PLOP and show its effectiveness across datasets 
+and settings. We conduct a comparison showing the improvement over state-of-the-art 
+PRECOG &lt;a class=&quot;citation&quot; href=&quot;#rhinehart2019precog&quot;&gt;(Rhinehart et al., 2019)&lt;/a&gt; on the public dataset nuScenes &lt;a class=&quot;citation&quot; href=&quot;#holger2020nuscenes&quot;&gt;(Caesar et al., 2020)&lt;/a&gt;;&lt;/p&gt;
+
+&lt;p&gt;Then for a better evaluation of the driving capacities of PLOP, 
+we study closed loop performance for the ego vehicle, on simulation
+ and with preliminary insights for real vehicle control.&lt;/p&gt;
+
+&lt;h3 id=&quot;network-architecture&quot;&gt;Network architecture&lt;/h3&gt;
+
+&lt;p&gt;PLOP takes as inputs: the ego and neighbor vehicles past positions
+ represented as time sequences of x and y over the last 2 seconds,
+ the frontal camera image of the ego vehicle, and 2 second history 
+of bird’s eye views with a cell resolution of 1m square containing 
+the lidar point cloud and the object detections information represented 
+in Figure 2. The objects detections being the output of a state of the art
+ perception algorithm.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/images/posts/plop/inputs_plop_post.PNG&quot; alt=&quot;plop_inputs&quot; height=&quot;100%&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;caption&quot;&gt;&lt;b&gt;Figure 2. Image and Bird's eye view.&lt;/b&gt; The left image is an example of a front camera input image of PLOP and the diagram on the right is a representation of the bird'eye view input.&lt;/div&gt;
+
+&lt;p&gt;We pass these inputs through a multibranch neural network represented 
+in Figure 3 to predict the ego vehicle future trajectory and two auxiliary 
+tasks that are the future trajectory prediction for the neighbors vehicles 
+and the semantic segmentation of the camera image.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/images/posts/plop/archi_outputs.PNG&quot; alt=&quot;plop_archi_outputs&quot; height=&quot;100%&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;caption&quot;&gt;&lt;b&gt;Figure 3. PLOP's Architecture.&lt;/b&gt; PLOP's architecture is reprented on the left while the polynomial multimodal gaussian trajectory representation is on the right&lt;/div&gt;
+
+&lt;p&gt;The front camera image features, the bird’s eye view features and the ego vehicle 
+past positions features are passed down to conditional fully connected architecture
+ to output multiple future trajectories for the ego vehicle regarding the 
+ current navigation order. The trajectories are predicted using MDNs where
+ gaussian means are generated using polynomial functions of degree 4 over x and y&lt;/p&gt;
+
+&lt;p&gt;To improve the learning stability of our training and inject awareness about
+the scene layouts into the camera features 
+we pass them through a U-Net decoder to output semantic segmentation and then use 
+an auxiliary cross entropy loss.
+To improve the encoding of interactions between the differents agents of the scene 
+in the bird’s eye features,
+ we predict the future possible trajectories for each neighbor feeding the bird’s
+ eye views encoding and its past positions encoded through a LSTM layer to a small
+  fully connected network. The weights of LSTMs and fully connected layers are shared between
+   all neighbors. This output allows us to get useful information about the ego
+    vehicle environment that can be used online to improve the ego vehicle driving
+     with safety collision checks for example.&lt;/p&gt;
+
+&lt;h2 id=&quot;offline-evaluation&quot;&gt;Offline evaluation&lt;/h2&gt;
+
+&lt;p&gt;To evaluate PLOP, we use the nuScenes dataset to train the trajectory loss 
+along with the Audi &lt;a class=&quot;citation&quot; href=&quot;#geyer2019a2d2&quot;&gt;(Geyer et al., 2019)&lt;/a&gt; dataset to train the semantic segmentation loss. 
+We choose to compare our method with the DESIRE &lt;a class=&quot;citation&quot; href=&quot;#lee2017desire&quot;&gt;(Lee et al., 2017)&lt;/a&gt; baseline and against 
+two state of the art methods that are PRECOG and ESP &lt;a class=&quot;citation&quot; href=&quot;#rhinehart2019precog&quot;&gt;(Rhinehart et al., 2019)&lt;/a&gt;
+ using the minimum
+ Mean Squared Deviation metric to avoid penalizing valid trajectories that
+ are not matching the ground truth. For one agent, meaning ego vehicle only, 
+ PRECOG and ESP have access to the future desired target position and PRECOG 
+ return significantly better results than PLOP but PLOP still reaches similar 
+ results as ESP. For multiple agents PLOP outperforms other presented methods
+ . We note that the comparison if fairer for neighbor trajectories and the
+  performance is relevant since they are by definition open loop.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/images/posts/plop/offline_result.PNG&quot; alt=&quot;plop_offline_results&quot; height=&quot;60%&quot; width=&quot;60%&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;caption&quot;&gt;&lt;b&gt;Figure 4. Comparison with state-of-the-art:&lt;/b&gt; Against the DESIRE, ESP and PRECOG
+ for predicting a trajectory of 4 seconds into the future&lt;/div&gt;
+
+&lt;p&gt;But we argue that such evaluation is not totally relevant for controling the ego 
+vehicle in real conditions. 
+Such metrics does not value the situations in which the errors are made, failing to brake
+at a traffic light is a critical error for example but it is 
+quick and represent a very small part of the test set so it will impact very poorly the 
+overall metrics. However, making a small constant error such as driving 2kph too slow over 
+the whole test set set might be an acceptable and non impacting error but will lead to a 
+considerable overall error. Also, using only offline metrics where the method can’t
+control the vehicle does not allow us to evaluate its capacities to react to its own
+mistakes.&lt;/p&gt;
+
+&lt;h2 id=&quot;online-evaluation-through-simulation&quot;&gt;Online Evaluation through simulation&lt;/h2&gt;
+
+&lt;p&gt;To simulate driving, we developped a data driven simulator that 
+allows us to use real driving data to simulate applying
+ the prediction to the ego vehicle. We can generate the input data that corresponds
+  to the new vehicle position after following the trajectory using reprojections (for 
+  the image and the pointcloud), then use it to predict 
+  a new trajectory, and so on. This allows us the measure the performance in closed
+   loop, and in particular to count failures which would have resulted in a takeover. 
+   We rely on 3 metrics: lateral (&amp;gt;1m from expert), high speed (catching up to a vehicle
+   15% faster than the real vehicle up to 0.6s in the future) and low speed (&amp;gt; 20kph
+   under the expert speed) errors count.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/images/posts/plop/simu_plop.png&quot; alt=&quot;plop_online_results&quot; height=&quot;100%&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;caption&quot;&gt;&lt;b&gt;Figure 5. Evaluation using the simulator.&lt;/b&gt; Comparison with PLOP 
+without semantic segmentation loss, Constant velocity baseline and Multi-Layer
+ Perceptron baseline in the table on the left. Additionnal qualitative
+ results about the errors positioning on the differents test tracks are on
+ the right.&lt;/div&gt;
+
+&lt;p&gt;We trained PLOP on an internal dataset combining both open road and urban test
+ track and compared PLOP, PLOP without auxiliary semantic loss, the constant velocity 
+ baseline and a MLP baseline in our simulator using test data. We note that semantic
+  segmentation improve the driving performance and that MLP has better offline metrics
+   than constant velocity approach but still perform worse due to the simulated driving
+    conditions.
+   As expected, offline metrics are not discriminating enough for the online behavior
+   since the best model checkpoints in simulation are not necessarily the ones with 
+   the better offline metrics. An additionnal ablation study where we remove mandatory 
+    information (such as the camera image input) shows that it may even be dangerous 
+    to trust them blindly.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/watch?v=94FwahFmc5A&amp;amp;t&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot; align=&quot;center&quot;&gt;&lt;/iframe&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;In this work, we demonstrate the interest of our multi-input multimodal 
+approach PLOP for vehicle trajectory prediction in an urban environment. 
+Our architecture leverages frontal camera and Lidar inputs, to produce multiple 
+trajectories using reparameterized Mixture Density Networks, with an auxiliary 
+semantic segmentation task. We show that we can improve open loop state-of-the-art 
+performance in a multi-agent system, by evaluating the vehicle trajectories from the 
+nuScenes dataset. We also provide a simulated closed loop evaluation, to go towards
+ real vehicle online application. Please check out our paper along with supplementary materials 
+for greater details about our approach and experiments and feel free to contact us for any
+question.&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ol class=&quot;bibliography&quot;&gt;&lt;li&gt;&lt;span id=&quot;holger2020nuscenes&quot;&gt;Caesar, H., Bankiti, V., Lang, A. H., Vora, S., Liong, V. E., Xu, Q., Krishnan, A., Pan, Y., Baldan, G., &amp;amp; Beijbom, O. (2020). nuScenes: A Multimodal Dataset for Autonomous Driving. &lt;i&gt;Cvpr&lt;/i&gt;.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;bansal2018chauffeutnet&quot;&gt;Bansal, M., Krizhevsky, A., &amp;amp; Ogale, A. S. (2018). ChauffeurNet: Learning to Drive by Imitating the Best and Synthesizing the Worst. &lt;i&gt;CoRR&lt;/i&gt;.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;chai2019multipath&quot;&gt;Chai, Y., Sapp, B., Bansal, M., &amp;amp; Anguelov, D. (2019). &lt;i&gt;MultiPath: Multiple Probabilistic Anchor Trajectory Hypotheses for Behavior Prediction&lt;/i&gt;.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;hong2019rules&quot;&gt;Hong, J., Sapp, B., &amp;amp; Philbin, J. (2019). Rules of the Road: Predicting Driving Behavior with a Convolutional Model of Semantic Interactions. &lt;i&gt;CoRR&lt;/i&gt;.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;rhinehart2019precog&quot;&gt;Rhinehart, N., McAllister, R., Kitani, K., &amp;amp; Levine, S. (2019). Precog: Prediction conditioned on goals in visual multi-agent settings. &lt;i&gt;Iccv&lt;/i&gt;.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;tang2019mfp&quot;&gt;Tang, C., &amp;amp; Salakhutdinov, R. R. (2019). Multiple futures prediction. &lt;i&gt;Advances in Neural Information Processing Systems&lt;/i&gt;, 15424–15434.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;gupta2018socialgan&quot;&gt;Gupta, A., Johnson, J., Fei-Fei, L., Savarese, S., &amp;amp; Alahi, A. (2018). Social GAN: Socially Acceptable Trajectories with Generative Adversarial Networks. &lt;i&gt;CoRR&lt;/i&gt;.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;rhinehart2018deepim&quot;&gt;Rhinehart, N., McAllister, R., &amp;amp; Levine, S. (2018). Deep Imitative Models for Flexible Inference, Planning, and Control. &lt;i&gt;CoRR&lt;/i&gt;.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;phan2020covernet&quot;&gt;Phan-Minh, T., Grigore, E. C., Boulton, F. A., Beijbom, O., &amp;amp; Wolff, E. M. (2020). Covernet: Multimodal behavior prediction using trajectory sets. &lt;i&gt;Cvpr&lt;/i&gt;.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;marchetti2020mantra&quot;&gt;Marchetti, F., Becattini, F., Seidenari, L., &amp;amp; Bimbo, A. D. (2020). Mantra: Memory augmented networks for multiple trajectory prediction. &lt;i&gt;Cvpr&lt;/i&gt;.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;ohn2020learning&quot;&gt;Ohn-Bar, E., Prakash, A., Behl, A., Chitta, K., &amp;amp; Geiger, A. (2020). Learning Situational Driving. &lt;i&gt;Cvpr&lt;/i&gt;.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;cui2019multimodal&quot;&gt;Cui, H., Radosavljevic, V., Chou, F.-C., Lin, T.-H., Nguyen, T., Huang, T.-K., Schneider, J., &amp;amp; Djuric, N. (2019). Multimodal trajectory predictions for autonomous driving using deep convolutional networks. &lt;i&gt;Icra&lt;/i&gt;.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;geyer2019a2d2&quot;&gt;Geyer, J., Kassahun, Y., Mahmudi, M., Ricou, X., Durgesh, R., Chung, A. S., Hauswald, L., Pham, V. H., Mühlegg, M., Dorn, S., Fernandez, T., Jänicke, M., Mirashi, S., Savani, C., Sturm, M., Vorobiov, O., &amp;amp; Schuberth, P. (2019). &lt;i&gt;A2D2: AEV Autonomous Driving Dataset&lt;/i&gt;. http://www.a2d2.audi&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;lee2017desire&quot;&gt;Lee, N., Choi, W., Vernaza, P., Choy, C., Torr, P., &amp;amp; Chandraker, M. (2017). &lt;i&gt;DESIRE: Distant Future Prediction in Dynamic Scenes with Interacting Agents&lt;/i&gt;. 2165–2174. https://doi.org/10.1109/CVPR.2017.233&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;</content><author><name></name></author><summary type="html">This post describes our recent work on probabilistic trajectory prediction for autonomous driving presented at CORL 2020. PLOP is a trajectory prediction method that intent to control an autonomous vehicle (ego vehicle) in urban environment while considering and predicting the intents of other road users (neighbors). We focus here on predicting multiple feasible future trajectories for both ego vehicle and neighbors through a probabilistic framework and rely on a conditional imitation learning algorithm, conditioned by a navigation command for the ego vehicle (e.g., ``turn right’’). Our model processes only onboard sensor data (camera and lidars) along with detections of past and presents objects relaxing the necessity of an HDMap and is computationally efficient as it can run in real time (25 fps) on an embedded board in the real vehicle. We evaluate our method offline on the publicly available dataset nuScenes (Caesar et al., 2020), achieving state-of-the-art performance, investigate the impact of our architecture choices on online simulated experiments and show preliminary insights for real vehicle control.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://valeoai.github.io/blog/images/publications/plop/plop.png" /><media:content medium="image" url="https://valeoai.github.io/blog/images/publications/plop/plop.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Is Deep Reinforcement Learning Really Superhuman on Atari?</title><link href="https://valeoai.github.io/blog/2020/10/19/saber.html" rel="alternate" type="text/html" title="Is Deep Reinforcement Learning Really Superhuman on Atari?" /><published>2020-10-19T00:00:00-05:00</published><updated>2020-10-19T00:00:00-05:00</updated><id>https://valeoai.github.io/blog/2020/10/19/saber</id><content type="html" xml:base="https://valeoai.github.io/blog/2020/10/19/saber.html">&lt;p&gt;&lt;em&gt;This post describes our recent &lt;a href=&quot;https://arxiv.org/pdf/1908.04683.pdf&quot;&gt;work&lt;/a&gt; on Deep Reinforcement Learning (DRL) on the Atari benchmark. DRL appears today as one of the closest paradigm to Artificial General Intelligence and large progress in this field has been enabled by the popular Atari benchmark. However, training and evaluation protocols on Atari vary across papers leading to biased comparisons, difficulty in reproducing results and in estimating the true contributions of the methods. Here we attempt to mitigate this problem with SABER: a Standardized Atari BEnchmark for general Reinforcement learning algorithms. SABER allows us to compare multiple methods under the same conditions against a human baseline and to note that previous claims of superhuman performance on DRL do not hold. Finally, we propose a new state-of-the-art algorithm R-IQN combining Rainbow with Implicit Quantile Networks (IQN). Our code is &lt;a href=&quot;https://github.com/valeoai/rainbow-iqn-apex&quot;&gt;available&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Deep Reinforcement Learning is a learning scheme based on trial-and-error in which an agent learns an optimal policy from its own experiments and a reward signal. The goal of the agent is to maximize the sum of future accumulated rewards and thus the agent needs to think about sequences of actions rather than instantaneous ones. The Atari benchmark is valuable for evaluating general AI algorithms as it includes more than 50 games displaying high variability in the task to solve, ranging from simple paddle control in the ball game Pong to complex labyrinth exploration in Montezuma’s Revenge which remains unsolved by general algorithms up to today.&lt;/p&gt;
 
