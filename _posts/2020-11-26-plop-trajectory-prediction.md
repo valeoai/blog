@@ -117,7 +117,7 @@ tasks that are the future trajectory prediction for the neighbors vehicles
 and the semantic segmentation of the camera image.
 
 
-![plop_archi_outputs]({{ site.baseurl }}/images/posts/plop/archi_outputs.PNG){:height="100%" width="100%"}
+![plop_archi_outputs]({{ site.baseurl }}/images/posts/plop/archi_outputs.png){:height="100%" width="100%"}
 <div class="caption"><b>Figure 3. PLOP's Architecture.</b> PLOP's architecture is reprented on the left while the polynomial multimodal gaussian trajectory representation is on the right</div>
 
 The front camera image features, the bird’s eye view features and the ego vehicle 
@@ -155,7 +155,7 @@ two state of the art methods that are PRECOG and ESP {% cite rhinehart2019precog
  . We note that the comparison if fairer for neighbor trajectories and the
   performance is relevant since they are by definition open loop.
 
-![plop_offline_results]({{ site.baseurl }}/images/posts/plop/offline_result.PNG){:height="60%" width="60%"}
+![plop_offline_results]({{ site.baseurl }}/images/posts/plop/offline_results.PNG){:height="60%" width="60%"}
 <div class="caption"><b>Figure 4. Comparison with state-of-the-art:</b> Against the DESIRE, ESP and PRECOG
  for predicting a trajectory of 4 seconds into the future</div>
 
