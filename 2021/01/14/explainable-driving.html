@@ -3,20 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>FLOT: Scene Flow on Point Clouds guided by Optimal Transport | valeo.ai blog</title>
+<title>How can we make driving systems explainable? | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="FLOT: Scene Flow on Point Clouds guided by Optimal Transport" />
+<meta property="og:title" content="How can we make driving systems explainable?" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="FLOT: Scene Flow on Point Clouds guided by Optimal Transport Gilles Puy &nbsp;&nbsp; Alexandre Boulch &nbsp;&nbsp; Renaud Marlet" />
-<meta property="og:description" content="FLOT: Scene Flow on Point Clouds guided by Optimal Transport Gilles Puy &nbsp;&nbsp; Alexandre Boulch &nbsp;&nbsp; Renaud Marlet" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/flot/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/flot/" />
+<meta name="description" content="Hedi Ben younes, Eloi Zablocki" />
+<meta property="og:description" content="Hedi Ben younes, Eloi Zablocki" />
+<link rel="canonical" href="https://valeoai.github.io/blog/2021/01/14/explainable-driving.html" />
+<meta property="og:url" content="https://valeoai.github.io/blog/2021/01/14/explainable-driving.html" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/flot/flot.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/posts/advent/qualitative_results.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-01-14T08:22:50-06:00" />
+<meta property="article:published_time" content="2021-01-14T00:00:00-06:00" />
 <script type="application/ld+json">
-{"description":"FLOT: Scene Flow on Point Clouds guided by Optimal Transport Gilles Puy &nbsp;&nbsp; Alexandre Boulch &nbsp;&nbsp; Renaud Marlet","dateModified":"2021-01-14T08:22:50-06:00","datePublished":"2021-01-14T08:22:50-06:00","headline":"FLOT: Scene Flow on Point Clouds guided by Optimal Transport","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/flot/"},"image":"https://valeoai.github.io/blog/images/publications/flot/flot.png","url":"https://valeoai.github.io/blog/publications/flot/","@context":"https://schema.org"}</script>
+{"description":"Hedi Ben younes, Eloi Zablocki","dateModified":"2021-01-14T00:00:00-06:00","datePublished":"2021-01-14T00:00:00-06:00","headline":"How can we make driving systems explainable?","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/2021/01/14/explainable-driving.html"},"image":"https://valeoai.github.io/blog/images/posts/advent/qualitative_results.png","url":"https://valeoai.github.io/blog/2021/01/14/explainable-driving.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai blog" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -25,20 +25,20 @@
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-179942144-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
 <link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>FLOT: Scene Flow on Point Clouds guided by Optimal Transport | valeo.ai blog</title>
+<title>How can we make driving systems explainable? | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="FLOT: Scene Flow on Point Clouds guided by Optimal Transport" />
+<meta property="og:title" content="How can we make driving systems explainable?" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="FLOT: Scene Flow on Point Clouds guided by Optimal Transport Gilles Puy &nbsp;&nbsp; Alexandre Boulch &nbsp;&nbsp; Renaud Marlet" />
-<meta property="og:description" content="FLOT: Scene Flow on Point Clouds guided by Optimal Transport Gilles Puy &nbsp;&nbsp; Alexandre Boulch &nbsp;&nbsp; Renaud Marlet" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/flot/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/flot/" />
+<meta name="description" content="Hedi Ben younes, Eloi Zablocki" />
+<meta property="og:description" content="Hedi Ben younes, Eloi Zablocki" />
+<link rel="canonical" href="https://valeoai.github.io/blog/2021/01/14/explainable-driving.html" />
+<meta property="og:url" content="https://valeoai.github.io/blog/2021/01/14/explainable-driving.html" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/flot/flot.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/posts/advent/qualitative_results.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-01-14T08:22:50-06:00" />
+<meta property="article:published_time" content="2021-01-14T00:00:00-06:00" />
 <script type="application/ld+json">
-{"description":"FLOT: Scene Flow on Point Clouds guided by Optimal Transport Gilles Puy &nbsp;&nbsp; Alexandre Boulch &nbsp;&nbsp; Renaud Marlet","dateModified":"2021-01-14T08:22:50-06:00","datePublished":"2021-01-14T08:22:50-06:00","headline":"FLOT: Scene Flow on Point Clouds guided by Optimal Transport","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/flot/"},"image":"https://valeoai.github.io/blog/images/publications/flot/flot.png","url":"https://valeoai.github.io/blog/publications/flot/","@context":"https://schema.org"}</script>
+{"description":"Hedi Ben younes, Eloi Zablocki","dateModified":"2021-01-14T00:00:00-06:00","datePublished":"2021-01-14T00:00:00-06:00","headline":"How can we make driving systems explainable?","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/2021/01/14/explainable-driving.html"},"image":"https://valeoai.github.io/blog/images/posts/advent/qualitative_results.png","url":"https://valeoai.github.io/blog/2021/01/14/explainable-driving.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -112,111 +112,52 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <style type="text/css">
-
-/*h1 {
-    margin-top:2.5em !important;
-    color: #4a788c;
-    font-size: 120%;
+        <!-- <style type="text/css">
+.post-title {
+ font-size: 42px !important; 
 }
-
-h2 {
-    margin-top:1.5em !important;      
-    color: #4a788c;
-
-}
-
-h3, h4 {
-    margin-top:0.5em !important;      
-    color: #4a788c;
-
-}*/
-
-h1 {
-    margin-top:0.5em !important;
-    margin-bottom:0.25em !important;
-}
-
-h3 {
-    margin-bottom:0.25em !important;
-    margin-top:0.25em !important;
-}
-
-p {
-    margin-top:1rem !important; 
-    margin-bottom:1rem !important;  
-    font-size: 16px;
-
-}
-
-/*h1, h2, h3, h4 {
-    font-weight: normal !important;
-    margin-bottom:0.5em !important;  
-    code {
-      font-size: 100%;
-    }
-}   
-*/
-
- .bibtex-box {
-        background-color: #eee;     
-        border: 1px solid #eeeeee;
-        /*border-radius: 10px ;*/
-        -moz-border-radius: 10px ;
-        -webkit-border-radius: 10px ;
-        padding: 20px;
-        margin-top:1rem; 
-        word-break: normal;
-    }
 </style>
+ -->
 
-<h1 align="center"> FLOT: Scene Flow on Point Clouds guided by Optimal Transport </h1>
-<!-- Simple call of authors -->
-<!-- <h3 align="center"> Gilles Puy, Alexandre Boulch, and Renaud Marlet </h3> -->
-<!-- Alternatively you can add links to author pages -->
-<h3 align="center"> <a href="https://sites.google.com/site/puygilles/home">Gilles Puy</a> &nbsp;&nbsp; <a href="https://www.boulch.eu/">Alexandre Boulch</a> &nbsp;&nbsp; <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a></h3>
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-<h3 align="center"> ECCV 2020 </h3>
-
-<div align="center">
-  <p>
-    
-    <a href="https://arxiv.org/abs/2007.11142"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">How can we make driving systems explainable?</h1><p class="page-description">Hedi Ben younes, Eloi Zablocki</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-01-14T00:00:00-06:00" itemprop="datePublished">
+        Jan 14, 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
     
     
-    <a href="https://github.com/valeoai/FLOT"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
+      1 min read
     
+</span></p>
+
     
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/blog/categories/#explainability">explainability</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#interpretability">interpretability</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#survey">survey</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#self-driving">self-driving</a>
+        
+      
+      </p>
     
-    
-  </p>
-</div>
 
-<div class="publication-teaser">
-    <img src="../../images/publications/flot/flot.png" alt="project teaser" />
-</div>
+    </header>
 
-<hr />
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+</ul><p>TEST</p>
 
-<h2 align="center"> Abstract</h2>
-
-<p align="justify"> We propose and study a method called FLOT that estimates scene flow on point clouds. We start the design of FLOT by noticing that scene flow estimation on point clouds reduces to estimating a permutation matrix in a perfect world. Inspired by recent works on graph matching, we build a method to find these correspondences by borrowing tools from optimal transport. Then, we relax the transport constraints to take into account real-world imperfections. The transport cost between two points is given by the pairwise similarity between deep features extracted by a neural network trained under full supervision using synthetic datasets. Our main finding is that FLOT can perform as well as the best existing methods on synthetic and real-world datasets while requiring much less parameters and without using multiscale analysis. Our second finding is that, on the training datasets considered, most of the performance can be explained by the learned transport cost. This yields a simpler method, FLOT0, which is obtained using a particular choice of optimal transport parameters and performs nearly as well as FLOT.</p>
-
-<hr />
-
-<h2 align="center">BibTeX</h2>
-<left>
-  <pre class="bibtex-box">
-@inproceedings{puy20flot,
-  title={FLOT: Scene Flow on Point Clouds Guided by Optimal Transport},
-  author={Puy, Gilles and Boulch, Alexandre and Marlet, Renaud},
-  booktitle={European Conference on Computer Vision}
-  year={2020}
-}</pre>
-</left>
-
-<p><br /></p>
-
+  </div><a class="u-url" href="/blog/2021/01/14/explainable-driving.html" hidden></a>
+</article>
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/blog/"></data>
