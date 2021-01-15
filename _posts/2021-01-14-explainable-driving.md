@@ -7,4 +7,66 @@ title: "How can we make driving systems explainable?"
 hide: true
 image: images/posts/advent/qualitative_results.png
 ---
-TEST 
+
+<!-- Research on autonomous vehicles is blooming thanks to recent advances in deep learning and computer vision \citep{imagenet_classification,deeplearning_nature}, as well as the development of autonomous driving datasets and simulators \citep{kitti,carla,YuCWXCLMD20}.
+The number of academic publications on this subject is rising in most machine learning, computer vision, robotics and transportation conferences, and journals.
+On the industry side, several manufacturers are already producing cars equipped with advanced computer vision technologies for automatic lane following, assisted parking, or collision detection among other things. Meanwhile, constructors are working on and designing prototypes with level 4 and 5 autonomy.
+The development of autonomous vehicles has the potential to reduce congestions, fuel consumption, and crashes, and it can increase personal mobility and save lives given that nowadays the vast majority of car crashes are caused by human error \citep{anderson2014autonomous}.
+
+The first steps in the development of autonomous driving systems are taken with the collaborative European project PROMETHEUS (Program for a European Traffic with Highest Efficiency and Unprecedented Safety) \citep{prometheus} at the end of the '80s and the Grand DARPA Challenges in the late 2000s.
+At these times, systems are heavily-engineered pipelines \citep{urmson2008autonomous,thrun2006stanley} and their modular aspect decomposes the task of driving into several smaller tasks --- from perception to planning --- which has the advantage to offer interpretability and transparency to the processing. Nevertheless, modular pipelines have also known limitations such as the lack of flexibility, the need for handcrafted representations, and the risk of error propagation.
+In the 2010s, we observe an interest in approaches aiming to \emph{train} driving systems, usually in the form of neural networks, either by leveraging large quantities of expert recordings \citep{pilotnet,codevilla2018end,imitation_overview} or through simulation \citep{Espi2005TORCSTO,marinaffordance,carla}.
+In both cases, these systems learn a highly complex transformation that operates over input sensor data and produce end-commands (steering angle, throttle). 
+While these neural driving models overcome some of the limitations of the modular pipeline stack, they are sometimes described as \emph{black-boxes} for their critical lack of transparency and interpretability.
+ -->
+## Contextual elements
+
+### Why do we need explainable driving models?
+
+
+### Explainability ?
+
+Many terms are related to the concept of explainability and several definitions have been proposed for each of these terms. The boundaries between concepts are fuzzy and constantly evolving. 
+In human-machine interactions, explainability is defined as the ability for the human user to understand the agent's logic {%cite RosenfeldR19 %}. 
+The explanation is based on how the human user understands the connections between inputs and outputs of the model. 
+According to {%cite doshi2017accountability %}, an explanation is a human-interpretable description of the process by which a decision-maker took a particular set of inputs and reached a particular conclusion. They state that in practice, an explanation should answer at least one of the three following questions: 
+- *what were the main factors in the decision?*
+- *Would changing a certain factor have changed the decision?* 
+- *Why did two similar-looking cases get different decisions, or vice versa?*
+
+The term explainability often co-occurs with the concept of interpretability.
+Some recent work of {%cite beaudouin2020identifying %} simply advocate that explainability and interpretability are synonyms.
+However, {%cite GilpinBYBSK18 %} provide a nuance between these terms that we find interesting. According to them, interpretability designate to which extent an explanation is understandable by a human. 
+They state that an explanation should be designed and assessed in a trade-off between its interpretability and its completeness, which measures how accurate the explanation is as it describes the inner workings of the system. 
+For example, an exhaustive and completely faithful explanation is a description of the system itself and all its processing: this is a complete explanation although the exhaustive description of the processing may be incomprehensible.
+The whole challenge in explaining neural networks is to provide explanations that are both interpretable and complete. 
+
+
+
+The relation with autonomous vehicles differs a lot depending who is interacting with the system. 
+Indeed, expected explanations will be of varying nature, form and should convey different types of information regarding who is the explanation geared towards:
+- **End-users** and citizens need to trust the autonomous system and to be reassured. They put their life in the hands of the driving system and thus need to gain trust in it. 
+There is a long and dense line of research trying to define, characterize, evaluate, and increase the trust between an individual and a machine. 
+It appears that user trust is heavily impacted by the system transparency {%cite trusthci20 %}: providing information that helps the user understand how the system functions foster his or her trust in the system. Interestingly, research on human-computer interactions argues that the timing of explanations is important for trust: they should be provided before the vehicle takes an action, in a formulation which is concise and direct. {%cite RosenfeldR19 %},{%cite haspiel2018explanations %},{%cite du2019look %}
+- **Designers** of self-driving models need to understand their limitations to validate them and improve future versions \citep{deeptest}.
+The concept of Operational Design Domain (ODD) is often used by carmakers to designate the conditions under which the car is expected to behave safely.
+Thus, whenever a machine learning model is built to address the task of driving, it is crucial to know and understand its failure modes, and to verify that these situations do not overlap with the ODD. 
+A common practice is to stratify the evaluation into situations, as is done by the European New Car Assessment Program (Euro NCAP) to test and assess assisted driving functionalities in new vehicles.
+But even if these in-depth performance analysis are helpful to improve the model's performance, it is not possible to exhaustively list and evaluate every situation the model may possibly encounter. 
+As a fallback solution, explainability can help delving deeper into the inner workings of the model and to understanding why it makes these errors and correct the model/training data accordingly.
+- **Legal and regulator bodies** are interested in explanations for *liability* and *accountability* purposes, especially when a self-driving system is involved in a car accident. 
+   Notably, explanations generated for legal or regulatory institutions are likely to be different from those addressed to the end-user. 
+   As noted in {%cite beaudouin2020identifying %}, detailed explanations of all aspects of the decision process could be required to identify the reasons for a malfunction.
+These explanations are directed towards experts who will likely spend large amounts of time studying the system, and who are thus inclined to receive rich explanations with great amounts of detail. 
+
+### Driving system ?
+
+
+
+## Post-hoc explanation
+
+## Desigining an explainable driving model
+
+## Use-case: generating natural language explanations
+
+## Conclusion
