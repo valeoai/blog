@@ -128,7 +128,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      6 min read
     
 </span></p>
 
@@ -243,7 +243,15 @@ Moreover, from an engineering point of view, these systems are hard to scale and
 
 <p>To circumvent these issues, and nurtured by the deep learning revolution, researchers put more and more efforts on machine learning-based driving systems, and in particular on deep neural networks which can leverage large quantities of data.</p>
 
-<p><img src="/blog/images/posts/explainable_driving/driving_architecture.pdf" alt="driving_architecture" height="60%" width="60%"></p>
+<p>We can distinguish four key elements involved in the design of a neural driving system: input sensors, input representations, output type, and learning paradigm</p>
+
+<p><img src="/blog/images/posts/explainable_driving/driving_architecture.png" alt="driving_architecture" height="60%" width="60%"></p>
+
+<ul>
+  <li>
+<strong>Sensors</strong>. They are the hardware interface through which the neural network perceives its environment.
+Typical neural driving systems rely on sensors from two families: \emph{proprioceptive} sensors and \emph{exteroceptive} sensors. <em>Proprioceptive</em> sensors provide information about the internal vehicle state such as speed, acceleration, yaw, change of position, and velocity. They are measured through tachometers, inertial measurement units (IMU), and odometers.  All these sensors communicate through the controller area network (CAN) bus, which allows signals to be easily accessible. In contrast, <em>exteroceptive</em> sensors acquire information about the surrounding environment. They include cameras, radars, LiDARs, and GPS. For a more thorough review of driving sensors, we refer the reader to <a class="citation" href="#survey_sensors">(Yurtsever et al., 2020)</a>.</li>
+</ul>
 
 <h2 id="post-hoc-explanation">
 <a class="anchor" href="#post-hoc-explanation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Post-hoc explanation</h2>
