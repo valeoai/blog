@@ -75,8 +75,13 @@ Moreover, from an engineering point of view, these systems are hard to scale and
 
 To circumvent these issues, and nurtured by the deep learning revolution, researchers put more and more efforts on machine learning-based driving systems, and in particular on deep neural networks which can leverage large quantities of data.
 
+We can distinguish four key elements involved in the design of a neural driving system: input sensors, input representations, output type, and learning paradigm
 
-![driving_architecture]({{ site.baseurl }}/images/posts/explainable_driving/driving_architecture.pdf){:height="60%" width="60%"}
+![driving_architecture]({{ site.baseurl }}/images/posts/explainable_driving/driving_architecture.png){:height="60%" width="60%"}
+
+- **Sensors**. They are the hardware interface through which the neural network perceives its environment.
+Typical neural driving systems rely on sensors from two families: \emph{proprioceptive} sensors and \emph{exteroceptive} sensors. *Proprioceptive* sensors provide information about the internal vehicle state such as speed, acceleration, yaw, change of position, and velocity. They are measured through tachometers, inertial measurement units (IMU), and odometers.  All these sensors communicate through the controller area network (CAN) bus, which allows signals to be easily accessible. In contrast, *exteroceptive* sensors acquire information about the surrounding environment. They include cameras, radars, LiDARs, and GPS. For a more thorough review of driving sensors, we refer the reader to {%cite survey_sensors %}. 
+
 
 ## Post-hoc explanation
 
