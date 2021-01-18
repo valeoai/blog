@@ -30,7 +30,7 @@ Many terms are related to the concept of explainability and several definitions 
 In human-machine interactions, explainability is defined as the ability for the human user to understand the agent's logic {%cite RosenfeldR19 %}. 
 The explanation is based on how the human user understands the connections between inputs and outputs of the model. 
 According to {%cite doshi2017accountability %}, an explanation is a human-interpretable description of the process by which a decision-maker took a particular set of inputs and reached a particular conclusion. They state that in practice, an explanation should answer at least one of the three following questions: 
-- *what were the main factors in the decision?*
+- *What were the main factors in the decision?*
 - *Would changing a certain factor have changed the decision?* 
 - *Why did two similar-looking cases get different decisions, or vice versa?*
 
@@ -61,7 +61,22 @@ These explanations are directed towards experts who will likely spend large amou
 
 ### Driving system ?
 
+The history of autonomous driving systems started in the late '80s and early '90s with the European Eureka project called Prometheus.
+This has later been followed by driving challenges proposed by the Defense Advanced Research Projects Agency (DARPA). The vast majority of autonomous systems competing in these challenges is characterized by their modularity.
+Leveraging strong suites of sensors, these systems are composed of several sub-modules, each completing a very specific task. 
+Broadly speaking, these sub-tasks deal with sensing the environment, forecasting future events, planning, taking high-level decisions, and controlling the vehicle.
 
+As pipeline architectures split the driving task into easier-to-solve problems, they offer somewhat interpretable processing of sensor data through specialized modules (perception, planning, decision, control).
+However, these approaches have several drawbacks:
+- First, they rely on human heuristics and manually-chosen intermediate representations, which are not proven to be optimal for the driving task. 
+- Second, they lack flexibility to account for real-world uncertainties and to generalize to unplanned scenarios.
+Moreover, from an engineering point of view, these systems are hard to scale and to maintain as the various modules are entangled together.
+- Finally, they are prone to error propagation between the multiple sub-modules.
+
+To circumvent these issues, and nurtured by the deep learning revolution, researchers put more and more efforts on machine learning-based driving systems, and in particular on deep neural networks which can leverage large quantities of data.
+
+
+![driving_architecture]({{ site.baseurl }}/images/posts/explainable_driving/driving_architecture.pdf){:height="60%" width="60%"}
 
 ## Post-hoc explanation
 
