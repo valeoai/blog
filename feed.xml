@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://valeoai.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://valeoai.github.io/blog/" rel="alternate" type="text/html" /><updated>2021-01-15T12:16:50-06:00</updated><id>https://valeoai.github.io/blog/feed.xml</id><title type="html">valeo.ai blog</title><subtitle>valeo.ai research blog</subtitle><entry><title type="html">How can we make driving systems explainable?</title><link href="https://valeoai.github.io/blog/2021/01/14/explainable-driving.html" rel="alternate" type="text/html" title="How can we make driving systems explainable?" /><published>2021-01-14T00:00:00-06:00</published><updated>2021-01-14T00:00:00-06:00</updated><id>https://valeoai.github.io/blog/2021/01/14/explainable-driving</id><content type="html" xml:base="https://valeoai.github.io/blog/2021/01/14/explainable-driving.html">&lt;!-- Research on autonomous vehicles is blooming thanks to recent advances in deep learning and computer vision \citep{imagenet_classification,deeplearning_nature}, as well as the development of autonomous driving datasets and simulators \citep{kitti,carla,YuCWXCLMD20}.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://valeoai.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://valeoai.github.io/blog/" rel="alternate" type="text/html" /><updated>2021-01-18T10:57:39-06:00</updated><id>https://valeoai.github.io/blog/feed.xml</id><title type="html">valeo.ai blog</title><subtitle>valeo.ai research blog</subtitle><entry><title type="html">How can we make driving systems explainable?</title><link href="https://valeoai.github.io/blog/2021/01/14/explainable-driving.html" rel="alternate" type="text/html" title="How can we make driving systems explainable?" /><published>2021-01-14T00:00:00-06:00</published><updated>2021-01-14T00:00:00-06:00</updated><id>https://valeoai.github.io/blog/2021/01/14/explainable-driving</id><content type="html" xml:base="https://valeoai.github.io/blog/2021/01/14/explainable-driving.html">&lt;!-- Research on autonomous vehicles is blooming thanks to recent advances in deep learning and computer vision \citep{imagenet_classification,deeplearning_nature}, as well as the development of autonomous driving datasets and simulators \citep{kitti,carla,YuCWXCLMD20}.
 The number of academic publications on this subject is rising in most machine learning, computer vision, robotics and transportation conferences, and journals.
 On the industry side, several manufacturers are already producing cars equipped with advanced computer vision technologies for automatic lane following, assisted parking, or collision detection among other things. Meanwhile, constructors are working on and designing prototypes with level 4 and 5 autonomy.
 The development of autonomous vehicles has the potential to reduce congestions, fuel consumption, and crashes, and it can increase personal mobility and save lives given that nowadays the vast majority of car crashes are caused by human error \citep{anderson2014autonomous}.
@@ -20,7 +20,7 @@ In human-machine interactions, explainability is defined as the ability for the 
 The explanation is based on how the human user understands the connections between inputs and outputs of the model. 
 According to (missing reference), an explanation is a human-interpretable description of the process by which a decision-maker took a particular set of inputs and reached a particular conclusion. They state that in practice, an explanation should answer at least one of the three following questions:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;em&gt;what were the main factors in the decision?&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;What were the main factors in the decision?&lt;/em&gt;&lt;/li&gt;
   &lt;li&gt;&lt;em&gt;Would changing a certain factor have changed the decision?&lt;/em&gt;&lt;/li&gt;
   &lt;li&gt;&lt;em&gt;Why did two similar-looking cases get different decisions, or vice versa?&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -51,6 +51,24 @@ These explanations are directed towards experts who will likely spend large amou
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;driving-system-&quot;&gt;Driving system ?&lt;/h3&gt;
+
+&lt;p&gt;The history of autonomous driving systems started in the late ’80s and early ’90s with the European Eureka project called Prometheus.
+This has later been followed by driving challenges proposed by the Defense Advanced Research Projects Agency (DARPA). The vast majority of autonomous systems competing in these challenges is characterized by their modularity.
+Leveraging strong suites of sensors, these systems are composed of several sub-modules, each completing a very specific task. 
+Broadly speaking, these sub-tasks deal with sensing the environment, forecasting future events, planning, taking high-level decisions, and controlling the vehicle.&lt;/p&gt;
+
+&lt;p&gt;As pipeline architectures split the driving task into easier-to-solve problems, they offer somewhat interpretable processing of sensor data through specialized modules (perception, planning, decision, control).
+However, these approaches have several drawbacks:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;First, they rely on human heuristics and manually-chosen intermediate representations, which are not proven to be optimal for the driving task.&lt;/li&gt;
+  &lt;li&gt;Second, they lack flexibility to account for real-world uncertainties and to generalize to unplanned scenarios.
+Moreover, from an engineering point of view, these systems are hard to scale and to maintain as the various modules are entangled together.&lt;/li&gt;
+  &lt;li&gt;Finally, they are prone to error propagation between the multiple sub-modules.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To circumvent these issues, and nurtured by the deep learning revolution, researchers put more and more efforts on machine learning-based driving systems, and in particular on deep neural networks which can leverage large quantities of data.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/images/posts/explainable_driving/driving_architecture.pdf&quot; alt=&quot;driving_architecture&quot; height=&quot;60%&quot; width=&quot;60%&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;post-hoc-explanation&quot;&gt;Post-hoc explanation&lt;/h2&gt;
 

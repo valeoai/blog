@@ -128,7 +128,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      5 min read
     
 </span></p>
 
@@ -190,7 +190,7 @@ In human-machine interactions, explainability is defined as the ability for the 
 The explanation is based on how the human user understands the connections between inputs and outputs of the model. 
 According to (missing reference), an explanation is a human-interpretable description of the process by which a decision-maker took a particular set of inputs and reached a particular conclusion. They state that in practice, an explanation should answer at least one of the three following questions:</p>
 <ul>
-  <li><em>what were the main factors in the decision?</em></li>
+  <li><em>What were the main factors in the decision?</em></li>
   <li><em>Would changing a certain factor have changed the decision?</em></li>
   <li><em>Why did two similar-looking cases get different decisions, or vice versa?</em></li>
 </ul>
@@ -226,6 +226,24 @@ These explanations are directed towards experts who will likely spend large amou
 
 <h3 id="driving-system-">
 <a class="anchor" href="#driving-system-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Driving system ?</h3>
+
+<p>The history of autonomous driving systems started in the late ’80s and early ’90s with the European Eureka project called Prometheus.
+This has later been followed by driving challenges proposed by the Defense Advanced Research Projects Agency (DARPA). The vast majority of autonomous systems competing in these challenges is characterized by their modularity.
+Leveraging strong suites of sensors, these systems are composed of several sub-modules, each completing a very specific task. 
+Broadly speaking, these sub-tasks deal with sensing the environment, forecasting future events, planning, taking high-level decisions, and controlling the vehicle.</p>
+
+<p>As pipeline architectures split the driving task into easier-to-solve problems, they offer somewhat interpretable processing of sensor data through specialized modules (perception, planning, decision, control).
+However, these approaches have several drawbacks:</p>
+<ul>
+  <li>First, they rely on human heuristics and manually-chosen intermediate representations, which are not proven to be optimal for the driving task.</li>
+  <li>Second, they lack flexibility to account for real-world uncertainties and to generalize to unplanned scenarios.
+Moreover, from an engineering point of view, these systems are hard to scale and to maintain as the various modules are entangled together.</li>
+  <li>Finally, they are prone to error propagation between the multiple sub-modules.</li>
+</ul>
+
+<p>To circumvent these issues, and nurtured by the deep learning revolution, researchers put more and more efforts on machine learning-based driving systems, and in particular on deep neural networks which can leverage large quantities of data.</p>
+
+<p><img src="/blog/images/posts/explainable_driving/driving_architecture.pdf" alt="driving_architecture" height="60%" width="60%"></p>
 
 <h2 id="post-hoc-explanation">
 <a class="anchor" href="#post-hoc-explanation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Post-hoc explanation</h2>
