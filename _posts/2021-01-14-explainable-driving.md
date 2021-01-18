@@ -77,11 +77,25 @@ To circumvent these issues, and nurtured by the deep learning revolution, resear
 
 We can distinguish four key elements involved in the design of a neural driving system: input sensors, input representations, output type, and learning paradigm
 
-![driving_architecture]({{ site.baseurl }}/images/posts/explainable_driving/driving_architecture.png){:height="60%" width="60%"}
+![driving_architecture]({{ site.baseurl }}/images/posts/explainable_driving/driving_architecture.png){:width="100%"}
 
 - **Sensors**. They are the hardware interface through which the neural network perceives its environment.
-Typical neural driving systems rely on sensors from two families: \emph{proprioceptive} sensors and \emph{exteroceptive} sensors. *Proprioceptive* sensors provide information about the internal vehicle state such as speed, acceleration, yaw, change of position, and velocity. They are measured through tachometers, inertial measurement units (IMU), and odometers.  All these sensors communicate through the controller area network (CAN) bus, which allows signals to be easily accessible. In contrast, *exteroceptive* sensors acquire information about the surrounding environment. They include cameras, radars, LiDARs, and GPS. For a more thorough review of driving sensors, we refer the reader to {%cite survey_sensors %}. 
-
+Typical neural driving systems rely on sensors from two families: *proprioceptive* sensors and *exteroceptive* sensors. *Proprioceptive* sensors provide information about the internal vehicle state such as speed, acceleration, yaw, change of position, and velocity. They are measured through tachometers, inertial measurement units (IMU), and odometers.  All these sensors communicate through the controller area network (CAN) bus, which allows signals to be easily accessible. In contrast, *exteroceptive* sensors acquire information about the surrounding environment. They include cameras, radars, LiDARs, and GPS. For a more thorough review of driving sensors, we refer the reader to {%cite survey_sensors %}. 
+- **Input representation**. Once sensory inputs are acquired by the system, they are processed by computer vision models to build a structured representation, before being passed to the neural driving system. In the *mediated perception* approach, several perception systems provide their understanding of the world, and their outputs are aggregated to build an input for the driving model.
+An example of such vision tasks is object detection and semantic segmentation, which aim at finding and classifying relevant objects in a scene (cars, bicycles, pedestrians, stop signs, *etc.*), tracking objects accross time, extracting depth information (*i.e.* knowing the distance that separates the vehicle from each point in the space), recognition of pedestrian intent...
+Mediated perception contrasts with the *direct perception* approach, which instead extracts visual affordances from an image.
+Affordances are scalar indicators that describe the road situation such as curvature, deviation to neighboring lanes, or distances between ego and other vehicles.
+These human-interpretable features are usually recognized using neural networks as in {%cite deepdrivingaffordance %}.
+Then, they are passed at the input of a driving controller which is usually hard-coded, even if some recent approaches use affordance recognition to provide compact inputs to learning-based driving systems {%cite marinaffordance %}. 
+- **Outputs**. Ultimately, the goal is to generate vehicle controls. Some approaches, called end-to-*end*, tackle this problem by training the deep network to directly output the commands.
+However, in practice most methods instead predict the future trajectory of the autonomous vehicle; they are called end-to-*mid* methods. The trajectory is then expected to be followed by a low-level controller, such as the proportional–integral–derivative (PID) controller.
+- **Learning**.
+Two families of methods coexist for training self-driving neural models: *behavior cloning* approaches, which leverage datasets of human driving sessions, and *reinforcement learning* approaches, which train models through trial-and-error simulation.
+	- Behavior cloning (BC) approaches leverage huge quantities of recorded human driving sessions to learn the input-output driving mapping by imitation. 
+	In this setting, the network is trained to mimic the commands applied by the expert driver (end-to-end models), or the future trajectory (end-to-mid models), in a supervised fashion. 
+	Initial attempt to behavior cloning of vehicle controls was made in {%cite Pomerleau88 %}, and continued later in {%cite pilotnet %}.
+	- Reinforcement learning (RL) was alternatively explored by researchers to train neural driving systems. This paradigm learns a policy by balancing self-exploration and reinforcement.
+    This training paradigm does not require a training set of expert driving but relies instead on a simulator such as CARLA {%cite carla %}.
 
 ## Post-hoc explanation
 
