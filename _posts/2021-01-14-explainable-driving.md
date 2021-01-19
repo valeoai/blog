@@ -41,14 +41,12 @@ They state that an explanation should be designed and assessed in a trade-off be
 For example, an exhaustive and completely faithful explanation is a description of the system itself and all its processing: this is a complete explanation although the exhaustive description of the processing may be incomprehensible.
 The whole challenge in explaining neural networks is to provide explanations that are both interpretable and complete. 
 
-
-
 The relation with autonomous vehicles differs a lot depending who is interacting with the system. 
 Indeed, expected explanations will be of varying nature, form and should convey different types of information regarding who is the explanation geared towards:
 - **End-users** and citizens need to trust the autonomous system and to be reassured. They put their life in the hands of the driving system and thus need to gain trust in it. 
 There is a long and dense line of research trying to define, characterize, evaluate, and increase the trust between an individual and a machine. 
 It appears that user trust is heavily impacted by the system transparency {%cite trusthci20 %}: providing information that helps the user understand how the system functions foster his or her trust in the system. Interestingly, research on human-computer interactions argues that the timing of explanations is important for trust: they should be provided before the vehicle takes an action, in a formulation which is concise and direct. {%cite RosenfeldR19 %},{%cite haspiel2018explanations %},{%cite du2019look %}
-- **Designers** of self-driving models need to understand their limitations to validate them and improve future versions \citep{deeptest}.
+- **Designers** of self-driving models need to understand their limitations to validate them and improve future versions.
 The concept of Operational Design Domain (ODD) is often used by carmakers to designate the conditions under which the car is expected to behave safely.
 Thus, whenever a machine learning model is built to address the task of driving, it is crucial to know and understand its failure modes, and to verify that these situations do not overlap with the ODD. 
 A common practice is to stratify the evaluation into situations, as is done by the European New Car Assessment Program (Euro NCAP) to test and assess assisted driving functionalities in new vehicles.
@@ -78,6 +76,7 @@ To circumvent these issues, and nurtured by the deep learning revolution, resear
 We can distinguish four key elements involved in the design of a neural driving system: input sensors, input representations, output type, and learning paradigm
 
 ![driving_architecture]({{ site.baseurl }}/images/posts/explainable_driving/driving_architecture.png){:width="100%"}
+<div class="caption"><b>Figure 1. Overview of neural network-based autonomous driving systems.</b></div>
 
 - **Sensors**. They are the hardware interface through which the neural network perceives its environment.
 Typical neural driving systems rely on sensors from two families: *proprioceptive* sensors and *exteroceptive* sensors. *Proprioceptive* sensors provide information about the internal vehicle state such as speed, acceleration, yaw, change of position, and velocity. They are measured through tachometers, inertial measurement units (IMU), and odometers.  All these sensors communicate through the controller area network (CAN) bus, which allows signals to be easily accessible. In contrast, *exteroceptive* sensors acquire information about the surrounding environment. They include cameras, radars, LiDARs, and GPS. For a more thorough review of driving sensors, we refer the reader to {%cite survey_sensors %}. 
@@ -97,10 +96,65 @@ Two families of methods coexist for training self-driving neural models: *behavi
 	- Reinforcement learning (RL) was alternatively explored by researchers to train neural driving systems. This paradigm learns a policy by balancing self-exploration and reinforcement.
     This training paradigm does not require a training set of expert driving but relies instead on a simulator such as CARLA {%cite carla %}.
 
+### The challenges of explainability of neural driving systems
+
+Introducing explainability in the design of learning-based self-driving systems is a challenging task.
+These concerns arise from two aspects: 
+- From an **ML perspective**, explainability hurdles of self-driving models are shared with most deep learning models, across many application domains. Indeed, decisions of deep systems are intrinsically hard to explain as the functions these systems represent, mapping from inputs to outputs, are not transparent. 
+In particular, although it may be possible for an expert to broadly understand the structure of the model, the parameter values, which have been learned, are yet to be explained.
+There are several factors giving rise to interpretability problems for self-driving systems. First, the dataset used for training brings interpretability issues, as a finite training dataset cannot exhaustively cover all possible driving situations. It will likely under- and over-represent some specific cases, and questions such as *Has the model encounter situations like X?* are legitimate. Moreover, datasets contain numerous biases of various nature (omitted variable bias, cause-effect bias, sampling bias), which also gives rise to explainability issues related to fairness.
+Second, the trained model, and the mapping function it represents, is poorly understood and is considered as a *black-box*. The model is highly non-linear and does not provide any robustness guarantee as small input changes may dramatically change the output behavior. Explainability issues thus occur regarding the generalizability and robustness aspects: *How will the model behave under these new scenarios?* Third, the learning phase is not perfectly understood. Among other things, there are no guarantees that the model will settle at a minimum point that generalizes well to new situations, and that the model does not underfit on some situations and overfit on others. Besides, the model may learn to ground its decisions on spurious correlations during training instead of leveraging causal signals. We aim at finding answers to questions like *Which factors caused this decision to be taken?*
+- From a **driving perspective**, it has been shown that humans tackle this task by solving many intermediate sub-problems, at different levels of hierarchy {%cite michon1984critical %}.
+In the effort towards building an autonomous driving system, researchers aim at providing the machine with these intermediate capabilities. Thus, explaining the general behavior of an autonomous vehicle inevitably requires understanding how each of these intermediate steps is carried and how it interacts with others. We can categorize these capabilities into three types:
+	- *Perception*: information about the system's understanding of its local environment. This includes the objects that have been recognized and assigned to a semantic label (persons, cars, urban furniture, driveable area, crosswalks, traffic lights), their localization, properties of their motion (velocity, acceleration), intentions of other agents, *etc*.;
+	- *Reasoning*: information about how the different components of the perceived environment are organized and assembled by the system. This includes global explanations about the rules that are learned by the model, instance-wise explanation showing which objects are relevant in a given scene, traffic pattern recognition, object occlusion reasoning, *etc.*;
+	- *Decision*: information about how the system processes the perceived environment and its associated reasoning to produce a decision. This decision can be a high-level goal stating that the car should turn right, a prediction of the ego vehicle's trajectory, its low-level relative motion or even the raw controls, *etc*.
+While the separation between perception, reasoning, and decision is clear in modular driving systems, some recent end-to-end neural networks such as {%cite pilotnet %} blur the lines and perform these simultaneously. Indeed, when an explanation method is developed for a neural driving system, it is often not clear whether it attempts to explain the perception, the reasoning, or the decision step.
+Considering the nature of neural networks architecture and training, disentangling perception, reasoning, and decision in neural driving systems constitutes a non-trivial challenge.
+
+
 ## Post-hoc explanation
+
+When a deep learning model in general --- or a self-driving model more specifically --- comes as an opaque black-box as it has not been designed with a specific explainability constraint, *post-hoc* methods have been proposed to gain interpretability from the network processing and its representations.
+Post-hoc explanations have the advantage of giving an interpretation to black-box models without conceding any predictive performance.
+In this section, we assume that we have a model $f$ which is already trained.
+Two main categories of post-hoc methods can be distinguished to explain $f$: *local* methods which explain the prediction of the model for a specific instance, and *global* methods that seek to explain the model in its entirety, *i.e.* by gaining a finer understanding on learned representations and activations. 
+We can also make a connection with the system validation literature which aims at automatically making a stratified evaluation of deep models on various scenarios and discovering failure situations.
+
+### Local explanations
+
+Given an input image $x$, a local explanation aims at justifying why the model $f$ gives its specific prediction $y=f(x)$.
+We distinguish three types of approaches: saliency methods which determine regions of image $x$ influencing the most the decision,
+local approximations which approach the behavior of the black-box model $f$ locally around the instance $x$,
+and counterfactual analysis which aims to find the cause in $x$ that made the model predict $f(x)$.
+
+#### Saliency methods
+A saliency method aims at explaining which input image's regions influence the most the output of the model.
+These methods produce a heat map that highlights regions on which the model relied the most for its decision.
+By doing so, these methods mostly explain the perception part of the driving architectures.
+The first saliency method to visualize the input influence in the context of autonomous driving has been developed by {%cite visualbackprop %}.
+The VisualBackprop method they propose identifies sets of pixels by backpropagating activations from both late layers, which contain relevant information for the task but have a coarse resolution, and early layers which have a finer resolution. The algorithm runs in real-time and can be embedded in a self-driving car. 
+This method has been used to explain PilotNet {%cite pilotnet %}, a deep end-to-end control prediction model.
+As seen in **Figure 2.**, they qualitatively validate that the model correctly grounds its decisions on lane markings, edges of the road (delimited with grass or parked cars), and surrounding cars. 
+
+![visualbackprop]({{ site.baseurl }}/images/posts/explainable_driving/visualbackprop.png){:width="100%"}
+<div class="caption"><b>Figure 2. Example of salient pixels obtained by VisualBackprop. Credits to {%cite explaining_pilotnet %}</b></div>
+
+Recently, {%cite conditionalaffordance %} propose to condition the saliency visualization on a variety of driving affordances. They employ the Grad-CAM saliency technique {%cite gradcam %} on a deep model trained to predict driving affordances on a dataset recorded from the CARLA simulator. They argue that saliency methods are particularly well suited for this type of architecture on the contrary to end-to-end models, as those models map all of the perception (*e.g.* detection of speed limits, red lights, cars, *etc.*.) to a single control output. Instead, in their case, they can analyze the saliency in the input image for each affordance.
+
+> While saliency methods enable visual explanations for deep black-box models, they come with some limitations. First, they are hard to evaluate. For example, human evaluation can be employed, but this comes with the risk of selecting methods which are more *persuasive* than *faithful*. Second, recent work of {%cite sanity_check_saliency %} tend to show that some saliency methods can provide heat maps that are independrnt both of the model and the data. Indeed, they show that some saliency methods behave like edge-detectors even when they are applied to a model with random weights. Lastly, different saliency methods produce different results and it is not obvious to know which one is correct, or better than others. In that respect, a potential research direction is to learn to combine explanations coming from various explanation methods. 
+
+### Global explanations 
+
+### Fine-grain evaluation
+
 
 ## Desigining an explainable driving model
 
 ## Use-case: generating natural language explanations
 
 ## Conclusion
+
+## References
+
+{% bibliography --cited %}
