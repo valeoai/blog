@@ -142,7 +142,53 @@ As seen in **Figure 2.**, they qualitatively validate that the model correctly g
 
 Recently, {%cite conditionalaffordance %} propose to condition the saliency visualization on a variety of driving affordances. They employ the Grad-CAM saliency technique {%cite gradcam %} on a deep model trained to predict driving affordances on a dataset recorded from the CARLA simulator. They argue that saliency methods are particularly well suited for this type of architecture on the contrary to end-to-end models, as those models map all of the perception (*e.g.* detection of speed limits, red lights, cars, *etc.*.) to a single control output. Instead, in their case, they can analyze the saliency in the input image for each affordance.
 
-> While saliency methods enable visual explanations for deep black-box models, they come with some limitations. First, they are hard to evaluate. For example, human evaluation can be employed, but this comes with the risk of selecting methods which are more *persuasive* than *faithful*. Second, recent work of {%cite sanity_check_saliency %} tend to show that some saliency methods can provide heat maps that are independrnt both of the model and the data. Indeed, they show that some saliency methods behave like edge-detectors even when they are applied to a model with random weights. Lastly, different saliency methods produce different results and it is not obvious to know which one is correct, or better than others. In that respect, a potential research direction is to learn to combine explanations coming from various explanation methods. 
+While saliency methods enable visual explanations for deep black-box models, they come with some limitations. First, they are hard to evaluate. For example, human evaluation can be employed, but this comes with the risk of selecting methods which are more *persuasive* than *faithful*. Second, recent work of {%cite sanity_check_saliency %} tend to show that some saliency methods can provide heat maps that are independrnt both of the model and the data. Indeed, they show that some saliency methods behave like edge-detectors even when they are applied to a model with random weights. Lastly, different saliency methods produce different results and it is not obvious to know which one is correct, or better than others. In that respect, a potential research direction is to learn to combine explanations coming from various explanation methods. 
+
+#### Local approximations
+
+The idea of a local approximation method is to approach the behavior of the black-box model in the vicinity of the instance to be explained, with a simpler model.
+In practice, a separate model, inherently interpretable, is built to act as a proxy for the input/output mapping of the main model locally around the instance.
+Such methods include the Local Interpretable Model-agnostic Explanations (LIME) approach {%cite lime %}, which learns an interpretable-by-design input/output mapping, mimicking the behavior of the main model in the neighborhood of an input.
+In practice, such mapping can be instantiated by a decision tree or a linear model.
+Note that in the case of LIME, the interpretable student model does not necessarily use the raw instance data but rather an interpretable input, such as a binary vector indicating the presence or absence of a superpixel in an image.
+The SHapley Additive exPlanations (SHAP) approach {%cite shap %} has later been introduced to generalize LIME, as well as other additive feature attribution methods, and provides more consistent results.
+
+In the autonomous driving literature, we are not aware of any work that aims to explain a self-driving model by locally approximating it with an interpretable model. 
+This is likely due to the cost of local approximation strategies, as a set of perturbed inputs are sampled and forwarded in the main model to collect their corresponding labels.
+Besides, these methods operate on a simplified input representation instead of the raw input. This interpretable semantic basis should be chosen wisely, as it constitutes the vocabulary that can be used by the explanation system.
+Finally, these techniques were shown to be highly sensitive to hyper-parameter choices.
+
+#### Counterfactual explanations
+
+Recently, a lot of attention has been put on counterfactual analysis, a field from the causal inference literature.
+A counterfactual analysis aims at finding features $X$ within the input $x$ that *caused* the decision $y=f(x)$ to be taken, by imagining a new input instance $x'$ where $X$ is changed and a different outcome $y'$ is observed. 
+The new imaginary scenario $x'$ is called a *counterfactual example* and the different output $y'$ is a contrastive class. 
+The new counterfactual example, and the change in $X$ between $x$ and $x'$, constitute *counterfactual explanations*.
+In other words, a counterfactual example is a modified version of the input, in a minimal way, that changes the prediction of the model to the predefined output $y'$. 
+In an autonomous driving context, it corresponds to questions like ''What should be different in this scene, such that the car would have stopped instead of moving forward?''
+
+Several requirements should be imposed to find counterfactual examples.
+First, the prediction $f(x')$ of the counterfactual example must be close to the desired contrastive class $y'$.
+Second, the counterfactual change must be *minimal*, *i.e.* the new counterfactual example $x'$ must be as similar as possible to $x$, either by making sparse changes or in the sense of some distance.
+Third, the counterfactual change must be *relevant*, *i.e.* new counterfactual instances must be likely in the underlying input data distribution.
+
+Regarding the autonomous driving literature, there only exists a limited number of approaches involving counterfactual interventions.
+When the input space has semantic dimensions and can thus be easily manipulated, the causal impace of input factors can be measured by intervening on them (removing or adding).
+In {%cite bansal2018chauffeutnet %}, causal factors of the driving model are studied as they test their model under various hand-designed inputs where some objects have been removed.
+More recently, {%cite whomakedriversstop %} introduce a causal inference strategy for the identification of ''risk-objects'', *i.e.* objects that have a causal impact on the driver's behavior (see **Figure 3**. In this work, decisions are binary ('go' or 'stop').
+The idea is that removing non-causal objects from a scene will not affect the decision.
+They propose a training algorithm with interventions, where some objects are randomly removed in scenes where the output is 'go'. At inference, in a sequence where the model predicts 'stop', the risk-object is found as the one which gives the higher score to the 'go' class when removed.
+
+![whomakesdriverstop]({{ site.baseurl }}/images/posts/explainable_driving/whomakesdriverstop.PNG){:width="100%"}
+<div class="caption"><b>Figure 3. Counterfactual intervention to measure the causal impact of an input region.</b> Removing a pedestrian induces a change in the driver's decision from 'stop' to 'go', which indicates that the pedestrian is a risk-object. Credits to {%cite whomakedriversstop %}.</div>
+
+
+We call the reader's attention to the fact that analyzing driving scenes and building driving models using causality is far from trivial as it requires the capacity to *intervene* on the model's inputs. This, in the context of driving, is a highly complex problem to solve for three main reasons. 
+- First, the data is composed of high-dimensional tensors of raw sensor inputs (such as the camera or LiDAR signals) and scalar-valued signals that represent the current physical state of the vehicle (velocity, yaw rate, acceleration, *etc*.). Performing controlled interventions requires the capacity to perform realistic alterations of these raw high-dimensional inputs.
+Even though some recent works explore realistic alterations of visual content {%cite flow_edge_guided %}, this is yet to be applied in the context of self-driving.
+Interestingly, more and more neural driving systems rely on semantic representations. Alterations of the input space are simplified as the realism requirement is removed.
+- Second, modified inputs must be coherent and respect the underlying causal structure of the data generation process. As an example, we may be provided with a driving scene that depicts a green light, pedestrians waiting and vehicles passing. A simple intervention consisting of changing the state of the light to red would imply massive changes on the other variables to be \emph{coherent}: pedestrians should start crossing the street and vehicles should stop at the red light. The very recent and promising work of {%cite li2020causal %} tackles the issue of unsupervised *causal discovery* in videos. We believe that the adaptation of this type of approach to real driving data is crucial for the development of causal explainability.
+- Finally, we would need to have annotations for these new examples. Indeed, whether we use these altered examples to train a driving model on or to perform exhaustive and controlled evaluations, expert annotations would be required. Considering the nature of the driving data, it might be hard for a human to provide these annotations: they would need to imagine the decision they would have taken (control values or future trajectory) in this newly generated situation. 
 
 ### Global explanations 
 
