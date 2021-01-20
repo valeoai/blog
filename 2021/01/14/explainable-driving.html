@@ -128,7 +128,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      24 min read
+      29 min read
     
 </span></p>
 
@@ -172,10 +172,17 @@ window.onload = wrap_img;
 </ul>
 </li>
 <li class="toc-entry toc-h3"><a href="#global-explanations">Global explanations</a></li>
-<li class="toc-entry toc-h3"><a href="#fine-grain-evaluation">Fine-grain evaluation</a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#desigining-an-explainable-driving-model">Desigining an explainable driving model</a></li>
+<li class="toc-entry toc-h2"><a href="#desigining-an-explainable-driving-model">Desigining an explainable driving model</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#input-level-explanations">Input-level explanations</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#attention-based-models">Attention-based models</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toc-entry toc-h2"><a href="#use-case-generating-natural-language-explanations">Use-case: generating natural language explanations</a></li>
 <li class="toc-entry toc-h2"><a href="#conclusion">Conclusion</a></li>
 <li class="toc-entry toc-h2"><a href="#references">References</a></li>
@@ -321,8 +328,7 @@ Considering the nature of neural networks architecture and training, disentangli
 <p>When a deep learning model in general — or a self-driving model more specifically — comes as an opaque black-box as it has not been designed with a specific explainability constraint, <em>post-hoc</em> methods have been proposed to gain interpretability from the network processing and its representations.
 Post-hoc explanations have the advantage of giving an interpretation to black-box models without conceding any predictive performance.
 In this section, we assume that we have a model $f$ which is already trained.
-Two main categories of post-hoc methods can be distinguished to explain $f$: <em>local</em> methods which explain the prediction of the model for a specific instance, and <em>global</em> methods that seek to explain the model in its entirety, <em>i.e.</em> by gaining a finer understanding on learned representations and activations. 
-We can also make a connection with the system validation literature which aims at automatically making a stratified evaluation of deep models on various scenarios and discovering failure situations.</p>
+Two main categories of post-hoc methods can be distinguished to explain $f$: <em>local</em> methods which explain the prediction of the model for a specific instance, and <em>global</em> methods that seek to explain the model in its entirety, <em>i.e.</em> by gaining a finer understanding on learned representations and activations.</p>
 
 <h3 id="local-explanations">
 <a class="anchor" href="#local-explanations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Local explanations</h3>
@@ -402,11 +408,54 @@ Interestingly, more and more neural driving systems rely on semantic representat
 <h3 id="global-explanations">
 <a class="anchor" href="#global-explanations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Global explanations</h3>
 
-<h3 id="fine-grain-evaluation">
-<a class="anchor" href="#fine-grain-evaluation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fine-grain evaluation</h3>
+<p>Global explanations contrast with local explanation methods as they attempt to explain the behavior of a model in general by summarizing the information it contains. 
+We distinguish three families of methods to provide global explanations.</p>
+<ul>
+  <li>
+<strong>Model translation</strong>. These techniques aim at transfering the knowledge contained in the main opaque model into a separate machine learning model that is inherently interpretable. Concretely, this involves training a simple explainable model (such as a decision tree or a rule-based system) to mimic the input-output mapping of the black-box function.</li>
+  <li>
+<strong>Explaining representations</strong>. The goal of these methods is to provide insights into what is captured by the internal data structures of the model (neurons, vectors, layers, <em>etc.</em>), at different granularities.</li>
+  <li>
+<strong>Prototypes</strong>. They are specific data instances that represent well the data. Prototypes are chosen simultaneously to represent the data distribution in a non-redundant way. Global explanations can be obtained by computing and aggregating local explanations of these prototypes.</li>
+</ul>
+
+<p>To the best of our knowledge, global explanation techniques have only been used scarcely in the autonomous driving literature. Please refer to the survey for more details.</p>
 
 <h2 id="desigining-an-explainable-driving-model">
 <a class="anchor" href="#desigining-an-explainable-driving-model" aria-hidden="true"><span class="octicon octicon-link"></span></a>Desigining an explainable driving model</h2>
+
+<p>We remark that tools for post-hoc analysis operate on models whose design may have completely ignored the requirement of explainability. 
+A good example of such models is PilotNet <a class="citation" href="#pilotnet">(Bojarski et al., 2016)</a> which consists in a convolutional neural network operating over a raw video stream and producing the vehicle controls at every time step. 
+Understanding the behavior of this system is only possible through external tools, but cannot be done directly by observing the model itself.</p>
+
+<p>Drawing inspiration from modular systems, recent architectures place a particular emphasis on conveying understandable information about their inner workings, in addition to their performance imperatives.
+The modularity of pipelined architectures allows for forensic analysis, by studying the quantities that are transferred between modules (<em>e.g.</em> semantic and depth maps, forecasts of surrounding agent’s future trajectories, <em>etc</em>.). 
+These modularity-inspired models exhibit some forms of interpretability, which can be enforced at three different levels in the design of the driving system: input level, intermediate level and output level.</p>
+
+<h3 id="input-level-explanations">
+<a class="anchor" href="#input-level-explanations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Input-level explanations</h3>
+<p>Input-level explanations aim at enlightening the user on which perceptual information is used by the model to take its decisions.
+We identified two families of approaches that ease interpretation at the input level: attention-based models and models that use semantic inputs.</p>
+
+<h4 id="attention-based-models">
+<a class="anchor" href="#attention-based-models" aria-hidden="true"><span class="octicon octicon-link"></span></a>Attention-based models</h4>
+
+<p>Attention mechanisms learn a function that scores different regions of the input depending on whether or not they should be considered in the decision process. 
+This scoring is often performed based on some contextual information that helps the model decide which part of the input is relevant to the task at hand. 
+<a class="citation" href="#show_attend_tell">(Xu et al., 2015)</a> are the first to use an attention mechanism for a computer vision problem, namely, image captioning. Many of such attention models were developed for other applications since then, for example in Visual Question Answering (VQA). Intuitively, the question tells the VQA model where to look to answer the question correctly.
+Not only do attention mechanisms boost the performance of machine learning models, but also they provide insights into the inner workings of the system. By visualizing the attention weight associated with each input region, it is possible to know which part of the image was deemed relevant to make the decision.</p>
+
+<p>Attention-based models recently stimulated interest in the self-driving community, as they supposedly give a hint about the internal reasoning of the neural network. 
+In <a class="citation" href="#causal_attention">(Kim &amp; Canny, 2017)</a>, an attention mechanism is used to weight each region of an image, using information about previous frames as a context. 
+Visual attention can also be used to select objects defined by bounding boxes, as in <a class="citation" href="#deep_object_centric">(Wang et al., 2019)</a>. 
+In this work, a pre-trained object detector provides regions of interest (RoIs), which are weighted using the global visual context, and aggregated to decide which action to take.
+Recently, <a class="citation" href="#attentional_bottleneck">(Kim &amp; Bansal, 2020)</a> extended the ChauffeurNet architecture by building a visual attention module that operates on a bird-eye view semantic scene representation. Interestingly, as shown in <strong>Figure 4</strong>, combining visual attention with information bottleneck results in sparser saliency maps, making them more interpretable.</p>
+
+<p><img src="/blog/images/posts/explainable_driving/attentionbottleneck.PNG" alt="attentionbottleneck" width="100%"></p>
+<div class="caption">
+<b>Figure 4. Comparison of attention maps from classical visual attention and from attention bottleneck</b> Attention bottleneck seems to provide tighter modes, focused on objects of interest. Credits to <a class="citation" href="#attentional_bottleneck">(Kim &amp; Bansal, 2020)</a>.</div>
+
+<p>While these attention mechanisms are often thought to make neural networks more transparent, the recent work of <a class="citation" href="#attention_not_explanation">(Jain &amp; Wallace, 2019)</a> mitigates this assumption. Indeed, they show, in the context of natural language, that learned attention weights poorly correlate with multiple measures of feature importance. They even show that it is possible to find adversarial attention weights that keep the same prediction while weighting the input words very differently. All these findings cast some doubts on the faithfulness of explanations based on attention maps.</p>
 
 <h2 id="use-case-generating-natural-language-explanations">
 <a class="anchor" href="#use-case-generating-natural-language-explanations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use-case: generating natural language explanations</h2>
@@ -449,6 +498,13 @@ Interestingly, more and more neural driving systems rely on semantic representat
                Object Identification via Causal Inference. <i>IROS</i>.</span></li>
 <li><span id="flow_edge_guided">Gao, C., Saraf, A., Huang, J.-B., &amp; Kopf, J. (2020). Flow-edge Guided Video Completion. <i>ECCV</i>.</span></li>
 <li><span id="li2020causal">Li, Y., Torralba, A., Anandkumar, A., Fox, D., &amp; Garg, A. (2020). Causal discovery in physical systems from videos. <i>NeurIPS</i>.</span></li>
+<li><span id="show_attend_tell">Xu, K., Ba, J., Kiros, R., Cho, K., Courville, A. C., Salakhutdinov, R., Zemel, R. S., &amp; Bengio, Y. (2015). Show, Attend and Tell: Neural Image Caption Generation with Visual
+               Attention. <i>ICML</i>.</span></li>
+<li><span id="causal_attention">Kim, J., &amp; Canny, J. F. (2017). Interpretable Learning for Self-Driving Cars by Visualizing Causal
+               Attention. <i>ICCV</i>.</span></li>
+<li><span id="deep_object_centric">Wang, D., Devin, C., Cai, Q.-Z., Yu, F., &amp; Darrell, T. (2019). Deep Object-Centric Policies for Autonomous Driving. <i>ICRA</i>.</span></li>
+<li><span id="attentional_bottleneck">Kim, J., &amp; Bansal, M. (2020). Attentional Bottleneck: Towards an Interpretable Deep Driving Network. <i>CVPR Workshops</i>.</span></li>
+<li><span id="attention_not_explanation">Jain, S., &amp; Wallace, B. C. (2019). Attention is not Explanation. <i>NAACL</i>.</span></li>
 </ol>
 
   </div><a class="u-url" href="/blog/2021/01/14/explainable-driving.html" hidden></a>
