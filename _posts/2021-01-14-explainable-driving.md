@@ -119,7 +119,6 @@ When a deep learning model in general --- or a self-driving model more specifica
 Post-hoc explanations have the advantage of giving an interpretation to black-box models without conceding any predictive performance.
 In this section, we assume that we have a model $f$ which is already trained.
 Two main categories of post-hoc methods can be distinguished to explain $f$: *local* methods which explain the prediction of the model for a specific instance, and *global* methods that seek to explain the model in its entirety, *i.e.* by gaining a finer understanding on learned representations and activations. 
-We can also make a connection with the system validation literature which aims at automatically making a stratified evaluation of deep models on various scenarios and discovering failure situations.
 
 ### Local explanations
 
@@ -192,10 +191,46 @@ Interestingly, more and more neural driving systems rely on semantic representat
 
 ### Global explanations 
 
-### Fine-grain evaluation
+Global explanations contrast with local explanation methods as they attempt to explain the behavior of a model in general by summarizing the information it contains. 
+We distinguish three families of methods to provide global explanations. 
+- **Model translation**. These techniques aim at transfering the knowledge contained in the main opaque model into a separate machine learning model that is inherently interpretable. Concretely, this involves training a simple explainable model (such as a decision tree or a rule-based system) to mimic the input-output mapping of the black-box function. 
+- **Explaining representations**. The goal of these methods is to provide insights into what is captured by the internal data structures of the model (neurons, vectors, layers, *etc.*), at different granularities.
+- **Prototypes**. They are specific data instances that represent well the data. Prototypes are chosen simultaneously to represent the data distribution in a non-redundant way. Global explanations can be obtained by computing and aggregating local explanations of these prototypes.
 
+To the best of our knowledge, global explanation techniques have only been used scarcely in the autonomous driving literature. Please refer to the survey for more details.
 
 ## Desigining an explainable driving model
+
+We remark that tools for post-hoc analysis operate on models whose design may have completely ignored the requirement of explainability. 
+A good example of such models is PilotNet {%cite pilotnet %} which consists in a convolutional neural network operating over a raw video stream and producing the vehicle controls at every time step. 
+Understanding the behavior of this system is only possible through external tools, but cannot be done directly by observing the model itself.
+
+Drawing inspiration from modular systems, recent architectures place a particular emphasis on conveying understandable information about their inner workings, in addition to their performance imperatives.
+The modularity of pipelined architectures allows for forensic analysis, by studying the quantities that are transferred between modules (*e.g.* semantic and depth maps, forecasts of surrounding agent's future trajectories, *etc*.). 
+These modularity-inspired models exhibit some forms of interpretability, which can be enforced at three different levels in the design of the driving system: input level, intermediate level and output level.
+
+### Input-level explanations
+Input-level explanations aim at enlightening the user on which perceptual information is used by the model to take its decisions.
+We identified two families of approaches that ease interpretation at the input level: attention-based models and models that use semantic inputs.
+
+#### Attention-based models
+
+Attention mechanisms learn a function that scores different regions of the input depending on whether or not they should be considered in the decision process. 
+This scoring is often performed based on some contextual information that helps the model decide which part of the input is relevant to the task at hand. 
+{%cite show_attend_tell %} are the first to use an attention mechanism for a computer vision problem, namely, image captioning. Many of such attention models were developed for other applications since then, for example in Visual Question Answering (VQA). Intuitively, the question tells the VQA model where to look to answer the question correctly.
+Not only do attention mechanisms boost the performance of machine learning models, but also they provide insights into the inner workings of the system. By visualizing the attention weight associated with each input region, it is possible to know which part of the image was deemed relevant to make the decision.
+
+
+Attention-based models recently stimulated interest in the self-driving community, as they supposedly give a hint about the internal reasoning of the neural network. 
+In {%cite causal_attention %}, an attention mechanism is used to weight each region of an image, using information about previous frames as a context. 
+Visual attention can also be used to select objects defined by bounding boxes, as in {%cite deep_object_centric %}. 
+In this work, a pre-trained object detector provides regions of interest (RoIs), which are weighted using the global visual context, and aggregated to decide which action to take.
+Recently, {%cite attentional_bottleneck %} extended the ChauffeurNet architecture by building a visual attention module that operates on a bird-eye view semantic scene representation. Interestingly, as shown in **Figure 4**, combining visual attention with information bottleneck results in sparser saliency maps, making them more interpretable.
+
+![attentionbottleneck]({{ site.baseurl }}/images/posts/explainable_driving/attentionbottleneck.PNG){:width="100%"}
+<div class="caption"><b>Figure 4. Comparison of attention maps from classical visual attention and from attention bottleneck</b> Attention bottleneck seems to provide tighter modes, focused on objects of interest. Credits to {%cite attentional_bottleneck %}.</div>
+
+While these attention mechanisms are often thought to make neural networks more transparent, the recent work of {%cite attention_not_explanation %} mitigates this assumption. Indeed, they show, in the context of natural language, that learned attention weights poorly correlate with multiple measures of feature importance. They even show that it is possible to find adversarial attention weights that keep the same prediction while weighting the input words very differently. All these findings cast some doubts on the faithfulness of explanations based on attention maps.
 
 ## Use-case: generating natural language explanations
 
