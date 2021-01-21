@@ -232,9 +232,106 @@ Recently, {%cite attentional_bottleneck %} extended the ChauffeurNet architectur
 
 While these attention mechanisms are often thought to make neural networks more transparent, the recent work of {%cite attention_not_explanation %} mitigates this assumption. Indeed, they show, in the context of natural language, that learned attention weights poorly correlate with multiple measures of feature importance. They even show that it is possible to find adversarial attention weights that keep the same prediction while weighting the input words very differently. All these findings cast some doubts on the faithfulness of explanations based on attention maps.
 
+#### Semantic inputs
+Some traditional machine learning models such as linear and logistic regressions, decision trees, or generalized additive models are considered interpretable by practitioners \citep{molnar2019}. 
+However these models tend to consider each input dimension as the fundamental unit on which explanations are built. 
+Consequently, the input space must have a semantic nature such that explanations become interpretable.
+Intuitively, each input dimension should *mean something* independently of other dimensions.
+This condition is often met in tasks that deal with categorical or tabular data.
+However, in computer vision, when dealing with images, videos, and 3D point clouds, the input space has not an interpretable structure.
+Overall, in self-driving systems, the lack of semantic nature of inputs impacts the interpretability of machine learning systems. This observation has motivated researchers to design, build, and use more interpretable input spaces, for example by enforcing more structure or by imposing dimensions to have an underlying high-level meaning. 
+
+
+Different approaches have been developed to use semantic inputs in a self-driving model, depending on the types of signals at hand. 3D point clouds, provided by LiDAR sensors, can be processed to form a top-view representation of the car surroundings. 
+
+For instance, \citet{lidar_based_driving} propose to flatten the scene along the vertical dimension to form a top-down map, where each pixel in the \bev{} corresponds to a 10cm$\times$10cm square of the environment.
+While this input representation provides information about the presence or absence of an obstacle at a certain location, it crucially lacks semantics as it ignores the nature of the obstacles (sidewalks, cars, pedestrians, \textit{etc.}).
+% semantic segmentation + combined with the b-e-v 
+
+In DESIRE \citep{desire}, the output of an image semantic segmentation model is fused with 3D points provided by a LiDAR. This gives a top-down view of the scene where static components are associated to a semantic label (*e.g.* road, sidewalk, vegetation), and moving agents are represented along with their tracked present and past positions.
+The ChauffeurNet model {%cite bansal2018chauffeutnet %} relies on a similar top-down scene representation, however instead of originating from a LiDAR point cloud, the bird-eye view is obtained from city map data (such as speed limits, lane positions, and crosswalks), traffic light state recognition and detection of surrounding cars. These diverse inputs of the network are gathered into a stack of several images, where each channel corresponds to a rendering of a specific semantic attribute. 
+This contrasts with more recent approaches that aggregate all information into a single RGB top-view image, where different semantic components correspond to different color channels {%cite mtp %}
+
+### Intermediate representations
+
+We know from {%cite doescomputervisionmatterforaction %} that sensorimotor agents benefit from predicting explicit intermediate scene representations in parallel to their main task. But besides this objective of model accuracy, predicting scene elements may give some insights about the information contained in the intermediate features.
+In {%cite guidedsupervision %}, a neural network learns to predict control outputs from input images. Its training is helped with auxiliary tasks that aim at recognizing high-level action primitives (\eg ''stop'', ''slow down'', ''turn left'', *etc*.) and visual affordances.
+In {%cite neural_motion_planner %}, a neural network predicts the future trajectory of the ego-vehicle using a top-view LiDAR point-cloud. In parallel to this main objective, they learn to produce an interpretable intermediate representation composed of 3D detections and future trajectory predictions. Multi-task in self-driving has been explored deeply in {%cite bansal2018chauffeutnet %}, where the authors design a system with ten losses that, besides learning to drive, also forces internal representations to contain information about on-road/off-road zones and future positions of other objects.
+
+Instead of supervising intermediate representations with scene information, other approaches propose to directly use explanation annotations as an auxiliary branch. The driving model is trained to simultaneously decide and explain its behavior.
+In the work of {%cite explainable_object_induced %}, the BDD-OIA dataset was introduced, where clips are manually annotated with *authorized* actions and their associated explanation. Action and explanation predictions are expressed as multi-label classification problems, which means that multiple actions and explanations are possible for a single example. 
+While this system is not properly a driving model (no control or trajectory prediction here, but only high-level classes such as ''stop'', ''move forward'' or ''turn left''), they were able to increase the performance of action decision making by learning to predict explanations as well. 
+In our very recent work {%cite beef %}, we propose to explain the behavior of a driving system by fusing high-level decisions with mid-level perceptual features. 
+The fusion is performed using BLOCK, a tensor-based fusion technique designed to model rich interactions between heterogeneous features. 
+We trained our model on the HDD dataset {%cite RamanishkaCMS18 %}, where 104 hours of human driving are annotated with a focus on driver behavior. 
+In this dataset, video segments are manually labeled with classes that explain stops and deviations (ùe.g.* ''stop for a red light'', deviate for a parked car'', *etc*.).
+
+Visualizing the predictions of an auxiliary head is an interesting way to give the human user an idea of what information is contained in the intermediate representation. 
+Indeed, observing that internal representations of the driving network can recognize drivable areas, detect other vehicles, and predict their future positions strengthens the trust one can give to a model.
+Yet, it is important to keep in mind that information contained in the representation is not necessarily used by the driving network to make its decision. 
+Overall, one should be cautious about such auxiliary predictions to interpret the behavior of the driving model, as the causal link between these auxiliary predictions and the driving output is not enforced.
+
+### Outputs
+
+The task of autonomous driving consists in continuously producing the suitable vehicle commands.
+An appealing solution is to train a neural network to directly predict these values, as is done in {%cite pilotnet %}. 
+However, this may not be satisfactory in terms of interpretability, as it may fail to communicate to the end-user local objectives that the vehicle is attempting to attain. 
+Understanding the intermediate near-future goals chosen by the network provides a form of interpretability that command output neural networks do not have.
+
+To this end, many approaches break the command prediction problem into two sub-problems: trajectory planning and control. In these systems, the neural network predicts the future trajectory that the vehicle should take. 
+This predicted trajectory is then passed to a controller that finds the suitable steering, brake and acceleration commands to reach the required position. 
+Often in trajectory planning systems based on machine learning, the controller is considered given and optimal, and the focus is completely cast on learning to predict the correct trajectory. 
+The predicted trajectory can be visualized in the same coordinate system as the input representation, which helps the human user interpret the prediction.
+We split output representations of neural trajectory prediction systems into two categories: analytical representations and spatial grid representations. 
+- **Analytical representations.** These are representations of future trajectory as one or more predictions, in the form of points or curves in the 2D space. For instance, {%cite lee2017desire %} propose DESIRE, a model that learns to predict multiple possible future trajectories for each scene agent. More specifically, recurrent models are trained to sample trajectories as sequences of 2D points in a bird-eye view basis, rank them, and refine them according to perceptual features. In MTP {%cite mtp %}, multiple future trajectories are predicted for a single agent using a fully-connected layer, which predicts a vector of size $(2H+1)M$ where $H$ is the temporal horizon and $M$ is the number of trajectories per agent to predict.
+CoverNet {%cite phan2020covernet %} poses the trajectory prediction problem as a classification one, where each possible class is a predefined trajectory profile. Thus, by taking the $k$ most probable classes according to the model, they can generate multiple trajectory candidates for the near future. 
+- **Spatial grid representations**. In the second family of trajectory prediction systems, the network scores regions of the top-down spatial grid according to their likelihood of hosting the car in the future. One of the main differences with the analytic output family is that virtually any trajectory candidate can be scored according to the model. A downside is that the model does not provide a single clear output trajectory. Finding the *best* prediction requires sampling or greedy search.
+In INFER {%cite SrikanthARSMK19 %}, an auto-regressive model is trained to output a likelihood map for the vehicle's next position. At inference time, the most likely next position is chosen and a new prediction is computed from there.
+% chauffeurnet
+In ChauffeurNet {%cite bansal2018chauffeutnet %}, the network predicts the next vehicle position as a probability distribution over the spatial coordinates, in a semantic segmentation fashion. 
+Differently, the Neural Motion Planner {%cite neural_motion_planner %} contains a neural network that outputs a cost volume, which is a spatio-temporal quantity indicating the cost for the vehicle to reach a certain position at a certain moment. Trajectories are sampled from a set of dynamically possible paths (straight lines, circles, and clothoïds) and scored according to the cost volume. Interestingly, the cost volume can be visualized, and thus provides a human-understandable view of what the system considers feasible.
+
 ## Use-case: generating natural language explanations
 
+As was stated in the beginning of this post, some of the main requirements of explanations targeted at non-technical human users are *conciseness* and *clarity*. 
+To meet these needs, some research efforts have been geared at building models that provide explanations of their behavior in the form of natural language sentences. 
+
+The first attempt to explain the predictions of a deep network with natural language was in the context of image classification, where {%cite generating_visual_explanations %} train a neural network to generate sentence explanations from image features and class label. 
+In the context of self-driving, {%cite textual_explanations %} learn to produce textual explanations justifying decisions from a self-driving system. Based on the video material of BDDV {%cite bddv %}, the authors built the BDD-X dataset where dash-cam video clips are annotated with a sentence that describes the driving decision (*e.g.* *the car is deviating from its main track*), and another one that explains why this is happening (*e.g. because the yellow bus has stopped*).
+An end-to-end driving system equipped with visual attention is first trained on this dataset to predict the vehicle controls for each frame, and, in a second phase, an attention-based video-to-text captioning model is trained to generate natural language explanations justifying the system's decisions. The attention of the captioning explanation module is constrained to align with the attention of the self-driving system. We show an overview of their system in **Figure 5**. 
+We note that this model is akin to a post-hoc explanation system as the explanation-producing network is trained after the driving model.
+
+![textual_explanations]({{ site.baseurl }}/images/posts/explainable_driving/textual_explanations.PNG){:width="100%"}
+<div class="caption"><b>Figure 5. Generating natural language explanations.</b> The vehicle controller predicts scalar values for commands, whereas the explanation generator provides a natural language sentence that describes the scene and explains the driving decision. Credits to {%cite textual_explanations %}.</div>
+\textbf}. 
+
+We also used the BDD-X dataset in {%cite beef %} when we adapt our explanation classification method to the setup of natural language generation. We also study the impact of the temperature parameter in the decoding softmax, classically used to control the diversity of generated sentences, on the variability of sampled explanations for the same situation. It turns out that for reasonably low values of the temperature, the model justifies a driving situation with semantically consistent sentences. These explanations differ from each other only *syntactically* and with respect to their *completeness* (some explanations are more exhaustive and precise than others), but not *semantically*. Looking at the example below in **Figure 6**, we see that all the explanations are correct as they correspond to the depicted scene, but the level of detail they convey may be different.
+
+![beef_temp]({{ site.baseurl }}/images/posts/explainable_driving/beef_temp.PNG){:width="60%"}
+<div class="caption"><b>Figure 6. Various samples of generated explanations.</b> GT stands for the the ground-truth (human gold label). Other lines are justifications generated by BEEF, with different runs obtained with various decoding temperature T: T=0 corresponds to the greedy decoding and the lines with T=0.3 correspond to random decoding with a temperature of 0.3. Credits to {%cite beef %}</div>
+
+
+Using annotations of explanations to supervise the training of a neural network seems natural and effective. Yet, this practice involves some strong assumptions and the generated explanations may be limited in their faithfulness.
+From a data point-of-view, as was noted in {%cite textual_explanations %}, acquiring the annotations for explanations can be quite difficult: ground-truth explanations are often post-hoc rationales generated by an external observer of the scene and not by the person who took the action. Even more disturbing: explanation annotations correspond to the reasons why a *person* made an action, and using these annotations to explain the behavior of a *machine learning model* is an extrapolation that should be made carefully. 
+
+Moreover, evaluating natural language explanations constitutes a challenge per se.
+Most approaches evaluate generated natural language explanations based on human ratings or by comparing them to ground-truth explanation, given by humans (using automated metrics like BLEU, METEOR, or CIDEr scores).
+As argued by {%cite leakage_adjusted_simulatability %} and {%cite GilpinBYBSK18 %}, the evaluation of natural language explanations is delicate and automated metric and human evaluations are not satisfying as they cannot guarantee that the explanation is faithful to the model's decision-making process.
+These metrics rather evaluate the plausibility of the explanation regarding human evaluations.
+Overall, this evaluation protocol encourages explanations that match human expectation and it is prone to produce *persuasive explanations*, *i.e.* explanations that satisfy the human users regardless of their faithfulness to the model processing.
+Potential solutions to tackle the problem of persuasive explanations can be inspired by recent works in Natural Language Processing, where several works have recently advocated for evaluating the *faithfulness* of explanations rather than their *plausibility*. 
+This is the case of {%cite leakage_adjusted_simulatability %}, where authors propose the leakage-adjusted simulatability (LAS) metric, which is based on the idea that the explanation should be helpful to predict the model's output without leaking direct information about the output.
+
+
 ## Conclusion
+
+Despite their differences, all the methods reviewed in this survey share the objective of exposing the *causes* behind model decisions.
+Yet, only very few works directly borrow tools and concepts from the field of causal modeling {%cite pearl_causality %}. 
+Taken apart methods that attempt to formulate counterfactual explanations, applications of causal inference methods to explain self-driving models are rare.
+Being able to infer the causal structure in driving data has strong implications in explainability. It is also a very promising way towards more robust neural driving models. 
+As was stated in {%cite causal_confusion %}, a driving policy must identify and rely solely on true causes of expert decisions if we want it to be robust enough to be deployed.
+Building neural driving models that take the right decisions for the right identified reasons would yield inherently robust, explainable, and faithful systems.
+
 
 ## References
 
