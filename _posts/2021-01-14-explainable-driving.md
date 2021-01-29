@@ -8,13 +8,15 @@ hide: true
 image: images/posts/advent/qualitative_results.png
 ---
 
+*This post is an introduction to our survey on the explainability of vision-based driving systems, which can be found on arXiv [here](https://arxiv.org/abs/2101.05307).*
+
 Research on autonomous vehicles is blooming thanks to recent advances in deep learning and computer vision, as well as the development of autonomous driving datasets and simulators.
 The number of academic publications on this subject is rising in most machine learning, computer vision, robotics and transportation conferences, and journals.
 On the industry side, several manufacturers are already producing cars equipped with advanced computer vision technologies for automatic lane following, assisted parking, or collision detection among other things. Meanwhile, constructors are working on and designing prototypes with level 4 and 5 autonomy.
 
 In the 2010s, we observe an interest in approaches aiming to *train* driving systems, usually in the form of neural networks, either by leveraging large quantities of expert recordings or through simulation.
 In both cases, these systems learn a highly complex transformation that operates over input sensor data and produce end-commands (steering angle, throttle). 
-While these neural driving models overcome some of the limitations of the modular pipeline stack, they are sometimes described as *black-boxes* for their critical lack of transparency and interpretability. 
+While these neural driving models overcome some of the limitations of the traditional modular pipeline stack, they are sometimes described as *black-boxes* for their critical lack of transparency and interpretability. 
 Thus, being able to explain the behavior of neural driving models is of paramount importance for their deployment and social acceptance.
 
 # Explainability ?
@@ -34,8 +36,7 @@ They state that an explanation should be designed and assessed in a trade-off be
 For example, an exhaustive and completely faithful explanation is a description of the system itself and all its processing: this is a complete explanation although the exhaustive description of the processing may be incomprehensible.
 The whole challenge in explaining neural networks is to provide explanations that are both interpretable and complete. 
 
-The relation with autonomous vehicles differs a lot depending who is interacting with the system. 
-Indeed, expected explanations will be of varying nature, form and should convey different types of information regarding who is the explanation geared towards:
+Interestingly, depending on who is the explanation geared towards, it is expected to have varying nature, form and should convey different types of information
 - **End-users** and citizens need to trust the autonomous system and to be reassured. They put their life in the hands of the driving system and thus need to gain trust in it. 
 There is a long and dense line of research trying to define, characterize, evaluate, and increase the trust between an individual and a machine. 
 It appears that user trust is heavily impacted by the system transparency {%cite trusthci20 %}: providing information that helps the user understand how the system functions foster his or her trust in the system. Interestingly, research on human-computer interactions argues that the timing of explanations is important for trust: they should be provided before the vehicle takes an action, in a formulation which is concise and direct. {%cite RosenfeldR19 %},{%cite haspiel2018explanations %},{%cite du2019look %}
@@ -97,13 +98,27 @@ These concerns arise from two aspects:
 In particular, although it may be possible for an expert to broadly understand the structure of the model, the parameter values, which have been learned, are yet to be explained.
 There are several factors giving rise to interpretability problems for self-driving systems. First, the dataset used for training brings interpretability issues, as a finite training dataset cannot exhaustively cover all possible driving situations. It will likely under- and over-represent some specific cases, and questions such as *Has the model encounter situations like X?* are legitimate. Moreover, datasets contain numerous biases of various nature (omitted variable bias, cause-effect bias, sampling bias), which also gives rise to explainability issues related to fairness.
 Second, the trained model, and the mapping function it represents, is poorly understood and is considered as a *black-box*. The model is highly non-linear and does not provide any robustness guarantee as small input changes may dramatically change the output behavior. Explainability issues thus occur regarding the generalizability and robustness aspects: *How will the model behave under these new scenarios?* Third, the learning phase is not perfectly understood. Among other things, there are no guarantees that the model will settle at a minimum point that generalizes well to new situations, and that the model does not underfit on some situations and overfit on others. Besides, the model may learn to ground its decisions on spurious correlations during training instead of leveraging causal signals. We aim at finding answers to questions like *Which factors caused this decision to be taken?*
+
+![ml_challenges]({{ site.baseurl }}/images/posts/explainable_driving/ml_challenges.png){:width="100%"}
+<div class="caption"><b>Figure 2. Explainability hurdles and questions for autonomous driving models, as seen from a machine learning point of view.</b></div>
+
 - From a **driving perspective**, it has been shown that humans tackle this task by solving many intermediate sub-problems, at different levels of hierarchy {%cite michon1984critical %}.
 In the effort towards building an autonomous driving system, researchers aim at providing the machine with these intermediate capabilities. Thus, explaining the general behavior of an autonomous vehicle inevitably requires understanding how each of these intermediate steps is carried and how it interacts with others. We can categorize these capabilities into three types:
 	- *Perception*: information about the system's understanding of its local environment. This includes the objects that have been recognized and assigned to a semantic label (persons, cars, urban furniture, driveable area, crosswalks, traffic lights), their localization, properties of their motion (velocity, acceleration), intentions of other agents, *etc*.;
 	- *Reasoning*: information about how the different components of the perceived environment are organized and assembled by the system. This includes global explanations about the rules that are learned by the model, instance-wise explanation showing which objects are relevant in a given scene, traffic pattern recognition, object occlusion reasoning, *etc.*;
 	- *Decision*: information about how the system processes the perceived environment and its associated reasoning to produce a decision. This decision can be a high-level goal stating that the car should turn right, a prediction of the ego vehicle's trajectory, its low-level relative motion or even the raw controls, *etc*.
+
+![driving_challenges]({{ site.baseurl }}/images/posts/explainable_driving/driving_challenges.png){:width="100%"}
+<div class="caption"><b>Figure 3. Explainability hurdles and questions for autonomous driving models, as seen from an autonomous driving point of view.</b></div>
+
 While the separation between perception, reasoning, and decision is clear in modular driving systems, some recent end-to-end neural networks such as {%cite pilotnet %} blur the lines and perform these simultaneously. Indeed, when an explanation method is developed for a neural driving system, it is often not clear whether it attempts to explain the perception, the reasoning, or the decision step.
 Considering the nature of neural networks architecture and training, disentangling perception, reasoning, and decision in neural driving systems constitutes a non-trivial challenge.
+
+
+# Conclusion
+
+As an answer to such problems, many explanation methods have been proposed and can be organized into two categories: applying *post-hoc methods* on an already-trained driving model, and directly *designing* driving models which are inherently interpretable. In our [survey](https://arxiv.org/abs/2101.05307), we provide details on existing explainability techniques, show how they respond to the problem of explaining driving models and highlight their limitations. 
+
 
 ## References
 
