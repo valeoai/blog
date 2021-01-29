@@ -154,14 +154,11 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul class="section-nav">
-<li class="toc-entry toc-h1"><a href="#explainability-">Explainability ?</a></li>
-<li class="toc-entry toc-h1"><a href="#driving-system-">Driving system ?</a></li>
-<li class="toc-entry toc-h1"><a href="#the-challenges-of-explainability-of-neural-driving-systems">The challenges of explainability of neural driving systems</a></li>
-<li class="toc-entry toc-h1"><a href="#conclusion">Conclusion</a>
-<ul>
-<li class="toc-entry toc-h2"><a href="#references">References</a></li>
-</ul>
-</li>
+<li class="toc-entry toc-h3"><a href="#explainability-">Explainability ?</a></li>
+<li class="toc-entry toc-h3"><a href="#driving-system-">Driving system ?</a></li>
+<li class="toc-entry toc-h3"><a href="#the-challenges-of-explainability-of-neural-driving-systems">The challenges of explainability of neural driving systems</a></li>
+<li class="toc-entry toc-h3"><a href="#conclusion">Conclusion</a></li>
+<li class="toc-entry toc-h3"><a href="#references">References</a></li>
 </ul><p><em>This post is an introduction to our survey on the explainability of vision-based driving systems, which can be found on arXiv <a href="https://arxiv.org/abs/2101.05307">here</a>.</em></p>
 
 <p>Research on autonomous vehicles is blooming thanks to recent advances in deep learning and computer vision, as well as the development of autonomous driving datasets and simulators.
@@ -173,8 +170,8 @@ In both cases, these systems learn a highly complex transformation that operates
 While these neural driving models overcome some of the limitations of the traditional modular pipeline stack, they are sometimes described as <em>black-boxes</em> for their critical lack of transparency and interpretability. 
 Thus, being able to explain the behavior of neural driving models is of paramount importance for their deployment and social acceptance.</p>
 
-<h1 id="explainability-">
-<a class="anchor" href="#explainability-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Explainability ?</h1>
+<h3 id="explainability-">
+<a class="anchor" href="#explainability-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Explainability ?</h3>
 
 <p>Many terms are related to the concept of explainability and several definitions have been proposed for each of these terms. The boundaries between concepts are fuzzy and constantly evolving. 
 In human-machine interactions, explainability is defined as the ability for the human user to understand the agent’s logic <a class="citation" href="#RosenfeldR19">(Rosenfeld &amp; Richardson, 2019)</a>. 
@@ -214,8 +211,8 @@ As a fallback solution, explainability can help delving deeper into the inner wo
 These explanations are directed towards experts who will likely spend large amounts of time studying the system, and who are thus inclined to receive rich explanations with great amounts of detail.</li>
 </ul>
 
-<h1 id="driving-system-">
-<a class="anchor" href="#driving-system-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Driving system ?</h1>
+<h3 id="driving-system-">
+<a class="anchor" href="#driving-system-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Driving system ?</h3>
 
 <p>The history of autonomous driving systems started in the late ’80s and early ’90s with the European Eureka project called Prometheus.
 This has later been followed by driving challenges proposed by the Defense Advanced Research Projects Agency (DARPA). The vast majority of autonomous systems competing in these challenges is characterized by their modularity.
@@ -265,8 +262,8 @@ Two families of methods coexist for training self-driving neural models: <em>beh
   </li>
 </ul>
 
-<h1 id="the-challenges-of-explainability-of-neural-driving-systems">
-<a class="anchor" href="#the-challenges-of-explainability-of-neural-driving-systems" aria-hidden="true"><span class="octicon octicon-link"></span></a>The challenges of explainability of neural driving systems</h1>
+<h3 id="the-challenges-of-explainability-of-neural-driving-systems">
+<a class="anchor" href="#the-challenges-of-explainability-of-neural-driving-systems" aria-hidden="true"><span class="octicon octicon-link"></span></a>The challenges of explainability of neural driving systems</h3>
 
 <p>Introducing explainability in the design of learning-based self-driving systems is a challenging task.
 These concerns arise from two aspects:</p>
@@ -301,13 +298,13 @@ In the effort towards building an autonomous driving system, researchers aim at 
 <p>While the separation between perception, reasoning, and decision is clear in modular driving systems, some recent end-to-end neural networks such as <a class="citation" href="#pilotnet">(Bojarski et al., 2016)</a> blur the lines and perform these simultaneously. Indeed, when an explanation method is developed for a neural driving system, it is often not clear whether it attempts to explain the perception, the reasoning, or the decision step.
 Considering the nature of neural networks architecture and training, disentangling perception, reasoning, and decision in neural driving systems constitutes a non-trivial challenge.</p>
 
-<h1 id="conclusion">
-<a class="anchor" href="#conclusion" aria-hidden="true"><span class="octicon octicon-link"></span></a>Conclusion</h1>
+<h3 id="conclusion">
+<a class="anchor" href="#conclusion" aria-hidden="true"><span class="octicon octicon-link"></span></a>Conclusion</h3>
 
 <p>As an answer to such problems, many explanation methods have been proposed and can be organized into two categories: applying <em>post-hoc methods</em> on an already-trained driving model, and directly <em>designing</em> driving models which are inherently interpretable. In our <a href="https://arxiv.org/abs/2101.05307">survey</a>, we provide details on existing explainability techniques, show how they respond to the problem of explaining driving models and highlight their limitations.</p>
 
-<h2 id="references">
-<a class="anchor" href="#references" aria-hidden="true"><span class="octicon octicon-link"></span></a>References</h2>
+<h3 id="references">
+<a class="anchor" href="#references" aria-hidden="true"><span class="octicon octicon-link"></span></a>References</h3>
 
 <ol class="bibliography">
 <li><span id="RosenfeldR19">Rosenfeld, A., &amp; Richardson, A. (2019). Explainability in human-agent systems. <i>Auton. Agents Multi Agent Syst.</i></span></li>
