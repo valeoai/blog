@@ -19,7 +19,7 @@ In both cases, these systems learn a highly complex transformation that operates
 While these neural driving models overcome some of the limitations of the traditional modular pipeline stack, they are sometimes described as *black-boxes* for their critical lack of transparency and interpretability. 
 Thus, being able to explain the behavior of neural driving models is of paramount importance for their deployment and social acceptance.
 
-# Explainability ?
+### Explainability ?
 
 Many terms are related to the concept of explainability and several definitions have been proposed for each of these terms. The boundaries between concepts are fuzzy and constantly evolving. 
 In human-machine interactions, explainability is defined as the ability for the human user to understand the agent's logic {%cite RosenfeldR19 %}. 
@@ -51,7 +51,7 @@ As a fallback solution, explainability can help delving deeper into the inner wo
    As noted in {%cite beaudouin2020identifying %}, detailed explanations of all aspects of the decision process could be required to identify the reasons for a malfunction.
 These explanations are directed towards experts who will likely spend large amounts of time studying the system, and who are thus inclined to receive rich explanations with great amounts of detail. 
 
-# Driving system ?
+### Driving system ?
 
 The history of autonomous driving systems started in the late '80s and early '90s with the European Eureka project called Prometheus.
 This has later been followed by driving challenges proposed by the Defense Advanced Research Projects Agency (DARPA). The vast majority of autonomous systems competing in these challenges is characterized by their modularity.
@@ -90,7 +90,7 @@ Two families of methods coexist for training self-driving neural models: *behavi
 	- Reinforcement learning (RL) was alternatively explored by researchers to train neural driving systems. This paradigm learns a policy by balancing self-exploration and reinforcement.
     This training paradigm does not require a training set of expert driving but relies instead on a simulator such as CARLA {%cite carla %}.
 
-# The challenges of explainability of neural driving systems
+### The challenges of explainability of neural driving systems
 
 Introducing explainability in the design of learning-based self-driving systems is a challenging task.
 These concerns arise from two aspects: 
@@ -115,11 +115,11 @@ While the separation between perception, reasoning, and decision is clear in mod
 Considering the nature of neural networks architecture and training, disentangling perception, reasoning, and decision in neural driving systems constitutes a non-trivial challenge.
 
 
-# Conclusion
+### Conclusion
 
 As an answer to such problems, many explanation methods have been proposed and can be organized into two categories: applying *post-hoc methods* on an already-trained driving model, and directly *designing* driving models which are inherently interpretable. In our [survey](https://arxiv.org/abs/2101.05307), we provide details on existing explainability techniques, show how they respond to the problem of explaining driving models and highlight their limitations. 
 
 
-## References
+### References
 
 {% bibliography --cited %}
