@@ -113,6 +113,7 @@ While the separation between perception, reasoning, and decision is clear in mod
 Considering the nature of neural networks architecture and training, disentangling perception, reasoning, and decision in neural driving systems constitutes a non-trivial challenge.
 
 
+<!-- 
 ## Post-hoc explanation
 
 When a deep learning model in general --- or a self-driving model more specifically --- comes as an opaque black-box as it has not been designed with a specific explainability constraint, *post-hoc* methods have been proposed to gain interpretability from the network processing and its representations.
@@ -332,7 +333,7 @@ Being able to infer the causal structure in driving data has strong implications
 As was stated in {%cite causal_confusion %}, a driving policy must identify and rely solely on true causes of expert decisions if we want it to be robust enough to be deployed.
 Building neural driving models that take the right decisions for the right identified reasons would yield inherently robust, explainable, and faithful systems.
 
-
+ -->
 ## References
 
 {% bibliography --cited %}
