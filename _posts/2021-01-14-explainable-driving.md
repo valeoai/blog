@@ -15,7 +15,7 @@ The number of academic publications on this subject is rising in most machine le
 On the industry side, several manufacturers are already producing cars equipped with advanced computer vision technologies for automatic lane following, assisted parking, or collision detection among other things. Meanwhile, constructors are working on and designing prototypes with level 4 and 5 autonomy.
 
 In the 2010s, we observe an interest in approaches aiming to *train* driving systems, usually in the form of neural networks, either by leveraging large quantities of expert recordings or through simulation.
-In both cases, these systems learn a highly complex transformation that operates over input sensor data and produce end-commands (steering angle, throttle). 
+In both cases, these systems learn a highly complex transformation that operates over input sensor data and produces end-commands (steering angle, throttle). 
 While these neural driving models overcome some of the limitations of the traditional modular pipeline stack, they are sometimes described as *black-boxes* for their critical lack of transparency and interpretability. 
 Thus, being able to explain the behavior of neural driving models is of paramount importance for their deployment and social acceptance.
 
@@ -31,7 +31,7 @@ According to {%cite doshi2017accountability %}, an explanation is a human-interp
 
 The term explainability often co-occurs with the concept of interpretability.
 Some recent work of {%cite beaudouin2020identifying %} simply advocate that explainability and interpretability are synonyms.
-However, {%cite GilpinBYBSK18 %} provide a nuance between these terms that we find interesting. According to them, interpretability designate to which extent an explanation is understandable by a human. 
+However, {%cite GilpinBYBSK18 %} provide a nuance between these terms that we find interesting. According to them, interpretability designates to which extent an explanation is understandable by a human. 
 They state that an explanation should be designed and assessed in a trade-off between its interpretability and its completeness, which measures how accurate the explanation is as it describes the inner workings of the system. 
 For example, an exhaustive and completely faithful explanation is a description of the system itself and all its processing: this is a complete explanation although the exhaustive description of the processing may be incomprehensible.
 The whole challenge in explaining neural networks is to provide explanations that are both interpretable and complete. 
@@ -44,9 +44,9 @@ It appears that user trust is heavily impacted by the system transparency {%cite
 The concept of Operational Design Domain (ODD) is often used by carmakers to designate the conditions under which the car is expected to behave safely.
 Thus, whenever a machine learning model is built to address the task of driving, it is crucial to know and understand its failure modes, and to verify that these situations do not overlap with the ODD. 
 A common practice is to stratify the evaluation into situations, as is done by the European New Car Assessment Program (Euro NCAP) to test and assess assisted driving functionalities in new vehicles.
-But even if these in-depth performance analysis are helpful to improve the model's performance, it is not possible to exhaustively list and evaluate every situation the model may possibly encounter. 
-As a fallback solution, explainability can help delving deeper into the inner workings of the model and to understanding why it makes these errors and correct the model/training data accordingly.
-- **Legal and regulator bodies** are interested in explanations for *liability* and *accountability* purposes, especially when a self-driving system is involved in a car accident. 
+But even if these in-depth performance analyses are helpful to improve the model's performance, it is not possible to exhaustively list and evaluate every situation the model may possibly encounter. 
+As a fallback solution, explainability can help delving deeper into the inner workings of the model and to understand why it makes these errors and correct the model/training data accordingly.
+- **Legal and regulatory bodies** are interested in explanations for *liability* and *accountability* purposes, especially when a self-driving system is involved in a car accident. 
    Notably, explanations generated for legal or regulatory institutions are likely to be different from those addressed to the end-user. 
    As noted in {%cite beaudouin2020identifying %}, detailed explanations of all aspects of the decision process could be required to identify the reasons for a malfunction.
 These explanations are directed towards experts who will likely spend large amounts of time studying the system, and who are thus inclined to receive rich explanations with great amounts of detail. 
@@ -56,7 +56,7 @@ These explanations are directed towards experts who will likely spend large amou
 The history of autonomous driving systems started in the late '80s and early '90s with the European Eureka project called Prometheus.
 This has later been followed by driving challenges proposed by the Defense Advanced Research Projects Agency (DARPA). The vast majority of autonomous systems competing in these challenges is characterized by their modularity.
 Leveraging strong suites of sensors, these systems are composed of several sub-modules, each completing a very specific task. 
-Broadly speaking, these sub-tasks deal with sensing the environment, forecasting future events, planning, taking high-level decisions, and controlling the vehicle.
+Broadly speaking, these subtasks deal with sensing the environment, forecasting future events, planning, taking high-level decisions, and controlling the vehicle.
 
 As pipeline architectures split the driving task into easier-to-solve problems, they offer somewhat interpretable processing of sensor data through specialized modules (perception, planning, decision, control).
 However, these approaches have several drawbacks:
@@ -75,7 +75,7 @@ We can distinguish four key elements involved in the design of a neural driving 
 - **Sensors**. They are the hardware interface through which the neural network perceives its environment.
 Typical neural driving systems rely on sensors from two families: *proprioceptive* sensors and *exteroceptive* sensors. *Proprioceptive* sensors provide information about the internal vehicle state such as speed, acceleration, yaw, change of position, and velocity. They are measured through tachometers, inertial measurement units (IMU), and odometers.  All these sensors communicate through the controller area network (CAN) bus, which allows signals to be easily accessible. In contrast, *exteroceptive* sensors acquire information about the surrounding environment. They include cameras, radars, LiDARs, and GPS. For a more thorough review of driving sensors, we refer the reader to {%cite survey_sensors %}. 
 - **Input representation**. Once sensory inputs are acquired by the system, they are processed by computer vision models to build a structured representation, before being passed to the neural driving system. In the *mediated perception* approach, several perception systems provide their understanding of the world, and their outputs are aggregated to build an input for the driving model.
-An example of such vision tasks is object detection and semantic segmentation, which aim at finding and classifying relevant objects in a scene (cars, bicycles, pedestrians, stop signs, *etc.*), tracking objects accross time, extracting depth information (*i.e.* knowing the distance that separates the vehicle from each point in the space), recognition of pedestrian intent...
+An example of such vision tasks is object detection and semantic segmentation, which aim at finding and classifying relevant objects in a scene (cars, bicycles, pedestrians, stop signs, *etc.*), tracking objects across time, extracting depth information (*i.e.* knowing the distance that separates the vehicle from each point in the space), recognition of pedestrian intent...
 Mediated perception contrasts with the *direct perception* approach, which instead extracts visual affordances from an image.
 Affordances are scalar indicators that describe the road situation such as curvature, deviation to neighboring lanes, or distances between ego and other vehicles.
 These human-interpretable features are usually recognized using neural networks as in {%cite deepdrivingaffordance %}.
@@ -96,7 +96,7 @@ Introducing explainability in the design of learning-based self-driving systems 
 These concerns arise from two aspects: 
 - From an **ML perspective**, explainability hurdles of self-driving models are shared with most deep learning models, across many application domains. Indeed, decisions of deep systems are intrinsically hard to explain as the functions these systems represent, mapping from inputs to outputs, are not transparent. 
 In particular, although it may be possible for an expert to broadly understand the structure of the model, the parameter values, which have been learned, are yet to be explained.
-There are several factors giving rise to interpretability problems for self-driving systems. First, the dataset used for training brings interpretability issues, as a finite training dataset cannot exhaustively cover all possible driving situations. It will likely under- and over-represent some specific cases, and questions such as *Has the model encounter situations like X?* are legitimate. Moreover, datasets contain numerous biases of various nature (omitted variable bias, cause-effect bias, sampling bias), which also gives rise to explainability issues related to fairness.
+There are several factors giving rise to interpretability problems for self-driving systems. First, the dataset used for training brings interpretability issues, as a finite training dataset cannot exhaustively cover all possible driving situations. It will likely under- and over-represent some specific cases, and questions such as *Has the model encountered situations like X?* are legitimate. Moreover, datasets contain numerous biases of various nature (omitted variable bias, cause-effect bias, sampling bias), which also gives rise to explainability issues related to fairness.
 Second, the trained model, and the mapping function it represents, is poorly understood and is considered as a *black-box*. The model is highly non-linear and does not provide any robustness guarantee as small input changes may dramatically change the output behavior. Explainability issues thus occur regarding the generalizability and robustness aspects: *How will the model behave under these new scenarios?* Third, the learning phase is not perfectly understood. Among other things, there are no guarantees that the model will settle at a minimum point that generalizes well to new situations, and that the model does not underfit on some situations and overfit on others. Besides, the model may learn to ground its decisions on spurious correlations during training instead of leveraging causal signals. We aim at finding answers to questions like *Which factors caused this decision to be taken?*
 
 ![ml_challenges]({{ site.baseurl }}/images/posts/explainable_driving/ml_challenges.png){:width="100%"}
