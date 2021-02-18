@@ -1,7 +1,7 @@
 ---
 toc: true
 layout: post
-description: "Hedi Ben younes, Eloi Zablocki"
+description: "Hedi Ben younes\*, Eloi Zablocki\*, Matthieu Cord and Patrick Pérez"
 categories: [explainability, interpretability, survey, self-driving]
 title: "How can we make driving systems explainable?"
 hide: true
@@ -19,7 +19,7 @@ In both cases, these systems learn a highly complex transformation that operates
 While these neural driving models overcome some of the limitations of the traditional modular pipeline stack, they are sometimes described as *black-boxes* for their critical lack of transparency and interpretability. 
 Thus, being able to explain the behavior of neural driving models is of paramount importance for their deployment and social acceptance.
 
-### Explainability ?
+### Explainability?
 
 Many terms are related to the concept of explainability and several definitions have been proposed for each of these terms. The boundaries between concepts are fuzzy and constantly evolving. 
 In human-machine interactions, explainability is defined as the ability for the human user to understand the agent's logic {%cite RosenfeldR19 %}. 
@@ -52,7 +52,7 @@ As a fallback solution, explainability can help delving deeper into the inner wo
    Notably, explanations generated for legal or regulatory institutions are likely to be different from those addressed to the end-user, as all aspects of the decision process could be required to identify the reasons for a malfunction.
 <!-- These explanations are directed towards experts who will likely spend large amounts of time studying the system, and who are thus inclined to receive rich explanations with great amounts of detail.  -->
 
-### Driving system ?
+### Driving system?
 
 The history of autonomous driving systems started in the late '80s and early '90s with the European Eureka project called Prometheus.
 This has later been followed by [driving challenges](https://www.youtube.com/watch?v=7a6GrKqOxeU) proposed by the Defense Advanced Research Projects Agency (DARPA). 
