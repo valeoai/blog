@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://valeoai.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://valeoai.github.io/blog/" rel="alternate" type="text/html" /><updated>2021-02-11T07:05:22-06:00</updated><id>https://valeoai.github.io/blog/feed.xml</id><title type="html">valeo.ai blog</title><subtitle>valeo.ai research blog</subtitle><entry><title type="html">How can we make driving systems explainable?</title><link href="https://valeoai.github.io/blog/2021/01/14/explainable-driving.html" rel="alternate" type="text/html" title="How can we make driving systems explainable?" /><published>2021-01-14T00:00:00-06:00</published><updated>2021-01-14T00:00:00-06:00</updated><id>https://valeoai.github.io/blog/2021/01/14/explainable-driving</id><content type="html" xml:base="https://valeoai.github.io/blog/2021/01/14/explainable-driving.html">&lt;p&gt;&lt;em&gt;This post is an introduction to our survey on the explainability of vision-based driving systems, which can be found on arXiv &lt;a href=&quot;https://arxiv.org/abs/2101.05307&quot;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://valeoai.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://valeoai.github.io/blog/" rel="alternate" type="text/html" /><updated>2021-02-18T04:14:14-06:00</updated><id>https://valeoai.github.io/blog/feed.xml</id><title type="html">valeo.ai blog</title><subtitle>valeo.ai research blog</subtitle><entry><title type="html">How can we make driving systems explainable?</title><link href="https://valeoai.github.io/blog/2021/01/14/explainable-driving.html" rel="alternate" type="text/html" title="How can we make driving systems explainable?" /><published>2021-01-14T00:00:00-06:00</published><updated>2021-01-14T00:00:00-06:00</updated><id>https://valeoai.github.io/blog/2021/01/14/explainable-driving</id><content type="html" xml:base="https://valeoai.github.io/blog/2021/01/14/explainable-driving.html">&lt;p&gt;&lt;em&gt;This post is an introduction to our survey on the explainability of vision-based driving systems, which can be found on arXiv &lt;a href=&quot;https://arxiv.org/abs/2101.05307&quot;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Research on autonomous vehicles is blooming thanks to recent advances in deep learning and computer vision, as well as the development of autonomous driving datasets and simulators.
 The number of academic publications on this subject is rising in most machine learning, computer vision, robotics and transportation conferences, and journals.
-On the industry side, several manufacturers are already producing cars equipped with advanced computer vision technologies for automatic lane following, assisted parking, or collision detection among other things. Meanwhile, constructors are working on and designing prototypes with level 4 and 5 autonomy.&lt;/p&gt;
+On the industry side, several suppliers are already producing cars equipped with advanced computer vision technologies for automatic lane following, assisted parking, or collision detection among other things. Meanwhile, constructors are working on and designing prototypes with level 4 and 5 autonomy.&lt;/p&gt;
 
 &lt;p&gt;In the 2010s, we observe an interest in approaches aiming to &lt;em&gt;train&lt;/em&gt; driving systems, usually in the form of neural networks, either by leveraging large quantities of expert recordings or through simulation.
 In both cases, these systems learn a highly complex transformation that operates over input sensor data and produces end-commands (steering angle, throttle). 
@@ -49,7 +49,7 @@ As a fallback solution, explainability can help delving deeper into the inner wo
 &lt;h3 id=&quot;driving-system-&quot;&gt;Driving system ?&lt;/h3&gt;
 
 &lt;p&gt;The history of autonomous driving systems started in the late ’80s and early ’90s with the European Eureka project called Prometheus.
-This has later been followed by driving challenges proposed by the Defense Advanced Research Projects Agency (DARPA). 
+This has later been followed by &lt;a href=&quot;https://www.youtube.com/watch?v=7a6GrKqOxeU&quot;&gt;driving challenges&lt;/a&gt; proposed by the Defense Advanced Research Projects Agency (DARPA). 
 The vast majority of autonomous systems competing in these challenges is characterized by their modularity: several sub-modules are assembled, each completing a very specific task. 
 Broadly speaking, these subtasks deal with sensing the environment, forecasting future events, planning, taking high-level decisions, and controlling the vehicle.&lt;/p&gt;
 
@@ -66,7 +66,7 @@ However, these approaches have several drawbacks:&lt;/p&gt;
 
 &lt;p&gt;We can distinguish four key elements involved in the design of a neural driving system: input sensors, input representations, output type, and learning paradigm&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/blog/images/posts/explainable_driving/driving_architecture.png&quot; alt=&quot;driving_architecture&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blog/images/posts/explainable_driving/driving_architecture.png&quot; alt=&quot;driving_architecture&quot; width=&quot;80%&quot; /&gt;&lt;/p&gt;
 &lt;div class=&quot;caption&quot;&gt;&lt;b&gt;Figure 1. Overview of neural network-based autonomous driving systems.&lt;/b&gt;&lt;/div&gt;
 
 &lt;ul&gt;
@@ -86,7 +86,7 @@ Two families of methods coexist for training self-driving neural models: &lt;em&
     &lt;ul&gt;
       &lt;li&gt;Behavior cloning (BC) approaches leverage huge quantities of recorded human driving sessions to learn the input-output driving mapping by imitation. 
   In this setting, the network is trained to mimic the commands applied by the expert driver (end-to-end models), or the future trajectory (end-to-mid models), in a supervised fashion. 
-  Initial attempt to behavior cloning of vehicle controls was made in &lt;a class=&quot;citation&quot; href=&quot;#Pomerleau88&quot;&gt;(Pomerleau, 1988)&lt;/a&gt;, and continued later in &lt;a class=&quot;citation&quot; href=&quot;#pilotnet&quot;&gt;(Bojarski et al., 2016)&lt;/a&gt;.&lt;/li&gt;
+  An initial attempt to behavior cloning of vehicle controls was made by &lt;a class=&quot;citation&quot; href=&quot;#Pomerleau88&quot;&gt;(Pomerleau, 1988)&lt;/a&gt;, and continued later in &lt;a class=&quot;citation&quot; href=&quot;#pilotnet&quot;&gt;(Bojarski et al., 2016)&lt;/a&gt;.&lt;/li&gt;
       &lt;li&gt;Reinforcement learning (RL) was alternatively explored by researchers to train neural driving systems. This paradigm learns a policy by balancing self-exploration and reinforcement.
   This training paradigm relies on a simulator (such as CARLA &lt;a class=&quot;citation&quot; href=&quot;#carla&quot;&gt;(Dosovitskiy et al., 2017)&lt;/a&gt;).&lt;/li&gt;
     &lt;/ul&gt;
@@ -108,7 +108,7 @@ Explainability issues thus occur regarding the generalizability and robustness a
 Third, the learning phase is not perfectly understood. Among other things, there are no guarantees that the model will settle at a minimum point that generalizes well to new situations. Thus, the model may learn to ground its decisions on spurious correlations during training instead of on the true causes. We aim at finding answers to questions like &lt;em&gt;Which factors caused this decision to be taken?&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/blog/images/posts/explainable_driving/ml_challenges.png&quot; alt=&quot;ml_challenges&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blog/images/posts/explainable_driving/ml_challenges.png&quot; alt=&quot;ml_challenges&quot; width=&quot;80%&quot; /&gt;&lt;/p&gt;
 &lt;div class=&quot;caption&quot;&gt;&lt;b&gt;Figure 2. Explainability hurdles and questions for autonomous driving models, as seen from a machine learning point of view.&lt;/b&gt;&lt;/div&gt;
 
 &lt;ul&gt;
@@ -122,15 +122,18 @@ In the effort towards building an autonomous driving system, researchers aim at 
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/blog/images/posts/explainable_driving/driving_challenges.png&quot; alt=&quot;driving_challenges&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blog/images/posts/explainable_driving/driving_challenges.png&quot; alt=&quot;driving_challenges&quot; width=&quot;80%&quot; /&gt;&lt;/p&gt;
 &lt;div class=&quot;caption&quot;&gt;&lt;b&gt;Figure 3. Explainability hurdles and questions for autonomous driving models, as seen from an autonomous driving point of view.&lt;/b&gt;&lt;/div&gt;
 
-&lt;p&gt;While the separation between perception, reasoning, and decision is clear in modular driving systems, some recent end-to-end neural networks such as &lt;a class=&quot;citation&quot; href=&quot;#pilotnet&quot;&gt;(Bojarski et al., 2016)&lt;/a&gt; blur the lines and perform these simultaneously. Indeed, when an explanation method is developed for a neural driving system, it is often not clear whether it attempts to explain the perception, the reasoning, or the decision step.
+&lt;p&gt;While the separation between perception, reasoning, and decision is clear in modular driving systems, some recent end-to-end neural networks such as PilotNet &lt;a class=&quot;citation&quot; href=&quot;#pilotnet&quot;&gt;(Bojarski et al., 2016)&lt;/a&gt; blur the lines and perform these simultaneously. Indeed, when an explanation method is developed for a neural driving system, it is often not clear whether it attempts to explain the perception, the reasoning, or the decision step.
 Considering the nature of neural networks architecture and training, disentangling perception, reasoning, and decision in neural driving systems constitutes a non-trivial challenge.&lt;/p&gt;
 
 &lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
 
-&lt;p&gt;As an answer to such problems, many explanation methods have been proposed and can be organized into two categories: applying &lt;em&gt;post-hoc methods&lt;/em&gt; on an already-trained driving model, and directly building driving models which are inherently interpretable &lt;em&gt;by design&lt;/em&gt;. In our &lt;a href=&quot;https://arxiv.org/abs/2101.05307&quot;&gt;survey&lt;/a&gt;, we provide details on existing explainability techniques, show how they tackle to the problem of explaining driving models and highlight their limitations. In addition, we also detail remaining challenges and open research avenues to increase explainability of self-driving models.&lt;/p&gt;
+&lt;p&gt;As an answer to such problems, many explanation methods have been proposed and are usually organized into two categories: applying &lt;em&gt;post-hoc methods&lt;/em&gt; on an already-trained driving model, and directly building driving models which are inherently interpretable &lt;em&gt;by design&lt;/em&gt;. 
+In our &lt;a href=&quot;https://arxiv.org/abs/2101.05307&quot;&gt;survey&lt;/a&gt;, we provide details on existing explainability techniques, show how they tackle to the problem of explaining driving models and highlight their limitations. 
+In addition, we detail remaining challenges and open research avenues to increase explainability of self-driving models.
+We hope our survey will enable increased awareness in this area from researchers and practitioners in the field, as well as from other potentially related fields.&lt;/p&gt;
 
 &lt;h3 id=&quot;references&quot;&gt;References&lt;/h3&gt;
 
