@@ -5,7 +5,7 @@ description: "Hedi Ben younes*, Eloi Zablocki*, Matthieu Cord and Patrick Pérez
 categories: [explainability, interpretability, survey, self-driving]
 title: "How can we make driving systems explainable?"
 hide: false
-image: images/posts/advent/qualitative_results.png
+image: images/posts/explainable_driving/logo_explainable.png
 ---
 
 *This post is an introduction to our survey on the explainability of vision-based driving systems, which can be found on arXiv [here](https://arxiv.org/abs/2101.05307).*
