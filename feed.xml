@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://valeoai.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://valeoai.github.io/blog/" rel="alternate" type="text/html" /><updated>2021-02-18T04:14:14-06:00</updated><id>https://valeoai.github.io/blog/feed.xml</id><title type="html">valeo.ai blog</title><subtitle>valeo.ai research blog</subtitle><entry><title type="html">How can we make driving systems explainable?</title><link href="https://valeoai.github.io/blog/2021/01/14/explainable-driving.html" rel="alternate" type="text/html" title="How can we make driving systems explainable?" /><published>2021-01-14T00:00:00-06:00</published><updated>2021-01-14T00:00:00-06:00</updated><id>https://valeoai.github.io/blog/2021/01/14/explainable-driving</id><content type="html" xml:base="https://valeoai.github.io/blog/2021/01/14/explainable-driving.html">&lt;p&gt;&lt;em&gt;This post is an introduction to our survey on the explainability of vision-based driving systems, which can be found on arXiv &lt;a href=&quot;https://arxiv.org/abs/2101.05307&quot;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://valeoai.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://valeoai.github.io/blog/" rel="alternate" type="text/html" /><updated>2021-02-18T10:25:33-06:00</updated><id>https://valeoai.github.io/blog/feed.xml</id><title type="html">valeo.ai blog</title><subtitle>valeo.ai research blog</subtitle><entry><title type="html">How can we make driving systems explainable?</title><link href="https://valeoai.github.io/blog/2021/02/18/explainable-driving.html" rel="alternate" type="text/html" title="How can we make driving systems explainable?" /><published>2021-02-18T00:00:00-06:00</published><updated>2021-02-18T00:00:00-06:00</updated><id>https://valeoai.github.io/blog/2021/02/18/explainable-driving</id><content type="html" xml:base="https://valeoai.github.io/blog/2021/02/18/explainable-driving.html">&lt;p&gt;&lt;em&gt;This post is an introduction to our survey on the explainability of vision-based driving systems, which can be found on arXiv &lt;a href=&quot;https://arxiv.org/abs/2101.05307&quot;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Research on autonomous vehicles is blooming thanks to recent advances in deep learning and computer vision, as well as the development of autonomous driving datasets and simulators.
 The number of academic publications on this subject is rising in most machine learning, computer vision, robotics and transportation conferences, and journals.
@@ -9,7 +9,7 @@ In both cases, these systems learn a highly complex transformation that operates
 While these neural driving models overcome some of the limitations of the traditional modular pipeline stack, they are sometimes described as &lt;em&gt;black-boxes&lt;/em&gt; for their critical lack of transparency and interpretability. 
 Thus, being able to explain the behavior of neural driving models is of paramount importance for their deployment and social acceptance.&lt;/p&gt;
 
-&lt;h3 id=&quot;explainability-&quot;&gt;Explainability ?&lt;/h3&gt;
+&lt;h3 id=&quot;explainability&quot;&gt;Explainability?&lt;/h3&gt;
 
 &lt;p&gt;Many terms are related to the concept of explainability and several definitions have been proposed for each of these terms. The boundaries between concepts are fuzzy and constantly evolving. 
 In human-machine interactions, explainability is defined as the ability for the human user to understand the agent’s logic &lt;a class=&quot;citation&quot; href=&quot;#RosenfeldR19&quot;&gt;(Rosenfeld &amp;amp; Richardson, 2019)&lt;/a&gt;. 
@@ -46,7 +46,7 @@ As a fallback solution, explainability can help delving deeper into the inner wo
 &lt;!-- These explanations are directed towards experts who will likely spend large amounts of time studying the system, and who are thus inclined to receive rich explanations with great amounts of detail.  --&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;driving-system-&quot;&gt;Driving system ?&lt;/h3&gt;
+&lt;h3 id=&quot;driving-system&quot;&gt;Driving system?&lt;/h3&gt;
 
 &lt;p&gt;The history of autonomous driving systems started in the late ’80s and early ’90s with the European Eureka project called Prometheus.
 This has later been followed by &lt;a href=&quot;https://www.youtube.com/watch?v=7a6GrKqOxeU&quot;&gt;driving challenges&lt;/a&gt; proposed by the Defense Advanced Research Projects Agency (DARPA). 
