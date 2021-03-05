@@ -2,7 +2,7 @@
 layout: project
 title: Frugal learning
 permalink: /projects/limited-supervision
-description: Collecting diverse enough data, and annotating it precisely, is complex, costly and time-consuming. To reduce dramatically these needs, we explore various alternatives to fully-supervised learning, e.g, training that is unsupervised (as <a href="https://valeoai.github.io/blog/publications/rosd/">rOSD</a> at ECCCV’20), self-supervised (as <a href="https://valeoai.github.io/blog/publications/bownet/">BoWNet</a> at CVPR’20), semi-supervised, active, zero-shot (as <a href="https://valeoai.github.io/blog/publications/zs3/">ZS3</a> at NeurIPS’19) or few-shot. We also investigate training with fully-synthetic data (in combination with unsupervised domain adaptation) and with GAN-augmented data.
+description: Collecting diverse enough data, and annotating it precisely, is complex, costly and time-consuming. To reduce dramatically these needs, we explore various alternatives to fully-supervised learning, e.g, training that is unsupervised (as <a href="https://valeoai.github.io/blog/publications/rosd/">rOSD</a> at ECCCV’20), self-supervised (as <a href="https://valeoai.github.io/blog/publications/bownet/">BoWNet</a> at CVPR’20), semi-supervised, active, zero-shot (as <a href="https://valeoai.github.io/blog/publications/zs3/">ZS3</a> at NeurIPS’19) or few-shot. We also investigate training with fully-synthetic data (in combination with unsupervised domain adaptation) and with GAN-augmented data (as <a href="https://valeoai.github.io/blog/publications/semanticpalette/">Semantic Palette</a> at CVPR’21).
 image: "images/projects/limited_supervision.jpg"
 category: project
 url: ""
