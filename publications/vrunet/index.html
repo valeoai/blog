@@ -3,20 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Boosting Few-Shot Visual Learning With Self-Supervision | valeo.ai blog</title>
+<title>VRUNet: Multi-Task Learning Model for Intent Prediction of Vulnerable Road Users | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Boosting Few-Shot Visual Learning With Self-Supervision" />
+<meta property="og:title" content="VRUNet: Multi-Task Learning Model for Intent Prediction of Vulnerable Road Users" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Boosting Few-Shot Visual Learning With Self-Supervision Spyros Gidaris&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Nikos Komodakis&nbsp;&nbsp; Patrick Pérez&nbsp;&nbsp; Matthieu Cord" />
-<meta property="og:description" content="Boosting Few-Shot Visual Learning With Self-Supervision Spyros Gidaris&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Nikos Komodakis&nbsp;&nbsp; Patrick Pérez&nbsp;&nbsp; Matthieu Cord" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/bf3s/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/bf3s/" />
+<meta name="description" content="VRUNet: Multi-Task Learning Model for Intent Prediction of Vulnerable Road Users Adithya Ranga&nbsp;&nbsp; Filippo Giruzzi&nbsp;&nbsp; Jagdish Bhanushali&nbsp;&nbsp; Emilie Wirbel&nbsp;&nbsp; Patrick Pérez&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Xavier Perotton&nbsp;&nbsp;" />
+<meta property="og:description" content="VRUNet: Multi-Task Learning Model for Intent Prediction of Vulnerable Road Users Adithya Ranga&nbsp;&nbsp; Filippo Giruzzi&nbsp;&nbsp; Jagdish Bhanushali&nbsp;&nbsp; Emilie Wirbel&nbsp;&nbsp; Patrick Pérez&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Xavier Perotton&nbsp;&nbsp;" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/vrunet/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/vrunet/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/bf3s/bf3s.jpg" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/vrunet/crossing_norm_seq2.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-06-07T04:42:10-05:00" />
 <script type="application/ld+json">
-{"image":"https://valeoai.github.io/blog/images/publications/bf3s/bf3s.jpg","description":"Boosting Few-Shot Visual Learning With Self-Supervision Spyros Gidaris&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Nikos Komodakis&nbsp;&nbsp; Patrick Pérez&nbsp;&nbsp; Matthieu Cord","@type":"BlogPosting","url":"https://valeoai.github.io/blog/publications/bf3s/","headline":"Boosting Few-Shot Visual Learning With Self-Supervision","dateModified":"2021-06-07T04:42:10-05:00","datePublished":"2021-06-07T04:42:10-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/bf3s/"},"@context":"https://schema.org"}</script>
+{"image":"https://valeoai.github.io/blog/images/publications/vrunet/crossing_norm_seq2.png","description":"VRUNet: Multi-Task Learning Model for Intent Prediction of Vulnerable Road Users Adithya Ranga&nbsp;&nbsp; Filippo Giruzzi&nbsp;&nbsp; Jagdish Bhanushali&nbsp;&nbsp; Emilie Wirbel&nbsp;&nbsp; Patrick Pérez&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Xavier Perotton&nbsp;&nbsp;","@type":"BlogPosting","url":"https://valeoai.github.io/blog/publications/vrunet/","headline":"VRUNet: Multi-Task Learning Model for Intent Prediction of Vulnerable Road Users","dateModified":"2021-06-07T04:42:10-05:00","datePublished":"2021-06-07T04:42:10-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/vrunet/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai blog" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -25,20 +25,20 @@
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-179942144-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
 <link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Boosting Few-Shot Visual Learning With Self-Supervision | valeo.ai blog</title>
+<title>VRUNet: Multi-Task Learning Model for Intent Prediction of Vulnerable Road Users | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Boosting Few-Shot Visual Learning With Self-Supervision" />
+<meta property="og:title" content="VRUNet: Multi-Task Learning Model for Intent Prediction of Vulnerable Road Users" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Boosting Few-Shot Visual Learning With Self-Supervision Spyros Gidaris&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Nikos Komodakis&nbsp;&nbsp; Patrick Pérez&nbsp;&nbsp; Matthieu Cord" />
-<meta property="og:description" content="Boosting Few-Shot Visual Learning With Self-Supervision Spyros Gidaris&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Nikos Komodakis&nbsp;&nbsp; Patrick Pérez&nbsp;&nbsp; Matthieu Cord" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/bf3s/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/bf3s/" />
+<meta name="description" content="VRUNet: Multi-Task Learning Model for Intent Prediction of Vulnerable Road Users Adithya Ranga&nbsp;&nbsp; Filippo Giruzzi&nbsp;&nbsp; Jagdish Bhanushali&nbsp;&nbsp; Emilie Wirbel&nbsp;&nbsp; Patrick Pérez&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Xavier Perotton&nbsp;&nbsp;" />
+<meta property="og:description" content="VRUNet: Multi-Task Learning Model for Intent Prediction of Vulnerable Road Users Adithya Ranga&nbsp;&nbsp; Filippo Giruzzi&nbsp;&nbsp; Jagdish Bhanushali&nbsp;&nbsp; Emilie Wirbel&nbsp;&nbsp; Patrick Pérez&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Xavier Perotton&nbsp;&nbsp;" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/vrunet/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/vrunet/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/bf3s/bf3s.jpg" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/vrunet/crossing_norm_seq2.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-06-07T04:42:10-05:00" />
 <script type="application/ld+json">
-{"image":"https://valeoai.github.io/blog/images/publications/bf3s/bf3s.jpg","description":"Boosting Few-Shot Visual Learning With Self-Supervision Spyros Gidaris&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Nikos Komodakis&nbsp;&nbsp; Patrick Pérez&nbsp;&nbsp; Matthieu Cord","@type":"BlogPosting","url":"https://valeoai.github.io/blog/publications/bf3s/","headline":"Boosting Few-Shot Visual Learning With Self-Supervision","dateModified":"2021-06-07T04:42:10-05:00","datePublished":"2021-06-07T04:42:10-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/bf3s/"},"@context":"https://schema.org"}</script>
+{"image":"https://valeoai.github.io/blog/images/publications/vrunet/crossing_norm_seq2.png","description":"VRUNet: Multi-Task Learning Model for Intent Prediction of Vulnerable Road Users Adithya Ranga&nbsp;&nbsp; Filippo Giruzzi&nbsp;&nbsp; Jagdish Bhanushali&nbsp;&nbsp; Emilie Wirbel&nbsp;&nbsp; Patrick Pérez&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Xavier Perotton&nbsp;&nbsp;","@type":"BlogPosting","url":"https://valeoai.github.io/blog/publications/vrunet/","headline":"VRUNet: Multi-Task Learning Model for Intent Prediction of Vulnerable Road Users","dateModified":"2021-06-07T04:42:10-05:00","datePublished":"2021-06-07T04:42:10-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/vrunet/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -170,21 +170,19 @@ p {
     }
 </style>
 
-<h1 align="center"> Boosting Few-Shot Visual Learning With Self-Supervision </h1>
+<h1 align="center"> VRUNet: Multi-Task Learning Model for Intent Prediction of Vulnerable Road Users </h1>
 <!-- Simple call of authors -->
-<!-- <h3 align="center"> Spyros Gidaris, Andrei Bursuc, Nikos Komodakis, Patrick Pérez, and Matthieu Cord </h3> -->
+<!-- <h3 align="center"> Adithya Ranga, Filippo Giruzzi, Jagdish Bhanushali, Emilie Wirbel, Patrick Pérez, Tuan-Hung Vu, Xavier Perotton </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center"> <a href="https://scholar.google.com/citations?user=7atfg7EAAAAJ&amp;hl=en">Spyros Gidaris</a>&nbsp;&nbsp; <a href="https://abursuc.github.io/">Andrei Bursuc</a>&nbsp;&nbsp; <a href="https://www.csd.uoc.gr/~komod/">Nikos Komodakis</a>&nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a>&nbsp;&nbsp; <a href="http://webia.lip6.fr/~cord/">Matthieu Cord</a> </h3>
+<h3 align="center"> <a href="">Adithya Ranga</a>&nbsp;&nbsp; <a href="">Filippo Giruzzi</a>&nbsp;&nbsp; <a href="">Jagdish Bhanushali</a>&nbsp;&nbsp; <a href="">Emilie Wirbel</a>&nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a>&nbsp;&nbsp; <a href="https://tuanhungvu.github.io/">Tuan-Hung Vu</a>&nbsp;&nbsp; <a href="">Xavier Perotton</a>&nbsp;&nbsp; </h3>
 
-<h3 align="center"> ICCV 2019 </h3>
+<h3 align="center"> Electronic Imaging 2020 </h3>
 
 <div align="center">
   <p>
     
-    <a href="http://openaccess.thecvf.com/content_ICCV_2019/html/Gidaris_Boosting_Few-Shot_Visual_Learning_With_Self-Supervision_ICCV_2019_paper.html"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
+    <a href="https://www.ingentaconnect.com/content/ist/ei/2020/00002020/00000016/art00012"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
     
-    
-    <a href="https://github.com/valeoai/bf3s"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
     
     
     
@@ -193,29 +191,25 @@ p {
 </div>
 
 <div class="publication-teaser">
-    <img src="../../images/publications/bf3s/bf3s.jpg" alt="project teaser" />
+    <img src="../../images/publications/vrunet/crossing_norm_seq2.png" alt="project teaser" />
 </div>
 
 <hr />
 
 <h2 align="center"> Abstract</h2>
 
-<p align="justify">Few-shot learning and self-supervised learning address different facets of the same problem: how to train a model with little or no labeled data. Few-shot learning aims for optimization methods and models that can learn efficiently to recognize patterns in the low data regime. Self-supervised learning focuses instead on unlabeled data and looks into it for the supervisory signal to feed high capacity deep neural networks. In this work we exploit the complementarity of these two domains and propose an approach for improving few-shot learning through self-supervision. We use self-supervision as an auxiliary task in a few-shot learning pipeline, enabling feature extractors to learn richer and more transferable visual representations while still using few annotated samples. Through self-supervision, our approach can be naturally extended towards using diverse unlabeled data from other datasets in the few-shot setting. We report consistent improvements across an array of architectures, datasets and self-supervision techniques. We provide the implementation code at: https://github.com/valeoai/BF3S</p>
-
-<p><br /></p>
+<p align="justify">Advanced perception and path planning are at the core for any self-driving vehicle. Autonomous vehicles need to understand the scene and intentions of other road users for safe motion planning. For urban use cases it is very important to perceive and predict the intentions of pedestrians, cyclists, scooters, etc., classified as vulnerable road users (VRU). Intent is a combination of pedestrian activities and long term trajectories defining their future motion. In this paper we propose a multi-task learning model to predict pedestrian actions, crossing intent and forecast their future path from video sequences. We have trained the model on naturalistic driving open-source JAAD [1] dataset, which is rich in behavioral annotations and real world scenarios. Experimental results show state-of-the-art performance on JAAD dataset and how we can benefit from jointly learning and predicting actions and trajectories using 2D human pose features and scene context.</p>
 
 <hr />
 
 <h2 align="center">BibTeX</h2>
 <left>
   <pre class="bibtex-box">
-@inproceedings{gidaris2019boosting,
-    title={Boosting few-shot visual learning with self-supervision},
-    author={Gidaris, Spyros and Bursuc, Andrei and Komodakis, Nikos and P{\'e}rez, Patrick and Cord, Matthieu},
-    booktitle={Proceedings of the IEEE International Conference on Computer Vision},
-    pages={8059--8068},
-    year={2019}
-}</pre>
+@article{ranga2020vrunet,
+  title={VRUNet: Multi-Task Learning Model for Intent Prediction of Vulnerable Road Users},
+  author={Ranga, Adithya and Giruzzi, Filippo and Bhanushali, Jagdish and Wirbel, Emilie and P{\'e}rez, Patrick and Vu, Tuan-Hung and Perotton, Xavier},
+  journal={Electronic Imaging},
+  year={2020}}</pre>
 </left>
 
 <p><br /></p>
