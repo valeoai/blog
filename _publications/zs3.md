@@ -4,7 +4,7 @@ title: "Zero-Shot Semantic Segmentation"
 image: images/publications/zs3/zs3.png
 hide: false
 category: [limited-supervision]
-authors: Maxime Bucher, Tuan Hung Vu, Matthieu Cord, and Patrick Pérez
+authors: Maxime Bucher, Tuan-Hung Vu, Matthieu Cord, and Patrick Pérez
 venue: NeurIPS
 venue_long: Neural Information Processing Systems (NeurIPS)
 year: 2019
