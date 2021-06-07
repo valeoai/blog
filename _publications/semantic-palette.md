@@ -5,7 +5,7 @@ title: "Semantic Palette: Guiding Scene Generation with Class Proportions
 image: images/publications/semanticpalette/semantic_palette_teaser.jpg
 hide: false
 category: [limited-supervision, domain-adaptation]
-authors: Guillaume Le Moing, Tuan Hung Vu, Himalaya Jain, Matthieu Cord, and Patrick Pérez
+authors: Guillaume Le Moing, Tuan Hung Vu, Himalaya Jain, Patrick Pérez and Matthieu Cord
 venue: CVPR
 venue_long: Computer Vision and Pattern Recognition (CVPR)
 year: 2021
@@ -74,7 +74,7 @@ permalink: /publications/semanticpalette/
   <pre class="bibtex-box">
 @inproceedings{lemoing2021semanticpalette,
   title={Semantic Palette: Guiding Scene Generation with Class Proportions},
-  author={Le Moing, Guillaume and Vu, Tuan-Hung and Jain, Himalaya and Cord, Mathieu and P{\'e}rez, Patrick},
+  author={Le Moing, Guillaume and Vu, Tuan-Hung and Jain, Himalaya and P{\'e}rez, Patrick and Cord, Mathieu},
   booktitle={CVPR},
   year={2021}
 }</pre>
