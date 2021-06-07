@@ -4,7 +4,7 @@ title: "AdvEnt: Adversarial Entropy minimization for domain adaptation in semant
 image: images/publications/advent/advent_qualitative.jpg
 hide: false
 category: [domain-adaptation]
-authors: Tuan Hung Vu, Himalaya Jain, Maxime Bucher, Matthieu Cord, and Patrick Pérez
+authors: Tuan-Hung Vu, Himalaya Jain, Maxime Bucher, Matthieu Cord, and Patrick Pérez
 venue: CVPR
 venue_long: Computer Vision and Pattern Recognition (CVPR)
 year: 2019

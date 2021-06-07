@@ -4,7 +4,7 @@ title: "DADA: Depth-aware Domain Adaptation in Semantic Segmentation"
 image: images/publications/dada/dada.png
 hide: false
 category: [domain-adaptation]
-authors: Tuan Hung Vu, Himalaya Jain, Maxime Bucher, Matthieu Cord, and Patrick Pérez
+authors: Tuan-Hung Vu, Himalaya Jain, Maxime Bucher, Matthieu Cord, and Patrick Pérez
 venue: ICCV
 venue_long: International Conference on Computer Vision (ICCV)
 year: 2019
