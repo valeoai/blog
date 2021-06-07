@@ -5,9 +5,9 @@ image: images/publications/esl/teaser.jpg
 hide: false
 category: [domain-adaptation]
 authors: Antoine Saporta, Tuan-Hung Vu, Matthieu Cord and Patrick Pérez
-venue: CVPR
-venue_long: Computer Vision and Pattern Recognition (CVPR)
-year: 2019
+venue: CVPRW
+venue_long: Computer Vision and Pattern Recognition Workshop on Scalability in Autonomous Driving
+year: 2020
 month: 6
 code_url: https://github.com/valeoai/ESL
 paper_url: https://arxiv.org/abs/2006.08658
