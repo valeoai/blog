@@ -3,20 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Online Bag-of-Visual-Words Generation for Unsupervised Representation Learning | valeo.ai blog</title>
+<title>ConvPoint: Continuous Convolutions for Point Cloud Processing | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Online Bag-of-Visual-Words Generation for Unsupervised Representation Learning" />
+<meta property="og:title" content="ConvPoint: Continuous Convolutions for Point Cloud Processing" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Online Bag-of-Visual-Words Generation for Unsupervised Representation Learning Spyros Gidaris&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Gilles Puy&nbsp;&nbsp; Nikos Komodakis Patrick Pérez&nbsp;&nbsp; Matthieu Cord" />
-<meta property="og:description" content="Online Bag-of-Visual-Words Generation for Unsupervised Representation Learning Spyros Gidaris&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Gilles Puy&nbsp;&nbsp; Nikos Komodakis Patrick Pérez&nbsp;&nbsp; Matthieu Cord" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/obow/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/obow/" />
+<meta name="description" content="ConvPoint: Continuous Convolutions for Point Cloud Processing Alexandre Boulch &nbsp;&nbsp;" />
+<meta property="og:description" content="ConvPoint: Continuous Convolutions for Point Cloud Processing Alexandre Boulch &nbsp;&nbsp;" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/2020_convpoint/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/2020_convpoint/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/obow/obow_teaser.jpg" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2020_convpoint/convpoint.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-08-24T07:07:50-05:00" />
 <script type="application/ld+json">
-{"description":"Online Bag-of-Visual-Words Generation for Unsupervised Representation Learning Spyros Gidaris&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Gilles Puy&nbsp;&nbsp; Nikos Komodakis Patrick Pérez&nbsp;&nbsp; Matthieu Cord","@type":"BlogPosting","url":"https://valeoai.github.io/blog/publications/obow/","headline":"Online Bag-of-Visual-Words Generation for Unsupervised Representation Learning","dateModified":"2021-08-24T07:07:50-05:00","datePublished":"2021-08-24T07:07:50-05:00","image":"https://valeoai.github.io/blog/images/publications/obow/obow_teaser.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/obow/"},"@context":"https://schema.org"}</script>
+{"description":"ConvPoint: Continuous Convolutions for Point Cloud Processing Alexandre Boulch &nbsp;&nbsp;","@type":"BlogPosting","url":"https://valeoai.github.io/blog/publications/2020_convpoint/","headline":"ConvPoint: Continuous Convolutions for Point Cloud Processing","dateModified":"2021-08-24T07:07:50-05:00","datePublished":"2021-08-24T07:07:50-05:00","image":"https://valeoai.github.io/blog/images/publications/2020_convpoint/convpoint.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/2020_convpoint/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai blog" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -25,20 +25,20 @@
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-179942144-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
 <link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Online Bag-of-Visual-Words Generation for Unsupervised Representation Learning | valeo.ai blog</title>
+<title>ConvPoint: Continuous Convolutions for Point Cloud Processing | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Online Bag-of-Visual-Words Generation for Unsupervised Representation Learning" />
+<meta property="og:title" content="ConvPoint: Continuous Convolutions for Point Cloud Processing" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Online Bag-of-Visual-Words Generation for Unsupervised Representation Learning Spyros Gidaris&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Gilles Puy&nbsp;&nbsp; Nikos Komodakis Patrick Pérez&nbsp;&nbsp; Matthieu Cord" />
-<meta property="og:description" content="Online Bag-of-Visual-Words Generation for Unsupervised Representation Learning Spyros Gidaris&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Gilles Puy&nbsp;&nbsp; Nikos Komodakis Patrick Pérez&nbsp;&nbsp; Matthieu Cord" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/obow/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/obow/" />
+<meta name="description" content="ConvPoint: Continuous Convolutions for Point Cloud Processing Alexandre Boulch &nbsp;&nbsp;" />
+<meta property="og:description" content="ConvPoint: Continuous Convolutions for Point Cloud Processing Alexandre Boulch &nbsp;&nbsp;" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/2020_convpoint/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/2020_convpoint/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/obow/obow_teaser.jpg" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2020_convpoint/convpoint.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-08-24T07:07:50-05:00" />
 <script type="application/ld+json">
-{"description":"Online Bag-of-Visual-Words Generation for Unsupervised Representation Learning Spyros Gidaris&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Gilles Puy&nbsp;&nbsp; Nikos Komodakis Patrick Pérez&nbsp;&nbsp; Matthieu Cord","@type":"BlogPosting","url":"https://valeoai.github.io/blog/publications/obow/","headline":"Online Bag-of-Visual-Words Generation for Unsupervised Representation Learning","dateModified":"2021-08-24T07:07:50-05:00","datePublished":"2021-08-24T07:07:50-05:00","image":"https://valeoai.github.io/blog/images/publications/obow/obow_teaser.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/obow/"},"@context":"https://schema.org"}</script>
+{"description":"ConvPoint: Continuous Convolutions for Point Cloud Processing Alexandre Boulch &nbsp;&nbsp;","@type":"BlogPosting","url":"https://valeoai.github.io/blog/publications/2020_convpoint/","headline":"ConvPoint: Continuous Convolutions for Point Cloud Processing","dateModified":"2021-08-24T07:07:50-05:00","datePublished":"2021-08-24T07:07:50-05:00","image":"https://valeoai.github.io/blog/images/publications/2020_convpoint/convpoint.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/2020_convpoint/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -170,64 +170,54 @@ p {
     }
 </style>
 
-<h1 align="center"> Online Bag-of-Visual-Words Generation for Unsupervised Representation Learning </h1>
+<h1 align="center"> ConvPoint: Continuous Convolutions for Point Cloud Processing </h1>
 <!-- Simple call of authors -->
-<!-- <h3 align="center"> Spyros Gidaris, Andrei Bursuc, Gilles Puy, Nikos Komodakis, Patrick Pérez, and Matthieu Cord </h3> -->
+<!-- <h3 align="center"> Alexandre Boulch </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center"> <a href="https://scholar.google.com/citations?user=7atfg7EAAAAJ&amp;hl=en">Spyros Gidaris</a>&nbsp;&nbsp; <a href="https://abursuc.github.io/">Andrei Bursuc</a>&nbsp;&nbsp; <a href="https://sites.google.com/site/puygilles/home">Gilles Puy</a>&nbsp;&nbsp;  <a href="https://www.csd.uoc.gr/~komod/">Nikos Komodakis</a> <br /> <a href="https://ptrckprz.github.io/">Patrick Pérez</a>&nbsp;&nbsp; <a href="http://webia.lip6.fr/~cord/">Matthieu Cord</a> </h3>
+<h3 align="center">
+<a href="https://www.boulch.eu/">Alexandre Boulch</a> &nbsp;&nbsp;
+</h3>
 
-<h3 align="center"> CVPR 2021 </h3>
+<h3 align="center"> CaG 2020 </h3>
 
 <div align="center">
   <p>
     
-    <a href="https://arxiv.org/abs/2012.11552"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
+    <a href="https://arxiv.org/abs/1904.02375"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
     
     
-    <a href="https://github.com/valeoai/obow"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
+    <a href="https://github.com/aboulch/ConvPoint"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
     
     
+    
+    <a href="https://www.boulch.eu/files/talks/2019_3dor_conv_slides.pdf"><i class="far fa-file-pdf"></i> Slides</a>&nbsp;&nbsp;
     
     
   </p>
 </div>
 
-<p><img src="../../images/publications/obow/obow_overview.png" alt="" width="100%" /></p>
+<div class="publication-teaser">
+    <img src="../../images/publications/2020_convpoint/convpoint.png" alt="project teaser" />
+</div>
 
 <hr />
 
 <h2 align="center"> Abstract</h2>
 
-<p align="justify">Learning image representations without human supervision is an important and active research field. Several recent approaches have successfully leveraged the idea of making such a representation invariant under different types of perturbations, especially via contrastive-based instance discrimination training. Although effective visual representations should indeed exhibit such invariances, there are other important characteristics, such as encoding contextual reasoning skills, for which alternative reconstruction-based approaches might be better suited.
-<br />
-With this in mind, we propose a teacher-student scheme to learn representations by training a convnet to reconstruct a bag-of-visual-words (BoW) representation of an image, given as input a perturbed version of that same image. Our strategy performs an online training of both the teacher network (whose role is to generate the BoW targets) and the student network (whose role is to learn representations), along with an online update of the visual-words vocabulary (used for the BoW targets). This idea effectively enables fully online BoW-guided unsupervised learning. Extensive experiments demonstrate the interest of our BoW-based strategy which surpasses previous state-of-the-art methods (including contrastive-based ones) in several applications. For instance, in downstream tasks such Pascal object detection, Pascal classification and Places205 classification, our method improves over all prior unsupervised approaches, thus establishing new state-of-the-art results that are also significantly better even than those of supervised pre-training.</p>
-
-<p><br /></p>
-
-<hr />
-
-<h2 align="center"> Results</h2>
-<p><img src="../../images/publications/obow/obow_table_results.jpg" alt="" /></p>
-<div class="caption"><b>Evaluation of ImageNet pre-trained ResNet50 models.</b> The ''Epochs'' and ''Batch'' columns provide the number of pre-training epochs and the batch size of each model respectively.
-The first section includes models pre-trained with a similar number of epochs as our model (second section). 
-We boldfaced the best results among all sections as well as of only the top two.
-For the linear classification tasks, we provide the top-1 accuracy.
-For object detection, we fine-tuned Faster R-CNN (R50-C4) on VOC $\texttt{trainval07+12}$ and report detection AP scores by testing on $\texttt{test07}$.
-For semi-supervised learning, we fine-tune the pre-trained models on $1\%$ and $10\%$ of ImageNet and report the top-5 accuracy.
-Note that, in this case the ''Supervised'' entry results come from (<a href="https://arxiv.org/abs/1905.03670" target="_blank">Zhai et al.</a>) and are obtained by supervised training 
-using only $1\%$ or $10\%$ of the labelled data.
-All the classification results are computed with single-crop testing. $^\dagger$: results computed by us. </div>
+<p align="justify">
+Point clouds are unstructured and unordered data, as opposed to images. Thus, most machine learning approach developed for image cannot be directly transferred to point clouds. In this paper, we propose a generalization of discrete convolutional neural networks (CNNs) in order to deal with point clouds by replacing discrete kernels by continuous ones. This formulation is simple, allows arbitrary point cloud sizes and can easily be used for designing neural networks similarly to 2D CNNs. We present experimental results with various architectures, highlighting the flexibility of the proposed approach. We obtain competitive results compared to the state-of-the-art on shape classification, part segmentation and semantic segmentation for large-scale point clouds.</p>
 
 <hr />
 
 <h2 align="center">BibTeX</h2>
 <left>
   <pre class="bibtex-box">
-@inproceedings{gidaris2021obow,
-    title={Learning Representations by Predicting Bags of Visual Words},
-    author={Gidaris, Spyros and Bursuc, Andrei and Puy, Gilles and Komodakis, Nikos and Cord, Matthieu and P{\'e}rez, Patrick},
-    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-    year={2021}
+@article{boulch2020convpoint,
+  title=,
+  author={Boulch, Alexandre},
+  journal={Computers \&amp; Graphics},
+  year={2020},
+  publisher={Elsevier}
 }</pre>
 </left>
 
