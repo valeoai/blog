@@ -10,7 +10,7 @@ venue_long: International Conference on Computer Vision (ICCV)
 year: 2021
 month: 10
 code_url: https://github.com/valeoai/PCAM
-paper_url: https://arxiv.org/abs/2010.01269
+paper_url: https://arxiv.org/abs/2110.01269
 blog_url: 
 slides_url: 
 bib_url: 
