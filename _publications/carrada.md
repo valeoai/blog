@@ -14,7 +14,7 @@ paper_url: https://arxiv.org/abs/2005.01456
 blog_url: https://arthurouaknine.github.io/codeanddata/carrada
 slides_url: 
 bib_url: 
-permalink: /publications/esl/
+permalink: /publications/carrada/
 ---
 
 <h1 align="center"> {{page.title}} </h1>
