@@ -8,16 +8,29 @@ permalink: /publications/
 # Selected publications
 
 
-{% assign publications = site.publications | where: 'hide', false %}
-{% assign publications_by_year = publications | group_by: 'year' | sort: 'year' |  reverse %}
 
-{% for year_publications in publications_by_year %}
+{% assign publication_years = "2021,2020,2019" | split: ',' %}
+<!-- {% assign publications = site.publications | sort: "month" | sort: "year" | reverse %} -->
+{% assign publications = site.publications | sort: "month" | reverse %}
+{% assign publications = publications | where:"hide", false %}
 
-<h2>{{year_publications.items[0].year}}</h2>
 
-{% assign curr_publications = year_publications.items | sort: 'month' | reverse %}
+<h2>{{publications.size}} publications across years </h2> 
+
+{% for curr_year in publication_years %}
+
+<h2>{{curr_year}}</h2>
+
+<!-- {% assign curr_publications = publications | where: "year", curr_year %} -->
+{% assign curr_publications = publications | where: "year", curr_year %}
+
+<h2>{{curr_publications.size}} publications in {{curr_year}}</h2>
+
+<!-- {% assign curr_publications = curr_publications | sort: "month" | reverse %} -->
 
 {% for pub in curr_publications %}
+
+<p>month {{pub.month}}</p>
 
 <div class="row">
     <div class="col-md-4">
@@ -39,6 +52,7 @@ permalink: /publications/
 </div>
 </div>
 
+
 {% if forloop.last == false %}
 <hr>
 {% endif %}
@@ -46,4 +60,3 @@ permalink: /publications/
 {% endfor %} 
 
 {% endfor %} 
-
