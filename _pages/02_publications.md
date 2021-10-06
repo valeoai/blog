@@ -47,8 +47,7 @@ permalink: /publications/
 {% endfor %} 
 
 
-<!-- # Selected publications
-
+<!--
 {% assign publication_years = "2021,2020,2019" | split: ',' %}
 {% assign publications = site.publications | where: 'hide', false %}
 {% assign publications_by_year = publications | group_by: 'year' | sort: 'year' |  reverse %}
