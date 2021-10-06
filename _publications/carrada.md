@@ -21,7 +21,7 @@ permalink: /publications/carrada/
 <!-- Simple call of authors -->
 <!-- <h3 align="center"> {{page.authors}} </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center"> <a href="https://arthurouaknine.github.io/">Arthur Ouaknie</a>&nbsp;&nbsp;<a href="https://sites.google.com/site/alasdairnewson/">Alasdair Newson</a>&nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=BJcQNcoAAAAJ&hl=fr">Julien Rebut</a>&nbsp;&nbsp; <a href="https://perso.telecom-paristech.fr/tupin/">Florence Tupin</a>&nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a> </h3>
+<h3 align="center"> <a href="https://arthurouaknine.github.io/">Arthur Ouaknine</a>&nbsp;&nbsp;<a href="https://sites.google.com/site/alasdairnewson/">Alasdair Newson</a>&nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=BJcQNcoAAAAJ&hl=fr">Julien Rebut</a>&nbsp;&nbsp; <a href="https://perso.telecom-paristech.fr/tupin/">Florence Tupin</a>&nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a> </h3>
 
 
 <h3 align="center"> {{page.venue}} {{page.year}} </h3>

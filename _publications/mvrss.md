@@ -67,7 +67,7 @@ permalink: /publications/mvrss/
   <pre class="bibtex-box">
 @inproceedings{ouaknine_2021_multi-view,
 	title={Multi-View Radar Semantic Segmentation},
-    	author={Saporta, Antoine and Alasdair, Newson and P{\'e}rez, Patrick and Tupin, Florence and Rebut, Julien},
+    	author={Ouaknine, Arthur and Alasdair, Newson and P{\'e}rez, Patrick and Tupin, Florence and Rebut, Julien},
       	booktitle={ICCV},
         year={2021}
 	}
