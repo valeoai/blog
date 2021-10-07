@@ -6,7 +6,7 @@ hide: false
 category: [limited-supervision]
 authors: Maxime Bucher, Tuan-Hung Vu, Matthieu Cord, and Patrick Pérez
 venue: CVIU
-venue_long: Computer Vision and Image Understanding
+venue_long: Computer Vision and Image Understanding (CVIU)
 year: 2021
 month: 12
 code_url: 
