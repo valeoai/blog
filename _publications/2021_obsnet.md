@@ -6,7 +6,7 @@ hide: false
 category: [reliability]
 authors: Victor Besnier, Andrei Bursuc, Alexandre Briot, and David Picard
 venue: ICCV
-venue_long: Computer Vision and Pattern Recognition (CVPR)
+venue_long: International Conference on Computer Vision (ICCV)
 year: 2021
 month: 10
 code_url: https://github.com/valeoai/obsnet
