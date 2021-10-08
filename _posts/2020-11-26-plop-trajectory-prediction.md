@@ -208,10 +208,9 @@ We trained PLOP on an internal dataset combining both open road and urban test
     to trust them blindly.
 
 <p align="center">
-  <iframe width="560" height="315" src="https://www.youtube.com/watch?v=94FwahFmc5A&t" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen align="center"></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/94FwahFmc5A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen align="center"></iframe>
 </p>
      
-
 
 ## Conclusion
 
