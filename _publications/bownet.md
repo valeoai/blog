@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: "Learning Representations by Predicting Bags of Visual Words" 
+title: "Learning Representations by Predicting Bags of Visual Words"
 image: images/publications/bownet/bownet_teaser.jpg
 hide: false
 category: [limited-supervision]
@@ -11,9 +11,9 @@ year: 2020
 month: 6
 code_url: https://github.com/valeoai/bownet
 paper_url: https://openaccess.thecvf.com/content_CVPR_2020/html/Gidaris_Learning_Representations_by_Predicting_Bags_of_Visual_Words_CVPR_2020_paper.html
-blog_url: 
-slides_url: 
-bib_url: 
+blog_url:
+slides_url:
+bib_url:
 permalink: /publications/bownet/
 ---
 
