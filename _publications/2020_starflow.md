@@ -2,7 +2,7 @@
 layout: publication
 title: "STaRFlow: A SpatioTemporal Recurrent Cell for Lightweight Multi-Frame Optical Flow Estimation"
 image: images/publications/2020_starflow/starflow.png
-hide: false
+hide: true
 category: [3d-perception]
 authors: Pierre Godet, Alexandre Boulch, Aurelien Plyer and Guy Le Besnerais
 venue: ICPR
