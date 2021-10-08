@@ -50,6 +50,8 @@ permalink: /publications/
 
 <hr>
 <hr>
+<hr>
+<hr>
 
 {% assign publications = site.publications | where: 'hide', false %}
 {% assign publications_by_year = publications |  sort: 'year' |  reverse %}
@@ -58,6 +60,6 @@ permalink: /publications/
 
 {% for year_publications in publications_by_year %}
 
-<h2>{{year_publications.items[0].year}}</h2>
+<h2>Here {{year_publications.items[0].year}}</h2>
 
 {% endfor %} 
