@@ -7,7 +7,7 @@ permalink: /publications/
 
 # Selected publications
 
-<!-- {% assign publications = site.publications | where: 'hide', false %} -->
+{% assign publications = site.publications | where: 'hide', false %} 
 {% assign publications_by_year = publications | group_by: 'year' | sort: 'year' |  reverse %}
 
 {% for year_publications in publications_by_year %}
