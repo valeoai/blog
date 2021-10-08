@@ -3,20 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Confidence Estimation via Auxiliary Models | valeo.ai blog</title>
+<title>StyleLess layer: Improving robustness for real-world driving | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Confidence Estimation via Auxiliary Models" />
+<meta property="og:title" content="StyleLess layer: Improving robustness for real-world driving" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Confidence Estimation via Auxiliary Models Charles Corbière&nbsp;&nbsp; Nicolas Thome&nbsp;&nbsp; Antoine Saporta&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez" />
-<meta property="og:description" content="Confidence Estimation via Auxiliary Models Charles Corbière&nbsp;&nbsp; Nicolas Thome&nbsp;&nbsp; Antoine Saporta&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/confidnet_conda/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/confidnet_conda/" />
+<meta name="description" content="StyleLess layer: Improving robustness for real-world driving Julien Rebut &nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Patrick Pérez" />
+<meta property="og:description" content="StyleLess layer: Improving robustness for real-world driving Julien Rebut &nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Patrick Pérez" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/styleless/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/styleless/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/confidnet_conda/fig6.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2021_styleless/styleless.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-10-08T11:34:01-05:00" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/confidnet_conda/"},"image":"https://valeoai.github.io/blog/images/publications/confidnet_conda/fig6.png","description":"Confidence Estimation via Auxiliary Models Charles Corbière&nbsp;&nbsp; Nicolas Thome&nbsp;&nbsp; Antoine Saporta&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez","@type":"BlogPosting","url":"https://valeoai.github.io/blog/publications/confidnet_conda/","headline":"Confidence Estimation via Auxiliary Models","dateModified":"2021-10-08T11:34:01-05:00","datePublished":"2021-10-08T11:34:01-05:00","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/styleless/"},"image":"https://valeoai.github.io/blog/images/publications/2021_styleless/styleless.png","description":"StyleLess layer: Improving robustness for real-world driving Julien Rebut &nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Patrick Pérez","@type":"BlogPosting","url":"https://valeoai.github.io/blog/publications/styleless/","headline":"StyleLess layer: Improving robustness for real-world driving","dateModified":"2021-10-08T11:34:01-05:00","datePublished":"2021-10-08T11:34:01-05:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai blog" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -25,20 +25,20 @@
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-179942144-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
 <link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Confidence Estimation via Auxiliary Models | valeo.ai blog</title>
+<title>StyleLess layer: Improving robustness for real-world driving | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Confidence Estimation via Auxiliary Models" />
+<meta property="og:title" content="StyleLess layer: Improving robustness for real-world driving" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Confidence Estimation via Auxiliary Models Charles Corbière&nbsp;&nbsp; Nicolas Thome&nbsp;&nbsp; Antoine Saporta&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez" />
-<meta property="og:description" content="Confidence Estimation via Auxiliary Models Charles Corbière&nbsp;&nbsp; Nicolas Thome&nbsp;&nbsp; Antoine Saporta&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/confidnet_conda/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/confidnet_conda/" />
+<meta name="description" content="StyleLess layer: Improving robustness for real-world driving Julien Rebut &nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Patrick Pérez" />
+<meta property="og:description" content="StyleLess layer: Improving robustness for real-world driving Julien Rebut &nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Patrick Pérez" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/styleless/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/styleless/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/confidnet_conda/fig6.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2021_styleless/styleless.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-10-08T11:34:01-05:00" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/confidnet_conda/"},"image":"https://valeoai.github.io/blog/images/publications/confidnet_conda/fig6.png","description":"Confidence Estimation via Auxiliary Models Charles Corbière&nbsp;&nbsp; Nicolas Thome&nbsp;&nbsp; Antoine Saporta&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Matthieu Cord&nbsp;&nbsp; Patrick Pérez","@type":"BlogPosting","url":"https://valeoai.github.io/blog/publications/confidnet_conda/","headline":"Confidence Estimation via Auxiliary Models","dateModified":"2021-10-08T11:34:01-05:00","datePublished":"2021-10-08T11:34:01-05:00","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/styleless/"},"image":"https://valeoai.github.io/blog/images/publications/2021_styleless/styleless.png","description":"StyleLess layer: Improving robustness for real-world driving Julien Rebut &nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Patrick Pérez","@type":"BlogPosting","url":"https://valeoai.github.io/blog/publications/styleless/","headline":"StyleLess layer: Improving robustness for real-world driving","dateModified":"2021-10-08T11:34:01-05:00","datePublished":"2021-10-08T11:34:01-05:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -170,54 +170,46 @@ p {
     }
 </style>
 
-<h1 align="center"> Confidence Estimation via Auxiliary Models </h1>
+<h1 align="center"> StyleLess layer: Improving robustness for real-world driving </h1>
 <!-- Simple call of authors -->
-<!-- <h3 align="center"> Charles Corbière, Nicolas Thome, Antoine Saporta, Tuan-Hung Vu, Matthieu Cord, and Patrick Pérez </h3> -->
+<!-- <h3 align="center"> Julien Rebut, Andrei Bursuc, and Patrick Pérez </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center"> <a href="https://chcorbi.github.io/">Charles Corbière</a>&nbsp;&nbsp; <a href="https://http://cedric.cnam.fr/~thomen/">Nicolas Thome</a>&nbsp;&nbsp; <a href="https://www.lip6.fr/actualite/personnes-fiche.php?ident=D2317">Antoine Saporta</a>&nbsp;&nbsp; <a href="https://tuanhungvu.github.io/">Tuan-Hung Vu</a>&nbsp;&nbsp; <a href="http://webia.lip6.fr/~cord/">Matthieu Cord</a>&nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a> </h3>
+<h3 align="center"> <a href="https://scholar.google.com/citations?user=BJcQNcoAAAAJ">Julien Rebut </a> &nbsp;&nbsp; <a href="https://abursuc.github.io/">Andrei Bursuc</a>&nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a></h3>
 
-<h3 align="center"> TPAMI 2021 </h3>
+<h3 align="center"> IROS 2021 </h3>
 
 <div align="center">
   <p>
     
-    <a href="https://arxiv.org/pdf/2012.06508.pdf"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
-    
-    
-    <a href="https://github.com/valeoai/ConfidNet"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
+    <a href="https://arxiv.org/abs/2103.13905"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
     
     
     
     
-    <a href="https://papers.nips.cc/paper/8556-addressing-failure-prediction-by-learning-model-confidence/bibtex"><i class="far fa-file-alt"></i> BibTeX</a>&nbsp;&nbsp;
     
   </p>
 </div>
 
 <div class="publication-teaser">
-    <img src="../../images/publications/confidnet_conda/fig6.png" alt="project teaser" />
+    <img src="../../images/publications/2021_styleless/styleless.png" alt="project teaser" />
 </div>
 
 <hr />
 
 <h2 align="center"> Abstract</h2>
 
-<p align="justify">Reliably quantifying the confidence of deep neural classifiers is a challenging yet fundamental requirement for deployingsuch models in safety-critical applications. In this paper, we introduce a novel target criterion for model confidence, namely the trueclass probability (TCP). We show that TCP offers better properties for confidence estimation than standard maximum class probability (MCP). Since the true class is by essence unknown at test time, we propose to learn TCP criterion from data with an auxiliary model,introducing a specific learning scheme adapted to this context. We evaluate our approach on the task of failure prediction and ofself-training with pseudo-labels for domain adaptation, which both necessitate effective confidence estimates. Extensive experimentsare conducted for validating the relevance of the proposed approach in each task. We study various network architectures andexperiment with small and large datasets for image classification and semantic segmentation. In every tested benchmark, our approach outperforms strong baselines</p>
+<p align="justify">Deep Neural Networks (DNNs) are a critical component for self-driving vehicles. They achieve impressive performance by reaping information from high amounts of labeled data. Yet, the full complexity of the real world cannot be encapsulated in the training data, no matter how big the dataset, and DNNs can hardly generalize to unseen conditions. Robustness to various image corruptions, caused by changing weather conditions or sensor degradation and aging, is crucial for safety when such vehicles are deployed in the real world. We address this problem through a novel type of layer, dubbed StyleLess, which enables DNNs to learn robust and informative features that can cope with varying external conditions. We propose multiple variations of this layer that can be integrated in most of the architectures and trained jointly with the main task. We validate our contribution on typical autonomous-driving tasks (detection, semantic segmentation), showing that in most cases, this approach improves predictive performance on unseen conditions (fog, rain), while preserving performance on seen conditions and objects.</p>
 
 <hr />
 
 <h2 align="center">BibTeX</h2>
 <left>
   <pre class="bibtex-box">
-    @article{corbiere2021confidence,
-      author={Corbiere, Charles and Thome, Nicolas and Saporta, Antoine and Vu, Tuan-Hung and Cord, Matthieu and Perez, Patrick},
-      journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
-      title={Confidence Estimation via Auxiliary Models}, 
-      year={2021},
-      volume={},
-      number={},
-      pages={1-1},
-      doi={10.1109/TPAMI.2021.3085983}}
+@inproceedings{rebut2021styleless,
+  title={StyleLess layer: Improving robustness for real-world driving},
+  author={Rebut, Julien and Bursuc, Andrei and P{\'e}rez, Patrick},
+  booktitle={IROS},
+  year={2021}
 }</pre>
 </left>
 
