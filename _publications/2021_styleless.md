@@ -8,7 +8,7 @@ authors: Julien Rebut, Andrei Bursuc, and Patrick Pérez
 venue: IROS
 venue_long: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
 year: 2021
-month: 10
+month: 9
 code_url: 
 paper_url: https://arxiv.org/abs/2103.13905
 blog_url: 
