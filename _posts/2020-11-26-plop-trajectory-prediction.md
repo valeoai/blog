@@ -4,7 +4,7 @@ layout: post
 description: "Thibault Buhet, Emilie Wirbel, Andrei Bursuc and Xavier Perrotton"
 categories: [driving,multi-sensor]
 title: "PLOP: Probabilistic poLynomial Objects trajectory Prediction for autonomous driving"
-hide: true
+hide: false
 image: images/publications/plop/plop.png
 ---
 
@@ -176,14 +176,14 @@ mistakes.
 
 To simulate driving, we developped a data driven simulator that 
 allows us to use real driving data to simulate applying
- the prediction to the ego vehicle. We can generate the input data that corresponds
-  to the new vehicle position after following the trajectory using reprojections (for 
-  the image and the pointcloud), then use it to predict 
-  a new trajectory, and so on. This allows us the measure the performance in closed
-   loop, and in particular to count failures which would have resulted in a takeover. 
-   We rely on 3 metrics: lateral (>1m from expert), high speed (catching up to a vehicle
-   15% faster than the real vehicle up to 0.6s in the future) and low speed (> 20kph
-   under the expert speed) errors count.
+the prediction to the ego vehicle. We can generate the input data that corresponds
+to the new vehicle position after following the trajectory using reprojections (for 
+the image and the pointcloud), then use it to predict 
+a new trajectory, and so on. This allows us the measure the performance in closed
+ loop, and in particular to count failures which would have resulted in a takeover. 
+ We rely on 3 metrics: lateral (>1m from expert), high speed (catching up to a vehicle
+ 15% faster than the real vehicle up to 0.6s in the future) and low speed (> 20kph
+ under the expert speed) errors count.
     
 
 ![plop_online_results]({{ site.baseurl }}/images/posts/plop/simu_plop.png){:height="100%" width="100%"}
@@ -196,20 +196,20 @@ without semantic segmentation loss, Constant velocity baseline and Multi-Layer
 
  
 We trained PLOP on an internal dataset combining both open road and urban test
- track and compared PLOP, PLOP without auxiliary semantic loss, the constant velocity 
- baseline and a MLP baseline in our simulator using test data. We note that semantic
-  segmentation improve the driving performance and that MLP has better offline metrics
-   than constant velocity approach but still perform worse due to the simulated driving
-    conditions.
-   As expected, offline metrics are not discriminating enough for the online behavior
-   since the best model checkpoints in simulation are not necessarily the ones with 
-   the better offline metrics. An additionnal ablation study where we remove mandatory 
-    information (such as the camera image input) shows that it may even be dangerous 
-    to trust them blindly.
+track and compared PLOP, PLOP without auxiliary semantic loss, the constant velocity 
+baseline and a MLP baseline in our simulator using test data. We note that semantic
+segmentation improve the driving performance and that MLP has better offline metrics
+than constant velocity approach but still perform worse due to the simulated driving
+conditions.
+As expected, offline metrics are not discriminating enough for the online behavior
+since the best model checkpoints in simulation are not necessarily the ones with 
+the better offline metrics. An additionnal ablation study where we remove mandatory 
+information (such as the camera image input) shows that it may even be dangerous 
+to trust them blindly.
 
-<p align="center">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/94FwahFmc5A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen align="center"></iframe>
-</p>
+<div class="publication-teaser">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/94FwahFmc5A?start=94" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
      
 
 ## Conclusion
