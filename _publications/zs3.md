@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: "Zero-Shot Semantic Segmentation" 
+title: "Zero-Shot Semantic Segmentation"
 image: images/publications/zs3/zs3.png
 hide: false
 category: [limited-supervision]
@@ -11,9 +11,9 @@ year: 2019
 month: 12
 code_url: https://github.com/valeoai/zs3
 paper_url: https://papers.nips.cc/paper/8338-zero-shot-semantic-segmentation.pdf
-blog_url: 
-slides_url: 
-bib_url: 
+blog_url:
+slides_url:
+bib_url:
 permalink: /publications/zs3/
 ---
 

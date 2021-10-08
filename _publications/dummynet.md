@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: "Artificial Dummies for Urban Dataset Augmentation" 
+title: "Artificial Dummies for Urban Dataset Augmentation"
 image: images/publications/dummynet/dummynet_illustration_notext.jpg
 hide: false
 category:
@@ -11,9 +11,9 @@ year: 2021
 month: 2
 code_url: https://github.com/vobecant/DummyNet
 paper_url: https://arxiv.org/abs/2012.08274
-blog_url: 
-slides_url: 
-bib_url: 
+blog_url:
+slides_url:
+bib_url:
 permalink: /publications/dummynet/
 ---
 

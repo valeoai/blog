@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: "Confidence Estimation via Auxiliary Models" 
+title: "Confidence Estimation via Auxiliary Models"
 image: images/publications/confidnet_conda/fig6.png
 hide: false
 category: [reliability]

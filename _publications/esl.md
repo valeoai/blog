@@ -11,9 +11,9 @@ year: 2020
 month: 6
 code_url: https://github.com/valeoai/ESL
 paper_url: https://arxiv.org/abs/2006.08658
-blog_url: 
-slides_url: 
-bib_url: 
+blog_url:
+slides_url:
+bib_url:
 permalink: /publications/esl/
 ---
 

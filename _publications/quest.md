@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: "QuEST: Quantized Embedding Space for Transferring Knowledge" 
+title: "QuEST: Quantized Embedding Space for Transferring Knowledge"
 image: images/publications/quest/quest.png
 hide: false
 category: [deep-learning]
@@ -11,9 +11,9 @@ year: 2020
 month: 8
 code_url:
 paper_url: https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123660171.pdf
-blog_url: 
-slides_url: 
-bib_url: 
+blog_url:
+slides_url:
+bib_url:
 permalink: /publications/quest/
 ---
 
@@ -55,11 +55,11 @@ permalink: /publications/quest/
 
 <h2  align="center"> Abstract</h2>
 
-<p align="justify">Knowledge distillation refers to the process of training a student network to achieve better accuracy by learning from a pre-trained teacher network. 
+<p align="justify">Knowledge distillation refers to the process of training a student network to achieve better accuracy by learning from a pre-trained teacher network.
 Most of the existing knowledge distillation methods direct the student to follow the teacher by matching the teacher's output, feature maps or their distribution.
 In this work, we propose a novel way to achieve this goal: by distilling the knowledge through a quantized visual words space.
 According to our method, the teacher's feature maps are first quantized to represent the main visual concepts (i.e., visual words) encompassed in these maps and then the student is asked to predict those visual word representations.
-Despite its simplicity, we show that our approach is able to yield results that improve the state of the art on knowledge distillation for model compression and transfer learning scenarios. 
+Despite its simplicity, we show that our approach is able to yield results that improve the state of the art on knowledge distillation for model compression and transfer learning scenarios.
 To that end, we provide an extensive evaluation across several network architectures and most commonly used benchmark datasets.</p>
 
 <br>

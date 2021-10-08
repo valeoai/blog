@@ -11,9 +11,9 @@ year: 2020
 month: 12
 code_url: https://github.com/pgodet/star_flow
 paper_url: https://arxiv.org/abs/2007.05481
-blog_url: 
-slides_url: 
-bib_url: 
+blog_url:
+slides_url:
+bib_url:
 permalink: /publications/2020_starflow/
 ---
 

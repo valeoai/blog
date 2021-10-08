@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: "Toward Unsupervised, Multi-Object Discovery in Large-Scale Image Collections" 
+title: "Toward Unsupervised, Multi-Object Discovery in Large-Scale Image Collections"
 image: images/publications/rosd/rosd_teaser.jpg
 hide: false
 category: [limited-supervision]
@@ -11,9 +11,9 @@ year: 2020
 month: 8
 code_url: https://github.com/huyvvo/rOSD
 paper_url: https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123680766.pdf
-blog_url: 
-slides_url: 
-bib_url: 
+blog_url:
+slides_url:
+bib_url:
 permalink: /publications/rosd/
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: "DADA: Depth-aware Domain Adaptation in Semantic Segmentation" 
+title: "DADA: Depth-aware Domain Adaptation in Semantic Segmentation"
 image: images/publications/dada/dada.png
 hide: false
 category: [domain-adaptation]
@@ -11,9 +11,9 @@ year: 2019
 month: 10
 code_url: https://github.com/valeoai/dada
 paper_url: https://openaccess.thecvf.com/content_ICCV_2019/html/Vu_DADA_Depth-Aware_Domain_Adaptation_in_Semantic_Segmentation_ICCV_2019_paper.html
-blog_url: 
-slides_url: 
-bib_url: 
+blog_url:
+slides_url:
+bib_url:
 permalink: /publications/dada/
 ---
 

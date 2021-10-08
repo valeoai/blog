@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: "TRADI: Tracking deep neural network weight distributions" 
+title: "TRADI: Tracking deep neural network weight distributions"
 image: images/publications/tradi/tradi_teaser.jpg
 hide: false
 category: [reliability]
@@ -9,11 +9,11 @@ venue: ECCV
 venue_long: European Conference on Computer Vision (ECCV)
 year: 2020
 month: 8
-code_url: 
+code_url:
 paper_url: https://arxiv.org/abs/1912.11316
-blog_url: 
-slides_url: 
-bib_url: 
+blog_url:
+slides_url:
+bib_url:
 permalink: /publications/tradi/
 ---
 

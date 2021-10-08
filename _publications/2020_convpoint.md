@@ -3,7 +3,7 @@ layout: publication
 title: "ConvPoint: Continuous Convolutions for Point Cloud Processing"
 image: images/publications/2020_convpoint/convpoint.png
 hide: false
-category: 
+category:
 authors: Alexandre Boulch
 venue: CaG
 venue_long: Computers & Graphics Journal
@@ -11,9 +11,9 @@ year: 2020
 month: 1
 code_url: https://github.com/aboulch/ConvPoint
 paper_url: https://arxiv.org/abs/1904.02375
-blog_url: 
+blog_url:
 slides_url: https://www.boulch.eu/files/talks/2019_3dor_conv_slides.pdf
-bib_url: 
+bib_url:
 permalink: /publications/2020_convpoint/
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: "Online Bag-of-Visual-Words Generation for Unsupervised Representation Learning" 
+title: "Online Bag-of-Visual-Words Generation for Unsupervised Representation Learning"
 image: images/publications/obow/obow_teaser.jpg
 hide: false
 category: [limited-supervision]
@@ -11,9 +11,9 @@ year: 2021
 month: 6
 code_url: https://github.com/valeoai/obow
 paper_url: https://arxiv.org/abs/2012.11552
-blog_url: 
-slides_url: 
-bib_url: 
+blog_url:
+slides_url:
+bib_url:
 permalink: /publications/obow/
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: "End-to-End Model-Free Reinforcement Learning for Urban Driving using Implicit Affordances" 
+title: "End-to-End Model-Free Reinforcement Learning for Urban Driving using Implicit Affordances"
 image: images/publications/e2e-rl-driving/data_augmentation.jpg
 hide: false
 category: [driving]
@@ -11,9 +11,9 @@ year: 2020
 month: 6
 code_url: https://github.com/valeoai/learningbycheating
 paper_url: https://openaccess.thecvf.com/content_CVPR_2020/html/Toromanoff_End-to-End_Model-Free_Reinforcement_Learning_for_Urban_Driving_Using_Implicit_Affordances_CVPR_2020_paper.html
-blog_url: 
-slides_url: 
-bib_url: 
+blog_url:
+slides_url:
+bib_url:
 permalink: /publications/e2e-rl-driving/
 ---
 

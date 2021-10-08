@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: "Unsupervised Image Matching and Object Discovery as Optimization" 
+title: "Unsupervised Image Matching and Object Discovery as Optimization"
 image: images/publications/osd/osd_teaser.jpg
 hide: false
 category: [limited-supervision]
@@ -11,9 +11,9 @@ year: 2019
 month: 6
 code_url: https://github.com/huyvvo/OSD
 paper_url: https://openaccess.thecvf.com/content_CVPR_2019/html/Vo_Unsupervised_Image_Matching_and_Object_Discovery_as_Optimization_CVPR_2019_paper.html
-blog_url: 
-slides_url: 
-bib_url: 
+blog_url:
+slides_url:
+bib_url:
 permalink: /publications/osd/
 ---
 

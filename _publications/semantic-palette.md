@@ -11,10 +11,10 @@ venue_long: Computer Vision and Pattern Recognition (CVPR)
 year: 2021
 month: 6
 code_url:
-paper_url: 
-blog_url: 
-slides_url: 
-bib_url: 
+paper_url:
+blog_url:
+slides_url:
+bib_url:
 permalink: /publications/semanticpalette/
 ---
 

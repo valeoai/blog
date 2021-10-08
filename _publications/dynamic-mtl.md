@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: "Dynamic Task Weighting Methods for Multi-task Networks in Autonomous Driving Systems" 
+title: "Dynamic Task Weighting Methods for Multi-task Networks in Autonomous Driving Systems"
 image: images/publications/dynamic-mtl/qualitative.jpg
 hide: false
 category: [multi-sensor]
@@ -9,11 +9,11 @@ venue: ITSC
 venue_long: IEEE International Conference on Intelligent Transportation Systems (ITSC)
 year: 2020
 month: 9
-code_url: 
+code_url:
 paper_url: https://arxiv.org/abs/2001.02223
-blog_url: 
-slides_url: 
-bib_url: 
+blog_url:
+slides_url:
+bib_url:
 permalink: /publications/dynamic-mtl/
 ---
 

@@ -11,9 +11,9 @@ year: 2020
 month: 1
 code_url:
 paper_url: https://www.ingentaconnect.com/content/ist/ei/2020/00002020/00000016/art00012
-blog_url: 
-slides_url: 
-bib_url: 
+blog_url:
+slides_url:
+bib_url:
 permalink: /publications/vrunet/
 ---
 

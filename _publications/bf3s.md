@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: "Boosting Few-Shot Visual Learning With Self-Supervision" 
+title: "Boosting Few-Shot Visual Learning With Self-Supervision"
 image: images/publications/bf3s/bf3s.jpg
 hide: false
 category: [limited-supervision]
@@ -11,9 +11,9 @@ year: 2019
 month: 10
 code_url: https://github.com/valeoai/bf3s
 paper_url: http://openaccess.thecvf.com/content_ICCV_2019/html/Gidaris_Boosting_Few-Shot_Visual_Learning_With_Self-Supervision_ICCV_2019_paper.html
-blog_url: 
-slides_url: 
-bib_url: 
+blog_url:
+slides_url:
+bib_url:
 permalink: /publications/bf3s/
 ---
 

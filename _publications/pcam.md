@@ -11,9 +11,9 @@ year: 2021
 month: 10
 code_url: https://github.com/valeoai/PCAM
 paper_url: https://arxiv.org/abs/2110.01269
-blog_url: 
-slides_url: 
-bib_url: 
+blog_url:
+slides_url:
+bib_url:
 permalink: /publications/pcam/
 ---
 

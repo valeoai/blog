@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: "Addressing Failure Prediction by Learning Model Confidence" 
+title: "Addressing Failure Prediction by Learning Model Confidence"
 image: images/publications/confidnet/teaser.png
 description: "Project page of ConfidNet"
 hide: false

@@ -12,8 +12,8 @@ month: 6
 code_url: https://github.com/valeoai/xmuda
 paper_url: https://arxiv.org/abs/1911.12676
 blog_url: http://valeoai.github.io/blog/2020/07/07/test-advent-post.html
-slides_url: 
-bib_url: 
+slides_url:
+bib_url:
 permalink: /publications/xmuda/
 ---
 

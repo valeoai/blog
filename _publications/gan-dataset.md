@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: "This dataset does not exist: training models from generated images" 
+title: "This dataset does not exist: training models from generated images"
 image: images/publications/gan-dataset/gan_teaser.jpg
 hide: false
 category: [limited-supervision]
@@ -9,11 +9,11 @@ venue: ICASSP
 venue_long: International Conference on Acoustics, Speech, and Signal Processing (ICASSP)
 year: 2020
 month: 5
-code_url: 
+code_url:
 paper_url: https://arxiv.org/abs/1911.02888
-blog_url: 
-slides_url: 
-bib_url: 
+blog_url:
+slides_url:
+bib_url:
 permalink: /publications/gan-dataset/
 ---
 
