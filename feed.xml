@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://valeoai.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://valeoai.github.io/blog/" rel="alternate" type="text/html" /><updated>2021-10-08T17:16:47-05:00</updated><id>https://valeoai.github.io/blog/feed.xml</id><title type="html">valeo.ai blog</title><subtitle>valeo.ai research blog</subtitle><entry><title type="html">valeo.ai at ICCV 2021</title><link href="https://valeoai.github.io/blog/2021/10/08/valeoai-at-iccv-2021.html" rel="alternate" type="text/html" title="valeo.ai at ICCV 2021" /><published>2021-10-08T00:00:00-05:00</published><updated>2021-10-08T00:00:00-05:00</updated><id>https://valeoai.github.io/blog/2021/10/08/valeoai-at-iccv-2021</id><content type="html" xml:base="https://valeoai.github.io/blog/2021/10/08/valeoai-at-iccv-2021.html">&lt;p&gt;The &lt;a href=&quot;https://iccv2021.thecvf.com/home&quot;&gt;International Conference on Computer Vision (ICCV)&lt;/a&gt; is a top event for researchers and engineers working on computer vision and machine learning. The &lt;a href=&quot;https://www.valeo.com/en/valeo-ai&quot;&gt;valeo.ai&lt;/a&gt; team will present &lt;strong&gt;four papers in the main conference&lt;/strong&gt;. Check out below the short previews of your papers. Join us to find out more about these projects and ideas, meet our team and learn about our exciting ongoing research. See you at ICCV!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://valeoai.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://valeoai.github.io/blog/" rel="alternate" type="text/html" /><updated>2021-10-08T17:24:55-05:00</updated><id>https://valeoai.github.io/blog/feed.xml</id><title type="html">valeo.ai blog</title><subtitle>valeo.ai research blog</subtitle><entry><title type="html">valeo.ai at ICCV 2021</title><link href="https://valeoai.github.io/blog/2021/10/08/valeoai-at-iccv-2021.html" rel="alternate" type="text/html" title="valeo.ai at ICCV 2021" /><published>2021-10-08T00:00:00-05:00</published><updated>2021-10-08T00:00:00-05:00</updated><id>https://valeoai.github.io/blog/2021/10/08/valeoai-at-iccv-2021</id><content type="html" xml:base="https://valeoai.github.io/blog/2021/10/08/valeoai-at-iccv-2021.html">&lt;p&gt;The &lt;a href=&quot;https://iccv2021.thecvf.com/home&quot;&gt;International Conference on Computer Vision (ICCV)&lt;/a&gt; is a top event for researchers and engineers working on computer vision and machine learning. The &lt;a href=&quot;https://www.valeo.com/en/valeo-ai&quot;&gt;valeo.ai&lt;/a&gt; team will present &lt;strong&gt;four papers in the main conference&lt;/strong&gt;. Check out below the short previews of your papers. Join us to find out more about these projects and ideas, meet our team and learn about our exciting ongoing research. See you at ICCV!&lt;/p&gt;
 
 &lt;h2 id=&quot;multi-view-radar-semantic-segmentation&quot;&gt;Multi-View Radar Semantic Segmentation&lt;/h2&gt;
 &lt;h4 id=&quot;authors-arthur-ouaknine-alasdair-newson-patrick-pérez-florence-tupin-julien-rebut&quot;&gt;Authors: &lt;a href=&quot;https://arthurouaknine.github.io/&quot;&gt;Arthur Ouaknine&lt;/a&gt;, &lt;a href=&quot;https://sites.google.com/site/alasdairnewson/&quot;&gt;Alasdair Newson&lt;/a&gt;, &lt;a href=&quot;https://ptrckprz.github.io/&quot;&gt;Patrick Pérez&lt;/a&gt;, &lt;a href=&quot;https://perso.telecom-paristech.fr/tupin/&quot;&gt;Florence Tupin&lt;/a&gt;, &lt;a href=&quot;https://scholar.google.com/citations?user=BJcQNcoAAAAJ&amp;amp;hl=fr&quot;&gt;Julien Rebut&lt;/a&gt;&lt;/h4&gt;
@@ -381,14 +381,14 @@ mistakes.&lt;/p&gt;
 
 &lt;p&gt;To simulate driving, we developped a data driven simulator that 
 allows us to use real driving data to simulate applying
- the prediction to the ego vehicle. We can generate the input data that corresponds
-  to the new vehicle position after following the trajectory using reprojections (for 
-  the image and the pointcloud), then use it to predict 
-  a new trajectory, and so on. This allows us the measure the performance in closed
-   loop, and in particular to count failures which would have resulted in a takeover. 
-   We rely on 3 metrics: lateral (&amp;gt;1m from expert), high speed (catching up to a vehicle
-   15% faster than the real vehicle up to 0.6s in the future) and low speed (&amp;gt; 20kph
-   under the expert speed) errors count.&lt;/p&gt;
+the prediction to the ego vehicle. We can generate the input data that corresponds
+to the new vehicle position after following the trajectory using reprojections (for 
+the image and the pointcloud), then use it to predict 
+a new trajectory, and so on. This allows us the measure the performance in closed
+ loop, and in particular to count failures which would have resulted in a takeover. 
+ We rely on 3 metrics: lateral (&amp;gt;1m from expert), high speed (catching up to a vehicle
+ 15% faster than the real vehicle up to 0.6s in the future) and low speed (&amp;gt; 20kph
+ under the expert speed) errors count.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/blog/images/posts/plop/simu_plop.png&quot; alt=&quot;plop_online_results&quot; height=&quot;100%&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
 &lt;div class=&quot;caption&quot;&gt;&lt;b&gt;Figure 5. Evaluation using the simulator.&lt;/b&gt; Comparison with PLOP 
@@ -398,20 +398,20 @@ without semantic segmentation loss, Constant velocity baseline and Multi-Layer
  the right.&lt;/div&gt;
 
 &lt;p&gt;We trained PLOP on an internal dataset combining both open road and urban test
- track and compared PLOP, PLOP without auxiliary semantic loss, the constant velocity 
- baseline and a MLP baseline in our simulator using test data. We note that semantic
-  segmentation improve the driving performance and that MLP has better offline metrics
-   than constant velocity approach but still perform worse due to the simulated driving
-    conditions.
-   As expected, offline metrics are not discriminating enough for the online behavior
-   since the best model checkpoints in simulation are not necessarily the ones with 
-   the better offline metrics. An additionnal ablation study where we remove mandatory 
-    information (such as the camera image input) shows that it may even be dangerous 
-    to trust them blindly.&lt;/p&gt;
+track and compared PLOP, PLOP without auxiliary semantic loss, the constant velocity 
+baseline and a MLP baseline in our simulator using test data. We note that semantic
+segmentation improve the driving performance and that MLP has better offline metrics
+than constant velocity approach but still perform worse due to the simulated driving
+conditions.
+As expected, offline metrics are not discriminating enough for the online behavior
+since the best model checkpoints in simulation are not necessarily the ones with 
+the better offline metrics. An additionnal ablation study where we remove mandatory 
+information (such as the camera image input) shows that it may even be dangerous 
+to trust them blindly.&lt;/p&gt;
 
-&lt;p align=&quot;center&quot;&gt;
-  &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/94FwahFmc5A&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot; align=&quot;center&quot;&gt;&lt;/iframe&gt;
-&lt;/p&gt;
+&lt;div class=&quot;publication-teaser&quot;&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/94FwahFmc5A?start=94&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
