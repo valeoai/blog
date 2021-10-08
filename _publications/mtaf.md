@@ -11,17 +11,10 @@ year: 2021
 month: 10
 code_url: https://github.com/valeoai/MTAF
 paper_url: https://arxiv.org/abs/2108.06962
-<<<<<<< HEAD
-blog_url:
-slides_url:
-bib_url:
-permalink: /publications/esl/
-=======
 blog_url: 
 slides_url: 
 bib_url: 
 permalink: /publications/mtaf/
->>>>>>> 09203129e0c0dba5984dbb0e18894efe11e37d99
 ---
 
 <h1 align="center"> {{page.title}} </h1>
