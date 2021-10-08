@@ -71,7 +71,7 @@ We present a new lightweight CNN-based algorithm for multi-frame optical flow es
 <left>
   <pre class="bibtex-box">
 @inproceedings{godet2021starflow,
-  title={{STaRFlow: A SpatioTemporal Recurrent Cell for Lightweight Multi-Frame Optical Flow Estimation}},
+  title={STaRFlow: A SpatioTemporal Recurrent Cell for Lightweight Multi-Frame Optical Flow Estimation},
   author={Godet, Pierre and Boulch, Alexandre and Plyer, Aur{\'e}lien and Le Besnerais, Guy},
   booktitle={2020 25th International Conference on Pattern Recognition (ICPR)},
   pages={2462--2469},

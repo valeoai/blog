@@ -68,7 +68,7 @@ Point clouds are unstructured and unordered data, as opposed to images. Thus, mo
 <left>
   <pre class="bibtex-box">
 @article{boulch2020convpoint,
-  title={{ConvPoint: Continuous convolutions for point cloud processing}},
+  title={ConvPoint: Continuous convolutions for point cloud processing},
   author={Boulch, Alexandre},
   journal={Computers \& Graphics},
   year={2020},
