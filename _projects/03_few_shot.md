@@ -18,7 +18,10 @@ url: ""
 
 {% assign publications = site.publications | where: 'hide', false %}
 {% assign publications = publications | where:"category", "limited-supervision" %}
-{% assign publications_by_year = publications | group_by: 'year' | sort: 'year' |  reverse %}
+
+<!-- {% assign publications_by_year = publications | group_by: 'year' | sort: 'year' |  reverse %} -->
+{% assign publications_by_year = publications |  sort: 'year' |  reverse %}
+{% assign publications_by_year = publications_by_year | group_by: 'year'%}
 
 {% for year_publications in publications_by_year %}
 
