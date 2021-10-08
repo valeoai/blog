@@ -9,7 +9,6 @@ url: ""
 ---
 
 
-
 <h1>{{page.title}}</h1> 
 <p>{{page.description}}</p>
 
@@ -52,10 +51,10 @@ url: ""
 <hr>
 {% endif %}
 
-{% endfor %} 
+{% endfor %}
 
 {% if forloop.last == false %}
 <hr>
 {% endif %}
 
-{% endfor %} 
+{% endfor %}
