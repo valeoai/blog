@@ -63,7 +63,7 @@ permalink: /publications/semanticpalette/
 <h2 align="center"> Video</h2>
 
 <p align="center">
-  <iframe width="660" height="395" src="https://www.youtube.com/watch?v=ejkbaJD4Emk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="center"></iframe>
+  <iframe width="660" height="395" src="https://www.youtube.com/embed/ejkbaJD4Emk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="center"></iframe>
 </p>
 
 <br>
