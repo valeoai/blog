@@ -3,7 +3,7 @@ layout: publication
 title: "PLOP: Probabilistic poLynomial Objects trajectory Prediction for autonomous driving"
 image: images/publications/plop/plop.png
 hide: false
-category: [driving,multi-sensor]
+category: [driving, multi-sensor]
 authors: Thibault Buhet, Emilie Wirbel, Andrei Bursuc and Xavier Perrotton
 venue: CoRL
 venue_long: Conference on Robot Learning (CoRL)

@@ -3,7 +3,7 @@ layout: publication
 title: "Confidence Estimation via Auxiliary Models"
 image: images/publications/confidnet_conda/fig6.png
 hide: false
-category: [reliability]
+category: [reliability, domain-adaptation]
 authors: Charles Corbière, Nicolas Thome, Antoine Saporta, Tuan-Hung Vu, Matthieu Cord, and Patrick Pérez
 venue: TPAMI
 venue_long: IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
@@ -55,7 +55,7 @@ permalink: /publications/confidnet_conda/
 
 <h2  align="center"> Abstract</h2>
 
-<p align="justify">Reliably quantifying the confidence of deep neural classifiers is a challenging yet fundamental requirement for deployingsuch models in safety-critical applications. In this paper, we introduce a novel target criterion for model confidence, namely the trueclass probability (TCP). We show that TCP offers better properties for confidence estimation than standard maximum class probability (MCP). Since the true class is by essence unknown at test time, we propose to learn TCP criterion from data with an auxiliary model,introducing a specific learning scheme adapted to this context. We evaluate our approach on the task of failure prediction and ofself-training with pseudo-labels for domain adaptation, which both necessitate effective confidence estimates. Extensive experimentsare conducted for validating the relevance of the proposed approach in each task. We study various network architectures andexperiment with small and large datasets for image classification and semantic segmentation. In every tested benchmark, our approach outperforms strong baselines</p>
+<p align="justify">Reliably quantifying the confidence of deep neural classifiers is a challenging yet fundamental requirement for deployingsuch models in safety-critical applications. In this paper, we introduce a novel target criterion for model confidence, namely the true class probability (TCP). We show that TCP offers better properties for confidence estimation than standard maximum class probability (MCP). Since the true class is by essence unknown at test time, we propose to learn TCP criterion from data with an auxiliary model, introducing a specific learning scheme adapted to this context. We evaluate our approach on the task of failure prediction and ofself-training with pseudo-labels for domain adaptation, which both necessitate effective confidence estimates. Extensive experiments are conducted for validating the relevance of the proposed approach in each task. We study various network architectures andexperiment with small and large datasets for image classification and semantic segmentation. In every tested benchmark, our approach outperforms strong baselines</p>
 
 <hr>
 

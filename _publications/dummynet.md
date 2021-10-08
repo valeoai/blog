@@ -3,7 +3,7 @@ layout: publication
 title: "Artificial Dummies for Urban Dataset Augmentation"
 image: images/publications/dummynet/dummynet_illustration_notext.jpg
 hide: false
-category:
+category: [limited-supervision]
 authors: Antonín Vobecký, David Hurych, Michal Uřičář, Patrick Pérez, and Josef Šivic
 venue: AAAI
 venue_long: AAAI Conference on Artificial Intelligence

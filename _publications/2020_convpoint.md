@@ -3,7 +3,7 @@ layout: publication
 title: "ConvPoint: Continuous Convolutions for Point Cloud Processing"
 image: images/publications/2020_convpoint/convpoint.png
 hide: false
-category:
+category: [3d-perception]
 authors: Alexandre Boulch
 venue: CaG
 venue_long: Computers & Graphics Journal

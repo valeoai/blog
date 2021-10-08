@@ -3,7 +3,7 @@ layout: publication
 title: "Handling new target classes in semantic segmentation with domain adaptation" 
 image: images/publications/buda/buda.png
 hide: false
-category: [limited-supervision]
+category: [limited-supervision, domain-adaptation]
 authors: Maxime Bucher, Tuan-Hung Vu, Matthieu Cord, and Patrick Pérez
 venue: CVIU
 venue_long: Computer Vision and Image Understanding (CVIU)

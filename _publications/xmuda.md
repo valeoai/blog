@@ -3,7 +3,7 @@ layout: publication
 title: "xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation"
 image: images/publications/xmuda/xmuda.png
 hide: false
-category: [domain-adaptation,multi-sensor]
+category: [domain-adaptation, multi-sensor]
 authors: Maximilian Jaritz, Tuan-Hung Vu, Raoul de Charette, Émilie Wirbel, and Patrick Pérez
 venue: CVPR
 venue_long: Computer Vision and Pattern Recognition (CVPR)

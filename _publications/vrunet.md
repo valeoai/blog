@@ -3,7 +3,7 @@ layout: publication
 title: "VRUNet: Multi-Task Learning Model for Intent Prediction of Vulnerable Road Users"
 image: images/publications/vrunet/crossing_norm_seq2.png
 hide: false
-category: [intent-prediction,VRU,driving]
+category: [driving]
 authors: Adithya Ranga, Filippo Giruzzi, Jagdish Bhanushali, Emilie Wirbel, Patrick Pérez, Tuan-Hung Vu, Xavier Perotton
 venue: Electronic Imaging
 venue_long: Electronic Imaging
