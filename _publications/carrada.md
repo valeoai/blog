@@ -3,7 +3,7 @@ layout: publication
 title: "CARRADA Dataset: Camera and Automotive Radar with Range-Angle-Doppler Annotations"
 image: images/publications/carrada/teaser.png
 hide: false
-category: [dataset]
+category: [multi-sensor]
 authors: Arthur Ouaknine, Alasdair Newson, Julien Rebut, Florence Tupin and Patrick Pérez
 venue: ICPR
 venue_long: International Conference on Pattern Recognition (ICPR)

@@ -3,7 +3,7 @@ layout: publication
 title: "Multi-View Radar Semantic Segmentation"
 image: images/publications/mvrss/teaser.png
 hide: false
-category: [dataset]
+category: [multi-sensor]
 authors: Arthur Ouaknine, Alasdair Newson, Patrick Pérez, Florence Tupin and Julien Rebut
 venue: ICCV
 venue_long: International Conference on Computer Vision (ICCV)
