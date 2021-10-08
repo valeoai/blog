@@ -6,7 +6,7 @@ hide: false
 category: [limited-supervision]
 authors: Antonín Vobecký, David Hurych, Michal Uřičář, Patrick Pérez, and Josef Šivic
 venue: AAAI
-venue_long: AAAI Conference on Artificial Intelligence
+venue_long: AAAI Conference on Artificial Intelligence (AAAI)
 year: 2021
 month: 2
 code_url: https://github.com/vobecant/DummyNet
