@@ -1,7 +1,7 @@
 ---
 toc: false
 layout: post
-description: "Andrei Bursuc, Arthur Ouaknine, Antoine Saporta, Gilles Puy"
+description: "Andrei Bursuc, Gilles Puy, Arthur Ouaknine, Antoine Saporta
 categories: [domain adaptation, 3d perception, reliability, multi-sensor, limited supervision]
 title: "valeo.ai at ICCV 2021"
 hide: false
@@ -9,7 +9,7 @@ image: images/posts/2021_iccv/iccv_logo.png
 ---
 
 
-The [International Conference on Computer Vision (ICCV)](https://iccv2021.thecvf.com/home) is a top event for researchers and engineers working on computer vision and machine learning. The [valeo.ai](https://www.valeo.com/en/valeo-ai) team will present **four papers in the main conference**. Check out below the short previews of your papers. Join us to find out more about these projects and ideas, meet our team and learn about our exciting ongoing research. See you at ICCV! 
+The [International Conference on Computer Vision (ICCV)](https://iccv2021.thecvf.com/home) is a top event for researchers and engineers working on computer vision and machine learning. The [valeo.ai](https://ptrckprz.github.io/valeoai/) team will present six [papers](https://ptrckprz.github.io/vaipub/) in the main conference, four of which are presented below. Join us to find out more about these projects and ideas, meet our team and learn about our exciting ongoing research. See you at ICCV! 
 
 
 ## Multi-View Radar Semantic Segmentation
