@@ -21,7 +21,7 @@ permalink: /publications/lost/
 <!-- Simple call of authors -->
 <!-- <h3 align="center"> {{page.authors}} </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center"> <a hef="https://osimeoni.github.io/">Oriane Siméoni</a> &nbsp;&nbsp; <a href="https://sites.google.com/site/puygilles/home">Gilles Puy</a> &nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=gIf5VqUAAAAJ&hl=en">Huy V. Vo</a> &nbsp;&nbsp; <a href="http://imagine.enpc.fr/~roburins/">Simon Roburin</a> &nbsp;&nbsp; <a href="https://scholar.google.fr/citations?user=7atfg7EAAAAJ&hl=en">Spyros Gidaris</a> &nbsp;&nbsp; <a href="https://abursuc.github.io/">Andrei Bursuc</a> &nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a> &nbsp;&nbsp; <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a> &nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=vC2vywcAAAAJ&hl=en">Jean Ponce</a> </h3>
+<h3 align="center"> <a href="https://osimeoni.github.io/">Oriane Siméoni</a> &nbsp;&nbsp; <a href="https://sites.google.com/site/puygilles/home">Gilles Puy</a> &nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=gIf5VqUAAAAJ&hl=en">Huy V. Vo</a> &nbsp;&nbsp; <a href="http://imagine.enpc.fr/~roburins/">Simon Roburin</a> &nbsp;&nbsp; <a href="https://scholar.google.fr/citations?user=7atfg7EAAAAJ&hl=en">Spyros Gidaris</a> &nbsp;&nbsp; <a href="https://abursuc.github.io/">Andrei Bursuc</a> &nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a> &nbsp;&nbsp; <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a> &nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=vC2vywcAAAAJ&hl=en">Jean Ponce</a> </h3>
 
 
 <h3 align="center"> {{page.venue}} {{page.year}} </h3>
@@ -64,12 +64,14 @@ permalink: /publications/lost/
 <h2  align="center">BibTeX</h2>
 <left>
   <pre class="bibtex-box">
-@inproceedings{cao21pcam,
-  title={PCAM: Product of Cross-Attention Matrices for Rigid Registration of Point Clouds},
-  author={Cao, Anh-Quan and Puy, Gilles and Boulch, Alexandre and Marlet, Renaud},
-  booktitle={International Conference on Computer Vision},
-  year={2021}
-}</pre>
+@inproceedings{LOST,
+   title = {Localizing Objects with Self-Supervised Transformers and no Labels},
+   author = {Oriane Sim\'eoni and Gilles Puy and Huy V. Vo and Simon Roburin and Spyros Gidaris and Andrei Bursuc and Patrick P\'erez and Renaud Marlet and Jean Ponce},
+   journal = {Proceedings of the British Machine Vision Conference (BMVC)},
+   month = {November},
+   year = {2021}
+}
+  </pre>
 </left>
 
 <br>
