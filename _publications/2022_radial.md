@@ -54,21 +54,6 @@ permalink: /publications/radial/
 
 <br>
 
-<hr>
-
-<h2  align="center"> Results</h2>
-![](../../images/publications/obow/obow_table_results.jpg)
-<div class="caption"><b>Evaluation of ImageNet pre-trained ResNet50 models.</b> The ''Epochs'' and ''Batch'' columns provide the number of pre-training epochs and the batch size of each model respectively.
-The first section includes models pre-trained with a similar number of epochs as our model (second section). 
-We boldfaced the best results among all sections as well as of only the top two.
-For the linear classification tasks, we provide the top-1 accuracy.
-For object detection, we fine-tuned Faster R-CNN (R50-C4) on VOC $\texttt{trainval07+12}$ and report detection AP scores by testing on $\texttt{test07}$.
-For semi-supervised learning, we fine-tune the pre-trained models on $1\%$ and $10\%$ of ImageNet and report the top-5 accuracy.
-Note that, in this case the ''Supervised'' entry results come from (<a href="https://arxiv.org/abs/1905.03670" target="_blank">Zhai et al.</a>) and are obtained by supervised training 
-using only $1\%$ or $10\%$ of the labelled data.
-All the classification results are computed with single-crop testing. $^\dagger$: results computed by us. </div>
-
-<hr>
 
 <h2  align="center">BibTeX</h2>
 <left>
