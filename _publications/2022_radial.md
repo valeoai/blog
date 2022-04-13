@@ -44,7 +44,7 @@ permalink: /publications/radial/
 </div>
 
 
-![](../../images/publications/obow/obow_overview.png){:width="100%"}
+![](../../images/publications/2022_radial/radial_teaser.png){:width="100%"}
 
 <hr>
 
