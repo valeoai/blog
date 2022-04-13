@@ -54,6 +54,7 @@ permalink: /publications/radial/
 
 <br>
 
+<hr>
 
 <h2  align="center">BibTeX</h2>
 <left>
