@@ -65,7 +65,7 @@ permalink: /publications/slidr/
 <left>
   <pre class="bibtex-box">
 @inproceedings{sautier22slidr,
-  title={Image-to-Lidar Self-Supervised Distillation for Autonomous Driving Dat},
+  title={Image-to-Lidar Self-Supervised Distillation for Autonomous Driving Data},
   author={Corentin Sautier and Gilles Puy and Spyros Gidaris and Alexandre Boulch and Andrei Bursuc and Renaud Marlet},
   booktitle={Conference on Computer Vision and Pattern Recognition (CVPR)}
   year={2022}
