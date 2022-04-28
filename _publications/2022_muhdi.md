@@ -67,7 +67,7 @@ permalink: /publications/2022_muhdi/
 @inproceedings{saporta2022muhdi,
     title={Multi-Head Distillation for Continual Unsupervised Domain Adaptation in Semantic Segmentation},
     author={Saporta, Antoine and Douillard, Arthur and Vu, Tuan-Hung and P{\'e}rez, Patrick and Cord, Matthieu},
-    booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshop},
+    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshop},
     year={2022}
 }</pre>
 </left>
