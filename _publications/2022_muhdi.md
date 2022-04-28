@@ -21,7 +21,7 @@ permalink: /publications/2022_muhdi/
 <!-- Simple call of authors -->
 <!-- <h3 align="center"> {{page.authors}} </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center"> <a href="https://scholar.google.com/citations?user=jSwfIU4AAAAJ">Antoine Saporta</a>&nbsp;&nbsp; <a href="https://arthurdouillard.com/">Arthur Douillard</a>&nbsp;&nbsp; <a href="https://tuanhungvu.github.io/">Tuan-Hung Vu</a>&nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a> </h3>&nbsp;&nbsp; <a href="http://webia.lip6.fr/~cord/">Matthieu Cord</a>
+<h3 align="center"> <a href="https://scholar.google.com/citations?user=jSwfIU4AAAAJ">Antoine Saporta</a>&nbsp;&nbsp; <a href="https://arthurdouillard.com/">Arthur Douillard</a>&nbsp;&nbsp; <a href="https://tuanhungvu.github.io/">Tuan-Hung Vu</a>&nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a>&nbsp;&nbsp; <a href="http://webia.lip6.fr/~cord/">Matthieu Cord</a> </h3>
 
 
 <h3 align="center"> {{page.venue}} {{page.year}} </h3>
