@@ -3,7 +3,7 @@ layout: publication
 title: "Image-to-Lidar Self-Supervised Distillation for Autonomous Driving Data"
 image: images/publications/slidr/slidr.png
 hide: false
-category: [3d-perception]
+category: [3d-perception, limited-supervision]
 authors: Corentin Sautier, Gilles Puy, Spyros Gidaris, Alexandre Boulch, Andrei Bursuc, and Renaud Marlet
 venue: CVPR
 venue_long: Computer Vision and Pattern Recognition (CVPR)
