@@ -3,20 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Triggering Failures: Out-Of-Distribution detection by learning from local adversarial attacks in Semantic Segmentation | valeo.ai blog</title>
+<title>Image-to-Lidar Self-Supervised Distillation for Autonomous Driving Data | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Triggering Failures: Out-Of-Distribution detection by learning from local adversarial attacks in Semantic Segmentation" />
+<meta property="og:title" content="Image-to-Lidar Self-Supervised Distillation for Autonomous Driving Data" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Triggering Failures: Out-Of-Distribution detection by learning from local adversarial attacks in Semantic Segmentation Victor Besnier&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Alexandre Briot&nbsp;&nbsp; David Picard" />
-<meta property="og:description" content="Triggering Failures: Out-Of-Distribution detection by learning from local adversarial attacks in Semantic Segmentation Victor Besnier&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Alexandre Briot&nbsp;&nbsp; David Picard" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/obsnet/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/obsnet/" />
+<meta name="description" content="Image-to-Lidar Self-Supervised Distillation for Autonomous Driving Data Corentin Sautier &nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Spyros Gidaris &nbsp;&nbsp; Alexandre Boulch &nbsp;&nbsp; Andrei Bursuc &nbsp;&nbsp; Renaud Marlet" />
+<meta property="og:description" content="Image-to-Lidar Self-Supervised Distillation for Autonomous Driving Data Corentin Sautier &nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Spyros Gidaris &nbsp;&nbsp; Alexandre Boulch &nbsp;&nbsp; Andrei Bursuc &nbsp;&nbsp; Renaud Marlet" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/slidr/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/slidr/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2021_obsnet/obnet_arch.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/slidr/slidr.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-04-28T08:19:49-05:00" />
 <script type="application/ld+json">
-{"description":"Triggering Failures: Out-Of-Distribution detection by learning from local adversarial attacks in Semantic Segmentation Victor Besnier&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Alexandre Briot&nbsp;&nbsp; David Picard","@type":"BlogPosting","headline":"Triggering Failures: Out-Of-Distribution detection by learning from local adversarial attacks in Semantic Segmentation","dateModified":"2022-04-28T08:19:49-05:00","datePublished":"2022-04-28T08:19:49-05:00","url":"https://valeoai.github.io/blog/publications/obsnet/","image":"https://valeoai.github.io/blog/images/publications/2021_obsnet/obnet_arch.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/obsnet/"},"@context":"https://schema.org"}</script>
+{"description":"Image-to-Lidar Self-Supervised Distillation for Autonomous Driving Data Corentin Sautier &nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Spyros Gidaris &nbsp;&nbsp; Alexandre Boulch &nbsp;&nbsp; Andrei Bursuc &nbsp;&nbsp; Renaud Marlet","@type":"BlogPosting","headline":"Image-to-Lidar Self-Supervised Distillation for Autonomous Driving Data","dateModified":"2022-04-28T08:19:49-05:00","datePublished":"2022-04-28T08:19:49-05:00","url":"https://valeoai.github.io/blog/publications/slidr/","image":"https://valeoai.github.io/blog/images/publications/slidr/slidr.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/slidr/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai blog" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -25,20 +25,20 @@
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-179942144-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
 <link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Triggering Failures: Out-Of-Distribution detection by learning from local adversarial attacks in Semantic Segmentation | valeo.ai blog</title>
+<title>Image-to-Lidar Self-Supervised Distillation for Autonomous Driving Data | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Triggering Failures: Out-Of-Distribution detection by learning from local adversarial attacks in Semantic Segmentation" />
+<meta property="og:title" content="Image-to-Lidar Self-Supervised Distillation for Autonomous Driving Data" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Triggering Failures: Out-Of-Distribution detection by learning from local adversarial attacks in Semantic Segmentation Victor Besnier&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Alexandre Briot&nbsp;&nbsp; David Picard" />
-<meta property="og:description" content="Triggering Failures: Out-Of-Distribution detection by learning from local adversarial attacks in Semantic Segmentation Victor Besnier&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Alexandre Briot&nbsp;&nbsp; David Picard" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/obsnet/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/obsnet/" />
+<meta name="description" content="Image-to-Lidar Self-Supervised Distillation for Autonomous Driving Data Corentin Sautier &nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Spyros Gidaris &nbsp;&nbsp; Alexandre Boulch &nbsp;&nbsp; Andrei Bursuc &nbsp;&nbsp; Renaud Marlet" />
+<meta property="og:description" content="Image-to-Lidar Self-Supervised Distillation for Autonomous Driving Data Corentin Sautier &nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Spyros Gidaris &nbsp;&nbsp; Alexandre Boulch &nbsp;&nbsp; Andrei Bursuc &nbsp;&nbsp; Renaud Marlet" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/slidr/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/slidr/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2021_obsnet/obnet_arch.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/slidr/slidr.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-04-28T08:19:49-05:00" />
 <script type="application/ld+json">
-{"description":"Triggering Failures: Out-Of-Distribution detection by learning from local adversarial attacks in Semantic Segmentation Victor Besnier&nbsp;&nbsp; Andrei Bursuc&nbsp;&nbsp; Alexandre Briot&nbsp;&nbsp; David Picard","@type":"BlogPosting","headline":"Triggering Failures: Out-Of-Distribution detection by learning from local adversarial attacks in Semantic Segmentation","dateModified":"2022-04-28T08:19:49-05:00","datePublished":"2022-04-28T08:19:49-05:00","url":"https://valeoai.github.io/blog/publications/obsnet/","image":"https://valeoai.github.io/blog/images/publications/2021_obsnet/obnet_arch.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/obsnet/"},"@context":"https://schema.org"}</script>
+{"description":"Image-to-Lidar Self-Supervised Distillation for Autonomous Driving Data Corentin Sautier &nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Spyros Gidaris &nbsp;&nbsp; Alexandre Boulch &nbsp;&nbsp; Andrei Bursuc &nbsp;&nbsp; Renaud Marlet","@type":"BlogPosting","headline":"Image-to-Lidar Self-Supervised Distillation for Autonomous Driving Data","dateModified":"2022-04-28T08:19:49-05:00","datePublished":"2022-04-28T08:19:49-05:00","url":"https://valeoai.github.io/blog/publications/slidr/","image":"https://valeoai.github.io/blog/images/publications/slidr/slidr.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/slidr/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -170,21 +170,21 @@ p {
     }
 </style>
 
-<h1 align="center"> Triggering Failures: Out-Of-Distribution detection by learning from local adversarial attacks in Semantic Segmentation </h1>
+<h1 align="center"> Image-to-Lidar Self-Supervised Distillation for Autonomous Driving Data </h1>
 <!-- Simple call of authors -->
-<!-- <h3 align="center"> Victor Besnier, Andrei Bursuc, Alexandre Briot, and David Picard </h3> -->
+<!-- <h3 align="center"> Corentin Sautier, Gilles Puy, Spyros Gidaris, Alexandre Boulch, Andrei Bursuc, and Renaud Marlet </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center"> <a href="https://scholar.google.com/citations?user=n_C2h-QAAAAJ">Victor Besnier</a>&nbsp;&nbsp; <a href="https://abursuc.github.io/">Andrei Bursuc</a>&nbsp;&nbsp; Alexandre Briot&nbsp;&nbsp; <a href="https://davidpicard.github.io/">David Picard</a> </h3>
+<h3 align="center"> <a href="">Corentin Sautier</a> &nbsp;&nbsp; <a href="https://sites.google.com/site/puygilles/home">Gilles Puy</a> &nbsp;&nbsp; <a href="https://scholar.google.fr/citations?user=7atfg7EAAAAJ&amp;hl=en">Spyros Gidaris</a> &nbsp;&nbsp; <a href="https://www.boulch.eu/">Alexandre Boulch</a> &nbsp;&nbsp; <a href="https://abursuc.github.io/">Andrei Bursuc</a> &nbsp;&nbsp; <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a></h3>
 
-<h3 align="center"> ICCV 2021 </h3>
+<h3 align="center"> CVPR 2022 </h3>
 
 <div align="center">
   <p>
     
-    <a href="https://arxiv.org/abs/2108.01634"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
+    <a href="https://arxiv.org/abs/2203.16258"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
     
     
-    <a href="https://github.com/valeoai/obsnet"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
+    <a href="https://github.com/valeoai/SLidR"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
     
     
     
@@ -193,27 +193,25 @@ p {
 </div>
 
 <div class="publication-teaser">
-    <img src="../../images/publications/2021_obsnet/obnet_arch.png" alt="project teaser" />
+    <img src="../../images/publications/slidr/slidr.png" alt="project teaser" />
 </div>
 
 <hr />
 
 <h2 align="center"> Abstract</h2>
 
-<p align="justify">In this paper, we tackle the detection of out-of-distribution (OOD) objects in semantic segmentation. By analyzing the literature, we found that current methods are either accurate or fast but not both which limits their usability in real world applications. To get the best of both aspects, we propose to mitigate the common shortcomings by following four design principles: decoupling the OOD detection from the segmentation task, observing the entire segmentation network instead of just its output, generating training data for the OOD detector by leveraging blind spots in the segmentation network and focusing the generated data on localized regions in the image to simulate OOD objects. Our main contribution is a new OOD detection architecture called ObsNet associated with a dedicated training scheme based on Local Adversarial Attacks (LAA). We validate the soundness of our approach across numerous ablation studies. We also show it obtains top performances both in speed and accuracy when compared to ten recent methods of the literature on three different datasets.</p>
-
-<p><br /></p>
+<p align="justify">Segmenting or detecting objects in sparse Lidar point clouds are two important tasks in autonomous driving to allow a vehicle to act safely in its 3D environment. The best performing methods in 3D semantic segmentation or object detection rely on a large amount of annotated data. Yet annotating 3D Lidar data for these tasks is tedious and costly. In this context, we propose a self-supervised pre-training method for 3D perception models that is tailored to autonomous driving data. Specifically, we leverage the availability of synchronized and calibrated image and Lidar sensors in autonomous driving setups for distilling self-supervised pre-trained image representations into 3D models. Hence, our method does not require any point cloud nor image annotations. The key ingredient of our method is the use of superpixels which are used to pool 3D point features and 2D pixel features in visually similar regions. We then train a 3D network on the self-supervised task of matching these pooled point features with the corresponding pooled image pixel features. The advantages of contrasting regions obtained by superpixels are that: (1) grouping together pixels and points of visually coherent regions leads to a more meaningful contrastive task that produces features well adapted to 3D semantic segmentation and 3D object detection; (2) all the different regions have the same weight in the contrastive loss regardless of the number of 3D points sampled in these regions; (3) it mitigates the noise produced by incorrect matching of points and pixels due to occlusions between the different sensors. Extensive experiments on autonomous driving datasets demonstrate the ability of our image-to-Lidar distillation strategy to produce 3D representations that transfer well on semantic segmentation and object detection tasks.</p>
 
 <hr />
 
 <h2 align="center">BibTeX</h2>
 <left>
   <pre class="bibtex-box">
-@inproceedings{besnier2021triggering,
-    title = {Triggering Failures: Out-Of-Distribution detection by learning from local adversarial attacks in Semantic Segmentation},
-   author = {Besnier, Victor and Bursuc, Andrei and Picard, David and Briot Alexandre},
-    booktitle={Proceedings of the IEEE International Conference on Computer Vision},
-    year={2021}
+@inproceedings{puy20flot,
+  title={FLOT: Scene Flow on Point Clouds Guided by Optimal Transport},
+  author={Puy, Gilles and Boulch, Alexandre and Marlet, Renaud},
+  booktitle={European Conference on Computer Vision}
+  year={2020}
 }</pre>
 </left>
 
