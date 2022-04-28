@@ -64,11 +64,11 @@ permalink: /publications/slidr/
 <h2  align="center">BibTeX</h2>
 <left>
   <pre class="bibtex-box">
-@inproceedings{puy20flot,
-  title={FLOT: Scene Flow on Point Clouds Guided by Optimal Transport},
-  author={Puy, Gilles and Boulch, Alexandre and Marlet, Renaud},
-  booktitle={European Conference on Computer Vision}
-  year={2020}
+@inproceedings{sautier22slidr,
+  title={Image-to-Lidar Self-Supervised Distillation for Autonomous Driving Dat},
+  author={Corentin Sautier and Gilles Puy and Spyros Gidaris and Alexandre Boulch and Andrei Bursuc and Renaud Marlet},
+  booktitle={Conference on Computer Vision and Pattern Recognition (CVPR)}
+  year={2022}
 }</pre>
 </left>
 
