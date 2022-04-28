@@ -14,7 +14,7 @@ paper_url: https://arxiv.org/abs/2204.11667
 blog_url:
 slides_url:
 bib_url:
-permalink: /publications/2022_muhdi/
+permalink: /publications/muhdi/
 ---
 
 <h1 align="center"> {{page.title}} </h1>
