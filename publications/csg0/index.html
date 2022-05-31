@@ -3,20 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Artificial Dummies for Urban Dataset Augmentation | valeo.ai blog</title>
+<title>CSG0: Continual Urban Scene Generation with Zero Forgetting | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Artificial Dummies for Urban Dataset Augmentation" />
+<meta property="og:title" content="CSG0: Continual Urban Scene Generation with Zero Forgetting" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Artificial Dummies for Urban Dataset Augmentation Antonín Vobecký&nbsp;&nbsp; David Hurych&nbsp;&nbsp; Michal Uříčář&nbsp;&nbsp; Patrick Pérez&nbsp;&nbsp; Josef Šivic" />
-<meta property="og:description" content="Artificial Dummies for Urban Dataset Augmentation Antonín Vobecký&nbsp;&nbsp; David Hurych&nbsp;&nbsp; Michal Uříčář&nbsp;&nbsp; Patrick Pérez&nbsp;&nbsp; Josef Šivic" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/dummynet/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/dummynet/" />
+<meta name="description" content="CSG0: Continual Urban Scene Generation with Zero Forgetting Himalaya Jain\*&nbsp;&nbsp; Tuan-Hung Vu\*&nbsp;&nbsp; Patrick Pérez&nbsp;&nbsp; Matthieu Cord" />
+<meta property="og:description" content="CSG0: Continual Urban Scene Generation with Zero Forgetting Himalaya Jain\*&nbsp;&nbsp; Tuan-Hung Vu\*&nbsp;&nbsp; Patrick Pérez&nbsp;&nbsp; Matthieu Cord" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/csg0/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/csg0/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/dummynet/dummynet_illustration_notext.jpg" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2022_csg0/teaser.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-05-31T03:31:12-05:00" />
 <script type="application/ld+json">
-{"description":"Artificial Dummies for Urban Dataset Augmentation Antonín Vobecký&nbsp;&nbsp; David Hurych&nbsp;&nbsp; Michal Uříčář&nbsp;&nbsp; Patrick Pérez&nbsp;&nbsp; Josef Šivic","@type":"BlogPosting","headline":"Artificial Dummies for Urban Dataset Augmentation","url":"https://valeoai.github.io/blog/publications/dummynet/","datePublished":"2022-05-31T03:31:12-05:00","dateModified":"2022-05-31T03:31:12-05:00","image":"https://valeoai.github.io/blog/images/publications/dummynet/dummynet_illustration_notext.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/dummynet/"},"@context":"https://schema.org"}</script>
+{"description":"CSG0: Continual Urban Scene Generation with Zero Forgetting Himalaya Jain\\*&nbsp;&nbsp; Tuan-Hung Vu\\*&nbsp;&nbsp; Patrick Pérez&nbsp;&nbsp; Matthieu Cord","@type":"BlogPosting","headline":"CSG0: Continual Urban Scene Generation with Zero Forgetting","url":"https://valeoai.github.io/blog/publications/csg0/","datePublished":"2022-05-31T03:31:12-05:00","dateModified":"2022-05-31T03:31:12-05:00","image":"https://valeoai.github.io/blog/images/publications/2022_csg0/teaser.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/csg0/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai blog" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -25,20 +25,20 @@
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-179942144-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
 <link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Artificial Dummies for Urban Dataset Augmentation | valeo.ai blog</title>
+<title>CSG0: Continual Urban Scene Generation with Zero Forgetting | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Artificial Dummies for Urban Dataset Augmentation" />
+<meta property="og:title" content="CSG0: Continual Urban Scene Generation with Zero Forgetting" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Artificial Dummies for Urban Dataset Augmentation Antonín Vobecký&nbsp;&nbsp; David Hurych&nbsp;&nbsp; Michal Uříčář&nbsp;&nbsp; Patrick Pérez&nbsp;&nbsp; Josef Šivic" />
-<meta property="og:description" content="Artificial Dummies for Urban Dataset Augmentation Antonín Vobecký&nbsp;&nbsp; David Hurych&nbsp;&nbsp; Michal Uříčář&nbsp;&nbsp; Patrick Pérez&nbsp;&nbsp; Josef Šivic" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/dummynet/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/dummynet/" />
+<meta name="description" content="CSG0: Continual Urban Scene Generation with Zero Forgetting Himalaya Jain\*&nbsp;&nbsp; Tuan-Hung Vu\*&nbsp;&nbsp; Patrick Pérez&nbsp;&nbsp; Matthieu Cord" />
+<meta property="og:description" content="CSG0: Continual Urban Scene Generation with Zero Forgetting Himalaya Jain\*&nbsp;&nbsp; Tuan-Hung Vu\*&nbsp;&nbsp; Patrick Pérez&nbsp;&nbsp; Matthieu Cord" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/csg0/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/csg0/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/dummynet/dummynet_illustration_notext.jpg" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2022_csg0/teaser.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-05-31T03:31:12-05:00" />
 <script type="application/ld+json">
-{"description":"Artificial Dummies for Urban Dataset Augmentation Antonín Vobecký&nbsp;&nbsp; David Hurych&nbsp;&nbsp; Michal Uříčář&nbsp;&nbsp; Patrick Pérez&nbsp;&nbsp; Josef Šivic","@type":"BlogPosting","headline":"Artificial Dummies for Urban Dataset Augmentation","url":"https://valeoai.github.io/blog/publications/dummynet/","datePublished":"2022-05-31T03:31:12-05:00","dateModified":"2022-05-31T03:31:12-05:00","image":"https://valeoai.github.io/blog/images/publications/dummynet/dummynet_illustration_notext.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/dummynet/"},"@context":"https://schema.org"}</script>
+{"description":"CSG0: Continual Urban Scene Generation with Zero Forgetting Himalaya Jain\\*&nbsp;&nbsp; Tuan-Hung Vu\\*&nbsp;&nbsp; Patrick Pérez&nbsp;&nbsp; Matthieu Cord","@type":"BlogPosting","headline":"CSG0: Continual Urban Scene Generation with Zero Forgetting","url":"https://valeoai.github.io/blog/publications/csg0/","datePublished":"2022-05-31T03:31:12-05:00","dateModified":"2022-05-31T03:31:12-05:00","image":"https://valeoai.github.io/blog/images/publications/2022_csg0/teaser.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/csg0/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -170,21 +170,19 @@ p {
     }
 </style>
 
-<h1 align="center"> Artificial Dummies for Urban Dataset Augmentation </h1>
+<h1 align="center"> CSG0: Continual Urban Scene Generation with Zero Forgetting </h1>
 <!-- Simple call of authors -->
-<!-- <h3 align="center"> Antonín Vobecký, David Hurych, Michal Uřičář, Patrick Pérez, and Josef Šivic </h3> -->
+<!-- <h3 align="center"> Himalaya Jain\*, Tuan-Hung Vu\*, Patrick Pérez and Matthieu Cord </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center"> <a href="https://scholar.google.com/citations?user=DGhPzZ0AAAAJ&amp;hl=en&amp;oi=ao">Antonín Vobecký</a>&nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=XY1PVwYAAAAJ&amp;hl=en&amp;oi=ao">David Hurych</a>&nbsp;&nbsp; <a href="https://scholar.google.com/citations?hl=en&amp;user=ovLIfioAAAAJ">Michal Uříčář</a>&nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a>&nbsp;&nbsp; <a href="https://scholar.google.com/citations?hl=en&amp;user=NCtKHnQAAAAJ">Josef Šivic</a> </h3>
+<h3 align="center"> <a href="https://himalayajain.github.io/">Himalaya Jain\*</a>&nbsp;&nbsp; <a href="https://tuanhungvu.github.io/">Tuan-Hung Vu\*</a>&nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a>&nbsp;&nbsp; <a href="http://webia.lip6.fr/~cord/">Matthieu Cord</a></h3>
 
-<h3 align="center"> AAAI 2021 </h3>
+<h3 align="center"> CVPRW 2022 </h3>
 
 <div align="center">
   <p>
     
-    <a href="https://arxiv.org/abs/2012.08274"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
+    <a href="https://arxiv.org/abs/2112.03252"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
     
-    
-    <a href="https://github.com/vobecant/DummyNet"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
     
     
     
@@ -193,31 +191,26 @@ p {
 </div>
 
 <div class="publication-teaser">
-    <img src="../../images/publications/dummynet/dummynet_illustration_notext.jpg" alt="project teaser" />
+    <img src="../../images/publications/2022_csg0/teaser.png" alt="project teaser" />
 </div>
 
 <hr />
 
 <h2 align="center"> Abstract</h2>
 
-<p align="justify">Existing datasets for training pedestrian detectors in images suffer from limited appearance and pose variation. The most challenging scenarios are rarely included because they are too difficult to capture due to safety reasons, or they are very unlikely to happen. The strict safety requirements in assisted and autonomous driving applications call for an extra high detection accuracy also in these rare situations. Having the ability to generate people images in arbitrary poses, with arbitrary
-appearances and embedded in different background scenes with varying illumination and weather conditions, is a crucial component for the development and testing of such applications. The contributions of this paper are three-fold. First, we describe an augmentation method for controlled synthesis of urban scenes containing people, thus producing rare or neverseen situations. This is achieved with a data generator (called DummyNet) with disentangled control of the pose, the appearance, and the target background
-scene. Second, the proposed generator relies on novel network architecture and associated loss that takes into account the segmentation of the foreground person and its composition into the background scene. Finally, we demonstrate that the data generated by our DummyNet improve performance of several existing person detectors across various datasets as well as in challenging situations, such as night-time conditions, where only a limited amount of training data is available. In the setup with only day-time data
-available, we improve the night-time detector by 17% log-average miss rate over the detector trained with the day-time data only</p>
-
-<p><br /></p>
+<p align="justify">With the rapid advances in generative adversarial networks (GANs), the visual quality of synthesised scenes keeps improving, including for complex urban scenes with applications to automated driving. We address in this work a continual scene generation setup in which GANs are trained on a stream of distinct domains; ideally, the learned models should eventually be able to generate new scenes in all seen domains. This setup reflects the real-life scenario where data are continuously acquired in different places at different times. In such a continual setup, we aim for learning with zero forgetting, \IE, with no degradation in synthesis quality over earlier domains due to catastrophic forgetting. To this end, we introduce a novel framework that not only (i) enables seamless knowledge transfer in continual training but also (ii) guarantees zero forgetting with a small overhead cost. While being more memory efficient, thanks to continual learning, our model obtains better synthesis quality as compared against the brute-force solution that trains one full model for each domain. Especially, under extreme low-data regimes, our approach outperforms the brute-force one by a large margin.
+</p>
 
 <hr />
 
 <h2 align="center">BibTeX</h2>
 <left>
   <pre class="bibtex-box">
-@inproceedings{vobecky2021artificial,
-    title={Artificial Dummies for Urban Dataset Augmentation},
-    author={Vobeck{\'y}, Anton{\'i}n and Hurych, David and U{\vr}i{\vc}{\'a}{\vr}, Michal and P{\'e}rez, Patrick and Sivic, Josef},
-    booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
-    pages={0--0},
-    year={2021}
+@inproceedings{jain2022csg0,
+    title={CSG0: Continual Urban Scene Generation with Zero Forgetting},
+    author={Jain, Himalaya and Vu, Tuan-Hung and P{\'e}rez, Patrick and Cord, Matthieu},
+    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshop},
+    year={2022}
 }</pre>
 </left>
 
