@@ -120,7 +120,7 @@ Learning-based trajectory prediction models have encountered great success, with
 
 With the rapid advances in generative adversarial networks (GANs), the visual quality of synthesized scenes keeps improving, including for complex urban scenes with applications to automated driving. We address in this work a continual scene generation setup in which GANs are trained on a stream of distinct domains; ideally, the learned models should eventually be able to generate new scenes in all seen domains. This setup reflects the real-life scenario where data are continuously acquired in different places at different times. In such a continual setup, we aim for learning with zero forgetting, i.e., with no degradation in synthesis quality over earlier domains due to catastrophic forgetting. To this end, we introduce a novel framework, named CSG0, that not only (i) enables seamless knowledge transfer in continual training but also (ii) guarantees zero forgetting with a small overhead cost.
 
-![]({{ site.baseurl }}/images/posts/2022_cvpr/csg0_teaser.png){:height="100%" width="100%"}
+![]({{ site.baseurl }}/images/posts/2022_cvpr/csg0_teaser.png){:height="85%" width="85%"}
 <div class="caption"><b>Overview of CSG0.</b> Our continual setup for urban-scene generation involves a stream of datasets, with GANs trained from one dataset to another. Our framework makes use of the knowledge learned from previous domains and adapts to new ones with a small overhead.</div>
 
 
