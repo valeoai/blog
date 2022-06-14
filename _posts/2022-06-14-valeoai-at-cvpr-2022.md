@@ -4,7 +4,7 @@ layout: post
 description: "Corentin Sautier, Alexandre Boulch, Patrick Pérez, Tuan-Hung Vu, Matthieu Cord, Andrei Bursuc"
 categories: [domain adaptation, 3d perception, multi-sensor, limited supervision]
 title: "valeo.ai at CVPR 2022"
-hide: true
+hide: false
 image: images/posts/2022_cvpr/cvpr_logo.png
 ---
 
