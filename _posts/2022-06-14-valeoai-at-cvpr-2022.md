@@ -9,7 +9,7 @@ image: images/posts/2022_cvpr/cvpr_logo.png
 ---
 
 
-The [IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR)](https://cvpr2022.thecvf.com/) is a major event for researchers and engineers working on computer vision and machine learning. At the 2022 edition the [valeo.ai](https://ptrckprz.github.io/valeoai/) team will present four [papers](https://ptrckprz.github.io/vaipub/) in the main conference and three [papers](https://ptrckprz.github.io/vaipub/) in workshops. The team will be at CVPR to present these works and will be happy to discuss more about these projects and ideas, and share our exciting ongoing research. 
+The [IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR)](https://cvpr2022.thecvf.com/) is a major event for researchers and engineers working on computer vision and machine learning. At the 2022 edition the [valeo.ai](https://ptrckprz.github.io/valeoai/) team will present four [papers](https://ptrckprz.github.io/vaipub/) in the main conference, three [papers](https://ptrckprz.github.io/vaipub/) in workshops and one workshop [keynote](https://vision4allseason.net/). The team will be at CVPR to present these works and will be happy to discuss more about these projects and ideas, and share our exciting ongoing research. 
 
 
 ## Image-to-Lidar Self-Supervised Distillation for Autonomous Driving Data 
