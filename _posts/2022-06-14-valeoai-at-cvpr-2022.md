@@ -22,7 +22,7 @@ Self-driving vehicles require object detection or segmentation to safely maneuve
 
 
 ![slidr_overview]({{ site.baseurl }}/images/posts/2022_cvpr/SLidR_overview_2.png){:height="100%" width="100%"}
-<div class="caption">Synchronized Lidar and Camera frames are encoded through two modality-specific features extractors. The camera backbone has pre-trained weights obtained with no annotations (e.g. with MoCo v2 {% cite chen2020improved %}). Features are pooled at a pseudo-object level using image superpixels, and contrasted between both modalities</div>
+<div class="caption"><b>Synchronized Lidar and Camera frames are encoded through two modality-specific features extractors.</b> The camera backbone has pre-trained weights obtained with no annotations (e.g. with MoCo v2 {% cite chen2020improved %}). Features are pooled at a pseudo-object level using image superpixels, and contrasted between both modalities</div>
 
 
 A key ingredient of our method is the use of superpixels which are used to pool 3D point features and 2D pixel features in visually similar regions. We then train a 3D network on the self-supervised task of matching these pooled point features with the corresponding pooled image pixel features. 
