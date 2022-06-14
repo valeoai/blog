@@ -144,7 +144,8 @@ To showcase the merit of our framework, we conduct intensive experiments on vari
 This work focuses on a novel framework for learning UDA, continuous UDA, in which models operate on multiple target domains discovered sequentially, without access to previous target domains. We propose MuHDi, for Multi-Head Distillation, a method that solves the catastrophic forgetting problem, inherent in continual learning tasks. MuHDi performs distillation at multiple levels from the previous model as well as an auxiliary target-specialist segmentation head. We report both extensive ablation and experiments on challenging multi-target UDA semantic segmentation benchmarks to validate the proposed learning scheme and architecture. 
 
 ![]({{ site.baseurl }}/images/posts/2022_cvpr/muhdi_teaser.png){:height="90%" width="90%"}
-<div class="caption"><b>Overview of CSG0.</b> Predictions of continual baseline and MuHDi in a Cityscapes scene.</b> The baseline model suffers from catastrophic forgetting when adapting from one domain to another. The proposed MuHDi is more resilient to continual adaptation and preserve predictive accuracy.</div>
+<div class="caption"><b>Predictions of continual baseline and MuHDi in a Cityscapes scene.</b> The baseline model suffers from catastrophic forgetting when adapting from one domain to another. The proposed MuHDi is more resilient to continual adaptation and preserve predictive accuracy.
+</div>
 
 
 
