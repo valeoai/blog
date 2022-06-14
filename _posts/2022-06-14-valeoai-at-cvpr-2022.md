@@ -135,7 +135,7 @@ To showcase the merit of our framework, we conduct intensive experiments on vari
 ## Multi-Head Distillation for Continual Unsupervised Domain Adaptation in Semantic Segmentation
 <p class="page-description"><a href="https://sites.google.com/view/clvision2022">CVPR 2022 Workshop on Continual Learning (CLVision)</a></p>
 
-#### Authors:  <a href="https://scholar.google.com/citations?user=jSwfIU4AAAAJ">Antoine Saporta</a>, <a href="https://arthurdouillard.com/">Arthur Douillard</a>, <a href="https://tuanhungvu.github.io/">Tuan-Hung Vu</a>, <a href="https://ptrckprz.github.io/">Patrick Pérez</a>&nbsp;&nbsp; <a href="http://webia.lip6.fr/~cord/">Matthieu Cord</a>
+#### Authors:  <a href="https://scholar.google.com/citations?user=jSwfIU4AAAAJ">Antoine Saporta</a>, <a href="https://arthurdouillard.com/">Arthur Douillard</a>, <a href="https://tuanhungvu.github.io/">Tuan-Hung Vu</a>, <a href="https://ptrckprz.github.io/">Patrick Pérez</a>, <a href="http://webia.lip6.fr/~cord/">Matthieu Cord</a>
 
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2204.11667">Paper</a>] &nbsp;&nbsp; [<a href="https://github.com/valeoai/MuHDi">Code</a>] &nbsp;&nbsp; [<a href="https://valeoai.github.io/blog/publications/muhdi/">Project page</a>]</h4>
