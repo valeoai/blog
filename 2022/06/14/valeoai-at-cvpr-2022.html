@@ -166,13 +166,13 @@ window.onload = wrap_img;
 <p>Self-driving vehicles require object detection or segmentation to safely maneuver in their environment. Yet such safety-critical tasks are usually performed by neural networks demanding huge Lidar datasets with high quality annotations, and no domain shift between training and testing conditions. Yet annotating 3D Lidar data for these tasks is tedious and costly. In <a href="https://arxiv.org/abs/2203.16258">Image-to-Lidar Self-Supervised Distillation for Autonomous Driving Data</a>, we propose a self-supervised pre-training method for 3D perception models that is tailored to autonomous driving data. Specifically, we leverage the availability of synchronized and calibrated image and Lidar sensors in autonomous driving setups for distilling self-supervised pre-trained image representations into 3D models, using neither point cloud nor image annotations.</p>
 
 <p><img src="/blog/images/posts/2022_cvpr/SLidR_overview_2.png" alt="slidr_overview" height="100%" width="100%" /></p>
-<div class="caption">The similarity between a query point's features (in red) and all other Lidar points is shown, to assert the quality of the learned representation. Colorscale goes from purple to yellow.</div>
+<div class="caption">Synchronized Lidar and Camera frames are encoded through two modality-specific features extractors. The camera backbone has pre-trained weights obtained with no annotations (e.g. with MoCo v2 <a class="citation" href="#chen2020improved">(Chen et al., 2020)</a>). Features are pooled at a pseudo-object level using image superpixels, and contrasted between both modalities</div>
 
 <p>A key ingredient of our method is the use of superpixels which are used to pool 3D point features and 2D pixel features in visually similar regions. We then train a 3D network on the self-supervised task of matching these pooled point features with the corresponding pooled image pixel features. 
 Extensive experiments on autonomous driving datasets demonstrate the ability of our image-to-Lidar distillation strategy to produce 3D representations that transfer well on semantic segmentation and object detection tasks.</p>
 
 <p><img src="/blog/images/posts/2022_cvpr/SLidR_results.jpg" alt="slidr_results" height="100%" width="100%" /></p>
-<div class="caption">Sequences of raw radar tensors are aggregated and used as input for our multi-view architecture to segment semantically range-angle and range-Doppler views simultaneously.
+<div class="caption">The similarity between a query point's features (in red) and all other Lidar points is shown, to assert the quality of the learned representation. Colorscale goes from purple to yellow. 
 </div>
 
 <p>With our pre-training, a Lidar network can learn features that are mostly consistent within an object class. This first step can greatly improve data annotation efficiency, both in semantic segmentation and object detection, and is even applicable in a cross-datasets setup.</p>
@@ -271,7 +271,7 @@ POCO also shows good generalization properties including the possibility of lear
 
 <h2 id="references">References</h2>
 
-<ol class="bibliography"></ol>
+<ol class="bibliography"><li><span id="chen2020improved">Chen, X., Fan, H., Girshick, R., &amp; He, K. (2020). Improved baselines with momentum contrastive learning. <i>ArXiv Preprint ArXiv:2003.04297</i>.</span></li></ol>
 
 
   </div><a class="u-url" href="/blog/2022/06/14/valeoai-at-cvpr-2022.html" hidden></a>
