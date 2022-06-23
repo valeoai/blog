@@ -128,7 +128,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      10 min read
+      11 min read
     
 </span></p>
 
@@ -218,6 +218,19 @@ POCO also shows good generalization properties including the possibility of lear
 <p>Deep network architectures struggle to continually learn new tasks without forgetting the previous tasks. In this paper, we propose a transformer architecture based on a dedicated encoder/decoder framework. Critically, the encoder and decoder are shared among all tasks. Through a dynamic expansion of special tokens, we specialize each forward of our decoder network on a task distribution. Our strategy scales to a large number of tasks while having negligible memory and time overheads due to strict control of the parameters expansion. Moreover, this efficient strategy does not need any hyperparameter tuning to control the network’s expansion. Our model reaches excellent results on CIFAR100 and state-of-the-art performances on the large-scale ImageNet100 and ImageNet1000 while having fewer parameters than concurrent dynamic frameworks.</p>
 
 <p><img src="/blog/images/posts/2022_cvpr/dytox.png" alt="" height="85%" width="85%" /></p>
+<div class="caption"> DyTox transformer model.</div>
+
+<hr />
+
+<h2 id="flexit-towards-flexible-semantic-image-translation">FlexIT: Towards Flexible Semantic Image Translation</h2>
+<h4 id="authors-guillaume-couairon-asya-grechka-jakob-verbeek-holger-schwenk-matthieu-cord">Authors: Guillaume Couairon, Asya Grechka, <a href="https://lear.inrialpes.fr/people/verbeek/">Jakob Verbeek</a>, <a href="https://scholar.google.fr/citations?user=Ysjk8kkAAAAJ&amp;hl=en">Holger Schwenk</a>, <a href="http://webia.lip6.fr/~cord/">Matthieu Cord</a></h4>
+
+<h4 align="center"> [<a href="https://arxiv.org/abs/2203.04705">Paper</a>] </h4>
+
+<p>Deep generative models, like GANs, have considerably improved the state of the art in image synthesis, and are able to generate near photo-realistic images in structured domains such as human faces. We propose FlexIT, a novel method which can take any input image and a user-defined text instruction for editing. Our method achieves flexible and natural editing, pushing the limits of semantic image translation. First, FlexIT combines the input image and text into a single target point in the CLIP multimodal embedding space. Via the latent space of an auto-encoder, we iteratively transform the input image toward the target point, ensuring coherence and quality with a variety of novel regularization terms. We propose an evaluation protocol for semantic image translation, and thoroughly evaluate our method on ImageNet.</p>
+
+<p><img src="/blog/images/posts/2022_cvpr/flexit.png" alt="" height="95%" width="95%" /></p>
+<div class="caption"> <b>FlexIT transformation examples.</b> From top to bottom: input image, transformed image, and text query.</div>
 
 <hr />
 
