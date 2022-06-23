@@ -85,7 +85,21 @@ Deep network architectures struggle to continually learn new tasks without forge
 
 
 ![]({{ site.baseurl }}/images/posts/2022_cvpr/dytox.png){:height="85%" width="85%"}
+<div class="caption"> DyTox transformer model.</div>
 
+<hr>
+
+## FlexIT: Towards Flexible Semantic Image Translation
+#### Authors: Guillaume Couairon, Asya Grechka, <a href="https://lear.inrialpes.fr/people/verbeek/">Jakob Verbeek</a>, <a href="https://scholar.google.fr/citations?user=Ysjk8kkAAAAJ&hl=en">Holger Schwenk</a>, <a href="http://webia.lip6.fr/~cord/">Matthieu Cord</a>
+
+
+<h4 align="center"> [<a href="https://arxiv.org/abs/2203.04705">Paper</a>] </h4>
+
+Deep generative models, like GANs, have considerably improved the state of the art in image synthesis, and are able to generate near photo-realistic images in structured domains such as human faces. We propose FlexIT, a novel method which can take any input image and a user-defined text instruction for editing. Our method achieves flexible and natural editing, pushing the limits of semantic image translation. First, FlexIT combines the input image and text into a single target point in the CLIP multimodal embedding space. Via the latent space of an auto-encoder, we iteratively transform the input image toward the target point, ensuring coherence and quality with a variety of novel regularization terms. We propose an evaluation protocol for semantic image translation, and thoroughly evaluate our method on ImageNet. 
+
+
+![]({{ site.baseurl }}/images/posts/2022_cvpr/flexit.png){:height="95%" width="95%"}
+<div class="caption"> <b>FlexIT transformation examples.</b> From top to bottom: input image, transformed image, and text query.</div>
 
 <hr>
 
