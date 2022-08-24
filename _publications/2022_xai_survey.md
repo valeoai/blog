@@ -65,7 +65,7 @@ permalink: /publications/xai-driving-survey/
 <left>
   <pre class="bibtex-box">
 @article{xai-driving-survey-2022,
-  author    = {{\'{E}}loi Zablocki and
+  author    = {Eloi Zablocki and
                Hedi Ben{-}Younes and
                Patrick P{\'{e}}rez and
                Matthieu Cord},
