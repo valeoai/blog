@@ -2,7 +2,7 @@
 layout: publication
 title: "STEEX: Steering Counterfactual Explanations with Semantics" 
 image: images/publications/2022_steex/steex.png
-hide: true
+hide: false
 category: [explainability, driving]
 authors: Paul Jacob, Éloi Zablocki, Hédi Ben-Younes, Mickaël Chen, Patrick Pérez, Matthieu Cord
 venue: ECCV
