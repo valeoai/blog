@@ -2,8 +2,7 @@
 layout: project
 title: Interpretability and Explainability of Deep Models
 permalink: /projects/explainability
-description: The concept of explainability has several facets and the need for explainability is strong in safety-critical applications such as autonomous driving where deep learning models are now widely used. As the underlying mechanisms of these models remain opaque, explainability and trustworthiness have become major concerns.
-Among other things, we investigate methods providing explanations to a black-box visual-based systems in a post-hoc fashion, as well as approaches that aim at building more interpretable self-driving systems by design.
+description: The concept of explainability has several facets and the need for explainability is strong in safety-critical applications such as autonomous driving where deep learning models are now widely used. As the underlying mechanisms of these models remain opaque, explainability and trustworthiness have become major concerns. Among other things, we investigate methods providing explanations to a black-box visual-based systems in a post-hoc fashion, as well as approaches that aim at building more interpretable self-driving systems by design.
 image: "images/projects/logo_explainable.png"
 category: project
 url: ""
