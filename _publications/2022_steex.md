@@ -75,8 +75,9 @@ permalink: /publications/steex/
   title     = {{STEEX:} Steering Counterfactual Explanations with Semantics},
   booktitle = {ECCV 2020},
   publisher = {Springer},
-  year      = {2022},
-}</pre>
+  year      = {2022}
+}
+</pre>
 </left>
 
 <br>
