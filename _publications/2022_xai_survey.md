@@ -14,7 +14,7 @@ paper_url: https://arxiv.org/abs/2101.05307
 blog_url: https://valeoai.github.io/blog/2021/02/18/explainable-driving.html 
 slides_url: 
 bib_url: 
-permalink: /publications/xai-survey/
+permalink: /publications/xai-driving-survey/
 ---
 
 <h1 align="center"> {{page.title}} </h1>
