@@ -73,7 +73,7 @@ permalink: /publications/steex/
                Patrick P{\'{e}}rez and
                Matthieu Cord},
   title     = {STEEX: Steering Counterfactual Explanations with Semantics},
-  booktitle = {ECCV 2020},
+  booktitle = {ECCV},
   publisher = {Springer},
   year      = {2022}
 }
