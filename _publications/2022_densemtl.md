@@ -9,7 +9,7 @@ venue: WACV
 venue_long: IEEE/CVF Winter Conference on Applications of Computer Vision
 year: 2023
 month: 1
-code_url:
+code_url: https://github.com/cv-rits/DenseMTL
 paper_url: https://arxiv.org/abs/2206.08927
 blog_url:
 slides_url:
@@ -21,7 +21,7 @@ permalink: /publications/2022_densemtl/
 <!-- Simple call of authors -->
 <!-- <h3 align="center"> {{page.authors}} </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center"> <a href="https://wonjunior.github.io/">Ivan Lopes</a>&nbsp;&nbsp; <a href="https://tuanhungvu.github.io/">Tuan-Hung Vu (*)</a>&nbsp;&nbsp; <a href="https://team.inria.fr/rits/membres/raoul-de-charette/">Raoul de Charette</a> </h3>
+<h3 align="center"> <a href="https://wonjunior.github.io/">Ivan Lopes</a>&nbsp;&nbsp; <a href="https://tuanhungvu.github.io/">Tuan-Hung Vu</a>&nbsp;&nbsp; <a href="https://team.inria.fr/rits/membres/raoul-de-charette/">Raoul de Charette</a> </h3>
 
 
 <h3 align="center"> {{page.venue}} {{page.year}} </h3>
