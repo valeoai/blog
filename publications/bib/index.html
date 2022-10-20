@@ -3,20 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Addressing Failure Prediction by Learning Model Confidence | valeo.ai blog</title>
+<title>Active Learning Strategies for Weakly-Supervised Object Detection | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Addressing Failure Prediction by Learning Model Confidence" />
+<meta property="og:title" content="Active Learning Strategies for Weakly-Supervised Object Detection" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Project page of ConfidNet" />
-<meta property="og:description" content="Project page of ConfidNet" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/confidnet/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/confidnet/" />
+<meta name="description" content="Active Learning Strategies for Weakly-Supervised Object Detection Huy V. Vo &nbsp;&nbsp; Oriane Siméoni &nbsp;&nbsp; Spyros Gidaris &nbsp;&nbsp; Andrei Bursuc &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Jean Ponce" />
+<meta property="og:description" content="Active Learning Strategies for Weakly-Supervised Object Detection Huy V. Vo &nbsp;&nbsp; Oriane Siméoni &nbsp;&nbsp; Spyros Gidaris &nbsp;&nbsp; Andrei Bursuc &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Jean Ponce" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/bib/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/bib/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/confidnet/teaser.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2022_weakly_al/weakly_al.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-10-20T09:15:28-05:00" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/confidnet/"},"description":"Project page of ConfidNet","@type":"BlogPosting","url":"https://valeoai.github.io/blog/publications/confidnet/","dateModified":"2022-10-20T09:15:28-05:00","datePublished":"2022-10-20T09:15:28-05:00","headline":"Addressing Failure Prediction by Learning Model Confidence","image":"https://valeoai.github.io/blog/images/publications/confidnet/teaser.png","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/bib/"},"description":"Active Learning Strategies for Weakly-Supervised Object Detection Huy V. Vo &nbsp;&nbsp; Oriane Siméoni &nbsp;&nbsp; Spyros Gidaris &nbsp;&nbsp; Andrei Bursuc &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Jean Ponce","@type":"BlogPosting","url":"https://valeoai.github.io/blog/publications/bib/","dateModified":"2022-10-20T09:15:28-05:00","datePublished":"2022-10-20T09:15:28-05:00","headline":"Active Learning Strategies for Weakly-Supervised Object Detection","image":"https://valeoai.github.io/blog/images/publications/2022_weakly_al/weakly_al.png","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai blog" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -25,20 +25,20 @@
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-179942144-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
 <link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Addressing Failure Prediction by Learning Model Confidence | valeo.ai blog</title>
+<title>Active Learning Strategies for Weakly-Supervised Object Detection | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Addressing Failure Prediction by Learning Model Confidence" />
+<meta property="og:title" content="Active Learning Strategies for Weakly-Supervised Object Detection" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Project page of ConfidNet" />
-<meta property="og:description" content="Project page of ConfidNet" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/confidnet/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/confidnet/" />
+<meta name="description" content="Active Learning Strategies for Weakly-Supervised Object Detection Huy V. Vo &nbsp;&nbsp; Oriane Siméoni &nbsp;&nbsp; Spyros Gidaris &nbsp;&nbsp; Andrei Bursuc &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Jean Ponce" />
+<meta property="og:description" content="Active Learning Strategies for Weakly-Supervised Object Detection Huy V. Vo &nbsp;&nbsp; Oriane Siméoni &nbsp;&nbsp; Spyros Gidaris &nbsp;&nbsp; Andrei Bursuc &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Jean Ponce" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/bib/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/bib/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/confidnet/teaser.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2022_weakly_al/weakly_al.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-10-20T09:15:28-05:00" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/confidnet/"},"description":"Project page of ConfidNet","@type":"BlogPosting","url":"https://valeoai.github.io/blog/publications/confidnet/","dateModified":"2022-10-20T09:15:28-05:00","datePublished":"2022-10-20T09:15:28-05:00","headline":"Addressing Failure Prediction by Learning Model Confidence","image":"https://valeoai.github.io/blog/images/publications/confidnet/teaser.png","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/bib/"},"description":"Active Learning Strategies for Weakly-Supervised Object Detection Huy V. Vo &nbsp;&nbsp; Oriane Siméoni &nbsp;&nbsp; Spyros Gidaris &nbsp;&nbsp; Andrei Bursuc &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Jean Ponce","@type":"BlogPosting","url":"https://valeoai.github.io/blog/publications/bib/","dateModified":"2022-10-20T09:15:28-05:00","datePublished":"2022-10-20T09:15:28-05:00","headline":"Active Learning Strategies for Weakly-Supervised Object Detection","image":"https://valeoai.github.io/blog/images/publications/2022_weakly_al/weakly_al.png","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -170,52 +170,48 @@ p {
     }
 </style>
 
-<h1 align="center"> Addressing Failure Prediction by Learning Model Confidence </h1>
+<h1 align="center"> Active Learning Strategies for Weakly-Supervised Object Detection </h1>
 <!-- Simple call of authors -->
-<!-- <h3 align="center"> Charles Corbière, Nicolas Thome, Avner Bar-Hen, Matthieu Cord, and Patrick Pérez </h3> -->
+<!-- <h3 align="center"> Huy V. Vo, Oriane Siméoni, Spyros Gidaris, Andrei Bursuc, Patrick Pérez, and Jean Ponce </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center"> <a href="https://chcorbi.github.io/">Charles Corbière</a>&nbsp;&nbsp; <a href="https://http://cedric.cnam.fr/~thomen/">Nicolas Thome</a>&nbsp;&nbsp; <a href="https://ab-h.github.io/">Avner Bar-Hen</a>&nbsp;&nbsp; <a href="http://webia.lip6.fr/~cord/">Matthieu Cord</a>&nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a> </h3>
+<h3 align="center"><a href="https://scholar.google.com/citations?user=gIf5VqUAAAAJ&amp;hl=en">Huy V. Vo</a> &nbsp;&nbsp; <a href="https://osimeoni.github.io/">Oriane Siméoni</a> &nbsp;&nbsp; <a href="https://scholar.google.fr/citations?user=7atfg7EAAAAJ&amp;hl=en">Spyros Gidaris</a> &nbsp;&nbsp; <a href="https://abursuc.github.io/">Andrei Bursuc</a> &nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a> &nbsp;&nbsp;  <a href="https://scholar.google.com/citations?user=vC2vywcAAAAJ&amp;hl=en">Jean Ponce</a> </h3>
 
-<h3 align="center"> NeurIPS 2019 </h3>
+<h3 align="center"> ECCV 2022 </h3>
 
 <div align="center">
   <p>
     
-    <a href="https://papers.nips.cc/paper/8556-addressing-failure-prediction-by-learning-model-confidence"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
+    <a href="https://arxiv.org/abs/2207.12112"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
     
     
-    <a href="https://github.com/valeoai/ConfidNet"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
+    <a href="https://github.com/huyvvo/BiB"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
     
     
     
-    
-    <a href="https://papers.nips.cc/paper/8556-addressing-failure-prediction-by-learning-model-confidence/bibtex"><i class="far fa-file-alt"></i> BibTeX</a>&nbsp;&nbsp;
     
   </p>
 </div>
 
-<div class="publication-teaser">
-    <img src="../../images/publications/confidnet/teaser.png" alt="project teaser" />
-</div>
-
+<p><img src="../../images/publications/2022_weakly_al/weakly_al_overview.png" alt="" width="100%" /></p>
 <hr />
 
 <h2 align="center"> Abstract</h2>
 
-<p align="justify">Assessing reliably the confidence of a deep neural net and predicting its failures is of primary importance for the practical deployment of these models. In this paper, we propose a new target criterion for model confidence, corresponding to the True Class Probability (TCP). We show how using the TCP is more suited than relying on the classic Maximum Class Probability (MCP). We provide in addition theoretical guarantees for TCP in the context of failure prediction. Since the true class is by essence unknown at test time, we propose to learn TCP criterion on the training set, introducing a specific learning scheme adapted to this context. Extensive experiments are conducted for validating the relevance of the proposed approach. We study various network architectures, small and large scale datasets for image classification and semantic segmentation. We show that our approach consistently outperforms several strong methods, from MCP to Bayesian uncertainty, as well as recent approaches specifically designed for failure prediction.</p>
+<p align="justify">Object detectors trained with weak annotations are affordable alternatives to fully-supervised counterparts. However, there is still a significant performance gap between them. We propose to narrow this gap by fine-tuning a base pre-trained weakly-supervised detector with a few fully-annotated samples automatically selected from the training set using ``box-in-box'' (BiB), a novel active learning strategy designed specifically to address the well-documented failure modes of weakly-supervised detectors. Experiments on the VOC07 and COCO benchmarks show that BiB outperforms other active learning techniques and significantly improves the base weakly-supervised detector's performance with only a few fully-annotated images per class. BiB reaches 97% of the performance of fully-supervised Fast RCNN with only 10% of fully-annotated images on VOC07. On COCO, using on average 10 fully-annotated images per class, or equivalently 1% of the training set, BiB also reduces the performance gap (in AP) between the weakly-supervised detector and the fully-supervised Fast RCNN by over 70%, showing a good trade-off between performance and data efficiency.</p>
 
 <hr />
 
 <h2 align="center">BibTeX</h2>
 <left>
   <pre class="bibtex-box">
-@incollection{NIPS2019_8556,
-  title = {Addressing Failure Prediction by Learning Model Confidence},
-  author = {Corbi\`{e}re, Charles and THOME, Nicolas and Bar-Hen, Avner and Cord, Matthieu and \'{e}rez, Patrick},
-  booktitle = {Advances in Neural Information Processing Systems 32},
-  pages = {2902--2913},
-  year = {2019},
-}</pre>
+  @inproceedings{vo2022active,
+  title={Active Learning Strategies for Weakly-Supervised Object Detection},
+  author={Vo, Huy V and Sim{\'e}oni, Oriane and Gidaris, Spyros and Bursuc, Andrei and P{\'e}rez, Patrick and Ponce, Jean},
+  booktitle={ECCV},
+  year={2022}
+}
+}
+  </pre>
 </left>
 
 <p><br /></p>
