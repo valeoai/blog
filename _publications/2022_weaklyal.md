@@ -65,9 +65,7 @@ permalink: /publications/bib/
   author={Vo, Huy V and Sim{\'e}oni, Oriane and Gidaris, Spyros and Bursuc, Andrei and P{\'e}rez, Patrick and Ponce, Jean},
   booktitle={ECCV},
   year={2022}
-}
-}
-  </pre>
+}</pre>
 </left>
 
 <br>
