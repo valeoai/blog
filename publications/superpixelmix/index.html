@@ -3,20 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>PCAM: Product of Cross-Attention Matrices for Rigid Registration of Point Clouds | valeo.ai blog</title>
+<title>Robust Semantic Segmentation with Superpixel-Mix | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="PCAM: Product of Cross-Attention Matrices for Rigid Registration of Point Clouds" />
+<meta property="og:title" content="Robust Semantic Segmentation with Superpixel-Mix" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="PCAM: Product of Cross-Attention Matrices for Rigid Registration of Point Clouds Anh-Quan Cao &nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Alexandre Boulch &nbsp;&nbsp; Renaud Marlet" />
-<meta property="og:description" content="PCAM: Product of Cross-Attention Matrices for Rigid Registration of Point Clouds Anh-Quan Cao &nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Alexandre Boulch &nbsp;&nbsp; Renaud Marlet" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/pcam/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/pcam/" />
+<meta name="description" content="Robust Semantic Segmentation with Superpixel-Mix Gianni Franchi&nbsp;&nbsp; Nacim Belkhir&nbsp;&nbsp; Mail Lan Ha&nbsp;&nbsp; Yufei Hu &nbsp;&nbsp;Andrei Bursuc&nbsp;&nbsp; Volker Blanz&nbsp;&nbsp; Angela Yao" />
+<meta property="og:description" content="Robust Semantic Segmentation with Superpixel-Mix Gianni Franchi&nbsp;&nbsp; Nacim Belkhir&nbsp;&nbsp; Mail Lan Ha&nbsp;&nbsp; Yufei Hu &nbsp;&nbsp;Andrei Bursuc&nbsp;&nbsp; Volker Blanz&nbsp;&nbsp; Angela Yao" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/superpixelmix/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/superpixelmix/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/pcam/pcam.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2021_superpixelmix/superpixelmix_teaser.jpg" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-10-20T08:51:35-05:00" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/pcam/"},"description":"PCAM: Product of Cross-Attention Matrices for Rigid Registration of Point Clouds Anh-Quan Cao &nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Alexandre Boulch &nbsp;&nbsp; Renaud Marlet","@type":"BlogPosting","url":"https://valeoai.github.io/blog/publications/pcam/","dateModified":"2022-10-20T08:51:35-05:00","datePublished":"2022-10-20T08:51:35-05:00","headline":"PCAM: Product of Cross-Attention Matrices for Rigid Registration of Point Clouds","image":"https://valeoai.github.io/blog/images/publications/pcam/pcam.png","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/superpixelmix/"},"description":"Robust Semantic Segmentation with Superpixel-Mix Gianni Franchi&nbsp;&nbsp; Nacim Belkhir&nbsp;&nbsp; Mail Lan Ha&nbsp;&nbsp; Yufei Hu &nbsp;&nbsp;Andrei Bursuc&nbsp;&nbsp; Volker Blanz&nbsp;&nbsp; Angela Yao","@type":"BlogPosting","url":"https://valeoai.github.io/blog/publications/superpixelmix/","dateModified":"2022-10-20T08:51:35-05:00","datePublished":"2022-10-20T08:51:35-05:00","headline":"Robust Semantic Segmentation with Superpixel-Mix","image":"https://valeoai.github.io/blog/images/publications/2021_superpixelmix/superpixelmix_teaser.jpg","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai blog" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -25,20 +25,20 @@
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-179942144-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
 <link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>PCAM: Product of Cross-Attention Matrices for Rigid Registration of Point Clouds | valeo.ai blog</title>
+<title>Robust Semantic Segmentation with Superpixel-Mix | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="PCAM: Product of Cross-Attention Matrices for Rigid Registration of Point Clouds" />
+<meta property="og:title" content="Robust Semantic Segmentation with Superpixel-Mix" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="PCAM: Product of Cross-Attention Matrices for Rigid Registration of Point Clouds Anh-Quan Cao &nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Alexandre Boulch &nbsp;&nbsp; Renaud Marlet" />
-<meta property="og:description" content="PCAM: Product of Cross-Attention Matrices for Rigid Registration of Point Clouds Anh-Quan Cao &nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Alexandre Boulch &nbsp;&nbsp; Renaud Marlet" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/pcam/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/pcam/" />
+<meta name="description" content="Robust Semantic Segmentation with Superpixel-Mix Gianni Franchi&nbsp;&nbsp; Nacim Belkhir&nbsp;&nbsp; Mail Lan Ha&nbsp;&nbsp; Yufei Hu &nbsp;&nbsp;Andrei Bursuc&nbsp;&nbsp; Volker Blanz&nbsp;&nbsp; Angela Yao" />
+<meta property="og:description" content="Robust Semantic Segmentation with Superpixel-Mix Gianni Franchi&nbsp;&nbsp; Nacim Belkhir&nbsp;&nbsp; Mail Lan Ha&nbsp;&nbsp; Yufei Hu &nbsp;&nbsp;Andrei Bursuc&nbsp;&nbsp; Volker Blanz&nbsp;&nbsp; Angela Yao" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/superpixelmix/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/superpixelmix/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/pcam/pcam.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2021_superpixelmix/superpixelmix_teaser.jpg" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-10-20T08:51:35-05:00" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/pcam/"},"description":"PCAM: Product of Cross-Attention Matrices for Rigid Registration of Point Clouds Anh-Quan Cao &nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Alexandre Boulch &nbsp;&nbsp; Renaud Marlet","@type":"BlogPosting","url":"https://valeoai.github.io/blog/publications/pcam/","dateModified":"2022-10-20T08:51:35-05:00","datePublished":"2022-10-20T08:51:35-05:00","headline":"PCAM: Product of Cross-Attention Matrices for Rigid Registration of Point Clouds","image":"https://valeoai.github.io/blog/images/publications/pcam/pcam.png","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/superpixelmix/"},"description":"Robust Semantic Segmentation with Superpixel-Mix Gianni Franchi&nbsp;&nbsp; Nacim Belkhir&nbsp;&nbsp; Mail Lan Ha&nbsp;&nbsp; Yufei Hu &nbsp;&nbsp;Andrei Bursuc&nbsp;&nbsp; Volker Blanz&nbsp;&nbsp; Angela Yao","@type":"BlogPosting","url":"https://valeoai.github.io/blog/publications/superpixelmix/","dateModified":"2022-10-20T08:51:35-05:00","datePublished":"2022-10-20T08:51:35-05:00","headline":"Robust Semantic Segmentation with Superpixel-Mix","image":"https://valeoai.github.io/blog/images/publications/2021_superpixelmix/superpixelmix_teaser.jpg","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -170,21 +170,21 @@ p {
     }
 </style>
 
-<h1 align="center"> PCAM: Product of Cross-Attention Matrices for Rigid Registration of Point Clouds </h1>
+<h1 align="center"> Robust Semantic Segmentation with Superpixel-Mix </h1>
 <!-- Simple call of authors -->
-<!-- <h3 align="center"> Anh-Quan Cao, Gilles Puy, Alexandre Boulch, and Renaud Marlet </h3> -->
+<!-- <h3 align="center"> Gianni Franchi, Nacim Belkhir, Mai Lan Ha, Yufei Hu, Andrei Bursuc, Volker Blanz, Angela Yao </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center"> <a href="https://anhquancao.github.io">Anh-Quan Cao</a> &nbsp;&nbsp; <a href="https://sites.google.com/site/puygilles/home">Gilles Puy</a> &nbsp;&nbsp; <a href="https://www.boulch.eu/">Alexandre Boulch</a> &nbsp;&nbsp; <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a></h3>
+<h3 align="center"> Gianni Franchi&nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=As-piMYAAAAJ&amp;hl=en">Nacim Belkhir</a>&nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=pLVngowAAAAJ&amp;hl=en">Mail Lan Ha</a>&nbsp;&nbsp;  Yufei Hu &nbsp;&nbsp;<a href="https://abursuc.github.io/">Andrei Bursuc</a>&nbsp;&nbsp; <a href="http://www.grk1564.uni-siegen.de/en/blanz-volker">Volker Blanz</a>&nbsp;&nbsp; <a href="https://www.comp.nus.edu.sg/~ayao/">Angela Yao</a></h3>
 
-<h3 align="center"> ICCV 2021 </h3>
+<h3 align="center"> BMVC 2021 </h3>
 
 <div align="center">
   <p>
     
-    <a href="https://arxiv.org/abs/2110.01269"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
+    <a href="https://arxiv.org/abs/2108.00968"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
     
     
-    <a href="https://github.com/valeoai/PCAM"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
+    <a href="https://github.com/giannifranchi/deeplabv3-superpixelmix"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
     
     
     
@@ -193,24 +193,24 @@ p {
 </div>
 
 <div class="publication-teaser">
-    <img src="../../images/publications/pcam/pcam.png" alt="project teaser" />
+    <img src="../../images/publications/2021_superpixelmix/superpixelmix_teaser.jpg" alt="project teaser" />
 </div>
 
 <hr />
 
 <h2 align="center"> Abstract</h2>
 
-<p align="justify">Rigid registration of point clouds with partial overlaps is a longstanding problem usually solved in two steps: (a) finding correspondences between the point clouds; (b) filtering these correspondences to keep only the most reliable ones to estimate the transformation. Recently, several deep nets have been proposed to solve these steps jointly. We built upon these works and propose PCAM: a neural network whose key element is a pointwise product of cross-attention matrices that permits to mix both low-level geometric and high-level contextual information to find point correspondences. These cross-attention matrices also permits the exchange of context information between the point clouds, at each layer, allowing the network construct better matching features within the overlapping regions. The experiments show that PCAM achieves state-of-the-art results among methods which, like us, solve steps (a) and (b) jointly via deepnets.</p>
+<p align="justify">Along with predictive performance and runtime speed, reliability is a key requirement for real-world semantic segmentation. Reliability encompasses robustness, predictive uncertainty and reduced bias. To improve reliability, we introduce Superpixel-mix, a new superpixel-based data augmentation method with teacher-student consistency training. Unlike other mixing-based augmentation techniques, mixing superpixels between images is aware of object boundaries, while yielding consistent gains in segmentation accuracy. Our proposed technique achieves state-of-the-art results in semi-supervised semantic segmentation on the Cityscapes dataset. Moreover, Superpixel-mix improves the reliability of semantic segmentation by reducing network uncertainty and bias, as confirmed by competitive results under strong distributions shift (adverse weather, image corruptions) and when facing out-of-distribution data.</p>
 
-<hr />
+<p><br /></p>
 
 <h2 align="center">BibTeX</h2>
 <left>
   <pre class="bibtex-box">
-@inproceedings{cao21pcam,
-  title={PCAM: Product of Cross-Attention Matrices for Rigid Registration of Point Clouds},
-  author={Cao, Anh-Quan and Puy, Gilles and Boulch, Alexandre and Marlet, Renaud},
-  booktitle={International Conference on Computer Vision},
+@inproceedings{franchi2021robust,
+  title={Robust Semantic Segmentation with Superpixel-Mix},
+  author={Franchi, Gianni and Belkhir, Nacim and Ha, Mai Lan and Hu, Yufei and Bursuc, Andrei and Blanz, Volker and Yao, Angela},
+  booktitle={BMVC},
   year={2021}
 }</pre>
 </left>
