@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: "TRADI: Tracking deep neural network weight distributions"
+title: "TRADI: Tracking deep neural network weight distributions for uncertainty estimation"
 image: images/publications/tradi/tradi_teaser.jpg
 hide: false
 category: [reliability]
@@ -9,7 +9,7 @@ venue: ECCV
 venue_long: European Conference on Computer Vision (ECCV)
 year: 2020
 month: 8
-code_url:
+code_url: https://github.com/giannifranchi/TRADI_Tracking_DNN_weights
 paper_url: https://arxiv.org/abs/1912.11316
 blog_url:
 slides_url:
@@ -87,7 +87,7 @@ on input and confidence maps
 <left>
   <pre class="bibtex-box">
 @article{franchi2019tradi,
-  title={TRADI: Tracking deep neural network weight distributions},
+  title={TRADI: Tracking deep neural network weight distributions for uncertainty estimation},
   author={Franchi, Gianni and Bursuc, Andrei and Aldea, Emanuel and Dubuisson, S{\'e}verine and Bloch, Isabelle},
   journal={arXiv preprint arXiv:1912.11316},
   year={2019}
