@@ -3,20 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Diverse Probabilistic Trajectory Forecasting with Admissibility Constraints | valeo.ai blog</title>
+<title>LiDARTouch: Monocular metric depth estimation with a few-beam LiDAR | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Diverse Probabilistic Trajectory Forecasting with Admissibility Constraints" />
+<meta property="og:title" content="LiDARTouch: Monocular metric depth estimation with a few-beam LiDAR" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Diverse Probabilistic Trajectory Forecasting with Admissibility Constraints Laura Calem &nbsp;&nbsp; Hedi Ben-Younes &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Nicolas Thome" />
-<meta property="og:description" content="Diverse Probabilistic Trajectory Forecasting with Admissibility Constraints Laura Calem &nbsp;&nbsp; Hedi Ben-Younes &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Nicolas Thome" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/diva/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/diva/" />
+<meta name="description" content="LiDARTouch: Monocular metric depth estimation with a few-beam LiDAR Florent Bartoccioni &nbsp;&nbsp; Éloi Zablocki &nbsp;&nbsp; Andrei Bursuc &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Matthieu Cord &nbsp;&nbsp; Karteek Alahari" />
+<meta property="og:description" content="LiDARTouch: Monocular metric depth estimation with a few-beam LiDAR Florent Bartoccioni &nbsp;&nbsp; Éloi Zablocki &nbsp;&nbsp; Andrei Bursuc &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Matthieu Cord &nbsp;&nbsp; Karteek Alahari" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/lidartouch/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/lidartouch/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2022_diva/diva.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2022_lidartouch/lidartouch.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-12-09T03:01:23-06:00" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/diva/"},"description":"Diverse Probabilistic Trajectory Forecasting with Admissibility Constraints Laura Calem &nbsp;&nbsp; Hedi Ben-Younes &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Nicolas Thome","@type":"BlogPosting","url":"https://valeoai.github.io/blog/publications/diva/","headline":"Diverse Probabilistic Trajectory Forecasting with Admissibility Constraints","dateModified":"2022-12-09T03:01:23-06:00","datePublished":"2022-12-09T03:01:23-06:00","image":"https://valeoai.github.io/blog/images/publications/2022_diva/diva.png","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/lidartouch/"},"description":"LiDARTouch: Monocular metric depth estimation with a few-beam LiDAR Florent Bartoccioni &nbsp;&nbsp; Éloi Zablocki &nbsp;&nbsp; Andrei Bursuc &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Matthieu Cord &nbsp;&nbsp; Karteek Alahari","@type":"BlogPosting","url":"https://valeoai.github.io/blog/publications/lidartouch/","headline":"LiDARTouch: Monocular metric depth estimation with a few-beam LiDAR","dateModified":"2022-12-09T03:01:23-06:00","datePublished":"2022-12-09T03:01:23-06:00","image":"https://valeoai.github.io/blog/images/publications/2022_lidartouch/lidartouch.png","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai blog" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -25,20 +25,20 @@
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-179942144-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
 <link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Diverse Probabilistic Trajectory Forecasting with Admissibility Constraints | valeo.ai blog</title>
+<title>LiDARTouch: Monocular metric depth estimation with a few-beam LiDAR | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Diverse Probabilistic Trajectory Forecasting with Admissibility Constraints" />
+<meta property="og:title" content="LiDARTouch: Monocular metric depth estimation with a few-beam LiDAR" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Diverse Probabilistic Trajectory Forecasting with Admissibility Constraints Laura Calem &nbsp;&nbsp; Hedi Ben-Younes &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Nicolas Thome" />
-<meta property="og:description" content="Diverse Probabilistic Trajectory Forecasting with Admissibility Constraints Laura Calem &nbsp;&nbsp; Hedi Ben-Younes &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Nicolas Thome" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/diva/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/diva/" />
+<meta name="description" content="LiDARTouch: Monocular metric depth estimation with a few-beam LiDAR Florent Bartoccioni &nbsp;&nbsp; Éloi Zablocki &nbsp;&nbsp; Andrei Bursuc &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Matthieu Cord &nbsp;&nbsp; Karteek Alahari" />
+<meta property="og:description" content="LiDARTouch: Monocular metric depth estimation with a few-beam LiDAR Florent Bartoccioni &nbsp;&nbsp; Éloi Zablocki &nbsp;&nbsp; Andrei Bursuc &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Matthieu Cord &nbsp;&nbsp; Karteek Alahari" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/lidartouch/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/lidartouch/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2022_diva/diva.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2022_lidartouch/lidartouch.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-12-09T03:01:23-06:00" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/diva/"},"description":"Diverse Probabilistic Trajectory Forecasting with Admissibility Constraints Laura Calem &nbsp;&nbsp; Hedi Ben-Younes &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Nicolas Thome","@type":"BlogPosting","url":"https://valeoai.github.io/blog/publications/diva/","headline":"Diverse Probabilistic Trajectory Forecasting with Admissibility Constraints","dateModified":"2022-12-09T03:01:23-06:00","datePublished":"2022-12-09T03:01:23-06:00","image":"https://valeoai.github.io/blog/images/publications/2022_diva/diva.png","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/lidartouch/"},"description":"LiDARTouch: Monocular metric depth estimation with a few-beam LiDAR Florent Bartoccioni &nbsp;&nbsp; Éloi Zablocki &nbsp;&nbsp; Andrei Bursuc &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Matthieu Cord &nbsp;&nbsp; Karteek Alahari","@type":"BlogPosting","url":"https://valeoai.github.io/blog/publications/lidartouch/","headline":"LiDARTouch: Monocular metric depth estimation with a few-beam LiDAR","dateModified":"2022-12-09T03:01:23-06:00","datePublished":"2022-12-09T03:01:23-06:00","image":"https://valeoai.github.io/blog/images/publications/2022_lidartouch/lidartouch.png","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -170,17 +170,21 @@ p {
     }
 </style>
 
-<h1 align="center"> Diverse Probabilistic Trajectory Forecasting with Admissibility Constraints </h1>
+<h1 align="center"> LiDARTouch: Monocular metric depth estimation with a few-beam LiDAR </h1>
 <!-- Simple call of authors -->
-<!-- <h3 align="center"> Laura Calem, Hedi Ben-Younes, Patrick Pérez, Nicolas Thome </h3> -->
+<!-- <h3 align="center"> Florent Bartoccioni, Éloi Zablocki, Patrick Pérez, Matthieu Cord, Karteek Alahari </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center"> <a href="https://lcalem.github.io/">Laura Calem</a> &nbsp;&nbsp; <a href="https://scholar.google.fr/citations?user=IFLcfvUAAAAJ&amp;hl=fr&amp;oi=ao">Hedi Ben-Younes</a> &nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a> &nbsp;&nbsp; <a href="http://cedric.cnam.fr/~thomen/">Nicolas Thome</a></h3>
+<h3 align="center"><a>Florent Bartoccioni</a> &nbsp;&nbsp; <a href="https://scholar.google.fr/citations?user=dOkbUmEAAAAJ">Éloi Zablocki</a> &nbsp;&nbsp; <a href="https://abursuc.github.io/">Andrei Bursuc</a> &nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a> &nbsp;&nbsp; <a href="http://webia.lip6.fr/~cord/">Matthieu Cord</a> &nbsp;&nbsp; <a href="https://lear.inrialpes.fr/people/alahari/">Karteek Alahari</a></h3>
 
-<h3 align="center"> ICPR 2022 </h3>
+<h3 align="center"> CVIU 2022 </h3>
 
 <div align="center">
   <p>
     
+    <a href="https://arxiv.org/abs/2109.03569"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
+    
+    
+    <a href="https://github.com/F-Barto/LiDARTouch"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
     
     
     
@@ -189,35 +193,32 @@ p {
 </div>
 
 <div class="publication-teaser">
-    <img src="../../images/publications/2022_diva/diva.png" alt="project teaser" />
+    <img src="../../images/publications/2022_lidartouch/lidartouch.png" alt="project teaser" />
 </div>
 
 <hr />
 
 <h2 align="center"> Abstract</h2>
 
-<p align="justify">Predicting multiple trajectories for road users is important for driving automation systems: ego-vehicle motion planning indeed requires a clear view of the possible motions of the surrounding agents.
-  However, the generative models used for multiple-trajectory forecasting suffer from a lack of diversity in their proposals. 
-  To avoid this form of collapse, we propose a novel method for structured prediction of diverse trajectories. 
-  To this end, we complement an underlying pretrained generative model with a diversity component, based on a determinantal point process (DPP). 
-  We balance and structure this diversity with the inclusion of knowledge-based quality constraints, independent from the underlying generative model.
-  We combine these two novel components with a gating operation, ensuring that the predictions are both diverse and within the drivable area.
-  We demonstrate on the nuScenes driving dataset the relevance of our compound approach, which yields significant improvements in the diversity and the quality of the generated trajectories. </p>
+<p align="justify">
+Vision-based depth estimation is a key feature in autonomous systems, which often relies on a single camera or several independent ones. In such a monocular setup, dense depth is obtained with either additional input from one or several expensive LiDARs, e.g., with 64 beams, or camera-only methods, which suffer from scale-ambiguity and infinite-depth problems. In this paper, we propose a new alternative of densely estimating metric depth by combining a monocular camera with a light-weight LiDAR, e.g., with 4 beams, typical of today's automotive-grade mass-produced laser scanners. Inspired by recent self-supervised methods, we introduce a novel framework, called LiDARTouch, to estimate dense depth maps from monocular images with the help of touches of LiDAR, i.e., without the need for dense ground-truth depth. In our setup, the minimal LiDAR input contributes on three different levels: as an additional model's input, in a self-supervised LiDAR reconstruction objective function, and to estimate changes of pose (a key component of self-supervised depth estimation architectures). Our LiDARTouch framework achieves new state of the art in self-supervised depth estimation on the KITTI dataset, thus supporting our choices of integrating the very sparse LiDAR signal with other visual features. Moreover, we show that the use of a few-beam LiDAR alleviates scale ambiguity and infinite-depth issues that camera-only methods suffer from. We also demonstrate that methods from the fully-supervised depth-completion literature can be adapted to a self-supervised regime with a minimal LiDAR signal.</p>
 
 <hr />
 
 <h2 align="center">BibTeX</h2>
 <left>
   <pre class="bibtex-box">
-@inproceedings{calem22diva,
-  title={Diverse Probabilistic Trajectory Forecasting with Admissibility Constraints},
-  author={Laura Calem and
-               Hedi Ben{-}Younes and
+@article{bartoccioni2022lidartouch,
+  author    = {Florent Bartoccioni and
+               {\'{E}}loi Zablocki and
                Patrick P{\'{e}}rez and
-               Nicolas Thome},,
-  booktitle={International Conference on Pattern Recognition (ICPR)}
-  year={2022}
-}</pre>
+               Matthieu Cord and
+               Karteek Alahari},
+  title     = {LiDARTouch: Monocular metric depth estimation with a few-beam LiDAR},
+  journal   = {Comput. Vis. Image Underst.},
+  year      = {2022}
+}
+</pre>
 </left>
 
 <p><br /></p>
