@@ -6,7 +6,7 @@ hide: false
 category: [multi-sensor, 3d-reconstruction, 3d-perception, driving]
 authors: Florent Bartoccioni, Éloi Zablocki, Patrick Pérez, Matthieu Cord, Karteek Alahari
 venue: CVIU
-venue_long: Computer Vision and Image Understanding
+venue_long: Computer Vision and Image Understanding (CVIU)
 year: 2022
 month: 12
 code_url: https://github.com/F-Barto/LiDARTouch
@@ -21,7 +21,7 @@ permalink: /publications/lidartouch/
 <!-- Simple call of authors -->
 <!-- <h3 align="center"> {{page.authors}} </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center"><a>Florent Bartoccioni</a> &nbsp;&nbsp; <a href="https://scholar.google.fr/citations?user=dOkbUmEAAAAJ">Éloi Zablocki</a> &nbsp;&nbsp; <a href="https://abursuc.github.io/">Andrei Bursuc</a> &nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a> &nbsp;&nbsp; <a href="http://webia.lip6.fr/~cord/">Matthieu Cord</a> &nbsp;&nbsp; <a href="https://lear.inrialpes.fr/people/alahari/">Karteek Alahari</a></h3>
+<h3 align="center"><a>Florent Bartoccioni</a> &nbsp;&nbsp; <a href="https://scholar.google.fr/citations?user=dOkbUmEAAAAJ">Éloi Zablocki</a> &nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a> &nbsp;&nbsp; <a href="http://webia.lip6.fr/~cord/">Matthieu Cord</a> &nbsp;&nbsp; <a href="https://lear.inrialpes.fr/people/alahari/">Karteek Alahari</a></h3>
 
 
 <h3 align="center"> {{page.venue}} {{page.year}} </h3>
