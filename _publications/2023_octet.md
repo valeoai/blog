@@ -73,7 +73,7 @@ permalink: /publications/octet/
                Hedi Ben{-}Younes and
                Patrick P{\'{e}}rez and
                Matthieu Cord},
-  booktitle = {{IEEE} Conference on Computer Vision and Pattern Recognition, {CVPR}},
+  booktitle = {CVPR},
   year      = {2023}
 }
 </pre>

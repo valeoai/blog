@@ -71,7 +71,7 @@ permalink: /publications/found/
               Antonin Vobecky and
               {\'{E}}loi Zablocki and
               Patrick P\'erez},
-    booktitle = {{IEEE} Conference on Computer Vision and Pattern Recognition, {CVPR}},
+    booktitle = {CVPR},
     year      = {2023}
 }
   </pre>
