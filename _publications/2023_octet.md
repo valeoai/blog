@@ -65,7 +65,7 @@ permalink: /publications/octet/
 <h2  align="center">BibTeX</h2>
 <left>
   <pre class="bibtex-box">
-@inproceedings{octet2023,
+@inproceedings{zemni2023octet,
   title     = {OCTET: Object-aware Counterfactual Explanations},
   author    = {Mehdi Zemni and
                Micka{\"{e}}l Chen and
@@ -73,7 +73,7 @@ permalink: /publications/octet/
                Hedi Ben{-}Younes and
                Patrick P{\'{e}}rez and
                Matthieu Cord},
-  booktitle = {CVPR},
+  booktitle = {{IEEE} Conference on Computer Vision and Pattern Recognition, {CVPR}},
   year      = {2023}
 }
 </pre>

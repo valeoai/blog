@@ -63,7 +63,7 @@ permalink: /publications/found/
 <h2  align="center">BibTeX</h2>
 <left>
   <pre class="bibtex-box">
-@inproceedings{FOUND,
+@inproceedings{simeoni2023found,
     title = {Unsupervised Object Localization: Observing the Background to Discover Objects},
     author = {Oriane Sim\'eoni and
               Chlo\'e Sekkat and
@@ -71,7 +71,7 @@ permalink: /publications/found/
               Antonin Vobecky and
               {\'{E}}loi Zablocki and
               Patrick P\'erez},
-    booktitle = {CVPR},
+    booktitle = {{IEEE} Conference on Computer Vision and Pattern Recognition, {CVPR}},
     year      = {2023}
 }
   </pre>
