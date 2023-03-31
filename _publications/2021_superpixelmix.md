@@ -21,7 +21,7 @@ permalink: /publications/superpixelmix/
 <!-- Simple call of authors -->
 <!-- <h3 align="center"> {{page.authors}} </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center"> Gianni Franchi&nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=As-piMYAAAAJ&hl=en">Nacim Belkhir</a>&nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=pLVngowAAAAJ&hl=en">Mail Lan Ha</a>&nbsp;&nbsp;  Yufei Hu &nbsp;&nbsp;<a href="https://abursuc.github.io/">Andrei Bursuc</a>&nbsp;&nbsp; <a href="http://www.grk1564.uni-siegen.de/en/blanz-volker">Volker Blanz</a>&nbsp;&nbsp; <a href="https://www.comp.nus.edu.sg/~ayao/">Angela Yao</a></h3>
+<h3 align="center"> Gianni Franchi&nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=As-piMYAAAAJ&hl=en">Nacim Belkhir</a>&nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=pLVngowAAAAJ&hl=en">Mai Lan Ha</a>&nbsp;&nbsp;  Yufei Hu &nbsp;&nbsp;<a href="https://abursuc.github.io/">Andrei Bursuc</a>&nbsp;&nbsp; <a href="http://www.grk1564.uni-siegen.de/en/blanz-volker">Volker Blanz</a>&nbsp;&nbsp; <a href="https://www.comp.nus.edu.sg/~ayao/">Angela Yao</a></h3>
 
 
 
