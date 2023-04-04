@@ -21,7 +21,7 @@ permalink: /publications/tradi/
 <!-- Simple call of authors -->
 <!-- <h3 align="center"> {{page.authors}} </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center"> Gianni Franchi&nbsp;&nbsp; <a href="https://abursuc.github.io/">Andrei Bursuc</a>&nbsp;&nbsp; <a href="http://hebergement.u-psud.fr/emi/">Emanuel Aldea</a>&nbsp;&nbsp; Severine Dubuisson&nbsp;&nbsp; <a href="https://perso.telecom-paristech.fr/bloch/">Isabelle Bloch</a> </h3>
+<h3 align="center"> <a href="https://scholar.google.fr/citations?user=ZCW6-psAAAAJ&hl=en">Gianni Franchi</a>&nbsp;&nbsp; <a href="https://abursuc.github.io/">Andrei Bursuc</a>&nbsp;&nbsp; <a href="http://hebergement.u-psud.fr/emi/">Emanuel Aldea</a>&nbsp;&nbsp; Severine Dubuisson&nbsp;&nbsp; <a href="https://perso.telecom-paristech.fr/bloch/">Isabelle Bloch</a> </h3>
 
 
 <h3 align="center"> {{page.venue}} {{page.year}} </h3>
