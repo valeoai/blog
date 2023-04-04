@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Packed Ensembles for efficient uncertainty estimation" 
-image: images/publications/2023_packed_ensembles/pe_outline.png
+image: "images/publications/2023_packed_ensembles/pe-outline.png"
 hide: false
 category:  [reliability]
 authors: Olivier Laurent, Adrien Lafage, Enzo Tartaglione, Geoffrey Daniel, Jean-Marc Martinez, Andrei Bursuc, and Gianni Franchi
