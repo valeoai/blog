@@ -6,7 +6,7 @@ hide: false
 category: [self-supervised-learning]
 authors: Léon Zheng, Gilles Puy, Elisa Riccietti, Patrick Pérez, Rémi Gribonval
 venue: ICLR
-venue_long: International Conference on Representation Learning (ICLR)
+venue_long: International Conference on Learning Representations (ICLR)
 year: 2023
 month: 5
 code_url: https://github.com/valeoai/sfrik
