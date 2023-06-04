@@ -60,6 +60,14 @@ permalink: /publications/steex/
 
 <hr>
 
+<h2 align="center"> Video</h2>
+
+<p align="center">
+  <iframe width="660" height="395" src="https://www.youtube.com/embed/79SMlEtscuY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="center"></iframe>
+</p>
+
+<br>
+<hr>
 
 
 <h2  align="center">BibTeX</h2>
