@@ -95,7 +95,7 @@ In summary, our work offers the following contributions:
 - Demonstrating the utilization of pre-trained ViTs on large-scale natural image datasets for LiDAR point cloud segmentation.
 
 
-We believe that this finding is highly intriguing. The RangeViT approach can leverage off-the-shelf pre-trained ViT models, enabling direct benefits from ongoing and future advances in training ViT models with natural RGB images —- a rapidly growing research field.
+We believe that this finding is highly intriguing. The RangeViT approach can leverage off-the-shelf pre-trained ViT models, enabling direct benefits from ongoing and future advances in training ViT models with natural RGB images - a rapidly growing research field.
 
 
 
