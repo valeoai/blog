@@ -32,8 +32,10 @@ Nowadays, deep vision models are being widely deployed in safety-critical applic
 
 <hr>
 
+
+
 ## ALSO: Automotive Lidar Self-supervision by Occupancy estimation 
-#### Authors: <a href="https://www.boulch.eu/">Alexandre Boulch</a>, Corentin Sautier,<a href="https://scholar.google.com/citations?user=xQcKnXkAAAAJ&hl=en">Björn Michele</a>, <a href="https://sites.google.com/site/puygilles/home">Gilles Puy</a>, <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a>
+#### Authors: <a href="https://www.boulch.eu/">Alexandre Boulch</a>, <a href="https://scholar.google.com/citations?user=xYDkHEsAAAAJ">Corentin Sautier</a>, <a href="https://scholar.google.com/citations?user=xQcKnXkAAAAJ&hl=en">Björn Michele</a>, <a href="https://sites.google.com/site/puygilles/home">Gilles Puy</a>, <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a>
 
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2212.05867">Paper</a>] &nbsp;&nbsp; [<a href="https://github.com/valeoai/ALSO">Code</a>] &nbsp;&nbsp; [<a href="https://www.youtube.com/watch?v=GGIBKlMvphw">Video</a>]  &nbsp;&nbsp; [<a href="https://valeoai.github.io/blog/publications/also/">Project page</a>]</h4>
@@ -49,7 +51,7 @@ We propose a new self-supervised method for pre-training the backbone of deep pe
 <hr>
 
 ## Unsupervised Object Localization: Observing the Background to Discover Objects
-#### Authors: <a href="https://osimeoni.github.io/">Oriane Siméoni</a>, <a href="https://github.com/chloeskt">Chloé Sekkat</a>, <a href="https://sites.google.com/site/puygilles/home">Gilles Puy</a>,<a href="https://vobecant.github.io/">Antonin Vobecky</a>, <a href="https://scholar.google.com/citations?user=dOkbUmEAAAAJ&hl=fr">Éloi Zablocki</a>, <a href="https://ptrckprz.github.io/">Patrick Pérez</a>
+#### Authors: <a href="https://osimeoni.github.io/">Oriane Siméoni</a>, <a href="https://github.com/chloeskt">Chloé Sekkat</a>, <a href="https://sites.google.com/site/puygilles/home">Gilles Puy</a>, <a href="https://vobecant.github.io/">Antonin Vobecky</a>, <a href="https://scholar.google.com/citations?user=dOkbUmEAAAAJ&hl=fr">Éloi Zablocki</a>, <a href="https://ptrckprz.github.io/">Patrick Pérez</a>
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2212.07834">Paper</a>] &nbsp;&nbsp; [<a href="https://github.com/valeoai/FOUND">Code</a>] &nbsp;&nbsp; [<a href="https://youtu.be/jfYQfFcrJBE">Video</a>]  &nbsp;&nbsp; [<a href="https://valeoai.github.io/blog/publications/found">Project page</a>]</h4>
 
