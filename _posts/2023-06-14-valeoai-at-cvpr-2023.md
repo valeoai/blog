@@ -33,7 +33,7 @@ Nowadays, deep vision models are being widely deployed in safety-critical applic
 <hr>
 
 ## ALSO: Automotive Lidar Self-supervision by Occupancy estimation 
-#### Authors: <a href="https://www.boulch.eu/">Alexandre Boulch</a>, Corentin Sautier,<a href="https://scholar.google.com/citations?user=xQcKnXkAAAAJ&hl=en">Björn Michele</a>, <a href="https://sites.google.com/site/puygilles/home">Gilles Puy</a>,<a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a>
+#### Authors: <a href="https://www.boulch.eu/">Alexandre Boulch</a>, Corentin Sautier,<a href="https://scholar.google.com/citations?user=xQcKnXkAAAAJ&hl=en">Björn Michele</a>, <a href="https://sites.google.com/site/puygilles/home">Gilles Puy</a>, <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a>
 
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2212.05867">Paper</a>] &nbsp;&nbsp; [<a href="https://github.com/valeoai/ALSO">Code</a>] &nbsp;&nbsp; [<a href="https://www.youtube.com/watch?v=GGIBKlMvphw">Video</a>]  &nbsp;&nbsp; [<a href="https://valeoai.github.io/blog/publications/also/">Project page</a>]</h4>
