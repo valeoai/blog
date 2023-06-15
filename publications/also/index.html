@@ -14,12 +14,12 @@
 <meta property="og:site_name" content="valeo.ai blog" />
 <meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2023_also/also_overview.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-06-14T11:01:11-05:00" />
+<meta property="article:published_time" content="2023-06-15T09:18:40-05:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/2023_also/also_overview.png" />
 <meta property="twitter:title" content="ALSO: Automotive Lidar Self-supervision by Occupancy estimation" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-06-14T11:01:11-05:00","datePublished":"2023-06-14T11:01:11-05:00","description":"ALSO: Automotive Lidar Self-supervision by Occupancy estimation Alexandre Boulch&nbsp;&nbsp; Corentin Sautier&nbsp;&nbsp; Björn Michele&nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Renaud Marlet","headline":"ALSO: Automotive Lidar Self-supervision by Occupancy estimation","image":"https://valeoai.github.io/blog/images/publications/2023_also/also_overview.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/also/"},"url":"https://valeoai.github.io/blog/publications/also/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-06-15T09:18:40-05:00","datePublished":"2023-06-15T09:18:40-05:00","description":"ALSO: Automotive Lidar Self-supervision by Occupancy estimation Alexandre Boulch&nbsp;&nbsp; Corentin Sautier&nbsp;&nbsp; Björn Michele&nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Renaud Marlet","headline":"ALSO: Automotive Lidar Self-supervision by Occupancy estimation","image":"https://valeoai.github.io/blog/images/publications/2023_also/also_overview.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/also/"},"url":"https://valeoai.github.io/blog/publications/also/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai blog" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -39,12 +39,12 @@
 <meta property="og:site_name" content="valeo.ai blog" />
 <meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2023_also/also_overview.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-06-14T11:01:11-05:00" />
+<meta property="article:published_time" content="2023-06-15T09:18:40-05:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/2023_also/also_overview.png" />
 <meta property="twitter:title" content="ALSO: Automotive Lidar Self-supervision by Occupancy estimation" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-06-14T11:01:11-05:00","datePublished":"2023-06-14T11:01:11-05:00","description":"ALSO: Automotive Lidar Self-supervision by Occupancy estimation Alexandre Boulch&nbsp;&nbsp; Corentin Sautier&nbsp;&nbsp; Björn Michele&nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Renaud Marlet","headline":"ALSO: Automotive Lidar Self-supervision by Occupancy estimation","image":"https://valeoai.github.io/blog/images/publications/2023_also/also_overview.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/also/"},"url":"https://valeoai.github.io/blog/publications/also/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-06-15T09:18:40-05:00","datePublished":"2023-06-15T09:18:40-05:00","description":"ALSO: Automotive Lidar Self-supervision by Occupancy estimation Alexandre Boulch&nbsp;&nbsp; Corentin Sautier&nbsp;&nbsp; Björn Michele&nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Renaud Marlet","headline":"ALSO: Automotive Lidar Self-supervision by Occupancy estimation","image":"https://valeoai.github.io/blog/images/publications/2023_also/also_overview.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/also/"},"url":"https://valeoai.github.io/blog/publications/also/"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -212,6 +212,16 @@ p {
 <h2 align="center"> Abstract</h2>
 
 <p align="justify">We propose a new self-supervised method for pre-training the backbone of deep perception models operating on point clouds. The core idea is to train the model on a pretext task which is the reconstruction of the surface on which the 3D points are sampled, and to use the underlying latent vectors as input to the perception head. The intuition is that if the network is able to reconstruct the scene surface, given only sparse input points, then it probably also captures some fragments of semantic information, that can be used to boost an actual perception task. This principle has a very simple formulation, which makes it both easy to implement and widely applicable to a large range of 3D sensors and deep networks performing semantic segmentation or object detection. In fact, it supports a single-stream pipeline, as opposed to most contrastive learning approaches, allowing training on limited resources. We conducted extensive experiments on various autonomous driving datasets, involving very different kinds of lidars, for both semantic segmentation and object detection. The results show the effectiveness of our method to learn useful representations without any annotation, compared to existing approaches.&lt;/a&gt;</p>
+
+<p><br /></p>
+
+<hr />
+
+<h2 align="center"> Video</h2>
+
+<p align="center">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/GGIBKlMvphw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" align="center"></iframe>
+</p>
 
 <p><br /></p>
 
