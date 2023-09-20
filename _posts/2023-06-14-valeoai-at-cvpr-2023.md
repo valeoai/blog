@@ -15,7 +15,7 @@ We outline four of our team papers below.
 
 
 ## OCTET: Object-aware Counterfactual Explanations
-#### Authors: Mehdi Zemni, <a href="https://scholar.google.com/citations?user=QnRpMJAAAAAJ&hl=fr&oi=sra">Mickaël Chen</a>, <a href="https://scholar.google.com/citations?user=dOkbUmEAAAAJ&hl=fr">Éloi Zablocki</a>, <a href="https://scholar.google.com/citations?hl=fr&user=IFLcfvUAAAAJ">Hédi Ben-Younes</a>, <a href="https://ptrckprz.github.io/">Patrick Pérez</a>, <a href="http://webia.lip6.fr/~cord/">Matthieu Cord</a>
+#### Authors: Mehdi Zemni, <a href="https://scholar.google.com/citations?user=QnRpMJAAAAAJ&hl=fr&oi=sra">Mickaël Chen</a>, <a href="https://scholar.google.com/citations?user=dOkbUmEAAAAJ&hl=fr">Éloi Zablocki</a>, <a href="https://scholar.google.com/citations?hl=fr&user=IFLcfvUAAAAJ">Hédi Ben-Younes</a>, <a href="https://ptrckprz.github.io/">Patrick Pérez</a>, <a href="https://cord.isir.upmc.fr/">Matthieu Cord</a>
 
 
 

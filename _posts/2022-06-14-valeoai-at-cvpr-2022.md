@@ -76,7 +76,7 @@ POCO also shows good generalization properties including the possibility of lear
 <hr>
 
 ## DyTox: Transformers for Continual Learning with DYnamic TOken eXpansion
-#### Authors: <a href="https://arthurdouillard.com/">Arthur Douillard</a>,  <a href="https://alexrame.github.io/">Alexandre Ramé</a>,  Guillaume Couairon, <a href="http://webia.lip6.fr/~cord/">Matthieu Cord</a>
+#### Authors: <a href="https://arthurdouillard.com/">Arthur Douillard</a>,  <a href="https://alexrame.github.io/">Alexandre Ramé</a>,  Guillaume Couairon, <a href="https://cord.isir.upmc.fr/">Matthieu Cord</a>
 
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2111.11326">Paper</a>] &nbsp;&nbsp; [<a href="https://github.com/arthurdouillard/dytox">Code</a>] </h4>
@@ -90,7 +90,7 @@ Deep network architectures struggle to continually learn new tasks without forge
 <hr>
 
 ## FlexIT: Towards Flexible Semantic Image Translation
-#### Authors: Guillaume Couairon, Asya Grechka, <a href="https://lear.inrialpes.fr/people/verbeek/">Jakob Verbeek</a>, <a href="https://scholar.google.fr/citations?user=Ysjk8kkAAAAJ&hl=en">Holger Schwenk</a>, <a href="http://webia.lip6.fr/~cord/">Matthieu Cord</a>
+#### Authors: Guillaume Couairon, Asya Grechka, <a href="https://lear.inrialpes.fr/people/verbeek/">Jakob Verbeek</a>, <a href="https://scholar.google.fr/citations?user=Ysjk8kkAAAAJ&hl=en">Holger Schwenk</a>, <a href="https://cord.isir.upmc.fr/">Matthieu Cord</a>
 
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2203.04705">Paper</a>] </h4>
@@ -107,7 +107,7 @@ Deep generative models, like GANs, have considerably improved the state of the a
 ## Raising context awareness in motion forecasting
 <p class="page-description"><a href="https://cvpr2022.wad.vision/">CVPR 2022 Workshop on Autonomous Driving</a></p>
 
-#### Authors: <a href="https://scholar.google.com/citations?hl=fr&user=IFLcfvUAAAAJ">Hédi Ben-Younes</a>, <a href="https://scholar.google.com/citations?user=dOkbUmEAAAAJ&hl=fr">Éloi Zablocki</a>, <a href="https://scholar.google.com/citations?user=QnRpMJAAAAAJ&hl=fr&oi=sra">Mickaël Chen</a>, <a href="https://ptrckprz.github.io/">Patrick Pérez</a>, <a href="http://webia.lip6.fr/~cord/">Matthieu Cord</a>
+#### Authors: <a href="https://scholar.google.com/citations?hl=fr&user=IFLcfvUAAAAJ">Hédi Ben-Younes</a>, <a href="https://scholar.google.com/citations?user=dOkbUmEAAAAJ&hl=fr">Éloi Zablocki</a>, <a href="https://scholar.google.com/citations?user=QnRpMJAAAAAJ&hl=fr&oi=sra">Mickaël Chen</a>, <a href="https://ptrckprz.github.io/">Patrick Pérez</a>, <a href="https://cord.isir.upmc.fr/">Matthieu Cord</a>
 
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2109.08048">Paper</a>]</h4>
@@ -125,7 +125,7 @@ Learning-based trajectory prediction models have encountered great success, with
 ## CSG0: Continual Urban Scene Generation with Zero Forgetting
 <p class="page-description"><a href="https://sites.google.com/view/clvision2022">CVPR 2022 Workshop on Continual Learning (CLVision)</a></p>
 
-#### Authors:  <a href="https://himalayajain.github.io/">Himalaya Jain</a>, <a href="https://tuanhungvu.github.io/">Tuan-Hung Vu</a>, <a href="https://ptrckprz.github.io/">Patrick Pérez</a>, <a href="http://webia.lip6.fr/~cord/">Matthieu Cord</a>
+#### Authors:  <a href="https://himalayajain.github.io/">Himalaya Jain</a>, <a href="https://tuanhungvu.github.io/">Tuan-Hung Vu</a>, <a href="https://ptrckprz.github.io/">Patrick Pérez</a>, <a href="https://cord.isir.upmc.fr/">Matthieu Cord</a>
 
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2112.03252">Paper</a>] &nbsp;&nbsp; [<a href=" https://valeoai.github.io/blog/publications/csg0/ 
@@ -148,7 +148,7 @@ To showcase the merit of our framework, we conduct intensive experiments on vari
 ## Multi-Head Distillation for Continual Unsupervised Domain Adaptation in Semantic Segmentation
 <p class="page-description"><a href="https://sites.google.com/view/clvision2022">CVPR 2022 Workshop on Continual Learning (CLVision)</a></p>
 
-#### Authors:  <a href="https://scholar.google.com/citations?user=jSwfIU4AAAAJ">Antoine Saporta</a>, <a href="https://arthurdouillard.com/">Arthur Douillard</a>, <a href="https://tuanhungvu.github.io/">Tuan-Hung Vu</a>, <a href="https://ptrckprz.github.io/">Patrick Pérez</a>, <a href="http://webia.lip6.fr/~cord/">Matthieu Cord</a>
+#### Authors:  <a href="https://scholar.google.com/citations?user=jSwfIU4AAAAJ">Antoine Saporta</a>, <a href="https://arthurdouillard.com/">Arthur Douillard</a>, <a href="https://tuanhungvu.github.io/">Tuan-Hung Vu</a>, <a href="https://ptrckprz.github.io/">Patrick Pérez</a>, <a href="https://cord.isir.upmc.fr/">Matthieu Cord</a>
 
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2204.11667">Paper</a>] &nbsp;&nbsp; [<a href="https://github.com/valeoai/MuHDi">Code</a>] &nbsp;&nbsp; [<a href="https://valeoai.github.io/blog/publications/muhdi/">Project page</a>]</h4>

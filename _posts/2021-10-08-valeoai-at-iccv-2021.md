@@ -55,7 +55,7 @@ ObsNet achieves reliable detection of failure and OOD objects without compromisi
 <hr>
 
 ## Multi-Target Adversarial Frameworks for Domain Adaptation in Semantic Segmentation
-#### Authors:  <a href="https://scholar.google.com/citations?user=jSwfIU4AAAAJ">Antoine Saporta</a>, <a href="https://tuanhungvu.github.io/">Tuan-Hung Vu</a>, <a href="http://webia.lip6.fr/~cord/">Matthieu Cord</a>, <a href="https://ptrckprz.github.io/">Patrick Pérez</a>
+#### Authors:  <a href="https://scholar.google.com/citations?user=jSwfIU4AAAAJ">Antoine Saporta</a>, <a href="https://tuanhungvu.github.io/">Tuan-Hung Vu</a>, <a href="https://cord.isir.upmc.fr/">Matthieu Cord</a>, <a href="https://ptrckprz.github.io/">Patrick Pérez</a>
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2108.06962">Paper</a>] &nbsp;&nbsp; [<a href="https://github.com/valeoai/MTAF">Code</a>] &nbsp;&nbsp; [<a href="https://valeoai.github.io/blog/publications/mtaf/">Project page</a>]</h4>
 
