@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Towards Motion Forecasting with Real-World Perception Inputs: Are End-to-End Approaches Competitive?" 
-image: images/publications/2023_e2e_forecasting/e2e_forecasting.png
+image: images/publications/2023_e2e_forecasting/e2e_forecasting.PNG
 hide: false
 category: [driving, motion forecasting]
 authors: Yihong Xu, Loïck Chambon, Éloi Zablocki, Mickaël Chen, Alexandre Alahi, Matthieu Cord, Patrick Pérez
