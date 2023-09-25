@@ -76,10 +76,10 @@ We are interested in the efficient annotation of sparse 3D point clouds (as capt
 
 
 ## eP-ALM: Efficient Perceptual Augmentation of Language Models 
-#### Authors: Guillaume Couairon, Marlène Careil, Matthieu Cord, Stéphane Lathuilière, Jakob Verbeek
+#### Authors: Mustafa Shukor, Corentin Dancette, Matthieu Cord
 
 
-<h4 align="center"> [<a href="https://arxiv.org/abs/2306.13754">Paper</a>] &nbsp;&nbsp; [<a href="https://github.com/mshukor/eP-ALM">Code</a>]  &nbsp;&nbsp; [<a href="https://mshukor.github.io/eP-ALM.github.io/">Project page</a>]</h4>
+<h4 align="center"> [<a href="https://arxiv.org/abs/2303.11403">Paper</a>] &nbsp;&nbsp; [<a href="https://github.com/mshukor/eP-ALM">Code</a>]  &nbsp;&nbsp; [<a href="https://mshukor.github.io/eP-ALM.github.io/">Project page</a>]</h4>
 
 eP-ALM aims to augment large language models (LLMs) with perception. While most existing approaches train a large number of parameters and rely on extensive multimodal pre-training, we investigate the minimal computational effort required to adapt unimodal models to multimodal tasks. We show that by freezing more than 99% of total parameters, training only one linear projection layer and prepending only one trainable token, our approach (dubbed eP-ALM) significantly outperforms other baselines on VQA and captioning for image, video and audio modalities.
 
@@ -96,7 +96,7 @@ eP-ALM aims to augment large language models (LLMs) with perception. While most 
 #### Authors: Guillaume Couairon, Marlène Careil, Matthieu Cord, Stéphane Lathuilière, Jakob Verbeek
 
 
-<h4 align="center"> [<a href="https://arxiv.org/abs/2306.13754v.org/abs/2306.13754">Paper</a>]</h4>
+<h4 align="center"> [<a href="https://arxiv.org/abs/2306.13754">Paper</a>]</h4>
 
 Large-scale text-to-image diffusion models have considerably improved the state of the art in generative image modeling, and provide an intuitive and powerful user interface to drive the image generation process. In this paper, we propose ZestGuide, a “zero-shot” segmentation guidance approach that can be integrated into pre-trained text-image diffusion models, and requires no additional training. It exploits the implicit segmentation maps that can be extracted from cross-attention layers, and uses them to align generation with input masks.
 
