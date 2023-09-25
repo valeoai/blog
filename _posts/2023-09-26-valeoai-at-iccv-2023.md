@@ -12,7 +12,7 @@ image: images/posts/2023_iccv/iccv_logo.svg
 The [IEEE / CVF International Conference on Computer Vision (ICCV)](https://iccv2023.thecvf.com/) is a landmark event for the increasingly large and diverse community of researchers in computer vision and machine learning. This year, ICCV takes place in Paris, home of the [valeo.ai](https://ptrckprz.github.io/valeoai/) team. From interns to senior researchers, the valeo.ai team will participate in mass at ICCV and will be looking forward to welcoming you and talking about the exciting progress and ideas in the field.
 
 At ICCV 2023 we will present 5 papers in the main conference and 3 in the workshops. We are also organizing 2 tutorials with 2 challenges ([BRAVO](https://valeoai.github.io/bravo/) and [UNCV](https://uncv2023.github.io/)) and a tutorial ([Many Faces of Reliability](https://abursuc.github.io/many-faces-reliability/)).
-Take a quick view of our papers in the conference and come meet us at the posters, at our booth or on the hallways.
+Take a quick view of our papers in the conference and come meet us at the posters, at our booth or in the hallway.
 
 
 
