@@ -85,7 +85,7 @@ eP-ALM aims to augment large language models (LLMs) with perception. While most 
 
 
 ![epalm_overview]({{ site.baseurl }}/images/posts/2023_iccv/ep-alm.png){:height="70%" width="70%"}
-<div class="caption"><b> Illustration of the adaptation mechanism in eP-ALM.</b> he perceptual input (image/video/audio) is fed to the perceptual encoder E (e.g., ViT) and the corresponding text to the LM (e.g., OPT), which then generates a text conditioned on the perceptual input. The multimodal interaction is done via the [CLS] tokens acting as Perceptual Prompt, and are extracted from the last layers of the encoder, then injected in the last layers of LM, after passing by the Linear Connection C. The previous [CLS] token is replaced by the new one coming from a deeper layer, keeping the number of tokens fixed. The first layers (grayed) of each model are kept intact without any modality interaction. We ease the adaptation with a Soft Prompt that is prepended to the input of LM.
+<div class="caption"><b>Illustration of the adaptation mechanism in eP-ALM.</b> The perceptual input (image/video/audio) is fed to the perceptual encoder E (e.g., ViT) and the corresponding text to the LM (e.g., OPT), which then generates a text conditioned on the perceptual input. The multimodal interaction is done via the [CLS] tokens acting as Perceptual Prompt, and are extracted from the last layers of the encoder, then injected in the last layers of LM, after passing by the Linear Connection C. The previous [CLS] token is replaced by the new one coming from a deeper layer, keeping the number of tokens fixed. The first layers (grayed) of each model are kept intact without any modality interaction. We ease the adaptation with a Soft Prompt that is prepended to the input of LM.
 </div>
 
 
@@ -101,14 +101,12 @@ eP-ALM aims to augment large language models (LLMs) with perception. While most 
 Large-scale text-to-image diffusion models have considerably improved the state of the art in generative image modeling, and provide an intuitive and powerful user interface to drive the image generation process. In this paper, we propose ZestGuide, a “zero-shot” segmentation guidance approach that can be integrated into pre-trained text-image diffusion models, and requires no additional training. It exploits the implicit segmentation maps that can be extracted from cross-attention layers, and uses them to align generation with input masks.
 
 
-
 ![zest_overview]({{ site.baseurl }}/images/posts/2023_iccv/zest-guide.png){:height="70%" width="70%"}
 <div class="caption">ZestGuide generates images conditioned on segmentation maps with corresponding free-form textual descriptions.
 </div>
 
 
 <hr>
-
 
 ## DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion
 <p class="page-description"><a href="https://web.northeastern.edu/smilelab/amfg2023/">ICCV Workshop on Analysis and Modeling of Faces and Gestures</a></p>
@@ -130,9 +128,8 @@ More precisely, we propose DiffHPE, a novel strategy to use diffusion models in 
 
 <hr>
 
-
 ## Challenges of Using Real-World Sensory Inputs for Motion Forecasting in Autonomous Driving
-<p class="page-description"><a href="https://sites.google.com/view/road-plus-plus">ROAD++: The Second Workshop & Challenge on Event Detection for Situation Awareness in Autonomous Driving</a></p>
+<p class="page-description"><a href="https://sites.google.com/view/road-plus-plus">ROAD++: The Second Workshop and Challenge on Event Detection for Situation Awareness in Autonomous Driving</a></p>
 
 #### Authors: Yihong Xu, Loïck Chambon, Éloi Zablocki, Mickaël Chen, Matthieu Cord, Patrick Pérez
 
@@ -143,7 +140,7 @@ Motion forecasting is crucial in enabling autonomous vehicles to anticipate the 
 
 
 
-![forecast_overview]({{ site.baseurl }}/images/posts/2023_iccv/e2e_forecasting.png){:height="100%" width="100%"}
-<div class="caption"> <b>Study overview.</b> We study the challenges of deploying motion forecasting models into the real world when only predicted perception inputs are available. We compare: (1) (top) ‘conventional methods’ (i.e., methods trained on curated input data) where (middle) we directly replace the curated inputs with real-world data, and (2) (bottom) ‘end-to-end methods’ that are trained and used with perception modules. In the real-world setting, evaluation is challenging as the past tracks are estimated with arbitrary identities, making it difficult to establish a direct correspondence to GT identities. Therefore, we propose a matching process (purple) to assign predictions to GT and thus evaluate forecasting performances. Moreover, we study in depth the impact changing from curated data (green) to real-world (orange) mapping, or detection and tracking errors to motion forecasting.
+![forecast_overview]({{ site.baseurl }}/images/posts/2023_iccv/e2e_forecasting.png){:height="90%" width="90%"}
+<div class="caption"><b>Study overview.</b> We study the challenges of deploying motion forecasting models into the real world when only predicted perception inputs are available. We compare: (1) (top) ‘conventional methods’ (i.e., methods trained on curated input data) where (middle) we directly replace the curated inputs with real-world data, and (2) (bottom) ‘end-to-end methods’ that are trained and used with perception modules. In the real-world setting, evaluation is challenging as the past tracks are estimated with arbitrary identities, making it difficult to establish a direct correspondence to GT identities. Therefore, we propose a matching process (purple) to assign predictions to GT and thus evaluate forecasting performances. Moreover, we study in depth the impact changing from curated data (green) to real-world (orange) mapping, or detection and tracking errors to motion forecasting.
 </div>
 
