@@ -112,7 +112,7 @@ Large-scale text-to-image diffusion models have considerably improved the state 
 
 
 ## DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion
-<p class="page-description"><a href="https://sites.google.com/view/hands2023/home">ICCV 2023 Workshop on Observing and Understanding Hands in Action (HANDS)</a></p>
+<p class="page-description"><a href="https://web.northeastern.edu/smilelab/amfg2023/">ICCV Workshop on Analysis and Modeling of Faces and Gestures</a></p>
 
 #### Authors: Cédric Rommel, Eduardo Valle, Mickaël Chen, Souhaiel Khalfaoui, Renaud Marlet, Matthieu Cord, Patrick Pérez
 
