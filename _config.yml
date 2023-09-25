@@ -130,6 +130,9 @@ collections:
     permalink: /:collection/:name/
 
 
+toc:
+  max_level: 3
+
 # Defaults
 defaults:
   # _projects
