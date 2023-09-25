@@ -1,5 +1,5 @@
 ---
-toc: false
+toc: true
 layout: post
 description: "Gilles Puy, Tuan-Hung Vu, Oriane Siméoni, Matthieu Cord, Cédric Rommel, Andrei Bursuc"
 categories: [3d perception, multi-sensor, limited supervision, reliability, domain-adaptation]
@@ -142,5 +142,26 @@ Motion forecasting is crucial in enabling autonomous vehicles to anticipate the 
 
 ![forecast_overview]({{ site.baseurl }}/images/posts/2023_iccv/e2e_forecasting.png){:height="90%" width="90%"}
 <div class="caption"><b>Study overview.</b> We study the challenges of deploying motion forecasting models into the real world when only predicted perception inputs are available. We compare: (1) (top) "conventional methods" (i.e., methods trained on curated input data) where (middle) we directly replace the curated inputs with real-world data, and (2) (bottom) "end-to-end methods" that are trained and used with perception modules. In the real-world setting, evaluation is challenging as the past tracks are estimated with arbitrary identities, making it difficult to establish a direct correspondence to GT identities. Therefore, we propose a matching process (purple) to assign predictions to GT and thus evaluate forecasting performances. Moreover, we study in depth the impact changing from curated data (green) to real-world (orange) mapping, or detection and tracking errors to motion forecasting.
+</div>
+
+
+<hr>
+
+## POP-3D: Open-Vocabulary 3D Occupancy Prediction from Images
+<p class="page-description"><a href="https://opensun3d.github.io/">ICCV 2023 Workshop on Open-Vocabulary 3D Scene Understanding (OpenSUN 3D)</a></p>
+
+#### Authors: Antonin Vobecky, Oriane Siméoni, David Hurych, Spyros Gidaris, Andrei Bursuc, Patrick Pérez, Josef Sivic
+
+
+<h4 align="center"> [<a href="https://data.ciirc.cvut.cz/public/projects/2023POP3D/resources/pop3d_paper.pdf ">Paper</a>]</h4>
+
+We propose an approach to predict a 3D semantic voxel occupancy map from input 2D images with features allowing 3D grounding, segmentation and retrieval of free-form language queries. To this end: We design a new architecture that consists of a 2D-3D encoder together with occupancy prediction and 3D-language heads; We develop a tri-modal self-supervised training that leverages three modalities – images, language and LiDAR point clouds– and enables learning the proposed architecture using a strong pre-trained vision-language model without the need for any 3D manual annotations. We quantitatively evaluate the proposed model on the task of zero-shot 3D semantic segmentation using existing datasets and show results on the tasks of 3D grounding and retrieval of free-form language queries.
+
+
+
+![forecast_overview]({{ site.baseurl }}/images/posts/2023_iccv/pop3d.png){:height="100%" width="100%"}
+<div class="caption"><b>Method overview.</b>Given surround-view images, POP-3D produces a voxel grid of text-aligned features that support open-vocabulary downstream tasks such as zero-shot occupancy segmentation or text-based grounding and retrieval.
+
+
 </div>
 
