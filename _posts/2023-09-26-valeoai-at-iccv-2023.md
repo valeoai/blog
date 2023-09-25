@@ -127,3 +127,23 @@ Diffusion models are making waves across various domains, including computer vis
 
 More precisely, we propose DiffHPE, a novel strategy to use diffusion models in 3D-HPE, and show that combining diffusion with pre-trained supervised models allows to outperform both pure diffusion and pure supervised models trained separately. Our analysis demonstrates not only that the diffusion framework can be used to enhance accuracy, as previously understood, but also that it can improve robustness and coherence. Namely, our experiments showcase how poses estimated with diffusion models' display better bilateral and temporal coherence, and are more robust to occlusions, even when not perfectly trained for the latter.
 
+
+<hr>
+
+
+## Challenges of Using Real-World Sensory Inputs for Motion Forecasting in Autonomous Driving
+<p class="page-description"><a href="https://sites.google.com/view/road-plus-plus">ROAD++: The Second Workshop & Challenge on Event Detection for Situation Awareness in Autonomous Driving</a></p>
+
+#### Authors: Yihong Xu, Loïck Chambon, Éloi Zablocki, Mickaël Chen, Matthieu Cord, Patrick Pérez
+
+
+<h4 align="center"> [<a href="https://arxiv.org/abs/2306.09281">Paper</a>] &nbsp;&nbsp; [<a href="https://valeoai.github.io/blog/publications/real-world-forecasting/">Project page</a>]</h4>
+
+Motion forecasting is crucial in enabling autonomous vehicles to anticipate the future trajectories of surrounding agents. To do so, it requires solving mapping, detection, tracking, and then forecasting problems, in a multi-step pipeline. In this complex system, advances in conventional forecasting methods have been made using curated data, i.e., with the assumption of perfect maps, detection, and tracking. This paradigm, however, ignores any errors from upstream modules. Meanwhile, an emerging end-to-end paradigm, that tightly integrates the perception and forecasting architectures into joint training, promises to solve this issue. So far, however, the evaluation protocols between the two methods were incompatible and their comparison was not possible. In fact, and perhaps surprisingly, conventional forecasting methods are usually not trained nor tested in real-world pipelines (e.g., with upstream detection, tracking, and mapping modules). In this work, we aim to bring forecasting models closer to real-world deployment. First, we propose a unified evaluation pipeline for forecasting methods with real-world perception inputs, allowing us to compare the performance of conventional and end-to-end methods for the first time. Second, our in-depth study uncovers a substantial performance gap when transitioning from curated to perception-based data. In particular, we show that this gap (1) stems not only from differences in precision but also from the nature of imperfect inputs provided by perception modules, and that (2) is not trivially reduced by simply finetuning on perception outputs. Based on extensive experiments, we provide recommendations for critical areas that require improvement and guidance towards more robust motion forecasting in the real world. We will release an evaluation library to benchmark models under standardized and practical conditions.
+
+
+
+![]({{ site.baseurl }}/images/posts/2023_iccv/e2e_forecasting){:height="100%" width="100%"}
+<div class="caption"> <b>Study overview.</b> We study the challenges of deploying motion forecasting models into the real world when only predicted perception inputs are available. We compare: (1) (top) ‘conventional methods’ (i.e., methods trained on curated input data) where (middle) we directly replace the curated inputs with real-world data, and (2) (bottom) ‘end-to-end methods’ that are trained and used with perception modules. In the real-world setting, evaluation is challenging as the past tracks are estimated with arbitrary identities, making it difficult to establish a direct correspondence to GT identities. Therefore, we propose a matching process (purple) to assign predictions to GT and thus evaluate forecasting performances. Moreover, we study in depth the impact changing from curated data (green) to real-world (orange) mapping, or detection and tracking errors to motion forecasting.
+</div>
+
