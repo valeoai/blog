@@ -16,7 +16,6 @@ Take a quick view of our papers in the conference and come meet us at the poster
 
 
 
-
 ## Using a Waffle Iron for Automotive Point Cloud Semantic Segmentation
 #### Authors: Gilles Puy, Alexandre Boulch, Renaud Marlet
 
@@ -31,7 +30,7 @@ Semantic segmentation of point clouds delivered by lidars permits autonomous veh
 We propose a point-based backbone, called WaffleIron, which is essentially built using standard MLPs and dense 2D convolutions, both readily available in all deep learning frameworks thanks to their wide use in the field of computer vision. The architecture of this backbone is illustrated in the figure below. It is inspired by the recent MLP-Mixer. It takes as input a point cloud with a token associated to each point. All these point tokens are then updated by a sequence of layers, each containing a token-mixing step (made of dense 2D convolutions) and a channel-mixing step (made of a MLP shared across points).
 
 
-![waffle_overview]({{ site.baseurl }}/images/posts/2023_iccv/waffleiron.png){:height="80%" width="80%"}
+![waffle_overview]({{ site.baseurl }}/images/posts/2023_iccv/waffleiron.png){:height="70%" width="70%"}
 <div class="caption">The WaffleIron backbone takes as input point tokens, provided by an embedding layer (not represented), and updates these point representations L times via a point token-mixing layer (containing the WI block) followed by a channel-mixing layer. The WI block consists of a 2D projection along one of the main axes, a feed-forward network (FFN) with two dense channel-wise 2D convolutions with a ReLU activation in the hidden layer, and a simple copy of the 2D features to the 3D points. The channel-mixing layer contains a batch-norm, a MLP shared across each point, and a residual connection. The WaffleIron backbone is free of any point downsampling or upsampling layer, farthest point sampling, nearest neighbor search, or sparse convolution.
 </div>
 
@@ -53,7 +52,7 @@ In our paper, we also provide many details on how to train WaffleIron to reach t
 
 Domain adaptation has been vastly investigated in computer vision but still requires access to target images at train time, which might be intractable in some uncommon conditions. In this paper, we propose the task of ‘Prompt-driven Zero-shot Domain Adaptation’, where we adapt a model trained on a source domain using only a general description in natural language of the target domain, i.e., a prompt. First, we leverage a pre-trained contrastive vision-language model (CLIP) to optimize affine transformations of source features, steering them towards the target text embedding while preserving their content and semantics. To achieve this, we propose Prompt-driven Instance Normalization (PIN). Second, we show that these prompt-driven augmentations can be used to perform zero-shot domain adaptation for semantic segmentation. Experiments demonstrate that our method significantly outperforms CLIP-based style transfer baselines on several datasets for the downstream task at hand, even surpassing one-shot unsupervised domain adaptation. A similar boost is observed on object detection and image classification 
 
-![poda_overview]({{ site.baseurl }}/images/posts/2023_iccv/poda.png){:height="100%" width="100%"}
+![poda_overview]({{ site.baseurl }}/images/posts/2023_iccv/poda.png){:height="80%" width="80%"}
 <div class="caption">We perform zero-shot adaptation with natural language prompts. PØDA enables the adaptation of a segmenter model (here, DeepLabv3+ trained on the source dataset Cityscapes) to unseen conditions with only a prompt. Source-only predictions are shown as smaller segmentation masks to the left or right of the test images.
 </div>
 
@@ -68,7 +67,7 @@ Domain adaptation has been vastly investigated in computer vision but still requ
 We are interested in the efficient annotation of sparse 3D point clouds (as captured indoors by depth cameras or outdoors by automotive lidars) for semantic segmentation. Active Learning (AL) iteratively selects relevant data fractions to annotate within a given budget, but requires a first fraction of the dataset (a ’seed’) to be already annotated to estimate the benefit of annotating other data fractions. We show that the choice of the seed can significantly affect the performance of many AL methods and propose a method, named SeedAL, for automatically constructing a seed that will ensure good performance for AL. Assuming that images of the point clouds are available, which is common, our method relies on powerful unsupervised image features to measure the diversity of the point clouds. It selects the point clouds for the seed by optimizing the diversity under an annotation budget, which can be done by solving a linear optimization problem. Our experiments demonstrate the effectiveness of our approach compared to random seeding and existing methods on both the S3DIS and SemanticKitti datasets.
 
 
-![seedal_overview]({{ site.baseurl }}/images/posts/2023_iccv/seedal.png){:height="65%" width="65%"}
+![seedal_overview]({{ site.baseurl }}/images/posts/2023_iccv/seedal.png){:height="70%" width="70%"}
 <div class="caption"><b>Impact of active learning seed on performance. </b>We show the variability of results obtained with 20 different random seeds (blue dashed lines), within an initial annotation budget of 3% of the dataset, when using various active learning methods for 3D semantic segmentation of S3DIS. We compare it to the result obtained with our seed selection strategy (solid red line), named SeedAL, which performs better or on par with the best (lucky) random seeds among 20, and “protects” from very bad (unlucky) random seeds.</div>
 
 
@@ -85,7 +84,7 @@ We are interested in the efficient annotation of sparse 3D point clouds (as capt
 eP-ALM aims to augment large language models (LLMs) with perception. While most existing approaches train a large number of parameters and rely on extensive multimodal pre-training, we investigate the minimal computational effort required to adapt unimodal models to multimodal tasks. We show that by freezing more than 99% of total parameters, training only one linear projection layer and prepending only one trainable token, our approach (dubbed eP-ALM) significantly outperforms other baselines on VQA and captioning for image, video and audio modalities.
 
 
-![epalm_overview]({{ site.baseurl }}/images/posts/2023_iccv/ep-alm.png){:height="80%" width="80%"}
+![epalm_overview]({{ site.baseurl }}/images/posts/2023_iccv/ep-alm.png){:height="70%" width="70%"}
 <div class="caption"><b> Illustration of the adaptation mechanism in eP-ALM.</b> he perceptual input (image/video/audio) is fed to the perceptual encoder E (e.g., ViT) and the corresponding text to the LM (e.g., OPT), which then generates a text conditioned on the perceptual input. The multimodal interaction is done via the [CLS] tokens acting as Perceptual Prompt, and are extracted from the last layers of the encoder, then injected in the last layers of LM, after passing by the Linear Connection C. The previous [CLS] token is replaced by the new one coming from a deeper layer, keeping the number of tokens fixed. The first layers (grayed) of each model are kept intact without any modality interaction. We ease the adaptation with a Soft Prompt that is prepended to the input of LM.
 </div>
 
@@ -103,7 +102,7 @@ Large-scale text-to-image diffusion models have considerably improved the state 
 
 
 
-![zest_overview]({{ site.baseurl }}/images/posts/2023_iccv/zest-guide.png){:height="100%" width="100%"}
+![zest_overview]({{ site.baseurl }}/images/posts/2023_iccv/zest-guide.png){:height="70%" width="70%"}
 <div class="caption">ZestGuide generates images conditioned on segmentation maps with corresponding free-form textual descriptions.
 </div>
 
