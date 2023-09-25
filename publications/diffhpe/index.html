@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion | valeo.ai blog</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion Cédric Rommel &nbsp;&nbsp; Eduardo Valle &nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Souhaiel Khalfaoui &nbsp;&nbsp; Renaud Marlet &nbsp;&nbsp; Matthieu Cord &nbsp;&nbsp; Patrick Pérez" />
+<meta property="og:description" content="DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion Cédric Rommel &nbsp;&nbsp; Eduardo Valle &nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Souhaiel Khalfaoui &nbsp;&nbsp; Renaud Marlet &nbsp;&nbsp; Matthieu Cord &nbsp;&nbsp; Patrick Pérez" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/diffhpe/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/diffhpe/" />
+<meta property="og:site_name" content="valeo.ai blog" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2023_diffhpe/S11_greeting_0.gif" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-09-25T02:59:03-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/2023_diffhpe/S11_greeting_0.gif" />
+<meta property="twitter:title" content="DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-25T02:59:03-05:00","datePublished":"2023-09-25T02:59:03-05:00","description":"DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion Cédric Rommel &nbsp;&nbsp; Eduardo Valle &nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Souhaiel Khalfaoui &nbsp;&nbsp; Renaud Marlet &nbsp;&nbsp; Matthieu Cord &nbsp;&nbsp; Patrick Pérez","headline":"DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion","image":"https://valeoai.github.io/blog/images/publications/2023_diffhpe/S11_greeting_0.gif","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/diffhpe/"},"url":"https://valeoai.github.io/blog/publications/diffhpe/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai blog" /><!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-179942144-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+<link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion | valeo.ai blog</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion Cédric Rommel &nbsp;&nbsp; Eduardo Valle &nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Souhaiel Khalfaoui &nbsp;&nbsp; Renaud Marlet &nbsp;&nbsp; Matthieu Cord &nbsp;&nbsp; Patrick Pérez" />
+<meta property="og:description" content="DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion Cédric Rommel &nbsp;&nbsp; Eduardo Valle &nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Souhaiel Khalfaoui &nbsp;&nbsp; Renaud Marlet &nbsp;&nbsp; Matthieu Cord &nbsp;&nbsp; Patrick Pérez" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/diffhpe/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/diffhpe/" />
+<meta property="og:site_name" content="valeo.ai blog" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2023_diffhpe/S11_greeting_0.gif" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-09-25T02:59:03-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/2023_diffhpe/S11_greeting_0.gif" />
+<meta property="twitter:title" content="DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-25T02:59:03-05:00","datePublished":"2023-09-25T02:59:03-05:00","description":"DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion Cédric Rommel &nbsp;&nbsp; Eduardo Valle &nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Souhaiel Khalfaoui &nbsp;&nbsp; Renaud Marlet &nbsp;&nbsp; Matthieu Cord &nbsp;&nbsp; Patrick Pérez","headline":"DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion","image":"https://valeoai.github.io/blog/images/publications/2023_diffhpe/S11_greeting_0.gif","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/diffhpe/"},"url":"https://valeoai.github.io/blog/publications/diffhpe/"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai blog" /><!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-179942144-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head><body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">valeo.ai blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blog/projects/">Projects</a><a class="page-link" href="/blog/publications/">Publications</a><a class="page-link" href="/blog/about/">About</a><a class="page-link" href="/blog/categories/">Tags</a><a class="page-link" href="/blog/search/">Search</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <style type="text/css">
+
+/*h1 {
+    margin-top:2.5em !important;
+    color: #4a788c;
+    font-size: 120%;
+}
+
+h2 {
+    margin-top:1.5em !important;      
+    color: #4a788c;
+
+}
+
+h3, h4 {
+    margin-top:0.5em !important;      
+    color: #4a788c;
+
+}*/
+
+h1 {
+    margin-top:0.5em !important;
+    margin-bottom:0.25em !important;
+}
+
+h3 {
+    margin-bottom:0.25em !important;
+    margin-top:0.25em !important;
+}
+
+p {
+    margin-top:1rem !important; 
+    margin-bottom:1rem !important;  
+    font-size: 16px;
+
+}
+
+/*h1, h2, h3, h4 {
+    font-weight: normal !important;
+    margin-bottom:0.5em !important;  
+    code {
+      font-size: 100%;
+    }
+}   
+*/
+
+ .bibtex-box {
+        background-color: #eee;     
+        border: 1px solid #eeeeee;
+        /*border-radius: 10px ;*/
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+        padding: 20px;
+        margin-top:1rem; 
+        word-break: normal;
+    }
+</style>
+
+<h1 align="center"> DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion </h1>
+<!-- Simple call of authors -->
+<!-- <h3 align="center"> Cédric Rommel, Eduardo Valle, Mickaël Chen, Souhaiel Khalfaoui, Renaud Marlet, Matthieu Cord, Patrick Pérez </h3> -->
+<!-- Alternatively you can add links to author pages -->
+<h3 align="center"> <a href="https://cedricrommel.github.io/">Cédric Rommel</a> &nbsp;&nbsp; <a href="https://eduardovalle.com/">Eduardo Valle</a> &nbsp;&nbsp; <a href="https://sites.google.com/view/mickaelchen/">Mickaël Chen</a> &nbsp;&nbsp; <a href="https://www.linkedin.com/in/souhaiel-khalfaoui-a7495710/?locale=en_US">Souhaiel Khalfaoui</a> &nbsp;&nbsp; <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a>  &nbsp;&nbsp; <a href="https://cord.isir.upmc.fr/">Matthieu Cord</a> &nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a></h3>
+
+<h3 align="center"> ICCV 2023 </h3>
+
+<div align="center">
+  <p>
+    
+    <a href="https://arxiv.org/abs/2309.01575"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
+    
+    
+    <a href="https://github.com/valeoai/diffhpe"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
+    
+    
+    
+    
+  </p>
+</div>
+
+<div class="publication-teaser">
+    <img src="../../images/publications/2023_diffhpe/S11_greeting_0.gif" alt="project teaser" />
+</div>
+
+<hr />
+
+<h2 align="center"> Abstract</h2>
+
+<p align="justify">
+We present an innovative approach to 3D Human Pose Estimation (3D-HPE) by integrating cutting-edge diffusion models, which have revolutionized diverse fields, but are relatively unexplored in 3D-HPE. We show that diffusion models enhance the accuracy, robustness, and coherence of human pose estimations. We introduce DiffHPE, a novel strategy for harnessing diffusion models in 3D-HPE, and demonstrate its ability to refine standard supervised 3D-HPE. We also show how diffusion models lead to more robust estimations in the face of occlusions, and improve the time-coherence and the sagittal symmetry of predictions. Using the Human3.6M dataset, we illustrate the effectiveness of our approach and its superiority over existing models, even under adverse situations where the occlusion patterns in training do not match those in inference. Our findings indicate that while standalone diffusion models provide commendable performance, their accuracy is even better in combination with supervised models, opening exciting new avenues for 3D-HPE research.</p>
+
+<hr />
+
+<div class="publication-teaser">
+    <img src="../../images/publications/2023_diffhpe/S11_greeting_0_diff.gif" alt="diffusion" />
+</div>
+
+<hr />
+
+<h2 align="center">BibTeX</h2>
+<left>
+  <pre class="bibtex-box">
+@INPROCEEDINGS{rommel2023diffhpe,
+  title={DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion},
+  author={Rommel, C{\'e}dric and Valle, Eduardo and Chen, Micka{\"e}l and Khalfaoui, Souhaiel and Marlet, Renaud and Cord, Matthieu and P{\'e}rez, Patrick},
+  booktitle={International Conference on Computer Vision Workshops (ICCVW)},
+  year  = {2023}
+}
+</pre>
+</left>
+
+<p><br /></p>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://valeoai.github.io/blog/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/blog/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>valeo.ai research blog</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
