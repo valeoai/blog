@@ -121,7 +121,7 @@ Large-scale text-to-image diffusion models have considerably improved the state 
 Diffusion models are making waves across various domains, including computer vision, natural language processing and time-series analysis. However, its application to purely predictive tasks, such as 3D human pose estimation (3D-HPE), remains largely unexplored. While a few pioneering works have shown promising performance metrics in 3D-HPE, the understanding of the benefits of diffusion models over classical supervision --- as well as key design choices --- is still in its infancy. In this work, we address those concerns, providing an in-depth analysis of the effects of diffusion models on 3D-HPE.
 
 
-![]({{ site.baseurl }}/images/posts/2023_iccv/diffhpe.gif){:height="100%" width="100%"}
+![diffhpe_overview]({{ site.baseurl }}/images/posts/2023_iccv/diffhpe.gif){:height="100%" width="100%"}
 <div class="caption">Poses across the learned reverse diffusion process converge to an accurate 3D reconstruction of the corresponding 2D pose in pixel space.</div>
 
 
@@ -143,7 +143,7 @@ Motion forecasting is crucial in enabling autonomous vehicles to anticipate the 
 
 
 
-![]({{ site.baseurl }}/images/posts/2023_iccv/e2e_forecasting){:height="100%" width="100%"}
+![forecast_overview]({{ site.baseurl }}/images/posts/2023_iccv/e2e_forecasting.png){:height="100%" width="100%"}
 <div class="caption"> <b>Study overview.</b> We study the challenges of deploying motion forecasting models into the real world when only predicted perception inputs are available. We compare: (1) (top) ‘conventional methods’ (i.e., methods trained on curated input data) where (middle) we directly replace the curated inputs with real-world data, and (2) (bottom) ‘end-to-end methods’ that are trained and used with perception modules. In the real-world setting, evaluation is challenging as the past tracks are estimated with arbitrary identities, making it difficult to establish a direct correspondence to GT identities. Therefore, we propose a matching process (purple) to assign predictions to GT and thus evaluate forecasting performances. Moreover, we study in depth the impact changing from curated data (green) to real-world (orange) mapping, or detection and tracking errors to motion forecasting.
 </div>
 
