@@ -37,11 +37,11 @@ url: "https://valeoai.github.io" # the base hostname & protocol for your site, e
 baseurl: "/blog" # the subpath of your site, e.g. "/blog".
 
 # Github and twitter are optional:
-minima:
+# minima:
   # social_links:
     # twitter: valeoai
     # github: valeoai
-  skin: dark
+  # skin: dark
   # skin: solarized
 
 # Set this to true to get LaTeX math equation support
@@ -96,6 +96,13 @@ plugins:
   - jemoji
   - jekyll-scholar 
   - jekyll-katex
+
+minima:
+  # social_links:
+    # twitter: valeoai
+    # github: valeoai
+  skin: dark
+  # skin: solarized
 
 # See https://jekyllrb.com/docs/pagination/
 # For pagination to work, you cannot have index.md at the root of your repo, instead you must rename this file to index.html
