@@ -57,13 +57,14 @@ html {
 }
 
 html, body, input, textarea, select, button {   
-  color: rgba(white, 0.87) !important;
+  color: #ebedeb !important;
   background-color: #121212 !important;
 }
 
 
 .site-header {
   border-top: 6px solid #4a788c;      
+  border-bottom: 1px solid #4d4b59;      
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
@@ -269,7 +270,6 @@ a:focus, a:hover{
     font-weight: bold;
 }
 
-
 .bigg { font-size: 2em; }
 .big { font-size: 1.5em; }
 .small { font-size: 0.2em; }
@@ -282,7 +282,8 @@ a:focus, a:hover{
 .green {color: #258212;}
 .purple {color: #800080}
 .gray{color: #999999; }
-.Q {color: #009933; }
+.Q {color: #009933; 
+
 
 .highlight{ background-color: #FFFF00; }
 
