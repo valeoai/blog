@@ -114,7 +114,7 @@ Large-scale text-to-image diffusion models have considerably improved the state 
 #### Authors: Cédric Rommel, Eduardo Valle, Mickaël Chen, Souhaiel Khalfaoui, Renaud Marlet, Matthieu Cord, Patrick Pérez
 
 
-<h4 align="center"> [<a href="https://arxiv.org/abs/2309.01575">Paper</a>] &nbsp;&nbsp; [<a href="https://github.com/valeoai/diffhpe">Code</a>] &nbsp;&nbsp; [<a href="https://valeoai.github.io/blog/publications/diffhpe">Project page</a>]</h4>
+<h4 align="center"> [<a href="https://arxiv.org/abs/2309.01575">Paper</a>] &nbsp;&nbsp; [<a href="https://github.com/valeoai/diffhpe">Code</a>] &nbsp;&nbsp; [<a href="https://valeoai.github.io/blog/publications/diffhpe.html">Project page</a>]</h4>
 
 Diffusion models are making waves across various domains, including computer vision, natural language processing and time-series analysis. However, its application to purely predictive tasks, such as 3D human pose estimation (3D-HPE), remains largely unexplored. While a few pioneering works have shown promising performance metrics in 3D-HPE, the understanding of the benefits of diffusion models over classical supervision --- as well as key design choices --- is still in its infancy. In this work, we address those concerns, providing an in-depth analysis of the effects of diffusion models on 3D-HPE.
 
