@@ -325,14 +325,16 @@ table td { border: 1px solid #e8e8e8; }
 
 img.emoji { display: inline !important; vertical-align: baseline !important; }
 
-.post figcaption { text-align: center; font-size: .8rem; font-style: italic; color: light-grey; }
+.post figcaption { text-align: center; font-size: .8rem; font-style: italic; color: lightgray; }
 
 /*.post .figcaption .katex { font-size: .8rem; } */
 .page-content { -webkit-font-smoothing: antialiased !important; text-rendering: optimizeLegibility !important; font-family: "Segoe UI", SegoeUI, Roboto, "Segoe WP", "Helvetica Neue", "Helvetica", "Tahoma", "Arial", sans-serif !important; /*margin: auto;*/ margin-top: 40px; }
 
 .post-content p, .post-content li { font-size: 18px; /*font-size: 20px;*/ color: #515151; text-align: justify; }
 
-.post-link { font-weight: normal; /*color: #4a788c;*/ /*opacity: 100% !important;* } .content { /*margin: auto;*/ /*text-align: justify;*/ /*margin-top: 40px;*/ /*font-size: 20px;*/ }
+.post-link { font-weight: normal; /*color: #4a788c;*/ /*opacity: 100% !important;*/ }
+
+.content { /*margin: auto;*/ /*text-align: justify;*/ /*margin-top: 40px;*/ /*font-size: 20px;*/ }
 
 h1 { margin-top: 2.5rem !important; color: #4a788c; font-size: 120%; /*font-size: 100%;*/ }
 
@@ -691,20 +693,10 @@ html { box-sizing: border-box; -ms-overflow-style: scrollbar; }
 
 @media screen and (min-width: 920px) { .wrapper { max-width: calc(920px - (30px * 2)); padding-right: 30px; padding-left: 30px; } }
 
-/*
-$high-emph: rgba(white, 0.87);
-$med-emph: rgba(white, 0.69); 
-$low-emph: rgba(white, 0.38);
-$dark-grey : #121212; 
-$overlay: mix($dark-grey, white, 95%);
-$overlay-light: mix($dark-grey, white, 86%);
-*/
 /*fix for scrollbar repositioning*/
 html { overflow-y: scroll; }
 
-html, body, input, textarea, select, button { color: rgba(255, 255, 255, 0.87) !important; background-color: #121212 !important; }
-
-.site-header { border-top: 6px solid #4a788c; position: fixed; /* Set the navbar to fixed position */ top: 0; /* Position the navbar at the top of the page */ width: 100%; /* Full width */ /*overflow: hidden;*/ /*  background-color: #fdfdfd;*/ background-color: #292b29; z-index: 100; }
+.site-header { border-top: 6px solid #4a788c; position: fixed; /* Set the navbar to fixed position */ top: 0; /* Position the navbar at the top of the page */ width: 100%; /* Full width */ /*overflow: hidden;*/ background-color: #fdfdfd; z-index: 100; }
 
 .site-title { /*  @include relative-font-size(1.625); font-weight: 300; letter-spacing: -1px; margin-bottom: 0; float: left; */ font-size: 20pt; }
 
@@ -740,7 +732,7 @@ a:focus, a:hover { /*color: #97d03b !important;*/ /*color: #ca7136 !important;*/
 
 .publication-teaser img { border: none; max-width: 750px; max-height: 500px; width: auto; height: auto; }
 
-.publication { width: 900px; min-height: 20px; margin: 0 auto; /* top and bottom, right and left */ /*border: 1px solid #000;*/ border: none; text-align: left; padding: 1em 1em 1em 1em; /* top, right, bottom, left */ /*  color: #4d4b59;*/ /*  color: #c7c9c7;*/ color: #a3a3a3; /*  background: #FFFFFF;*/ }
+.publication { width: 900px; min-height: 20px; margin: 0 auto; /* top and bottom, right and left */ /*border: 1px solid #000;*/ border: none; text-align: left; padding: 1em 1em 1em 1em; /* top, right, bottom, left */ color: #4d4b59; background: #FFFFFF; }
 
 /*bootstrap compatibility*/
 .media-object { /*max-width: 210px;*/ max-width: 210px; width: auto; height: auto; }
