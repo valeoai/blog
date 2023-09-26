@@ -42,25 +42,16 @@
 
 }
 
-/*
-$high-emph: rgba(white, 0.87);
-$med-emph: rgba(white, 0.69); 
-$low-emph: rgba(white, 0.38);
-$dark-grey : #121212; 
-$overlay: mix($dark-grey, white, 95%);
-$overlay-light: mix($dark-grey, white, 86%);
-*/
-
 /*fix for scrollbar repositioning*/
 html {
   overflow-y: scroll;
 }
 
-html, body, input, textarea, select, button {   
+/*html, body, input, textarea, select, button {   
   color: #ebedeb !important;
   background-color: #121212 !important;
 }
-
+*/
 
 .site-header {
   border-top: 6px solid #4a788c;      
@@ -69,8 +60,8 @@ html, body, input, textarea, select, button {
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
   /*overflow: hidden;*/
-/*  background-color: #fdfdfd;*/
-  background-color: #292b29;
+  background-color: #fdfdfd;
+/*  background-color: #292b29;*/
   z-index: 100 ;
 }
 
@@ -212,8 +203,8 @@ a:focus, a:hover{
   padding: 1em 1em 1em 1em; /* top, right, bottom, left */
 /*  color: #4d4b59;*/
 /*  color: #c7c9c7;*/
-  color: #a3a3a3;
-/*  background: #FFFFFF;*/
+/*  color: #a3a3a3;*/
+  background: #FFFFFF;
 }
 
 
