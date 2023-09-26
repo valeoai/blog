@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "You Never Get a Second Chance To Make a Good First Impression: Seeding Active Learning for 3D Semantic Segmentation" 
-image: https://github.com/nerminsamet/seedal/raw/master/images/kitti.png
+image: images/publications/2023_seedal/seedal-kitti.png
 hide: false
 category: [limited-supervision, 3d-perception]
 authors: Nermin Samet, Oriane Siméoni, Gilles Puy, Georgy Ponimatkin, Renaud Marlet, and Vincent Lepetit
