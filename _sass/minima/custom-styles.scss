@@ -42,14 +42,14 @@
 
 }
 
-
+/*
 $high-emph: rgba(white, 0.87);
 $med-emph: rgba(white, 0.69); 
 $low-emph: rgba(white, 0.38);
 $dark-grey : #121212; 
 $overlay: mix($dark-grey, white, 95%);
 $overlay-light: mix($dark-grey, white, 86%);
-
+*/
 
 /*fix for scrollbar repositioning*/
 html {
@@ -57,8 +57,8 @@ html {
 }
 
 html, body, input, textarea, select, button {   
-  color: $high-emph !important;
-  background-color: $dark-grey !important;
+  color: rgba(white, 0.87) !important;
+  background-color: #121212 !important;
 }
 
 
@@ -68,6 +68,7 @@ html, body, input, textarea, select, button {
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
   /*overflow: hidden;*/
+/*  background-color: #fdfdfd;*/
   background-color: #fdfdfd;
   z-index: 100 ;
 }
@@ -209,7 +210,7 @@ a:focus, a:hover{
   text-align: left;
   padding: 1em 1em 1em 1em; /* top, right, bottom, left */
   color: #4d4b59;
-  background: #FFFFFF;
+/*  background: #FFFFFF;*/
 }
 
 
