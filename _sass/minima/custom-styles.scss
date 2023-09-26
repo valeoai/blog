@@ -43,10 +43,22 @@
 }
 
 
+$high-emph: rgba(white, 0.87);
+$med-emph: rgba(white, 0.69); 
+$low-emph: rgba(white, 0.38);
+$dark-grey : #121212; 
+$overlay: mix($dark-grey, white, 95%);
+$overlay-light: mix($dark-grey, white, 86%);
+
 
 /*fix for scrollbar repositioning*/
 html {
   overflow-y: scroll;
+}
+
+html, body, input, textarea, select, button {   
+  color: $high-emph !important;
+  background-color: $dark-grey !important;
 }
 
 
