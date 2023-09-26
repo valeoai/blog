@@ -3,23 +3,23 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>OCTET: Object-aware Counterfactual Explanations | valeo.ai blog</title>
+<title>You Never Get a Second Chance To Make a Good First Impression: Seeding Active Learning for 3D Semantic Segmentation | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="OCTET: Object-aware Counterfactual Explanations" />
+<meta property="og:title" content="You Never Get a Second Chance To Make a Good First Impression: Seeding Active Learning for 3D Semantic Segmentation" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="OCTET: Object-aware Counterfactual Explanations Mehdi Zemni &nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Éloi Zablocki &nbsp;&nbsp; Hédi Ben-Younes &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Matthieu Cord" />
-<meta property="og:description" content="OCTET: Object-aware Counterfactual Explanations Mehdi Zemni &nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Éloi Zablocki &nbsp;&nbsp; Hédi Ben-Younes &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Matthieu Cord" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/octet/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/octet/" />
+<meta name="description" content="You Never Get a Second Chance To Make a Good First Impression: Seeding Active Learning for 3D Semantic Segmentation Nermin Samet &nbsp;&nbsp; Oriane Siméoni&nbsp;&nbsp; Gilles Puy&nbsp;&nbsp; Georgy Ponimatkin&nbsp;&nbsp; Renaud Marlet&nbsp;&nbsp; Vincent Lepetit" />
+<meta property="og:description" content="You Never Get a Second Chance To Make a Good First Impression: Seeding Active Learning for 3D Semantic Segmentation Nermin Samet &nbsp;&nbsp; Oriane Siméoni&nbsp;&nbsp; Gilles Puy&nbsp;&nbsp; Georgy Ponimatkin&nbsp;&nbsp; Renaud Marlet&nbsp;&nbsp; Vincent Lepetit" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/seedal/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/seedal/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2023_octet/octet.png" />
+<meta property="og:image" content="https://github.com/nerminsamet/seedal/raw/master/images/kitti.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-09-26T07:50:57-05:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/2023_octet/octet.png" />
-<meta property="twitter:title" content="OCTET: Object-aware Counterfactual Explanations" />
+<meta property="twitter:image" content="https://github.com/nerminsamet/seedal/raw/master/images/kitti.png" />
+<meta property="twitter:title" content="You Never Get a Second Chance To Make a Good First Impression: Seeding Active Learning for 3D Semantic Segmentation" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-26T07:50:57-05:00","datePublished":"2023-09-26T07:50:57-05:00","description":"OCTET: Object-aware Counterfactual Explanations Mehdi Zemni &nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Éloi Zablocki &nbsp;&nbsp; Hédi Ben-Younes &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Matthieu Cord","headline":"OCTET: Object-aware Counterfactual Explanations","image":"https://valeoai.github.io/blog/images/publications/2023_octet/octet.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/octet/"},"url":"https://valeoai.github.io/blog/publications/octet/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-26T07:50:57-05:00","datePublished":"2023-09-26T07:50:57-05:00","description":"You Never Get a Second Chance To Make a Good First Impression: Seeding Active Learning for 3D Semantic Segmentation Nermin Samet &nbsp;&nbsp; Oriane Siméoni&nbsp;&nbsp; Gilles Puy&nbsp;&nbsp; Georgy Ponimatkin&nbsp;&nbsp; Renaud Marlet&nbsp;&nbsp; Vincent Lepetit","headline":"You Never Get a Second Chance To Make a Good First Impression: Seeding Active Learning for 3D Semantic Segmentation","image":"https://github.com/nerminsamet/seedal/raw/master/images/kitti.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/seedal/"},"url":"https://valeoai.github.io/blog/publications/seedal/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai blog" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -28,23 +28,23 @@
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-179942144-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
 <link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>OCTET: Object-aware Counterfactual Explanations | valeo.ai blog</title>
+<title>You Never Get a Second Chance To Make a Good First Impression: Seeding Active Learning for 3D Semantic Segmentation | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="OCTET: Object-aware Counterfactual Explanations" />
+<meta property="og:title" content="You Never Get a Second Chance To Make a Good First Impression: Seeding Active Learning for 3D Semantic Segmentation" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="OCTET: Object-aware Counterfactual Explanations Mehdi Zemni &nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Éloi Zablocki &nbsp;&nbsp; Hédi Ben-Younes &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Matthieu Cord" />
-<meta property="og:description" content="OCTET: Object-aware Counterfactual Explanations Mehdi Zemni &nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Éloi Zablocki &nbsp;&nbsp; Hédi Ben-Younes &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Matthieu Cord" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/octet/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/octet/" />
+<meta name="description" content="You Never Get a Second Chance To Make a Good First Impression: Seeding Active Learning for 3D Semantic Segmentation Nermin Samet &nbsp;&nbsp; Oriane Siméoni&nbsp;&nbsp; Gilles Puy&nbsp;&nbsp; Georgy Ponimatkin&nbsp;&nbsp; Renaud Marlet&nbsp;&nbsp; Vincent Lepetit" />
+<meta property="og:description" content="You Never Get a Second Chance To Make a Good First Impression: Seeding Active Learning for 3D Semantic Segmentation Nermin Samet &nbsp;&nbsp; Oriane Siméoni&nbsp;&nbsp; Gilles Puy&nbsp;&nbsp; Georgy Ponimatkin&nbsp;&nbsp; Renaud Marlet&nbsp;&nbsp; Vincent Lepetit" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/seedal/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/seedal/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2023_octet/octet.png" />
+<meta property="og:image" content="https://github.com/nerminsamet/seedal/raw/master/images/kitti.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-09-26T07:50:57-05:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/2023_octet/octet.png" />
-<meta property="twitter:title" content="OCTET: Object-aware Counterfactual Explanations" />
+<meta property="twitter:image" content="https://github.com/nerminsamet/seedal/raw/master/images/kitti.png" />
+<meta property="twitter:title" content="You Never Get a Second Chance To Make a Good First Impression: Seeding Active Learning for 3D Semantic Segmentation" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-26T07:50:57-05:00","datePublished":"2023-09-26T07:50:57-05:00","description":"OCTET: Object-aware Counterfactual Explanations Mehdi Zemni &nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Éloi Zablocki &nbsp;&nbsp; Hédi Ben-Younes &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Matthieu Cord","headline":"OCTET: Object-aware Counterfactual Explanations","image":"https://valeoai.github.io/blog/images/publications/2023_octet/octet.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/octet/"},"url":"https://valeoai.github.io/blog/publications/octet/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-26T07:50:57-05:00","datePublished":"2023-09-26T07:50:57-05:00","description":"You Never Get a Second Chance To Make a Good First Impression: Seeding Active Learning for 3D Semantic Segmentation Nermin Samet &nbsp;&nbsp; Oriane Siméoni&nbsp;&nbsp; Gilles Puy&nbsp;&nbsp; Georgy Ponimatkin&nbsp;&nbsp; Renaud Marlet&nbsp;&nbsp; Vincent Lepetit","headline":"You Never Get a Second Chance To Make a Good First Impression: Seeding Active Learning for 3D Semantic Segmentation","image":"https://github.com/nerminsamet/seedal/raw/master/images/kitti.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/seedal/"},"url":"https://valeoai.github.io/blog/publications/seedal/"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -176,21 +176,21 @@ p {
     }
 </style>
 
-<h1 align="center"> OCTET: Object-aware Counterfactual Explanations </h1>
+<h1 align="center"> You Never Get a Second Chance To Make a Good First Impression: Seeding Active Learning for 3D Semantic Segmentation </h1>
 <!-- Simple call of authors -->
-<!-- <h3 align="center"> Mehdi Zemni, Mickaël Chen, Éloi Zablocki, Hédi Ben-Younes, Patrick Pérez, Matthieu Cord </h3> -->
+<!-- <h3 align="center"> Nermin Samet, Oriane Siméoni, Gilles Puy, Georgy Ponimatkin, Renaud Marlet, and Vincent Lepetit </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center"> <a href="https://mzemni.com/">Mehdi Zemni</a> &nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=QnRpMJAAAAAJ">Mickaël Chen</a> &nbsp;&nbsp; <a href="https://scholar.google.fr/citations?user=dOkbUmEAAAAJ">Éloi Zablocki</a> &nbsp;&nbsp; <a href="https://scholar.google.fr/citations?user=IFLcfvUAAAAJ">Hédi Ben-Younes</a> &nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a> &nbsp;&nbsp; <a href="https://cord.isir.upmc.fr/">Matthieu Cord</a></h3>
+<h3 align="center"> <a href="https://nerminsamet.github.io/">Nermin Samet</a> &nbsp;&nbsp; <a href="https://osimeoni.github.io/">Oriane Siméoni</a>&nbsp;&nbsp; <a href="https://sites.google.com/site/puygilles/">Gilles Puy</a>&nbsp;&nbsp; <a href="https://ponimatkin.github.io/">Georgy Ponimatkin</a>&nbsp;&nbsp; <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a>&nbsp;&nbsp; <a href="https://vincentlepetit.github.io/">Vincent Lepetit</a></h3>
 
-<h3 align="center"> CVPR 2023 </h3>
+<h3 align="center"> ICCV 2023 </h3>
 
 <div align="center">
   <p>
     
-    <a href="https://arxiv.org/abs/2211.12380"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
+    <a href="https://arxiv.org/abs/2304.11762"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
     
     
-    <a href="https://github.com/valeoai/OCTET"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
+    <a href="https://github.com/nerminsamet/seedal"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
     
     
     
@@ -199,41 +199,26 @@ p {
 </div>
 
 <div class="publication-teaser">
-    <img src="../../images/publications/2023_octet/octet.png" alt="project teaser" />
+    <img src="https://github.com/nerminsamet/seedal/raw/master/images/kitti.png" alt="project teaser" />
 </div>
 
 <hr />
 
 <h2 align="center"> Abstract</h2>
 
-<p align="justify">Nowadays, deep vision models are being widely deployed in safety-critical applications, e.g., autonomous driving, and explainability of such models is becoming a pressing concern. Among explanation methods, counterfactual explanations aim to find minimal and interpretable changes to the input image that would also change the output of the model to be explained. Such explanations point end-users at the main factors that impact the decision of the model. However, previous methods struggle to explain decision models trained on images with many objects, e.g., urban scenes, which are more difficult to work with but also arguably more critical to explain. In this work, we propose to tackle this issue with an object-centric framework for counterfactual explanation generation. Our method, inspired by recent generative modeling works, encodes the query image into a latent space that is structured in a way to ease object-level manipulations. Doing so, it provides the end-user with control over which search directions (e.g., spatial displacement of objects, style modification, etc.) are to be explored during the counterfactual generation. We conduct a set of experiments on counterfactual explanation benchmarks for driving scenes, and we show that our method can be adapted beyond classification, e.g., to explain semantic segmentation models. To complete our analysis, we design and run a user study that measures the usefulness of counterfactual explanations in understanding a decision model.</p>
-
-<hr />
-
-<h2 align="center"> Video</h2>
-
-<p align="center">
-  <iframe width="660" height="395" src="https://www.youtube.com/embed/Xfq0uRcw9jQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" align="center"></iframe>
-</p>
+<p align="justify">We propose SeedAL, a method to seed active learning for efficient annotation of 3D point clouds for semantic segmentation. Active Learning (AL) iteratively selects relevant data fractions to annotate within a given budget, but requires a first fraction of the dataset (a 'seed') to be already annotated to estimate the benefit of annotating other data fractions. We first show that the choice of the seed can significantly affect the performance of many AL methods. We then propose a method for automatically constructing a seed that will ensure good performance for AL. Assuming that images of the point clouds are available, which is common, our method relies on powerful unsupervised image features to measure the diversity of the point clouds. It selects the point clouds for the seed by optimizing the diversity under an annotation budget, which can be done by solving a linear optimization problem. Our experiments demonstrate the effectiveness of our approach compared to random seeding and existing methods on both the S3DIS and SemanticKitti datasets. Code is available at this https <a href="https://github.com/nerminsamet/seedal">URL</a>.</p>
 
 <p><br /></p>
-<hr />
 
 <h2 align="center">BibTeX</h2>
 <left>
   <pre class="bibtex-box">
-@inproceedings{zemni2023octet,
-  title     = {OCTET: Object-aware Counterfactual Explanations},
-  author    = {Mehdi Zemni and
-               Micka{\"{e}}l Chen and
-               {\'{E}}loi Zablocki and
-               Hedi Ben{-}Younes and
-               Patrick P{\'{e}}rez and
-               Matthieu Cord},
-  booktitle = {CVPR},
-  year      = {2023}
-}
-</pre>
+@inproceedings{samet2023seedal,
+  title={You Never Get a Second Chance To Make a Good First Impression: Seeding Active Learning for 3D Semantic Segmentation},
+  author={Samet, Nermin and Sim\'eoni, Oriane and Puy, Gilles and Ponimatkin, Georgy and Marlet, Renaud and Lepetit, Vincent},
+  booktitle={ICCV},
+  year={2023}
+}</pre>
 </left>
 
 <p><br /></p>
