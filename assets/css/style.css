@@ -332,9 +332,7 @@ img.emoji { display: inline !important; vertical-align: baseline !important; }
 
 .post-content p, .post-content li { font-size: 18px; /*font-size: 20px;*/ color: #515151; text-align: justify; }
 
-.post-link { font-weight: normal; /*color: #4a788c;*/ /*opacity: 100% !important;*/ }
-
-.content { /*margin: auto;*/ /*text-align: justify;*/ /*margin-top: 40px;*/ /*font-size: 20px;*/ }
+.post-link { font-weight: normal; /*color: #4a788c;*/ /*opacity: 100% !important;* } .content { /*margin: auto;*/ /*text-align: justify;*/ /*margin-top: 40px;*/ /*font-size: 20px;*/ }
 
 h1 { margin-top: 2.5rem !important; color: #4a788c; font-size: 120%; /*font-size: 100%;*/ }
 
@@ -695,6 +693,8 @@ html { box-sizing: border-box; -ms-overflow-style: scrollbar; }
 
 /*fix for scrollbar repositioning*/
 html { overflow-y: scroll; }
+
+html, body, input, textarea, select, button { color: rgba(255, 255, 255, 0.87) !important; background-color: #121212 !important; }
 
 .site-header { border-top: 6px solid #4a788c; position: fixed; /* Set the navbar to fixed position */ top: 0; /* Position the navbar at the top of the page */ width: 100%; /* Full width */ /*overflow: hidden;*/ background-color: #fdfdfd; z-index: 100; }
 
