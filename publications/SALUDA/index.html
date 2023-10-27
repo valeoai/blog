@@ -3,23 +3,23 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion | valeo.ai blog</title>
+<title>SALUDA: Surface-based Automotive Lidar Unsupervised Domain Adaptation | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion" />
+<meta property="og:title" content="SALUDA: Surface-based Automotive Lidar Unsupervised Domain Adaptation" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion Cédric Rommel &nbsp;&nbsp; Eduardo Valle &nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Souhaiel Khalfaoui &nbsp;&nbsp; Renaud Marlet &nbsp;&nbsp; Matthieu Cord &nbsp;&nbsp; Patrick Pérez" />
-<meta property="og:description" content="DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion Cédric Rommel &nbsp;&nbsp; Eduardo Valle &nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Souhaiel Khalfaoui &nbsp;&nbsp; Renaud Marlet &nbsp;&nbsp; Matthieu Cord &nbsp;&nbsp; Patrick Pérez" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/diffhpe/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/diffhpe/" />
+<meta name="description" content="SALUDA: Surface-based Automotive Lidar Unsupervised Domain Adaptation Björn Michele&nbsp;&nbsp; Alexandre Boulch&nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Tuan-Hung Vu &nbsp;&nbsp; Renaud Marlet    Nicolas Courty" />
+<meta property="og:description" content="SALUDA: Surface-based Automotive Lidar Unsupervised Domain Adaptation Björn Michele&nbsp;&nbsp; Alexandre Boulch&nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Tuan-Hung Vu &nbsp;&nbsp; Renaud Marlet    Nicolas Courty" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/SALUDA/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/SALUDA/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2023_diffhpe/S11_greeting_0.gif" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2024_saluda/saluda.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-10-27T04:20:30-05:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/2023_diffhpe/S11_greeting_0.gif" />
-<meta property="twitter:title" content="DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion" />
+<meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/2024_saluda/saluda.png" />
+<meta property="twitter:title" content="SALUDA: Surface-based Automotive Lidar Unsupervised Domain Adaptation" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-10-27T04:20:30-05:00","datePublished":"2023-10-27T04:20:30-05:00","description":"DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion Cédric Rommel &nbsp;&nbsp; Eduardo Valle &nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Souhaiel Khalfaoui &nbsp;&nbsp; Renaud Marlet &nbsp;&nbsp; Matthieu Cord &nbsp;&nbsp; Patrick Pérez","headline":"DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion","image":"https://valeoai.github.io/blog/images/publications/2023_diffhpe/S11_greeting_0.gif","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/diffhpe/"},"url":"https://valeoai.github.io/blog/publications/diffhpe/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-10-27T04:20:30-05:00","datePublished":"2023-10-27T04:20:30-05:00","description":"SALUDA: Surface-based Automotive Lidar Unsupervised Domain Adaptation Björn Michele&nbsp;&nbsp; Alexandre Boulch&nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Tuan-Hung Vu &nbsp;&nbsp; Renaud Marlet    Nicolas Courty","headline":"SALUDA: Surface-based Automotive Lidar Unsupervised Domain Adaptation","image":"https://valeoai.github.io/blog/images/publications/2024_saluda/saluda.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/SALUDA/"},"url":"https://valeoai.github.io/blog/publications/SALUDA/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai blog" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -28,23 +28,23 @@
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-179942144-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
 <link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion | valeo.ai blog</title>
+<title>SALUDA: Surface-based Automotive Lidar Unsupervised Domain Adaptation | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion" />
+<meta property="og:title" content="SALUDA: Surface-based Automotive Lidar Unsupervised Domain Adaptation" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion Cédric Rommel &nbsp;&nbsp; Eduardo Valle &nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Souhaiel Khalfaoui &nbsp;&nbsp; Renaud Marlet &nbsp;&nbsp; Matthieu Cord &nbsp;&nbsp; Patrick Pérez" />
-<meta property="og:description" content="DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion Cédric Rommel &nbsp;&nbsp; Eduardo Valle &nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Souhaiel Khalfaoui &nbsp;&nbsp; Renaud Marlet &nbsp;&nbsp; Matthieu Cord &nbsp;&nbsp; Patrick Pérez" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/diffhpe/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/diffhpe/" />
+<meta name="description" content="SALUDA: Surface-based Automotive Lidar Unsupervised Domain Adaptation Björn Michele&nbsp;&nbsp; Alexandre Boulch&nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Tuan-Hung Vu &nbsp;&nbsp; Renaud Marlet    Nicolas Courty" />
+<meta property="og:description" content="SALUDA: Surface-based Automotive Lidar Unsupervised Domain Adaptation Björn Michele&nbsp;&nbsp; Alexandre Boulch&nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Tuan-Hung Vu &nbsp;&nbsp; Renaud Marlet    Nicolas Courty" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/SALUDA/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/SALUDA/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2023_diffhpe/S11_greeting_0.gif" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2024_saluda/saluda.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-10-27T04:20:30-05:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/2023_diffhpe/S11_greeting_0.gif" />
-<meta property="twitter:title" content="DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion" />
+<meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/2024_saluda/saluda.png" />
+<meta property="twitter:title" content="SALUDA: Surface-based Automotive Lidar Unsupervised Domain Adaptation" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-10-27T04:20:30-05:00","datePublished":"2023-10-27T04:20:30-05:00","description":"DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion Cédric Rommel &nbsp;&nbsp; Eduardo Valle &nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Souhaiel Khalfaoui &nbsp;&nbsp; Renaud Marlet &nbsp;&nbsp; Matthieu Cord &nbsp;&nbsp; Patrick Pérez","headline":"DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion","image":"https://valeoai.github.io/blog/images/publications/2023_diffhpe/S11_greeting_0.gif","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/diffhpe/"},"url":"https://valeoai.github.io/blog/publications/diffhpe/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-10-27T04:20:30-05:00","datePublished":"2023-10-27T04:20:30-05:00","description":"SALUDA: Surface-based Automotive Lidar Unsupervised Domain Adaptation Björn Michele&nbsp;&nbsp; Alexandre Boulch&nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Tuan-Hung Vu &nbsp;&nbsp; Renaud Marlet    Nicolas Courty","headline":"SALUDA: Surface-based Automotive Lidar Unsupervised Domain Adaptation","image":"https://valeoai.github.io/blog/images/publications/2024_saluda/saluda.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/SALUDA/"},"url":"https://valeoai.github.io/blog/publications/SALUDA/"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -176,21 +176,22 @@ p {
     }
 </style>
 
-<h1 align="center"> DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion </h1>
+<h1 align="center"> SALUDA: Surface-based Automotive Lidar Unsupervised Domain Adaptation </h1>
 <!-- Simple call of authors -->
-<!-- <h3 align="center"> Cédric Rommel, Eduardo Valle, Mickaël Chen, Souhaiel Khalfaoui, Renaud Marlet, Matthieu Cord, Patrick Pérez </h3> -->
+<!-- <h3 align="center"> Bjoern Michele, Alexandre Boulch, Gilles Puy, Tuan-Hung Vu, Renaud Marlet and Nicolas Courty </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center"> <a href="https://cedricrommel.github.io/">Cédric Rommel</a> &nbsp;&nbsp; <a href="https://eduardovalle.com/">Eduardo Valle</a> &nbsp;&nbsp; <a href="https://sites.google.com/view/mickaelchen/">Mickaël Chen</a> &nbsp;&nbsp; <a href="https://www.linkedin.com/in/souhaiel-khalfaoui-a7495710/?locale=en_US">Souhaiel Khalfaoui</a> &nbsp;&nbsp; <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a>  &nbsp;&nbsp; <a href="https://cord.isir.upmc.fr/">Matthieu Cord</a> &nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a></h3>
+<h3 align="center">  <a href="https://www.bjoernmichele.com/">Björn Michele</a>&nbsp;&nbsp; <a href="https://www.boulch.eu/">Alexandre Boulch</a>&nbsp;&nbsp; <a href="https://sites.google.com/site/puygilles/home">Gilles Puy</a> &nbsp;&nbsp;  <a href="https://tuanhungvu.github.io/">Tuan-Hung Vu</a> &nbsp;&nbsp; <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a></h3>
+<p>   <a href="https://people.irisa.fr/Nicolas.Courty">Nicolas Courty</a></p>
 
-<h3 align="center"> ICCV 2023 </h3>
+<h3 align="center"> 3DV 2024 </h3>
 
 <div align="center">
   <p>
     
-    <a href="https://arxiv.org/abs/2309.01575"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
+    <a href="https://arxiv.org/abs/2304.03251"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
     
     
-    <a href="https://github.com/valeoai/diffhpe"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
+    <a href="https://github.com/valeoai/SALUDA"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
     
     
     
@@ -199,34 +200,26 @@ p {
 </div>
 
 <div class="publication-teaser">
-    <img src="../../images/publications/2023_diffhpe/S11_greeting_0.gif" alt="project teaser" />
+    <img src="../../images/publications/2024_saluda/saluda.png" alt="project teaser" />
 </div>
 
 <hr />
 
 <h2 align="center"> Abstract</h2>
 
-<p align="justify">
-We present an innovative approach to 3D Human Pose Estimation (3D-HPE) by integrating cutting-edge diffusion models, which have revolutionized diverse fields, but are relatively unexplored in 3D-HPE. We show that diffusion models enhance the accuracy, robustness, and coherence of human pose estimations. We introduce DiffHPE, a novel strategy for harnessing diffusion models in 3D-HPE, and demonstrate its ability to refine standard supervised 3D-HPE. We also show how diffusion models lead to more robust estimations in the face of occlusions, and improve the time-coherence and the sagittal symmetry of predictions. Using the Human3.6M dataset, we illustrate the effectiveness of our approach and its superiority over existing models, even under adverse situations where the occlusion patterns in training do not match those in inference. Our findings indicate that while standalone diffusion models provide commendable performance, their accuracy is even better in combination with supervised models, opening exciting new avenues for 3D-HPE research.</p>
-
-<hr />
-
-<div class="publication-teaser">
-    <img src="../../images/publications/2023_diffhpe/S11_greeting_0_diff.gif" alt="diffusion" />
-</div>
+<p align="justify">Learning models on one labeled dataset that generalize well on another domain is a difficult task, as several shifts might happen between the data domains. This is notably the case for lidar data, for which models can exhibit large performance discrepancies due for instance to different lidar patterns or changes in acquisition conditions. This paper addresses the corresponding Unsupervised Domain Adaptation (UDA) task for semantic segmentation. To mitigate this problem, we introduce an unsupervised auxiliary task of learning an implicit underlying surface representation simultaneously on source and target data. As both domains share the same latent representation, the model is forced to accommodate discrepancies between the two sources of data. This novel strategy differs from classical minimization of statistical divergences or lidar-specific domain adaptation techniques. Our experiments demonstrate that our method achieves a better performance than the current state of the art, both in real-to-real and synthetic-to-real scenarios.</p>
 
 <hr />
 
 <h2 align="center">BibTeX</h2>
 <left>
   <pre class="bibtex-box">
-@INPROCEEDINGS{rommel2023diffhpe,
-  title={DiffHPE: Robust, Coherent 3D Human Pose Lifting with Diffusion},
-  author={Rommel, C{\'e}dric and Valle, Eduardo and Chen, Micka{\"e}l and Khalfaoui, Souhaiel and Marlet, Renaud and Cord, Matthieu and P{\'e}rez, Patrick},
-  booktitle={International Conference on Computer Vision Workshops (ICCVW)},
-  year  = {2023}
-}
-</pre>
+@inproceedings{michele24saluda,
+  title={SALUDA: Surface-based Automotive Lidar Unsupervised Domain Adaptation},
+  author={Michele, Bjoern and Boulch, Alexandre and Puy, Gilles and Vu, Tuan-Hung and Marlet, Renaud and Courty, Nicolas},
+  booktitle={3DV},
+  year={2024}
+}</pre>
 </left>
 
 <p><br /></p>
