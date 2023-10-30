@@ -63,13 +63,13 @@ permalink: /publications/bevcontrast/
 
 <h2  align="center">BibTeX</h2>
 <left>
-  <pre class="bibtex-box">
-@inproceedings{bevcontrast,
-  title={BEVContrast: Self-Supervision in BEV Space for Automotive Lidar Point Clouds},
-  author={Corentin Sautier and Gilles Puy and Alexandre Boulch and Renaud Marlet and Vincent Lepetit},
-  booktitle={3DV},
-  year={2024}
-}</pre>
+  <pre class="bibtex-box">{% raw %}
+  @inproceedings{bevcontrast,
+    title={{BEVContrast}: Self-Supervision in BEV Space for Automotive Lidar Point Clouds},
+    author={Corentin Sautier and Gilles Puy and Alexandre Boulch and Renaud Marlet and Vincent Lepetit},
+    booktitle={3DV},
+    year={2024}
+  }{% endraw %}</pre>
 </left>
 
 <br>
