@@ -21,7 +21,7 @@ permalink: /publications/SALUDA/
 <!-- Simple call of authors -->
 <!-- <h3 align="center"> {{page.authors}} </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center">  <a href="https://www.bjoernmichele.com/">Björn Michele</a>&nbsp;&nbsp; <a href="https://www.boulch.eu/">Alexandre Boulch</a>&nbsp;&nbsp; <a href="https://sites.google.com/site/puygilles/home">Gilles Puy</a> &nbsp;&nbsp;  <a href="https://tuanhungvu.github.io/">Tuan-Hung Vu</a> &nbsp;&nbsp; <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a></h3>&nbsp;&nbsp; <a href="https://people.irisa.fr/Nicolas.Courty">Nicolas Courty</a>
+<h3 align="center">  <a href="https://www.bjoernmichele.com/">Björn Michele</a>&nbsp;&nbsp; <a href="https://www.boulch.eu/">Alexandre Boulch</a>&nbsp;&nbsp; <a href="https://sites.google.com/site/puygilles/home">Gilles Puy</a> &nbsp;&nbsp;  <a href="https://tuanhungvu.github.io/">Tuan-Hung Vu</a> &nbsp;&nbsp; <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a>&nbsp;&nbsp; <a href="https://people.irisa.fr/Nicolas.Courty">Nicolas Courty</a></h3>
 
 
 <h3 align="center"> {{page.venue}} {{page.year}} </h3>
