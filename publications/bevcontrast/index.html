@@ -3,23 +3,23 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Explainability of deep vision-based autonomous driving systems: Review and challenges | valeo.ai blog</title>
+<title>BEVContrast: Self-Supervision in BEV Space for Automotive Lidar Point Clouds | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Explainability of deep vision-based autonomous driving systems: Review and challenges" />
+<meta property="og:title" content="BEVContrast: Self-Supervision in BEV Space for Automotive Lidar Point Clouds" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Explainability of deep vision-based autonomous driving systems: Review and challenges Éloi Zablocki &nbsp;&nbsp; Hédi Ben-Younes &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Matthieu Cord" />
-<meta property="og:description" content="Explainability of deep vision-based autonomous driving systems: Review and challenges Éloi Zablocki &nbsp;&nbsp; Hédi Ben-Younes &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Matthieu Cord" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/xai-driving-survey/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/xai-driving-survey/" />
+<meta name="description" content="BEVContrast: Self-Supervision in BEV Space for Automotive Lidar Point Clouds Corentin Sautier&nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Alexandre Boulch&nbsp;&nbsp; Renaud Marlet&nbsp;&nbsp; Vincent Lepetit" />
+<meta property="og:description" content="BEVContrast: Self-Supervision in BEV Space for Automotive Lidar Point Clouds Corentin Sautier&nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Alexandre Boulch&nbsp;&nbsp; Renaud Marlet&nbsp;&nbsp; Vincent Lepetit" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/bevcontrast/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/bevcontrast/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2022_xai_survey/logo_explainable.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2024_bevcontrast/bevcontrast_overview.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-10-30T12:51:18-05:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/2022_xai_survey/logo_explainable.png" />
-<meta property="twitter:title" content="Explainability of deep vision-based autonomous driving systems: Review and challenges" />
+<meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/2024_bevcontrast/bevcontrast_overview.png" />
+<meta property="twitter:title" content="BEVContrast: Self-Supervision in BEV Space for Automotive Lidar Point Clouds" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-10-30T12:51:18-05:00","datePublished":"2023-10-30T12:51:18-05:00","description":"Explainability of deep vision-based autonomous driving systems: Review and challenges Éloi Zablocki &nbsp;&nbsp; Hédi Ben-Younes &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Matthieu Cord","headline":"Explainability of deep vision-based autonomous driving systems: Review and challenges","image":"https://valeoai.github.io/blog/images/publications/2022_xai_survey/logo_explainable.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/xai-driving-survey/"},"url":"https://valeoai.github.io/blog/publications/xai-driving-survey/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-10-30T12:51:18-05:00","datePublished":"2023-10-30T12:51:18-05:00","description":"BEVContrast: Self-Supervision in BEV Space for Automotive Lidar Point Clouds Corentin Sautier&nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Alexandre Boulch&nbsp;&nbsp; Renaud Marlet&nbsp;&nbsp; Vincent Lepetit","headline":"BEVContrast: Self-Supervision in BEV Space for Automotive Lidar Point Clouds","image":"https://valeoai.github.io/blog/images/publications/2024_bevcontrast/bevcontrast_overview.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/bevcontrast/"},"url":"https://valeoai.github.io/blog/publications/bevcontrast/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai blog" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -28,23 +28,23 @@
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-179942144-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
 <link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Explainability of deep vision-based autonomous driving systems: Review and challenges | valeo.ai blog</title>
+<title>BEVContrast: Self-Supervision in BEV Space for Automotive Lidar Point Clouds | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Explainability of deep vision-based autonomous driving systems: Review and challenges" />
+<meta property="og:title" content="BEVContrast: Self-Supervision in BEV Space for Automotive Lidar Point Clouds" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Explainability of deep vision-based autonomous driving systems: Review and challenges Éloi Zablocki &nbsp;&nbsp; Hédi Ben-Younes &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Matthieu Cord" />
-<meta property="og:description" content="Explainability of deep vision-based autonomous driving systems: Review and challenges Éloi Zablocki &nbsp;&nbsp; Hédi Ben-Younes &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Matthieu Cord" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/xai-driving-survey/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/xai-driving-survey/" />
+<meta name="description" content="BEVContrast: Self-Supervision in BEV Space for Automotive Lidar Point Clouds Corentin Sautier&nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Alexandre Boulch&nbsp;&nbsp; Renaud Marlet&nbsp;&nbsp; Vincent Lepetit" />
+<meta property="og:description" content="BEVContrast: Self-Supervision in BEV Space for Automotive Lidar Point Clouds Corentin Sautier&nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Alexandre Boulch&nbsp;&nbsp; Renaud Marlet&nbsp;&nbsp; Vincent Lepetit" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/bevcontrast/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/bevcontrast/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2022_xai_survey/logo_explainable.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2024_bevcontrast/bevcontrast_overview.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-10-30T12:51:18-05:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/2022_xai_survey/logo_explainable.png" />
-<meta property="twitter:title" content="Explainability of deep vision-based autonomous driving systems: Review and challenges" />
+<meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/2024_bevcontrast/bevcontrast_overview.png" />
+<meta property="twitter:title" content="BEVContrast: Self-Supervision in BEV Space for Automotive Lidar Point Clouds" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-10-30T12:51:18-05:00","datePublished":"2023-10-30T12:51:18-05:00","description":"Explainability of deep vision-based autonomous driving systems: Review and challenges Éloi Zablocki &nbsp;&nbsp; Hédi Ben-Younes &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Matthieu Cord","headline":"Explainability of deep vision-based autonomous driving systems: Review and challenges","image":"https://valeoai.github.io/blog/images/publications/2022_xai_survey/logo_explainable.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/xai-driving-survey/"},"url":"https://valeoai.github.io/blog/publications/xai-driving-survey/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-10-30T12:51:18-05:00","datePublished":"2023-10-30T12:51:18-05:00","description":"BEVContrast: Self-Supervision in BEV Space for Automotive Lidar Point Clouds Corentin Sautier&nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Alexandre Boulch&nbsp;&nbsp; Renaud Marlet&nbsp;&nbsp; Vincent Lepetit","headline":"BEVContrast: Self-Supervision in BEV Space for Automotive Lidar Point Clouds","image":"https://valeoai.github.io/blog/images/publications/2024_bevcontrast/bevcontrast_overview.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/bevcontrast/"},"url":"https://valeoai.github.io/blog/publications/bevcontrast/"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -176,22 +176,22 @@ p {
     }
 </style>
 
-<h1 align="center"> Explainability of deep vision-based autonomous driving systems: Review and challenges </h1>
+<h1 align="center"> BEVContrast: Self-Supervision in BEV Space for Automotive Lidar Point Clouds </h1>
 <!-- Simple call of authors -->
-<!-- <h3 align="center"> Éloi Zablocki*, Hédi Ben-Younes*, Patrick Pérez, Matthieu Cord </h3> -->
+<!-- <h3 align="center"> Corentin Sautier, Gilles Puy, Alexandre Boulch, Renaud Marlet, Vincent Lepetit </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center"><a href="https://scholar.google.fr/citations?user=dOkbUmEAAAAJ">Éloi Zablocki</a> &nbsp;&nbsp; <a href="https://scholar.google.fr/citations?user=IFLcfvUAAAAJ">Hédi Ben-Younes </a> &nbsp;&nbsp;  <a href="https://ptrckprz.github.io/">Patrick Pérez</a> &nbsp;&nbsp; <a href="https://cord.isir.upmc.fr/">Matthieu Cord</a></h3>
+<h3 align="center">  <a href="https://csautier.github.io//">Corentin Sautier</a>&nbsp;&nbsp; <a href="https://sites.google.com/site/puygilles/home">Gilles Puy</a> &nbsp;&nbsp; <a href="https://www.boulch.eu/">Alexandre Boulch</a>&nbsp;&nbsp; <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a>&nbsp;&nbsp; <a href="https://vincentlepetit.github.io/">Vincent Lepetit</a></h3>
 
-<h3 align="center"> IJCV 2022 </h3>
+<h3 align="center"> 3DV 2024 </h3>
 
 <div align="center">
   <p>
     
-    <a href="https://arxiv.org/abs/2101.05307"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
+    <a href="https://arxiv.org/abs/2310.17281"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
     
     
+    <a href="https://github.com/valeoai/BEVContrast"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
     
-    <a href="https://valeoai.github.io/blog/2021/02/18/explainable-driving.html"><i class="fab fa-blogger"></i> Blog</a> &nbsp;&nbsp;
     
     
     
@@ -199,28 +199,25 @@ p {
 </div>
 
 <div class="publication-teaser">
-    <img src="../../images/publications/2022_xai_survey/logo_explainable.png" alt="project teaser" />
+    <img src="../../images/publications/2024_bevcontrast/bevcontrast_overview.png" alt="project teaser" />
 </div>
 
 <hr />
 
 <h2 align="center"> Abstract</h2>
 
-<p align="justify">This survey reviews explainability methods for vision-based self-driving systems trained with behavior cloning. The concept of explainability has several facets and the need for explainability is strong in driving, a safety-critical application. Gathering contributions from several research fields, namely computer vision, deep learning, autonomous driving, explainable AI (X-AI), this survey tackles several points. First, it discusses definitions, context, and motivation for gaining more interpretability and explainability from self-driving systems, as well as the challenges that are specific to this application. Second, methods providing explanations to a black-box self-driving system in a post-hoc fashion are comprehensively organized and detailed. Third, approaches from the literature that aim at building more interpretable self-driving systems by design are presented and discussed in detail. Finally, remaining open-challenges and potential future research directions are identified and examined.</p>
+<p align="justify">We present a surprisingly simple and efficient method for self-supervision of 3D backbone on automotive Lidar point clouds. We design a contrastive loss between features of Lidar scans captured in the same scene. Several such approaches have been proposed in the literature from PointConstrast, which uses a contrast at the level of points, to the state-of-the-art TARL, which uses a contrast at the level of segments, roughly corresponding to objects. While the former enjoys a great simplicity of implementation, it is surpassed by the latter, which however requires a costly pre-processing. In BEVContrast, we define our contrast at the level of 2D cells in the Bird's Eye View plane. Resulting cell-level representations offer a good trade-off between the point-level representations exploited in PointContrast and segment-level representations exploited in TARL: we retain the simplicity of PointContrast (cell representations are cheap to compute) while surpassing the performance of TARL in downstream semantic segmentation.</p>
 
 <hr />
 
 <h2 align="center">BibTeX</h2>
 <left>
   <pre class="bibtex-box">
-@article{xai-driving-survey-2022,
-  author    = {Eloi Zablocki and
-               Hedi Ben{-}Younes and
-               Patrick P{\'{e}}rez and
-               Matthieu Cord},
-  title     = {Explainability of deep vision-based autonomous driving systems: Review and challenges},
-  journal   = {IJCV},
-  year      = {2022}
+@inproceedings{bevcontrast,
+  title={BEVContrast: Self-Supervision in BEV Space for Automotive Lidar Point Clouds},
+  author={Corentin Sautier and Gilles Puy and Alexandre Boulch and Renaud Marlet and Vincent Lepetit},
+  booktitle={3DV},
+  year={2024}
 }</pre>
 </left>
 
