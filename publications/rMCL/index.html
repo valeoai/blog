@@ -3,23 +3,23 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Self-supervised learning with rotation-invariant kernels | valeo.ai blog</title>
+<title>Resilient Multiple Choice Learning: A learned scoring scheme with application to audio scene analysis | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Self-supervised learning with rotation-invariant kernels" />
+<meta property="og:title" content="Resilient Multiple Choice Learning: A learned scoring scheme with application to audio scene analysis" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Self-supervised learning with rotation-invariant kernels Léon Zheng &nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Elisa Riccietti &nbsp;&nbsp;Patrick Pérez &nbsp;&nbsp; Rémi Gribonval" />
-<meta property="og:description" content="Self-supervised learning with rotation-invariant kernels Léon Zheng &nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Elisa Riccietti &nbsp;&nbsp;Patrick Pérez &nbsp;&nbsp; Rémi Gribonval" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/sfrik/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/sfrik/" />
+<meta name="description" content="Resilient Multiple Choice Learning: A learned scoring scheme with application to audio scene analysis Victor Letzelter&nbsp;&nbsp; Mathieu Fontaine&nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Slim Essid&nbsp;&nbsp; Gaël Richard" />
+<meta property="og:description" content="Resilient Multiple Choice Learning: A learned scoring scheme with application to audio scene analysis Victor Letzelter&nbsp;&nbsp; Mathieu Fontaine&nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Slim Essid&nbsp;&nbsp; Gaël Richard" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/rMCL/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/rMCL/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2023_sfrik/mmd-vignette-bis.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2024_rmcl/rMCL.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-11-16T04:27:52-06:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/2023_sfrik/mmd-vignette-bis.png" />
-<meta property="twitter:title" content="Self-supervised learning with rotation-invariant kernels" />
+<meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/2024_rmcl/rMCL.png" />
+<meta property="twitter:title" content="Resilient Multiple Choice Learning: A learned scoring scheme with application to audio scene analysis" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-11-16T04:27:52-06:00","datePublished":"2023-11-16T04:27:52-06:00","description":"Self-supervised learning with rotation-invariant kernels Léon Zheng &nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Elisa Riccietti &nbsp;&nbsp;Patrick Pérez &nbsp;&nbsp; Rémi Gribonval","headline":"Self-supervised learning with rotation-invariant kernels","image":"https://valeoai.github.io/blog/images/publications/2023_sfrik/mmd-vignette-bis.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/sfrik/"},"url":"https://valeoai.github.io/blog/publications/sfrik/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-11-16T04:27:52-06:00","datePublished":"2023-11-16T04:27:52-06:00","description":"Resilient Multiple Choice Learning: A learned scoring scheme with application to audio scene analysis Victor Letzelter&nbsp;&nbsp; Mathieu Fontaine&nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Slim Essid&nbsp;&nbsp; Gaël Richard","headline":"Resilient Multiple Choice Learning: A learned scoring scheme with application to audio scene analysis","image":"https://valeoai.github.io/blog/images/publications/2024_rmcl/rMCL.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/rMCL/"},"url":"https://valeoai.github.io/blog/publications/rMCL/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai blog" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -28,23 +28,23 @@
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-179942144-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
 <link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Self-supervised learning with rotation-invariant kernels | valeo.ai blog</title>
+<title>Resilient Multiple Choice Learning: A learned scoring scheme with application to audio scene analysis | valeo.ai blog</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Self-supervised learning with rotation-invariant kernels" />
+<meta property="og:title" content="Resilient Multiple Choice Learning: A learned scoring scheme with application to audio scene analysis" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Self-supervised learning with rotation-invariant kernels Léon Zheng &nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Elisa Riccietti &nbsp;&nbsp;Patrick Pérez &nbsp;&nbsp; Rémi Gribonval" />
-<meta property="og:description" content="Self-supervised learning with rotation-invariant kernels Léon Zheng &nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Elisa Riccietti &nbsp;&nbsp;Patrick Pérez &nbsp;&nbsp; Rémi Gribonval" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/sfrik/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/sfrik/" />
+<meta name="description" content="Resilient Multiple Choice Learning: A learned scoring scheme with application to audio scene analysis Victor Letzelter&nbsp;&nbsp; Mathieu Fontaine&nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Slim Essid&nbsp;&nbsp; Gaël Richard" />
+<meta property="og:description" content="Resilient Multiple Choice Learning: A learned scoring scheme with application to audio scene analysis Victor Letzelter&nbsp;&nbsp; Mathieu Fontaine&nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Slim Essid&nbsp;&nbsp; Gaël Richard" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/rMCL/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/rMCL/" />
 <meta property="og:site_name" content="valeo.ai blog" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2023_sfrik/mmd-vignette-bis.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2024_rmcl/rMCL.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-11-16T04:27:52-06:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/2023_sfrik/mmd-vignette-bis.png" />
-<meta property="twitter:title" content="Self-supervised learning with rotation-invariant kernels" />
+<meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/2024_rmcl/rMCL.png" />
+<meta property="twitter:title" content="Resilient Multiple Choice Learning: A learned scoring scheme with application to audio scene analysis" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-11-16T04:27:52-06:00","datePublished":"2023-11-16T04:27:52-06:00","description":"Self-supervised learning with rotation-invariant kernels Léon Zheng &nbsp;&nbsp; Gilles Puy &nbsp;&nbsp; Elisa Riccietti &nbsp;&nbsp;Patrick Pérez &nbsp;&nbsp; Rémi Gribonval","headline":"Self-supervised learning with rotation-invariant kernels","image":"https://valeoai.github.io/blog/images/publications/2023_sfrik/mmd-vignette-bis.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/sfrik/"},"url":"https://valeoai.github.io/blog/publications/sfrik/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-11-16T04:27:52-06:00","datePublished":"2023-11-16T04:27:52-06:00","description":"Resilient Multiple Choice Learning: A learned scoring scheme with application to audio scene analysis Victor Letzelter&nbsp;&nbsp; Mathieu Fontaine&nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Slim Essid&nbsp;&nbsp; Gaël Richard","headline":"Resilient Multiple Choice Learning: A learned scoring scheme with application to audio scene analysis","image":"https://valeoai.github.io/blog/images/publications/2024_rmcl/rMCL.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/rMCL/"},"url":"https://valeoai.github.io/blog/publications/rMCL/"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -176,54 +176,51 @@ p {
     }
 </style>
 
-<h1 align="center"> Self-supervised learning with rotation-invariant kernels </h1>
+<h1 align="center"> Resilient Multiple Choice Learning: A learned scoring scheme with application to audio scene analysis </h1>
 <!-- Simple call of authors -->
-<!-- <h3 align="center"> Léon Zheng, Gilles Puy, Elisa Riccietti, Patrick Pérez, Rémi Gribonval </h3> -->
+<!-- <h3 align="center"> Victor Letzelter, Mathieu Fontaine, Mickaël Chen, Patrick Pérez, Slim Essid, and Gaël Richard </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center"> <a href="https://leonzheng2.github.io/">Léon Zheng</a> &nbsp;&nbsp; <a href="https://sites.google.com/site/puygilles/">Gilles Puy</a> &nbsp;&nbsp; <a href="https://perso.ens-lyon.fr/elisa.riccietti/">Elisa Riccietti</a> &nbsp;&nbsp;<a href="https://ptrckprz.github.io/">Patrick Pérez</a> &nbsp;&nbsp; <a href="https://people.irisa.fr/Remi.Gribonval/">Rémi Gribonval</a></h3>
+<h3 align="center">  <a href="https://victorletzelter.github.io">Victor Letzelter</a>&nbsp;&nbsp; <a href="https://matfontaine.github.io/">Mathieu Fontaine</a>&nbsp;&nbsp; <a href="https://sites.google.com/view/mickaelchen/home">Mickaël Chen</a> &nbsp;&nbsp;  <a href="https://ptrckprz.github.io/">Patrick Pérez</a> &nbsp;&nbsp; <a href="https://perso.telecom-paristech.fr/essid/">Slim Essid</a>&nbsp;&nbsp; <a href="https://www.telecom-paris.fr/gael-richard">Gaël Richard</a></h3>
 
-<h3 align="center"> ICLR 2023 </h3>
+<h3 align="center"> NeurIPS23 2023 </h3>
 
 <div align="center">
   <p>
     
-    <a href="https://arxiv.org/abs/2208.00789"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
+    <a href="https://arxiv.org/abs/2311.01052"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
     
     
-    <a href="https://github.com/valeoai/sfrik"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
+    <a href="https://github.com/Victorletzelter/code-rMCL"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
     
     
+    
+    <a href="https://recorder-v3.slideslive.com/?share=86327&amp;s=9b08dcaf-9905-4f10-a399-f6aa4aee047f"><i class="far fa-file-pdf"></i> Slides</a>&nbsp;&nbsp;
     
     
   </p>
 </div>
 
 <div class="publication-teaser">
-    <img src="../../images/publications/2023_sfrik/mmd-vignette-bis.png" alt="project teaser" />
+    <img src="../../images/publications/2024_rmcl/rMCL.png" alt="project teaser" />
 </div>
 
 <hr />
 
 <h2 align="center"> Abstract</h2>
 
-<p align="justify">We introduce a regularization loss based on kernel mean embeddings with rotation-invariant kernels on the hypersphere (also known as dot-product kernels) for self-supervised learning of image representations. Besides being fully competitive with the state of the art, our method significantly reduces time and memory complexity for self-supervised training, making it implementable for very large embedding dimensions on existing devices and more easily adjustable than previous methods to settings with limited resources. Our work follows the major paradigm where the model learns to be invariant to some predefined image transformations (cropping, blurring, color jittering, etc.), while avoiding a degenerate solution by regularizing the embedding distribution. Our particular contribution is to propose a loss family promoting the embedding distribution to be close to the uniform distribution on the hypersphere, with respect to the maximum mean discrepancy pseudometric. We demonstrate that this family encompasses several regularizers of former methods, including uniformity-based and information-maximization methods, which are variants of our flexible regularization loss with different kernels. Beyond its practical consequences for state-of-the-art self-supervised learning with limited resources, the proposed generic regularization approach opens perspectives to leverage more widely the literature on kernel methods in order to improve self-supervised learning methods.</p>
-
-<p><br /></p>
+<p align="justify">We introduce Resilient Multiple Choice Learning (rMCL), an extension of the MCL approach for conditional distribution estimation in regression settings where multiple targets may be sampled for each training input. Multiple Choice Learning is a simple framework to tackle multimodal density estimation, using the Winner-Takes-All (WTA) loss for a set of hypotheses. In regression settings, the existing MCL variants focus on merging the hypotheses, thereby eventually sacrificing the diversity of the predictions. In contrast, our method relies on a novel learned scoring scheme underpinned by a mathematical framework based on Voronoi tessellations of the output space, from which we can derive a probabilistic interpretation. After empirically validating rMCL with experiments on synthetic data, we further assess its merits on the sound source localization problem, demonstrating its practical usefulness and the relevance of its interpretation.</p>
 
 <hr />
 
 <h2 align="center">BibTeX</h2>
 <left>
   <pre class="bibtex-box">
-@inproceedings{
-    zheng2023selfsupervised,
-    title={Self-supervised learning with rotation-invariant kernels},
-    author={L{\'e}on Zheng and Gilles Puy and Elisa Riccietti and Patrick Perez and R{\'e}mi Gribonval},
-    booktitle={The Eleventh International Conference on Learning Representations },
-    year={2023},
-    url={https://openreview.net/forum?id=8uu6JStuYm}
-}
-</pre>
+@inproceedings{Letzelter23,
+  author = {Victor Letzelter and Mathieu Fontaine and Mickaël Chen and Patrick Pérez and Gael Richard and Slim Essid},
+  title = {Resilient Multiple Choice Learning: A learned scoring scheme with application to audio scene analysis},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year = 2023
+}</pre>
 </left>
 
 <p><br /></p>
