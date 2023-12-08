@@ -9,10 +9,7 @@ image: images/posts/2023_neurips/logo_neurips.svg
 ---
 
 
-The [Neural Information Porcessing Systems Conference (NeurIPS)](https://neurips.cc/) is a major inter-disciplinary event that brings together researchers and practicioners in machine learning, computer vision, natural language processing, optimization, statistics, but also neuroscience, natural sciensie, social sciences, etc. This year, at the thirty-seventh edition of NeurIPS, the [valeo.ai](https://ptrckprz.github.io/valeoai/) team will present 4 papers in the main conference. We will be happy to discuss more about these projects and ideas, and share our exciting ongoing research.
-
-At ICCV 2023 we will present 5 papers in the main conference and 3 in the workshops. We are also organizing 2 tutorials with 2 challenges ([BRAVO](https://valeoai.github.io/bravo/) and [UNCV](https://uncv2023.github.io/)) and a tutorial ([Many Faces of Reliability](https://abursuc.github.io/many-faces-reliability/)).
-Take a quick view of our papers in the conference and come meet us at the posters, at our booth or in the hallway. Take a quick view of our papers and come meet us at the posters or catch us for a coffer in the hallways.
+The [Neural Information Porcessing Systems Conference (NeurIPS)](https://neurips.cc/) is a major inter-disciplinary event that brings together researchers and practicioners in machine learning, computer vision, natural language processing, optimization, statistics, but also neuroscience, natural sciensie, social sciences, etc. This year, at the thirty-seventh edition of NeurIPS, the [valeo.ai](https://ptrckprz.github.io/valeoai/) team will present 4 papers in the main conference. We will be happy to discuss more about these projects and ideas, and share our exciting ongoing research. Take a quick view of our papers in the conference and come meet us at the posters, at our booth or in the hallway. Take a quick view of our papers and come meet us at the posters or catch us for a coffer in the hallways.
 
 
 
