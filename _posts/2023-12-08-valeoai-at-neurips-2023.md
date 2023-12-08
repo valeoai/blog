@@ -4,12 +4,20 @@ layout: post
 description: "Victor Letzelter, Antonin Vobecky, Mickael Chen, Matthieu Cord, Andrei Bursuc"
 categories: [multi-sensor, limited supervision, reliability, deep-learning]
 title: "valeo.ai at NeurIPS 2023"
-hide: true
+hide: false
 image: images/posts/2023_neurips/logo_neurips.svg
 ---
 
 
-The [Neural Information Porcessing Systems Conference (NeurIPS)](https://neurips.cc/) is a major inter-disciplinary event that brings together researchers and practicioners in machine learning, computer vision, natural language processing, optimization, statistics, but also neuroscience, natural sciences, social sciences, etc. This year, at the thirty-seventh edition of NeurIPS, the [valeo.ai](https://ptrckprz.github.io/valeoai/) team will present 4 papers in the main conference. We will be happy to discuss more about these projects and ideas, and share our exciting ongoing research. Take a quick view of our papers in the conference and come meet us at the posters, at our booth or in the hallway. Take a quick view of our papers and come meet us at the posters or catch us for a coffer in the hallways.
+The [Neural Information Processing Systems Conference (NeurIPS)](https://neurips.cc/) is a major inter-disciplinary event that brings together researchers and practicioners in machine learning, computer vision, natural language processing, optimization, statistics, but also neuroscience, natural sciences, social sciences, etc. This year, at the thirty-seventh edition of NeurIPS, the [valeo.ai](https://ptrckprz.github.io/valeoai/) team will present 4 papers in the main conference. 
+
+
+Notably, we explore perception via different sensors, e.g., audio, on the path towards increasingly autonomous systems. We also study the interaction between different sensing modalities (images, language, Lidar point clouds) and advance a tri-modal self-supervised learning algorithm for 3D semantic voxel occupancy prediction from a rig of cameras mounted on a vehicle.
+We further show how to obtain robust deep models starting from pre-trained foundation models finetuned with reinforcement learning from human feedback. 
+Finally, we analyze different generative models (diffusion models, GANs) and advance a unification framework considering them as instances of Particle Models.
+
+
+We will be happy to discuss more about these projects and ideas, and share our exciting ongoing research. Take a quick view of our papers below and come meet us at the posters or catch us for a coffee in the hallways.
 
 
 
@@ -20,10 +28,7 @@ The [Neural Information Porcessing Systems Conference (NeurIPS)](https://neurips
 <h4 align="center"> [<a href="https://arxiv.org/abs/2311.01052">Paper</a>] &nbsp;&nbsp; [<a href="https://github.com/Victorletzelter/code-rMCL">Code</a>] &nbsp;&nbsp; [<a href="https://valeoai.github.io/blog/publications/rmcl/">Project page</a>]</h4>
 
 
-In this work, we tackle ambiguous machine learning tasks, where single predictions don’t suffice due to the task's nature or inherent uncertainties.
-
-We introduce a robust multi-hypotheses framework that is capable of deterministically offering a range of plausible predictions at inference time. 
-Our experiments on both synthetic data and real-world audio data affirm the potential and versatility of our method. Check out the paper and the code for more details.
+In this work, we tackle ambiguous machine learning tasks, where single predictions don’t suffice due to the task's nature or inherent uncertainties. We introduce a robust multi-hypotheses framework that is capable of deterministically offering a range of plausible predictions at inference time. Our experiments on both synthetic data and real-world audio data affirm the potential and versatility of our method. Check out the paper and the code for more details.
 
 
 
@@ -89,7 +94,7 @@ Foundation models are first pre-trained on vast unsupervised datasets and then f
 #### Authors: Jean-Yves Franceschi, Mike Gartrell, Ludovic Dos Santos, Thibaut Issenhuth, Emmanuel de Bézenac, Mickaël Chen, Alain Rakotomamonjy
 
 
-<h4 align="center"> [<a href="https://arxiv.org/abs/2305.16150">Paper</a>] &nbsp;&nbsp; [Code (soon)]</h4>
+<h4 align="center"> [<a href="https://arxiv.org/abs/2305.16150">Paper</a>] &nbsp;&nbsp; [Code (coming soon)]</h4>
 
 By describing the trajectories of GAN outputs during training with particle evolution equations, we propose an unifying framework for GAN and Diffusion Models. We provide a new insights on the role of the generator network, and as proof of concept validating our theories, we propose methods to train a generator with score-based gradient instead of a discriminator, or to use a discriminator's gradient flow to generate instead of training a generator.
 
