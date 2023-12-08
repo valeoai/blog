@@ -42,7 +42,7 @@ This problem involves estimating a conditional distribution that is dependent on
 
 
 
-<h4 align="center"> [<a href="https://openreview.net/forum?id=eBXM62SqKY ">Paper</a>] &nbsp;&nbsp; [<a href="https://github.com/vobecant/POP3D">Code</a>] &nbsp;&nbsp; [<a href="https://vobecant.github.io/POP3D">Project page</a>]</h4>
+<h4 align="center"> [<a href="https://openreview.net/forum?id=eBXM62SqKY">Paper</a>] &nbsp;&nbsp; [<a href="https://github.com/vobecant/POP3D">Code</a>] &nbsp;&nbsp; [<a href="https://vobecant.github.io/POP3D">Project page</a>]</h4>
 
 
 
