@@ -32,9 +32,6 @@ Our experiments on both synthetic data and real-world audio data affirm the pote
 
 This problem involves estimating a conditional distribution that is dependent on the input. The accompanying animation illustrates the early stages in the evolution of our model's learning process, highlighting how it progressively refines its predictions (represented by shaded blue points) to the actual data distribution (indicated by green points), which varies with the input 't'.
 
-
-This is a joint work with: Mathieu Fontaine, Mickaël Chen, Patrick Pérez, Slim Essid and Gaël Richard at valeo.ai and Telecom Paris.
-
 <hr>
 
 
