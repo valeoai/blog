@@ -9,7 +9,7 @@ image: images/posts/2023_neurips/logo_neurips.svg
 ---
 
 
-The [Neural Information Processing Systems Conference (NeurIPS)](https://neurips.cc/) is a major inter-disciplinary event that brings together researchers and practicioners in machine learning, computer vision, natural language processing, optimization, statistics, but also neuroscience, natural sciences, social sciences, etc. This year, at the thirty-seventh edition of NeurIPS, the [valeo.ai](https://ptrckprz.github.io/valeoai/) team will present 4 papers in the main conference. 
+The [Neural Information Processing Systems Conference (NeurIPS)](https://neurips.cc/) is a major inter-disciplinary event that brings together researchers and practicioners in machine learning, computer vision, natural language processing, optimization, statistics, but also neuroscience, natural sciences, social sciences, etc. This year, at the thirty-seventh edition of NeurIPS, the [valeo.ai](https://ptrckprz.github.io/valeoai/) team will present 4 papers in the main conference and 1 in the workshops. 
 
 
 Notably, we explore perception via different sensors, e.g., audio, on the path towards increasingly autonomous systems. We also study the interaction between different sensing modalities (images, language, Lidar point clouds) and advance a tri-modal self-supervised learning algorithm for 3D semantic voxel occupancy prediction from a rig of cameras mounted on a vehicle.
@@ -103,4 +103,21 @@ By describing the trajectories of GAN outputs during training with particle evol
 ![unigan_overview]({{ site.baseurl }}/images/posts/2023_neurips/unify-gan.png){:height="70%" width="70%"}
 
 
+<hr>
 
+## Evaluating the structure of cognitive tasks with transfer learning
+<p class="page-description"><a href="https://ai4sciencecommunity.github.io/neurips23.html">NeurIPS Workshop on AI for Scientific Discovery: From Theory to Practice</a></p>
+
+#### Authors: Bruno Aristimunha, Raphael Y. de Camargo, Walter H. Lopez Pinaya, Sylvain Chevallier, Alexandre Gramfort, Cedric Rommel
+
+<h4 align="center"> [<a href="https://cedricrommel.github.io/assets/pdfs/NeurIPS_2023_AI_for_Science_Workshop.pdf">Paper</a>] &nbsp;&nbsp; [Code (coming soon)]</h4>
+
+
+Electroencephalography (EEG) decoding is a challenging task due to the limited availability of labeled data. While transfer learning is a promising technique to address this challenge, it assumes that transferable data domains and tasks are known, which is not the case in this setting. This work investigates the transferability of deep learning representations between different EEG decoding tasks.
+
+![cog_overview]({{ site.baseurl }}/images/posts/2023_neurips/eval-cog-tasks.png){:height="90%" width="90%"}
+<div class="caption"><b>Learned transferability maps for both datasets.</b>  Each node corresponds to a distinct cognitive task. Arrow width represents the average transfer performance when using the representations learned from a source task to decode a target task.</div>
+
+We conduct extensive experiments using state-of-the-art decoding models on two recently released EEG datasets, ERPCore and M3CV, containing over 140 subjects and 11 distinct cognitive tasks.
+
+From an EEG processing perspective, our results can be used to leverage related datasets for alleviating EEG data scarcity with transfer learning. We show that even with a linear probing transfer method, we are able to boost by up to 28% the performance of some tasks. From a neuroscientific standpoint, our transfer maps provide insights into the hierarchical relations between cognitive tasks, hence enhancing our understanding of how these tasks are connected. We discover for example evidence that certain decoding paradigms elicit specific and narrow brain activities, while others benefit from pre-training on a broad range of representations.
