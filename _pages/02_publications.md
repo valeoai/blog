@@ -9,7 +9,7 @@ nav_order: 3
 # All publications
 
 For the comprehensive collection of our research papers, please refer to <a href="https://scholar.google.com/citations?user=eM4nZ1sAAAAJ&hl=en" target="_blank">our team's Google Scholar page</a>.  
-By following our account, you'll receive notifications about any new papers published by our team. Stay updated with our latest contributions to the field!  
+By following our account, you will be updated with notifications about new papers published by our team.
 
 # Selected publications
 
