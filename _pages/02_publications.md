@@ -6,6 +6,9 @@ nav: true
 nav_order: 3 
 ---
 
+# All publications
+
+Complete list of publications referenced in the <a href="https://scholar.google.com/citations?user=eM4nZ1sAAAAJ&hl=en">team's google scholar page</a>.  
 
 # Selected publications
 
