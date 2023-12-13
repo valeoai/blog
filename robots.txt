@@ -1,1 +1,1 @@
-Sitemap: https://valeoai.github.io/sitemap.xml
+Sitemap: https://valeoai.github.io/blog/sitemap.xml

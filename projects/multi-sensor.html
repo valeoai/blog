@@ -9,46 +9,46 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Automated driving relies first on a diverse range of sensors, like Valeo’s fish-eye cameras, LiDARs, radars and ultrasonics. Exploiting at best the outputs of each of these sensors at any instant is fundamental to understand the complex environment of the vehicle and gain robustness. To this end, we explore various machine learning approaches where sensors are considered either in isolation (as radar in Carrada at ICPR’20) or collectively (as in xMUDA at CVPR’20)." />
 <meta property="og:description" content="Automated driving relies first on a diverse range of sensors, like Valeo’s fish-eye cameras, LiDARs, radars and ultrasonics. Exploiting at best the outputs of each of these sensors at any instant is fundamental to understand the complex environment of the vehicle and gain robustness. To this end, we explore various machine learning approaches where sensors are considered either in isolation (as radar in Carrada at ICPR’20) or collectively (as in xMUDA at CVPR’20)." />
-<link rel="canonical" href="https://valeoai.github.io/projects/multi-sensor" />
-<meta property="og:url" content="https://valeoai.github.io/projects/multi-sensor" />
+<link rel="canonical" href="https://valeoai.github.io/blog/projects/multi-sensor" />
+<meta property="og:url" content="https://valeoai.github.io/blog/projects/multi-sensor" />
 <meta property="og:site_name" content="valeo.ai" />
-<meta property="og:image" content="https://valeoai.github.io/images/projects/valeo_sensors.jpg" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/projects/valeo_sensors.jpg" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-12-13T04:03:27-06:00" />
+<meta property="article:published_time" content="2023-12-13T04:06:49-06:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://valeoai.github.io/images/projects/valeo_sensors.jpg" />
+<meta property="twitter:image" content="https://valeoai.github.io/blog/images/projects/valeo_sensors.jpg" />
 <meta property="twitter:title" content="Multi-sensor perception" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-12-13T04:03:27-06:00","datePublished":"2023-12-13T04:03:27-06:00","description":"Automated driving relies first on a diverse range of sensors, like Valeo’s fish-eye cameras, LiDARs, radars and ultrasonics. Exploiting at best the outputs of each of these sensors at any instant is fundamental to understand the complex environment of the vehicle and gain robustness. To this end, we explore various machine learning approaches where sensors are considered either in isolation (as radar in Carrada at ICPR’20) or collectively (as in xMUDA at CVPR’20).","headline":"Multi-sensor perception","image":"https://valeoai.github.io/images/projects/valeo_sensors.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/projects/multi-sensor"},"url":"https://valeoai.github.io/projects/multi-sensor"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-12-13T04:06:49-06:00","datePublished":"2023-12-13T04:06:49-06:00","description":"Automated driving relies first on a diverse range of sensors, like Valeo’s fish-eye cameras, LiDARs, radars and ultrasonics. Exploiting at best the outputs of each of these sensors at any instant is fundamental to understand the complex environment of the vehicle and gain robustness. To this end, we explore various machine learning approaches where sensors are considered either in isolation (as radar in Carrada at ICPR’20) or collectively (as in xMUDA at CVPR’20).","headline":"Multi-sensor perception","image":"https://valeoai.github.io/blog/images/projects/valeo_sensors.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/projects/multi-sensor"},"url":"https://valeoai.github.io/blog/projects/multi-sensor"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/feed.xml" title="valeo.ai" /><!-- the google_analytics_id gets auto inserted from the config file -->
+<link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
 
 
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-179942144-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
-<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Multi-sensor perception | valeo.ai</title>
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Multi-sensor perception" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Automated driving relies first on a diverse range of sensors, like Valeo’s fish-eye cameras, LiDARs, radars and ultrasonics. Exploiting at best the outputs of each of these sensors at any instant is fundamental to understand the complex environment of the vehicle and gain robustness. To this end, we explore various machine learning approaches where sensors are considered either in isolation (as radar in Carrada at ICPR’20) or collectively (as in xMUDA at CVPR’20)." />
 <meta property="og:description" content="Automated driving relies first on a diverse range of sensors, like Valeo’s fish-eye cameras, LiDARs, radars and ultrasonics. Exploiting at best the outputs of each of these sensors at any instant is fundamental to understand the complex environment of the vehicle and gain robustness. To this end, we explore various machine learning approaches where sensors are considered either in isolation (as radar in Carrada at ICPR’20) or collectively (as in xMUDA at CVPR’20)." />
-<link rel="canonical" href="https://valeoai.github.io/projects/multi-sensor" />
-<meta property="og:url" content="https://valeoai.github.io/projects/multi-sensor" />
+<link rel="canonical" href="https://valeoai.github.io/blog/projects/multi-sensor" />
+<meta property="og:url" content="https://valeoai.github.io/blog/projects/multi-sensor" />
 <meta property="og:site_name" content="valeo.ai" />
-<meta property="og:image" content="https://valeoai.github.io/images/projects/valeo_sensors.jpg" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/projects/valeo_sensors.jpg" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-12-13T04:03:27-06:00" />
+<meta property="article:published_time" content="2023-12-13T04:06:49-06:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://valeoai.github.io/images/projects/valeo_sensors.jpg" />
+<meta property="twitter:image" content="https://valeoai.github.io/blog/images/projects/valeo_sensors.jpg" />
 <meta property="twitter:title" content="Multi-sensor perception" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-12-13T04:03:27-06:00","datePublished":"2023-12-13T04:03:27-06:00","description":"Automated driving relies first on a diverse range of sensors, like Valeo’s fish-eye cameras, LiDARs, radars and ultrasonics. Exploiting at best the outputs of each of these sensors at any instant is fundamental to understand the complex environment of the vehicle and gain robustness. To this end, we explore various machine learning approaches where sensors are considered either in isolation (as radar in Carrada at ICPR’20) or collectively (as in xMUDA at CVPR’20).","headline":"Multi-sensor perception","image":"https://valeoai.github.io/images/projects/valeo_sensors.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/projects/multi-sensor"},"url":"https://valeoai.github.io/projects/multi-sensor"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-12-13T04:06:49-06:00","datePublished":"2023-12-13T04:06:49-06:00","description":"Automated driving relies first on a diverse range of sensors, like Valeo’s fish-eye cameras, LiDARs, radars and ultrasonics. Exploiting at best the outputs of each of these sensors at any instant is fundamental to understand the complex environment of the vehicle and gain robustness. To this end, we explore various machine learning approaches where sensors are considered either in isolation (as radar in Carrada at ICPR’20) or collectively (as in xMUDA at CVPR’20).","headline":"Multi-sensor perception","image":"https://valeoai.github.io/blog/images/projects/valeo_sensors.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/projects/multi-sensor"},"url":"https://valeoai.github.io/blog/projects/multi-sensor"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
-<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/feed.xml" title="valeo.ai" /><!-- the google_analytics_id gets auto inserted from the config file -->
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
 
 
@@ -103,7 +103,7 @@ window.onload = wrap_img;
 </script>
 </head><body><header class="site-header">
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/">valeo.ai</a><nav class="site-nav">
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">valeo.ai</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -113,7 +113,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/posts/">Posts</a><a class="page-link" href="/projects/">Projects</a><a class="page-link" href="/publications/">Publications</a><a class="page-link" href="/about/">About</a><a class="page-link" href="/categories/">Tags</a><a class="page-link" href="/search/">Search</a></div>
+        <div class="trigger"><a class="page-link" href="/blog/posts/">Posts</a><a class="page-link" href="/blog/projects/">Projects</a><a class="page-link" href="/blog/publications/">Publications</a><a class="page-link" href="/blog/about/">About</a><a class="page-link" href="/blog/categories/">Tags</a><a class="page-link" href="/blog/search/">Search</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -172,7 +172,7 @@ p.c {
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/publications/lara/">
+            <a href="https://valeoai.github.io/blog/publications/lara/">
             <img class="media-object" src="../images/publications/2022_lara/lara.png" alt="images/publications/2022_lara/lara.png publication teaser" />
              </a>
         </div>
@@ -180,7 +180,7 @@ p.c {
     <!-- <div class="col-md-1"></div> -->
     <div class="col-md-8">
         <div class="pubitembs">
-  <h3><a href="https://valeoai.github.io/publications/lara/">LaRa: Latents and Rays for Multi-Camera Bird's-Eye-View Semantic Segmentation</a></h3>
+  <h3><a href="https://valeoai.github.io/blog/publications/lara/">LaRa: Latents and Rays for Multi-Camera Bird's-Eye-View Semantic Segmentation</a></h3>
   <p class="b">Florent Bartoccioni, Éloi Zablocki, Andrei Bursuc, Patrick Pérez, Matthieu Cord, Karteek Alahari
     <br />
     <em>Conference on Robot Learning, 2022</em>
@@ -194,7 +194,7 @@ p.c {
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/publications/lidartouch/">
+            <a href="https://valeoai.github.io/blog/publications/lidartouch/">
             <img class="media-object" src="../images/publications/2022_lidartouch/lidartouch.png" alt="images/publications/2022_lidartouch/lidartouch.png publication teaser" />
              </a>
         </div>
@@ -202,7 +202,7 @@ p.c {
     <!-- <div class="col-md-1"></div> -->
     <div class="col-md-8">
         <div class="pubitembs">
-  <h3><a href="https://valeoai.github.io/publications/lidartouch/">LiDARTouch: Monocular metric depth estimation with a few-beam LiDAR</a></h3>
+  <h3><a href="https://valeoai.github.io/blog/publications/lidartouch/">LiDARTouch: Monocular metric depth estimation with a few-beam LiDAR</a></h3>
   <p class="b">Florent Bartoccioni, Éloi Zablocki, Patrick Pérez, Matthieu Cord, Karteek Alahari
     <br />
     <em>Computer Vision and Image Understanding (CVIU), 2022</em>
@@ -216,7 +216,7 @@ p.c {
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/publications/radial/">
+            <a href="https://valeoai.github.io/blog/publications/radial/">
             <img class="media-object" src="../images/publications/2022_radial/radial_teaser.png" alt="images/publications/2022_radial/radial_teaser.png publication teaser" />
              </a>
         </div>
@@ -224,7 +224,7 @@ p.c {
     <!-- <div class="col-md-1"></div> -->
     <div class="col-md-8">
         <div class="pubitembs">
-  <h3><a href="https://valeoai.github.io/publications/radial/">Raw High-Definition Radar for Multi-Task Learning</a></h3>
+  <h3><a href="https://valeoai.github.io/blog/publications/radial/">Raw High-Definition Radar for Multi-Task Learning</a></h3>
   <p class="b">Julien Rebut, Arthur Ouaknine, Waqas Malik, and Patrick Pérez
     <br />
     <em>Computer Vision and Pattern Recognition (CVPR), 2022</em>
@@ -238,7 +238,7 @@ p.c {
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/publications/xmossda/">
+            <a href="https://valeoai.github.io/blog/publications/xmossda/">
             <img class="media-object" src="../images/publications/2022_xmossda/xmossda.png" alt="images/publications/2022_xmossda/xmossda.png publication teaser" />
              </a>
         </div>
@@ -246,7 +246,7 @@ p.c {
     <!-- <div class="col-md-1"></div> -->
     <div class="col-md-8">
         <div class="pubitembs">
-  <h3><a href="https://valeoai.github.io/publications/xmossda/">Cross-modal Learning for Domain Adaptation in 3D Semantic Segmentation</a></h3>
+  <h3><a href="https://valeoai.github.io/blog/publications/xmossda/">Cross-modal Learning for Domain Adaptation in 3D Semantic Segmentation</a></h3>
   <p class="b">Maximilian Jaritz, Tuan-Hung Vu, Raoul de Charette, Émilie Wirbel, and Patrick Pérez
     <br />
     <em>IEEE Transactions on Pattern Analysis and Machine Intelligence, 2022</em>
@@ -262,7 +262,7 @@ p.c {
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/publications/mvrss/">
+            <a href="https://valeoai.github.io/blog/publications/mvrss/">
             <img class="media-object" src="../images/publications/mvrss/teaser.png" alt="images/publications/mvrss/teaser.png publication teaser" />
              </a>
         </div>
@@ -270,7 +270,7 @@ p.c {
     <!-- <div class="col-md-1"></div> -->
     <div class="col-md-8">
         <div class="pubitembs">
-  <h3><a href="https://valeoai.github.io/publications/mvrss/">Multi-View Radar Semantic Segmentation</a></h3>
+  <h3><a href="https://valeoai.github.io/blog/publications/mvrss/">Multi-View Radar Semantic Segmentation</a></h3>
   <p class="b">Arthur Ouaknine, Alasdair Newson, Patrick Pérez, Florence Tupin and Julien Rebut
     <br />
     <em>International Conference on Computer Vision (ICCV), 2021</em>
@@ -286,7 +286,7 @@ p.c {
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/publications/carrada/">
+            <a href="https://valeoai.github.io/blog/publications/carrada/">
             <img class="media-object" src="../images/publications/carrada/teaser.png" alt="images/publications/carrada/teaser.png publication teaser" />
              </a>
         </div>
@@ -294,7 +294,7 @@ p.c {
     <!-- <div class="col-md-1"></div> -->
     <div class="col-md-8">
         <div class="pubitembs">
-  <h3><a href="https://valeoai.github.io/publications/carrada/">CARRADA Dataset: Camera and Automotive Radar with Range-Angle-Doppler Annotations</a></h3>
+  <h3><a href="https://valeoai.github.io/blog/publications/carrada/">CARRADA Dataset: Camera and Automotive Radar with Range-Angle-Doppler Annotations</a></h3>
   <p class="b">Arthur Ouaknine, Alasdair Newson, Julien Rebut, Florence Tupin and Patrick Pérez
     <br />
     <em>International Conference on Pattern Recognition (ICPR), 2020</em>
@@ -308,7 +308,7 @@ p.c {
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/publications/plop/">
+            <a href="https://valeoai.github.io/blog/publications/plop/">
             <img class="media-object" src="../images/publications/plop/plop.png" alt="images/publications/plop/plop.png publication teaser" />
              </a>
         </div>
@@ -316,7 +316,7 @@ p.c {
     <!-- <div class="col-md-1"></div> -->
     <div class="col-md-8">
         <div class="pubitembs">
-  <h3><a href="https://valeoai.github.io/publications/plop/">PLOP: Probabilistic poLynomial Objects trajectory Prediction for autonomous driving</a></h3>
+  <h3><a href="https://valeoai.github.io/blog/publications/plop/">PLOP: Probabilistic poLynomial Objects trajectory Prediction for autonomous driving</a></h3>
   <p class="b">Thibault Buhet, Emilie Wirbel, Andrei Bursuc and Xavier Perrotton
     <br />
     <em>Conference on Robot Learning (CoRL), 2020</em>
@@ -330,7 +330,7 @@ p.c {
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/publications/dynamic-mtl/">
+            <a href="https://valeoai.github.io/blog/publications/dynamic-mtl/">
             <img class="media-object" src="../images/publications/dynamic-mtl/qualitative.jpg" alt="images/publications/dynamic-mtl/qualitative.jpg publication teaser" />
              </a>
         </div>
@@ -338,7 +338,7 @@ p.c {
     <!-- <div class="col-md-1"></div> -->
     <div class="col-md-8">
         <div class="pubitembs">
-  <h3><a href="https://valeoai.github.io/publications/dynamic-mtl/">Dynamic Task Weighting Methods for Multi-task Networks in Autonomous Driving Systems</a></h3>
+  <h3><a href="https://valeoai.github.io/blog/publications/dynamic-mtl/">Dynamic Task Weighting Methods for Multi-task Networks in Autonomous Driving Systems</a></h3>
   <p class="b">Isabelle Leang, Ganesh Sistu, Fabian Burger, Andrei Bursuc, and Senthil Yogamani
     <br />
     <em>IEEE International Conference on Intelligent Transportation Systems (ITSC), 2020</em>
@@ -352,7 +352,7 @@ p.c {
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/publications/xmuda/">
+            <a href="https://valeoai.github.io/blog/publications/xmuda/">
             <img class="media-object" src="../images/publications/xmuda/xmuda.png" alt="images/publications/xmuda/xmuda.png publication teaser" />
              </a>
         </div>
@@ -360,7 +360,7 @@ p.c {
     <!-- <div class="col-md-1"></div> -->
     <div class="col-md-8">
         <div class="pubitembs">
-  <h3><a href="https://valeoai.github.io/publications/xmuda/">xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation</a></h3>
+  <h3><a href="https://valeoai.github.io/blog/publications/xmuda/">xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation</a></h3>
   <p class="b">Maximilian Jaritz, Tuan-Hung Vu, Raoul de Charette, Émilie Wirbel, and Patrick Pérez
     <br />
     <em>Computer Vision and Pattern Recognition (CVPR), 2020</em>
@@ -373,16 +373,16 @@ p.c {
 
       </div>
     </main><footer class="site-footer h-card">
-  <data class="u-url" href="/"></data>
+  <data class="u-url" href="/blog/"></data>
 
   <div class="wrapper">
 
     <div class="footer-col-wrapper">
       <div class="footer-col">
         <p class="feed-subscribe">
-          <a href="https://valeoai.github.io/feed.xml">
+          <a href="https://valeoai.github.io/blog/feed.xml">
             <svg class="svg-icon orange">
-              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+              <use xlink:href="/blog/assets/minima-social-icons.svg#rss"></use>
             </svg><span>Subscribe</span>
           </a>
         </p>

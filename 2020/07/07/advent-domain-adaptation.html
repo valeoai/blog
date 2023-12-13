@@ -9,46 +9,46 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Tuan-Hung Vu, Andrei Bursuc" />
 <meta property="og:description" content="Tuan-Hung Vu, Andrei Bursuc" />
-<link rel="canonical" href="https://valeoai.github.io/2020/07/07/advent-domain-adaptation.html" />
-<meta property="og:url" content="https://valeoai.github.io/2020/07/07/advent-domain-adaptation.html" />
+<link rel="canonical" href="https://valeoai.github.io/blog/2020/07/07/advent-domain-adaptation.html" />
+<meta property="og:url" content="https://valeoai.github.io/blog/2020/07/07/advent-domain-adaptation.html" />
 <meta property="og:site_name" content="valeo.ai" />
-<meta property="og:image" content="https://valeoai.github.io/images/posts/advent/qualitative_results.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/posts/advent/qualitative_results.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-07-07T00:00:00-05:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://valeoai.github.io/images/posts/advent/qualitative_results.png" />
+<meta property="twitter:image" content="https://valeoai.github.io/blog/images/posts/advent/qualitative_results.png" />
 <meta property="twitter:title" content="ADVENT - Adversarial Entropy Minimization for Domain Adaptation in Semantic Segmentation" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2020-07-07T00:00:00-05:00","datePublished":"2020-07-07T00:00:00-05:00","description":"Tuan-Hung Vu, Andrei Bursuc","headline":"ADVENT - Adversarial Entropy Minimization for Domain Adaptation in Semantic Segmentation","image":"https://valeoai.github.io/images/posts/advent/qualitative_results.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/2020/07/07/advent-domain-adaptation.html"},"url":"https://valeoai.github.io/2020/07/07/advent-domain-adaptation.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2020-07-07T00:00:00-05:00","datePublished":"2020-07-07T00:00:00-05:00","description":"Tuan-Hung Vu, Andrei Bursuc","headline":"ADVENT - Adversarial Entropy Minimization for Domain Adaptation in Semantic Segmentation","image":"https://valeoai.github.io/blog/images/posts/advent/qualitative_results.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/2020/07/07/advent-domain-adaptation.html"},"url":"https://valeoai.github.io/blog/2020/07/07/advent-domain-adaptation.html"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/feed.xml" title="valeo.ai" /><!-- the google_analytics_id gets auto inserted from the config file -->
+<link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
 
 
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-179942144-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
-<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>ADVENT - Adversarial Entropy Minimization for Domain Adaptation in Semantic Segmentation | valeo.ai</title>
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="ADVENT - Adversarial Entropy Minimization for Domain Adaptation in Semantic Segmentation" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Tuan-Hung Vu, Andrei Bursuc" />
 <meta property="og:description" content="Tuan-Hung Vu, Andrei Bursuc" />
-<link rel="canonical" href="https://valeoai.github.io/2020/07/07/advent-domain-adaptation.html" />
-<meta property="og:url" content="https://valeoai.github.io/2020/07/07/advent-domain-adaptation.html" />
+<link rel="canonical" href="https://valeoai.github.io/blog/2020/07/07/advent-domain-adaptation.html" />
+<meta property="og:url" content="https://valeoai.github.io/blog/2020/07/07/advent-domain-adaptation.html" />
 <meta property="og:site_name" content="valeo.ai" />
-<meta property="og:image" content="https://valeoai.github.io/images/posts/advent/qualitative_results.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/posts/advent/qualitative_results.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-07-07T00:00:00-05:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://valeoai.github.io/images/posts/advent/qualitative_results.png" />
+<meta property="twitter:image" content="https://valeoai.github.io/blog/images/posts/advent/qualitative_results.png" />
 <meta property="twitter:title" content="ADVENT - Adversarial Entropy Minimization for Domain Adaptation in Semantic Segmentation" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2020-07-07T00:00:00-05:00","datePublished":"2020-07-07T00:00:00-05:00","description":"Tuan-Hung Vu, Andrei Bursuc","headline":"ADVENT - Adversarial Entropy Minimization for Domain Adaptation in Semantic Segmentation","image":"https://valeoai.github.io/images/posts/advent/qualitative_results.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/2020/07/07/advent-domain-adaptation.html"},"url":"https://valeoai.github.io/2020/07/07/advent-domain-adaptation.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2020-07-07T00:00:00-05:00","datePublished":"2020-07-07T00:00:00-05:00","description":"Tuan-Hung Vu, Andrei Bursuc","headline":"ADVENT - Adversarial Entropy Minimization for Domain Adaptation in Semantic Segmentation","image":"https://valeoai.github.io/blog/images/posts/advent/qualitative_results.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/2020/07/07/advent-domain-adaptation.html"},"url":"https://valeoai.github.io/blog/2020/07/07/advent-domain-adaptation.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
-<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/feed.xml" title="valeo.ai" /><!-- the google_analytics_id gets auto inserted from the config file -->
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
 
 
@@ -103,7 +103,7 @@ window.onload = wrap_img;
 </script>
 </head><body><header class="site-header">
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/">valeo.ai</a><nav class="site-nav">
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">valeo.ai</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -113,7 +113,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/posts/">Posts</a><a class="page-link" href="/projects/">Projects</a><a class="page-link" href="/publications/">Publications</a><a class="page-link" href="/about/">About</a><a class="page-link" href="/categories/">Tags</a><a class="page-link" href="/search/">Search</a></div>
+        <div class="trigger"><a class="page-link" href="/blog/posts/">Posts</a><a class="page-link" href="/blog/projects/">Projects</a><a class="page-link" href="/blog/publications/">Publications</a><a class="page-link" href="/blog/about/">About</a><a class="page-link" href="/blog/categories/">Tags</a><a class="page-link" href="/blog/search/">Search</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -141,13 +141,13 @@ window.onload = wrap_img;
     
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
       
-        <a class="category-tags-link" href="/categories/#domain adaptation">domain adaptation</a>
+        <a class="category-tags-link" href="/blog/categories/#domain adaptation">domain adaptation</a>
         &nbsp;
       
-        <a class="category-tags-link" href="/categories/#semantic segmentation">semantic segmentation</a>
+        <a class="category-tags-link" href="/blog/categories/#semantic segmentation">semantic segmentation</a>
         &nbsp;
       
-        <a class="category-tags-link" href="/categories/#object detection">object detection</a>
+        <a class="category-tags-link" href="/blog/categories/#object detection">object detection</a>
         
       
       </p>
@@ -185,7 +185,7 @@ window.onload = wrap_img;
 
 <p>Here we are working on <em>Unsupervised DA</em> (UDA), which is a more challenging task where we have access to labeled source samples and only unlabeled target samples. We use as source, data generated by a simulator or video game engine, while for target we consider real-data from car-mounted cameras. In <em>Figure 1</em> we illustrate the difficulty of this task and the impact of our UDA technique, ADVENT.</p>
 
-<p><img src="/images/posts/advent/advent_teaser.png" alt="advent_teaser" height="60%" width="60%"></p>
+<p><img src="/blog/images/posts/advent/advent_teaser.png" alt="advent_teaser" height="60%" width="60%"></p>
 <div class="caption">
 <b>Figure 1. Proposed entropy-based unsupervised domain adaptation for semantic segmentation.</b> The top two rows show results on source and target domain scenes of the model trained without adaptation. The bottom row shows the result on the same target domain scene of the model trained with entropy-based adaptation. The left and right columns visualize respectively the semantic segmentation outputs and the corresponding prediction entropy maps.</div>
 
@@ -198,7 +198,7 @@ window.onload = wrap_img;
 
 <p>We present our two proposed approaches for entropy minimization using (i) an unsupervised entropy loss and (ii) adversarial training. To build our models, we start from existing semantic segmentation frameworks and add an additional network branch used for domain adaptation. <em>Figure 2</em> illustrates our architectures.</p>
 
-<p><img src="/images/posts/advent/advent_approach.jpg" alt="" height="100%" width="100%"></p>
+<p><img src="/blog/images/posts/advent/advent_approach.jpg" alt="" height="100%" width="100%"></p>
 
 <div class="caption">
 <b>Figure 2. Approach overview.</b> First, direct entropy minimization decreases the entropy of the target $P_{x_t}$, which is equivalent to minimizing the sum of weighted self-information maps $I_{x_t}$. In the second approach, we use adversarial training to enforce the consistency in $P_x$ across domains. Red arrows are used for target domain, blue arrows for source.
@@ -228,7 +228,7 @@ window.onload = wrap_img;
 
 <p>In <em>Table 1</em> we report our results on semantic segmentation from models trained on GTA5 $\rightarrow$ Cityscapes and from SYNTHIA $\rightarrow$ Cityscapes. We compare here only with the top performing method Adapt-SegMap <a class="citation" href="#tsai2018learning">(Tsai et al., 2018)</a>, while additional baselines and related methods are covered in the paper.</p>
 
-<p><img src="/images/posts/advent/advent_table1.png" alt="" height="60%" width="60%"></p>
+<p><img src="/blog/images/posts/advent/advent_table1.png" alt="" height="60%" width="60%"></p>
 <div class="caption">
 <b>Table 1. Segmentation performance in mIoU with ResNet-101 based model and Deeplab-V2 as the segmentation network.</b>We show results of our approaches using the direct entropy loss (MinEnt) and using adversarial training (AdvEnt).</div>
 
@@ -236,7 +236,7 @@ window.onload = wrap_img;
 
 <p>In <em>Figure 3</em>, we illustrate a few qualitative results of our models. Without domain adaptation, the model trained only on source supervision produces noisy segmentation predictions as well as high entropy activations, with a few exceptions on some classes like <em>“building”</em> and <em>“car”</em>. However, there are many confident predictions (low entropy) which are completely wrong. Our models, on the other hand, manage to produce correct predictions at high level of confidence.</p>
 
-<p><img src="/images/posts/advent/advent_qualitative.png" alt="" height="100%" width="100%"></p>
+<p><img src="/blog/images/posts/advent/advent_qualitative.png" alt="" height="100%" width="100%"></p>
 <div class="caption">
 <b>Figure 3. Segmentation and detection qualitative results.</b> Segmentation on Cityscapes validation set with ResNet-101 + DeepLab-V2; Detection on Cityscapes-foggy with VGG-16 as the backbone and SSD.</div>
 
@@ -245,7 +245,7 @@ window.onload = wrap_img;
 
 <p>The proposed entropy-based approaches are not limited to semantic segmentation and can be applied to UDA for other recognition tasks, e.g. object detection. We conducted experiments in the UDA object detection set-up Cityscapes $\rightarrow$ Cityscapes-Foggy, similar to the one in <a class="citation" href="#chen2018domain">(Chen et al., 2018)</a>. We report quantitative results in <em>Table 2</em> and qualitative ones in <em>Figure 3</em>. In spite of the unfavorable factors, our improvement over the baseline ($+11.5\%$ mAP using AdvEnt) is larger than the one reported in <a class="citation" href="#chen2018domain">(Chen et al., 2018)</a> ($+8.8\%$). Additional experiments and implementation details can be found in the paper. These encouraging preliminary results suggest the feasibility of applying entropy-based approached on UDA for detection.</p>
 
-<p><img src="/images/posts/advent/advent_table2.png" alt="" height="60%" width="60%"></p>
+<p><img src="/blog/images/posts/advent/advent_table2.png" alt="" height="60%" width="60%"></p>
 <div class="caption"><b>Table 2. Object detection performance on Cityscapes Foggy.</b></div>
 
 <h2 id="conclusion">
@@ -276,20 +276,20 @@ Check out our <a href="http://openaccess.thecvf.com/content_CVPR_2019/html/Vu_AD
 </ol>
 
 
-  </div><a class="u-url" href="/2020/07/07/advent-domain-adaptation.html" hidden></a>
+  </div><a class="u-url" href="/blog/2020/07/07/advent-domain-adaptation.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
-  <data class="u-url" href="/"></data>
+  <data class="u-url" href="/blog/"></data>
 
   <div class="wrapper">
 
     <div class="footer-col-wrapper">
       <div class="footer-col">
         <p class="feed-subscribe">
-          <a href="https://valeoai.github.io/feed.xml">
+          <a href="https://valeoai.github.io/blog/feed.xml">
             <svg class="svg-icon orange">
-              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+              <use xlink:href="/blog/assets/minima-social-icons.svg#rss"></use>
             </svg><span>Subscribe</span>
           </a>
         </p>
