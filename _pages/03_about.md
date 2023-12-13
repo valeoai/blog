@@ -2,6 +2,8 @@
 layout: home
 title: About
 permalink: /about/
+nav: true
+nav_order: 4 
 ---
 
 ## Overview
