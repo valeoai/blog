@@ -92,9 +92,10 @@ a:focus,
 a:active{
     outline: 0;
     /*text-decoration: none;*/
-    /*color: #0077C8;*/
+/*    color: #0077C8 !important;*/
+    color: #4a788c !important;
     /*color: #ca7136 !important;*/
-    color: #97d03b !important;
+/*    color: #97d03b !important;*/
     outline: 0 !important;
     text-decoration: none !important; 
 }
@@ -104,7 +105,8 @@ a:focus, a:hover{
     /*color: #97d03b !important;*/
     /*color: #ca7136 !important;*/
     /*color: #4a788c !important;*/
-    color: #bb9f06 !important;
+/*    color: #bb9f06 !important;*/
+    color: #97d03b !important;
     text-decoration: none !important; 
     outline: 0 !important;
 }
