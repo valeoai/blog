@@ -9,46 +9,46 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Collecting diverse enough data, and annotating it precisely, is complex, costly and time-consuming. To reduce dramatically these needs, we explore various alternatives to fully-supervised learning, e.g, training that is unsupervised (as rOSD at ECCCV’20), self-supervised (as BoWNet at CVPR’20), semi-supervised, active, zero-shot (as ZS3 at NeurIPS’19) or few-shot. We also investigate training with fully-synthetic data (in combination with unsupervised domain adaptation) and with GAN-augmented data (as Semantic Palette at CVPR’21)." />
 <meta property="og:description" content="Collecting diverse enough data, and annotating it precisely, is complex, costly and time-consuming. To reduce dramatically these needs, we explore various alternatives to fully-supervised learning, e.g, training that is unsupervised (as rOSD at ECCCV’20), self-supervised (as BoWNet at CVPR’20), semi-supervised, active, zero-shot (as ZS3 at NeurIPS’19) or few-shot. We also investigate training with fully-synthetic data (in combination with unsupervised domain adaptation) and with GAN-augmented data (as Semantic Palette at CVPR’21)." />
-<link rel="canonical" href="https://valeoai.github.io/blog/projects/limited-supervision" />
-<meta property="og:url" content="https://valeoai.github.io/blog/projects/limited-supervision" />
+<link rel="canonical" href="https://valeoai.github.io/projects/limited-supervision" />
+<meta property="og:url" content="https://valeoai.github.io/projects/limited-supervision" />
 <meta property="og:site_name" content="valeo.ai" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/projects/limited_supervision.jpg" />
+<meta property="og:image" content="https://valeoai.github.io/images/projects/limited_supervision.jpg" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-12-13T03:54:32-06:00" />
+<meta property="article:published_time" content="2023-12-13T03:58:32-06:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://valeoai.github.io/blog/images/projects/limited_supervision.jpg" />
+<meta property="twitter:image" content="https://valeoai.github.io/images/projects/limited_supervision.jpg" />
 <meta property="twitter:title" content="Frugal learning" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-12-13T03:54:32-06:00","datePublished":"2023-12-13T03:54:32-06:00","description":"Collecting diverse enough data, and annotating it precisely, is complex, costly and time-consuming. To reduce dramatically these needs, we explore various alternatives to fully-supervised learning, e.g, training that is unsupervised (as rOSD at ECCCV’20), self-supervised (as BoWNet at CVPR’20), semi-supervised, active, zero-shot (as ZS3 at NeurIPS’19) or few-shot. We also investigate training with fully-synthetic data (in combination with unsupervised domain adaptation) and with GAN-augmented data (as Semantic Palette at CVPR’21).","headline":"Frugal learning","image":"https://valeoai.github.io/blog/images/projects/limited_supervision.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/projects/limited-supervision"},"url":"https://valeoai.github.io/blog/projects/limited-supervision"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-12-13T03:58:32-06:00","datePublished":"2023-12-13T03:58:32-06:00","description":"Collecting diverse enough data, and annotating it precisely, is complex, costly and time-consuming. To reduce dramatically these needs, we explore various alternatives to fully-supervised learning, e.g, training that is unsupervised (as rOSD at ECCCV’20), self-supervised (as BoWNet at CVPR’20), semi-supervised, active, zero-shot (as ZS3 at NeurIPS’19) or few-shot. We also investigate training with fully-synthetic data (in combination with unsupervised domain adaptation) and with GAN-augmented data (as Semantic Palette at CVPR’21).","headline":"Frugal learning","image":"https://valeoai.github.io/images/projects/limited_supervision.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/projects/limited-supervision"},"url":"https://valeoai.github.io/projects/limited-supervision"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai" /><!-- the google_analytics_id gets auto inserted from the config file -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/feed.xml" title="valeo.ai" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
 
 
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-179942144-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
-<link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Frugal learning | valeo.ai</title>
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Frugal learning" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Collecting diverse enough data, and annotating it precisely, is complex, costly and time-consuming. To reduce dramatically these needs, we explore various alternatives to fully-supervised learning, e.g, training that is unsupervised (as rOSD at ECCCV’20), self-supervised (as BoWNet at CVPR’20), semi-supervised, active, zero-shot (as ZS3 at NeurIPS’19) or few-shot. We also investigate training with fully-synthetic data (in combination with unsupervised domain adaptation) and with GAN-augmented data (as Semantic Palette at CVPR’21)." />
 <meta property="og:description" content="Collecting diverse enough data, and annotating it precisely, is complex, costly and time-consuming. To reduce dramatically these needs, we explore various alternatives to fully-supervised learning, e.g, training that is unsupervised (as rOSD at ECCCV’20), self-supervised (as BoWNet at CVPR’20), semi-supervised, active, zero-shot (as ZS3 at NeurIPS’19) or few-shot. We also investigate training with fully-synthetic data (in combination with unsupervised domain adaptation) and with GAN-augmented data (as Semantic Palette at CVPR’21)." />
-<link rel="canonical" href="https://valeoai.github.io/blog/projects/limited-supervision" />
-<meta property="og:url" content="https://valeoai.github.io/blog/projects/limited-supervision" />
+<link rel="canonical" href="https://valeoai.github.io/projects/limited-supervision" />
+<meta property="og:url" content="https://valeoai.github.io/projects/limited-supervision" />
 <meta property="og:site_name" content="valeo.ai" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/projects/limited_supervision.jpg" />
+<meta property="og:image" content="https://valeoai.github.io/images/projects/limited_supervision.jpg" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-12-13T03:54:32-06:00" />
+<meta property="article:published_time" content="2023-12-13T03:58:32-06:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://valeoai.github.io/blog/images/projects/limited_supervision.jpg" />
+<meta property="twitter:image" content="https://valeoai.github.io/images/projects/limited_supervision.jpg" />
 <meta property="twitter:title" content="Frugal learning" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-12-13T03:54:32-06:00","datePublished":"2023-12-13T03:54:32-06:00","description":"Collecting diverse enough data, and annotating it precisely, is complex, costly and time-consuming. To reduce dramatically these needs, we explore various alternatives to fully-supervised learning, e.g, training that is unsupervised (as rOSD at ECCCV’20), self-supervised (as BoWNet at CVPR’20), semi-supervised, active, zero-shot (as ZS3 at NeurIPS’19) or few-shot. We also investigate training with fully-synthetic data (in combination with unsupervised domain adaptation) and with GAN-augmented data (as Semantic Palette at CVPR’21).","headline":"Frugal learning","image":"https://valeoai.github.io/blog/images/projects/limited_supervision.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/projects/limited-supervision"},"url":"https://valeoai.github.io/blog/projects/limited-supervision"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-12-13T03:58:32-06:00","datePublished":"2023-12-13T03:58:32-06:00","description":"Collecting diverse enough data, and annotating it precisely, is complex, costly and time-consuming. To reduce dramatically these needs, we explore various alternatives to fully-supervised learning, e.g, training that is unsupervised (as rOSD at ECCCV’20), self-supervised (as BoWNet at CVPR’20), semi-supervised, active, zero-shot (as ZS3 at NeurIPS’19) or few-shot. We also investigate training with fully-synthetic data (in combination with unsupervised domain adaptation) and with GAN-augmented data (as Semantic Palette at CVPR’21).","headline":"Frugal learning","image":"https://valeoai.github.io/images/projects/limited_supervision.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/projects/limited-supervision"},"url":"https://valeoai.github.io/projects/limited-supervision"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
-<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai" /><!-- the google_analytics_id gets auto inserted from the config file -->
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/feed.xml" title="valeo.ai" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
 
 
@@ -103,7 +103,7 @@ window.onload = wrap_img;
 </script>
 </head><body><header class="site-header">
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">valeo.ai</a><nav class="site-nav">
+  <div class="wrapper"><a class="site-title" rel="author" href="/">valeo.ai</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -113,7 +113,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/blog/posts/">Posts</a><a class="page-link" href="/blog/projects/">Projects</a><a class="page-link" href="/blog/publications/">Publications</a><a class="page-link" href="/blog/about/">About</a><a class="page-link" href="/blog/categories/">Tags</a><a class="page-link" href="/blog/search/">Search</a></div>
+        <div class="trigger"><a class="page-link" href="/posts/">Posts</a><a class="page-link" href="/projects/">Projects</a><a class="page-link" href="/publications/">Publications</a><a class="page-link" href="/about/">About</a><a class="page-link" href="/categories/">Tags</a><a class="page-link" href="/search/">Search</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -172,7 +172,7 @@ p.c {
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/blog/publications/SALUDA/">
+            <a href="https://valeoai.github.io/publications/SALUDA/">
             <img class="media-object" src="../images/publications/2024_saluda/saluda.png" alt="images/publications/2024_saluda/saluda.png publication teaser" />
              </a>
         </div>
@@ -180,7 +180,7 @@ p.c {
     <!-- <div class="col-md-1"></div> -->
     <div class="col-md-8">
         <div class="pubitembs">
-  <h3><a href="https://valeoai.github.io/blog/publications/SALUDA/">SALUDA: Surface-based Automotive Lidar Unsupervised Domain Adaptation</a></h3>
+  <h3><a href="https://valeoai.github.io/publications/SALUDA/">SALUDA: Surface-based Automotive Lidar Unsupervised Domain Adaptation</a></h3>
   <p class="b">Bjoern Michele, Alexandre Boulch, Gilles Puy, Tuan-Hung Vu, Renaud Marlet and Nicolas Courty
     <br />
     <em>International Conference on 3D Vision (3DV), 2024</em>
@@ -194,7 +194,7 @@ p.c {
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/blog/publications/bevcontrast/">
+            <a href="https://valeoai.github.io/publications/bevcontrast/">
             <img class="media-object" src="../images/publications/2024_bevcontrast/bevcontrast_overview.png" alt="images/publications/2024_bevcontrast/bevcontrast_overview.png publication teaser" />
              </a>
         </div>
@@ -202,7 +202,7 @@ p.c {
     <!-- <div class="col-md-1"></div> -->
     <div class="col-md-8">
         <div class="pubitembs">
-  <h3><a href="https://valeoai.github.io/blog/publications/bevcontrast/">BEVContrast: Self-Supervision in BEV Space for Automotive Lidar Point Clouds</a></h3>
+  <h3><a href="https://valeoai.github.io/publications/bevcontrast/">BEVContrast: Self-Supervision in BEV Space for Automotive Lidar Point Clouds</a></h3>
   <p class="b">Corentin Sautier, Gilles Puy, Alexandre Boulch, Renaud Marlet, Vincent Lepetit
     <br />
     <em>International Conference on 3D Vision (3DV), 2024</em>
@@ -218,7 +218,7 @@ p.c {
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/blog/publications/poda/">
+            <a href="https://valeoai.github.io/publications/poda/">
             <img class="media-object" src="../images/publications/2023_poda/poda-teaser.png" alt="images/publications/2023_poda/poda-teaser.png publication teaser" />
              </a>
         </div>
@@ -226,7 +226,7 @@ p.c {
     <!-- <div class="col-md-1"></div> -->
     <div class="col-md-8">
         <div class="pubitembs">
-  <h3><a href="https://valeoai.github.io/blog/publications/poda/">PØDA: Prompt-driven Zero-shot Domain Adaptation</a></h3>
+  <h3><a href="https://valeoai.github.io/publications/poda/">PØDA: Prompt-driven Zero-shot Domain Adaptation</a></h3>
   <p class="b">Mohammad Fahes, Tuan-Hung Vu, Andrei Bursuc, Patrick Pérez, Raoul de Charette
     <br />
     <em>International Conference on Computer Vision (ICCV), 2023</em>
@@ -240,7 +240,7 @@ p.c {
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/blog/publications/seedal/">
+            <a href="https://valeoai.github.io/publications/seedal/">
             <img class="media-object" src="../images/publications/2023_seedal/seedal-kitti.png" alt="images/publications/2023_seedal/seedal-kitti.png publication teaser" />
              </a>
         </div>
@@ -248,7 +248,7 @@ p.c {
     <!-- <div class="col-md-1"></div> -->
     <div class="col-md-8">
         <div class="pubitembs">
-  <h3><a href="https://valeoai.github.io/blog/publications/seedal/">You Never Get a Second Chance To Make a Good First Impression: Seeding Active Learning for 3D Semantic Segmentation</a></h3>
+  <h3><a href="https://valeoai.github.io/publications/seedal/">You Never Get a Second Chance To Make a Good First Impression: Seeding Active Learning for 3D Semantic Segmentation</a></h3>
   <p class="b">Nermin Samet, Oriane Siméoni, Gilles Puy, Georgy Ponimatkin, Renaud Marlet, and Vincent Lepetit
     <br />
     <em>International Conference on Computer Vision (ICCV), 2023</em>
@@ -262,7 +262,7 @@ p.c {
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/blog/publications/rangevit/">
+            <a href="https://valeoai.github.io/publications/rangevit/">
             <img class="media-object" src="../images/publications/2023_rangevit/rangevit-teaser.png" alt="images/publications/2023_rangevit/rangevit-teaser.png publication teaser" />
              </a>
         </div>
@@ -270,7 +270,7 @@ p.c {
     <!-- <div class="col-md-1"></div> -->
     <div class="col-md-8">
         <div class="pubitembs">
-  <h3><a href="https://valeoai.github.io/blog/publications/rangevit/">RangeViT: Towards Vision Transformers for 3D Semantic Segmentation in Autonomous Driving</a></h3>
+  <h3><a href="https://valeoai.github.io/publications/rangevit/">RangeViT: Towards Vision Transformers for 3D Semantic Segmentation in Autonomous Driving</a></h3>
   <p class="b">Angelika Ando, Spyros Gidaris, Andrei Bursuc, Gilles Puy, Alexandre Boulch, and Renaud Marlet
     <br />
     <em>Computer Vision and Pattern Recognition (CVPR), 2023</em>
@@ -284,7 +284,7 @@ p.c {
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/blog/publications/found/">
+            <a href="https://valeoai.github.io/publications/found/">
             <img class="media-object" src="../images/publications/2023_found/found.png" alt="images/publications/2023_found/found.png publication teaser" />
              </a>
         </div>
@@ -292,7 +292,7 @@ p.c {
     <!-- <div class="col-md-1"></div> -->
     <div class="col-md-8">
         <div class="pubitembs">
-  <h3><a href="https://valeoai.github.io/blog/publications/found/">Unsupervised Object Localization: Observing the Background to Discover Objects</a></h3>
+  <h3><a href="https://valeoai.github.io/publications/found/">Unsupervised Object Localization: Observing the Background to Discover Objects</a></h3>
   <p class="b">Oriane Siméoni, Chloé Sekkat, Gilles Puy, Antonin Vobecky, Éloi Zablocki, Patrick Pérez
     <br />
     <em>Computer Vision and Pattern Recognition (CVPR), 2023</em>
@@ -306,7 +306,7 @@ p.c {
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/blog/publications/also/">
+            <a href="https://valeoai.github.io/publications/also/">
             <img class="media-object" src="../images/publications/2023_also/also_overview.png" alt="images/publications/2023_also/also_overview.png publication teaser" />
              </a>
         </div>
@@ -314,7 +314,7 @@ p.c {
     <!-- <div class="col-md-1"></div> -->
     <div class="col-md-8">
         <div class="pubitembs">
-  <h3><a href="https://valeoai.github.io/blog/publications/also/">ALSO: Automotive Lidar Self-supervision by Occupancy estimation</a></h3>
+  <h3><a href="https://valeoai.github.io/publications/also/">ALSO: Automotive Lidar Self-supervision by Occupancy estimation</a></h3>
   <p class="b">Alexandre Boulch, Corentin Sautier, Björn Michele, Gilles Puy, Renaud Marlet
     <br />
     <em>Computer Vision and Pattern Recognition (CVPR), 2023</em>
@@ -330,7 +330,7 @@ p.c {
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/blog/publications/bib/">
+            <a href="https://valeoai.github.io/publications/bib/">
             <img class="media-object" src="../images/publications/2022_weakly_al/weakly_al.png" alt="images/publications/2022_weakly_al/weakly_al.png publication teaser" />
              </a>
         </div>
@@ -338,7 +338,7 @@ p.c {
     <!-- <div class="col-md-1"></div> -->
     <div class="col-md-8">
         <div class="pubitembs">
-  <h3><a href="https://valeoai.github.io/blog/publications/bib/">Active Learning Strategies for Weakly-Supervised Object Detection</a></h3>
+  <h3><a href="https://valeoai.github.io/publications/bib/">Active Learning Strategies for Weakly-Supervised Object Detection</a></h3>
   <p class="b">Huy V. Vo, Oriane Siméoni, Spyros Gidaris, Andrei Bursuc, Patrick Pérez, and Jean Ponce
     <br />
     <em>European Conference on Computer Vision (ECCV), 2022</em>
@@ -352,7 +352,7 @@ p.c {
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/blog/publications/attmask/">
+            <a href="https://valeoai.github.io/publications/attmask/">
             <img class="media-object" src="../images/publications/2022_attmask/attmask_outline.png" alt="images/publications/2022_attmask/attmask_outline.png publication teaser" />
              </a>
         </div>
@@ -360,7 +360,7 @@ p.c {
     <!-- <div class="col-md-1"></div> -->
     <div class="col-md-8">
         <div class="pubitembs">
-  <h3><a href="https://valeoai.github.io/blog/publications/attmask/">What to Hide from Your Students: Attention-Guided Masked Image Modeling</a></h3>
+  <h3><a href="https://valeoai.github.io/publications/attmask/">What to Hide from Your Students: Attention-Guided Masked Image Modeling</a></h3>
   <p class="b">Ioannis Kakogeorgiou, Spyros Gidaris, Bill Psomas, Yannis Avrithis, Andrei Bursuc, Konstantinos Karantzalos, and Nikos Komodakis
     <br />
     <em>European Conference on Computer Vision (ECCV), 2022</em>
@@ -374,7 +374,7 @@ p.c {
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/blog/publications/slidr/">
+            <a href="https://valeoai.github.io/publications/slidr/">
             <img class="media-object" src="../images/publications/slidr/slidr.png" alt="images/publications/slidr/slidr.png publication teaser" />
              </a>
         </div>
@@ -382,7 +382,7 @@ p.c {
     <!-- <div class="col-md-1"></div> -->
     <div class="col-md-8">
         <div class="pubitembs">
-  <h3><a href="https://valeoai.github.io/blog/publications/slidr/">Image-to-Lidar Self-Supervised Distillation for Autonomous Driving Data</a></h3>
+  <h3><a href="https://valeoai.github.io/publications/slidr/">Image-to-Lidar Self-Supervised Distillation for Autonomous Driving Data</a></h3>
   <p class="b">Corentin Sautier, Gilles Puy, Spyros Gidaris, Alexandre Boulch, Andrei Bursuc, and Renaud Marlet
     <br />
     <em>Computer Vision and Pattern Recognition (CVPR), 2022</em>
@@ -396,7 +396,7 @@ p.c {
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/blog/publications/csg0/">
+            <a href="https://valeoai.github.io/publications/csg0/">
             <img class="media-object" src="../images/publications/2022_csg0/teaser.png" alt="images/publications/2022_csg0/teaser.png publication teaser" />
              </a>
         </div>
@@ -404,7 +404,7 @@ p.c {
     <!-- <div class="col-md-1"></div> -->
     <div class="col-md-8">
         <div class="pubitembs">
-  <h3><a href="https://valeoai.github.io/blog/publications/csg0/">CSG0: Continual Urban Scene Generation with Zero Forgetting</a></h3>
+  <h3><a href="https://valeoai.github.io/publications/csg0/">CSG0: Continual Urban Scene Generation with Zero Forgetting</a></h3>
   <p class="b">Himalaya Jain (*), Tuan-Hung Vu (*), Patrick Pérez and Matthieu Cord (* equal contrib.)
     <br />
     <em>Computer Vision and Pattern Recognition (CVPR) Workshop, 2022</em>
@@ -420,7 +420,7 @@ p.c {
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/blog/publications/buda/">
+            <a href="https://valeoai.github.io/publications/buda/">
             <img class="media-object" src="../images/publications/buda/buda.png" alt="images/publications/buda/buda.png publication teaser" />
              </a>
         </div>
@@ -428,7 +428,7 @@ p.c {
     <!-- <div class="col-md-1"></div> -->
     <div class="col-md-8">
         <div class="pubitembs">
-  <h3><a href="https://valeoai.github.io/blog/publications/buda/">Handling new target classes in semantic segmentation with domain adaptation</a></h3>
+  <h3><a href="https://valeoai.github.io/publications/buda/">Handling new target classes in semantic segmentation with domain adaptation</a></h3>
   <p class="b">Maxime Bucher, Tuan-Hung Vu, Matthieu Cord, and Patrick Pérez
     <br />
     <em>Computer Vision and Image Understanding (CVIU), 2021</em>
@@ -442,7 +442,7 @@ p.c {
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/blog/publications/lod/">
+            <a href="https://valeoai.github.io/publications/lod/">
             <img class="media-object" src="../images/publications/lod/lod_teaser.jpg" alt="images/publications/lod/lod_teaser.jpg publication teaser" />
              </a>
         </div>
@@ -450,7 +450,7 @@ p.c {
     <!-- <div class="col-md-1"></div> -->
     <div class="col-md-8">
         <div class="pubitembs">
-  <h3><a href="https://valeoai.github.io/blog/publications/lod/">Large-Scale Unsupervised Object Discovery</a></h3>
+  <h3><a href="https://valeoai.github.io/publications/lod/">Large-Scale Unsupervised Object Discovery</a></h3>
   <p class="b">Huy V. Vo, Elena Sizikova, Cordelia Schmid, Patrick Pérez and Jean Ponce
     <br />
     <em>Advances in Neural Information Processing Systems (NeurIPS), 2021</em>
@@ -464,7 +464,7 @@ p.c {
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/blog/publications/lost/">
+            <a href="https://valeoai.github.io/publications/lost/">
             <img class="media-object" src="../images/publications/lost/lost.png" alt="images/publications/lost/lost.png publication teaser" />
              </a>
         </div>
@@ -472,7 +472,7 @@ p.c {
     <!-- <div class="col-md-1"></div> -->
     <div class="col-md-8">
         <div class="pubitembs">
-  <h3><a href="https://valeoai.github.io/blog/publications/lost/">Localizing Objects with Self-Supervised Transformers and no Labels</a></h3>
+  <h3><a href="https://valeoai.github.io/publications/lost/">Localizing Objects with Self-Supervised Transformers and no Labels</a></h3>
   <p class="b">Oriane Siméoni, Gilles Puy, Huy V. Vo, Simon Roburin, Spyros Gidaris, Andrei Bursuc, Patrick Pérez, Renaud Marlet, Jean Ponce
     <br />
     <em>British Machine Vision Conference (BMVC), 2021</em>
@@ -486,7 +486,7 @@ p.c {
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/blog/publications/3dgenz/">
+            <a href="https://valeoai.github.io/publications/3dgenz/">
             <img class="media-object" src="../images/publications/2021_3dgenz/teaser.png" alt="images/publications/2021_3dgenz/teaser.png publication teaser" />
              </a>
         </div>
@@ -494,7 +494,7 @@ p.c {
     <!-- <div class="col-md-1"></div> -->
     <div class="col-md-8">
         <div class="pubitembs">
-  <h3><a href="https://valeoai.github.io/blog/publications/3dgenz/">Generative Zero-Shot Learning for Semantic Segmentation of 3D Point Clouds</a></h3>
+  <h3><a href="https://valeoai.github.io/publications/3dgenz/">Generative Zero-Shot Learning for Semantic Segmentation of 3D Point Clouds</a></h3>
   <p class="b">Bjoern Michele, Alexandre Boulch, Gilles Puy, Maxime Bucher, and Renaud Marlet
     <br />
     <em>International Conference on 3D Vision (3DV), 2021</em>
@@ -508,7 +508,7 @@ p.c {
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/blog/publications/semanticpalette/">
+            <a href="https://valeoai.github.io/publications/semanticpalette/">
             <img class="media-object" src="../images/publications/semanticpalette/semantic_palette_teaser.jpg" alt="images/publications/semanticpalette/semantic_palette_teaser.jpg publication teaser" />
              </a>
         </div>
@@ -516,7 +516,7 @@ p.c {
     <!-- <div class="col-md-1"></div> -->
     <div class="col-md-8">
         <div class="pubitembs">
-  <h3><a href="https://valeoai.github.io/blog/publications/semanticpalette/">Semantic Palette: Guiding Scene Generation with Class Proportions </a></h3>
+  <h3><a href="https://valeoai.github.io/publications/semanticpalette/">Semantic Palette: Guiding Scene Generation with Class Proportions </a></h3>
   <p class="b">Guillaume Le Moing, Tuan-Hung Vu, Himalaya Jain, Patrick Pérez and Matthieu Cord
     <br />
     <em>Computer Vision and Pattern Recognition (CVPR), 2021</em>
@@ -530,7 +530,7 @@ p.c {
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/blog/publications/obow/">
+            <a href="https://valeoai.github.io/publications/obow/">
             <img class="media-object" src="../images/publications/obow/obow_teaser.jpg" alt="images/publications/obow/obow_teaser.jpg publication teaser" />
              </a>
         </div>
@@ -538,7 +538,7 @@ p.c {
     <!-- <div class="col-md-1"></div> -->
     <div class="col-md-8">
         <div class="pubitembs">
-  <h3><a href="https://valeoai.github.io/blog/publications/obow/">Online Bag-of-Visual-Words Generation for Unsupervised Representation Learning</a></h3>
+  <h3><a href="https://valeoai.github.io/publications/obow/">Online Bag-of-Visual-Words Generation for Unsupervised Representation Learning</a></h3>
   <p class="b">Spyros Gidaris, Andrei Bursuc, Gilles Puy, Nikos Komodakis, Patrick Pérez, and Matthieu Cord
     <br />
     <em>Computer Vision and Pattern Recognition (CVPR), 2021</em>
@@ -552,7 +552,7 @@ p.c {
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/blog/publications/dummynet/">
+            <a href="https://valeoai.github.io/publications/dummynet/">
             <img class="media-object" src="../images/publications/dummynet/dummynet_illustration_notext.jpg" alt="images/publications/dummynet/dummynet_illustration_notext.jpg publication teaser" />
              </a>
         </div>
@@ -560,7 +560,7 @@ p.c {
     <!-- <div class="col-md-1"></div> -->
     <div class="col-md-8">
         <div class="pubitembs">
-  <h3><a href="https://valeoai.github.io/blog/publications/dummynet/">Artificial Dummies for Urban Dataset Augmentation</a></h3>
+  <h3><a href="https://valeoai.github.io/publications/dummynet/">Artificial Dummies for Urban Dataset Augmentation</a></h3>
   <p class="b">Antonín Vobecký, David Hurych, Michal Uřičář, Patrick Pérez, and Josef Šivic
     <br />
     <em>AAAI Conference on Artificial Intelligence (AAAI), 2021</em>
@@ -576,7 +576,7 @@ p.c {
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/blog/publications/rosd/">
+            <a href="https://valeoai.github.io/publications/rosd/">
             <img class="media-object" src="../images/publications/rosd/rosd_teaser.jpg" alt="images/publications/rosd/rosd_teaser.jpg publication teaser" />
              </a>
         </div>
@@ -584,7 +584,7 @@ p.c {
     <!-- <div class="col-md-1"></div> -->
     <div class="col-md-8">
         <div class="pubitembs">
-  <h3><a href="https://valeoai.github.io/blog/publications/rosd/">Toward Unsupervised, Multi-Object Discovery in Large-Scale Image Collections</a></h3>
+  <h3><a href="https://valeoai.github.io/publications/rosd/">Toward Unsupervised, Multi-Object Discovery in Large-Scale Image Collections</a></h3>
   <p class="b">Huy V. Vo, Patrick Pérez and Jean Ponce
     <br />
     <em>European Conference on Computer Vision (ECCV), 2020</em>
@@ -598,7 +598,7 @@ p.c {
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/blog/publications/bownet/">
+            <a href="https://valeoai.github.io/publications/bownet/">
             <img class="media-object" src="../images/publications/bownet/bownet_teaser.jpg" alt="images/publications/bownet/bownet_teaser.jpg publication teaser" />
              </a>
         </div>
@@ -606,7 +606,7 @@ p.c {
     <!-- <div class="col-md-1"></div> -->
     <div class="col-md-8">
         <div class="pubitembs">
-  <h3><a href="https://valeoai.github.io/blog/publications/bownet/">Learning Representations by Predicting Bags of Visual Words</a></h3>
+  <h3><a href="https://valeoai.github.io/publications/bownet/">Learning Representations by Predicting Bags of Visual Words</a></h3>
   <p class="b">Spyros Gidaris, Andrei Bursuc, Nikos Komodakis, Patrick Pérez, and Matthieu Cord
     <br />
     <em>Computer Vision and Pattern Recognition (CVPR), 2020</em>
@@ -620,7 +620,7 @@ p.c {
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/blog/publications/gan-dataset/">
+            <a href="https://valeoai.github.io/publications/gan-dataset/">
             <img class="media-object" src="../images/publications/gan-dataset/gan_teaser.jpg" alt="images/publications/gan-dataset/gan_teaser.jpg publication teaser" />
              </a>
         </div>
@@ -628,7 +628,7 @@ p.c {
     <!-- <div class="col-md-1"></div> -->
     <div class="col-md-8">
         <div class="pubitembs">
-  <h3><a href="https://valeoai.github.io/blog/publications/gan-dataset/">This dataset does not exist: training models from generated images</a></h3>
+  <h3><a href="https://valeoai.github.io/publications/gan-dataset/">This dataset does not exist: training models from generated images</a></h3>
   <p class="b">Victor Besnier, Himalaya Jain, Andrei Bursuc, Matthieu Cord, and Patrick Pérez
     <br />
     <em>International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2020</em>
@@ -644,7 +644,7 @@ p.c {
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/blog/publications/zs3/">
+            <a href="https://valeoai.github.io/publications/zs3/">
             <img class="media-object" src="../images/publications/zs3/zs3.png" alt="images/publications/zs3/zs3.png publication teaser" />
              </a>
         </div>
@@ -652,7 +652,7 @@ p.c {
     <!-- <div class="col-md-1"></div> -->
     <div class="col-md-8">
         <div class="pubitembs">
-  <h3><a href="https://valeoai.github.io/blog/publications/zs3/">Zero-Shot Semantic Segmentation</a></h3>
+  <h3><a href="https://valeoai.github.io/publications/zs3/">Zero-Shot Semantic Segmentation</a></h3>
   <p class="b">Maxime Bucher, Tuan-Hung Vu, Matthieu Cord, and Patrick Pérez
     <br />
     <em>Neural Information Processing Systems (NeurIPS), 2019</em>
@@ -666,7 +666,7 @@ p.c {
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/blog/publications/bf3s/">
+            <a href="https://valeoai.github.io/publications/bf3s/">
             <img class="media-object" src="../images/publications/bf3s/bf3s.jpg" alt="images/publications/bf3s/bf3s.jpg publication teaser" />
              </a>
         </div>
@@ -674,7 +674,7 @@ p.c {
     <!-- <div class="col-md-1"></div> -->
     <div class="col-md-8">
         <div class="pubitembs">
-  <h3><a href="https://valeoai.github.io/blog/publications/bf3s/">Boosting Few-Shot Visual Learning With Self-Supervision</a></h3>
+  <h3><a href="https://valeoai.github.io/publications/bf3s/">Boosting Few-Shot Visual Learning With Self-Supervision</a></h3>
   <p class="b">Spyros Gidaris, Andrei Bursuc, Nikos Komodakis, Patrick Pérez, and Matthieu Cord
     <br />
     <em>International Conference on Computer Vision (ICCV), 2019</em>
@@ -688,7 +688,7 @@ p.c {
 <div class="row">
     <div class="col-md-4">
          <div class="pubteaserbs">
-            <a href="https://valeoai.github.io/blog/publications/osd/">
+            <a href="https://valeoai.github.io/publications/osd/">
             <img class="media-object" src="../images/publications/osd/osd_teaser.jpg" alt="images/publications/osd/osd_teaser.jpg publication teaser" />
              </a>
         </div>
@@ -696,7 +696,7 @@ p.c {
     <!-- <div class="col-md-1"></div> -->
     <div class="col-md-8">
         <div class="pubitembs">
-  <h3><a href="https://valeoai.github.io/blog/publications/osd/">Unsupervised Image Matching and Object Discovery as Optimization</a></h3>
+  <h3><a href="https://valeoai.github.io/publications/osd/">Unsupervised Image Matching and Object Discovery as Optimization</a></h3>
   <p class="b">Huy V. Vo, Francis Bach, Minsu Cho, Kai Han, Yann Lecun, Patrick Pérez and Jean Ponce
     <br />
     <em>Computer Vision and Pattern Recognition (CVPR), 2019</em>
@@ -709,16 +709,16 @@ p.c {
 
       </div>
     </main><footer class="site-footer h-card">
-  <data class="u-url" href="/blog/"></data>
+  <data class="u-url" href="/"></data>
 
   <div class="wrapper">
 
     <div class="footer-col-wrapper">
       <div class="footer-col">
         <p class="feed-subscribe">
-          <a href="https://valeoai.github.io/blog/feed.xml">
+          <a href="https://valeoai.github.io/feed.xml">
             <svg class="svg-icon orange">
-              <use xlink:href="/blog/assets/minima-social-icons.svg#rss"></use>
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
             </svg><span>Subscribe</span>
           </a>
         </p>
