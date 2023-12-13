@@ -66,16 +66,14 @@ permalink: /publications/clip-diy/
 <h2  align="center">BibTeX</h2>
 <left>
   <pre class="bibtex-box">
-@inproceedings{simeoni2023found,
-    title = {Unsupervised Object Localization: Observing the Background to Discover Objects},
-    author = {Oriane Sim\'eoni and
-              Chlo\'e Sekkat and
-              Gilles Puy and
-              Antonin Vobecky and
-              {\'{E}}loi Zablocki and
-              Patrick P\'erez},
-    booktitle = {CVPR},
-    year      = {2023}
+@inproceedings{wysoczanska2024clipdiy,
+    title = {CLIP-DIY: CLIP Dense Inference Yields Open-Vocabulary Semantic Segmentation For-Free},
+    author= {Monika Wysoczanska and
+            Micha{\"{e}}l Ramamonjisoa and
+            Tomasz Trzcinski and
+            Oriane Sim{\'{e}}oni},
+    booktitle = {WACV},
+    year      = {2024}
 }
   </pre>
 </left>
