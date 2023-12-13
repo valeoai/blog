@@ -706,9 +706,9 @@ html { overflow-y: scroll; }
 
 .footer-heading { margin-bottom: 10px; }
 
-a, a:hover, a:focus, a:active { outline: 0; /*text-decoration: none;*/ /*color: #0077C8;*/ /*color: #ca7136 !important;*/ color: #97d03b !important; outline: 0 !important; text-decoration: none !important; }
+a, a:hover, a:focus, a:active { outline: 0; /*text-decoration: none;*/ /*    color: #0077C8 !important;*/ color: #4a788c !important; /*color: #ca7136 !important;*/ /*    color: #97d03b !important;*/ outline: 0 !important; text-decoration: none !important; }
 
-a:focus, a:hover { /*color: #97d03b !important;*/ /*color: #ca7136 !important;*/ /*color: #4a788c !important;*/ color: #bb9f06 !important; text-decoration: none !important; outline: 0 !important; }
+a:focus, a:hover { /*color: #97d03b !important;*/ /*color: #ca7136 !important;*/ /*color: #4a788c !important;*/ /*    color: #bb9f06 !important;*/ color: #97d03b !important; text-decoration: none !important; outline: 0 !important; }
 
 .pubitem { margin: 2em 0; /*line-height: 1em;*/ font-size: 14px; line-height: 1.5; /*valign: top;*/ margin-bottom: 1.5em; }
 
