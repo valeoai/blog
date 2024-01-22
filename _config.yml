@@ -144,3 +144,5 @@ defaults:
     values:
       layout: page
   
+exclude:
+  - settings.ini
