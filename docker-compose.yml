@@ -19,7 +19,9 @@ services:
 
   converter:
     <<: *fastpages
-    command: /fastpages/action_entrypoint.sh
+    # command: /fastpages/action_entrypoint.sh
+    command: echo 1
+
 
   notebook:
     <<: *fastpages
