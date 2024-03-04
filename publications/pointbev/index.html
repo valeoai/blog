@@ -3,23 +3,23 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Semantic Palette: Guiding Scene Generation with Class Proportions | valeo.ai</title>
+<title>PointBeV: A Sparse Approach to BeV Predictions | valeo.ai</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Semantic Palette: Guiding Scene Generation with Class Proportions" />
+<meta property="og:title" content="PointBeV: A Sparse Approach to BeV Predictions" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Semantic Palette: Guiding Scene Generation with Class Proportions Guillaume Le Moing&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Himalaya Jain&nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Matthieu Cord" />
-<meta property="og:description" content="Semantic Palette: Guiding Scene Generation with Class Proportions Guillaume Le Moing&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Himalaya Jain&nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Matthieu Cord" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/semanticpalette/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/semanticpalette/" />
+<meta name="description" content="PointBeV: A Sparse Approach to BeV Predictions Loïck Chambon &nbsp;&nbsp; Éloi Zablocki &nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Florent Bartoccioni &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Matthieu Cord" />
+<meta property="og:description" content="PointBeV: A Sparse Approach to BeV Predictions Loïck Chambon &nbsp;&nbsp; Éloi Zablocki &nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Florent Bartoccioni &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Matthieu Cord" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/pointbev/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/pointbev/" />
 <meta property="og:site_name" content="valeo.ai" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/semanticpalette/semantic_palette_teaser.jpg" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2024_pointbev/pointbev.PNG" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-03-04T07:25:05-06:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/semanticpalette/semantic_palette_teaser.jpg" />
-<meta property="twitter:title" content="Semantic Palette: Guiding Scene Generation with Class Proportions" />
+<meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/2024_pointbev/pointbev.PNG" />
+<meta property="twitter:title" content="PointBeV: A Sparse Approach to BeV Predictions" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-03-04T07:25:05-06:00","datePublished":"2024-03-04T07:25:05-06:00","description":"Semantic Palette: Guiding Scene Generation with Class Proportions Guillaume Le Moing&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Himalaya Jain&nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Matthieu Cord","headline":"Semantic Palette: Guiding Scene Generation with Class Proportions","image":"https://valeoai.github.io/blog/images/publications/semanticpalette/semantic_palette_teaser.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/semanticpalette/"},"url":"https://valeoai.github.io/blog/publications/semanticpalette/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-03-04T07:25:05-06:00","datePublished":"2024-03-04T07:25:05-06:00","description":"PointBeV: A Sparse Approach to BeV Predictions Loïck Chambon &nbsp;&nbsp; Éloi Zablocki &nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Florent Bartoccioni &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Matthieu Cord","headline":"PointBeV: A Sparse Approach to BeV Predictions","image":"https://valeoai.github.io/blog/images/publications/2024_pointbev/pointbev.PNG","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/pointbev/"},"url":"https://valeoai.github.io/blog/publications/pointbev/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -28,23 +28,23 @@
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-179942144-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
 <link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Semantic Palette: Guiding Scene Generation with Class Proportions | valeo.ai</title>
+<title>PointBeV: A Sparse Approach to BeV Predictions | valeo.ai</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Semantic Palette: Guiding Scene Generation with Class Proportions" />
+<meta property="og:title" content="PointBeV: A Sparse Approach to BeV Predictions" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Semantic Palette: Guiding Scene Generation with Class Proportions Guillaume Le Moing&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Himalaya Jain&nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Matthieu Cord" />
-<meta property="og:description" content="Semantic Palette: Guiding Scene Generation with Class Proportions Guillaume Le Moing&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Himalaya Jain&nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Matthieu Cord" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/semanticpalette/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/semanticpalette/" />
+<meta name="description" content="PointBeV: A Sparse Approach to BeV Predictions Loïck Chambon &nbsp;&nbsp; Éloi Zablocki &nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Florent Bartoccioni &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Matthieu Cord" />
+<meta property="og:description" content="PointBeV: A Sparse Approach to BeV Predictions Loïck Chambon &nbsp;&nbsp; Éloi Zablocki &nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Florent Bartoccioni &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Matthieu Cord" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/pointbev/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/pointbev/" />
 <meta property="og:site_name" content="valeo.ai" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/semanticpalette/semantic_palette_teaser.jpg" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2024_pointbev/pointbev.PNG" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-03-04T07:25:05-06:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/semanticpalette/semantic_palette_teaser.jpg" />
-<meta property="twitter:title" content="Semantic Palette: Guiding Scene Generation with Class Proportions" />
+<meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/2024_pointbev/pointbev.PNG" />
+<meta property="twitter:title" content="PointBeV: A Sparse Approach to BeV Predictions" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-03-04T07:25:05-06:00","datePublished":"2024-03-04T07:25:05-06:00","description":"Semantic Palette: Guiding Scene Generation with Class Proportions Guillaume Le Moing&nbsp;&nbsp; Tuan-Hung Vu&nbsp;&nbsp; Himalaya Jain&nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Matthieu Cord","headline":"Semantic Palette: Guiding Scene Generation with Class Proportions","image":"https://valeoai.github.io/blog/images/publications/semanticpalette/semantic_palette_teaser.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/semanticpalette/"},"url":"https://valeoai.github.io/blog/publications/semanticpalette/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-03-04T07:25:05-06:00","datePublished":"2024-03-04T07:25:05-06:00","description":"PointBeV: A Sparse Approach to BeV Predictions Loïck Chambon &nbsp;&nbsp; Éloi Zablocki &nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Florent Bartoccioni &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Matthieu Cord","headline":"PointBeV: A Sparse Approach to BeV Predictions","image":"https://valeoai.github.io/blog/images/publications/2024_pointbev/pointbev.PNG","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/pointbev/"},"url":"https://valeoai.github.io/blog/publications/pointbev/"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -176,17 +176,21 @@ p {
     }
 </style>
 
-<h1 align="center"> Semantic Palette: Guiding Scene Generation with Class Proportions  </h1>
+<h1 align="center"> PointBeV: A Sparse Approach to BeV Predictions </h1>
 <!-- Simple call of authors -->
-<!-- <h3 align="center"> Guillaume Le Moing, Tuan-Hung Vu, Himalaya Jain, Patrick Pérez and Matthieu Cord </h3> -->
+<!-- <h3 align="center"> Loïck Chambon, Éloi Zablocki, Mickaël Chen, Florent Bartoccioni, Patrick Pérez, Matthieu Cord </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center"> <a href="https://16lemoing.github.io/">Guillaume Le Moing</a>&nbsp;&nbsp; <a href="https://tuanhungvu.github.io/">Tuan-Hung Vu</a>&nbsp;&nbsp; <a href="https://himalayajain.github.io/">Himalaya Jain</a>&nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a> &nbsp;&nbsp; <a href="https://cord.isir.upmc.fr/">Matthieu Cord</a> </h3>
+<h3 align="center"> <a href="https://loickch.github.io/">Loïck Chambon</a> &nbsp;&nbsp; <a href="https://scholar.google.fr/citations?user=dOkbUmEAAAAJ">Éloi Zablocki</a> &nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=QnRpMJAAAAAJ">Mickaël Chen</a> &nbsp;&nbsp; <a href="https://f-barto.github.io/">Florent Bartoccioni</a> &nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a>  &nbsp;&nbsp; <a href="https://cord.isir.upmc.fr/">Matthieu Cord</a></h3>
 
-<h3 align="center"> CVPR 2021 </h3>
+<h3 align="center"> CVPR 2024 </h3>
 
 <div align="center">
   <p>
     
+    <a href="https://arxiv.org/abs/2312.00703"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
+    
+    
+    <a href="https://github.com/valeoai/pointbev"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
     
     
     
@@ -195,35 +199,29 @@ p {
 </div>
 
 <div class="publication-teaser">
-    <img src="../../images/publications/semanticpalette/semantic_palette_teaser.jpg" alt="project teaser" />
+    <img src="../../images/publications/2024_pointbev/pointbev.PNG" alt="project teaser" />
 </div>
 
 <hr />
 
 <h2 align="center"> Abstract</h2>
 
-<p align="justify">Despite the recent progress of generative adversarial networks (GANs) at synthesizing photo-realistic images, producing complex urban scenes remains a challenging problem. Previous works break down scene generation into two consecutive phases: unconditional semantic layout synthesis and image synthesis conditioned on layouts. In this work, we propose to condition layout generation as well for higher semantic control: given a vector of class proportions, we generate layouts with matching composition. To this end, we introduce a conditional framework with novel architecture designs and learning objectives, which effectively accommodates class proportions to guide the scene generation process. The proposed architecture also allows partial layout editing with interesting applications. Thanks to the semantic control, we can produce layouts close to the real distribution, helping enhance the whole scene generation process. On different metrics and urban scene benchmarks, our models outperform existing baselines. Moreover, we demonstrate the merit of our approach for data augmentation: semantic segmenters trained on real layout-image pairs along with additional ones generated by our approach outperform models only trained on real pairs.</p>
+<p align="justify">Bird's-eye View (BeV) representations have emerged as the de-facto shared space in driving applications, offering a unified space for sensor data fusion and supporting various downstream tasks. However, conventional models use grids with fixed resolution and range and face computational inefficiencies due to the uniform allocation of resources across all cells. To address this, we propose PointBeV, a novel sparse BeV segmentation model operating on sparse BeV cells instead of dense grids. This approach offers precise control over memory usage, enabling the use of long temporal contexts and accommodating memory-constrained platforms. PointBeV employs an efficient two-pass strategy for training, enabling focused computation on regions of interest. At inference time, it can be used with various memory/performance trade-offs and flexibly adjusts to new specific use cases. PointBeV achieves state-of-the-art results on the nuScenes dataset for vehicle, pedestrian, and lane segmentation, showcasing superior performance in static and temporal settings despite being trained solely with sparse signals. We will release our code along with two new efficient modules used in the architecture: Sparse Feature Pulling, designed for the effective extraction of features from images to BeV, and Submanifold Attention, which enables efficient temporal modeling.</p>
 
 <hr />
 
-<h2 align="center"> Video</h2>
-
-<p align="center">
-  <iframe width="660" height="395" src="https://www.youtube.com/embed/ejkbaJD4Emk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" align="center"></iframe>
-</p>
-
-<p><br /></p>
 <hr />
 
 <h2 align="center">BibTeX</h2>
 <left>
   <pre class="bibtex-box">
-@inproceedings{lemoing2021semanticpalette,
-  title={Semantic Palette: Guiding Scene Generation with Class Proportions},
-  author={Le Moing, Guillaume and Vu, Tuan-Hung and Jain, Himalaya and P{\'e}rez, Patrick and Cord, Mathieu},
-  booktitle={CVPR},
-  year={2021}
-}</pre>
+@inproceedings{chambon2024pointbev,
+      title={PointBeV: A Sparse Approach to BeV Predictions},
+      author={Loick Chambon and Eloi Zablocki and Mickael Chen and Florent Bartoccioni and Patrick Perez and Matthieu Cord},
+      year={2024},
+      booktitle={CVPR}
+}
+</pre>
 </left>
 
 <p><br /></p>
