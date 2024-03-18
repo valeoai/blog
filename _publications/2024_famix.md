@@ -1,20 +1,20 @@
 ---
 layout: publication
-title: "PØDA: Prompt-driven Zero-shot Domain Adaptation"
-image: images/publications/2023_poda/poda-teaser.png
+title: "A Simple Recipe for Language-guided Domain Generalized Segmentation"
+image: images/publications/2024_famix/famix-overview.png
 hide: false
 category: [domain-adaptation, limited-supervision]
 authors: Mohammad Fahes, Tuan-Hung Vu, Andrei Bursuc, Patrick Pérez, Raoul de Charette
-venue: ICCV
-venue_long: International Conference on Computer Vision (ICCV)
-year: 2023
-month: 10
-code_url: https://github.com/astra-vision/PODA
-paper_url: https://arxiv.org/abs/2212.03241
+venue: CVPR
+venue_long: Computer Vision and Pattern Recognition (CVPR)
+year: 2024
+month: 6
+code_url: https://github.com/astra-vision/FAMix
+paper_url: https://arxiv.org/abs/2311.17922
 blog_url:
 slides_url:
 bib_url:
-permalink: /publications/poda/
+permalink: /publications/famix/
 ---
 
 <h1 align="center"> {{page.title}} </h1>
@@ -55,7 +55,7 @@ permalink: /publications/poda/
 
 <h2  align="center"> Abstract</h2>
 
-<p align="justify">Domain adaptation has been vastly investigated in computer vision but still requires access to target images at train time, which might be intractable in some uncommon conditions. In this paper, we propose the task of ‘Prompt-driven Zero-shot Domain Adaptation’, where we adapt a model trained on a source domain using only a general description in natural language of the target domain, i.e., a prompt. First, we leverage a pretrained contrastive vision-language model (CLIP) to optimize affine transformations of source features, steering them towards the target text embedding while preserving their content and semantics. To achieve this, we propose Prompt-driven Instance Normalization (PIN). Second, we show that these prompt-driven augmentations can be used to perform zero-shot domain adaptation for semantic segmentation. Experiments demonstrate that our method significantly outperforms CLIP-based style transfer baselines on several datasets for the downstream task at hand, even surpassing one-shot unsupervised domain adaptation. A similar boost is observed on object detection and image classification.</p>
+<p align="justify">Generalization to new domains not seen during training is one of the long-standing goals and challenges in deploying neural networks in real-world applications. Existing generalization techniques necessitate substantial data augmentation, potentially sourced from external datasets, and aim at learning invariant representations by imposing various alignment constraints. Large-scale pretraining has recently shown promising generalization capabilities, along with the potential of bridging different modalities. For instance, the recent advent of vision-language models like CLIP has opened the doorway for vision models to exploit the textual modality. In this paper, we introduce a simple framework for generalizing semantic segmentation networks by employing language as the source of randomization. Our recipe comprises three key ingredients: i) the preservation of the intrinsic CLIP robustness through minimal fine-tuning, ii) language-driven local style augmentation, and iii) randomization by locally mixing the source and augmented styles during training. Extensive experiments report state-of-the-art results on various generalization benchmarks.</p>
 
 
 <hr>
@@ -64,12 +64,13 @@ permalink: /publications/poda/
 <h2  align="center">BibTeX</h2>
 <left>
   <pre class="bibtex-box">
-@inproceedings{fahes2023poda,
-  title={P{\O}DA: Prompt-driven Zero-shot Domain Adaptation},
+@inproceedings{fahes2024simple,
+  title={A Simple Recipe for Language-guided Domain Generalized Segmentation},
   author={Fahes, Mohammad and Vu, Tuan-Hung and Bursuc, Andrei and P{\'e}rez, Patrick and de Charette, Raoul},
-  booktitle={ICCV},
-  year={2023}
-}</pre>
+  booktitle={CVPR},
+  year={2024}
+}
+</pre>
 </left>
 
 <br>
