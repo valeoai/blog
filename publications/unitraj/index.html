@@ -3,23 +3,23 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Resilient Multiple Choice Learning: A learned scoring scheme with application to audio scene analysis | valeo.ai</title>
+<title>UniTraj: A Unified Framework for Scalable Vehicle Trajectory Prediction | valeo.ai</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Resilient Multiple Choice Learning: A learned scoring scheme with application to audio scene analysis" />
+<meta property="og:title" content="UniTraj: A Unified Framework for Scalable Vehicle Trajectory Prediction" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Resilient Multiple Choice Learning: A learned scoring scheme with application to audio scene analysis Victor Letzelter&nbsp;&nbsp; Mathieu Fontaine&nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Slim Essid&nbsp;&nbsp; Gaël Richard" />
-<meta property="og:description" content="Resilient Multiple Choice Learning: A learned scoring scheme with application to audio scene analysis Victor Letzelter&nbsp;&nbsp; Mathieu Fontaine&nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Slim Essid&nbsp;&nbsp; Gaël Richard" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/rmcl/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/rmcl/" />
+<meta name="description" content="UniTraj: A Unified Framework for Scalable Vehicle Trajectory Prediction Lan Feng &nbsp;&nbsp; Mohammadhossein Bahari &nbsp;&nbsp; Kaouther Messaoud Ben Amor &nbsp;&nbsp; Éloi Zablocki &nbsp;&nbsp; Matthieu Cord &nbsp;&nbsp; Alexandre Alahi" />
+<meta property="og:description" content="UniTraj: A Unified Framework for Scalable Vehicle Trajectory Prediction Lan Feng &nbsp;&nbsp; Mohammadhossein Bahari &nbsp;&nbsp; Kaouther Messaoud Ben Amor &nbsp;&nbsp; Éloi Zablocki &nbsp;&nbsp; Matthieu Cord &nbsp;&nbsp; Alexandre Alahi" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/unitraj/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/unitraj/" />
 <meta property="og:site_name" content="valeo.ai" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2024_rmcl/rMCL.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2024_unitraj/unitraj.PNG" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-03-27T11:03:28-05:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/2024_rmcl/rMCL.png" />
-<meta property="twitter:title" content="Resilient Multiple Choice Learning: A learned scoring scheme with application to audio scene analysis" />
+<meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/2024_unitraj/unitraj.PNG" />
+<meta property="twitter:title" content="UniTraj: A Unified Framework for Scalable Vehicle Trajectory Prediction" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-03-27T11:03:28-05:00","datePublished":"2024-03-27T11:03:28-05:00","description":"Resilient Multiple Choice Learning: A learned scoring scheme with application to audio scene analysis Victor Letzelter&nbsp;&nbsp; Mathieu Fontaine&nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Slim Essid&nbsp;&nbsp; Gaël Richard","headline":"Resilient Multiple Choice Learning: A learned scoring scheme with application to audio scene analysis","image":"https://valeoai.github.io/blog/images/publications/2024_rmcl/rMCL.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/rmcl/"},"url":"https://valeoai.github.io/blog/publications/rmcl/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-03-27T11:03:28-05:00","datePublished":"2024-03-27T11:03:28-05:00","description":"UniTraj: A Unified Framework for Scalable Vehicle Trajectory Prediction Lan Feng &nbsp;&nbsp; Mohammadhossein Bahari &nbsp;&nbsp; Kaouther Messaoud Ben Amor &nbsp;&nbsp; Éloi Zablocki &nbsp;&nbsp; Matthieu Cord &nbsp;&nbsp; Alexandre Alahi","headline":"UniTraj: A Unified Framework for Scalable Vehicle Trajectory Prediction","image":"https://valeoai.github.io/blog/images/publications/2024_unitraj/unitraj.PNG","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/unitraj/"},"url":"https://valeoai.github.io/blog/publications/unitraj/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -28,23 +28,23 @@
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-179942144-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
 <link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Resilient Multiple Choice Learning: A learned scoring scheme with application to audio scene analysis | valeo.ai</title>
+<title>UniTraj: A Unified Framework for Scalable Vehicle Trajectory Prediction | valeo.ai</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Resilient Multiple Choice Learning: A learned scoring scheme with application to audio scene analysis" />
+<meta property="og:title" content="UniTraj: A Unified Framework for Scalable Vehicle Trajectory Prediction" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Resilient Multiple Choice Learning: A learned scoring scheme with application to audio scene analysis Victor Letzelter&nbsp;&nbsp; Mathieu Fontaine&nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Slim Essid&nbsp;&nbsp; Gaël Richard" />
-<meta property="og:description" content="Resilient Multiple Choice Learning: A learned scoring scheme with application to audio scene analysis Victor Letzelter&nbsp;&nbsp; Mathieu Fontaine&nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Slim Essid&nbsp;&nbsp; Gaël Richard" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/rmcl/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/rmcl/" />
+<meta name="description" content="UniTraj: A Unified Framework for Scalable Vehicle Trajectory Prediction Lan Feng &nbsp;&nbsp; Mohammadhossein Bahari &nbsp;&nbsp; Kaouther Messaoud Ben Amor &nbsp;&nbsp; Éloi Zablocki &nbsp;&nbsp; Matthieu Cord &nbsp;&nbsp; Alexandre Alahi" />
+<meta property="og:description" content="UniTraj: A Unified Framework for Scalable Vehicle Trajectory Prediction Lan Feng &nbsp;&nbsp; Mohammadhossein Bahari &nbsp;&nbsp; Kaouther Messaoud Ben Amor &nbsp;&nbsp; Éloi Zablocki &nbsp;&nbsp; Matthieu Cord &nbsp;&nbsp; Alexandre Alahi" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/unitraj/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/unitraj/" />
 <meta property="og:site_name" content="valeo.ai" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2024_rmcl/rMCL.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2024_unitraj/unitraj.PNG" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-03-27T11:03:28-05:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/2024_rmcl/rMCL.png" />
-<meta property="twitter:title" content="Resilient Multiple Choice Learning: A learned scoring scheme with application to audio scene analysis" />
+<meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/2024_unitraj/unitraj.PNG" />
+<meta property="twitter:title" content="UniTraj: A Unified Framework for Scalable Vehicle Trajectory Prediction" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-03-27T11:03:28-05:00","datePublished":"2024-03-27T11:03:28-05:00","description":"Resilient Multiple Choice Learning: A learned scoring scheme with application to audio scene analysis Victor Letzelter&nbsp;&nbsp; Mathieu Fontaine&nbsp;&nbsp; Mickaël Chen &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Slim Essid&nbsp;&nbsp; Gaël Richard","headline":"Resilient Multiple Choice Learning: A learned scoring scheme with application to audio scene analysis","image":"https://valeoai.github.io/blog/images/publications/2024_rmcl/rMCL.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/rmcl/"},"url":"https://valeoai.github.io/blog/publications/rmcl/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-03-27T11:03:28-05:00","datePublished":"2024-03-27T11:03:28-05:00","description":"UniTraj: A Unified Framework for Scalable Vehicle Trajectory Prediction Lan Feng &nbsp;&nbsp; Mohammadhossein Bahari &nbsp;&nbsp; Kaouther Messaoud Ben Amor &nbsp;&nbsp; Éloi Zablocki &nbsp;&nbsp; Matthieu Cord &nbsp;&nbsp; Alexandre Alahi","headline":"UniTraj: A Unified Framework for Scalable Vehicle Trajectory Prediction","image":"https://valeoai.github.io/blog/images/publications/2024_unitraj/unitraj.PNG","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/unitraj/"},"url":"https://valeoai.github.io/blog/publications/unitraj/"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -176,51 +176,52 @@ p {
     }
 </style>
 
-<h1 align="center"> Resilient Multiple Choice Learning: A learned scoring scheme with application to audio scene analysis </h1>
+<h1 align="center"> UniTraj: A Unified Framework for Scalable Vehicle Trajectory Prediction </h1>
 <!-- Simple call of authors -->
-<!-- <h3 align="center"> Victor Letzelter, Mathieu Fontaine, Mickaël Chen, Patrick Pérez, Slim Essid, and Gaël Richard </h3> -->
+<!-- <h3 align="center"> Lan Feng, Mohammadhossein Bahari, Kaouther Messaoud Ben Amor, Éloi Zablocki, Matthieu Cord, Alexandre Alahi </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center">  <a href="https://victorletzelter.github.io">Victor Letzelter</a>&nbsp;&nbsp; <a href="https://matfontaine.github.io/">Mathieu Fontaine</a>&nbsp;&nbsp; <a href="https://sites.google.com/view/mickaelchen/home">Mickaël Chen</a> &nbsp;&nbsp;  <a href="https://ptrckprz.github.io/">Patrick Pérez</a> &nbsp;&nbsp; <a href="https://perso.telecom-paristech.fr/essid/">Slim Essid</a>&nbsp;&nbsp; <a href="https://www.telecom-paris.fr/gael-richard">Gaël Richard</a></h3>
+<h3 align="center"> <a href="https://alan-lanfeng.github.io/">Lan Feng</a> &nbsp;&nbsp; <a href="https://mohammadhossein-bahari.github.io/">Mohammadhossein Bahari</a> &nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=X0teZIAAAAAJ">Kaouther Messaoud Ben Amor</a> &nbsp;&nbsp; <a href="https://scholar.google.fr/citations?user=dOkbUmEAAAAJ">Éloi Zablocki</a> &nbsp;&nbsp; <a href="https://cord.isir.upmc.fr/">Matthieu Cord</a> &nbsp;&nbsp; <a href="https://people.epfl.ch/alexandre.alahi">Alexandre Alahi</a></h3>
 
-<h3 align="center"> NeurIPS 2023 </h3>
+<h3 align="center"> under review 2024 </h3>
 
 <div align="center">
   <p>
     
-    <a href="https://arxiv.org/abs/2311.01052"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
+    <a href="https://arxiv.org/abs/2403.15098"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
     
     
-    <a href="https://github.com/Victorletzelter/code-rMCL"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
+    <a href="https://github.com/vita-epfl/unitraj"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
     
     
-    
-    <a href="https://recorder-v3.slideslive.com/?share=86327&amp;s=9b08dcaf-9905-4f10-a399-f6aa4aee047f"><i class="far fa-file-pdf"></i> Slides</a>&nbsp;&nbsp;
     
     
   </p>
 </div>
 
 <div class="publication-teaser">
-    <img src="../../images/publications/2024_rmcl/rMCL.png" alt="project teaser" />
+    <img src="../../images/publications/2024_unitraj/unitraj.PNG" alt="project teaser" />
 </div>
 
 <hr />
 
 <h2 align="center"> Abstract</h2>
 
-<p align="justify">We introduce Resilient Multiple Choice Learning (rMCL), an extension of the MCL approach for conditional distribution estimation in regression settings where multiple targets may be sampled for each training input. Multiple Choice Learning is a simple framework to tackle multimodal density estimation, using the Winner-Takes-All (WTA) loss for a set of hypotheses. In regression settings, the existing MCL variants focus on merging the hypotheses, thereby eventually sacrificing the diversity of the predictions. In contrast, our method relies on a novel learned scoring scheme underpinned by a mathematical framework based on Voronoi tessellations of the output space, from which we can derive a probabilistic interpretation. After empirically validating rMCL with experiments on synthetic data, we further assess its merits on the sound source localization problem, demonstrating its practical usefulness and the relevance of its interpretation.</p>
+<p align="justify">Vehicle trajectory prediction has increasingly relied on data-driven solutions, but their ability to scale to different data domains and the impact of larger dataset sizes on their generalization remain under-explored. While these questions can be studied by employing multiple datasets, it is challenging due to several discrepancies, \textit{e.g.,} in data formats, map resolution, and semantic annotation types. To address these challenges, we introduce UniTraj, a comprehensive framework that unifies various datasets, models, and evaluation criteria, presenting new opportunities for the vehicle trajectory prediction field. In particular, using UniTraj, we conduct extensive experiments and find that model performance significantly drops when transferred to other datasets. However, enlarging data size and diversity can substantially improve performance, leading to a new state-of-the-art result for the nuScenes dataset. We provide insights into dataset characteristics to explain these findings.</p>
+
+<hr />
 
 <hr />
 
 <h2 align="center">BibTeX</h2>
 <left>
   <pre class="bibtex-box">
-@inproceedings{Letzelter23,
-  author = {Victor Letzelter and Mathieu Fontaine and Mickaël Chen and Patrick Pérez and Gael Richard and Slim Essid},
-  title = {Resilient Multiple Choice Learning: A learned scoring scheme with application to audio scene analysis},
-  booktitle = {Advances in Neural Information Processing Systems},
-  year = 2023
-}</pre>
+@article{feng2024unitraj,
+      title={UniTraj: A Unified Framework for Scalable Vehicle Trajectory Prediction},
+      author={Lan Feng and Mohammadhossein Bahari and Kaouther Messaoud Ben Amor and {\'{E}}loi Zablocki and Matthieu Cord and Alexandre Alahi},
+      year={2024},
+      journal={arxiv}
+}
+</pre>
 </left>
 
 <p><br /></p>
