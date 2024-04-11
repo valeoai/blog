@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "UniTraj: A Unified Framework for Scalable Vehicle Trajectory Prediction" 
-image: images/publications/2024_unitraj/unitraj.PNG
+image: images/publications/2024_unitraj/unitraj.gif
 hide: false
 category: [driving, motion forecasting]
 authors: Lan Feng, Mohammadhossein Bahari, Kaouther Messaoud Ben Amor, Éloi Zablocki, Matthieu Cord, Alexandre Alahi
