@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "What Makes Multimodal In-Context Learning Work?" 
-image: images/publications/2024_multimodal_icl/multimodal_icl.PNG
+image: images/publications/2024_multimodal_icl/multimodal-icl.PNG
 hide: false
 category: [multimodal]
 authors: Folco Bertini Baldassini, Mustafa Shukor, Matthieu Cord, Laure Soulier, Benjamin Piwowarski
