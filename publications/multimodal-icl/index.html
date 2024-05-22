@@ -3,23 +3,23 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>CLIP-DIY: CLIP Dense Inference Yields Open-Vocabulary Semantic Segmentation For-Free | valeo.ai</title>
+<title>What Makes Multimodal In-Context Learning Work? | valeo.ai</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="CLIP-DIY: CLIP Dense Inference Yields Open-Vocabulary Semantic Segmentation For-Free" />
+<meta property="og:title" content="What Makes Multimodal In-Context Learning Work?" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="CLIP-DIY: CLIP Dense Inference Yields Open-Vocabulary Semantic Segmentation For-Free Monika Wysoczańska &nbsp;&nbsp;Michaël Ramamonjisoa &nbsp;&nbsp;Tomasz Trzciński &nbsp;&nbsp; Oriane Siméoni" />
-<meta property="og:description" content="CLIP-DIY: CLIP Dense Inference Yields Open-Vocabulary Semantic Segmentation For-Free Monika Wysoczańska &nbsp;&nbsp;Michaël Ramamonjisoa &nbsp;&nbsp;Tomasz Trzciński &nbsp;&nbsp; Oriane Siméoni" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/clip-diy/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/clip-diy/" />
+<meta name="description" content="What Makes Multimodal In-Context Learning Work? Folco Bertini Baldassini &nbsp;&nbsp; Mustafa Shukor &nbsp;&nbsp; Matthieu Cord &nbsp;&nbsp; Laure Soulier &nbsp;&nbsp; Benjamin Piwowarski" />
+<meta property="og:description" content="What Makes Multimodal In-Context Learning Work? Folco Bertini Baldassini &nbsp;&nbsp; Mustafa Shukor &nbsp;&nbsp; Matthieu Cord &nbsp;&nbsp; Laure Soulier &nbsp;&nbsp; Benjamin Piwowarski" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/multimodal-icl/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/multimodal-icl/" />
 <meta property="og:site_name" content="valeo.ai" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2024_clip_diy/clip_diy.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2024_multimodal_icl/multimodal_icl.PNG" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-05-22T06:40:40-05:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/2024_clip_diy/clip_diy.png" />
-<meta property="twitter:title" content="CLIP-DIY: CLIP Dense Inference Yields Open-Vocabulary Semantic Segmentation For-Free" />
+<meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/2024_multimodal_icl/multimodal_icl.PNG" />
+<meta property="twitter:title" content="What Makes Multimodal In-Context Learning Work?" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-05-22T06:40:40-05:00","datePublished":"2024-05-22T06:40:40-05:00","description":"CLIP-DIY: CLIP Dense Inference Yields Open-Vocabulary Semantic Segmentation For-Free Monika Wysoczańska &nbsp;&nbsp;Michaël Ramamonjisoa &nbsp;&nbsp;Tomasz Trzciński &nbsp;&nbsp; Oriane Siméoni","headline":"CLIP-DIY: CLIP Dense Inference Yields Open-Vocabulary Semantic Segmentation For-Free","image":"https://valeoai.github.io/blog/images/publications/2024_clip_diy/clip_diy.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/clip-diy/"},"url":"https://valeoai.github.io/blog/publications/clip-diy/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-05-22T06:40:40-05:00","datePublished":"2024-05-22T06:40:40-05:00","description":"What Makes Multimodal In-Context Learning Work? Folco Bertini Baldassini &nbsp;&nbsp; Mustafa Shukor &nbsp;&nbsp; Matthieu Cord &nbsp;&nbsp; Laure Soulier &nbsp;&nbsp; Benjamin Piwowarski","headline":"What Makes Multimodal In-Context Learning Work?","image":"https://valeoai.github.io/blog/images/publications/2024_multimodal_icl/multimodal_icl.PNG","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/multimodal-icl/"},"url":"https://valeoai.github.io/blog/publications/multimodal-icl/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -28,23 +28,23 @@
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-179942144-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
 <link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>CLIP-DIY: CLIP Dense Inference Yields Open-Vocabulary Semantic Segmentation For-Free | valeo.ai</title>
+<title>What Makes Multimodal In-Context Learning Work? | valeo.ai</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="CLIP-DIY: CLIP Dense Inference Yields Open-Vocabulary Semantic Segmentation For-Free" />
+<meta property="og:title" content="What Makes Multimodal In-Context Learning Work?" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="CLIP-DIY: CLIP Dense Inference Yields Open-Vocabulary Semantic Segmentation For-Free Monika Wysoczańska &nbsp;&nbsp;Michaël Ramamonjisoa &nbsp;&nbsp;Tomasz Trzciński &nbsp;&nbsp; Oriane Siméoni" />
-<meta property="og:description" content="CLIP-DIY: CLIP Dense Inference Yields Open-Vocabulary Semantic Segmentation For-Free Monika Wysoczańska &nbsp;&nbsp;Michaël Ramamonjisoa &nbsp;&nbsp;Tomasz Trzciński &nbsp;&nbsp; Oriane Siméoni" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/clip-diy/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/clip-diy/" />
+<meta name="description" content="What Makes Multimodal In-Context Learning Work? Folco Bertini Baldassini &nbsp;&nbsp; Mustafa Shukor &nbsp;&nbsp; Matthieu Cord &nbsp;&nbsp; Laure Soulier &nbsp;&nbsp; Benjamin Piwowarski" />
+<meta property="og:description" content="What Makes Multimodal In-Context Learning Work? Folco Bertini Baldassini &nbsp;&nbsp; Mustafa Shukor &nbsp;&nbsp; Matthieu Cord &nbsp;&nbsp; Laure Soulier &nbsp;&nbsp; Benjamin Piwowarski" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/multimodal-icl/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/multimodal-icl/" />
 <meta property="og:site_name" content="valeo.ai" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2024_clip_diy/clip_diy.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2024_multimodal_icl/multimodal_icl.PNG" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-05-22T06:40:40-05:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/2024_clip_diy/clip_diy.png" />
-<meta property="twitter:title" content="CLIP-DIY: CLIP Dense Inference Yields Open-Vocabulary Semantic Segmentation For-Free" />
+<meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/2024_multimodal_icl/multimodal_icl.PNG" />
+<meta property="twitter:title" content="What Makes Multimodal In-Context Learning Work?" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-05-22T06:40:40-05:00","datePublished":"2024-05-22T06:40:40-05:00","description":"CLIP-DIY: CLIP Dense Inference Yields Open-Vocabulary Semantic Segmentation For-Free Monika Wysoczańska &nbsp;&nbsp;Michaël Ramamonjisoa &nbsp;&nbsp;Tomasz Trzciński &nbsp;&nbsp; Oriane Siméoni","headline":"CLIP-DIY: CLIP Dense Inference Yields Open-Vocabulary Semantic Segmentation For-Free","image":"https://valeoai.github.io/blog/images/publications/2024_clip_diy/clip_diy.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/clip-diy/"},"url":"https://valeoai.github.io/blog/publications/clip-diy/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-05-22T06:40:40-05:00","datePublished":"2024-05-22T06:40:40-05:00","description":"What Makes Multimodal In-Context Learning Work? Folco Bertini Baldassini &nbsp;&nbsp; Mustafa Shukor &nbsp;&nbsp; Matthieu Cord &nbsp;&nbsp; Laure Soulier &nbsp;&nbsp; Benjamin Piwowarski","headline":"What Makes Multimodal In-Context Learning Work?","image":"https://valeoai.github.io/blog/images/publications/2024_multimodal_icl/multimodal_icl.PNG","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/multimodal-icl/"},"url":"https://valeoai.github.io/blog/publications/multimodal-icl/"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -176,21 +176,21 @@ p {
     }
 </style>
 
-<h1 align="center"> CLIP-DIY: CLIP Dense Inference Yields Open-Vocabulary Semantic Segmentation For-Free </h1>
+<h1 align="center"> What Makes Multimodal In-Context Learning Work? </h1>
 <!-- Simple call of authors -->
-<!-- <h3 align="center"> Monika Wysoczańska, Michaël Ramamonjisoa, Tomasz Trzciński, Oriane Siméoni </h3> -->
+<!-- <h3 align="center"> Folco Bertini Baldassini, Mustafa Shukor, Matthieu Cord, Laure Soulier, Benjamin Piwowarski </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center"> <a href="https://wysoczanska.github.io/">Monika Wysoczańska</a> &nbsp;&nbsp;<a href="https://michaelramamonjisoa.github.io/">Michaël Ramamonjisoa</a> &nbsp;&nbsp;<a href="https://scholar.google.com/citations?hl=en&amp;user=bJMRBFoAAAAJ">Tomasz Trzciński</a> &nbsp;&nbsp; <a href="https://osimeoni.github.io/">Oriane Siméoni</a> </h3>
+<h3 align="center"> <a href="https://www.folbaeni.com/">Folco Bertini Baldassini</a> &nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=lhp9mRgAAAAJ&amp;hl=en">Mustafa Shukor</a> &nbsp;&nbsp; <a href="https://cord.isir.upmc.fr/">Matthieu Cord</a> &nbsp;&nbsp; <a href="https://pages.isir.upmc.fr/soulier/">Laure Soulier</a> &nbsp;&nbsp; <a href="https://www.piwowarski.fr/">Benjamin Piwowarski</a></h3>
 
-<h3 align="center"> WACV 2024 </h3>
+<h3 align="center"> CVPR 2024 Workshop on Prompting in Vision 2024 </h3>
 
 <div align="center">
   <p>
     
-    <a href="https://arxiv.org/abs/2309.14289"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
+    <a href="https://arxiv.org/abs/2404.15736"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
     
     
-    <a href="https://github.com/wysoczanska/clip-diy"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
+    <a href="https://gitlab.com/folbaeni/multimodal-icl"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
     
     
     
@@ -199,33 +199,31 @@ p {
 </div>
 
 <div class="publication-teaser">
-    <img src="../../images/publications/2024_clip_diy/clip_diy.png" alt="project teaser" />
+    <img src="../../images/publications/2024_multimodal_icl/multimodal_icl.PNG" alt="project teaser" />
 </div>
 
 <hr />
 
 <h2 align="center"> Abstract</h2>
 
-<p align="justify">The emergence of CLIP has opened the way for open-world image perception. The zero-shot classification capabilities of the model are impressive but are harder to use for dense tasks such as image segmentation. Several methods have proposed different modifications and learning schemes to produce dense output. Instead, we propose in this work an open-vocabulary semantic segmentation method, dubbed CLIP-DIY, which does not require any additional training or annotations, but instead leverages existing unsupervised object localization approaches. In particular, CLIP-DIY is a multi-scale approach that directly exploits CLIP classification abilities on patches of different sizes and aggregates the decision in a single map. We further guide the segmentation using foreground/background scores obtained using unsupervised object localization methods. With our method, we obtain state-of-the-art zero-shot semantic segmentation results on PASCAL VOC and perform on par with the best methods on COCO.</p>
+<p align="justify">Large Language Models have demonstrated remarkable performance across various tasks, exhibiting the capacity to swiftly acquire new skills, such as through In-Context Learning (ICL) with minimal demonstration examples. In this work, we present a comprehensive framework for investigating Multimodal ICL (M-ICL) in the context of Large Multimodal Models. We consider the best open-source multimodal models (e.g., IDEFICS, OpenFlamingo) and a wide range of multimodal tasks. Our study unveils several noteworthy findings: (1) M-ICL primarily relies on text-driven mechanisms, showing little to no influence from the image modality. (2) When used with advanced-ICL strategy (like RICES), M-ICL is not better than a simple strategy based on majority voting over context examples. Moreover, we identify several biases and limitations of M-ICL that warrant consideration prior to deployment.</p>
 
 <hr />
 
-<p><br /></p>
 <hr />
 
 <h2 align="center">BibTeX</h2>
 <left>
   <pre class="bibtex-box">
-@inproceedings{wysoczanska2024clipdiy,
-    title = {CLIP-DIY: CLIP Dense Inference Yields Open-Vocabulary Semantic Segmentation For-Free},
-    author= {Monika Wysoczanska and
-            Micha{\"{e}}l Ramamonjisoa and
-            Tomasz Trzcinski and
-            Oriane Sim{\'{e}}oni},
-    booktitle = {WACV},
-    year      = {2024}
+@misc{baldassini2024makes,
+    title={What Makes Multimodal In-Context Learning Work?},
+    author={Folco Bertini Baldassini and Mustafa Shukor and Matthieu Cord and Laure Soulier and Benjamin Piwowarski},
+    year={2024},
+    eprint={2404.15736},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
 }
-  </pre>
+</pre>
 </left>
 
 <p><br /></p>
