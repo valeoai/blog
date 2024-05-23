@@ -1,12 +1,12 @@
 ---
 layout: publication
 title: "OccFeat: Self-supervised Occupancy Feature Prediction for Pretraining BEV Segmentation Networks"
-image: /home/ssirkoga/workspace/blog/images/publications/2024_occfeat/occfeat_teaser.png
+image: images/publications/2024_occfeat/occfeat_teaser.png
 hide: false
 category: [Self-supervision, distillation, pretraining, BEV segmentation]
 authors: Sophia Sirko-Galouchenko, Alexandre Boulch, Spyros Gidaris, Andrei Bursuc, Antonin Vobecky, Patrick Pérez, Renaud Marlet
 venue: WAD
-venue_long: Workshop on Autonomous Driving
+venue_long: CVPR Workshop on Autonomous Driving (WAD)
 year: 2024
 month: 12
 code_url: 
