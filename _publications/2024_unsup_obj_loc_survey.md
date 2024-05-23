@@ -71,7 +71,7 @@ permalink: /publications/unsupervised_object_localization_survey/
               Spyros Gidaris and
               Gilles Puy and
               Patrick P\'erez},
-    booktitle = {arxiv},
+    booktitle = {IJCV},
     year      = {2024}
 }
   </pre>
