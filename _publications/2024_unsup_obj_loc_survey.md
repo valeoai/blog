@@ -5,10 +5,10 @@ image: images/publications/2024_unsup_obj_loc_survey/unsup_obj_loc_survey.PNG
 hide: false
 category: [limited-supervision, survey]
 authors: Oriane Siméoni, Éloi Zablocki, Spyros Gidaris, Gilles Puy, Patrick Pérez
-venue: under review
-venue_long: under review
+venue: IJCV
+venue_long: International Journal of Computer Vision
 year: 2024
-month: 3
+month: 7
 code_url: https://github.com/valeoai/Awesome-Unsupervised-Object-Localization
 paper_url: https://arxiv.org/abs/2310.12904
 blog_url: 
