@@ -6,7 +6,7 @@ hide: false
 category: [Anomaly detection]
 authors: Aimira Baitieva, David Hurych, Victor Besnier and Olivier Bernard
 venue: CVPR
-venue_long: IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR)
+venue_long: Computer Vision and Pattern Recognition Conference (CVPR)
 year: 2024
 month: 06
 code_url: https://github.com/abc-125/segad
