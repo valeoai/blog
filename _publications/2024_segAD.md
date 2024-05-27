@@ -1,12 +1,12 @@
 ---
 layout: publication
 title: "Supervised Anomaly Detection for Complex Industrial Images"
-image: images/publications/2024_SegAD/
+image: images/publications/2024_segad/teaser.png
 hide: false
 category: [Anomaly detection]
 authors: Aimira Baitieva, David Hurych, Victor Besnier and Olivier Bernard
 venue: CVPR
-venue_long: IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR)
+venue_long: Computer Vision and Pattern Recognition Conference (CVPR)
 year: 2024
 month: 06
 code_url: https://github.com/abc-125/segad
@@ -47,7 +47,9 @@ permalink: /publications/segad/
 </div>
 
 
-![](../../images/publications/2024_segad/teaser.png){:width="100%"}
+<div class="publication-teaser">
+    <img src="../../{{ page.image }}" alt="project teaser"/>
+</div>
 
 <hr>
 
