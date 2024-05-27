@@ -21,7 +21,7 @@ permalink: /publications/segad/
 <!-- Simple call of authors -->
 <!-- <h3 align="center"> {{page.authors}} </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center"> <a href=""> Aimira Baitieva </a> <a href="https://scholar.google.com/citations?user=XY1PVwYAAAAJ&hl=fr&oi=ao">David Hurych</a> <a href="https://scholar.google.com/citations?hl=fr&user=n_C2h-QAAAAJ">Victor Besnier</a> <a href="">Olivier Bernard</a></h3>
+<h3 align="center"> <a href=""> Aimira Baitieva </a> &nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=XY1PVwYAAAAJ&hl=fr&oi=ao">David Hurych</a> &nbsp;&nbsp; <a href="https://scholar.google.com/citations?hl=fr&user=n_C2h-QAAAAJ">Victor Besnier</a> &nbsp;&nbsp; <a href="">Olivier Bernard</a></h3>
 
 
 <h3 align="center"> {{page.venue}} {{page.year}} (poster) </h3>
