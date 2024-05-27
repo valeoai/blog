@@ -8,7 +8,7 @@ authors: Sophia Sirko-Galouchenko, Alexandre Boulch, Spyros Gidaris, Andrei Burs
 venue: WAD
 venue_long: CVPR Workshop on Autonomous Driving (WAD)
 year: 2024
-month: 12
+month: 06
 code_url: 
 paper_url: https://arxiv.org/abs/2404.14027
 blog_url:
