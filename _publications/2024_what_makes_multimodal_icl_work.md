@@ -8,7 +8,7 @@ authors: Folco Bertini Baldassini, Mustafa Shukor, Matthieu Cord, Laure Soulier,
 venue: CVPR 2024 Workshop on Prompting in Vision
 venue_long: CVPR 2024 Workshop on Prompting in Vision
 year: 2024
-month: 4
+month: 6
 code_url: https://gitlab.com/folbaeni/multimodal-icl
 paper_url: https://arxiv.org/abs/2404.15736
 blog_url: 
