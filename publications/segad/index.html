@@ -3,23 +3,23 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Spherical perspective on learning with normalization layers | valeo.ai</title>
+<title>Supervised Anomaly Detection for Complex Industrial Images | valeo.ai</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Spherical perspective on learning with normalization layers" />
+<meta property="og:title" content="Supervised Anomaly Detection for Complex Industrial Images" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Spherical perspective on learning with normalization layers Simon Roburin &nbsp;&nbsp; Yann de Mont-Marin &nbsp;&nbsp; Andrei Bursuc &nbsp;&nbsp; Renaud Marlet &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Mathieu Aubry" />
-<meta property="og:description" content="Spherical perspective on learning with normalization layers Simon Roburin &nbsp;&nbsp; Yann de Mont-Marin &nbsp;&nbsp; Andrei Bursuc &nbsp;&nbsp; Renaud Marlet &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Mathieu Aubry" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/spherical-adam/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/spherical-adam/" />
+<meta name="description" content="Supervised Anomaly Detection for Complex Industrial Images Aimira Baitieva David Hurych&nbsp;&nbsp; Victor Besnier Olivier Bernard" />
+<meta property="og:description" content="Supervised Anomaly Detection for Complex Industrial Images Aimira Baitieva David Hurych&nbsp;&nbsp; Victor Besnier Olivier Bernard" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/segad/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/segad/" />
 <meta property="og:site_name" content="valeo.ai" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2022_spherical_adam/spherical_adam.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2024_SegAD/" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-05-27T07:38:05-05:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/2022_spherical_adam/spherical_adam.png" />
-<meta property="twitter:title" content="Spherical perspective on learning with normalization layers" />
+<meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/2024_SegAD/" />
+<meta property="twitter:title" content="Supervised Anomaly Detection for Complex Industrial Images" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-05-27T07:38:05-05:00","datePublished":"2024-05-27T07:38:05-05:00","description":"Spherical perspective on learning with normalization layers Simon Roburin &nbsp;&nbsp; Yann de Mont-Marin &nbsp;&nbsp; Andrei Bursuc &nbsp;&nbsp; Renaud Marlet &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Mathieu Aubry","headline":"Spherical perspective on learning with normalization layers","image":"https://valeoai.github.io/blog/images/publications/2022_spherical_adam/spherical_adam.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/spherical-adam/"},"url":"https://valeoai.github.io/blog/publications/spherical-adam/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-05-27T07:38:05-05:00","datePublished":"2024-05-27T07:38:05-05:00","description":"Supervised Anomaly Detection for Complex Industrial Images Aimira Baitieva David Hurych&nbsp;&nbsp; Victor Besnier Olivier Bernard","headline":"Supervised Anomaly Detection for Complex Industrial Images","image":"https://valeoai.github.io/blog/images/publications/2024_SegAD/","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/segad/"},"url":"https://valeoai.github.io/blog/publications/segad/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://valeoai.github.io/blog/feed.xml" title="valeo.ai" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -28,23 +28,23 @@
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-179942144-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
 
 <link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Spherical perspective on learning with normalization layers | valeo.ai</title>
+<title>Supervised Anomaly Detection for Complex Industrial Images | valeo.ai</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Spherical perspective on learning with normalization layers" />
+<meta property="og:title" content="Supervised Anomaly Detection for Complex Industrial Images" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Spherical perspective on learning with normalization layers Simon Roburin &nbsp;&nbsp; Yann de Mont-Marin &nbsp;&nbsp; Andrei Bursuc &nbsp;&nbsp; Renaud Marlet &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Mathieu Aubry" />
-<meta property="og:description" content="Spherical perspective on learning with normalization layers Simon Roburin &nbsp;&nbsp; Yann de Mont-Marin &nbsp;&nbsp; Andrei Bursuc &nbsp;&nbsp; Renaud Marlet &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Mathieu Aubry" />
-<link rel="canonical" href="https://valeoai.github.io/blog/publications/spherical-adam/" />
-<meta property="og:url" content="https://valeoai.github.io/blog/publications/spherical-adam/" />
+<meta name="description" content="Supervised Anomaly Detection for Complex Industrial Images Aimira Baitieva David Hurych&nbsp;&nbsp; Victor Besnier Olivier Bernard" />
+<meta property="og:description" content="Supervised Anomaly Detection for Complex Industrial Images Aimira Baitieva David Hurych&nbsp;&nbsp; Victor Besnier Olivier Bernard" />
+<link rel="canonical" href="https://valeoai.github.io/blog/publications/segad/" />
+<meta property="og:url" content="https://valeoai.github.io/blog/publications/segad/" />
 <meta property="og:site_name" content="valeo.ai" />
-<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2022_spherical_adam/spherical_adam.png" />
+<meta property="og:image" content="https://valeoai.github.io/blog/images/publications/2024_SegAD/" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-05-27T07:38:05-05:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/2022_spherical_adam/spherical_adam.png" />
-<meta property="twitter:title" content="Spherical perspective on learning with normalization layers" />
+<meta property="twitter:image" content="https://valeoai.github.io/blog/images/publications/2024_SegAD/" />
+<meta property="twitter:title" content="Supervised Anomaly Detection for Complex Industrial Images" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-05-27T07:38:05-05:00","datePublished":"2024-05-27T07:38:05-05:00","description":"Spherical perspective on learning with normalization layers Simon Roburin &nbsp;&nbsp; Yann de Mont-Marin &nbsp;&nbsp; Andrei Bursuc &nbsp;&nbsp; Renaud Marlet &nbsp;&nbsp; Patrick Pérez &nbsp;&nbsp; Mathieu Aubry","headline":"Spherical perspective on learning with normalization layers","image":"https://valeoai.github.io/blog/images/publications/2022_spherical_adam/spherical_adam.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/spherical-adam/"},"url":"https://valeoai.github.io/blog/publications/spherical-adam/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-05-27T07:38:05-05:00","datePublished":"2024-05-27T07:38:05-05:00","description":"Supervised Anomaly Detection for Complex Industrial Images Aimira Baitieva David Hurych&nbsp;&nbsp; Victor Besnier Olivier Bernard","headline":"Supervised Anomaly Detection for Complex Industrial Images","image":"https://valeoai.github.io/blog/images/publications/2024_SegAD/","mainEntityOfPage":{"@type":"WebPage","@id":"https://valeoai.github.io/blog/publications/segad/"},"url":"https://valeoai.github.io/blog/publications/segad/"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -176,21 +176,21 @@ p {
     }
 </style>
 
-<h1 align="center"> Spherical perspective on learning with normalization layers </h1>
+<h1 align="center"> Supervised Anomaly Detection for Complex Industrial Images </h1>
 <!-- Simple call of authors -->
-<!-- <h3 align="center"> Simon Roburin, Yann de Mont-Marin, Andrei Bursuc, Renaud Marlet, Patrick Pérez, Mathieu Aubry </h3> -->
+<!-- <h3 align="center"> Aimira Baitieva, David Hurych, Victor Besnier and Olivier Bernard </h3> -->
 <!-- Alternatively you can add links to author pages -->
-<h3 align="center"> <a href="http://imagine.enpc.fr/~roburins/">Simon Roburin</a> &nbsp;&nbsp; <a href="https://scholar.google.fr/citations?user=jFEhgPAAAAAJ">Yann de Mont-Marin</a> &nbsp;&nbsp; <a href="https://abursuc.github.io/">Andrei Bursuc</a> &nbsp;&nbsp; <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a> &nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a> &nbsp;&nbsp; <a href="http://imagine.enpc.fr/~aubrym/">Mathieu Aubry</a></h3>
+<h3 align="center"> <a href=""> Aimira Baitieva </a> <a href="https://scholar.google.com/citations?user=XY1PVwYAAAAJ&amp;hl=fr&amp;oi=ao">David Hurych</a>&nbsp;&nbsp; <a href="https://scholar.google.com/citations?hl=fr&amp;user=n_C2h-QAAAAJ">Victor Besnier</a> <a href="">Olivier Bernard</a></h3>
 
-<h3 align="center"> Neurocomputing 2022 </h3>
+<h3 align="center"> CVPR 2024 (poster) </h3>
 
 <div align="center">
   <p>
     
-    <a href="https://arxiv.org/abs/2006.13382"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
+    <a href="https://arxiv.org/abs/2405.04953"><i class="far fa-file-pdf"></i> Paper</a>&nbsp;&nbsp;
     
     
-    <a href="https://github.com/ymontmarin/adamsrt"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
+    <a href="https://github.com/abc-125/segad"><i class="fab fa-github"></i> Code</a> &nbsp;&nbsp;
     
     
     
@@ -198,38 +198,29 @@ p {
   </p>
 </div>
 
-<div class="publication-teaser">
-    <img src="../../images/publications/2022_spherical_adam/spherical_adam.png" alt="project teaser" />
-</div>
+<p><img src="../../images/publications/2024_segad/teaser.png" alt="" width="100%" /></p>
 
 <hr />
 
 <h2 align="center"> Abstract</h2>
 
-<p align="justify">Normalization Layers (NLs) are widely used in modern deep-learning architectures. Despite their apparent simplicity, their effect on optimization is not yet fully understood. This paper introduces a spherical framework to study the optimization of neural networks with NLs from a geometric perspective. Concretely, the radial invariance of groups of parameters, such as filters for convolutional neural networks, allows to translate the optimization steps on the L2 unit hypersphere. This formulation and the associated geometric interpretation shed new light on the training dynamics. Firstly, the first effective learning rate expression of Adam is derived. Then the demonstration that, in the presence of NLs, performing Stochastic Gradient Descent (SGD) alone is actually equivalent to a variant of Adam constrained to the unit hypersphere, stems from the framework. Finally, this analysis outlines phenomena that previous variants of Adam act on and their importance in the optimization process are experimentally validated.</p>
+<p align="justify">Automating visual inspection in industrial production lines is essential for increasing product quality across various industries. Anomaly detection (AD) methods serve as robust tools for this purpose. However, existing public datasets primarily consist of images without anomalies, limiting the practical application of AD methods in production settings. To address this challenge, we present (1) the Valeo Anomaly Dataset (VAD), a novel real-world industrial dataset comprising 5000 images, including 2000 instances of challenging real defects across more than 20 subclasses. Acknowledging that traditional AD methods struggle with this dataset, we introduce (2) Segmentation based Anomaly Detector (SegAD). First, SegAD leverages anomaly maps as well as segmentation maps to compute local statistics. Next, SegAD uses these statistics and an optional supervised classifier score as input features for a Boosted Random Forest (BRF) classifier, yielding the final anomaly score. Our SegAD achieves state-of-the-art performance on both VAD (+2.1% AUROC) and the VisA dataset (+0.4% AUROC). The code and the models are publicly available</p>
 
-<hr />
+<p><br /></p>
 
 <h2 align="center">BibTeX</h2>
 <left>
   <pre class="bibtex-box">
-@article{spherical-adam-2022,
-  author    = {Simon Roburin and
-               Yann de Mont{-}Marin and
-               Andrei Bursuc and
-               Renaud Marlet and
-               Patrick P{\'{e}}rez and
-               Mathieu Aubry},
-  title     = {Spherical perspective on learning with normalization layers},
-  journal   = {Neurocomputing},
-  volume    = {487},
-  pages     = {66--74},
-  year      = {2022}
-}
-</pre>
+@inproceedings{baitieva2024supervised,
+  title={Supervised Anomaly Detection for Complex Industrial Images},
+  author={Aimira Baitieva, David Hurych, Victor Besnier and Olivier Bernard},
+  booktitle={CVPR},
+  year={2024}
+}</pre>
 </left>
 
 <p><br /></p>
+
 
       </div>
     </main><footer class="site-footer h-card">
