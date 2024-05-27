@@ -2,7 +2,7 @@
 layout: publication
 title: "Supervised Anomaly Detection for Complex Industrial Images"
 image: images/publications/2024_SegAD/
-hide: false
+hide: true
 category: [Anomaly detection]
 authors: Aimira Baitieva, David Hurych, Victor Besnier and Olivier Bernard
 venue: CVPR
