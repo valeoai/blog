@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Three Pillars improving Vision Foundation Model Distillation for Lidar"
-image: images/publications/2024_scalr/scalr-scores.png
+image: images/publications/2024_scalr/illustration.png
 hide: false
 category: [3d-perception, limited-supervision]
 authors: Gilles Puy, Spyros Gidaris, Alexandre Boulch, Oriane Siméoni, Corentin Sautier, Patrick Pérez, Andrei Bursuc, Renaud Marlet
