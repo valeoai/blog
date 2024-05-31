@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Don’t drop your samples! Coherence-aware training benefits Conditional diffusion"
-image: images/publications/2024_dont_drop/
+image: images/publications/2024_dont_drop/teaser.png
 hide: false
 category: [Image Synthesis]
 authors: Nicolas Dufour, Victor Besnier, Vicky Kalogeiton, David Picard
@@ -14,7 +14,7 @@ paper_url: https://arxiv.org/abs/2405.20324
 blog_url: https://nicolas-dufour.github.io/cad.html
 slides_url:
 bib_url:
-permalink: /publications/dont_drop/
+permalink: /publications/2024_dont_drop/
 ---
 
 <h1 align="center"> {{page.title}} </h1>
