@@ -136,7 +136,7 @@ Deep Neural Networks (DNNs) are powerful tools for various computer vision tasks
 
 ![abnn_overview]({{ site.baseurl }}/images/posts/2024_cvpr/abnn_overview.PNG){:height="100%" width="100%"}
 <div class="caption"><b>Illustration of the training process for the ABNN.</b>
-The procedure begins with training a single DNN $\omega\_{\text{MAP}}$, followed by architectural adjustments on the normalization layers to transform it into an ABNN. The final step involves fine-tuning the ABNN model.
+The procedure begins with training a single DNN $\omega_{\text{MAP}}$, followed by architectural adjustments on the normalization layers to transform it into an ABNN. The final step involves fine-tuning the ABNN model.
 </div>
 
 <hr>
