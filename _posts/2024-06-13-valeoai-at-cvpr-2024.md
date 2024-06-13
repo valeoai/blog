@@ -107,12 +107,12 @@ Automating visual inspection in industrial production lines is essential for inc
 Generalization to new domains not seen during training is one of the long-standing goals and challenges in deploying neural networks in real-world applications. Existing generalization techniques necessitate substantial data augmentation, potentially sourced from external datasets, and aim at learning invariant representations by imposing various alignment constraints. Large-scale pretraining has recently shown promising generalization capabilities, along with the potential of bridging different modalities. For instance, the recent advent of vision-language models like CLIP has opened the doorway for vision models to exploit the textual modality. In this paper, we introduce a simple framework for generalizing semantic segmentation networks by employing language as the source of randomization. Our recipe comprises three key ingredients: i) the preservation of the intrinsic CLIP robustness through minimal fine-tuning, ii) language-driven local style augmentation, and iii) randomization by locally mixing the source and augmented styles during training. Extensive experiments report state-of-the-art results on various generalization benchmarks.
 
 
-![famix_overview]({{ site.baseurl }}/images/posts/2024_cvpr/famix_overview.png){:height="75%" width="75%"}
+![famix_overview]({{ site.baseurl }}/images/publications/2024_famix/famix-overview.png){:height="100%" width="100%"}
 <div class="caption"><b>Overall process of FAMix.</b>
 FAMix consists of two steps. (Left) Local style mining consists of dividing the low-level feature activations into patches, which are used for style mining using Prompt-driven Instance Normalization (PIN). Specifically, for each patch, the dominant class is queried from the ground truth, and the mined style is added to corresponding class-specific style bank. (Right) Training the segmentation network is performed with minimal fine-tuning of the backbone. At each iteration, the low-level feature activations are viewed as grids of patches. For each patch, the dominant class is queried using the ground truth, then a style is sampled from the corresponding style bank. Style randomization is performed by normalizing each patch in the grid by its statistics, and transferring the new style which is a mixing between the original style and the sampled one. The network is trained using only a cross-entropy loss.
 </div>
 
-![famix_results]({{ site.baseurl }}/images/posts/2024_cvpr/famix_results.png){:height="75%" width="75%"}
+![famix_results]({{ site.baseurl }}/images/posts/2024_cvpr/famix_results.PNG){:height="100%" width="100%"}
 <div class="caption"><b>Qualitative results.</b>
 Columns 1-2: Image and ground truth (GT), Columns 3-4-5: Different domain generalization methods, Column 6: Our results.
 </div>
@@ -125,7 +125,7 @@ Columns 1-2: Image and ground truth (GT), Columns 3-4-5: Different domain genera
 
 Deep Neural Networks (DNNs) are powerful tools for various computer vision tasks, yet they often struggle with reliable uncertainty quantification — a critical requirement for real-world applications. Bayesian Neural Networks (BNN) are equipped for uncertainty estimation but cannot scale to large DNNs where they are highly unstable to train. To address this challenge, we introduce the Adaptable Bayesian Neural Network (ABNN), a simple and scalable strategy to seamlessly transform DNNs into BNNs in a post-hoc manner with minimal computational and training overheads. ABNN preserves the main predictive properties of DNNs while enhancing their uncertainty quantification abilities through simple BNN adaptation layers (attached to normalization layers) and a few fine-tuning steps on pre-trained models. We conduct extensive experiments across multiple datasets for image classification and semantic segmentation tasks, and our results demonstrate that ABNN achieves state-of-the-art performance without the computational budget typically associated with ensemble methods.
 
-![abnn_overview]({{ site.baseurl }}/images/posts/2024_cvpr/abnn_overview.png){:height="75%" width="75%"}
+![abnn_overview]({{ site.baseurl }}/images/posts/2024_cvpr/abnn_overivew.PNG){:height="95%" width="95%"}
 <div class="caption"><b>Illustration of the training process for the ABNN.</b>
 The procedure begins with training a single DNN $\omega\_{\text{MAP}$, followed by architectural adjustments on the normalization layers to transform it into an ABNN. The final step involves fine-tuning the ABNN model.
 </div>
