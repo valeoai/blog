@@ -134,7 +134,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      17 min read
+      18 min read
     
 </span></p>
 
@@ -172,7 +172,7 @@ The team will be at CVPR to present these works and will be happy to discuss mor
 We outline our team papers below.</p>
 
 <h2 id="three-pillars-improving-vision-foundation-model-distillation-for-lidar">Three Pillars Improving Vision Foundation Model Distillation for Lidar</h2>
-<h4 id="authors-gilles-puy---spyros-gidaris---alexandre-boulch-oriane-siméoni--corentin-sautier--andrei-bursuc--patrick-pérez--renaud-marlet">Authors: <a href="https://sites.google.com/site/puygilles/home">Gilles Puy</a>     <a href="https://scholar.google.fr/citations?user=7atfg7EAAAAJ&amp;hl=en">Spyros Gidaris</a>     <a href="https://www.boulch.eu/">Alexandre Boulch</a>   <a href="https://osimeoni.github.io/">Oriane Siméoni</a>    <a href="https://csautier.github.io/">Corentin Sautier</a>    <a href="https://abursuc.github.io/">Andrei Bursuc</a>    <a href="https://ptrckprz.github.io/">Patrick Pérez</a>    <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a></h4>
+<h4 id="authors-gilles-puy--spyros-gidaris---alexandre-boulch-oriane-siméoni--corentin-sautier--andrei-bursuc--patrick-pérez--renaud-marlet">Authors: <a href="https://sites.google.com/site/puygilles/home">Gilles Puy</a>,    <a href="https://scholar.google.fr/citations?user=7atfg7EAAAAJ&amp;hl=en">Spyros Gidaris</a>,     <a href="https://www.boulch.eu/">Alexandre Boulch</a>,   <a href="https://osimeoni.github.io/">Oriane Siméoni</a>,    <a href="https://csautier.github.io/">Corentin Sautier</a>,    <a href="https://abursuc.github.io/">Andrei Bursuc</a>,    <a href="https://ptrckprz.github.io/">Patrick Pérez</a>,    <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a></h4>
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2310.17504">Paper</a>] &nbsp;&nbsp; [<a href="https://github.com/valeoai/ScalR">Code</a>] &nbsp;&nbsp; [<a href="https://youtu.be/yksj5WuJY4I">Video</a>]  &nbsp;&nbsp; [<a href="https://valeoai.github.io/blog/publications/scalr/">Project page</a>]</h4>
 
@@ -203,18 +203,22 @@ to cars on all datasets, illustrating the capacity of our single pretrained back
 <hr />
 
 <h2 id="pointbev-a-sparse-approach-to-bev-predictions">PointBeV: A Sparse Approach to BeV Predictions</h2>
-<h4 id="authors-loïck-chambon--éloi-zablocki--mickaël-chen--florent-bartoccioni--patrick-pérez---matthieu-cord">Authors: <a href="https://loickch.github.io/">Loïck Chambon</a>    <a href="https://scholar.google.fr/citations?user=dOkbUmEAAAAJ">Éloi Zablocki</a>    <a href="https://scholar.google.com/citations?user=QnRpMJAAAAAJ">Mickaël Chen</a>    <a href="https://f-barto.github.io/">Florent Bartoccioni</a>    <a href="https://ptrckprz.github.io/">Patrick Pérez</a>     <a href="https://cord.isir.upmc.fr/">Matthieu Cord</a></h4>
+<h4 id="authors-loïck-chambon--éloi-zablocki--mickaël-chen--florent-bartoccioni--patrick-pérez---matthieu-cord">Authors: <a href="https://loickch.github.io/">Loïck Chambon</a>,    <a href="https://scholar.google.fr/citations?user=dOkbUmEAAAAJ">Éloi Zablocki</a>,    <a href="https://scholar.google.com/citations?user=QnRpMJAAAAAJ">Mickaël Chen</a>,    <a href="https://f-barto.github.io/">Florent Bartoccioni</a>,    <a href="https://ptrckprz.github.io/">Patrick Pérez</a>,     <a href="https://cord.isir.upmc.fr/">Matthieu Cord</a></h4>
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2312.00703">Paper</a>] &nbsp;&nbsp; [<a href="https://github.com/valeoai/pointbev">Code</a>] &nbsp;&nbsp; [<a href="https://valeoai.github.io/blog/publications/pointbev/">Project page</a>]</h4>
 
-<p>Bird’s-eye View (BeV) representations have emerged as the de-facto shared space in driving applications, offering a unified space for sensor data fusion and supporting various downstream tasks. However, conventional models use grids with fixed resolution and range and face computational inefficiencies due to the uniform allocation of resources across all cells. To address this, we propose PointBeV, a novel sparse BeV segmentation model operating on sparse BeV cells instead of dense grids. This approach offers precise control over memory usage, enabling the use of long temporal contexts and accommodating memory-constrained platforms. PointBeV employs an efficient two-pass strategy for training, enabling focused computation on regions of interest. At inference time, it can be used with various memory/performance trade-offs and flexibly adjusts to new specific use cases. PointBeV achieves state-of-the-art results on the nuScenes dataset for vehicle, pedestrian, and lane segmentation, showcasing superior performance in static and temporal settings despite being trained solely with sparse signals. We will release our code along with two new efficient modules used in the architecture: Sparse Feature Pulling, designed for the effective extraction of features from images to BeV, and Submanifold Attention, which enables efficient temporal modeling.</p>
+<p>Bird’s-eye View (BeV) representations have emerged as the de-facto shared space in driving applications, offering a unified space for sensor data fusion and supporting various downstream tasks. However, conventional models use grids with fixed resolution and range and face computational inefficiencies due to the uniform allocation of resources across all cells. To address this, we propose PointBeV, a novel sparse BeV segmentation model operating on sparse BeV cells instead of dense grids. This approach offers precise control over memory usage, enabling the use of long temporal contexts and accommodating memory-constrained platforms. PointBeV employs an efficient two-pass strategy for training, enabling focused computation on regions of interest. At inference time, it can be used with various memory/performance trade-offs and flexibly adjusts to new specific use cases.</p>
 
 <p><img src="/blog/images/publications/2024_pointbev/pointbev.PNG" alt="pointbev_overview" height="100%" width="100%" /></p>
 <div class="caption"><b>PointBeV overview.</b>
+As a sparse method, PointBeV is trained using local predictions, only for sampled 2D points provided as inputs.  The points of interest are lifted to form 3D pillars, with each 3D point pulling visual features.  To achieve this, PointBeV incorporates an efficient feature extraction process through a Sparse Feature Pulling module, illustrated in the ‘efficient feature extraction’ block.  The obtained 3D BeV features are then flattened onto the 2D BeV plane and processed using a sparse U-Net with task-dependent final heads, generating local BeV predictions. For training, we only need sparse signals. At test time, points that have not been sampled are set to zero.
 </div>
 
+<p>PointBeV achieves state-of-the-art results on the nuScenes dataset for vehicle, pedestrian, and lane segmentation, showcasing superior performance in static and temporal settings despite being trained solely with sparse signals. We will release our code along with two new efficient modules used in the architecture: Sparse Feature Pulling, designed for the effective extraction of features from images to BeV, and Submanifold Attention, which enables efficient temporal modeling.</p>
+
 <p><img src="/blog/images/posts/2024_cvpr/pointbev_results.PNG" alt="pointbev_results" height="50%" width="50%" /></p>
-<div class="caption"><b>PointBeV results.</b>
+<div class="caption"><b>BeV vehicle IoU vs. memory footprint on nuScenes.</b>
+The size of a dot represents the number of BeV points being evaluated, the smaller the better. PointBeV has the capacity to explore various trade-offs between efficiency and performance by varying the number of points being considered. The remaining points are considered as zeros in the final prediction. Using PointBeV we can achieve state-of-the-art performance with only a small portion of the points and without losing performance. The memory consumption is calculated using a 40GB A100 GPU.
 </div>
 
 <hr />
@@ -223,7 +227,7 @@ to cars on all datasets, illustrating the capacity of our single pretrained back
 
 <h3 id="highlight">Highlight</h3>
 
-<h4 id="authors--nicolas-dufour---victor-besnier--vicky-kalogeiton--david-picard">Authors: <a href="https://nicolas-dufour.github.io/"> Nicolas Dufour </a>    <a href="https://scholar.google.com/citations?hl=fr&amp;user=n_C2h-QAAAAJ">Victor Besnier</a>    <a href="https://vicky.kalogeiton.info/">Vicky Kalogeiton</a>    <a href="https://davidpicard.github.io/">David Picard</a></h4>
+<h4 id="authors--nicolas-dufour---victor-besnier--vicky-kalogeiton--david-picard">Authors: <a href="https://nicolas-dufour.github.io/"> Nicolas Dufour </a>,    <a href="https://scholar.google.com/citations?hl=fr&amp;user=n_C2h-QAAAAJ">Victor Besnier</a>,    <a href="https://vicky.kalogeiton.info/">Vicky Kalogeiton</a>,    <a href="https://davidpicard.github.io/">David Picard</a></h4>
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2405.20324">Paper</a>] &nbsp;&nbsp; [<a href="https://github.com/nicolas-dufour/CAD">Code</a>] &nbsp;&nbsp; [<a href="https://www.youtube.com/watch?v=4Tu-x2-Zcxs">Video</a>]  &nbsp;&nbsp; [<a href="https://nicolas-dufour.github.io/cad.html">Project page</a>]</h4>
 
@@ -236,7 +240,7 @@ to cars on all datasets, illustrating the capacity of our single pretrained back
 <hr />
 
 <h2 id="supervised-anomaly-detection-for-complex-industrial-images">Supervised Anomaly Detection for Complex Industrial Images</h2>
-<h4 id="authors--aimira-baitieva---david-hurych--victor-besnier--olivier-bernard">Authors: <a href=""> Aimira Baitieva </a>    <a href="https://scholar.google.com/citations?user=XY1PVwYAAAAJ&amp;hl=fr&amp;oi=ao">David Hurych</a>    <a href="https://scholar.google.com/citations?hl=fr&amp;user=n_C2h-QAAAAJ">Victor Besnier</a>    <a href="">Olivier Bernard</a></h4>
+<h4 id="authors--aimira-baitieva---david-hurych--victor-besnier--olivier-bernard">Authors: <a href=""> Aimira Baitieva </a>,    <a href="https://scholar.google.com/citations?user=XY1PVwYAAAAJ&amp;hl=fr&amp;oi=ao">David Hurych</a>,    <a href="https://scholar.google.com/citations?hl=fr&amp;user=n_C2h-QAAAAJ">Victor Besnier</a>,    <a href="">Olivier Bernard</a></h4>
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2405.04953">Paper</a>] &nbsp;&nbsp; [<a href="https://github.com/abc-125/segad">Code</a>] &nbsp;&nbsp; [<a href="https://valeoai.github.io/blog/publications/segad/">Project page</a>]</h4>
 
@@ -246,9 +250,11 @@ to cars on all datasets, illustrating the capacity of our single pretrained back
 <div class="caption"><b>Overview of Supervised Anomaly Detection for Complex Industrial Images</b>
 </div>
 
+<hr />
+
 <h2 id="a-simple-recipe-for-language-guided-domain-generalized-segmentation">A Simple Recipe for Language-guided Domain Generalized Segmentation</h2>
 
-<h4 id="authors-mohammad-fahes---tuan-hung-vu---andrei-bursuc--patrick-pérez--raoul-de-charette">Authors: <a href="https://mfahes.github.io/">Mohammad Fahes</a>     <a href="https://tuanhungvu.github.io/">Tuan-Hung Vu</a>     <a href="https://abursuc.github.io/">Andrei Bursuc</a>    <a href="https://ptrckprz.github.io/">Patrick Pérez</a>    <a href="https://team.inria.fr/rits/membres/raoul-de-charette/">Raoul de Charette</a></h4>
+<h4 id="authors-mohammad-fahes---tuan-hung-vu---andrei-bursuc--patrick-pérez--raoul-de-charette">Authors: <a href="https://mfahes.github.io/">Mohammad Fahes</a>,     <a href="https://tuanhungvu.github.io/">Tuan-Hung Vu</a>,     <a href="https://abursuc.github.io/">Andrei Bursuc</a>,    <a href="https://ptrckprz.github.io/">Patrick Pérez</a>,    <a href="https://team.inria.fr/rits/membres/raoul-de-charette/">Raoul de Charette</a></h4>
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2311.17922">Paper</a>] &nbsp;&nbsp; [<a href="https://github.com/astra-vision/FAMix">Code</a>] &nbsp;&nbsp; [<a href="https://www.youtube.com/watch?v=vyjtvx2El9Q">Video</a>] &nbsp;&nbsp; [<a href="https://astra-vision.github.io/FAMix/">page</a>]</h4>
 
@@ -264,9 +270,11 @@ FAMix consists of two steps. (Left) Local style mining consists of dividing the 
 Columns 1-2: Image and ground truth (GT), Columns 3-4-5: Different domain generalization methods, Column 6: Our results.
 </div>
 
+<hr />
+
 <h2 id="make-me-a-bnn-a-simple-strategy-for-estimating-bayesian-uncertainty-from-pre-trained-models">Make Me a BNN: A Simple Strategy for Estimating Bayesian Uncertainty from Pre-trained Models</h2>
 
-<h4 id="authors-gianni-franchi--olivier-laurent--maxence-leguéry--andrei-bursuc-andrea-pilzer---angela-yao">Authors: <a href="https://www.ensta-paris.fr/fr/gianni-franchi">Gianni Franchi</a>    <a href="https://scholar.google.com/citations?user=RW4CQ68AAAAJ">Olivier Laurent</a>    <a href="https://scholar.google.com/citations?user=RCUoocYAAAAJ&amp;hl=en">Maxence Leguéry</a>    <a href="https://abursuc.github.io/">Andrei Bursuc</a>   <a href="https://scholar.google.it/citations?user=zooORRsAAAAJ&amp;hl=en">Andrea Pilzer</a>     <a href="https://www.comp.nus.edu.sg/~ayao/">Angela Yao</a></h4>
+<h4 id="authors-gianni-franchi--olivier-laurent--maxence-leguéry--andrei-bursuc-andrea-pilzer---angela-yao">Authors: <a href="https://www.ensta-paris.fr/fr/gianni-franchi">Gianni Franchi</a>,    <a href="https://scholar.google.com/citations?user=RW4CQ68AAAAJ">Olivier Laurent</a>,    <a href="https://scholar.google.com/citations?user=RCUoocYAAAAJ&amp;hl=en">Maxence Leguéry</a>,    <a href="https://abursuc.github.io/">Andrei Bursuc</a>,   <a href="https://scholar.google.it/citations?user=zooORRsAAAAJ&amp;hl=en">Andrea Pilzer</a>,     <a href="https://www.comp.nus.edu.sg/~ayao/">Angela Yao</a></h4>
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2312.15297">Paper</a>] &nbsp;&nbsp; [<a href="https://torch-uncertainty.github.io/ ">Code</a>] &nbsp;&nbsp; [<a href="https://www.youtube.com/watch?v=aXqVBAOXc0o">Video</a>] &nbsp;&nbsp; [<a href="https://ensta-u2is-ai.github.io/ABNN-Make-me-a-BNN/">page</a>]</h4>
 
@@ -277,11 +285,13 @@ Columns 1-2: Image and ground truth (GT), Columns 3-4-5: Different domain genera
 The procedure begins with training a single DNN $\omega\_{\text{MAP}$, followed by architectural adjustments on the normalization layers to transform it into an ABNN. The final step involves fine-tuning the ABNN model.
 </div>
 
+<hr />
+
 <h2 id="spot-self-training-with-patch-order-permutation-for-object-centric-learning-with-autoregressive-transformers">SPOT: Self-Training with Patch-Order Permutation for Object-Centric Learning with Autoregressive Transformers</h2>
 
 <h3 id="highlight-1">Highlight</h3>
 
-<h4 id="authors-ioannis-kakogeorgiou-spyros-gidaris-konstantinos-karantzalos---nikos-komodakis">Authors: <a href="https://scholar.google.com/citations?user=B_dKcz4AAAAJ">Ioannis Kakogeorgiou</a>   <a href="https://scholar.google.com/citations?user=7atfg7EAAAAJ&amp;hl=en">Spyros Gidaris</a>   <a href="http://users.ntua.gr/karank/">Konstantinos Karantzalos</a>     <a href="https://www.csd.uoc.gr/~komod/">Nikos Komodakis</a></h4>
+<h4 id="authors-ioannis-kakogeorgiou-spyros-gidaris-konstantinos-karantzalos---nikos-komodakis">Authors: <a href="https://scholar.google.com/citations?user=B_dKcz4AAAAJ">Ioannis Kakogeorgiou</a>,   <a href="https://scholar.google.com/citations?user=7atfg7EAAAAJ&amp;hl=en">Spyros Gidaris</a>,   <a href="http://users.ntua.gr/karank/">Konstantinos Karantzalos</a>,     <a href="https://www.csd.uoc.gr/~komod/">Nikos Komodakis</a></h4>
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2312.00648">Paper</a>] &nbsp;&nbsp; [<a href="https://github.com/gkakogeorgiou/spot">Code</a>] &nbsp;&nbsp; [<a href="https://valeoai.github.io/blog/publications/spot/">page</a>]</h4>
 
@@ -294,17 +304,21 @@ Our novel framework enhances unsupervised object-centric learning in slot-based 
 
 <p><img src="/blog/images/posts/2024_cvpr/spot_archi.PNG" alt="spot_archi" height="90%" width="90%" /></p>
 <div class="caption">
-Enhancing unsupervised object-centric learning via self-training. Our two-stage approach starts with exclusive training in the initial stage (not depicted) using the reconstruction loss. In the following stage, shown here, a teacher-student framework is applied. The teacher model, trained in the first stage, guides the student model with an additional loss, distilling attention masks from the teacher’s decoder to the slot-attention masks in the student’s encoder.
+<b>Enhancing unsupervised object-centric learning via self-training.</b>
+Our two-stage approach starts with exclusive training in the initial stage (not depicted) using the reconstruction loss. In the following stage, shown here, a teacher-student framework is applied. The teacher model, trained in the first stage, guides the student model with an additional loss, distilling attention masks from the teacher’s decoder to the slot-attention masks in the student’s encoder.
 </div>
 
 <p><img src="/blog/images/posts/2024_cvpr/spot_details.PNG" alt="spot_detail" height="55%" width="55%" /></p>
 <div class="caption">
-Autoregressive (AR) decoding via sequence permutations. Violet boxes indicate differences from typical AR decoder
+<b>Autoregressive (AR) decoding via sequence permutations.</b>
+Violet boxes indicate differences from typical AR decoder
 </div>
+
+<hr />
 
 <h2 id="nope-novel-object-pose-estimation-from-a-single-image">NOPE: Novel Object Pose Estimation from a Single Image</h2>
 
-<h4 id="authors-van-nguyen-nguyen--thibault-groueix--georgy-ponimatkin--yinlin-hu--renaud-marlet--mathieu-salzmann--vincent-lepetit">Authors: <a href="https://nv-nguyen.github.io/">Van Nguyen Nguyen</a>    <a href="https://imagine.enpc.fr/~groueixt/">Thibault Groueix</a>    <a href="https://scholar.google.co.kr/citations?hl=en&amp;user=5G-6ubcAAAAJ">Georgy Ponimatkin</a>    <a href="https://yinlinhu.github.io/">Yinlin Hu</a>    <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a>    <a href="https://people.epfl.ch/mathieu.salzmann">Mathieu Salzmann</a>    <a href="https://vincentlepetit.github.io/">Vincent Lepetit</a></h4>
+<h4 id="authors-van-nguyen-nguyen--thibault-groueix--georgy-ponimatkin--yinlin-hu--renaud-marlet--mathieu-salzmann--vincent-lepetit">Authors: <a href="https://nv-nguyen.github.io/">Van Nguyen Nguyen</a>,    <a href="https://imagine.enpc.fr/~groueixt/">Thibault Groueix</a>,    <a href="https://scholar.google.co.kr/citations?hl=en&amp;user=5G-6ubcAAAAJ">Georgy Ponimatkin</a>,    <a href="https://yinlinhu.github.io/">Yinlin Hu</a>,    <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a>,    <a href="https://people.epfl.ch/mathieu.salzmann">Mathieu Salzmann</a>,    <a href="https://vincentlepetit.github.io/">Vincent Lepetit</a></h4>
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2303.13612">Paper</a>] &nbsp;&nbsp; [<a href="https://github.com/nv-nguyen/nope">Code</a>] &nbsp;&nbsp; [<a href="https://nv-nguyen.github.io/nope/">page</a>]</h4>
 
@@ -316,11 +330,13 @@ Autoregressive (AR) decoding via sequence permutations. Violet boxes indicate di
 <div class="caption"><b>NOPE qualitative results.</b>
 </div>
 
+<hr />
+
 <h2 id="valeo4cast-a-modular-approach-to-end-to-end-forecasting">Valeo4Cast: A Modular Approach to End-to-End Forecasting</h2>
 
 <h3 id="winning-solution-in-argoverse-2-unified-detection-tracking-and-forecasting-challenge-at-cvpr-wad-2024">Winning solution in Argoverse 2 Unified Detection, Tracking and Forecasting Challenge, at CVPR WAD 2024</h3>
 
-<h4 id="authors-yihong-xu--éloi-zablocki--alexandre-boulch--gilles-puy----mickaël-chen--florent-bartoccioni--nermin-samet----oriane-siméoni---spyros-gidaris---tuan-hung-vu--andrei-bursuc--eduardo-valle--renaud-marlet--matthieu-cord">Authors: <a href="https://scholar.google.fr/citations?user=vMLRRVkAAAAJ">Yihong Xu</a>    <a href="https://scholar.google.fr/citations?user=dOkbUmEAAAAJ">Éloi Zablocki</a>    <a href="https://www.boulch.eu/">Alexandre Boulch</a>    <a href="https://sites.google.com/site/puygilles/home">Gilles Puy</a>      <a href="https://scholar.google.com/citations?user=QnRpMJAAAAAJ">Mickaël Chen</a>    <a href="https://f-barto.github.io/">Florent Bartoccioni</a>    <a href="https://nerminsamet.github.io/">Nermin Samet</a>      <a href="https://osimeoni.github.io/">Oriane Siméoni</a>     <a href="https://scholar.google.fr/citations?user=7atfg7EAAAAJ">Spyros Gidaris</a>     <a href="https://tuanhungvu.github.io/">Tuan-Hung Vu</a>    <a href="https://abursuc.github.io/">Andrei Bursuc</a>    <a href="https://scholar.google.com/citations?user=lxWPqWAAAAAJ">Eduardo Valle</a>    <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a>    <a href="https://cord.isir.upmc.fr/">Matthieu Cord</a></h4>
+<h4 id="authors-yihong-xu--éloi-zablocki--alexandre-boulch--gilles-puy----mickaël-chen--florent-bartoccioni--nermin-samet----oriane-siméoni---spyros-gidaris---tuan-hung-vu--andrei-bursuc--eduardo-valle--renaud-marlet--matthieu-cord">Authors: <a href="https://scholar.google.fr/citations?user=vMLRRVkAAAAJ">Yihong Xu</a>,    <a href="https://scholar.google.fr/citations?user=dOkbUmEAAAAJ">Éloi Zablocki</a>,    <a href="https://www.boulch.eu/">Alexandre Boulch</a>,    <a href="https://sites.google.com/site/puygilles/home">Gilles Puy</a>,      <a href="https://scholar.google.com/citations?user=QnRpMJAAAAAJ">Mickaël Chen</a>,    <a href="https://f-barto.github.io/">Florent Bartoccioni</a>,    <a href="https://nerminsamet.github.io/">Nermin Samet</a>,      <a href="https://osimeoni.github.io/">Oriane Siméoni</a>,     <a href="https://scholar.google.fr/citations?user=7atfg7EAAAAJ">Spyros Gidaris</a>,     <a href="https://tuanhungvu.github.io/">Tuan-Hung Vu</a>,    <a href="https://abursuc.github.io/">Andrei Bursuc</a>,    <a href="https://scholar.google.com/citations?user=lxWPqWAAAAAJ">Eduardo Valle</a>,    <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a>,    <a href="https://cord.isir.upmc.fr/">Matthieu Cord</a></h4>
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2406.08113">Paper</a>] &nbsp;&nbsp; [<a href="https://eval.ai/web/challenges/challenge-page/2006/leaderboard/4752">leaderboard</a>] &nbsp;&nbsp; [<a href="https://valeoai.github.io/blog/publications/valeo4cast/">page</a>]</h4>
 
@@ -330,11 +346,13 @@ Autoregressive (AR) decoding via sequence permutations. Violet boxes indicate di
 <div class="caption"><b>Valeo4Cast overview.</b>
 </div>
 
+<hr />
+
 <h2 id="occfeat-self-supervised-occupancy-feature-prediction-for-pretraining-bev-segmentation-networks">OccFeat: Self-supervised Occupancy Feature Prediction for Pretraining BEV Segmentation Networks</h2>
 
 <h3 id="workshop-on-autonomous-driving-at-cvpr-2024">Workshop on Autonomous Driving at CVPR 2024</h3>
 
-<h4 id="authors-sophia-sirko-galouchenko--alexandre-boulch---spyros-gidaris--andrei-bursuc---antonin-vobecky---renaud-marlet--patrick-pérez">Authors: <a href="">Sophia Sirko-Galouchenko</a>    <a href="https://www.boulch.eu/">Alexandre Boulch</a>     <a href="https://scholar.google.fr/citations?user=7atfg7EAAAAJ&amp;hl=en">Spyros Gidaris</a>    <a href="https://abursuc.github.io/">Andrei Bursuc</a>     <a href="https://vobecant.github.io/">Antonin Vobecky</a>     <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a>    <a href="https://ptrckprz.github.io/">Patrick Pérez</a></h4>
+<h4 id="authors-sophia-sirko-galouchenko--alexandre-boulch---spyros-gidaris--andrei-bursuc---antonin-vobecky---renaud-marlet--patrick-pérez">Authors: Sophia Sirko-Galouchenko,    <a href="https://www.boulch.eu/">Alexandre Boulch</a>,     <a href="https://scholar.google.fr/citations?user=7atfg7EAAAAJ&amp;hl=en">Spyros Gidaris</a>,    <a href="https://abursuc.github.io/">Andrei Bursuc</a>,     <a href="https://vobecant.github.io/">Antonin Vobecky</a>,     <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a>,    <a href="https://ptrckprz.github.io/">Patrick Pérez</a></h4>
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2404.14027">Paper</a>] &nbsp;&nbsp; [<a href="https://valeoai.github.io/blog/publications/occfeat/">page</a>]</h4>
 
@@ -352,11 +370,13 @@ OccFeat attaches an auxiliary pretraining head on top of the BEV network. This h
 Performance comparison in low data regime 1% annotated data of nuScenes (Left). Study on robustness. Segmentation results on nuScenes-C dataset for Vehicle classes using BEVFormer network with EN-B0 image backbone on 100% annotated data. Comparison of our OccFeat against no BEV pretraining (Right).
 </div>
 
+<hr />
+
 <h2 id="what-makes-multimodal-in-context-learning-work">What Makes Multimodal In-Context Learning Work?</h2>
 
 <h3 id="workshop-prompting-in-vision-at-cvpr-2024">Workshop Prompting in Vision at CVPR 2024</h3>
 
-<h4 id="authors-folco-bertini-baldassini--mustafa-shukor--matthieu-cord--laure-soulier--benjamin-piwowarski">Authors: <a href="https://www.folbaeni.com/">Folco Bertini Baldassini</a>    <a href="https://scholar.google.com/citations?user=lhp9mRgAAAAJ&amp;hl=en">Mustafa Shukor</a>    <a href="https://cord.isir.upmc.fr/">Matthieu Cord</a>    <a href="https://pages.isir.upmc.fr/soulier/">Laure Soulier</a>    <a href="https://www.piwowarski.fr/">Benjamin Piwowarski</a></h4>
+<h4 id="authors-folco-bertini-baldassini--mustafa-shukor--matthieu-cord--laure-soulier--benjamin-piwowarski">Authors: <a href="https://www.folbaeni.com/">Folco Bertini Baldassini</a>,    <a href="https://scholar.google.com/citations?user=lhp9mRgAAAAJ&amp;hl=en">Mustafa Shukor</a>,    <a href="https://cord.isir.upmc.fr/">Matthieu Cord</a>,    <a href="https://pages.isir.upmc.fr/soulier/">Laure Soulier</a>,    <a href="https://www.piwowarski.fr/">Benjamin Piwowarski</a></h4>
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2404.15736">Paper</a>] &nbsp;&nbsp; [<a href="https://gitlab.com/folbaeni/multimodal-icl">code</a>] &nbsp;&nbsp; [<a href="https://multimodal-icl-folbaeni-1988a753e0abbbc71bb3967331bb69edafda92e.gitlab.io/">page</a>]</h4>
 
