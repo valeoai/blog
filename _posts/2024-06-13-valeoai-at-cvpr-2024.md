@@ -62,7 +62,7 @@ Bird's-eye View (BeV) representations have emerged as the de-facto shared space 
 <div class="caption"><b>PointBeV overview.</b>
 </div>
 
-![pointbev_results]({{ site.baseurl }}/images/posts/2024_cvpr/pointbev_results.PNG){:height="100%" width="100%"}
+![pointbev_results]({{ site.baseurl }}/images/posts/2024_cvpr/pointbev_results.PNG){:height="70%" width="70%"}
 <div class="caption"><b>PointBeV results.</b>
 </div>
 
@@ -78,10 +78,9 @@ Bird's-eye View (BeV) representations have emerged as the de-facto shared space 
 
 Conditional diffusion models are powerful generative models that can leverage various types of conditional information, such as class labels, segmentation masks, or text captions. However, in many real-world scenarios, conditional information may be noisy or unreliable due to human annotation errors or weak alignment. In this paper, we propose the Coherence-Aware Diffusion (CAD), a novel method that integrates coherence in conditional information into diffusion models, allowing them to learn from noisy annotations without discarding data. We assume that each data point has an associated coherence score that reflects the quality of the conditional information. We then condition the diffusion model on both the conditional information and the coherence score. In this way, the model learns to ignore or discount the conditioning when the coherence is low. We show that CAD is theoretically sound and empirically effective on various conditional generation tasks. Moreover, we show that leveraging coherence generates realistic and diverse samples that respect conditional information better than models trained on cleaned datasets where samples with low coherence have been discarded.
 
-![dont_drop_overview]({{ site.baseurl }}/images/posts/2024_cvpr/dont_drop.png){:height="65%" width="65%"}
-<div class="caption"><b>Overview of Don't Drop your Samples. </b>
+![dont_drop_overview]({{ site.baseurl }}/images/publications/2024_dont_drop/teaser.png){:height="90%" width="90%"}
+<div class="caption"><b>Overview of Don't Drop your Samples.</b>
 </div>
-
 
 <hr>
 
@@ -94,7 +93,7 @@ Conditional diffusion models are powerful generative models that can leverage va
 Automating visual inspection in industrial production lines is essential for increasing product quality across various industries. Anomaly detection (AD) methods serve as robust tools for this purpose. However, existing public datasets primarily consist of images without anomalies, limiting the practical application of AD methods in production settings. To address this challenge, we present (1) the Valeo Anomaly Dataset (VAD), a novel real-world industrial dataset comprising 5000 images, including 2000 instances of challenging real defects across more than 20 subclasses. Acknowledging that traditional AD methods struggle with this dataset, we introduce (2) Segmentation based Anomaly Detector (SegAD). First, SegAD leverages anomaly maps as well as segmentation maps to compute local statistics. Next, SegAD uses these statistics and an optional supervised classifier score as input features for a Boosted Random Forest (BRF) classifier, yielding the final anomaly score. Our SegAD achieves state-of-the-art performance on both VAD (+2.1% AUROC) and the VisA dataset (+0.4% AUROC). The code and the models are publicly available
 
 
-![segad_overview]({{ site.baseurl }}/images/posts/2024_cvpr/segad_overview.png){:height="75%" width="75%"}
+![segad_overview]({{ site.baseurl }}/images/publications/2024_segad/teaser.png){:height="100%" width="100%"}
 <div class="caption"><b>Overview of Supervised Anomaly Detection for Complex Industrial Images</b>
 </div>
 
