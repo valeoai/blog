@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://valeoai.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://valeoai.github.io/blog/" rel="alternate" type="text/html" /><updated>2024-06-13T08:54:46-05:00</updated><id>https://valeoai.github.io/blog/feed.xml</id><title type="html">valeo.ai</title><subtitle>valeo.ai research page</subtitle><entry><title type="html">valeo.ai at CVPR 2024</title><link href="https://valeoai.github.io/blog/2024/06/13/valeoai-at-cvpr-2024.html" rel="alternate" type="text/html" title="valeo.ai at CVPR 2024" /><published>2024-06-13T00:00:00-05:00</published><updated>2024-06-13T00:00:00-05:00</updated><id>https://valeoai.github.io/blog/2024/06/13/valeoai-at-cvpr-2024</id><content type="html" xml:base="https://valeoai.github.io/blog/2024/06/13/valeoai-at-cvpr-2024.html"><![CDATA[<p>The <a href="https://cvpr2024.thecvf.com/">IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR)</a> is a key event for researchers and engineers working on computer vision and machine learning.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://valeoai.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://valeoai.github.io/blog/" rel="alternate" type="text/html" /><updated>2024-06-13T09:00:08-05:00</updated><id>https://valeoai.github.io/blog/feed.xml</id><title type="html">valeo.ai</title><subtitle>valeo.ai research page</subtitle><entry><title type="html">valeo.ai at CVPR 2024</title><link href="https://valeoai.github.io/blog/2024/06/13/valeoai-at-cvpr-2024.html" rel="alternate" type="text/html" title="valeo.ai at CVPR 2024" /><published>2024-06-13T00:00:00-05:00</published><updated>2024-06-13T00:00:00-05:00</updated><id>https://valeoai.github.io/blog/2024/06/13/valeoai-at-cvpr-2024</id><content type="html" xml:base="https://valeoai.github.io/blog/2024/06/13/valeoai-at-cvpr-2024.html"><![CDATA[<p>The <a href="https://cvpr2024.thecvf.com/">IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR)</a> is a key event for researchers and engineers working on computer vision and machine learning.
 At the 2024 edition the <a href="https://ptrckprz.github.io/valeoai/">valeo.ai</a> team will present eight <a href="https://valeoai.github.io/blog/publications/">papers</a> in the main conference, two <a href="https://valeoai.github.io/blog/publications/">papers</a> in workshops, and one workshop <a href="https://opendrivelab.com/cvpr2024/workshop/">keynote</a>.
 Also, the team will present its <a href="https://valeoai.github.io/blog/publications/valeo4cast/">winning solution</a> to the Argoverse 2 <a href="https://www.argoverse.org/E2EForecasting.html">“Unified Detection, Tracking and Forecasting”</a> challenge held at the Workshop on Autonomous Driving.
 The team will be at CVPR to present these works and will be happy to discuss more about these projects and ideas, and share our exciting ongoing research.
@@ -46,7 +46,7 @@ to cars on all datasets, illustrating the capacity of our single pretrained back
 <div class="caption"><b>PointBeV overview.</b>
 </div>
 
-<p><img src="/blog/images/posts/2024_cvpr/pointbev_results.PNG" alt="pointbev_results" height="100%" width="100%" /></p>
+<p><img src="/blog/images/posts/2024_cvpr/pointbev_results.PNG" alt="pointbev_results" height="70%" width="70%" /></p>
 <div class="caption"><b>PointBeV results.</b>
 </div>
 
@@ -62,8 +62,8 @@ to cars on all datasets, illustrating the capacity of our single pretrained back
 
 <p>Conditional diffusion models are powerful generative models that can leverage various types of conditional information, such as class labels, segmentation masks, or text captions. However, in many real-world scenarios, conditional information may be noisy or unreliable due to human annotation errors or weak alignment. In this paper, we propose the Coherence-Aware Diffusion (CAD), a novel method that integrates coherence in conditional information into diffusion models, allowing them to learn from noisy annotations without discarding data. We assume that each data point has an associated coherence score that reflects the quality of the conditional information. We then condition the diffusion model on both the conditional information and the coherence score. In this way, the model learns to ignore or discount the conditioning when the coherence is low. We show that CAD is theoretically sound and empirically effective on various conditional generation tasks. Moreover, we show that leveraging coherence generates realistic and diverse samples that respect conditional information better than models trained on cleaned datasets where samples with low coherence have been discarded.</p>
 
-<p><img src="/blog/images/posts/2024_cvpr/dont_drop.png" alt="dont_drop_overview" height="65%" width="65%" /></p>
-<div class="caption"><b>Overview of Don't Drop your Samples. </b>
+<p><img src="/blog/images/publications/2024_dont_drop/teaser.png" alt="dont_drop_overview" height="90%" width="90%" /></p>
+<div class="caption"><b>Overview of Don't Drop your Samples.</b>
 </div>
 
 <hr />
@@ -75,7 +75,7 @@ to cars on all datasets, illustrating the capacity of our single pretrained back
 
 <p>Automating visual inspection in industrial production lines is essential for increasing product quality across various industries. Anomaly detection (AD) methods serve as robust tools for this purpose. However, existing public datasets primarily consist of images without anomalies, limiting the practical application of AD methods in production settings. To address this challenge, we present (1) the Valeo Anomaly Dataset (VAD), a novel real-world industrial dataset comprising 5000 images, including 2000 instances of challenging real defects across more than 20 subclasses. Acknowledging that traditional AD methods struggle with this dataset, we introduce (2) Segmentation based Anomaly Detector (SegAD). First, SegAD leverages anomaly maps as well as segmentation maps to compute local statistics. Next, SegAD uses these statistics and an optional supervised classifier score as input features for a Boosted Random Forest (BRF) classifier, yielding the final anomaly score. Our SegAD achieves state-of-the-art performance on both VAD (+2.1% AUROC) and the VisA dataset (+0.4% AUROC). The code and the models are publicly available</p>
 
-<p><img src="/blog/images/posts/2024_cvpr/segad_overview.png" alt="segad_overview" height="75%" width="75%" /></p>
+<p><img src="/blog/images/publications/2024_segad/teaser.png" alt="segad_overview" height="100%" width="100%" /></p>
 <div class="caption"><b>Overview of Supervised Anomaly Detection for Complex Industrial Images</b>
 </div>
 
