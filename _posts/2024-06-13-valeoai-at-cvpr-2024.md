@@ -32,11 +32,11 @@ In this work, instead of focusing only on the distillation method, we study the 
 <div class="caption"><b>ScaLR image-to-lidar distillation method with the three pillars studied in this work.</b>
 </div>
 
-In this work, after proposing and studying a scalable distillation method, which we call ScaLR for Scalable Lidar Representation (Fig. 1), we make the following contributions.
+In this work, after proposing and studying a scalable distillation method, which we call ScaLR for Scalable Lidar Representation (see Figure above), we make the following contributions.
 
 First, we are able to significantly reduce the gap between distilled and supervised lidar representations: on nuScenes, we increase the performance by 22.8 mIoU percentage points compared to the former best distillation method.
 
-Second, we show it is possible to pretrain a single backbone on a mixture of datasets, performing similarly or better than separate backbones specialized on each dataset individually. The capacity of this backbone in providing good features across multiple datasets is illustrated in Fig. 2. For each scene in this figure, we pick a point located on a car and present the feature correlation map with respect to this point. We notice that the most correlated points also belong
+Second, we show it is possible to pretrain a single backbone on a mixture of datasets, performing similarly or better than separate backbones specialized on each dataset individually. The capacity of this backbone in providing good features across multiple datasets is illustrated in the figure below. For each scene in this figure, we pick a point located on a car and present the feature correlation map with respect to this point. We notice that the most correlated points also belong
 to cars on all datasets, illustrating the capacity of our single pretrained backbone to correctly distinguish objects on multiple datasets.
 
 ![scalr_results]({{ site.baseurl }}/images/posts/2024_cvpr/scalr_results.PNG){:height="100%" width="100%"}
@@ -151,18 +151,19 @@ The procedure begins with training a single DNN $\omega\_{\text{MAP}$, followed 
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2312.00648">Paper</a>] &nbsp;&nbsp; [<a href="https://github.com/gkakogeorgiou/spot">Code</a>] &nbsp;&nbsp; [<a href="https://valeoai.github.io/blog/publications/spot/">page</a>]</h4>
 
-Unsupervised object-centric learning aims to decompose scenes into interpretable object entities, termed slots. Slot-based auto-encoders stand out as a prominent method for this task. Within them, crucial aspects include guiding the encoder to generate object-specific slots and ensuring the decoder utilizes them during reconstruction. This work introduces two novel techniques, (i) an attention-based self-training approach, which distills superior slot-based attention masks from the decoder to the encoder, enhancing object segmentation (see Figure 2), and (ii) an innovative patch-order permutation strategy for autoregressive transformers that strengthens the role of slot vectors in reconstruction (see Figure 3). The effectiveness of these strategies is showcased experimentally. The combined approach significantly surpasses prior slot-based autoencoder methods in unsupervised object segmentation, especially with complex real-world images (see Figure 1).
-
-![spot_overview]({{ site.baseurl }}/images/publications/2024_spot/spot_visualizations.png){:height="100%" width="100%"}
-<div class="caption"><b>SPOT visualizations.</b>
-Our novel framework enhances unsupervised object-centric learning in slot-based autoencoders using self-training and sequence permutations in the transformer decoder. It improves object-specific slot generation, excelling in complex real-world images.
-</div>
-
+Unsupervised object-centric learning aims to decompose scenes into interpretable object entities, termed slots. Slot-based auto-encoders stand out as a prominent method for this task. Within them, crucial aspects include guiding the encoder to generate object-specific slots and ensuring the decoder utilizes them during reconstruction. This work introduces two novel techniques, (i) an attention-based self-training approach, which distills superior slot-based attention masks from the decoder to the encoder, enhancing object segmentation , and (ii) an innovative patch-order permutation strategy for autoregressive transformers that strengthens the role of slot vectors in reconstruction.
 
 ![spot_archi]({{ site.baseurl }}/images/posts/2024_cvpr/spot_archi.PNG){:height="90%" width="90%"}
 <div class="caption">
 <b>Enhancing unsupervised object-centric learning via self-training.</b>
 Our two-stage approach starts with exclusive training in the initial stage (not depicted) using the reconstruction loss. In the following stage, shown here, a teacher-student framework is applied. The teacher model, trained in the first stage, guides the student model with an additional loss, distilling attention masks from the teacher’s decoder to the slot-attention masks in the student’s encoder.
+</div>
+
+The effectiveness of these strategies is showcased experimentally. The combined approach significantly surpasses prior slot-based autoencoder methods in unsupervised object segmentation, especially with complex real-world images.
+
+![spot_overview]({{ site.baseurl }}/images/publications/2024_spot/spot_visualizations.png){:height="100%" width="100%"}
+<div class="caption"><b>SPOT visualizations.</b>
+Our novel framework enhances unsupervised object-centric learning in slot-based autoencoders using self-training and sequence permutations in the transformer decoder. It improves object-specific slot generation, excelling in complex real-world images.
 </div>
 
 [//]: # ![spot_detail]({{ site.baseurl }}/images/posts/2024_cvpr/spot_details.PNG){:height="55%" width="55%"}
