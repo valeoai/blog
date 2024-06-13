@@ -62,7 +62,7 @@ Bird's-eye View (BeV) representations have emerged as the de-facto shared space 
 <div class="caption"><b>PointBeV overview.</b>
 </div>
 
-![pointbev_results]({{ site.baseurl }}/images/posts/2024_cvpr/pointbev_results.PNG){:height="70%" width="70%"}
+![pointbev_results]({{ site.baseurl }}/images/posts/2024_cvpr/pointbev_results.PNG){:height="50%" width="50%"}
 <div class="caption"><b>PointBeV results.</b>
 </div>
 
@@ -142,17 +142,17 @@ The procedure begins with training a single DNN $\omega\_{\text{MAP}$, followed 
 
 Unsupervised object-centric learning aims to decompose scenes into interpretable object entities, termed slots. Slot-based auto-encoders stand out as a prominent method for this task. Within them, crucial aspects include guiding the encoder to generate object-specific slots and ensuring the decoder utilizes them during reconstruction. This work introduces two novel techniques, (i) an attention-based self-training approach, which distills superior slot-based attention masks from the decoder to the encoder, enhancing object segmentation (see Figure 2), and (ii) an innovative patch-order permutation strategy for autoregressive transformers that strengthens the role of slot vectors in reconstruction (see Figure 3). The effectiveness of these strategies is showcased experimentally. The combined approach significantly surpasses prior slot-based autoencoder methods in unsupervised object segmentation, especially with complex real-world images (see Figure 1).
 
-![spot_overview]({{ site.baseurl }}/images/posts/2024_cvpr/spot_overview.png){:height="75%" width="75%"}
-<div class="caption"><b>SPOT.</b>
+![spot_overview]({{ site.baseurl }}/images/publications/2024_spot/spot_visualizations.png){:height="100%" width="100%"}
+<div class="caption"><b>SPOT visualizations.</b>
 Our novel framework enhances unsupervised object-centric learning in slot-based autoencoders using self-training and sequence permutations in the transformer decoder. It improves object-specific slot generation, excelling in complex real-world images.
 </div>
 
-![spot_archi]({{ site.baseurl }}/images/posts/2024_cvpr/spot_archi.png){:height="75%" width="75%"}
+![spot_archi]({{ site.baseurl }}/images/posts/2024_cvpr/spot_archi.png){:height="90%" width="90%"}
 <div class="caption">
 Enhancing unsupervised object-centric learning via self-training. Our two-stage approach starts with exclusive training in the initial stage (not depicted) using the reconstruction loss. In the following stage, shown here, a teacher-student framework is applied. The teacher model, trained in the first stage, guides the student model with an additional loss, distilling attention masks from the teacher’s decoder to the slot-attention masks in the student’s encoder.
 </div>
 
-![spot_detail]({{ site.baseurl }}/images/posts/2024_cvpr/spot_detail.png){:height="75%" width="75%"}
+![spot_detail]({{ site.baseurl }}/images/posts/2024_cvpr/spot_details.png){:height="75%" width="75%"}
 <div class="caption">
 Autoregressive (AR) decoding via sequence permutations. Violet boxes indicate differences from typical AR decoder
 </div>
