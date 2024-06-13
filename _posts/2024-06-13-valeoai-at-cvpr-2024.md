@@ -125,7 +125,7 @@ Columns 1-2: Image and ground truth (GT), Columns 3-4-5: Different domain genera
 
 Deep Neural Networks (DNNs) are powerful tools for various computer vision tasks, yet they often struggle with reliable uncertainty quantification — a critical requirement for real-world applications. Bayesian Neural Networks (BNN) are equipped for uncertainty estimation but cannot scale to large DNNs where they are highly unstable to train. To address this challenge, we introduce the Adaptable Bayesian Neural Network (ABNN), a simple and scalable strategy to seamlessly transform DNNs into BNNs in a post-hoc manner with minimal computational and training overheads. ABNN preserves the main predictive properties of DNNs while enhancing their uncertainty quantification abilities through simple BNN adaptation layers (attached to normalization layers) and a few fine-tuning steps on pre-trained models. We conduct extensive experiments across multiple datasets for image classification and semantic segmentation tasks, and our results demonstrate that ABNN achieves state-of-the-art performance without the computational budget typically associated with ensemble methods.
 
-![abnn_overview]({{ site.baseurl }}/images/posts/2024_cvpr/abnn_overivew.PNG){:height="95%" width="95%"}
+![abnn_overview]({{ site.baseurl }}/images/posts/2024_cvpr/abnn_overview.PNG){:height="95%" width="95%"}
 <div class="caption"><b>Illustration of the training process for the ABNN.</b>
 The procedure begins with training a single DNN $\omega\_{\text{MAP}$, followed by architectural adjustments on the normalization layers to transform it into an ABNN. The final step involves fine-tuning the ABNN model.
 </div>
@@ -167,7 +167,7 @@ TL;DR: We introduce NOPE, a simple approach to estimate relative pose of unseen 
 
 The practicality of 3D object pose estimation remains limited for many applications due to the need for prior knowledge of a 3D model and a training period for new objects. To address this limitation, we propose an approach that takes a single image of a new object as input and predicts the relative pose of this object in new images without prior knowledge of the object's 3D model and without requiring training time for new objects and categories. We achieve this by training a model to directly predict discriminative embeddings for viewpoints surrounding the object. This prediction is done using a simple U-Net architecture with attention and conditioned on the desired pose, which yields extremely fast inference. We compare our approach to state-of-the-art methods and show it outperforms them both in terms of accuracy and robustness.
 
-![nope_overview]({{ site.baseurl }}/images/posts/2024_cvpr/nope_overview.png){:height="75%" width="75%"}
+![nope_overview]({{ site.baseurl }}/images/publications/2024_nope/nope.gif){:height="70%" width="70%"}
 <div class="caption"><b>NOPE qualitative results.</b>
 </div>
 
@@ -181,7 +181,7 @@ The practicality of 3D object pose estimation remains limited for many applicati
 
 Motion forecasting is crucial in autonomous driving systems to anticipate the future trajectories of surrounding agents such as pedestrians, vehicles, and traffic signals. In end-to-end forecasting, the model must jointly detect from sensor data (cameras or LiDARs) the position and past trajectories of the different elements of the scene and predict their future location. We depart from the current trend of tackling this task via end-to-end training from perception to forecasting and we use a modular approach instead. Following a recent study, we individually build and train detection, tracking, and forecasting modules. We then only use consecutive finetuning steps to integrate the modules better and alleviate compounding errors. Our study reveals that this simple yet effective approach significantly improves performance on the end-to-end forecasting benchmark. Consequently, our solution ranks first in the Argoverse 2 end-to-end Forecasting Challenge held at CVPR 2024 Workshop on Autonomous Driving (WAD), with 63.82 mAPf. We surpass forecasting results by +17.1 points over last year's winner and by +13.3 points over this year's runner-up. This remarkable performance in forecasting can be explained by our modular paradigm, which integrates finetuning strategies and significantly outperforms the end-to-end-trained counterparts.
 
-![valeo4cast_overview]({{ site.baseurl }}/images/posts/2024_cvpr/valeo4cast_overview.png){:height="75%" width="75%"}
+![valeo4cast_overview]({{ site.baseurl }}/images/publications/2024_valeo4cast/valeo4cast.PNG){:height="100%" width="100%"}
 <div class="caption"><b>Valeo4Cast overview.</b>
 </div>
 
@@ -195,14 +195,14 @@ Motion forecasting is crucial in autonomous driving systems to anticipate the fu
 
 We introduce a self-supervised pretraining method, called OccFeat, for camera-only Bird's-Eye-View (BEV) segmentation networks. With OccFeat, we pretrain a BEV network via occupancy prediction and feature distillation tasks. Occupancy prediction provides a 3D geometric understanding of the scene to the model. However, the geometry learned is class-agnostic. Hence, we add semantic information to the model in the 3D space through distillation from a self-supervised pretrained image foundation model. Models pretrained with our method exhibit improved BEV semantic segmentation performance, particularly in low-data scenarios. Moreover, empirical results affirm the efficacy of integrating feature distillation with 3D occupancy prediction in our pretraining approach.
 
-![occfeat_overview]({{ site.baseurl }}/images/posts/2024_cvpr/occfeat_overview.png){:height="75%" width="75%"}
+![occfeat_overview]({{ site.baseurl }}/images/publications/2024_occfeat/occfeat_teaser.png){:height="100%" width="100%"}
 <div class="caption"><b>Overview of OccFeat’s self-supervised BEV pretraining approach.</b>
 OccFeat attaches an auxiliary pretraining head on top of the BEV network. This head “unsplats” the BEV features to a 3D feature volume and predicts with it (a) the 3D occupancy of the scene (occupancy reconstruction loss) and (b) high-level self-supervised image features characterizing the occupied voxels (occupancy-guided distillation loss). The occupancy targets are produced by “voxelizing” Lidar points, while the self-supervised image foundation model DINOv2 provides the feature targets for the occupied voxels. The pretraining head is removed after the pretraining.
 </div>
 
 The results show the benefit of our pretraining method, especially in low-shot regimes, e.g., when using annotations only for 1% or 10% of nuScene’s training data.  Additionally, our OccFeat pretraining improves the robustness, as evaluated on the nuScenes-C benchmark.
 
-![occfeat_results]({{ site.baseurl }}/images/posts/2024_cvpr/occfeat_results.png){:height="75%" width="75%"}
+![occfeat_results]({{ site.baseurl }}/images/posts/2024_cvpr/occfeat_results.PNG){:height="100%" width="100%"}
 <div class="caption">
 Performance comparison in low data regime 1% annotated data of nuScenes (Left). Study on robustness. Segmentation results on nuScenes-C dataset for Vehicle classes using BEVFormer network with EN-B0 image backbone on 100% annotated data. Comparison of our OccFeat against no BEV pretraining (Right).
 </div>
@@ -217,7 +217,7 @@ Performance comparison in low data regime 1% annotated data of nuScenes (Left). 
 
 Large Language Models have demonstrated remarkable performance across various tasks, exhibiting the capacity to swiftly acquire new skills, such as through In-Context Learning (ICL) with minimal demonstration examples. In this work, we present a comprehensive framework for investigating Multimodal ICL (M-ICL) in the context of Large Multimodal Models. We consider the best open-source multimodal models (e.g., IDEFICS, OpenFlamingo) and a wide range of multimodal tasks. Our study unveils several noteworthy findings: (1) M-ICL primarily relies on text-driven mechanisms, showing little to no influence from the image modality. (2) When used with advanced-ICL strategy (like RICES), M-ICL is not better than a simple strategy based on majority voting over context examples. Moreover, we identify several biases and limitations of M-ICL that warrant consideration prior to deployment. The code will be made publicly available.
 
-![icl_overview]({{ site.baseurl }}/images/posts/2024_cvpr/icl_overview.png){:height="75%" width="75%"}
+![icl_overview]({{ site.baseurl }}/images/publications/2024_multimodal_icl/multimodal-icl.PNG){:height="100%" width="100%"}
 <div class="caption"><b>Empirical analysis of Multimodal In-Context Learning (M-ICL) behavior.</b>
 </div>
 
