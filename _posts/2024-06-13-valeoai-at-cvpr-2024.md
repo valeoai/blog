@@ -2,10 +2,10 @@
 toc: false
 layout: post
 description: "Gilles Puy, Loïck Chambon, Victor Besnier, Sophia Sirko-Galouchenko, Spyros Gidaris, Alexandre Boulch, Renaud Marlet, Andrei Bursuc, Éloi Zablocki"
-categories: [3d perception, multi-sensor, limited supervision, reliability]
+categories: [3d perception, multi-sensor, limited supervision, reliability, motion forecasting, driving]
 title: "valeo.ai at CVPR 2024"
 hide: false
-image: images/posts/2024_cvpr/cvpr_image.jfjf
+image: images/posts/2024_cvpr/cvpr_banner.PNG
 ---
 
 
@@ -13,7 +13,7 @@ The [IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR)](https
 At the 2024 edition the [valeo.ai](https://ptrckprz.github.io/valeoai/) team will present eight [papers](https://valeoai.github.io/blog/publications/) in the main conference, two [papers](https://valeoai.github.io/blog/publications/) in workshops, and one workshop [keynote](https://opendrivelab.com/cvpr2024/workshop/).
 Also, the team will present its [winning solution](https://valeoai.github.io/blog/publications/valeo4cast/) to the Argoverse 2 ["Unified Detection, Tracking and Forecasting"](https://www.argoverse.org/E2EForecasting.html) challenge held at the Workshop on Autonomous Driving.
 The team will be at CVPR to present these works and will be happy to discuss more about these projects and ideas, and share our exciting ongoing research.
-We outline our team papers below. 
+We outline our team papers below.
 
 
 
@@ -28,8 +28,8 @@ Self-supervised image backbones can be used to address complex 2D tasks (e.g., s
 In this work, instead of focusing only on the distillation method, we study the effect of three pillars for distillation: the 3D backbone, the pretrained 2D backbone, and the pretraining 2D+3D dataset. In particular, thanks to our scalable distillation method named ScaLR, we show that scaling the 2D and 3D backbones and pretraining on diverse datasets leads to a substantial improvement of the feature quality. This allows us to significantly reduce the gap between the quality of distilled and fully-supervised 3D features, and to improve the robustness of the pretrained backbones to domain gaps and perturbations. We show that scaling the 2D and
 3D backbones, and pretraining on diverse datasets leads to considerable improvements of the feature quality. The role of these pillars is actually more important than the distillation method itself, which we simplify for easier scaling.
 
-![scalr_overview]({{ site.baseurl }}/images/posts/2024_cvpr/scalr.PNG){:height="100%" width="100%"}
-<div class="caption"><b>ScaLR image-to-lidar distillation method with the three pillars studied in this work.</b> 
+![scalr_overview]({{ site.baseurl }}/images/posts/2024_cvpr/scalr_overview.PNG){:height="100%" width="100%"}
+<div class="caption"><b>ScaLR image-to-lidar distillation method with the three pillars studied in this work.</b>
 </div>
 
 In this work, after proposing and studying a scalable distillation method, which we call ScaLR for Scalable Lidar Representation (Fig. 1), we make the following contributions.
@@ -58,11 +58,11 @@ Finally, we show that a possible way to get even better features is to distill t
 
 Bird's-eye View (BeV) representations have emerged as the de-facto shared space in driving applications, offering a unified space for sensor data fusion and supporting various downstream tasks. However, conventional models use grids with fixed resolution and range and face computational inefficiencies due to the uniform allocation of resources across all cells. To address this, we propose PointBeV, a novel sparse BeV segmentation model operating on sparse BeV cells instead of dense grids. This approach offers precise control over memory usage, enabling the use of long temporal contexts and accommodating memory-constrained platforms. PointBeV employs an efficient two-pass strategy for training, enabling focused computation on regions of interest. At inference time, it can be used with various memory/performance trade-offs and flexibly adjusts to new specific use cases. PointBeV achieves state-of-the-art results on the nuScenes dataset for vehicle, pedestrian, and lane segmentation, showcasing superior performance in static and temporal settings despite being trained solely with sparse signals. We will release our code along with two new efficient modules used in the architecture: Sparse Feature Pulling, designed for the effective extraction of features from images to BeV, and Submanifold Attention, which enables efficient temporal modeling.
 
-![pointbev_overview]({{ site.baseurl }}/images/posts/2024_cvpr/pointbev.png){:height="100%" width="100%"}
+![pointbev_overview]({{ site.baseurl }}/images/publications/2024_pointbev/pointbev.PNG){:height="100%" width="100%"}
 <div class="caption"><b>PointBeV overview.</b>
 </div>
 
-![pointbev_results]({{ site.baseurl }}/images/posts/2024_cvpr/pointbev_results.png){:height="100%" width="100%"}
+![pointbev_results]({{ site.baseurl }}/images/posts/2024_cvpr/pointbev_results.PNG){:height="100%" width="100%"}
 <div class="caption"><b>PointBeV results.</b>
 </div>
 
