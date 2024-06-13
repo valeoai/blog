@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://valeoai.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://valeoai.github.io/blog/" rel="alternate" type="text/html" /><updated>2024-06-13T09:05:56-05:00</updated><id>https://valeoai.github.io/blog/feed.xml</id><title type="html">valeo.ai</title><subtitle>valeo.ai research page</subtitle><entry><title type="html">valeo.ai at CVPR 2024</title><link href="https://valeoai.github.io/blog/2024/06/13/valeoai-at-cvpr-2024.html" rel="alternate" type="text/html" title="valeo.ai at CVPR 2024" /><published>2024-06-13T00:00:00-05:00</published><updated>2024-06-13T00:00:00-05:00</updated><id>https://valeoai.github.io/blog/2024/06/13/valeoai-at-cvpr-2024</id><content type="html" xml:base="https://valeoai.github.io/blog/2024/06/13/valeoai-at-cvpr-2024.html"><![CDATA[<p>The <a href="https://cvpr2024.thecvf.com/">IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR)</a> is a key event for researchers and engineers working on computer vision and machine learning.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://valeoai.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://valeoai.github.io/blog/" rel="alternate" type="text/html" /><updated>2024-06-13T09:10:30-05:00</updated><id>https://valeoai.github.io/blog/feed.xml</id><title type="html">valeo.ai</title><subtitle>valeo.ai research page</subtitle><entry><title type="html">valeo.ai at CVPR 2024</title><link href="https://valeoai.github.io/blog/2024/06/13/valeoai-at-cvpr-2024.html" rel="alternate" type="text/html" title="valeo.ai at CVPR 2024" /><published>2024-06-13T00:00:00-05:00</published><updated>2024-06-13T00:00:00-05:00</updated><id>https://valeoai.github.io/blog/2024/06/13/valeoai-at-cvpr-2024</id><content type="html" xml:base="https://valeoai.github.io/blog/2024/06/13/valeoai-at-cvpr-2024.html"><![CDATA[<p>The <a href="https://cvpr2024.thecvf.com/">IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR)</a> is a key event for researchers and engineers working on computer vision and machine learning.
 At the 2024 edition the <a href="https://ptrckprz.github.io/valeoai/">valeo.ai</a> team will present eight <a href="https://valeoai.github.io/blog/publications/">papers</a> in the main conference, two <a href="https://valeoai.github.io/blog/publications/">papers</a> in workshops, and one workshop <a href="https://opendrivelab.com/cvpr2024/workshop/">keynote</a>.
 Also, the team will present its <a href="https://valeoai.github.io/blog/publications/valeo4cast/">winning solution</a> to the Argoverse 2 <a href="https://www.argoverse.org/E2EForecasting.html">“Unified Detection, Tracking and Forecasting”</a> challenge held at the Workshop on Autonomous Driving.
 The team will be at CVPR to present these works and will be happy to discuss more about these projects and ideas, and share our exciting ongoing research.
@@ -46,7 +46,7 @@ to cars on all datasets, illustrating the capacity of our single pretrained back
 <div class="caption"><b>PointBeV overview.</b>
 </div>
 
-<p><img src="/blog/images/posts/2024_cvpr/pointbev_results.PNG" alt="pointbev_results" height="70%" width="70%" /></p>
+<p><img src="/blog/images/posts/2024_cvpr/pointbev_results.PNG" alt="pointbev_results" height="50%" width="50%" /></p>
 <div class="caption"><b>PointBeV results.</b>
 </div>
 
@@ -120,17 +120,17 @@ The procedure begins with training a single DNN $\omega\_{\text{MAP}$, followed 
 
 <p>Unsupervised object-centric learning aims to decompose scenes into interpretable object entities, termed slots. Slot-based auto-encoders stand out as a prominent method for this task. Within them, crucial aspects include guiding the encoder to generate object-specific slots and ensuring the decoder utilizes them during reconstruction. This work introduces two novel techniques, (i) an attention-based self-training approach, which distills superior slot-based attention masks from the decoder to the encoder, enhancing object segmentation (see Figure 2), and (ii) an innovative patch-order permutation strategy for autoregressive transformers that strengthens the role of slot vectors in reconstruction (see Figure 3). The effectiveness of these strategies is showcased experimentally. The combined approach significantly surpasses prior slot-based autoencoder methods in unsupervised object segmentation, especially with complex real-world images (see Figure 1).</p>
 
-<p><img src="/blog/images/posts/2024_cvpr/spot_overview.png" alt="spot_overview" height="75%" width="75%" /></p>
-<div class="caption"><b>SPOT.</b>
+<p><img src="/blog/images/publications/2024_spot/spot_visualizations.png" alt="spot_overview" height="100%" width="100%" /></p>
+<div class="caption"><b>SPOT visualizations.</b>
 Our novel framework enhances unsupervised object-centric learning in slot-based autoencoders using self-training and sequence permutations in the transformer decoder. It improves object-specific slot generation, excelling in complex real-world images.
 </div>
 
-<p><img src="/blog/images/posts/2024_cvpr/spot_archi.png" alt="spot_archi" height="75%" width="75%" /></p>
+<p><img src="/blog/images/posts/2024_cvpr/spot_archi.png" alt="spot_archi" height="90%" width="90%" /></p>
 <div class="caption">
 Enhancing unsupervised object-centric learning via self-training. Our two-stage approach starts with exclusive training in the initial stage (not depicted) using the reconstruction loss. In the following stage, shown here, a teacher-student framework is applied. The teacher model, trained in the first stage, guides the student model with an additional loss, distilling attention masks from the teacher’s decoder to the slot-attention masks in the student’s encoder.
 </div>
 
-<p><img src="/blog/images/posts/2024_cvpr/spot_detail.png" alt="spot_detail" height="75%" width="75%" /></p>
+<p><img src="/blog/images/posts/2024_cvpr/spot_details.png" alt="spot_detail" height="75%" width="75%" /></p>
 <div class="caption">
 Autoregressive (AR) decoding via sequence permutations. Violet boxes indicate differences from typical AR decoder
 </div>
