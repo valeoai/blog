@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://valeoai.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://valeoai.github.io/blog/" rel="alternate" type="text/html" /><updated>2024-06-13T09:49:19-05:00</updated><id>https://valeoai.github.io/blog/feed.xml</id><title type="html">valeo.ai</title><subtitle>valeo.ai research page</subtitle><entry><title type="html">valeo.ai at CVPR 2024</title><link href="https://valeoai.github.io/blog/2024/06/13/valeoai-at-cvpr-2024.html" rel="alternate" type="text/html" title="valeo.ai at CVPR 2024" /><published>2024-06-13T00:00:00-05:00</published><updated>2024-06-13T00:00:00-05:00</updated><id>https://valeoai.github.io/blog/2024/06/13/valeoai-at-cvpr-2024</id><content type="html" xml:base="https://valeoai.github.io/blog/2024/06/13/valeoai-at-cvpr-2024.html"><![CDATA[<p>The <a href="https://cvpr2024.thecvf.com/">IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR)</a> is a key event for researchers and engineers working on computer vision and machine learning.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://valeoai.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://valeoai.github.io/blog/" rel="alternate" type="text/html" /><updated>2024-06-13T09:51:59-05:00</updated><id>https://valeoai.github.io/blog/feed.xml</id><title type="html">valeo.ai</title><subtitle>valeo.ai research page</subtitle><entry><title type="html">valeo.ai at CVPR 2024</title><link href="https://valeoai.github.io/blog/2024/06/13/valeoai-at-cvpr-2024.html" rel="alternate" type="text/html" title="valeo.ai at CVPR 2024" /><published>2024-06-13T00:00:00-05:00</published><updated>2024-06-13T00:00:00-05:00</updated><id>https://valeoai.github.io/blog/2024/06/13/valeoai-at-cvpr-2024</id><content type="html" xml:base="https://valeoai.github.io/blog/2024/06/13/valeoai-at-cvpr-2024.html"><![CDATA[<p>The <a href="https://cvpr2024.thecvf.com/">IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR)</a> is a key event for researchers and engineers working on computer vision and machine learning.
 At the 2024 edition the <a href="https://ptrckprz.github.io/valeoai/">valeo.ai</a> team will present eight <a href="https://valeoai.github.io/blog/publications/">papers</a> in the main conference, two <a href="https://valeoai.github.io/blog/publications/">papers</a> in workshops, and one workshop <a href="https://opendrivelab.com/cvpr2024/workshop/">keynote</a>.
 Also, the team will present its <a href="https://valeoai.github.io/blog/publications/valeo4cast/">winning solution</a> to the Argoverse 2 <a href="https://www.argoverse.org/E2EForecasting.html">“Unified Detection, Tracking and Forecasting”</a> challenge held at the Workshop on Autonomous Driving.
 The team will be at CVPR to present these works and will be happy to discuss more about these projects and ideas, and share our exciting ongoing research.
@@ -18,11 +18,11 @@ We outline our team papers below.</p>
 <div class="caption"><b>ScaLR image-to-lidar distillation method with the three pillars studied in this work.</b>
 </div>
 
-<p>In this work, after proposing and studying a scalable distillation method, which we call ScaLR for Scalable Lidar Representation (Fig. 1), we make the following contributions.</p>
+<p>In this work, after proposing and studying a scalable distillation method, which we call ScaLR for Scalable Lidar Representation (see Figure above), we make the following contributions.</p>
 
 <p>First, we are able to significantly reduce the gap between distilled and supervised lidar representations: on nuScenes, we increase the performance by 22.8 mIoU percentage points compared to the former best distillation method.</p>
 
-<p>Second, we show it is possible to pretrain a single backbone on a mixture of datasets, performing similarly or better than separate backbones specialized on each dataset individually. The capacity of this backbone in providing good features across multiple datasets is illustrated in Fig. 2. For each scene in this figure, we pick a point located on a car and present the feature correlation map with respect to this point. We notice that the most correlated points also belong
+<p>Second, we show it is possible to pretrain a single backbone on a mixture of datasets, performing similarly or better than separate backbones specialized on each dataset individually. The capacity of this backbone in providing good features across multiple datasets is illustrated in the figure below. For each scene in this figure, we pick a point located on a car and present the feature correlation map with respect to this point. We notice that the most correlated points also belong
 to cars on all datasets, illustrating the capacity of our single pretrained backbone to correctly distinguish objects on multiple datasets.</p>
 
 <p><img src="/blog/images/posts/2024_cvpr/scalr_results.PNG" alt="scalr_results" height="100%" width="100%" /></p>
@@ -128,17 +128,19 @@ The procedure begins with training a single DNN $\omega\_{\text{MAP}$, followed 
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2312.00648">Paper</a>] &nbsp;&nbsp; [<a href="https://github.com/gkakogeorgiou/spot">Code</a>] &nbsp;&nbsp; [<a href="https://valeoai.github.io/blog/publications/spot/">page</a>]</h4>
 
-<p>Unsupervised object-centric learning aims to decompose scenes into interpretable object entities, termed slots. Slot-based auto-encoders stand out as a prominent method for this task. Within them, crucial aspects include guiding the encoder to generate object-specific slots and ensuring the decoder utilizes them during reconstruction. This work introduces two novel techniques, (i) an attention-based self-training approach, which distills superior slot-based attention masks from the decoder to the encoder, enhancing object segmentation (see Figure 2), and (ii) an innovative patch-order permutation strategy for autoregressive transformers that strengthens the role of slot vectors in reconstruction (see Figure 3). The effectiveness of these strategies is showcased experimentally. The combined approach significantly surpasses prior slot-based autoencoder methods in unsupervised object segmentation, especially with complex real-world images (see Figure 1).</p>
-
-<p><img src="/blog/images/publications/2024_spot/spot_visualizations.png" alt="spot_overview" height="100%" width="100%" /></p>
-<div class="caption"><b>SPOT visualizations.</b>
-Our novel framework enhances unsupervised object-centric learning in slot-based autoencoders using self-training and sequence permutations in the transformer decoder. It improves object-specific slot generation, excelling in complex real-world images.
-</div>
+<p>Unsupervised object-centric learning aims to decompose scenes into interpretable object entities, termed slots. Slot-based auto-encoders stand out as a prominent method for this task. Within them, crucial aspects include guiding the encoder to generate object-specific slots and ensuring the decoder utilizes them during reconstruction. This work introduces two novel techniques, (i) an attention-based self-training approach, which distills superior slot-based attention masks from the decoder to the encoder, enhancing object segmentation , and (ii) an innovative patch-order permutation strategy for autoregressive transformers that strengthens the role of slot vectors in reconstruction.</p>
 
 <p><img src="/blog/images/posts/2024_cvpr/spot_archi.PNG" alt="spot_archi" height="90%" width="90%" /></p>
 <div class="caption">
 <b>Enhancing unsupervised object-centric learning via self-training.</b>
 Our two-stage approach starts with exclusive training in the initial stage (not depicted) using the reconstruction loss. In the following stage, shown here, a teacher-student framework is applied. The teacher model, trained in the first stage, guides the student model with an additional loss, distilling attention masks from the teacher’s decoder to the slot-attention masks in the student’s encoder.
+</div>
+
+<p>The effectiveness of these strategies is showcased experimentally. The combined approach significantly surpasses prior slot-based autoencoder methods in unsupervised object segmentation, especially with complex real-world images.</p>
+
+<p><img src="/blog/images/publications/2024_spot/spot_visualizations.png" alt="spot_overview" height="100%" width="100%" /></p>
+<div class="caption"><b>SPOT visualizations.</b>
+Our novel framework enhances unsupervised object-centric learning in slot-based autoencoders using self-training and sequence permutations in the transformer decoder. It improves object-specific slot generation, excelling in complex real-world images.
 </div>
 
 <hr />
