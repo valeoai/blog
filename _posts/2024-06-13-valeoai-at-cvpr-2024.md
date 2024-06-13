@@ -165,11 +165,11 @@ Our novel framework enhances unsupervised object-centric learning in slot-based 
 Our two-stage approach starts with exclusive training in the initial stage (not depicted) using the reconstruction loss. In the following stage, shown here, a teacher-student framework is applied. The teacher model, trained in the first stage, guides the student model with an additional loss, distilling attention masks from the teacher’s decoder to the slot-attention masks in the student’s encoder.
 </div>
 
-![spot_detail]({{ site.baseurl }}/images/posts/2024_cvpr/spot_details.PNG){:height="55%" width="55%"}
-<div class="caption">
-<b>Autoregressive (AR) decoding via sequence permutations.</b>
-Violet boxes indicate differences from typical AR decoder
-</div>
+[//]: # ![spot_detail]({{ site.baseurl }}/images/posts/2024_cvpr/spot_details.PNG){:height="55%" width="55%"}
+[//]: # <div class="caption">
+[//]: # <b>Autoregressive (AR) decoding via sequence permutations.</b>
+[//]: # Violet boxes indicate differences from typical AR decoder
+[//]: # </div>
 
 <hr>
 
