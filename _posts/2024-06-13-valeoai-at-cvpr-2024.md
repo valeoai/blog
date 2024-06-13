@@ -5,7 +5,7 @@ description: "Gilles Puy, Loïck Chambon, Victor Besnier, Sophia Sirko-Galouchen
 categories: [3d perception, multi-sensor, limited supervision, reliability]
 title: "valeo.ai at CVPR 2024"
 hide: false
-image: images/posts/2024_cvpr/cvpr_banner.svg
+image: images/posts/2024_cvpr/cvpr_image.jfjf
 ---
 
 
@@ -18,7 +18,7 @@ We outline our team papers below.
 
 
 ## Three Pillars Improving Vision Foundation Model Distillation for Lidar
-#### Authors: <a href="https://sites.google.com/site/puygilles/home">Gilles Puy</a>  &nbsp;&nbsp; <a href="https://scholar.google.fr/citations?user=7atfg7EAAAAJ&hl=en">Spyros Gidaris</a>  &nbsp;&nbsp; <a href="https://www.boulch.eu/">Alexandre Boulch</a>&nbsp;&nbsp; <a href="https://osimeoni.github.io/">Oriane Siméoni</a> &nbsp;&nbsp; <a href="https://csautier.github.io/">Corentin Sautier</a> <br> <a href="https://abursuc.github.io/">Andrei Bursuc</a> &nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a> &nbsp;&nbsp; <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a>
+#### Authors: <a href="https://sites.google.com/site/puygilles/home">Gilles Puy</a>  &nbsp;&nbsp; <a href="https://scholar.google.fr/citations?user=7atfg7EAAAAJ&hl=en">Spyros Gidaris</a>  &nbsp;&nbsp; <a href="https://www.boulch.eu/">Alexandre Boulch</a>&nbsp;&nbsp; <a href="https://osimeoni.github.io/">Oriane Siméoni</a> &nbsp;&nbsp; <a href="https://csautier.github.io/">Corentin Sautier</a> &nbsp;&nbsp; <a href="https://abursuc.github.io/">Andrei Bursuc</a> &nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a> &nbsp;&nbsp; <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a>
 
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2310.17504">Paper</a>] &nbsp;&nbsp; [<a href="https://github.com/valeoai/ScalR">Code</a>] &nbsp;&nbsp; [<a href="https://youtu.be/yksj5WuJY4I">Video</a>]  &nbsp;&nbsp; [<a href="https://valeoai.github.io/blog/publications/scalr/">Project page</a>]</h4>
@@ -28,7 +28,7 @@ Self-supervised image backbones can be used to address complex 2D tasks (e.g., s
 In this work, instead of focusing only on the distillation method, we study the effect of three pillars for distillation: the 3D backbone, the pretrained 2D backbone, and the pretraining 2D+3D dataset. In particular, thanks to our scalable distillation method named ScaLR, we show that scaling the 2D and 3D backbones and pretraining on diverse datasets leads to a substantial improvement of the feature quality. This allows us to significantly reduce the gap between the quality of distilled and fully-supervised 3D features, and to improve the robustness of the pretrained backbones to domain gaps and perturbations. We show that scaling the 2D and
 3D backbones, and pretraining on diverse datasets leads to considerable improvements of the feature quality. The role of these pillars is actually more important than the distillation method itself, which we simplify for easier scaling.
 
-![scalr_overview]({{ site.baseurl }}/images/posts/2024_cvpr/scalr.png){:height="100%" width="100%"}
+![scalr_overview]({{ site.baseurl }}/images/posts/2024_cvpr/scalr.PNG){:height="100%" width="100%"}
 <div class="caption"><b>ScaLR image-to-lidar distillation method with the three pillars studied in this work.</b> 
 </div>
 
@@ -39,7 +39,7 @@ First, we are able to significantly reduce the gap between distilled and supervi
 Second, we show it is possible to pretrain a single backbone on a mixture of datasets, performing similarly or better than separate backbones specialized on each dataset individually. The capacity of this backbone in providing good features across multiple datasets is illustrated in Fig. 2. For each scene in this figure, we pick a point located on a car and present the feature correlation map with respect to this point. We notice that the most correlated points also belong
 to cars on all datasets, illustrating the capacity of our single pretrained backbone to correctly distinguish objects on multiple datasets.
 
-![scalr_results]({{ site.baseurl }}/images/posts/2024_cvpr/scalr_results.png){:height="100%" width="100%"}
+![scalr_results]({{ site.baseurl }}/images/posts/2024_cvpr/scalr_results.PNG){:height="100%" width="100%"}
 <div class="caption"><b>Correlation maps with a point located on a car</b>  on four different scenes extracted from nuScenes, SemanticKITTI, PandaSet-64 and PandaSet-GT, respectively. The features used to compute these maps are extracted from a single pretrained backbone on all four datasets with ScaLR. Color goes from blue to red for low and high values.
 </div>
 
