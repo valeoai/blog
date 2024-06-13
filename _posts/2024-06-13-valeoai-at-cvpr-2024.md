@@ -125,7 +125,7 @@ Columns 1-2: Image and ground truth (GT), Columns 3-4-5: Different domain genera
 
 Deep Neural Networks (DNNs) are powerful tools for various computer vision tasks, yet they often struggle with reliable uncertainty quantification — a critical requirement for real-world applications. Bayesian Neural Networks (BNN) are equipped for uncertainty estimation but cannot scale to large DNNs where they are highly unstable to train. To address this challenge, we introduce the Adaptable Bayesian Neural Network (ABNN), a simple and scalable strategy to seamlessly transform DNNs into BNNs in a post-hoc manner with minimal computational and training overheads. ABNN preserves the main predictive properties of DNNs while enhancing their uncertainty quantification abilities through simple BNN adaptation layers (attached to normalization layers) and a few fine-tuning steps on pre-trained models. We conduct extensive experiments across multiple datasets for image classification and semantic segmentation tasks, and our results demonstrate that ABNN achieves state-of-the-art performance without the computational budget typically associated with ensemble methods.
 
-![abnn_overview]({{ site.baseurl }}/images/posts/2024_cvpr/abnn_overview.PNG){:height="95%" width="95%"}
+![abnn_overview]({{ site.baseurl }}/images/posts/2024_cvpr/abnn_overview.PNG){:height="100%" width="100%"}
 <div class="caption"><b>Illustration of the training process for the ABNN.</b>
 The procedure begins with training a single DNN $\omega\_{\text{MAP}$, followed by architectural adjustments on the normalization layers to transform it into an ABNN. The final step involves fine-tuning the ABNN model.
 </div>
@@ -152,7 +152,7 @@ Our novel framework enhances unsupervised object-centric learning in slot-based 
 Enhancing unsupervised object-centric learning via self-training. Our two-stage approach starts with exclusive training in the initial stage (not depicted) using the reconstruction loss. In the following stage, shown here, a teacher-student framework is applied. The teacher model, trained in the first stage, guides the student model with an additional loss, distilling attention masks from the teacher’s decoder to the slot-attention masks in the student’s encoder.
 </div>
 
-![spot_detail]({{ site.baseurl }}/images/posts/2024_cvpr/spot_details.PNG){:height="75%" width="75%"}
+![spot_detail]({{ site.baseurl }}/images/posts/2024_cvpr/spot_details.PNG){:height="55%" width="55%"}
 <div class="caption">
 Autoregressive (AR) decoding via sequence permutations. Violet boxes indicate differences from typical AR decoder
 </div>
@@ -217,7 +217,7 @@ Performance comparison in low data regime 1% annotated data of nuScenes (Left). 
 
 Large Language Models have demonstrated remarkable performance across various tasks, exhibiting the capacity to swiftly acquire new skills, such as through In-Context Learning (ICL) with minimal demonstration examples. In this work, we present a comprehensive framework for investigating Multimodal ICL (M-ICL) in the context of Large Multimodal Models. We consider the best open-source multimodal models (e.g., IDEFICS, OpenFlamingo) and a wide range of multimodal tasks. Our study unveils several noteworthy findings: (1) M-ICL primarily relies on text-driven mechanisms, showing little to no influence from the image modality. (2) When used with advanced-ICL strategy (like RICES), M-ICL is not better than a simple strategy based on majority voting over context examples. Moreover, we identify several biases and limitations of M-ICL that warrant consideration prior to deployment.
 
-![icl_overview]({{ site.baseurl }}/images/publications/2024_multimodal_icl/multimodal-icl.PNG){:height="70%" width="70%"}
+![icl_overview]({{ site.baseurl }}/images/publications/2024_multimodal_icl/multimodal-icl.PNG){:height="60%" width="60%"}
 <div class="caption"><b>Empirical analysis of Multimodal In-Context Learning (M-ICL) behavior.</b>
 </div>
 
