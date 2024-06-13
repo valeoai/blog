@@ -167,7 +167,7 @@ TL;DR: We introduce NOPE, a simple approach to estimate relative pose of unseen 
 
 The practicality of 3D object pose estimation remains limited for many applications due to the need for prior knowledge of a 3D model and a training period for new objects. To address this limitation, we propose an approach that takes a single image of a new object as input and predicts the relative pose of this object in new images without prior knowledge of the object's 3D model and without requiring training time for new objects and categories. We achieve this by training a model to directly predict discriminative embeddings for viewpoints surrounding the object. This prediction is done using a simple U-Net architecture with attention and conditioned on the desired pose, which yields extremely fast inference. We compare our approach to state-of-the-art methods and show it outperforms them both in terms of accuracy and robustness.
 
-![nope_overview]({{ site.baseurl }}/images/publications/2024_nope/nope.gif){:height="70%" width="70%"}
+![nope_overview]({{ site.baseurl }}/images/publications/2024_nope/nope.gif){:height="55%" width="55%"}
 <div class="caption"><b>NOPE qualitative results.</b>
 </div>
 
@@ -217,7 +217,7 @@ Performance comparison in low data regime 1% annotated data of nuScenes (Left). 
 
 Large Language Models have demonstrated remarkable performance across various tasks, exhibiting the capacity to swiftly acquire new skills, such as through In-Context Learning (ICL) with minimal demonstration examples. In this work, we present a comprehensive framework for investigating Multimodal ICL (M-ICL) in the context of Large Multimodal Models. We consider the best open-source multimodal models (e.g., IDEFICS, OpenFlamingo) and a wide range of multimodal tasks. Our study unveils several noteworthy findings: (1) M-ICL primarily relies on text-driven mechanisms, showing little to no influence from the image modality. (2) When used with advanced-ICL strategy (like RICES), M-ICL is not better than a simple strategy based on majority voting over context examples. Moreover, we identify several biases and limitations of M-ICL that warrant consideration prior to deployment.
 
-![icl_overview]({{ site.baseurl }}/images/publications/2024_multimodal_icl/multimodal-icl.PNG){:height="100%" width="100%"}
+![icl_overview]({{ site.baseurl }}/images/publications/2024_multimodal_icl/multimodal-icl.PNG){:height="70%" width="70%"}
 <div class="caption"><b>Empirical analysis of Multimodal In-Context Learning (M-ICL) behavior.</b>
 </div>
 
