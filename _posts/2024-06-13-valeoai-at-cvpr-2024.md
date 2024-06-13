@@ -147,12 +147,12 @@ Unsupervised object-centric learning aims to decompose scenes into interpretable
 Our novel framework enhances unsupervised object-centric learning in slot-based autoencoders using self-training and sequence permutations in the transformer decoder. It improves object-specific slot generation, excelling in complex real-world images.
 </div>
 
-![spot_archi]({{ site.baseurl }}/images/posts/2024_cvpr/spot_archi.png){:height="90%" width="90%"}
+![spot_archi]({{ site.baseurl }}/images/posts/2024_cvpr/spot_archi.PNG){:height="90%" width="90%"}
 <div class="caption">
 Enhancing unsupervised object-centric learning via self-training. Our two-stage approach starts with exclusive training in the initial stage (not depicted) using the reconstruction loss. In the following stage, shown here, a teacher-student framework is applied. The teacher model, trained in the first stage, guides the student model with an additional loss, distilling attention masks from the teacher’s decoder to the slot-attention masks in the student’s encoder.
 </div>
 
-![spot_detail]({{ site.baseurl }}/images/posts/2024_cvpr/spot_details.png){:height="75%" width="75%"}
+![spot_detail]({{ site.baseurl }}/images/posts/2024_cvpr/spot_details.PNG){:height="75%" width="75%"}
 <div class="caption">
 Autoregressive (AR) decoding via sequence permutations. Violet boxes indicate differences from typical AR decoder
 </div>
