@@ -119,7 +119,7 @@ Columns 1-2: Image and ground truth (GT), Columns 3-4-5: Different domain genera
 
 ## Make Me a BNN: A Simple Strategy for Estimating Bayesian Uncertainty from Pre-trained Models
 
-#### Authors: <a href="https://www.ensta-paris.fr/fr/gianni-franchi">Gianni Franchi</a> &nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=RW4CQ68AAAAJ">Olivier Laurent</a> &nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=RCUoocYAAAAJ&hl=en">Maxence Leguéry</a> &nbsp;&nbsp; <br>  <a href="https://abursuc.github.io/">Andrei Bursuc</a>&nbsp;&nbsp; <a href="https://scholar.google.it/citations?user=zooORRsAAAAJ&hl=en">Andrea Pilzer</a> &nbsp;&nbsp;  <a href="https://www.comp.nus.edu.sg/~ayao/">Angela Yao</a>
+#### Authors: <a href="https://www.ensta-paris.fr/fr/gianni-franchi">Gianni Franchi</a> &nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=RW4CQ68AAAAJ">Olivier Laurent</a> &nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=RCUoocYAAAAJ&hl=en">Maxence Leguéry</a> &nbsp;&nbsp; <a href="https://abursuc.github.io/">Andrei Bursuc</a>&nbsp;&nbsp; <a href="https://scholar.google.it/citations?user=zooORRsAAAAJ&hl=en">Andrea Pilzer</a> &nbsp;&nbsp;  <a href="https://www.comp.nus.edu.sg/~ayao/">Angela Yao</a>
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2312.15297">Paper</a>] &nbsp;&nbsp; [<a href="https://torch-uncertainty.github.io/ ">Code</a>] &nbsp;&nbsp; [<a href="https://www.youtube.com/watch?v=aXqVBAOXc0o">Video</a>] &nbsp;&nbsp; [<a href="https://ensta-u2is-ai.github.io/ABNN-Make-me-a-BNN/">page</a>]</h4>
 
@@ -189,7 +189,7 @@ Motion forecasting is crucial in autonomous driving systems to anticipate the fu
 
 ### Workshop on Autonomous Driving at CVPR 2024
 
-#### Authors: <a href="">Sophia Sirko-Galouchenko</a> &nbsp;&nbsp; <a href="https://www.boulch.eu/">Alexandre Boulch</a> &nbsp;&nbsp;  <a href="https://scholar.google.fr/citations?user=7atfg7EAAAAJ&hl=en">Spyros Gidaris</a> &nbsp;&nbsp; <br> <a href="https://abursuc.github.io/">Andrei Bursuc</a> &nbsp;&nbsp;  <a href="https://vobecant.github.io/">Antonin Vobecky</a>  &nbsp;&nbsp; <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a> &nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a>
+#### Authors: <a href="">Sophia Sirko-Galouchenko</a> &nbsp;&nbsp; <a href="https://www.boulch.eu/">Alexandre Boulch</a> &nbsp;&nbsp;  <a href="https://scholar.google.fr/citations?user=7atfg7EAAAAJ&hl=en">Spyros Gidaris</a> &nbsp;&nbsp; <a href="https://abursuc.github.io/">Andrei Bursuc</a> &nbsp;&nbsp;  <a href="https://vobecant.github.io/">Antonin Vobecky</a>  &nbsp;&nbsp; <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a> &nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a>
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2404.14027">Paper</a>] &nbsp;&nbsp; [<a href="https://valeoai.github.io/blog/publications/occfeat/">page</a>]</h4>
 
@@ -215,7 +215,7 @@ Performance comparison in low data regime 1% annotated data of nuScenes (Left). 
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2404.15736">Paper</a>] &nbsp;&nbsp; [<a href="https://gitlab.com/folbaeni/multimodal-icl">code</a>] &nbsp;&nbsp; [<a href="https://multimodal-icl-folbaeni-1988a753e0abbbc71bb3967331bb69edafda92e.gitlab.io/">page</a>]</h4>
 
-Large Language Models have demonstrated remarkable performance across various tasks, exhibiting the capacity to swiftly acquire new skills, such as through In-Context Learning (ICL) with minimal demonstration examples. In this work, we present a comprehensive framework for investigating Multimodal ICL (M-ICL) in the context of Large Multimodal Models. We consider the best open-source multimodal models (e.g., IDEFICS, OpenFlamingo) and a wide range of multimodal tasks. Our study unveils several noteworthy findings: (1) M-ICL primarily relies on text-driven mechanisms, showing little to no influence from the image modality. (2) When used with advanced-ICL strategy (like RICES), M-ICL is not better than a simple strategy based on majority voting over context examples. Moreover, we identify several biases and limitations of M-ICL that warrant consideration prior to deployment. The code will be made publicly available.
+Large Language Models have demonstrated remarkable performance across various tasks, exhibiting the capacity to swiftly acquire new skills, such as through In-Context Learning (ICL) with minimal demonstration examples. In this work, we present a comprehensive framework for investigating Multimodal ICL (M-ICL) in the context of Large Multimodal Models. We consider the best open-source multimodal models (e.g., IDEFICS, OpenFlamingo) and a wide range of multimodal tasks. Our study unveils several noteworthy findings: (1) M-ICL primarily relies on text-driven mechanisms, showing little to no influence from the image modality. (2) When used with advanced-ICL strategy (like RICES), M-ICL is not better than a simple strategy based on majority voting over context examples. Moreover, we identify several biases and limitations of M-ICL that warrant consideration prior to deployment.
 
 ![icl_overview]({{ site.baseurl }}/images/publications/2024_multimodal_icl/multimodal-icl.PNG){:height="100%" width="100%"}
 <div class="caption"><b>Empirical analysis of Multimodal In-Context Learning (M-ICL) behavior.</b>
