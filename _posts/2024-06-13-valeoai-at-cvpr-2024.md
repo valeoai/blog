@@ -9,7 +9,7 @@ image: images/posts/2024_cvpr/cvpr_banner.PNG
 ---
 
 
-The [IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR)](https://cvpr2024.thecvf.com/) is a key event for researchers and engineers working on computer vision and machine learning.
+The [IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR)](https://cvpr.thecvf.com/) is a key event for researchers and engineers working on computer vision and machine learning.
 At the 2024 edition the [valeo.ai](https://ptrckprz.github.io/valeoai/) team will present eight [papers](https://valeoai.github.io/blog/publications/) in the main conference, two [papers](https://valeoai.github.io/blog/publications/) in workshops, and one workshop [keynote](https://opendrivelab.com/cvpr2024/workshop/).
 Also, the team will present its [winning solution](https://valeoai.github.io/blog/publications/valeo4cast/) to the Argoverse 2 ["Unified Detection, Tracking and Forecasting"](https://www.argoverse.org/E2EForecasting.html) challenge held at the Workshop on Autonomous Driving.
 The team will be at CVPR to present these works and will be happy to discuss more about these projects and ideas, and share our exciting ongoing research.
