@@ -18,7 +18,7 @@ We outline our team papers below.
 
 
 ## Three Pillars Improving Vision Foundation Model Distillation for Lidar
-#### Authors: <a href="https://sites.google.com/site/puygilles/home">Gilles Puy</a>, &nbsp;&nbsp; <a href="https://scholar.google.fr/citations?user=7atfg7EAAAAJ&hl=en">Spyros Gidaris</a>,  &nbsp;&nbsp; <a href="https://www.boulch.eu/">Alexandre Boulch</a>,&nbsp;&nbsp; <a href="https://osimeoni.github.io/">Oriane Siméoni</a>, &nbsp;&nbsp; <a href="https://csautier.github.io/">Corentin Sautier</a>, &nbsp;&nbsp; <a href="https://abursuc.github.io/">Andrei Bursuc</a>, &nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a>, &nbsp;&nbsp; <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a>
+#### Authors: <a href="https://sites.google.com/site/puygilles/home">Gilles Puy</a>, <a href="https://scholar.google.fr/citations?user=7atfg7EAAAAJ&hl=en">Spyros Gidaris</a>, <a href="https://www.boulch.eu/">Alexandre Boulch</a>, <a href="https://osimeoni.github.io/">Oriane Siméoni</a>,  <a href="https://csautier.github.io/">Corentin Sautier</a>,  <a href="https://abursuc.github.io/">Andrei Bursuc</a>,  <a href="https://ptrckprz.github.io/">Patrick Pérez</a>, <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a>
 
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2310.17504">Paper</a>] &nbsp;&nbsp; [<a href="https://github.com/valeoai/ScalR">Code</a>] &nbsp;&nbsp; [<a href="https://youtu.be/yksj5WuJY4I">Video</a>]  &nbsp;&nbsp; [<a href="https://valeoai.github.io/blog/publications/scalr/">Project page</a>]</h4>
