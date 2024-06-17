@@ -18,7 +18,7 @@ We outline our team papers below.
 
 
 ## Three Pillars Improving Vision Foundation Model Distillation for Lidar
-#### Authors: <a href="https://sites.google.com/site/puygilles/home">Gilles Puy</a>, &nbsp;&nbsp; <a href="https://scholar.google.fr/citations?user=7atfg7EAAAAJ&hl=en">Spyros Gidaris</a>,  &nbsp;&nbsp; <a href="https://www.boulch.eu/">Alexandre Boulch</a>,&nbsp;&nbsp; <a href="https://osimeoni.github.io/">Oriane Siméoni</a>, &nbsp;&nbsp; <a href="https://csautier.github.io/">Corentin Sautier</a>, &nbsp;&nbsp; <a href="https://abursuc.github.io/">Andrei Bursuc</a>, &nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a>, &nbsp;&nbsp; <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a>
+#### Authors: <a href="https://sites.google.com/site/puygilles/home">Gilles Puy</a>, <a href="https://scholar.google.fr/citations?user=7atfg7EAAAAJ&hl=en">Spyros Gidaris</a>, <a href="https://www.boulch.eu/">Alexandre Boulch</a>, <a href="https://osimeoni.github.io/">Oriane Siméoni</a>,  <a href="https://csautier.github.io/">Corentin Sautier</a>,  <a href="https://abursuc.github.io/">Andrei Bursuc</a>,  <a href="https://ptrckprz.github.io/">Patrick Pérez</a>, <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a>
 
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2310.17504">Paper</a>] &nbsp;&nbsp; [<a href="https://github.com/valeoai/ScalR">Code</a>] &nbsp;&nbsp; [<a href="https://youtu.be/yksj5WuJY4I">Video</a>]  &nbsp;&nbsp; [<a href="https://valeoai.github.io/blog/publications/scalr/">Project page</a>]</h4>
@@ -52,7 +52,7 @@ Finally, we show that a possible way to get even better features is to distill t
 
 
 ##  PointBeV: A Sparse Approach to BeV Predictions
-#### Authors: <a href="https://loickch.github.io/">Loïck Chambon</a>, &nbsp;&nbsp; <a href="https://scholar.google.fr/citations?user=dOkbUmEAAAAJ">Éloi Zablocki</a>, &nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=QnRpMJAAAAAJ">Mickaël Chen</a>, &nbsp;&nbsp; <a href="https://f-barto.github.io/">Florent Bartoccioni</a>, &nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a>,  &nbsp;&nbsp; <a href="https://cord.isir.upmc.fr/">Matthieu Cord</a>
+#### Authors: <a href="https://loickch.github.io/">Loïck Chambon</a>, <a href="https://scholar.google.fr/citations?user=dOkbUmEAAAAJ">Éloi Zablocki</a>, <a href="https://scholar.google.com/citations?user=QnRpMJAAAAAJ">Mickaël Chen</a>, <a href="https://f-barto.github.io/">Florent Bartoccioni</a>,  <a href="https://ptrckprz.github.io/">Patrick Pérez</a>,   <a href="https://cord.isir.upmc.fr/">Matthieu Cord</a>
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2312.00703">Paper</a>] &nbsp;&nbsp; [<a href="https://github.com/valeoai/pointbev">Code</a>] &nbsp;&nbsp; [<a href="https://valeoai.github.io/blog/publications/pointbev/">Project page</a>]</h4>
 
@@ -76,7 +76,7 @@ The size of a dot represents the number of BeV points being evaluated, the small
 
 ### Highlight
 
-#### Authors: <a href="https://nicolas-dufour.github.io/"> Nicolas Dufour </a>, &nbsp;&nbsp; <a href="https://scholar.google.com/citations?hl=fr&user=n_C2h-QAAAAJ">Victor Besnier</a>, &nbsp;&nbsp; <a href="https://vicky.kalogeiton.info/">Vicky Kalogeiton</a>, &nbsp;&nbsp; <a href="https://davidpicard.github.io/">David Picard</a>
+#### Authors: <a href="https://nicolas-dufour.github.io/"> Nicolas Dufour </a>,  <a href="https://scholar.google.com/citations?hl=fr&user=n_C2h-QAAAAJ">Victor Besnier</a>, <a href="https://vicky.kalogeiton.info/">Vicky Kalogeiton</a>, <a href="https://davidpicard.github.io/">David Picard</a>
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2405.20324">Paper</a>] &nbsp;&nbsp; [<a href="https://github.com/nicolas-dufour/CAD">Code</a>] &nbsp;&nbsp; [<a href="https://www.youtube.com/watch?v=4Tu-x2-Zcxs">Video</a>]  &nbsp;&nbsp; [<a href="https://nicolas-dufour.github.io/cad.html">Project page</a>]</h4>
 
@@ -90,7 +90,7 @@ Conditional diffusion models are powerful generative models that can leverage va
 
 
 ## Supervised Anomaly Detection for Complex Industrial Images
-#### Authors: <a href=""> Aimira Baitieva </a>, &nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=XY1PVwYAAAAJ&hl=fr&oi=ao">David Hurych</a>, &nbsp;&nbsp; <a href="https://scholar.google.com/citations?hl=fr&user=n_C2h-QAAAAJ">Victor Besnier</a>, &nbsp;&nbsp; <a href="">Olivier Bernard</a>
+#### Authors: <a href=""> Aimira Baitieva </a>, <a href="https://scholar.google.com/citations?user=XY1PVwYAAAAJ&hl=fr&oi=ao">David Hurych</a>,  <a href="https://scholar.google.com/citations?hl=fr&user=n_C2h-QAAAAJ">Victor Besnier</a>,  <a href="">Olivier Bernard</a>
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2405.04953">Paper</a>] &nbsp;&nbsp; [<a href="https://github.com/abc-125/segad">Code</a>] &nbsp;&nbsp; [<a href="https://valeoai.github.io/blog/publications/segad/">Project page</a>]</h4>
 
@@ -106,7 +106,7 @@ Automating visual inspection in industrial production lines is essential for inc
 
 ## A Simple Recipe for Language-guided Domain Generalized Segmentation
 
-#### Authors: <a href="https://mfahes.github.io/">Mohammad Fahes</a>,  &nbsp;&nbsp; <a href="https://tuanhungvu.github.io/">Tuan-Hung Vu</a>,  &nbsp;&nbsp; <a href="https://abursuc.github.io/">Andrei Bursuc</a>, &nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a>, &nbsp;&nbsp; <a href="https://team.inria.fr/rits/membres/raoul-de-charette/">Raoul de Charette</a>
+#### Authors: <a href="https://mfahes.github.io/">Mohammad Fahes</a>,  <a href="https://tuanhungvu.github.io/">Tuan-Hung Vu</a>,  <a href="https://abursuc.github.io/">Andrei Bursuc</a>,  <a href="https://ptrckprz.github.io/">Patrick Pérez</a>,  <a href="https://team.inria.fr/rits/membres/raoul-de-charette/">Raoul de Charette</a>
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2311.17922">Paper</a>] &nbsp;&nbsp; [<a href="https://github.com/astra-vision/FAMix">Code</a>] &nbsp;&nbsp; [<a href="https://www.youtube.com/watch?v=vyjtvx2El9Q">Video</a>] &nbsp;&nbsp; [<a href="https://astra-vision.github.io/FAMix/">page</a>]</h4>
 
@@ -128,7 +128,7 @@ Columns 1-2: Image and ground truth (GT), Columns 3-4-5: Different domain genera
 
 ## Make Me a BNN: A Simple Strategy for Estimating Bayesian Uncertainty from Pre-trained Models
 
-#### Authors: <a href="https://www.ensta-paris.fr/fr/gianni-franchi">Gianni Franchi</a>, &nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=RW4CQ68AAAAJ">Olivier Laurent</a>, &nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=RCUoocYAAAAJ&hl=en">Maxence Leguéry</a>, &nbsp;&nbsp; <a href="https://abursuc.github.io/">Andrei Bursuc</a>,&nbsp;&nbsp; <a href="https://scholar.google.it/citations?user=zooORRsAAAAJ&hl=en">Andrea Pilzer</a>, &nbsp;&nbsp;  <a href="https://www.comp.nus.edu.sg/~ayao/">Angela Yao</a>
+#### Authors: <a href="https://www.ensta-paris.fr/fr/gianni-franchi">Gianni Franchi</a>,  <a href="https://scholar.google.com/citations?user=RW4CQ68AAAAJ">Olivier Laurent</a>,  <a href="https://scholar.google.com/citations?user=RCUoocYAAAAJ&hl=en">Maxence Leguéry</a>,  <a href="https://abursuc.github.io/">Andrei Bursuc</a>, <a href="https://scholar.google.it/citations?user=zooORRsAAAAJ&hl=en">Andrea Pilzer</a>,  <a href="https://www.comp.nus.edu.sg/~ayao/">Angela Yao</a>
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2312.15297">Paper</a>] &nbsp;&nbsp; [<a href="https://torch-uncertainty.github.io/ ">Code</a>] &nbsp;&nbsp; [<a href="https://www.youtube.com/watch?v=aXqVBAOXc0o">Video</a>] &nbsp;&nbsp; [<a href="https://ensta-u2is-ai.github.io/ABNN-Make-me-a-BNN/">page</a>]</h4>
 
@@ -146,7 +146,7 @@ The procedure begins with training a single DNN $\omega_{\text{MAP}}$, followed 
 
 ### Highlight
 
-#### Authors: <a href="https://scholar.google.com/citations?user=B_dKcz4AAAAJ">Ioannis Kakogeorgiou</a>,&nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=7atfg7EAAAAJ&hl=en">Spyros Gidaris</a>,&nbsp;&nbsp; <a href="http://users.ntua.gr/karank/">Konstantinos Karantzalos</a>, &nbsp;&nbsp;  <a href="https://www.csd.uoc.gr/~komod/">Nikos Komodakis</a>
+#### Authors: <a href="https://scholar.google.com/citations?user=B_dKcz4AAAAJ">Ioannis Kakogeorgiou</a>, <a href="https://scholar.google.com/citations?user=7atfg7EAAAAJ&hl=en">Spyros Gidaris</a>, <a href="http://users.ntua.gr/karank/">Konstantinos Karantzalos</a>,   <a href="https://www.csd.uoc.gr/~komod/">Nikos Komodakis</a>
 
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2312.00648">Paper</a>] &nbsp;&nbsp; [<a href="https://github.com/gkakogeorgiou/spot">Code</a>] &nbsp;&nbsp; [<a href="https://valeoai.github.io/blog/publications/spot/">page</a>]</h4>
@@ -177,7 +177,7 @@ Our novel framework enhances unsupervised object-centric learning in slot-based 
 
 ## NOPE: Novel Object Pose Estimation from a Single Image
 
-#### Authors: <a href="https://nv-nguyen.github.io/">Van Nguyen Nguyen</a>, &nbsp;&nbsp; <a href="https://imagine.enpc.fr/~groueixt/">Thibault Groueix</a>, &nbsp;&nbsp; <a href="https://scholar.google.co.kr/citations?hl=en&user=5G-6ubcAAAAJ">Georgy Ponimatkin</a>, &nbsp;&nbsp; <a href="https://yinlinhu.github.io/">Yinlin Hu</a>, &nbsp;&nbsp; <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a>, &nbsp;&nbsp; <a href="https://people.epfl.ch/mathieu.salzmann">Mathieu Salzmann</a>, &nbsp;&nbsp; <a href="https://vincentlepetit.github.io/">Vincent Lepetit</a>
+#### Authors: <a href="https://nv-nguyen.github.io/">Van Nguyen Nguyen</a>, <a href="https://imagine.enpc.fr/~groueixt/">Thibault Groueix</a>,  <a href="https://scholar.google.co.kr/citations?hl=en&user=5G-6ubcAAAAJ">Georgy Ponimatkin</a>,  <a href="https://yinlinhu.github.io/">Yinlin Hu</a>,  <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a>, <a href="https://people.epfl.ch/mathieu.salzmann">Mathieu Salzmann</a>, <a href="https://vincentlepetit.github.io/">Vincent Lepetit</a>
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2303.13612">Paper</a>] &nbsp;&nbsp; [<a href="https://github.com/nv-nguyen/nope">Code</a>] &nbsp;&nbsp; [<a href="https://nv-nguyen.github.io/nope/">page</a>]</h4>
 
@@ -193,10 +193,10 @@ The practicality of 3D object pose estimation remains limited for many applicati
 
 
 ## Valeo4Cast: A Modular Approach to End-to-End Forecasting
+<p class="page-description"><a href="https://www.argoverse.org/E2EForecasting.html">Winning solution in Argoverse 2 Unified Detection, Tracking and Forecasting Challenge, at CVPR WAD 2024</a></p>
 
-### Winning solution in Argoverse 2 Unified Detection, Tracking and Forecasting Challenge, at CVPR WAD 2024
 
-#### Authors: <a href="https://scholar.google.fr/citations?user=vMLRRVkAAAAJ">Yihong Xu</a>, &nbsp;&nbsp; <a href="https://scholar.google.fr/citations?user=dOkbUmEAAAAJ">Éloi Zablocki</a>, &nbsp;&nbsp; <a href="https://www.boulch.eu/">Alexandre Boulch</a>, &nbsp;&nbsp; <a href="https://sites.google.com/site/puygilles/home">Gilles Puy</a>,  &nbsp;&nbsp;  <a href="https://scholar.google.com/citations?user=QnRpMJAAAAAJ">Mickaël Chen</a>, &nbsp;&nbsp; <a href="https://f-barto.github.io/">Florent Bartoccioni</a>, &nbsp;&nbsp; <a href="https://nerminsamet.github.io/">Nermin Samet</a>,  &nbsp;&nbsp;  <a href="https://osimeoni.github.io/">Oriane Siméoni</a>,  &nbsp;&nbsp; <a href="https://scholar.google.fr/citations?user=7atfg7EAAAAJ">Spyros Gidaris</a>,  &nbsp;&nbsp; <a href="https://tuanhungvu.github.io/">Tuan-Hung Vu</a>, &nbsp;&nbsp; <a href="https://abursuc.github.io/">Andrei Bursuc</a>, &nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=lxWPqWAAAAAJ">Eduardo Valle</a>, &nbsp;&nbsp; <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a>, &nbsp;&nbsp; <a href="https://cord.isir.upmc.fr/">Matthieu Cord</a>
+#### Authors: <a href="https://scholar.google.fr/citations?user=vMLRRVkAAAAJ">Yihong Xu</a>, <a href="https://scholar.google.fr/citations?user=dOkbUmEAAAAJ">Éloi Zablocki</a>,  <a href="https://www.boulch.eu/">Alexandre Boulch</a>, <a href="https://sites.google.com/site/puygilles/home">Gilles Puy</a>,   <a href="https://scholar.google.com/citations?user=QnRpMJAAAAAJ">Mickaël Chen</a>, <a href="https://f-barto.github.io/">Florent Bartoccioni</a>,  <a href="https://nerminsamet.github.io/">Nermin Samet</a>,   <a href="https://osimeoni.github.io/">Oriane Siméoni</a>,   <a href="https://scholar.google.fr/citations?user=7atfg7EAAAAJ">Spyros Gidaris</a>,   <a href="https://tuanhungvu.github.io/">Tuan-Hung Vu</a>, <a href="https://abursuc.github.io/">Andrei Bursuc</a>,  <a href="https://scholar.google.com/citations?user=lxWPqWAAAAAJ">Eduardo Valle</a>, <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a>,  <a href="https://cord.isir.upmc.fr/">Matthieu Cord</a>
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2406.08113">Paper</a>] &nbsp;&nbsp; [<a href="https://eval.ai/web/challenges/challenge-page/2006/leaderboard/4752">leaderboard</a>] &nbsp;&nbsp; [<a href="https://valeoai.github.io/blog/publications/valeo4cast/">page</a>]</h4>
 
@@ -210,10 +210,10 @@ Motion forecasting is crucial in autonomous driving systems to anticipate the fu
 
 
 ## OccFeat: Self-supervised Occupancy Feature Prediction for Pretraining BEV Segmentation Networks
+<p class="page-description"><a href="https://cvpr2024.wad.vision/">CVPR 2024 Workshop on Autonomous Driving (WAD)</a></p>
 
-### Workshop on Autonomous Driving at CVPR 2024
 
-#### Authors: Sophia Sirko-Galouchenko, &nbsp;&nbsp; <a href="https://www.boulch.eu/">Alexandre Boulch</a>, &nbsp;&nbsp;  <a href="https://scholar.google.fr/citations?user=7atfg7EAAAAJ&hl=en">Spyros Gidaris</a>, &nbsp;&nbsp; <a href="https://abursuc.github.io/">Andrei Bursuc</a>, &nbsp;&nbsp;  <a href="https://vobecant.github.io/">Antonin Vobecky</a>,  &nbsp;&nbsp; <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a>, &nbsp;&nbsp; <a href="https://ptrckprz.github.io/">Patrick Pérez</a>
+#### Authors: Sophia Sirko-Galouchenko, <a href="https://www.boulch.eu/">Alexandre Boulch</a>,  <a href="https://scholar.google.fr/citations?user=7atfg7EAAAAJ&hl=en">Spyros Gidaris</a>,  <a href="https://abursuc.github.io/">Andrei Bursuc</a>,   <a href="https://vobecant.github.io/">Antonin Vobecky</a>,   <a href="http://imagine.enpc.fr/~marletr/">Renaud Marlet</a>,  <a href="https://ptrckprz.github.io/">Patrick Pérez</a>
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2404.14027">Paper</a>] &nbsp;&nbsp; [<a href="https://valeoai.github.io/blog/publications/occfeat/">page</a>]</h4>
 
@@ -235,10 +235,9 @@ Performance comparison in low data regime 1% annotated data of nuScenes (Left). 
 
 
 ## What Makes Multimodal In-Context Learning Work?
+<p class="page-description"><a href="https://prompting-in-vision.github.io/index_cvpr24.html">CVPR 2024 Workshop on Prompting in Vision</a></p>
 
-### Workshop Prompting in Vision at CVPR 2024
-
-#### Authors: <a href="https://www.folbaeni.com/">Folco Bertini Baldassini</a>, &nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=lhp9mRgAAAAJ&hl=en">Mustafa Shukor</a>, &nbsp;&nbsp; <a href="https://cord.isir.upmc.fr/">Matthieu Cord</a>, &nbsp;&nbsp; <a href="https://pages.isir.upmc.fr/soulier/">Laure Soulier</a>, &nbsp;&nbsp; <a href="https://www.piwowarski.fr/">Benjamin Piwowarski</a>
+#### Authors: <a href="https://www.folbaeni.com/">Folco Bertini Baldassini</a>,  <a href="https://scholar.google.com/citations?user=lhp9mRgAAAAJ&hl=en">Mustafa Shukor</a>, <a href="https://cord.isir.upmc.fr/">Matthieu Cord</a>, <a href="https://pages.isir.upmc.fr/soulier/">Laure Soulier</a>,  <a href="https://www.piwowarski.fr/">Benjamin Piwowarski</a>
 
 <h4 align="center"> [<a href="https://arxiv.org/abs/2404.15736">Paper</a>] &nbsp;&nbsp; [<a href="https://gitlab.com/folbaeni/multimodal-icl">code</a>] &nbsp;&nbsp; [<a href="https://multimodal-icl-folbaeni-1988a753e0abbbc71bb3967331bb69edafda92e.gitlab.io/">page</a>]</h4>
 
