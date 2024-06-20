@@ -10,7 +10,7 @@ venue_long: International Conference On Machine Learning (ICML)
 year: 2024
 month: 7
 code_url: https://github.com/Victorletzelter/VoronoiWTA
-paper_url: https://hal.science/hal-04574640/
+paper_url: https://arxiv.org/abs/2406.04706
 blog_url: 
 slides_url: 
 bib_url: 
