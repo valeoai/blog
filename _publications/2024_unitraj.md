@@ -5,10 +5,10 @@ image: images/publications/2024_unitraj/unitraj.gif
 hide: false
 category: [driving, motion forecasting]
 authors: Lan Feng, Mohammadhossein Bahari, Kaouther Messaoud Ben Amor, Éloi Zablocki, Matthieu Cord, Alexandre Alahi
-venue: under review
-venue_long: under review
+venue: ECCV
+venue_long: European Conference on Computer Vision
 year: 2024
-month: 3
+month: 10
 code_url: https://github.com/vita-epfl/unitraj
 paper_url: https://arxiv.org/abs/2403.15098
 blog_url: 
@@ -64,11 +64,11 @@ permalink: /publications/unitraj/
 <h2  align="center">BibTeX</h2>
 <left>
   <pre class="bibtex-box">
-@article{feng2024unitraj,
+@inproceedings{feng2024unitraj,
       title={UniTraj: A Unified Framework for Scalable Vehicle Trajectory Prediction},
       author={Lan Feng and Mohammadhossein Bahari and Kaouther Messaoud Ben Amor and {\'{E}}loi Zablocki and Matthieu Cord and Alexandre Alahi},
       year={2024},
-      journal={arxiv}
+      booktitle={ECCV}
 }
 </pre>
 </left>
